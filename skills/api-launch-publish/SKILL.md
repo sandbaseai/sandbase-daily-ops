@@ -37,7 +37,8 @@ Accept rough input from the user, then normalize into:
   "provider": "Exa",
   "provider_description": "AI-native web search engine that finds exact content using semantic search.",
   "sandbase_service_name": "AI Web Research Agent",
-  "sandbase_value": "Turn semantic web search into reusable agent workflows.",
+  "sandbase_value": "Help agents discover, connect, and reuse semantic web search inside real-world workflows.",
+  "ecosystem_role": "An external research capability in the SandBase ecosystem of APIs, models, MCP servers, skills, sandboxes, and Agent Services.",
   "capabilities": ["Web Search", "Extraction", "Highlights", "Summary", "Artifacts"],
   "use_cases": ["Company Research", "Competitor Monitor", "Lead Research", "Market Map"],
   "audience": ["Founder", "FDE", "Sales", "Investor", "Builder"],
@@ -69,17 +70,19 @@ Always separate the provider layer from the SandBase layer:
 
 ```text
 <Provider> provides <raw capability>.
-SandBase turns it into <agent-ready workflow / reusable Agent Service>.
+SandBase makes that capability discoverable, composable, and reusable by agents.
 ```
 
 Preferred public formula:
 
 ```text
-<API> on SandBase.ai
-From <raw API/capability> to reusable Agent Services.
+<API> is available through the SandBase ecosystem.
+Help your agent connect <raw capability> to real-world work.
 ```
 
-Avoid positioning SandBase as a thin wrapper. SandBase is the runtime, workflow, session, skill, and artifact layer.
+SandBase is not the deployment home for the provider's API. It is the ecosystem and delivery layer that helps agents find, connect, orchestrate, and reuse external capabilities. Those capabilities may be APIs, models, MCP servers, skills, sandboxes, connectors, or Agent Services.
+
+Read `references/ecosystem-positioning.md` before writing copy. Never say that a third-party provider is "deployed on SandBase" unless the user explicitly confirms that deployment fact.
 
 ## SOP
 
@@ -172,7 +175,7 @@ Use 6-10 short lines. Lead with product progress.
 Template:
 
 ```text
-<API> is now available on SandBase.ai.
+<API> is now available through the SandBase ecosystem.
 
 <One sentence about what builders can now do.>
 
@@ -182,9 +185,9 @@ First use cases:
 - <use case>
 
 <Provider> provides <raw capability>.
-SandBase turns it into an agent-ready workflow.
+SandBase helps agents connect and reuse it in real-world workflows.
 
-From APIs to reusable Agent Services.
+From fragmented capabilities to connected Agent Services.
 ```
 
 ### X / Twitter
@@ -194,7 +197,7 @@ Default to one concise post. Use thread only if the user asks.
 Template:
 
 ```text
-<API> on SandBase.ai.
+<API> is now available through SandBase.
 
 Use <provider capability> inside SandBase agent workflows:
 
@@ -204,7 +207,7 @@ Use <provider capability> inside SandBase agent workflows:
 
 First use cases: <use cases>.
 
-From APIs to Agent Services.
+Connect your agent to the real world.
 ```
 
 ### Discord
@@ -214,9 +217,9 @@ Use a practical builder announcement. Include what changed, how to try it, and w
 Template:
 
 ```text
-New API available: <API> on SandBase.ai
+New ecosystem capability: <API>
 
-You can now use <provider capability> inside SandBase workflows.
+Agents can now discover and reuse <provider capability> in SandBase workflows.
 
 Useful for:
 - <use case>
@@ -229,20 +232,10 @@ Feedback welcome in this channel.
 
 ## Image Style
 
-Match the SandBase website:
-
-- White or near-white background.
-- Subtle square grid.
-- Huge black geometric sans-serif headline.
-- Small uppercase eyebrow label with wide letter spacing.
-- Minimal green accent lines, buttons, and pills.
-- Thin-line product/runtime diagram.
-- No serif headline.
-- No beige magazine style.
-- No fake logos, fake metrics, fake users, fake dashboards.
-- No dark cyberpunk style.
+Use the fixed SandBase visual system. The image API generates only the background and abstract capability visual; deterministic layout code renders the title, subtitle, eyebrow, and capability label. This is required because image models are unreliable at product names and typography.
 
 Read `references/image-formats.md` before generating images.
+Read `references/visual-system.md` before generating images.
 Use `references/channel-copy-template.md` when producing `launch-pack.md`.
 Use `references/blog-format.md` when producing blog-ready Markdown files.
 Use `references/publication-matrix.md` for platform-native rewrites.
@@ -251,7 +244,7 @@ Use `references/author-voice.md` and `references/quality-gates.md` before handof
 
 ## Image Generation
 
-Default path: generate once, reuse everywhere.
+Default path: generate one visual background through SandBase Image API, render deterministic SandBase typography over it, then reuse the final asset everywhere.
 
 Use the blog cover service path for Blog, LinkedIn, X/Twitter, and Discord:
 
@@ -266,7 +259,7 @@ python scripts/generate_blog_cover_url.py \
   --update-markdown /Users/liyb/Documents/Codex/2026-06-26/new-chat/outputs/exa-search-launch/blog/zh-CN/exa-search-on-sandbase.md
 ```
 
-The script calls:
+The URL-only fallback script calls:
 
 ```json
 {
@@ -276,7 +269,9 @@ The script calls:
 }
 ```
 
-It returns a public image URL. Reuse that URL in:
+It returns a public image URL. Use it only when a public URL is required before a final composed asset can be uploaded. For controlled typography, use `generate_api_launch_images.py`, which calls the SandBase API and renders the final local asset.
+
+Reuse the final cover asset in:
 
 - Blog frontmatter `image`
 - LinkedIn post image
@@ -355,3 +350,6 @@ Before final response:
 - Image text is readable and matches the SandBase site style.
 - A single reusable cover URL is generated first when publishing to Blog/LinkedIn/X/Discord.
 - All generated images used the SandBase API path, not built-in image tools.
+- The generated visual contains no model-rendered words, logos, UI screenshots, fake metrics, or fake provider claims.
+- The final title, eyebrow, subtitle, and capability label are rendered deterministically from the launch config.
+- Public copy describes the integration as a SandBase ecosystem capability, not a provider deployment on SandBase.

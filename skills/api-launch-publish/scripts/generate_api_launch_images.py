@@ -21,16 +21,16 @@ FORMATS = {
         "aspect_ratio": "16:9",
         "suffix": "16x9",
         "prompt_suffix": (
-            "Create a premium 16:9 API launch card for Blog, LinkedIn, X/Twitter, and Discord. "
-            "Use the SandBase website style: very large black geometric sans-serif title, huge whitespace, subtle square grid background, small uppercase eyebrow, minimal green accents, and a restrained thin-line workflow diagram."
+            "Create a 16:9 abstract background for a SandBase ecosystem launch asset. "
+            "The upper-left 55 percent must remain intentionally empty for post-rendered typography."
         ),
     },
     "4x5": {
         "aspect_ratio": "4:5",
         "suffix": "4x5",
         "prompt_suffix": (
-            "Create a premium 4:5 mobile social launch card. "
-            "Use the SandBase website style: very large black geometric sans-serif title, huge whitespace, subtle square grid background, small uppercase eyebrow, minimal green accents, and a clean thin-line workflow diagram."
+            "Create a 4:5 abstract background for a SandBase ecosystem launch asset. "
+            "The upper half must remain intentionally empty for post-rendered typography."
         ),
     },
 }
@@ -97,20 +97,13 @@ def save_image(out_dir: Path, name: str, image: str) -> Path:
 
 def build_prompt(config: dict[str, Any], format_name: str) -> str:
     fmt = FORMATS[format_name]
-    subtitle = config.get("mobile_subtitle") if format_name == "4x5" else config.get("subtitle")
-    capability_line = config.get("mobile_capability_line") if format_name == "4x5" else config.get("capability_line")
     return (
         f"{fmt['prompt_suffix']} "
-        "Exact visible text only: "
-        f"Title: '{config['headline']}'. "
-        f"Subtitle: '{subtitle}'. "
-        f"Capability line: '{capability_line}'. "
-        f"Small label: '{config['small_label']}'. "
         f"Visual concept: {config['visual_concept']}. "
-        "Make SandBase the runtime/workflow layer and the provider the capability layer. "
-        "Style: SandBase website-aligned product image: white or near-white background, subtle square grid, oversized black geometric sans-serif typography, small uppercase letter-spaced eyebrow label, restrained deep green accents, minimal black/green pills, thin-line UI diagram elements. "
-        "Keep text large and readable. Use only the exact text requested. "
-        "Avoid: serif typography, warm beige editorial magazine styling, real logos, fake logos, fake metrics, fake dashboards, screenshots, stock-photo people, dark cyberpunk, chaotic dots, excessive glow, tiny text, misspellings, random code blocks, decorative 3D illustrations."
+        "Draw no text, letters, numbers, logos, brand marks, dashboards, browser screenshots, code, people, or devices. "
+        "Use a near-white canvas, subtle square grid, restrained deep green linework, and one elegant abstract diagram of an external capability entering an agent workflow and producing a real-world outcome. "
+        "The composition must feel precise, calm, technical, and premium. "
+        "Avoid dark themes, gradients, cyberpunk, floating dots, 3D blobs, warm beige editorial styling, excessive glow, dense detail, fake metrics, and fake UI."
     )
 
 
@@ -149,6 +142,7 @@ def main() -> int:
     parser.add_argument("--out-dir", default="outputs/api-launch", help="Directory for generated images.")
     parser.add_argument("--formats", nargs="+", default=["16x9"], choices=sorted(FORMATS))
     parser.add_argument("--print-prompts", action="store_true", help="Print prompts without calling the API.")
+    parser.add_argument("--background-only", action="store_true", help="Keep API backgrounds without deterministic title composition.")
     args = parser.parse_args()
 
     config = json.loads(Path(args.config).read_text(encoding="utf-8"))
@@ -163,7 +157,15 @@ def main() -> int:
         if args.print_prompts:
             print(f"\n## {output_name}\n{prompt}")
             continue
-        saved.append(generate(out_dir, output_name, fmt["aspect_ratio"], prompt))
+        background_name = f"{output_name}-background"
+        background = generate(out_dir, background_name, fmt["aspect_ratio"], prompt)
+        if args.background_only:
+            saved.append(background)
+            continue
+        final_path = out_dir / f"{output_name}.png"
+        from render_launch_cover import render
+        render(background, final_path, config, format_name)
+        saved.append(final_path)
 
     if saved:
         print("Saved:")

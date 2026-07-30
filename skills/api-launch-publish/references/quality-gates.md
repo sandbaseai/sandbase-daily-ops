@@ -7,6 +7,8 @@ Run this review before a package is ready for publishing.
 - [ ] Every metric, date, product status, integration, named customer, and compatibility claim appears in `source_facts` with a source URL or is removed.
 - [ ] Every first-person assertion appears in `author.approved_first_person_facts` or is rewritten.
 - [ ] The copy does not imply GA, enterprise support, or product availability beyond the given status.
+- [ ] The copy does not say a third-party capability is deployed, hosted, or owned by SandBase unless that fact is explicitly approved.
+- [ ] The SandBase role is clear: it connects an agent to an ecosystem of external real-world capabilities.
 
 ## Author and Language
 
@@ -27,3 +29,5 @@ Run this review before a package is ready for publishing.
 - [ ] `input.json` contains author, locales, channels, source facts, and claim constraints.
 - [ ] `manifest.json` records files, canonical URL, image URL, localization state, and publication state.
 - [ ] The cover URL is reused consistently where a shared image is intended.
+- [ ] The image model created only the abstract background. All visible words were rendered by the deterministic cover renderer.
+- [ ] The final image follows the safe area, contrast, format, and typography rules in `visual-system.md`.

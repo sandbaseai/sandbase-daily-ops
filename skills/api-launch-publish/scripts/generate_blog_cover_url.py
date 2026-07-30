@@ -59,14 +59,13 @@ def request_json(method: str, url: str, api_key: str, payload: dict[str, Any] | 
 
 def build_prompt(title: str, description: str, category: str, article_type: str) -> str:
     return (
-        f'Blog and social cover image for "{title}". '
-        f"Context: {description}. "
-        f"Category: {category}. Article type: {article_type}. "
-        "Use SandBase website style: white or near-white background, subtle square grid, oversized black geometric sans-serif headline, "
-        "small uppercase letter-spaced eyebrow label, restrained SandBase green accents, thin-line agent workflow diagram, lots of negative space. "
-        "The image should work for Blog, LinkedIn, X/Twitter, and Discord. "
-        "Visible text should be minimal and readable: main title only, plus a tiny SandBase-style capability label if needed. "
-        "Do not use fake logos, fake metrics, fake users, fake dashboards, screenshots, people, dense code, dark cyberpunk, chaotic dots, or tiny text."
+        f"Create an abstract cover background for a SandBase ecosystem article about {title}. "
+        f"Context: {description}. Category: {category}. Article type: {article_type}. "
+        "Do not render any text, letters, numbers, logos, brand marks, dashboards, browser screenshots, code, people, or devices. "
+        "Use a near-white canvas, a subtle square grid, restrained SandBase green linework, and one elegant thin-line abstract diagram of an external capability connecting to an agent workflow and producing a real-world outcome. "
+        "Leave the upper-left 55 percent intentionally empty for deterministic typography after generation. "
+        "The composition must feel precise, calm, technical, and premium. "
+        "Avoid dark themes, gradients, cyberpunk, floating dots, 3D blobs, warm beige editorial styling, excessive glow, dense detail, fake metrics, and fake UI."
     )
 
 

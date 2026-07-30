@@ -5,13 +5,15 @@
   "provider": "Exa",
   "provider_description": "AI-native web search engine that finds exact content using semantic search.",
   "sandbase_service_name": "AI Web Research Agent",
-  "sandbase_value": "Turn semantic web search into reusable agent workflows.",
-  "subtitle": "From semantic web search to reusable Agent Services",
-  "mobile_subtitle": "Semantic Search → Agent Service",
+  "sandbase_value": "Help agents discover, connect, and reuse semantic web search inside real-world workflows.",
+  "ecosystem_role": "An external research capability in the SandBase ecosystem of APIs, models, MCP servers, skills, sandboxes, and Agent Services.",
+  "eyebrow": "AGENT ECOSYSTEM",
+  "subtitle": "Connect semantic web search to real-world agent work",
+  "mobile_subtitle": "Semantic Search → Agent Action",
   "capability_line": "Web Search · Extraction · Highlights · Summary · Artifacts",
   "mobile_capability_line": "Search · Extract · Summarize · Artifact",
-  "small_label": "Powered by Exa Search · Run on SandBase",
-  "visual_concept": "semantic web search flows into a SandBase runtime workflow and outputs structured artifact cards",
+  "small_label": "Exa Search through SandBase",
+  "visual_concept": "semantic web search enters an agent workflow and produces a structured real-world research outcome",
   "capabilities": [
     "Web Search",
     "Extraction",
@@ -56,7 +58,7 @@
       "We are building SandBase as an agent-native delivery platform for builders and FDEs."
     ],
     "opinions": [
-      "A useful API becomes more valuable when it can be reused as an agent-ready workflow with an inspectable output."
+      "An API becomes more valuable when an agent can discover it, combine it with other capabilities, and turn its output into real-world work."
     ]
   },
   "source_facts": [
@@ -68,6 +70,7 @@
   ],
   "claim_constraints": [
     "Do not claim that Exa is exclusive to SandBase.",
-    "Do not claim product availability beyond the current documented integration."
+    "Do not claim product availability beyond the current documented integration.",
+    "Do not describe the provider as deployed, hosted, or owned by SandBase."
   ]
 }

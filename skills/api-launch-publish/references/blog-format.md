@@ -298,7 +298,7 @@ Every blog-ready output should satisfy:
 - 3-5 FAQ questions for SEO snippets.
 - At least 1 internal link suggestion.
 - At least 2 external authoritative source suggestions if the post makes factual third-party claims.
-- Clear product point of view: provider supplies raw capability; SandBase turns it into reusable Agent Services.
+- Clear product point of view: provider supplies raw capability; SandBase helps agents discover, connect, and reuse it as part of a broader ecosystem.
 
 ## Index Row
 

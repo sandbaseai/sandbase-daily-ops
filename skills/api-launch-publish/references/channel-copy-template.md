@@ -10,7 +10,7 @@ Use this template to generate `launch-pack.md`.
 ## Core Positioning
 
 <Provider> provides <provider capability>.
-SandBase turns it into <SandBase Agent Service / workflow / runtime artifact>.
+SandBase helps agents discover, connect, and reuse it alongside other ecosystem capabilities.
 
 One-liner:
 <headline>.
@@ -97,7 +97,7 @@ Small label:
 ## LinkedIn Template
 
 ```text
-<API> is now available on SandBase.ai.
+<API> is now available through the SandBase ecosystem.
 
 You can now use <provider capability> inside SandBase agent workflows.
 
@@ -107,15 +107,15 @@ First use cases:
 - <use case>
 
 <Provider> provides <raw capability>.
-SandBase turns it into an agent-ready workflow.
+SandBase helps agents connect and reuse it in real-world workflows.
 
-From APIs to reusable Agent Services.
+From fragmented capabilities to connected Agent Services.
 ```
 
 ## X Template
 
 ```text
-<API> on SandBase.ai.
+<API> is now available through SandBase.
 
 Use <provider capability> inside SandBase agent workflows:
 
@@ -125,15 +125,15 @@ Use <provider capability> inside SandBase agent workflows:
 
 First use cases: <use cases>.
 
-From APIs to Agent Services.
+Connect your agent to the real world.
 ```
 
 ## Discord Template
 
 ```text
-New API available: <API> on SandBase.ai
+New ecosystem capability: <API>
 
-You can now use <provider capability> inside SandBase workflows.
+Agents can now discover and reuse <provider capability> in SandBase workflows.
 
 Useful for:
 - <use case>

@@ -29,10 +29,10 @@ Safe-area:
 - Use one title, one subtitle, one capability row.
 - Avoid dense diagrams for Discord and X.
 
-SandBase website style:
+## Generation and Rendering Order
 
-- White background.
-- Subtle square grid.
-- Very large black sans-serif title.
-- Green accent line/pill.
-- Minimal workflow diagram.
+1. SandBase Image API generates a text-free abstract background.
+2. `render_launch_cover.py` adds the exact eyebrow, title, subtitle, and capability label.
+3. Inspect the final composed PNG before use. Regenerate only the background when the abstract visual is weak or conflicts with the text safe area.
+
+Do not ask an image model to render product names, API names, logos, claims, metrics, captions, or UI screenshots. See `visual-system.md` for fixed colors, layout, prompt, and visual variants.
