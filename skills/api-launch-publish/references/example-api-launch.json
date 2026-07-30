@@ -1,0 +1,37 @@
+{
+  "slug": "exa-search-on-sandbase",
+  "api_name": "Exa Search",
+  "headline": "Exa Search on SandBase.ai",
+  "provider": "Exa",
+  "provider_description": "AI-native web search engine that finds exact content using semantic search.",
+  "sandbase_service_name": "AI Web Research Agent",
+  "sandbase_value": "Turn semantic web search into reusable agent workflows.",
+  "subtitle": "From semantic web search to reusable Agent Services",
+  "mobile_subtitle": "Semantic Search → Agent Service",
+  "capability_line": "Web Search · Extraction · Highlights · Summary · Artifacts",
+  "mobile_capability_line": "Search · Extract · Summarize · Artifact",
+  "small_label": "Powered by Exa Search · Run on SandBase",
+  "visual_concept": "semantic web search flows into a SandBase runtime workflow and outputs structured artifact cards",
+  "capabilities": [
+    "Web Search",
+    "Extraction",
+    "Highlights",
+    "Summary",
+    "Artifacts"
+  ],
+  "use_cases": [
+    "Company Research",
+    "Competitor Monitor",
+    "Lead Research",
+    "Market Map"
+  ],
+  "audience": [
+    "Founder",
+    "FDE",
+    "Sales",
+    "Investor",
+    "Builder"
+  ],
+  "docs_url": "",
+  "demo_url": ""
+}
