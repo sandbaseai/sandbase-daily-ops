@@ -1,6 +1,6 @@
 ---
 name: api-launch-publish
-description: Prepare a standard SandBase API launch package. Use when the user gives an API/provider/capability name and description and wants Codex to publish or prepare launch materials for Blog, LinkedIn, X/Twitter, and Discord, including positioning, concise social copy, blog draft, Discord announcement, and optional SandBase API-generated gpt-image-2 launch images.
+description: Prepare a standard SandBase API launch package. Use when the user gives an API/provider/capability name and description and wants Codex to publish or prepare launch materials for Blog, LinkedIn, X/Twitter, and Discord, including positioning, concise social copy, blog draft, Discord announcement, and one reusable SandBase API-generated cover URL.
 ---
 
 # API 上线发布
@@ -67,9 +67,10 @@ Avoid positioning SandBase as a thin wrapper. SandBase is the runtime, workflow,
 4. Write LinkedIn copy.
 5. Write X/Twitter copy.
 6. Write Discord announcement.
-7. Generate or update image prompts.
-8. If the user wants images, run `scripts/generate_api_launch_images.py` through SandBase API using `openai/gpt-image-2`.
-9. Save all outputs under `outputs/<api-slug>-launch/`.
+7. Generate one reusable blog/social cover URL.
+8. Write the generated cover URL into blog frontmatter and `launch-pack.md`.
+9. If the user also wants mobile/social variants, run `scripts/generate_api_launch_images.py` through SandBase API using `openai/gpt-image-2`.
+10. Save all outputs under `outputs/<api-slug>-launch/`.
 
 ## Copy Defaults
 
@@ -183,6 +184,41 @@ Use `references/blog-format.md` when producing blog-ready Markdown files.
 
 ## Image Generation
 
+Default path: generate once, reuse everywhere.
+
+Use the blog cover service path for Blog, LinkedIn, X/Twitter, and Discord:
+
+```bash
+python scripts/generate_blog_cover_url.py \
+  --title "Exa Search on SandBase.ai" \
+  --description "Turn AI-native web search into reusable SandBase Agent Services for research, monitoring, and lead workflows." \
+  --category product-updates \
+  --article-type launch \
+  --out-json /Users/liyb/Documents/Codex/2026-06-26/new-chat/outputs/exa-search-launch/cover-url.json \
+  --update-markdown /Users/liyb/Documents/Codex/2026-06-26/new-chat/outputs/exa-search-launch/blog/en/exa-search-on-sandbase.md \
+  --update-markdown /Users/liyb/Documents/Codex/2026-06-26/new-chat/outputs/exa-search-launch/blog/zh-CN/exa-search-on-sandbase.md
+```
+
+The script calls:
+
+```json
+{
+  "model": "google/nano-banana-pro",
+  "aspect_ratio": "16:9",
+  "output_format": "png"
+}
+```
+
+It returns a public image URL. Reuse that URL in:
+
+- Blog frontmatter `image`
+- LinkedIn post image
+- X/Twitter post image
+- Discord announcement image
+- `launch-pack.md`
+
+Optional path: generate local channel-specific PNGs.
+
 Use the SandBase API path only.
 
 ```bash
@@ -221,6 +257,7 @@ With images:
 ```text
 outputs/<api-slug>-launch/
   launch-pack.md
+  cover-url.json
   <api-slug>-16x9.png
   <api-slug>-4x5.png
 ```
@@ -239,4 +276,5 @@ Before final response:
 - Claims are not inflated.
 - Discord copy is practical and not too polished.
 - Image text is readable and matches the SandBase site style.
+- A single reusable cover URL is generated first when publishing to Blog/LinkedIn/X/Discord.
 - All generated images used the SandBase API path, not built-in image tools.

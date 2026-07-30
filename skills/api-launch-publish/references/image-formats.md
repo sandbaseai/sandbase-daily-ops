@@ -10,13 +10,13 @@ Default image set for API launch:
 | Discord | 16:9 | Announcement image |
 | Optional mobile/social | 4:5 | Reuse later for Xiaohongshu/Moments |
 
-Generate first:
+Generate first as one reusable public URL:
 
 ```text
 16x9
 ```
 
-Generate second if the user wants broader reuse:
+Use the URL from `cover-url.json` for Blog, LinkedIn, X / Twitter, and Discord. Generate second only if the user wants broader mobile reuse:
 
 ```text
 4x5

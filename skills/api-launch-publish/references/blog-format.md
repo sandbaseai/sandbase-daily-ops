@@ -51,7 +51,7 @@ Required or expected fields:
 - `category`: one valid category slug.
 - `description`: 10-300 chars.
 - `language`: `en` or `zh-CN`.
-- `image` and `imageAlt`: optional but preferred.
+- `image` and `imageAlt`: optional but preferred. For API launches, use the public URL from `cover-url.json`.
 - `draft`: optional; default is false.
 
 Valid categories:
@@ -77,7 +77,7 @@ For API launches, prefer `product-updates`. Use `developer-tools` for a technica
 Use the direct-writing workflow. Do not call a text-generation API for long blog copy.
 
 ```text
-topic -> dedupe -> research -> write EN -> rewrite ZH -> SEO check -> cover -> render check -> update index
+topic -> dedupe -> research -> write EN -> rewrite ZH -> SEO check -> generate one reusable cover URL -> render check -> update index
 ```
 
 Before writing into the real blog repo, check:
@@ -250,6 +250,32 @@ For public API launch posts, use a concise version of the site style:
 ```
 
 For shorter launch posts, 600-1000 English words is acceptable. For SEO-led posts, target 1500+ English words or 2000+ Chinese characters.
+
+## Cover URL
+
+For launch packages, generate the cover once and reuse the same public image URL across:
+
+- English blog post frontmatter
+- Chinese blog post frontmatter
+- LinkedIn
+- X / Twitter
+- Discord
+- `launch-pack.md`
+
+Use:
+
+```bash
+python skills/api-launch-publish/scripts/generate_blog_cover_url.py \
+  --title "<API> on SandBase.ai" \
+  --description "<short launch description>" \
+  --category product-updates \
+  --article-type launch \
+  --out-json outputs/<api-slug>-launch/cover-url.json \
+  --update-markdown outputs/<api-slug>-launch/blog/en/<slug>.md \
+  --update-markdown outputs/<api-slug>-launch/blog/zh-CN/<slug>.md
+```
+
+The generated `cover-url.json` is the source of truth for all channel images unless the user asks for channel-specific mobile variants.
 
 ## Chinese Version
 
