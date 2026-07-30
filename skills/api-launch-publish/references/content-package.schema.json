@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SandBase API Launch Input",
+  "type": "object",
+  "required": ["api_name", "provider", "provider_description", "sandbase_value", "channels", "locales", "author", "source_facts"],
+  "properties": {
+    "api_name": {"type": "string"},
+    "provider": {"type": "string"},
+    "provider_description": {"type": "string"},
+    "sandbase_value": {"type": "string"},
+    "channels": {"type": "array", "items": {"enum": ["blog", "linkedin", "x", "discord", "medium", "devto", "zhihu", "xiaohongshu", "wechat-channels"]}},
+    "locales": {"type": "array", "items": {"type": "string"}},
+    "canonical_url": {"type": "string"},
+    "author": {
+      "type": "object",
+      "required": ["name", "voice", "approved_first_person_facts"],
+      "properties": {
+        "name": {"type": "string"},
+        "role": {"type": "string"},
+        "voice": {"type": "string"},
+        "approved_first_person_facts": {"type": "array", "items": {"type": "string"}},
+        "opinions": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "source_facts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["claim", "source_url"],
+        "properties": {
+          "claim": {"type": "string"},
+          "source_url": {"type": "string"},
+          "status": {"enum": ["verified", "user-provided", "internal-approved"]}
+        }
+      }
+    },
+    "claim_constraints": {"type": "array", "items": {"type": "string"}}
+  }
+}

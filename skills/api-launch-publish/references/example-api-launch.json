@@ -33,5 +33,41 @@
     "Builder"
   ],
   "docs_url": "",
-  "demo_url": ""
+  "demo_url": "",
+  "canonical_url": "",
+  "channels": [
+    "blog",
+    "linkedin",
+    "x",
+    "discord",
+    "medium",
+    "devto",
+    "zhihu"
+  ],
+  "locales": [
+    "en",
+    "zh-CN"
+  ],
+  "author": {
+    "name": "David Li",
+    "role": "Founder, SandBase.ai",
+    "voice": "technical founder who has built infrastructure and speaks plainly about trade-offs",
+    "approved_first_person_facts": [
+      "We are building SandBase as an agent-native delivery platform for builders and FDEs."
+    ],
+    "opinions": [
+      "A useful API becomes more valuable when it can be reused as an agent-ready workflow with an inspectable output."
+    ]
+  },
+  "source_facts": [
+    {
+      "claim": "Exa provides AI-native web search with content extraction capabilities.",
+      "source_url": "https://docs.exa.ai/",
+      "status": "verified"
+    }
+  ],
+  "claim_constraints": [
+    "Do not claim that Exa is exclusive to SandBase.",
+    "Do not claim product availability beyond the current documented integration."
+  ]
 }

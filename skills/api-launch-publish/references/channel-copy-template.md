@@ -33,6 +33,18 @@ One-liner:
 
 <practical community announcement>
 
+## Medium (optional)
+
+<Founder-led argument. Use a distinct hook and include canonical attribution when it substantially overlaps the SandBase Blog.>
+
+## DEV Community (optional)
+
+<Builder-led guide with a concrete setup path, limitations, and canonical attribution when it overlaps.>
+
+## Zhihu (optional)
+
+<Chinese question-led answer. State the conclusion first; do not translate the English article sentence by sentence.>
+
 ## Image Copy
 
 Title:
@@ -131,4 +143,56 @@ Useful for:
 Docs/demo: <link if available>
 
 Feedback welcome in this channel.
+```
+
+## Medium Template
+
+```markdown
+> Originally published at: <canonical SandBase URL>
+
+# <A founder question or contrarian conclusion>
+
+<Open with a concrete operating decision, not a product announcement.>
+
+## The trade-off people miss
+
+## What changed in practice
+
+## When this approach is the wrong choice
+
+## What builders should do next
+```
+
+## DEV Community Template
+
+```markdown
+> Canonical source: <canonical SandBase URL>
+
+# <How to solve a builder problem with the capability>
+
+<One practical problem and the desired output.>
+
+## The setup
+
+## The workflow boundary
+
+## Failure modes to plan for
+
+## When to use another tool
+```
+
+## Zhihu Template
+
+```markdown
+# <用户会直接搜索的问题？>
+
+先说结论：<直接回答。>
+
+## 先别把它当成一个功能
+
+## 真正要看的是哪几个边界
+
+## 什么团队适合，什么团队先别上
+
+## 我的判断
 ```

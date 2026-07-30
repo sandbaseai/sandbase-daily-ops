@@ -1,6 +1,6 @@
 ---
 name: api-launch-publish
-description: Prepare a standard SandBase API launch package. Use when the user gives an API/provider/capability name and description and wants Codex to publish or prepare launch materials for Blog, LinkedIn, X/Twitter, and Discord, including positioning, concise social copy, blog draft, Discord announcement, and one reusable SandBase API-generated cover URL.
+description: Prepare a blog-first, multilingual SandBase API launch package. Use when the user gives an API, provider, capability, or Agent Service and wants publish-ready materials for SandBase Blog, LinkedIn, X/Twitter, Discord, Medium, DEV Community, Zhihu, or future channels, including platform-native rewrites, author voice, claims checks, and one reusable SandBase API-generated cover URL.
 ---
 
 # API 上线发布
@@ -9,14 +9,22 @@ description: Prepare a standard SandBase API launch package. Use when the user g
 
 Convert a new API, provider integration, or Agent Service into a repeatable launch package for SandBase.
 
-Initial channels:
+Default channels:
 
-1. Blog
+1. SandBase Blog (canonical source)
 2. LinkedIn
 3. X / Twitter
 4. Discord
 
-Do not add Xiaohongshu, WeChat Channels, or other channels unless the user asks. Keep the first SOP focused.
+Optional channels when requested:
+
+- Medium
+- DEV Community
+- Zhihu
+- Xiaohongshu
+- WeChat Channels
+
+Do not copy-and-paste one post across channels. Read `references/publication-matrix.md` for the native structure, canonical-link rule, and length for every selected channel.
 
 ## Required Inputs
 
@@ -35,11 +43,25 @@ Accept rough input from the user, then normalize into:
   "audience": ["Founder", "FDE", "Sales", "Investor", "Builder"],
   "status": "available",
   "docs_url": "",
-  "demo_url": ""
+  "demo_url": "",
+  "canonical_url": "",
+  "channels": ["blog", "linkedin", "x", "discord"],
+  "locales": ["en", "zh-CN"],
+  "author": {
+    "name": "David Li",
+    "role": "Founder, SandBase.ai",
+    "voice": "technical founder who has built infrastructure and speaks plainly about trade-offs",
+    "approved_first_person_facts": [],
+    "opinions": []
+  },
+  "source_facts": [],
+  "claim_constraints": []
 }
 ```
 
-If inputs are missing, infer conservatively. Ask only if the missing detail changes the launch claim, compliance posture, or product positioning.
+`source_facts` is the claims ledger. Every date, metric, customer name, compatibility claim, benchmark, and first-person experience must either appear there with a source URL or be omitted. `approved_first_person_facts` is the only source for "I/we tested", "we learned", or equivalent personal claims.
+
+If inputs are missing, infer conservatively. Ask only if the missing detail changes the launch claim, compliance posture, product positioning, or author truthfulness.
 
 ## Positioning Rule
 
@@ -64,13 +86,48 @@ Avoid positioning SandBase as a thin wrapper. SandBase is the runtime, workflow,
 1. Normalize the API into a launch config.
 2. Write the core one-liner.
 3. Write the blog drafts in the SandBase Blog Markdown format.
-4. Write LinkedIn copy.
-5. Write X/Twitter copy.
-6. Write Discord announcement.
-7. Generate one reusable blog/social cover URL.
-8. Write the generated cover URL into blog frontmatter and `launch-pack.md`.
-9. If the user also wants mobile/social variants, run `scripts/generate_api_launch_images.py` through SandBase API using `openai/gpt-image-2`.
-10. Save all outputs under `outputs/<api-slug>-launch/`.
+4. Create native rewrites for every requested platform and locale.
+5. Write LinkedIn copy.
+6. Write X/Twitter copy.
+7. Write Discord announcement.
+8. Generate one reusable blog/social cover URL.
+9. Write the generated cover URL into blog frontmatter and `launch-pack.md`.
+10. If the user also wants mobile/social variants, run `scripts/generate_api_launch_images.py` through SandBase API using `openai/gpt-image-2`.
+11. Run the package checks in `references/quality-gates.md`.
+12. Save all outputs under `outputs/<api-slug>-launch/`.
+
+Run the structural package check before handoff:
+
+```bash
+python scripts/validate_content_package.py \
+  --input outputs/<api-slug>-launch/input.json \
+  --package outputs/<api-slug>-launch
+```
+
+## Canonical Article, Platform Rewrites, and Locales
+
+Write one canonical SandBase Blog article per locale. Then make a new argument for each external publishing surface; do not summarize mechanically.
+
+- **SandBase Blog:** durable technical source of truth. Original research, decision rules, evidence, and canonical URL.
+- **Medium:** a founder-led argument or field note for a broad global technical audience. Add a canonical link to SandBase when the article substantially overlaps.
+- **DEV Community:** a builder tutorial, implementation note, or comparison with a concrete setup path. Add a canonical link when it overlaps.
+- **Zhihu:** a Chinese answer or long-form analysis beginning with a question people would actually ask; lead with conclusion and explain the reasoning in Chinese.
+- **LinkedIn / X / Discord:** distribution assets, not miniature blogs.
+
+English and Chinese blog posts can share a slug, but Chinese must be a native rewrite, not a sentence-by-sentence translation. For any additional locale, read `references/localization.md` before drafting.
+
+## Author Voice and Human Standard
+
+Read `references/author-voice.md` before writing long-form content.
+
+The article should sound like a person with real judgment, not a corporate content pipeline:
+
+- Start from a tension, trade-off, surprise, or practical decision. Do not open with generic market context.
+- Write a point of view and its limits. Name where another approach is better.
+- Use a first-person observation only when it is in `approved_first_person_facts`.
+- Prefer a concrete engineering consequence over generic adjectives such as "powerful", "seamless", or "game-changing".
+- Do not manufacture interviews, usage, customers, benchmarks, or emotions to make a post feel real.
+- Vary structure by platform. A human writer adapts to the room.
 
 ## Copy Defaults
 
@@ -90,7 +147,7 @@ Every product launch should create two SEO-oriented blog articles:
 
 Blog length target: 1200-2000 words for SEO-oriented posts unless the user asks for shorter launch copy.
 
-When the launch package is intended for the real SandBase blog, follow `references/blog-format.md`.
+When the launch package is intended for the real SandBase blog, follow `references/blog-format.md` and `references/author-voice.md`.
 Default to producing:
 
 - `blog/en/<product-vs-competitors-slug>.md`
@@ -98,6 +155,13 @@ Default to producing:
 - `blog/en/<top-n-category-slug>.md`
 - `blog/zh-CN/<top-n-category-slug>.md`
 - `blog/content-index-row.md`
+
+When `channels` includes Medium, DEV Community, or Zhihu, additionally produce:
+
+- `medium/en/<slug>.md` for every selected English long-form angle
+- `devto/en/<slug>.md` for every selected English builder angle
+- `zhihu/zh-CN/<slug>.md` for every selected Chinese question-led angle
+- `manifest.json` recording canonical URL, localization status, image URL, source facts, and publication status
 
 The English and Chinese posts must share the same slug. The Chinese post is a native rewrite, not a literal translation.
 
@@ -181,6 +245,9 @@ Match the SandBase website:
 Read `references/image-formats.md` before generating images.
 Use `references/channel-copy-template.md` when producing `launch-pack.md`.
 Use `references/blog-format.md` when producing blog-ready Markdown files.
+Use `references/publication-matrix.md` for platform-native rewrites.
+Use `references/localization.md` for locale-specific drafting.
+Use `references/author-voice.md` and `references/quality-gates.md` before handoff.
 
 ## Image Generation
 
@@ -245,11 +312,16 @@ Minimum:
 ```text
 outputs/<api-slug>-launch/
   launch-pack.md
+  manifest.json
+  input.json
   blog/en/<product-vs-competitors-slug>.md
   blog/zh-CN/<product-vs-competitors-slug>.md
   blog/en/<top-n-category-slug>.md
   blog/zh-CN/<top-n-category-slug>.md
   blog/content-index-row.md
+  medium/en/<optional-platform-native-slug>.md
+  devto/en/<optional-platform-native-slug>.md
+  zhihu/zh-CN/<optional-question-led-slug>.md
 ```
 
 With images:
@@ -275,6 +347,11 @@ Before final response:
 - SandBase value is explicit.
 - Claims are not inflated.
 - Discord copy is practical and not too polished.
+- Every selected external long-form channel has a native angle and its canonical-link policy is correct.
+- Every locale is a native rewrite with local search intent, examples, idiom, and CTA; it is not a literal translation.
+- Every first-person line can be traced to `approved_first_person_facts`.
+- Every public fact, metric, date, customer claim, and compatibility claim can be traced to `source_facts`.
+- The long-form draft has a clear author judgment, a named trade-off, and at least one concrete decision rule.
 - Image text is readable and matches the SandBase site style.
 - A single reusable cover URL is generated first when publishing to Blog/LinkedIn/X/Discord.
 - All generated images used the SandBase API path, not built-in image tools.
