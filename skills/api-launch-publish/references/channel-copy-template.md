@@ -196,3 +196,36 @@ Feedback welcome in this channel.
 
 ## 我的判断
 ```
+
+## Xiaohongshu Template
+
+```markdown
+# <Carousel slug>
+
+Source article: <Compare or Top N Chinese article path>
+
+## Cover Hook
+
+<12-18 Chinese characters, practical and curiosity-inducing; do not use only the product name>
+
+## Screenshot Storyboard
+
+1. **Cover:** <Hook title over the first article screenshot; no generic product poster.>
+2. **Problem:** <A readable source excerpt that names the practical problem.>
+3. **Evidence:** <A comparison, source quote, or visual from the article.>
+4. **Decision rule:** <The choice framework or trade-off.>
+5. **What to do:** <A short actionable conclusion.>
+6. **CTA:** <Question that invites relevant comments.>
+
+## Caption
+
+<300-800 Chinese characters. Lead with the conclusion, explain the tension in plain language, and avoid a long external link.>
+
+## Tags
+
+#AI智能体 #AIInfra #开发者 <3-6 relevant tags>
+
+## First Comment
+
+<Ask one concrete question or invite a keyword reply.>
+```

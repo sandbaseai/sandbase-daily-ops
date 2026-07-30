@@ -90,9 +90,43 @@ Avoid repeating existing titles or slugs. If the topic overlaps, choose a sharpe
 
 ## Required Blog Strategy Per Product
 
-Every product or API launch should produce two SEO-oriented articles.
+Every product or API launch should produce three SandBase Blog articles: one owned product landing article and two outward-facing SEO-oriented articles.
 
-### Article 1: Same-Category Comparison
+### Article 1: Owned Product Landing Article
+
+Purpose:
+
+- Give the SandBase ecosystem a durable product page for the new capability.
+- Explain what the provider contributes, what SandBase contributes, and what a builder should do next.
+- Convert readers who arrive through the comparison and Top N discovery articles.
+
+Recommended title patterns:
+
+```text
+<Product> on SandBase: <Capability> for AI Agents
+Connect <Product> to Agent Workflows with SandBase
+<Product> Is Available Through the SandBase Ecosystem
+```
+
+Required structure:
+
+```markdown
+# <Product> on SandBase
+
+## What is available
+
+## What <Provider> provides
+
+## What SandBase adds
+
+## First workflows to build
+
+## How to get started
+```
+
+This article is the owned conversion page. It may be product-led, but it must still use accurate ecosystem language: the provider supplies the raw capability; SandBase makes it discoverable, composable, and reusable by agents.
+
+### Article 2: Same-Category Comparison
 
 Purpose:
 
@@ -155,7 +189,7 @@ Writing rule:
 
 Do not write a fake neutral comparison that obviously sells SandBase or the current product. The product advantage should come from concrete criteria: latency, output quality, workflow fit, integration, state, artifacts, pricing, reliability, or developer experience.
 
-### Article 2: 2026 Top N Roundup
+### Article 3: 2026 Top N Roundup
 
 Purpose:
 

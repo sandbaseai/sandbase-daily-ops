@@ -82,6 +82,8 @@ def main() -> int:
         fail(errors, "devto channel selected but no English DEV Community draft exists")
     if "zhihu" in channels and "zh-CN" in locales and not has_markdown(package / "zhihu" / "zh-CN"):
         fail(errors, "zhihu channel selected but no Chinese Zhihu draft exists")
+    if "xiaohongshu" in channels and "zh-CN" in locales and not has_markdown(package / "xiaohongshu" / "zh-CN"):
+        fail(errors, "xiaohongshu channel selected but no Chinese article-screenshot carousel exists")
 
     if not (package / "launch-pack.md").exists():
         fail(errors, "launch-pack.md is missing")

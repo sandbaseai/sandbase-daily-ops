@@ -44,8 +44,15 @@
     "discord",
     "medium",
     "devto",
-    "zhihu"
+    "zhihu",
+    "xiaohongshu"
   ],
+  "xiaohongshu": {
+    "source_article": "compare",
+    "carousel_pages": 6,
+    "hook_direction": "specific misconception or decision",
+    "pinned_comment_goal": "invite builders to share their current choice"
+  },
   "locales": [
     "en",
     "zh-CN"

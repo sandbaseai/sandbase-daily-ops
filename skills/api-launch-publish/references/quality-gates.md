@@ -23,6 +23,9 @@ Run this review before a package is ready for publishing.
 - [ ] Medium and DEV Community include canonical attribution when supported or a clear original-source link when not.
 - [ ] Blog follows frontmatter, internal-link, external-source, table, FAQ, and image-alt requirements.
 - [ ] Social posts fit their channel and do not contain a pasted blog opening.
+- [ ] Xiaohongshu uses a 4-8 page article-screenshot storyboard from the Chinese Compare or Top N article, not an overseas product-launch poster.
+- [ ] The Xiaohongshu cover is a specific hook rather than only an API or provider name; the body has no long external link.
+- [ ] Xiaohongshu output includes caption, 3-6 relevant tags, and a first comment that invites a concrete reply.
 
 ## Package
 

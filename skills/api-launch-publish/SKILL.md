@@ -1,6 +1,6 @@
 ---
 name: api-launch-publish
-description: Prepare a blog-first, multilingual SandBase API launch package. Use when the user gives an API, provider, capability, or Agent Service and wants publish-ready materials for SandBase Blog, LinkedIn, X/Twitter, Discord, Medium, DEV Community, Zhihu, or future channels, including platform-native rewrites, author voice, claims checks, and one reusable SandBase API-generated cover URL.
+description: Prepare a blog-first, multilingual SandBase API launch package. Use when the user gives an API, provider, capability, or Agent Service and wants publish-ready materials for SandBase Blog, LinkedIn, X/Twitter, Discord, Medium, DEV Community, Zhihu, Xiaohongshu, or future channels, including platform-native rewrites, author voice, claims checks, reusable SandBase API-generated covers, and Xiaohongshu article-screenshot carousels.
 ---
 
 # API 上线发布
@@ -47,6 +47,12 @@ Accept rough input from the user, then normalize into:
   "demo_url": "",
   "canonical_url": "",
   "channels": ["blog", "linkedin", "x", "discord"],
+  "xiaohongshu": {
+    "source_article": "compare",
+    "carousel_pages": 6,
+    "hook_direction": "specific misconception or decision",
+    "pinned_comment_goal": "invite builders to share their current choice"
+  },
   "locales": ["en", "zh-CN"],
   "author": {
     "name": "David Li",
@@ -88,16 +94,17 @@ Read `references/ecosystem-positioning.md` before writing copy. Never say that a
 
 1. Normalize the API into a launch config.
 2. Write the core one-liner.
-3. Write the blog drafts in the SandBase Blog Markdown format.
+3. Write three SandBase Blog drafts in the SandBase Blog Markdown format: the owned product landing article, a comparison article, and a 2026 Top N article.
 4. Create native rewrites for every requested platform and locale.
 5. Write LinkedIn copy.
 6. Write X/Twitter copy.
 7. Write Discord announcement.
-8. Generate one reusable blog/social cover URL.
-9. Write the generated cover URL into blog frontmatter and `launch-pack.md`.
-10. If the user also wants mobile/social variants, run `scripts/generate_api_launch_images.py` through SandBase API using `openai/gpt-image-2`.
-11. Run the package checks in `references/quality-gates.md`.
-12. Save all outputs under `outputs/<api-slug>-launch/`.
+8. When Xiaohongshu is selected, choose the comparison or Top N article as the source, then create a 4-8 page article-screenshot storyboard, a strong cover hook, native caption, tags, and a first comment. Do not reuse the overseas product-launch cover as the Xiaohongshu carousel.
+9. Generate one reusable blog/social cover URL.
+10. Write the generated cover URL into blog frontmatter and `launch-pack.md`.
+11. If the user also wants mobile/social variants, run `scripts/generate_api_launch_images.py` through SandBase API using `openai/gpt-image-2`.
+12. Run the package checks in `references/quality-gates.md`.
+13. Save all outputs under `outputs/<api-slug>-launch/`.
 
 Run the structural package check before handoff:
 
@@ -109,12 +116,13 @@ python scripts/validate_content_package.py \
 
 ## Canonical Article, Platform Rewrites, and Locales
 
-Write one canonical SandBase Blog article per locale. Then make a new argument for each external publishing surface; do not summarize mechanically.
+Write three related SandBase Blog articles per locale: one owned product landing article, one comparison article, and one 2026 Top N article. Then make a new argument for each external publishing surface; do not summarize mechanically.
 
 - **SandBase Blog:** durable technical source of truth. Original research, decision rules, evidence, and canonical URL.
 - **Medium:** a founder-led argument or field note for a broad global technical audience. Add a canonical link to SandBase when the article substantially overlaps.
 - **DEV Community:** a builder tutorial, implementation note, or comparison with a concrete setup path. Add a canonical link when it overlaps.
 - **Zhihu:** a Chinese answer or long-form analysis beginning with a question people would actually ask; lead with conclusion and explain the reasoning in Chinese.
+- **Xiaohongshu:** a Chinese article-screenshot carousel led by a practical, curiosity-inducing hook. Use the comparison or Top N article as evidence; write platform-native caption, tags, and first comment. Do not post a generic product-poster carousel.
 - **LinkedIn / X / Discord:** distribution assets, not miniature blogs.
 
 English and Chinese blog posts can share a slug, but Chinese must be a native rewrite, not a sentence-by-sentence translation. For any additional locale, read `references/localization.md` before drafting.
@@ -139,14 +147,18 @@ The article should sound like a person with real judgment, not a corporate conte
 Use a clear technical founder style:
 
 ```text
-Article 1: comparison article
-Article 2: 2026 Top N roundup article
+Article 1: owned product landing article
+Article 2: comparison article
+Article 3: 2026 Top N roundup article
 ```
 
-Every product launch should create two SEO-oriented blog articles:
+Every product launch should create three SandBase Blog articles:
 
-1. A same-category comparison article that highlights the current product's strengths without sounding like an ad.
-2. A "2026 Top N" same-category roundup article that places the current product in a broader market map.
+1. An owned product landing article that explains the capability through the SandBase ecosystem and gives readers a direct next step.
+2. A same-category comparison article that highlights the current product's strengths without sounding like an ad.
+3. A "2026 Top N" same-category roundup article that places the current product in a broader market map.
+
+The owned product article is the canonical SandBase conversion page. The comparison and Top N articles are the outward-facing discovery pieces: distribute them externally, and use either one as the source for Xiaohongshu article screenshots.
 
 Blog length target: 1200-2000 words for SEO-oriented posts unless the user asks for shorter launch copy.
 
@@ -157,6 +169,8 @@ Default to producing:
 - `blog/zh-CN/<product-vs-competitors-slug>.md`
 - `blog/en/<top-n-category-slug>.md`
 - `blog/zh-CN/<top-n-category-slug>.md`
+- `blog/en/<product-on-sandbase-slug>.md`
+- `blog/zh-CN/<product-on-sandbase-slug>.md`
 - `blog/content-index-row.md`
 
 When `channels` includes Medium, DEV Community, or Zhihu, additionally produce:
@@ -165,6 +179,10 @@ When `channels` includes Medium, DEV Community, or Zhihu, additionally produce:
 - `devto/en/<slug>.md` for every selected English builder angle
 - `zhihu/zh-CN/<slug>.md` for every selected Chinese question-led angle
 - `manifest.json` recording canonical URL, localization status, image URL, source facts, and publication status
+
+When `channels` includes Xiaohongshu, additionally produce:
+
+- `xiaohongshu/zh-CN/<article-screenshot-carousel-slug>.md` containing the cover hook, exact screenshot order, caption, tags, and first comment
 
 The English and Chinese posts must share the same slug. The Chinese post is a native rewrite, not a literal translation.
 
@@ -237,6 +255,7 @@ Use the fixed SandBase visual system. The image API generates only the backgroun
 Read `references/image-formats.md` before generating images.
 Read `references/visual-system.md` before generating images.
 Use `references/channel-copy-template.md` when producing `launch-pack.md`.
+Use `references/xiaohongshu-format.md` when producing Xiaohongshu materials.
 Use `references/blog-format.md` when producing blog-ready Markdown files.
 Use `references/publication-matrix.md` for platform-native rewrites.
 Use `references/localization.md` for locale-specific drafting.
@@ -313,10 +332,13 @@ outputs/<api-slug>-launch/
   blog/zh-CN/<product-vs-competitors-slug>.md
   blog/en/<top-n-category-slug>.md
   blog/zh-CN/<top-n-category-slug>.md
+  blog/en/<product-on-sandbase-slug>.md
+  blog/zh-CN/<product-on-sandbase-slug>.md
   blog/content-index-row.md
   medium/en/<optional-platform-native-slug>.md
   devto/en/<optional-platform-native-slug>.md
   zhihu/zh-CN/<optional-question-led-slug>.md
+  xiaohongshu/zh-CN/<article-screenshot-carousel-slug>.md
 ```
 
 With images:
@@ -335,7 +357,7 @@ Before final response:
 
 - Copy is concise enough for the channel.
 - Blog has a clear point of view and valid SandBase Blog frontmatter.
-- Blog output includes both required article types: comparison and 2026 Top N.
+- Blog output includes the owned product landing article plus both outward-facing article types: comparison and 2026 Top N.
 - Blog output includes EN/ZH when requested or when publishing to SandBase Blog.
 - Chinese blog copy reads like native Chinese technical writing, not translation.
 - Provider is not positioned as the main product.
@@ -353,3 +375,4 @@ Before final response:
 - The generated visual contains no model-rendered words, logos, UI screenshots, fake metrics, or fake provider claims.
 - The final title, eyebrow, subtitle, and capability label are rendered deterministically from the launch config.
 - Public copy describes the integration as a SandBase ecosystem capability, not a provider deployment on SandBase.
+- Xiaohongshu uses a strong native hook and a 4-8 page article-screenshot carousel sourced from the comparison or Top N article; it does not reuse the generic overseas launch poster.

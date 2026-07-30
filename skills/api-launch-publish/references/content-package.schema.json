@@ -11,6 +11,15 @@
     "channels": {"type": "array", "items": {"enum": ["blog", "linkedin", "x", "discord", "medium", "devto", "zhihu", "xiaohongshu", "wechat-channels"]}},
     "locales": {"type": "array", "items": {"type": "string"}},
     "canonical_url": {"type": "string"},
+    "xiaohongshu": {
+      "type": "object",
+      "properties": {
+        "source_article": {"enum": ["compare", "top-n"]},
+        "carousel_pages": {"type": "integer", "minimum": 4, "maximum": 8},
+        "hook_direction": {"type": "string"},
+        "pinned_comment_goal": {"type": "string"}
+      }
+    },
     "author": {
       "type": "object",
       "required": ["name", "voice", "approved_first_person_facts"],
