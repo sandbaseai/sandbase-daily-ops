@@ -63,7 +63,7 @@ Avoid positioning SandBase as a thin wrapper. SandBase is the runtime, workflow,
 
 1. Normalize the API into a launch config.
 2. Write the core one-liner.
-3. Write the blog draft.
+3. Write the blog draft in the SandBase Blog Markdown format.
 4. Write LinkedIn copy.
 5. Write X/Twitter copy.
 6. Write Discord announcement.
@@ -88,6 +88,15 @@ What comes next
 ```
 
 Blog length target: 600-1000 words unless the user asks for shorter.
+
+When the launch package is intended for the real SandBase blog, follow `references/blog-format.md`.
+Default to producing:
+
+- `blog/en/<slug>.md`
+- `blog/zh-CN/<slug>.md`
+- `blog/content-index-row.md`
+
+The English and Chinese posts must share the same slug. The Chinese post is a native rewrite, not a literal translation.
 
 ### LinkedIn
 
@@ -168,6 +177,7 @@ Match the SandBase website:
 
 Read `references/image-formats.md` before generating images.
 Use `references/channel-copy-template.md` when producing `launch-pack.md`.
+Use `references/blog-format.md` when producing blog-ready Markdown files.
 
 ## Image Generation
 
@@ -197,6 +207,9 @@ Minimum:
 ```text
 outputs/<api-slug>-launch/
   launch-pack.md
+  blog/en/<api-slug>.md
+  blog/zh-CN/<api-slug>.md
+  blog/content-index-row.md
 ```
 
 With images:
@@ -213,7 +226,9 @@ outputs/<api-slug>-launch/
 Before final response:
 
 - Copy is concise enough for the channel.
-- Blog has a clear point of view.
+- Blog has a clear point of view and valid SandBase Blog frontmatter.
+- Blog output includes EN/ZH when requested or when publishing to SandBase Blog.
+- Chinese blog copy reads like native Chinese technical writing, not translation.
 - Provider is not positioned as the main product.
 - SandBase value is explicit.
 - Claims are not inflated.
