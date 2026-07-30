@@ -33,6 +33,11 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--input", required=True, help="Launch input JSON.")
     parser.add_argument("--package", required=True, help="Launch package directory.")
+    parser.add_argument(
+        "--require-approved-review",
+        action="store_true",
+        help="Fail unless review-report.md exists and ends in an APPROVED decision.",
+    )
     args = parser.parse_args()
 
     input_path = Path(args.input)
@@ -100,6 +105,15 @@ def main() -> int:
 
     if not (package / "cover-url.json").exists():
         warnings.append("cover-url.json is missing; this is allowed only before visual generation")
+
+    review_report = package / "review-report.md"
+    if args.require_approved_review:
+        if not review_report.exists():
+            fail(errors, "review-report.md is missing; publication requires an approved independent review")
+        else:
+            report = review_report.read_text(encoding="utf-8")
+            if "Status: APPROVED" not in report:
+                fail(errors, "review-report.md does not contain `Status: APPROVED`")
 
     for message in warnings:
         print(f"WARNING: {message}")

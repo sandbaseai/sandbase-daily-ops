@@ -34,3 +34,7 @@ Run this review before a package is ready for publishing.
 - [ ] The cover URL is reused consistently where a shared image is intended.
 - [ ] The image model created only the abstract background. All visible words were rendered by the deterministic cover renderer.
 - [ ] The final image follows the safe area, contrast, format, and typography rules in `visual-system.md`.
+- [ ] `review-report.md` exists and says `Status: APPROVED`; any `REVISE` finding blocks publishing.
+- [ ] The reviewer visually inspected every final cover raster, not only its prompt or URL.
+- [ ] Every publishable cover has a deterministic, readable title that matches the article headline or an approved short form.
+- [ ] Final image URLs use `media.sandbase.ai/files/` or a versioned first-party blog asset path. Model-provider URLs, signed URLs, browser blobs, and temporary URLs are rejected.

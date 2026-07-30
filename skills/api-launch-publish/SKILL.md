@@ -103,15 +103,17 @@ Read `references/ecosystem-positioning.md` before writing copy. Never say that a
 9. Generate one reusable blog/social cover URL.
 10. Write the generated cover URL into blog frontmatter and `launch-pack.md`.
 11. If the user also wants mobile/social variants, run `scripts/generate_api_launch_images.py` through SandBase API using `openai/gpt-image-2`.
-12. Run the package checks in `references/quality-gates.md`.
-13. Save all outputs under `outputs/<api-slug>-launch/`.
+12. Run the independent Content and Visual Reviewer described in `references/reviewer-role.md`. It must write `review-report.md` and can return only `APPROVED` or `REVISE`.
+13. Fix every blocking issue, then run the package checks in `references/quality-gates.md`.
+14. Save all outputs under `outputs/<api-slug>-launch/`.
 
 Run the structural package check before handoff:
 
 ```bash
 python scripts/validate_content_package.py \
   --input outputs/<api-slug>-launch/input.json \
-  --package outputs/<api-slug>-launch
+  --package outputs/<api-slug>-launch \
+  --require-approved-review
 ```
 
 ## Canonical Article, Platform Rewrites, and Locales
@@ -260,6 +262,7 @@ Use `references/blog-format.md` when producing blog-ready Markdown files.
 Use `references/publication-matrix.md` for platform-native rewrites.
 Use `references/localization.md` for locale-specific drafting.
 Use `references/author-voice.md` and `references/quality-gates.md` before handoff.
+Use `references/reviewer-role.md` for the required independent review pass.
 
 ## Image Generation
 
@@ -328,6 +331,7 @@ outputs/<api-slug>-launch/
   launch-pack.md
   manifest.json
   input.json
+  review-report.md
   blog/en/<product-vs-competitors-slug>.md
   blog/zh-CN/<product-vs-competitors-slug>.md
   blog/en/<top-n-category-slug>.md
@@ -374,5 +378,9 @@ Before final response:
 - All generated images used the SandBase API path, not built-in image tools.
 - The generated visual contains no model-rendered words, logos, UI screenshots, fake metrics, or fake provider claims.
 - The final title, eyebrow, subtitle, and capability label are rendered deterministically from the launch config.
+- An independent reviewer has written `review-report.md` with `Status: APPROVED`; a `REVISE` result blocks publication.
+- The reviewer has visually checked final raster assets, not just prompts or frontmatter.
+- Every final cover has a readable deterministic headline; a text-free generated background is not itself a publishable cover.
+- The final cover uses a durable URL from `media.sandbase.ai/files/` or a versioned first-party blog asset path. Do not use a temporary model URL.
 - Public copy describes the integration as a SandBase ecosystem capability, not a provider deployment on SandBase.
 - Xiaohongshu uses a strong native hook and a 4-8 page article-screenshot carousel sourced from the comparison or Top N article; it does not reuse the generic overseas launch poster.
