@@ -88,7 +88,139 @@ sandbase-blog/scripts/ai-content-generator/content-index.md
 
 Avoid repeating existing titles or slugs. If the topic overlaps, choose a sharper angle and add internal links to related posts.
 
-## Blog Structure
+## Required Blog Strategy Per Product
+
+Every product or API launch should produce two SEO-oriented articles.
+
+### Article 1: Same-Category Comparison
+
+Purpose:
+
+- Capture search demand from people comparing tools.
+- Make the current product's advantages concrete.
+- Keep credibility by naming where competitors are still better.
+
+Recommended title patterns:
+
+```text
+<Product> vs <Competitor>: Which <Category> Tool Should Builders Use in 2026?
+<Product> vs <Competitor A> vs <Competitor B>: <Category> Comparison for AI Agents
+<Product> Alternatives: How It Compares with <Competitor A>, <Competitor B>, and <Competitor C>
+```
+
+Recommended slug patterns:
+
+```text
+<product>-vs-<competitor>-2026
+<product>-vs-<competitor-a>-vs-<competitor-b>-2026
+<product>-alternatives-<category>-2026
+```
+
+Suggested category:
+
+```text
+model-comparison
+developer-tools
+agent-use-cases
+```
+
+Use `model-comparison` only for model/provider comparisons. For API and tool capabilities, prefer `developer-tools` or `agent-use-cases`.
+
+Required structure:
+
+```markdown
+# <Product> vs <Competitors>: <Category> Comparison for 2026
+
+> **TL;DR** — <Direct verdict. Say where Product wins and when another tool is better.>
+
+## Why this comparison matters
+
+## Quick comparison table
+
+| Tool | Best for | Strength | Trade-off |
+|---|---|---|---|
+
+## What <Product> does best
+
+## Where competitors are still better
+
+## How to choose
+
+## FAQ
+
+## Bottom line
+```
+
+Writing rule:
+
+Do not write a fake neutral comparison that obviously sells SandBase or the current product. The product advantage should come from concrete criteria: latency, output quality, workflow fit, integration, state, artifacts, pricing, reliability, or developer experience.
+
+### Article 2: 2026 Top N Roundup
+
+Purpose:
+
+- Capture broad category search demand.
+- Place the product inside a market map.
+- Build topical authority around the capability category.
+
+Recommended title patterns:
+
+```text
+Top <N> <Category> Tools for AI Agents in 2026
+Best <Category> APIs for Agent Workflows in 2026
+Top <N> <Category> Platforms for Builders and FDEs in 2026
+```
+
+Recommended slug patterns:
+
+```text
+best-<category>-tools-ai-agents-2026
+top-<n>-<category>-apis-agent-workflows-2026
+best-<category>-platforms-builders-fdes-2026
+```
+
+Suggested category:
+
+```text
+best-of
+agent-best-picks
+developer-tools
+```
+
+Required structure:
+
+```markdown
+# Top <N> <Category> Tools for AI Agents in 2026
+
+> **TL;DR** — <Who should pick what. Mention Product's best-fit scenario.>
+
+## How we evaluated these tools
+
+## Quick ranking table
+
+| Rank | Tool | Best for | Why it stands out |
+|---|---|---|---|
+
+## 1. <Product>
+
+## 2. <Competitor>
+
+## 3. <Competitor>
+
+## How to choose the right tool
+
+## FAQ
+
+## Bottom line
+```
+
+Writing rule:
+
+The current product can rank #1 only when the positioning is defensible. Otherwise, rank it where credible and make its best-fit scenario explicit. Trust beats forced ranking.
+
+## Launch Blog Structure
+
+Use this only when the user asks for a short launch announcement. The default product SEO package should still include the two required articles above.
 
 For public API launch posts, use a concise version of the site style:
 

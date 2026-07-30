@@ -63,7 +63,7 @@ Avoid positioning SandBase as a thin wrapper. SandBase is the runtime, workflow,
 
 1. Normalize the API into a launch config.
 2. Write the core one-liner.
-3. Write the blog draft in the SandBase Blog Markdown format.
+3. Write the blog drafts in the SandBase Blog Markdown format.
 4. Write LinkedIn copy.
 5. Write X/Twitter copy.
 6. Write Discord announcement.
@@ -78,22 +78,24 @@ Avoid positioning SandBase as a thin wrapper. SandBase is the runtime, workflow,
 Use a clear technical founder style:
 
 ```text
-Title
-Why this API matters
-What the provider does
-What SandBase adds
-First use cases
-From API to Agent Service
-What comes next
+Article 1: comparison article
+Article 2: 2026 Top N roundup article
 ```
 
-Blog length target: 600-1000 words unless the user asks for shorter.
+Every product launch should create two SEO-oriented blog articles:
+
+1. A same-category comparison article that highlights the current product's strengths without sounding like an ad.
+2. A "2026 Top N" same-category roundup article that places the current product in a broader market map.
+
+Blog length target: 1200-2000 words for SEO-oriented posts unless the user asks for shorter launch copy.
 
 When the launch package is intended for the real SandBase blog, follow `references/blog-format.md`.
 Default to producing:
 
-- `blog/en/<slug>.md`
-- `blog/zh-CN/<slug>.md`
+- `blog/en/<product-vs-competitors-slug>.md`
+- `blog/zh-CN/<product-vs-competitors-slug>.md`
+- `blog/en/<top-n-category-slug>.md`
+- `blog/zh-CN/<top-n-category-slug>.md`
 - `blog/content-index-row.md`
 
 The English and Chinese posts must share the same slug. The Chinese post is a native rewrite, not a literal translation.
@@ -207,8 +209,10 @@ Minimum:
 ```text
 outputs/<api-slug>-launch/
   launch-pack.md
-  blog/en/<api-slug>.md
-  blog/zh-CN/<api-slug>.md
+  blog/en/<product-vs-competitors-slug>.md
+  blog/zh-CN/<product-vs-competitors-slug>.md
+  blog/en/<top-n-category-slug>.md
+  blog/zh-CN/<top-n-category-slug>.md
   blog/content-index-row.md
 ```
 
@@ -227,6 +231,7 @@ Before final response:
 
 - Copy is concise enough for the channel.
 - Blog has a clear point of view and valid SandBase Blog frontmatter.
+- Blog output includes both required article types: comparison and 2026 Top N.
 - Blog output includes EN/ZH when requested or when publishing to SandBase Blog.
 - Chinese blog copy reads like native Chinese technical writing, not translation.
 - Provider is not positioned as the main product.
