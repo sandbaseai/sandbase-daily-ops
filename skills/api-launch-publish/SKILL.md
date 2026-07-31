@@ -103,7 +103,7 @@ Read `references/ecosystem-positioning.md` before writing copy. Never say that a
 9. Generate one reusable blog/social cover URL.
 10. Write the generated cover URL into blog frontmatter and `launch-pack.md`.
 11. If the user also wants mobile/social variants, run `scripts/generate_api_launch_images.py` through SandBase API using `openai/gpt-image-2`.
-12. Run the independent Content and Visual Reviewer described in `references/reviewer-role.md`. It must write `review-report.md` and can return only `APPROVED` or `REVISE`.
+12. Run the independent Content, Visual, SEO, and GEO Reviewer described in `references/reviewer-role.md`. It must write `review-report.md` and can return only `APPROVED` or `REVISE`.
 13. Fix every blocking issue, then run the package checks in `references/quality-gates.md`.
 14. Save all outputs under `outputs/<api-slug>-launch/`.
 
@@ -383,6 +383,6 @@ Before final response:
 - An independent reviewer has written `review-report.md` with `Status: APPROVED`; a `REVISE` result blocks publication.
 - The reviewer has visually checked final raster assets, not just prompts or frontmatter.
 - Every final cover has a readable deterministic headline; a text-free generated background is not itself a publishable cover.
-- The final cover uses a durable URL from `media.sandbase.ai/files/` or a versioned first-party blog asset path. Do not use a temporary model URL.
+- The final cover uses a durable URL from `media.sandbase.ai/uploads/`, `media.sandbase.ai/files/`, or a versioned first-party blog asset path. Do not use a temporary model URL.
 - Public copy describes the integration as a SandBase ecosystem capability, not a provider deployment on SandBase.
 - Xiaohongshu uses a strong native hook and a 4-8 page article-screenshot carousel sourced from the comparison or Top N article; it does not reuse the generic overseas launch poster.

@@ -23,6 +23,19 @@ Run this review before a package is ready for publishing.
 - [ ] Medium and DEV Community include canonical attribution when supported or a clear original-source link when not.
 - [ ] Blog follows frontmatter, internal-link, external-source, table, FAQ, and image-alt requirements.
 - [ ] Social posts fit their channel and do not contain a pasted blog opening.
+- [ ] Every canonical blog article declares a primary query, reader, and search intent in `review-report.md`.
+- [ ] Title, H1, description, slug, canonical URL, and social image describe the same topic and are indexable.
+- [ ] Every technical/product claim links to a primary source; relevant SandBase setup, store, docs, or related-post links are included when useful.
+- [ ] Compare and Top N articles include a clear decision table or "choose X when" guidance.
+
+## GEO
+
+- [ ] The opening 80-120 words answer what it is, who it is for, and when to use it.
+- [ ] English contains a quotable `TL;DR` / `Key takeaway`; Chinese contains `先说结论`, each with 3-5 standalone factual bullets.
+- [ ] Provider, API, SandBase Agent Service, and core capabilities use stable, unambiguous names throughout.
+- [ ] The article names a meaningful limitation or trade-off, rather than presenting a universal winner.
+- [ ] Important claims have a named primary source and date where the fact can change.
+- [ ] Article JSON-LD validates; FAQPage JSON-LD is used only for genuine FAQ content.
 - [ ] Xiaohongshu uses a 4-8 page article-screenshot storyboard from the Chinese Compare or Top N article, not an overseas product-launch poster.
 - [ ] The Xiaohongshu cover is a specific hook rather than only an API or provider name; the body has no long external link.
 - [ ] Xiaohongshu output includes caption, 3-6 relevant tags, and a first comment that invites a concrete reply.
@@ -37,4 +50,4 @@ Run this review before a package is ready for publishing.
 - [ ] `review-report.md` exists and says `Status: APPROVED`; any `REVISE` finding blocks publishing.
 - [ ] The reviewer visually inspected every final cover raster, not only its prompt or URL.
 - [ ] Every publishable cover has a deterministic, readable title that matches the article headline or an approved short form.
-- [ ] Final image URLs use `media.sandbase.ai/files/` or a versioned first-party blog asset path. Model-provider URLs, signed URLs, browser blobs, and temporary URLs are rejected.
+- [ ] Final image URLs use `media.sandbase.ai/uploads/`, `media.sandbase.ai/files/`, or a versioned first-party blog asset path. Model-provider URLs, signed URLs, browser blobs, and temporary URLs are rejected.

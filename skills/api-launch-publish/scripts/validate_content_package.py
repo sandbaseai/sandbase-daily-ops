@@ -114,6 +114,12 @@ def main() -> int:
             report = review_report.read_text(encoding="utf-8")
             if "Status: APPROVED" not in report:
                 fail(errors, "review-report.md does not contain `Status: APPROVED`")
+            for required_section in ("## SEO Review", "## GEO Review"):
+                if required_section not in report:
+                    fail(
+                        errors,
+                        f"review-report.md is missing required section: {required_section}",
+                    )
 
     for message in warnings:
         print(f"WARNING: {message}")
