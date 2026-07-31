@@ -249,7 +249,7 @@ git push -u origin release/b1
 | 约束 | 说明 |
 |---|---|
 | **不提 TikHub** | 所有文章只说 SandBase 自身能力。不暴露上游供应商名称。用户 2026-07-31 明确要求。 |
-| **差异化 = Agent Runtime 编排** | SandBase 的卖点是 runtime 编排（统一契约、session context、工具编排、skill 复用、沙盒、可观测、智能路由），不是"便宜的 API 聚合"。竞品写中立具体，给真实适用场景。详见 `references/differentiation-positioning.md`。 |
+| **差异化 = 开放生态 + Agent Runtime** | SandBase 是 agent 平台，接入生态能力让 agent 开发者更易用。不和能力提供商对立/比较/竞争——它们是潜在生态伙伴，不在同一层。详见 `references/differentiation-positioning.md`。 |
 | 不编造数字 | 所有数据必须来自生产 API 响应或官方文档，无来源不写 |
 | 中文原生重写 | 不是翻译。写完大声读，拗口就重写 |
 | 禁用词零容忍 | 见 `_base-skill.md` 禁用词表 |
