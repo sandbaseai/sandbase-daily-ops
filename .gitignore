@@ -1,2 +1,12 @@
 __pycache__/
 *.py[cod]
+
+# Credentials must never be committed. Keep real keys outside the working tree,
+# e.g. ~/.config/sandbase/.env with mode 0600.
+.env
+.env.*
+!.env.example
+*.env
+*.pem
+*.key
+credentials.json

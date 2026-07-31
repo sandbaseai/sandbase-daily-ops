@@ -8,8 +8,11 @@ This repo keeps reusable skills, playbooks, templates, scripts, and example outp
 - LinkedIn
 - X / Twitter
 - Discord
+- Medium
+- Zhihu
 
-More channels can be added later, but the first version stays focused on company-facing global distribution.
+More channels can be added later (DEV Community, Xiaohongshu, WeChat Channels), but the
+first version stays focused on company-facing global distribution plus Chinese long-form.
 
 ## Structure
 
@@ -29,10 +32,12 @@ outputs/
 ```text
 API name + description
   -> positioning
-  -> blog draft
+  -> 3 blog drafts (owned launch / comparison / 2026 Top N), EN + ZH
   -> LinkedIn copy
   -> X copy
   -> Discord announcement
+  -> Medium argument
+  -> Zhihu question-led answer
   -> SandBase API generated launch images
 ```
 

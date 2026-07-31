@@ -15,12 +15,12 @@ Default channels:
 2. LinkedIn
 3. X / Twitter
 4. Discord
+5. Medium
+6. Zhihu
 
 Optional channels when requested:
 
-- Medium
 - DEV Community
-- Zhihu
 - Xiaohongshu
 - WeChat Channels
 
@@ -210,12 +210,15 @@ Default to producing:
 - `blog/zh-CN/<product-on-sandbase-slug>.md`
 - `blog/content-index-row.md`
 
-When `channels` includes Medium, DEV Community, or Zhihu, additionally produce:
+Medium and Zhihu are default channels, so every launch also produces:
 
-- `medium/en/<slug>.md` for every selected English long-form angle
-- `devto/en/<slug>.md` for every selected English builder angle
-- `zhihu/zh-CN/<slug>.md` for every selected Chinese question-led angle
+- `medium/en/<slug>.md` for the selected English long-form angle
+- `zhihu/zh-CN/<slug>.md` for the selected Chinese question-led angle
 - `manifest.json` recording canonical URL, localization status, image URL, source facts, and publication status
+
+When `channels` additionally includes DEV Community, also produce:
+
+- `devto/en/<slug>.md` for every selected English builder angle
 
 When `channels` includes Xiaohongshu, additionally produce:
 
@@ -313,9 +316,9 @@ python scripts/generate_blog_cover_url.py \
   --description "Turn AI-native web search into reusable SandBase Agent Services for research, monitoring, and lead workflows." \
   --category product-updates \
   --article-type launch \
-  --out-json /Users/liyb/Documents/Codex/2026-06-26/new-chat/outputs/exa-search-launch/cover-url.json \
-  --update-markdown /Users/liyb/Documents/Codex/2026-06-26/new-chat/outputs/exa-search-launch/blog/en/exa-search-on-sandbase.md \
-  --update-markdown /Users/liyb/Documents/Codex/2026-06-26/new-chat/outputs/exa-search-launch/blog/zh-CN/exa-search-on-sandbase.md
+  --out-json outputs/exa-search-launch/cover-url.json \
+  --update-markdown outputs/exa-search-launch/blog/en/exa-search-on-sandbase.md \
+  --update-markdown outputs/exa-search-launch/blog/zh-CN/exa-search-on-sandbase.md
 ```
 
 The URL-only fallback script calls:
@@ -345,7 +348,7 @@ Use the SandBase API path only.
 ```bash
 SANDBASE_API_KEY=... python scripts/generate_api_launch_images.py \
   --config references/example-api-launch.json \
-  --out-dir /Users/liyb/Documents/Codex/2026-06-26/new-chat/outputs/exa-search-launch \
+  --out-dir outputs/exa-search-launch \
   --formats 16x9 4x5
 ```
 
@@ -376,10 +379,10 @@ outputs/<api-slug>-launch/
   blog/en/<product-on-sandbase-slug>.md
   blog/zh-CN/<product-on-sandbase-slug>.md
   blog/content-index-row.md
-  medium/en/<optional-platform-native-slug>.md
-  devto/en/<optional-platform-native-slug>.md
-  zhihu/zh-CN/<optional-question-led-slug>.md
-  xiaohongshu/zh-CN/<article-screenshot-carousel-slug>.md
+  medium/en/<platform-native-argument-slug>.md
+  zhihu/zh-CN/<question-led-slug>.md
+  devto/en/<optional-builder-slug>.md
+  xiaohongshu/zh-CN/<optional-article-screenshot-carousel-slug>.md
 ```
 
 With images:

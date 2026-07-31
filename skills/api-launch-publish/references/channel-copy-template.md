@@ -33,7 +33,7 @@ One-liner:
 
 <practical community announcement>
 
-## Medium (optional)
+## Medium
 
 <Founder-led argument. Use a distinct hook and include canonical attribution when it substantially overlaps the SandBase Blog.>
 
@@ -41,7 +41,7 @@ One-liner:
 
 <Builder-led guide with a concrete setup path, limitations, and canonical attribution when it overlaps.>
 
-## Zhihu (optional)
+## Zhihu
 
 <Chinese question-led answer. State the conclusion first; do not translate the English article sentence by sentence.>
 

@@ -13,7 +13,7 @@ import base64
 import json
 import os
 import sys
-from datetime import UTC, datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 from urllib.error import HTTPError, URLError
@@ -228,7 +228,7 @@ def main() -> int:
 
     evidence = {
         "source": "DataForSEO",
-        "fetched_at": datetime.now(UTC).isoformat(),
+        "fetched_at": datetime.now(timezone.utc).isoformat(),
         "primary_query": seo_review["primary_query"],
         "reader": seo_review["reader"],
         "search_intent": seo_review["search_intent"],
