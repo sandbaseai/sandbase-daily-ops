@@ -11,7 +11,7 @@
 
 | 簇 | 主题 | slug 数 | category 分布 | 说明 |
 |---|---|---:|---|---|
-| 1 | 社媒数据 API（TikHub） | 12 | product-updates 2 / developer-tools 3 / tutorials 3 / best-of 2 / industry-insights 2 | 站内零覆盖，431 op，工程深度强 |
+| 1 | 社媒数据 API（抖音·微博·小红书·TikTok） | 12 | product-updates 2 / developer-tools 3 / tutorials 3 / best-of 2 / industry-insights 2 | 站内零覆盖，431 op，工程深度强 |
 | 2 | LLM 新模型 | 10 | model-introduction 4 / model-comparison 4 / agent-best-picks 2 | Opus 5 / Sonnet 5 / Kimi K3 / GPT-5.6 |
 | 3 | 视频生成 | 9 | model-introduction 3 / model-comparison 3 / best-of 2 / tutorials 1 | MiniMax H3 / Kling 3.0 / Gemini Omni Flash |
 | 4 | 图像生成 | 7 | model-introduction 2 / model-comparison 2 / best-of 2 / developer-tools 1 | Seedream 5.0 Pro / Qwen-Image-3 / Nano Banana |
@@ -55,8 +55,8 @@
 | # | slug | type | category | 标题方向 |
 |---|---|---|---|---|
 | 1 | social-media-data-apis-ai-agents-2026 | best-of | best-of | Top Social Media Data APIs for AI Agents (2026) |
-| 2 | tikhub-douyin-data-api-on-sandbase | launch | product-updates | 310 Douyin Data APIs on SandBase |
-| 3 | tikhub-weibo-xiaohongshu-data-on-sandbase | launch | product-updates | Weibo & Xiaohongshu Data Available Through SandBase |
+| 2 | douyin-data-api-on-sandbase | launch | product-updates | 310 Douyin Data APIs on SandBase |
+| 3 | weibo-xiaohongshu-data-api-on-sandbase | launch | product-updates | Weibo & Xiaohongshu Data Available Through SandBase |
 | 4 | douyin-data-api-competitor-monitor-agent | how-to | tutorials | Build a Douyin Competitor Monitor Agent |
 | 5 | xiaohongshu-kol-screening-agent-tutorial | how-to | tutorials | Xiaohongshu KOL Screening Agent from Scratch |
 | 6 | social-listening-agent-weibo-douyin-2026 | how-to | tutorials | Build a Social Listening Agent for Weibo & Douyin |
@@ -157,7 +157,7 @@ B1 取 #1~#6 + #7~#10（已含簇 6），B5 取 #11~#12 + 簇 1 剩余场景扩�
 
 | 主题 | owned slug | comparison slug | Top N slug |
 |---|---|---|---|
-| TikHub Douyin | #2 | #10 | #1 |
+| Douyin Data APIs | #2 | #10 | #1 |
 | Kimi K3 | #15 | #18 | #20 |
 | MiniMax H3 | #23 | #26 | #29 |
 | Seedream 5.0 Pro | #32 | #34 | #36 |
@@ -170,7 +170,7 @@ B1 取 #1~#6 + #7~#10（已含簇 6），B5 取 #11~#12 + 簇 1 剩余场景扩�
 | 风险 | 缓解 |
 |---|---|
 | 批量上线触发 Google scaled content abuse | 5 批 × 2 周间隔，每批后 GSC 验收 |
-| TikHub 可用性声明 | 需要生产 `/v1/models` 响应做 source_fact |
+| 社媒 API 可用性声明 | 需要生产 `/v1/models` 响应做 source_fact |
 | 新模型缺 benchmark/pricing | 只写 registry 里有的字段，查不到的不编造 |
 | 中文翻译腔 | 每篇按 `WRITING-METHOD.md` 第 5 节自查后才提交 |
 | 封面产能 | 每批 10 张，render_launch_cover.py 本地完成 |

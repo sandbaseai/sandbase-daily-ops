@@ -99,6 +99,8 @@ SandBase is not the deployment home for the provider's API. It is the ecosystem 
 
 Read `references/ecosystem-positioning.md` before writing copy. Never say that a third-party provider is "deployed on SandBase" unless the user explicitly confirms that deployment fact.
 
+
+Read `references/differentiation-positioning.md` before writing any SandBase comparison or positioning paragraph. The core differentiator is **Agent Runtime orchestration** (unified contract, session context, tool orchestration, skill reuse, sandbox execution, observability, smart routing), not API aggregation or price. Evaluate competitors neutrally and recommend them where they genuinely fit better.
 ## SOP
 
 1. Normalize the API into a launch config.

@@ -112,7 +112,8 @@ python3 dataforseo_seo_review.py \
 ### 3.2 确认生产 source_facts
 
 ```bash
-# 拿到 TikHub 线上模型数量作为 source_fact
+# 拿到线上社媒数据模型数量作为 source_fact
+# ⚠️ 写作约束：不提 TikHub。只说 SandBase 自身能力，不暴露上游供应商名称。
 curl -s -H "Authorization: Bearer $SANDBASE_API_KEY" \
   "https://api.sandbase.ai/v1/models?vendor=Douyin&pageSize=1" | python3 -c "
 import json,sys; d=json.load(sys.stdin); print('Douyin enabled:', d.get('total',d.get('pagination',{}).get('total_items','?')))"
@@ -192,7 +193,7 @@ cd /root/kiro/sandbase-blog
 # 合并所有 B1 feature 分支到一个发布分支
 git checkout -b release/b1 main
 git merge content/b1-social-media-data-apis-ai-agents-2026
-git merge content/b1-tikhub-douyin-data-api-on-sandbase
+git merge content/b1-douyin-data-api-on-sandbase
 # ... 依次合并所有 10 个
 git push -u origin release/b1
 # 创建 PR → 用户 review → merge → 打 tag 触发部署
@@ -240,8 +241,19 @@ git push -u origin release/b1
 
 - [ ] 用户放入 `~/.config/sandbase/.env`（SANDBASE_API_KEY + DataForSEO 凭据）
 - [ ] 提交并推送 daily-ops 分支（用户确认后执行）
-- [ ] 确认生产 `/v1/models` 的 TikHub 数量（作为 source_fact）
+- [ ] 确认生产 `/v1/models` 的社媒 API 数量（作为 source_fact）
 - [ ] B1 的 DataForSEO 验证（需 `--allow-billable-requests` 授权）
+
+## 8. 写作硬约束（全局）
+
+| 约束 | 说明 |
+|---|---|
+| **不提 TikHub** | 所有文章只说 SandBase 自身能力。不暴露上游供应商名称。用户 2026-07-31 明确要求。 |
+| **差异化 = Agent Runtime 编排** | SandBase 的卖点是 runtime 编排（统一契约、session context、工具编排、skill 复用、沙盒、可观测、智能路由），不是"便宜的 API 聚合"。竞品写中立具体，给真实适用场景。详见 `references/differentiation-positioning.md`。 |
+| 不编造数字 | 所有数据必须来自生产 API 响应或官方文档，无来源不写 |
+| 中文原生重写 | 不是翻译。写完大声读，拗口就重写 |
+| 禁用词零容忍 | 见 `_base-skill.md` 禁用词表 |
+| SEO 9/10 | 每篇必达标后才提交 |
 - [ ] `sandbase-blog` 安装依赖（`npm ci`）并验证 `npm run build` 通过
 - [ ] 补全 `public/og-default.png`（1200x630 兜底 OG 图，目前未创建）
 - [ ] 补录 content-index.md 缺失的 2 篇（`30-days-ai-infrastructure-startup-discoverable` + `sandbase-agent-infrastructure-product-update-july-2026`）
