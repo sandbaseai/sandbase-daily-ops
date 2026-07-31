@@ -46,6 +46,15 @@ Accept rough input from the user, then normalize into:
   "docs_url": "",
   "demo_url": "",
   "canonical_url": "",
+  "seo_review": {
+    "primary_query": "AI search API for agents",
+    "reader": "AI builders comparing research capabilities",
+    "search_intent": "commercial investigation",
+    "location_code": 2840,
+    "language_code": "en",
+    "seed_keywords": ["agent web search API", "semantic search API"],
+    "target_domain": "sandbase.ai"
+  },
   "channels": ["blog", "linkedin", "x", "discord"],
   "xiaohongshu": {
     "source_article": "compare",
@@ -103,9 +112,10 @@ Read `references/ecosystem-positioning.md` before writing copy. Never say that a
 9. Generate one reusable blog/social cover URL.
 10. Write the generated cover URL into blog frontmatter and `launch-pack.md`.
 11. If the user also wants mobile/social variants, run `scripts/generate_api_launch_images.py` through SandBase API using `openai/gpt-image-2`.
-12. Run the independent Content, Visual, SEO, and GEO Reviewer described in `references/reviewer-role.md`. It must write `review-report.md` and can return only `APPROVED` or `REVISE`.
-13. Fix every blocking issue, then run the package checks in `references/quality-gates.md`.
-14. Save all outputs under `outputs/<api-slug>-launch/`.
+12. When SEO data is needed, use `scripts/dataforseo_seo_review.py` to create an evidence pack for the declared keyword, market, and search intent. This is a billable external request and requires explicit operator approval through `--allow-billable-requests`.
+13. Run the independent Content, Visual, SEO, GEO, and DataForSEO Evidence Reviewer described in `references/reviewer-role.md`. It must write `review-report.md` and can return only `APPROVED` or `REVISE`.
+14. Fix every blocking issue, then run the package checks in `references/quality-gates.md`.
+15. Save all outputs under `outputs/<api-slug>-launch/`.
 
 Run the structural package check before handoff:
 
@@ -115,6 +125,31 @@ python scripts/validate_content_package.py \
   --package outputs/<api-slug>-launch \
   --require-approved-review
 ```
+
+When DataForSEO evidence is requested, add `--require-dataforseo-evidence`. The evidence call is deliberately not automatic:
+
+```bash
+python scripts/dataforseo_seo_review.py \
+  --input outputs/<api-slug>-launch/input.json \
+  --package outputs/<api-slug>-launch \
+  --env-file /absolute/path/to/.env.local \
+  --allow-billable-requests
+```
+
+The environment file must contain `DATAFORSEO_LOGIN` and `DATAFORSEO_PASSWORD`. Never commit it. DataForSEO data validates query/intent fit; it does not prove rankings, reader demand, or product-market fit.
+
+### DataForSEO Editorial Loop
+
+When a package has `seo_review`, the order is mandatory:
+
+1. Define one primary query, intended reader, intent, location, language, and up to nine supporting queries in `input.json`.
+2. Run `dataforseo_seo_review.py` and archive `dataforseo-seo-evidence.json` and `.md` inside the launch package.
+3. Revise the three canonical articles before review:
+   - **Owned launch:** answer the primary task directly and name the provider, SandBase Agent Service, and relevant capability boundaries.
+   - **Comparison:** organize by the actual decision implied by the SERP, include trade-offs, and avoid an unsupported winner claim.
+   - **Top N:** present a shortlist or clear evaluation method. Do not use numbered ranks unless an explicit, reproducible scoring method is disclosed.
+4. If the article quotes a DataForSEO metric or SERP observation publicly, name DataForSEO, market, and retrieval date. Never turn a sampled result into a traffic, ranking, or demand promise.
+5. The independent reviewer reads the evidence pack, records its findings under `## DataForSEO Evidence`, and can block publication for an intent mismatch.
 
 ## Canonical Article, Platform Rewrites, and Locales
 

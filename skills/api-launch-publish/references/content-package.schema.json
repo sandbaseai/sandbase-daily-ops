@@ -11,6 +11,24 @@
     "channels": {"type": "array", "items": {"enum": ["blog", "linkedin", "x", "discord", "medium", "devto", "zhihu", "xiaohongshu", "wechat-channels"]}},
     "locales": {"type": "array", "items": {"type": "string"}},
     "canonical_url": {"type": "string"},
+    "seo_review": {
+      "type": "object",
+      "description": "Optional DataForSEO-backed review brief. Required only when a package uses the DataForSEO evidence gate.",
+      "required": ["primary_query", "reader", "search_intent", "location_code", "language_code"],
+      "properties": {
+        "primary_query": {"type": "string", "minLength": 1},
+        "reader": {"type": "string", "minLength": 1},
+        "search_intent": {"type": "string", "minLength": 1},
+        "location_code": {"type": "integer"},
+        "language_code": {"type": "string", "minLength": 2},
+        "seed_keywords": {
+          "type": "array",
+          "maxItems": 9,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "target_domain": {"type": "string"}
+      }
+    },
     "xiaohongshu": {
       "type": "object",
       "properties": {

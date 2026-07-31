@@ -27,6 +27,8 @@ Run this review before a package is ready for publishing.
 - [ ] Title, H1, description, slug, canonical URL, and social image describe the same topic and are indexable.
 - [ ] Every technical/product claim links to a primary source; relevant SandBase setup, store, docs, or related-post links are included when useful.
 - [ ] Compare and Top N articles include a clear decision table or "choose X when" guidance.
+- [ ] When `seo_review` is present, DataForSEO evidence uses the declared location, language, primary query, and reader intent.
+- [ ] DataForSEO metrics are decision evidence only; public copy does not promise rankings, traffic, or demand from a single data point.
 
 ## GEO
 
@@ -48,6 +50,7 @@ Run this review before a package is ready for publishing.
 - [ ] The image model created only the abstract background. All visible words were rendered by the deterministic cover renderer.
 - [ ] The final image follows the safe area, contrast, format, and typography rules in `visual-system.md`.
 - [ ] `review-report.md` exists and says `Status: APPROVED`; any `REVISE` finding blocks publishing.
+- [ ] When the DataForSEO gate is enabled, `dataforseo-seo-evidence.json` exists and `review-report.md` includes `## DataForSEO Evidence`.
 - [ ] The reviewer visually inspected every final cover raster, not only its prompt or URL.
 - [ ] Every publishable cover has a deterministic, readable title that matches the article headline or an approved short form.
 - [ ] Final image URLs use `media.sandbase.ai/uploads/`, `media.sandbase.ai/files/`, or a versioned first-party blog asset path. Model-provider URLs, signed URLs, browser blobs, and temporary URLs are rejected.

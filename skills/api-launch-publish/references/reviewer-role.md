@@ -1,4 +1,4 @@
-# Content, Visual, SEO, and GEO Reviewer
+# Content, Visual, SEO, GEO, and DataForSEO Evidence Reviewer
 
 ## Role
 
@@ -28,7 +28,8 @@ Status: REVISE
 4. Inspect every final raster asset at its intended display size. Do not approve based on prompts, filenames, or frontmatter alone.
 5. Check the final image URL or asset path is durable.
 6. Review SEO and GEO requirements against every canonical blog article.
-7. Write `review-report.md` using the template below.
+7. When `dataforseo-seo-evidence.json` exists, check its market, date, query, SERP sample, and keyword metrics against the draft. Treat it as evidence, not an automatic editorial decision.
+8. Write `review-report.md` using the template below.
 
 ## Content Checks
 
@@ -63,6 +64,16 @@ Reject when any of the following is true:
 - The article has no meaningful limitation, trade-off, or case where the product is not the right choice.
 - Important claims have no named primary source, date, or attribution.
 - Article JSON-LD is invalid; add FAQPage JSON-LD only when the article genuinely includes an FAQ.
+
+## DataForSEO Evidence Checks
+
+When a package includes `dataforseo-seo-evidence.json`, reject when any of the following is true:
+
+- The evidence location, language, or primary query differs from `input.json` without a documented reason.
+- The title or opening targets a different intent from the sampled SERP without a clear editorial decision.
+- Search volume, CPC, competition, or ranking data is presented as a public claim without naming DataForSEO, the market, and the retrieval date.
+- The evidence is used to imply guaranteed traffic, ranking, or commercial demand.
+- The reviewer ignores a material mismatch between the article's stated reader/intent and the pages actually ranking for the query.
 
 ## Visual Checks
 
@@ -107,6 +118,12 @@ Status: APPROVED | REVISE
 - Answer-first opening and quotable summary: PASS | REVISE
 - Entity clarity and decision support: PASS | REVISE
 - Trade-offs, attribution, and structured data: PASS | REVISE
+
+## DataForSEO Evidence
+
+- Evidence file, market, and retrieval date: PASS | REVISE | NOT REQUESTED
+- Keyword and SERP intent fit: PASS | REVISE | NOT REQUESTED
+- Evidence-informed changes required: <None or list>
 
 ## Visual Review
 

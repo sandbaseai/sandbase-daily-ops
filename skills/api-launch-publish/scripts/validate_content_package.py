@@ -38,6 +38,11 @@ def main() -> int:
         action="store_true",
         help="Fail unless review-report.md exists and ends in an APPROVED decision.",
     )
+    parser.add_argument(
+        "--require-dataforseo-evidence",
+        action="store_true",
+        help="Require a valid DataForSEO evidence file and reviewer evidence section.",
+    )
     args = parser.parse_args()
 
     input_path = Path(args.input)
@@ -76,6 +81,36 @@ def main() -> int:
 
     channels = set(payload.get("channels", []))
     locales = set(payload.get("locales", []))
+
+    if args.require_dataforseo_evidence:
+        seo_review = payload.get("seo_review")
+        if not isinstance(seo_review, dict):
+            fail(errors, "seo_review is required when DataForSEO evidence is required")
+        else:
+            for field in (
+                "primary_query",
+                "reader",
+                "search_intent",
+                "location_code",
+                "language_code",
+            ):
+                if not seo_review.get(field):
+                    fail(errors, f"seo_review is missing required field: {field}")
+            seed_keywords = seo_review.get("seed_keywords", [])
+            if not isinstance(seed_keywords, list) or len(seed_keywords) > 9:
+                fail(errors, "seo_review.seed_keywords must contain at most 9 items")
+
+        evidence = package / "dataforseo-seo-evidence.json"
+        if not evidence.exists():
+            fail(errors, "dataforseo-seo-evidence.json is missing")
+        else:
+            try:
+                evidence_data = json.loads(evidence.read_text(encoding="utf-8"))
+                for field in ("fetched_at", "primary_query", "market", "keyword_metrics", "serp"):
+                    if field not in evidence_data:
+                        fail(errors, f"dataforseo-seo-evidence.json is missing field: {field}")
+            except (OSError, json.JSONDecodeError) as exc:
+                fail(errors, f"dataforseo-seo-evidence.json is invalid: {exc}")
     if "blog" in channels:
         for locale in locales:
             if not has_markdown(package / "blog" / locale):
@@ -107,14 +142,17 @@ def main() -> int:
         warnings.append("cover-url.json is missing; this is allowed only before visual generation")
 
     review_report = package / "review-report.md"
-    if args.require_approved_review:
+    if args.require_approved_review or args.require_dataforseo_evidence:
         if not review_report.exists():
-            fail(errors, "review-report.md is missing; publication requires an approved independent review")
+            fail(errors, "review-report.md is missing; publication requires an independent review")
         else:
             report = review_report.read_text(encoding="utf-8")
-            if "Status: APPROVED" not in report:
+            if args.require_approved_review and "Status: APPROVED" not in report:
                 fail(errors, "review-report.md does not contain `Status: APPROVED`")
-            for required_section in ("## SEO Review", "## GEO Review"):
+            sections = ["## SEO Review", "## GEO Review"]
+            if args.require_dataforseo_evidence:
+                sections.append("## DataForSEO Evidence")
+            for required_section in sections:
                 if required_section not in report:
                     fail(
                         errors,

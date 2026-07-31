@@ -38,6 +38,19 @@
   "docs_url": "",
   "demo_url": "",
   "canonical_url": "",
+  "seo_review": {
+    "primary_query": "AI search API for agents",
+    "reader": "AI builders evaluating web research capabilities",
+    "search_intent": "commercial investigation",
+    "location_code": 2840,
+    "language_code": "en",
+    "seed_keywords": [
+      "agent web search API",
+      "semantic search API",
+      "web research API for AI agents"
+    ],
+    "target_domain": "sandbase.ai"
+  },
   "channels": [
     "blog",
     "linkedin",
