@@ -40,10 +40,45 @@ Use a 12-column implicit grid. Keep text in the left seven columns and reserve t
 Create a clean abstract background for a SandBase product launch image. No text, letters, numbers, logos, brand marks, dashboards, browser screenshots, code, people, or devices. Use a near-white canvas, a very subtle technical grid, restrained deep green linework, and one elegant abstract diagram showing a capability entering an agent workflow and becoming a real-world outcome. Keep the upper-left 55% intentionally empty for deterministic typography. The composition must feel precise, calm, technical, and premium. Avoid dark themes, gradients, cyberpunk, floating dots, 3D blobs, warm beige editorial styling, excessive glow, and dense visual detail.
 ```
 
+## Cover Kinds
+
+Every final cover has exact text rendered by `render_launch_cover.py`: an eyebrow, headline, subtitle, and capability pill. Do not ask the image model to render these words. The model only supplies the clean diagram background.
+
+| `cover_kind` | When to use it | Background composition | Required final typography |
+|---|---|---|---|
+| `launch` | A new API, model, skill, or ecosystem capability | One capability flows into a compact agent workflow and creates one outcome. | `AGENT ECOSYSTEM` or `PRODUCT UPDATE`; product name; one outcome statement. |
+| `comparison` | A versus / alternatives article | 2-4 equal, unlabeled routes meet at one neutral decision gate. No VS split or winner visual. | `2026 COMPARISON`; `A vs B vs C`; decision criterion subtitle. |
+| `top-n` | A curated list, shortlist, or market map | 5-6 equal, unlabeled nodes around a neutral hub. One quiet green selection mark, never a podium or ranking numbers. | `2026 TOP PICKS`; `Best <capability> 2026`; one audience/use-case subtitle. |
+
+### Comparison Example
+
+```json
+{
+  "cover_kind": "comparison",
+  "eyebrow": "2026 COMPARISON",
+  "headline": "Exa vs Tavily vs Firecrawl",
+  "subtitle": "Which search API fits your agent workflow?",
+  "capability_line": "Semantic search · Research · Crawling"
+}
+```
+
+### Top N Example
+
+```json
+{
+  "cover_kind": "top-n",
+  "eyebrow": "2026 TOP PICKS",
+  "headline": "Best AI Search APIs 2026",
+  "subtitle": "A practical shortlist for agent workflows",
+  "capability_line": "Research · Monitoring · Lead discovery"
+}
+```
+
 ## Visual Variants
 
-- `capability-flow`: one external node flowing into a simple agent-workflow diagram.
-- `ecosystem-map`: several restrained capability nodes connected to one agent hub; use only when the post is about ecosystem breadth.
-- `artifact-outcome`: one capability node becomes a report, task, or artifact; use for FDE and delivery stories.
+- `capability-flow`: use with `launch`; one external node flows into a simple agent-workflow diagram.
+- `comparison-gate`: use with `comparison`; equal paths meet at a neutral decision point.
+- `shortlist-map`: use with `top-n`; a few equal candidate nodes form a calm, curated market map.
+- `artifact-outcome`: use with `launch`; one capability node becomes a report, task, or artifact for FDE and delivery stories.
 
 Choose one variant. Do not combine all three in one image.

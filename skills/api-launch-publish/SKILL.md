@@ -268,6 +268,8 @@ Use `references/reviewer-role.md` for the required independent review pass.
 
 Default path: generate one visual background through SandBase Image API, render deterministic SandBase typography over it, then reuse the final asset everywhere.
 
+For `comparison` and `top-n` articles, set `cover_kind` in the image config. The final cover must contain the exact eyebrow, headline, subtitle, and capability label from the deterministic renderer. Never publish the generated background by itself.
+
 Use the blog cover service path for Blog, LinkedIn, X/Twitter, and Discord:
 
 ```bash

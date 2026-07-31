@@ -36,6 +36,24 @@ FORMATS = {
 }
 
 
+COVER_KIND_PROMPTS = {
+    "launch": (
+        "Place one external capability node entering a compact agent workflow and producing one real-world outcome. "
+        "Keep the diagram restrained and place it in the lower-right third."
+    ),
+    "comparison": (
+        "Create a neutral comparison and decision diagram: two to four equal, unlabeled capability paths enter one agent decision gate. "
+        "Use parallel lanes and distinct line patterns, never a literal versus split, podium, or winner badge. "
+        "Keep the visual in the lower-right third so the comparison title can be rendered cleanly at upper-left."
+    ),
+    "top-n": (
+        "Create a curated market-map or shortlist diagram: five to six equal, unlabeled capability nodes form a calm orbit around one neutral agent-workflow hub. "
+        "Use one restrained green selection marker only. Do not rank nodes, draw a podium, or use trophy imagery. "
+        "Keep the visual in the lower-right third so the Top N title can be rendered cleanly at upper-left."
+    ),
+}
+
+
 def request_json(method: str, url: str, payload: dict[str, Any] | None = None) -> dict[str, Any]:
     body = None if payload is None else json.dumps(payload).encode("utf-8")
     req = Request(
@@ -97,11 +115,17 @@ def save_image(out_dir: Path, name: str, image: str) -> Path:
 
 def build_prompt(config: dict[str, Any], format_name: str) -> str:
     fmt = FORMATS[format_name]
+    cover_kind = config.get("cover_kind", "launch")
+    if cover_kind not in COVER_KIND_PROMPTS:
+        allowed = ", ".join(sorted(COVER_KIND_PROMPTS))
+        raise ValueError(f"Unknown cover_kind {cover_kind!r}. Use one of: {allowed}.")
     return (
         f"{fmt['prompt_suffix']} "
         f"Visual concept: {config['visual_concept']}. "
+        f"Composition: {COVER_KIND_PROMPTS[cover_kind]} "
         "Draw no text, letters, numbers, logos, brand marks, dashboards, browser screenshots, code, people, or devices. "
         "Use a near-white canvas, subtle square grid, restrained deep green linework, and one elegant abstract diagram of an external capability entering an agent workflow and producing a real-world outcome. "
+        "A deterministic renderer will add the exact eyebrow, headline, subtitle, and capability label after generation; preserve all typography safe areas completely empty. "
         "The composition must feel precise, calm, technical, and premium. "
         "Avoid dark themes, gradients, cyberpunk, floating dots, 3D blobs, warm beige editorial styling, excessive glow, dense detail, fake metrics, and fake UI."
     )
