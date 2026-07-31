@@ -231,6 +231,7 @@ git push -u origin release/b1
 | 质量门禁 | `sandbase-daily-ops/skills/api-launch-publish/references/quality-gates.md` | 发布前清单 |
 | reviewer | `sandbase-daily-ops/skills/api-launch-publish/references/reviewer-role.md` | 独立审核角色 |
 | 视觉系统 | `sandbase-daily-ops/skills/api-launch-publish/references/visual-system.md` | 封面品牌规范 |
+| 内容深度与真实性 | `sandbase-daily-ops/skills/api-launch-publish/references/content-depth-truth.md` | 场景、数字、对比矩阵、真实性标准 |
 | 去重索引 | `sandbase-blog/scripts/ai-content-generator/content-index.md` | 选题前必查 |
 | 合法 category | `sandbase-blog/src/utils/categories.ts` | 11 个枚举值 |
 | content schema | `sandbase-blog/src/content.config.ts` | zod frontmatter 校验 |
