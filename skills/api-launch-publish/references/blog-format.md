@@ -2,11 +2,13 @@
 
 Use this reference when the API launch package should include a real SandBase Blog draft.
 
-Source of truth inspected from:
+Source of truth inspected from the SandBase Blog repo (`sandbase-blog`, either the
+standalone repository or the copy inside `sandbase-monorepo`). Paths below are
+relative to that repo root:
 
-- `/Users/liyb/Documents/Codex/sandbase-monorepo/sandbase-blog/scripts/ai-content-generator/WRITING-METHOD.md`
-- `/Users/liyb/Documents/Codex/sandbase-monorepo/sandbase-blog/src/content.config.ts`
-- `/Users/liyb/Documents/Codex/sandbase-monorepo/sandbase-blog/src/utils/categories.ts`
+- `scripts/ai-content-generator/WRITING-METHOD.md`
+- `src/content.config.ts`
+- `src/utils/categories.ts`
 
 ## Content Locations
 

@@ -13,8 +13,10 @@ from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
 
-BASE = os.environ.get("SANDBASE_API_BASE", "https://api.sandbase.ai/v1")
-API_KEY = os.environ.get("SANDBASE_API_KEY")
+from sandbase_env import load_credentials, require
+
+
+DEFAULT_API_BASE = "https://api.sandbase.ai/v1"
 
 FORMATS = {
     "16x9": {
@@ -61,7 +63,7 @@ def request_json(method: str, url: str, payload: dict[str, Any] | None = None) -
         data=body,
         method=method,
         headers={
-            "Authorization": f"Bearer {API_KEY}",
+            "Authorization": f"Bearer {os.environ['SANDBASE_API_KEY']}",
             "Content-Type": "application/json",
             "Accept": "application/json",
             "User-Agent": "SandBaseApiLaunchPublish/1.0",
@@ -132,9 +134,8 @@ def build_prompt(config: dict[str, Any], format_name: str) -> str:
 
 
 def generate(out_dir: Path, output_name: str, aspect_ratio: str, prompt: str) -> Path:
-    if not API_KEY:
-        raise RuntimeError("SANDBASE_API_KEY is missing.")
-    submitted = request_json("POST", f"{BASE}/run", {
+    base = os.environ.get("SANDBASE_API_BASE", DEFAULT_API_BASE)
+    submitted = request_json("POST", f"{base}/run", {
         "model": "openai/gpt-image-2",
         "aspect_ratio": aspect_ratio,
         "output_format": "png",
@@ -144,7 +145,7 @@ def generate(out_dir: Path, output_name: str, aspect_ratio: str, prompt: str) ->
     run_id = submitted["id"]
     print(f"{output_name}: submitted {run_id}", flush=True)
     while True:
-        result = request_json("GET", f"{BASE}/run/{run_id}")
+        result = request_json("GET", f"{base}/run/{run_id}")
         status = result.get("status")
         print(f"{output_name}: {status}", flush=True)
         if status in {"completed", "failed", "timeout"}:
@@ -167,11 +168,22 @@ def main() -> int:
     parser.add_argument("--formats", nargs="+", default=["16x9"], choices=sorted(FORMATS))
     parser.add_argument("--print-prompts", action="store_true", help="Print prompts without calling the API.")
     parser.add_argument("--background-only", action="store_true", help="Keep API backgrounds without deterministic title composition.")
+    parser.add_argument(
+        "--env-file",
+        action="append",
+        default=[],
+        help="Credential file containing SANDBASE_API_KEY. Repeatable.",
+    )
     args = parser.parse_args()
 
     config = json.loads(Path(args.config).read_text(encoding="utf-8"))
     out_dir = Path(args.out_dir)
     slug = config["slug"]
+
+    # --print-prompts is offline, so only require a credential for real API calls.
+    if not args.print_prompts:
+        load_credentials(args.env_file)
+        require("SANDBASE_API_KEY")
 
     saved: list[Path] = []
     for format_name in args.formats:

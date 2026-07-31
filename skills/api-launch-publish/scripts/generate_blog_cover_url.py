@@ -12,26 +12,11 @@ from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
 
+from sandbase_env import load_credentials, require
+
+
 DEFAULT_API_BASE = "https://api.sandbase.ai"
 DEFAULT_MODEL = "google/nano-banana-pro"
-DEFAULT_ENV_FILES = [
-    "/Users/liyb/Documents/Codex/sandbase-monorepo/sandbase-registry/.env",
-]
-
-
-def load_env_file(path: str) -> None:
-    env_path = Path(path).expanduser()
-    if not env_path.exists():
-        return
-    for raw_line in env_path.read_text(encoding="utf-8").splitlines():
-        line = raw_line.strip()
-        if not line or line.startswith("#") or "=" not in line:
-            continue
-        key, value = line.split("=", 1)
-        key = key.strip()
-        value = value.strip().strip('"').strip("'")
-        if key and key not in os.environ:
-            os.environ[key] = value
 
 
 def request_json(method: str, url: str, api_key: str, payload: dict[str, Any] | None = None) -> dict[str, Any]:
@@ -170,12 +155,9 @@ def main() -> int:
     parser.add_argument("--poll-timeout", type=int, default=120)
     args = parser.parse_args()
 
-    for env_file in DEFAULT_ENV_FILES + args.env_file:
-        load_env_file(env_file)
-
-    api_key = os.environ.get("SANDBASE_API_KEY")
-    if not api_key:
-        raise RuntimeError("SANDBASE_API_KEY is missing. Set it in the environment or pass --env-file.")
+    # Explicit --env-file wins, then $SANDBASE_ENV_FILE, then the default locations.
+    load_credentials(args.env_file)
+    api_key = require("SANDBASE_API_KEY")
 
     url, metadata = generate_cover_url(
         args.title,
