@@ -1,0 +1,161 @@
+{
+  "source": "DataForSEO",
+  "fetched_at": "2026-08-01T04:58:37.387270+00:00",
+  "primary_query": "抖音数据接口",
+  "reader": "AI agent 开发者",
+  "search_intent": "commercial investigation",
+  "target_domain": "sandbase.ai",
+  "market": {
+    "location_code": 2156,
+    "language_code": "en"
+  },
+  "keyword_metrics": [
+    {
+      "keyword": "抖音数据接口",
+      "search_volume": null,
+      "competition": null,
+      "competition_index": null,
+      "cpc": null
+    },
+    {
+      "keyword": "小红书 API",
+      "search_volume": 210,
+      "competition": "LOW",
+      "competition_index": 2,
+      "cpc": null
+    },
+    {
+      "keyword": "微博数据 API",
+      "search_volume": null,
+      "competition": null,
+      "competition_index": null,
+      "cpc": null
+    },
+    {
+      "keyword": "社媒数据 agent",
+      "search_volume": null,
+      "competition": null,
+      "competition_index": null,
+      "cpc": null
+    },
+    {
+      "keyword": "AI agent 开发",
+      "search_volume": 260,
+      "competition": "LOW",
+      "competition_index": 15,
+      "cpc": 1.59
+    },
+    {
+      "keyword": "KOL 筛选工具",
+      "search_volume": null,
+      "competition": null,
+      "competition_index": null,
+      "cpc": null
+    },
+    {
+      "keyword": "抖音数据分析",
+      "search_volume": 30,
+      "competition": "LOW",
+      "competition_index": 12,
+      "cpc": 2.16
+    },
+    {
+      "keyword": "AI 视频生成",
+      "search_volume": 1600,
+      "competition": "MEDIUM",
+      "competition_index": 58,
+      "cpc": 0.87
+    },
+    {
+      "keyword": "LLM API 价格",
+      "search_volume": 10,
+      "competition": "LOW",
+      "competition_index": 14,
+      "cpc": null
+    },
+    {
+      "keyword": "大模型 API",
+      "search_volume": 140,
+      "competition": "MEDIUM",
+      "competition_index": 54,
+      "cpc": 1.36
+    }
+  ],
+  "serp": {
+    "se_results_count": 34,
+    "items_count": 11,
+    "organic_results": [
+      {
+        "rank": 1,
+        "domain": "developer.open-douyin.com",
+        "title": "OpenAPI 列表_移动/网站应用",
+        "url": "https://developer.open-douyin.com/docs/resource/zh-CN/dop/develop/openapi/list",
+        "description": "该接口用于获取用户授权第三方接口调用的凭证access_token。 该接口适用于抖音授权。 查询商品草稿数据用于查询商品草稿数据。 次数/条数信息。"
+      },
+      {
+        "rank": 2,
+        "domain": "github.com",
+        "title": "「Douyin_TikTok_Download_API」是一个开箱即用的高性能 ...",
+        "url": "https://github.com/Evil0ctal/Douyin_TikTok_Download_API",
+        "description": "本项目是基于PyWebIO，FastAPI，HTTPX，快速异步的抖音/TikTok数据爬取工具，并通过Web端实现在线批量解析以及下载无水印视频或图集，数据爬取API，iOS快捷指令无水印下载 ... Read more"
+      },
+      {
+        "rank": 3,
+        "domain": "github.com",
+        "title": "douyin-api",
+        "url": "https://github.com/topics/douyin-api",
+        "description": "🚀「Douyin_TikTok_Download_API」是一个开箱即用的高性能异步抖音、快手、TikTok、Bilibili数据爬取工具,支持API调用,在线批量解析及下载。"
+      },
+      {
+        "rank": 4,
+        "domain": "www.dingdanxia.com",
+        "title": "抖音数据API|订单侠开放平台",
+        "url": "https://www.dingdanxia.com/doc/155/8",
+        "description": "该接口需传入一个itemid，接口返回一个或多个与该商品相关的抖音数据信息. 接口地址： http://api.tbk.dingdanxia.com/spk/douyin_items 在线测试. Read more"
+      },
+      {
+        "rank": 5,
+        "domain": "gitee.com",
+        "title": "douyin-api - 抖音视频解析、抖音直播监控、抖音数据采集",
+        "url": "https://gitee.com/chenmin_study/douyin-api?skip_mobile=true",
+        "description": "抖音Api ：搜索、用户、视频、直播、带货、话题、推荐、榜单 · 抖音视频Api、抖音直播Api、抖音评论采集、抖音弹幕采集、抖音爬虫、抖音去水印、抖音视频下载、抖音视频解析 ... Read more"
+      },
+      {
+        "rank": 6,
+        "domain": "www.jzl.com",
+        "title": "抖音API数据接口服务从零上手：四步搞定抖音数据自动化采集",
+        "url": "https://www.jzl.com/news/douyin-api-8",
+        "description": "2 days ago — 本文介绍抖音API数据接口服务从零上手的完整流程，四步搞定：第一步明确数据需求（自身复盘/竞品对标/用户分析/直播分析），第二步选择接入方式（API ..."
+      },
+      {
+        "rank": 7,
+        "domain": "developer.open-douyin.com",
+        "title": "OpenAPI 简介_小程序",
+        "url": "https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/server/server-api-introduction",
+        "description": "抖音小程序、小游戏给开发者提供了服务端使用的HTTPS API 接口 。 一套服务端OpenAPI 能力,以供开发者调试使用。"
+      },
+      {
+        "rank": 8,
+        "domain": "zhuanlan.zhihu.com",
+        "title": "从0到1，获取抖音用户数据，抖音直播间数据抓取",
+        "url": "https://zhuanlan.zhihu.com/p/430437846",
+        "description": "Nov 7, 2021 — 这一篇文章我将介绍抖音用户数据爬取。 短视频直播数据采集接口SDK请点击查看接口文档. 一、分析用户请求包. 如果你已经配置好环境 ... Read more"
+      },
+      {
+        "rank": 9,
+        "domain": "www.jzl.com",
+        "title": "抖音API数据接口服务，市面上有哪些方案？",
+        "url": "https://www.jzl.com/news/douyin-api-9",
+        "description": "2 days ago — 本文对比四种抖音API数据接口方案——抖音官方API（需企业资质）、第三方免费工具（不稳定）、第三方付费工具（价格不透明）、极致了数据抖音API接口 ..."
+      },
+      {
+        "rank": 10,
+        "domain": "github.com",
+        "title": "justoneapi/data-api: Just One API - 数据接口服务: 接口,小红 ...",
+        "url": "https://github.com/justoneapi/data-api",
+        "description": "我们是一家专业的数据服务提供商，提供标准的HTTP 接口服务，并可根据您的需求定制化数据服务。 系统概览. 文档中心支持查看接口健康状态、版本化API 路径、请求参数以及各 ... Read more"
+      }
+    ]
+  },
+  "reviewer_note": "Evidence informs intent and entity coverage. It does not guarantee ranking, traffic, demand, or conversion."
+}
