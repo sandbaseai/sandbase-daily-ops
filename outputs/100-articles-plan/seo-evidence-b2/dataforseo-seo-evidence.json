@@ -1,0 +1,133 @@
+{
+  "source": "DataForSEO",
+  "fetched_at": "2026-08-01T02:55:25.586781+00:00",
+  "primary_query": "best LLM for AI agents 2026",
+  "reader": "developers choosing models for autonomous agents",
+  "search_intent": "commercial investigation",
+  "target_domain": "sandbase.ai",
+  "market": {
+    "location_code": 2840,
+    "language_code": "en"
+  },
+  "keyword_metrics": [
+    {
+      "keyword": "best LLM for AI agents 2026",
+      "search_volume": null,
+      "competition": null,
+      "competition_index": null,
+      "cpc": null
+    },
+    {
+      "keyword": "claude opus 5 review",
+      "search_volume": null,
+      "competition": null,
+      "competition_index": null,
+      "cpc": null
+    },
+    {
+      "keyword": "claude sonnet 5 vs gpt 4o",
+      "search_volume": null,
+      "competition": null,
+      "competition_index": null,
+      "cpc": null
+    },
+    {
+      "keyword": "kimi k3 model",
+      "search_volume": 10,
+      "competition": "LOW",
+      "competition_index": 0,
+      "cpc": null
+    },
+    {
+      "keyword": "gpt 5.6 release",
+      "search_volume": 110,
+      "competition": "LOW",
+      "competition_index": 0,
+      "cpc": 10.48
+    },
+    {
+      "keyword": "best model for coding agents",
+      "search_volume": null,
+      "competition": null,
+      "competition_index": null,
+      "cpc": null
+    },
+    {
+      "keyword": "1 million token context model",
+      "search_volume": null,
+      "competition": null,
+      "competition_index": null,
+      "cpc": null
+    },
+    {
+      "keyword": "LLM API cost comparison",
+      "search_volume": 70,
+      "competition": "MEDIUM",
+      "competition_index": 39,
+      "cpc": 9.18
+    },
+    {
+      "keyword": "anthropic prompt caching",
+      "search_volume": 390,
+      "competition": "LOW",
+      "competition_index": 0,
+      "cpc": null
+    },
+    {
+      "keyword": "autonomous agent architecture",
+      "search_volume": 10,
+      "competition": "MEDIUM",
+      "competition_index": 43,
+      "cpc": 16.74
+    }
+  ],
+  "serp": {
+    "se_results_count": 141,
+    "items_count": 11,
+    "organic_results": [
+      {
+        "rank": 1,
+        "domain": "www.reddit.com",
+        "title": "Best AI Agent Building Tools in 2026 (No-Code & ...",
+        "url": "https://www.reddit.com/r/AI_Agents/comments/1slb7xi/best_ai_agent_building_tools_in_2026_nocode/",
+        "description": "Best AI Agent Building Tools in 2026 (No-Code & Developer Options) · Claude Agent SDK A Python SDK for working directly with Claude models. Read more"
+      },
+      {
+        "rank": 2,
+        "domain": "pub.towardsai.net",
+        "title": "Top AI Agent Frameworks in 2026: A Production-Ready ...",
+        "url": "https://pub.towardsai.net/top-ai-agent-frameworks-in-2026-a-production-ready-comparison-7ba5e39ad56d",
+        "description": "Apr 1, 2026 — The 8 AI Agent Frameworks That Matter in 2026. 1. LangGraph — The Production Standard. LangGraph is LangChain's graph-based agent orchestration ... Read more"
+      },
+      {
+        "rank": 3,
+        "domain": "blaxel.ai",
+        "title": "Best AI Agents in March 2026 | Blaxel Blog",
+        "url": "https://blaxel.ai/blog/best-ai-agents",
+        "description": "Mar 25, 2026 — Most agents today run on large language models (LLMs) as their reasoning backbone. 1. Claude Code. Anthropic's terminal-native coding agent ... Read more"
+      },
+      {
+        "rank": 4,
+        "domain": "www.faros.ai",
+        "title": "Best AI Coding Agents for 2026: Real-World Developer ...",
+        "url": "https://www.faros.ai/blog/best-ai-coding-agents-2026",
+        "description": "Jan 2, 2026 — The front-runners for 2026 are Cursor, Claude Code, Codex, GitHub Copilot, and Cline, and the right pick depends on whether you want speed, ..."
+      },
+      {
+        "rank": 5,
+        "domain": "blog.jetbrains.com",
+        "title": "Top Agentic Frameworks for Building Applications 2026",
+        "url": "https://blog.jetbrains.com/pycharm/2026/06/top-agentic-frameworks-for-building-applications-2026/",
+        "description": "Jun 2, 2026 — Let's compare the leading agentic AI frameworks in 2026 and explore what each framework does best – click here to find the right framework ..."
+      },
+      {
+        "rank": 6,
+        "domain": "ai.plainenglish.io",
+        "title": "I Tested 5 AI Agents in 2026 and One Completely Shocked ...",
+        "url": "https://ai.plainenglish.io/i-tested-5-ai-agents-in-2026-and-one-completely-shocked-me-2031a3a1be4b",
+        "description": "May 12, 2026 — I Tested 5 AI Agents in 2026 and One Completely Shocked Me · 1. OpenAI Operator · 2. Google Gemini · 3. Anthropic Claude · 4. Microsoft Copilot · 5. Read more"
+      }
+    ]
+  },
+  "reviewer_note": "Evidence informs intent and entity coverage. It does not guarantee ranking, traffic, demand, or conversion."
+}

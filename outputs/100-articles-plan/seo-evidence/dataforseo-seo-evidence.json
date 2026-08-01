@@ -1,0 +1,147 @@
+{
+  "source": "DataForSEO",
+  "fetched_at": "2026-08-01T02:43:46.225790+00:00",
+  "primary_query": "social media data API for AI agents",
+  "reader": "AI agent developers building social data workflows",
+  "search_intent": "commercial investigation",
+  "target_domain": "sandbase.ai",
+  "market": {
+    "location_code": 2840,
+    "language_code": "en"
+  },
+  "keyword_metrics": [
+    {
+      "keyword": "social media data API for AI agents",
+      "search_volume": null,
+      "competition": null,
+      "competition_index": null,
+      "cpc": null
+    },
+    {
+      "keyword": "douyin data API",
+      "search_volume": null,
+      "competition": null,
+      "competition_index": null,
+      "cpc": null
+    },
+    {
+      "keyword": "xiaohongshu API for agents",
+      "search_volume": null,
+      "competition": null,
+      "competition_index": null,
+      "cpc": null
+    },
+    {
+      "keyword": "LLM API pricing 2026",
+      "search_volume": null,
+      "competition": null,
+      "competition_index": null,
+      "cpc": null
+    },
+    {
+      "keyword": "AI video generation API cost",
+      "search_volume": null,
+      "competition": null,
+      "competition_index": null,
+      "cpc": null
+    },
+    {
+      "keyword": "per-call vs token pricing",
+      "search_volume": null,
+      "competition": null,
+      "competition_index": null,
+      "cpc": null
+    },
+    {
+      "keyword": "best AI image generation API",
+      "search_volume": 10,
+      "competition": "LOW",
+      "competition_index": 0,
+      "cpc": null
+    },
+    {
+      "keyword": "claude opus 5 vs sonnet 5",
+      "search_volume": null,
+      "competition": null,
+      "competition_index": null,
+      "cpc": null
+    },
+    {
+      "keyword": "kimi k3 review",
+      "search_volume": null,
+      "competition": null,
+      "competition_index": null,
+      "cpc": null
+    },
+    {
+      "keyword": "best models autonomous agents",
+      "search_volume": null,
+      "competition": null,
+      "competition_index": null,
+      "cpc": null
+    }
+  ],
+  "serp": {
+    "se_results_count": 156,
+    "items_count": 11,
+    "organic_results": [
+      {
+        "rank": 1,
+        "domain": "www.socialcrawl.dev",
+        "title": "Social Media API for AI Agents — MCP-Ready",
+        "url": "https://www.socialcrawl.dev/solutions/ai-agents",
+        "description": "Build AI agents that read social media. One MCP server, unified schema, 46 platforms, 368 endpoints. 100 free credits. No card required."
+      },
+      {
+        "rank": 2,
+        "domain": "www.reddit.com",
+        "title": "Building a social media agent without dealing with every ...",
+        "url": "https://www.reddit.com/r/AI_Agents/comments/1u9vqfm/building_a_social_media_agent_without_dealing/",
+        "description": "Sociality MCP gives the agent one MCP layer for social media data. It can work with account stats, published posts and stories, competitor posts ... Read more"
+      },
+      {
+        "rank": 3,
+        "domain": "bundle.social",
+        "title": "Social Media API for AI Agents - MCP Server, CLI & SDK",
+        "url": "https://bundle.social/social-media-api-for-ai-agents",
+        "description": "The social media API for AI agents that can post, schedule, and report. One API for 14+ platforms - with an official MCP server, a JSON-first CLI, and a fully- ..."
+      },
+      {
+        "rank": 4,
+        "domain": "www.outstand.so",
+        "title": "Social Media API for AI Agents: Give Agents Publishing",
+        "url": "https://www.outstand.so/blog/social-media-api-for-ai-agents",
+        "description": "Jul 17, 2026 — One API, one data model. The fix is a single social media API for AI agents that presents one standardized data model across every platform. Read more"
+      },
+      {
+        "rank": 5,
+        "domain": "social-api.ai",
+        "title": "SocialAPI.ai: Unified Social Media API for AI Agents ...",
+        "url": "https://social-api.ai/",
+        "description": "One unified API to read, manage, and respond to comments, DMs, mentions, and reviews across Instagram, Facebook, Google, TikTok, and more. MCP-native for AI ..."
+      },
+      {
+        "rank": 6,
+        "domain": "www.blotato.com",
+        "title": "Best Social Media APIs for Developers & AI Agents (2026)",
+        "url": "https://www.blotato.com/blog/best-social-media-api-tools",
+        "description": "Jul 2, 2026 — The best social media APIs in 2026, ranked for developers and AI agents on price, platform reach, and MCP support."
+      },
+      {
+        "rank": 7,
+        "domain": "zernio.com",
+        "title": "Social Media API for AI Agents: The Complete Integration ...",
+        "url": "https://zernio.com/blog/social-media-api-for-ai-agents-the-complete-integration-guide",
+        "description": "Mar 1, 2026 — In this tutorial, you'll learn how to integrate a unified social media API that allows AI agents to post and interact with social media ..."
+      },
+      {
+        "rank": 8,
+        "domain": "www.admove.ai",
+        "title": "AI agents for social media: a no-hype guide for 2026",
+        "url": "https://www.admove.ai/blog/ai-agents-for-social-media-guide",
+        "description": "Apr 30, 2026 — A social media AI agent is software that can perceive data from social platforms, reason about what action to take based on that data, and ... Read more"
+      }
+    ]
+  },
+  "reviewer_note": "Evidence informs intent and entity coverage. It does not guarantee ranking, traffic, demand, or conversion."
+}
