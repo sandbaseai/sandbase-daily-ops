@@ -1,0 +1,29 @@
+{
+  "api_name": "SEO Review - LLM Models",
+  "provider": "SandBase",
+  "provider_description": "Agent platform",
+  "sandbase_value": "Open ecosystem",
+  "channels": ["blog"],
+  "locales": ["en"],
+  "author": {"name": "SandBase Team", "voice": "technical", "approved_first_person_facts": []},
+  "source_facts": [],
+  "seo_review": {
+    "primary_query": "best LLM for AI agents 2026",
+    "reader": "developers choosing models for autonomous agents",
+    "search_intent": "commercial investigation",
+    "location_code": 2840,
+    "language_code": "en",
+    "seed_keywords": [
+      "claude opus 5 review",
+      "claude sonnet 5 vs gpt 4o",
+      "kimi k3 model",
+      "gpt 5.6 release",
+      "best model for coding agents",
+      "1 million token context model",
+      "LLM API cost comparison",
+      "anthropic prompt caching",
+      "autonomous agent architecture"
+    ],
+    "target_domain": "sandbase.ai"
+  }
+}

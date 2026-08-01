@@ -1,0 +1,147 @@
+{
+  "source": "DataForSEO",
+  "fetched_at": "2026-08-01T02:54:09.678631+00:00",
+  "primary_query": "best AI image generation API 2026",
+  "reader": "developers building image generation into products",
+  "search_intent": "commercial investigation",
+  "target_domain": "sandbase.ai",
+  "market": {
+    "location_code": 2840,
+    "language_code": "en"
+  },
+  "keyword_metrics": [
+    {
+      "keyword": "best AI image generation API 2026",
+      "search_volume": null,
+      "competition": null,
+      "competition_index": null,
+      "cpc": null
+    },
+    {
+      "keyword": "AI video generation API",
+      "search_volume": null,
+      "competition": null,
+      "competition_index": null,
+      "cpc": null
+    },
+    {
+      "keyword": "text to video API",
+      "search_volume": 50,
+      "competition": "LOW",
+      "competition_index": 1,
+      "cpc": null
+    },
+    {
+      "keyword": "image to video AI",
+      "search_volume": 40500,
+      "competition": "MEDIUM",
+      "competition_index": 44,
+      "cpc": 2.73
+    },
+    {
+      "keyword": "best AI video generation tool",
+      "search_volume": null,
+      "competition": null,
+      "competition_index": null,
+      "cpc": null
+    },
+    {
+      "keyword": "MiniMax H3 video",
+      "search_volume": null,
+      "competition": null,
+      "competition_index": null,
+      "cpc": null
+    },
+    {
+      "keyword": "Kling video API",
+      "search_volume": null,
+      "competition": null,
+      "competition_index": null,
+      "cpc": null
+    },
+    {
+      "keyword": "Seedream AI image",
+      "search_volume": null,
+      "competition": null,
+      "competition_index": null,
+      "cpc": null
+    },
+    {
+      "keyword": "AI image editing API",
+      "search_volume": null,
+      "competition": null,
+      "competition_index": null,
+      "cpc": null
+    },
+    {
+      "keyword": "embedding model for RAG",
+      "search_volume": null,
+      "competition": null,
+      "competition_index": null,
+      "cpc": null
+    }
+  ],
+  "serp": {
+    "se_results_count": 141,
+    "items_count": 11,
+    "organic_results": [
+      {
+        "rank": 1,
+        "domain": "fal.ai",
+        "title": "10 Best AI Image Generators in 2026",
+        "url": "https://fal.ai/learn/tools/ai-image-generators",
+        "description": "Mar 5, 2026 — The best AI image generators in 2026 are fal, Nano Banana 2, and FLUX.2 [pro]. Here's my shortlist of the 10 best models I reviewed: AI Image ... Read more"
+      },
+      {
+        "rank": 2,
+        "domain": "aimlapi.com",
+        "title": "The Best AI Image Generators in 2026: 12 Models Tested",
+        "url": "https://aimlapi.com/blog/the-best-ai-image-generators",
+        "description": "Nov 27, 2025 — Detailed Reviews of the Top 12 AI Image Generators · 1. Midjourney · 2. DALL-E 3 · 3. GPT Image 2 · 4. Nano Banana 2 (Gemini 3 Pro Image) · 5. Grok ... Read more"
+      },
+      {
+        "rank": 3,
+        "domain": "www.atlascloud.ai",
+        "title": "Best AI Image Generation Models in 2026",
+        "url": "https://www.atlascloud.ai/blog/guides/best-ai-image-generation-models-2026",
+        "description": "Feb 28, 2026 — Imagen 4 Ultra from Google DeepMind produces the most photorealistic output of any publicly available image generation API in 2026."
+      },
+      {
+        "rank": 4,
+        "domain": "maginary.ai",
+        "title": "Best AI Image Generation API (2026)",
+        "url": "https://maginary.ai/best-ai-image-generator-api",
+        "description": "Feb 6, 2026 — Compare the best AI image generation APIs for developers. OpenAI, Stability AI, Replicate, FAL, and Maginary — features, pricing, ..."
+      },
+      {
+        "rank": 5,
+        "domain": "developer.puter.com",
+        "title": "Best Image Generation APIs in 2026",
+        "url": "https://developer.puter.com/blog/best-image-generation-apis/",
+        "description": "Jun 24, 2026 — The best image generation APIs in 2026 are Puter.js, FLUX, OpenAI GPT Image, Google Nano Banana, fal.ai, and Replicate."
+      },
+      {
+        "rank": 6,
+        "domain": "www.youtube.com",
+        "title": "I Tried Every AI Image Generator. These are the BEST for 2026.",
+        "url": "https://www.youtube.com/watch?v=tl3as05qpmM",
+        "description": "We're going to be breaking down the best AI image and avatar generators out there for comparing fidelity editability and price."
+      },
+      {
+        "rank": 7,
+        "domain": "api.market",
+        "title": "7 Best AI Image Generation APIs in 2026: Pricing, Features ...",
+        "url": "https://api.market/blog/astrosoft/image-generation/best-ai-Image-generation-apis",
+        "description": "Jul 16, 2026 — Discover the best AI image generation APIs of 2026: 1. Low-Cost Image Generate API 2. Ultra Low Cost AI Images 3. Flux 2 Pro 4. Seedream 4.5 5. ..."
+      },
+      {
+        "rank": 8,
+        "domain": "llm-stats.com",
+        "title": "Best AI for Image Generation in 2026",
+        "url": "https://llm-stats.com/leaderboards/best-ai-for-image-generation",
+        "description": "As of July 2026, GPT Image 2 by openai is the top-ranked AI image generator with an arena score of 446, followed by GPT Image 1.5 (315) and MAI-Image-2.5 (215). Read more"
+      }
+    ]
+  },
+  "reviewer_note": "Evidence informs intent and entity coverage. It does not guarantee ranking, traffic, demand, or conversion."
+}

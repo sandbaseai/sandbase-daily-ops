@@ -1,0 +1,29 @@
+{
+  "api_name": "SEO Batch Review",
+  "provider": "SandBase",
+  "provider_description": "Agent platform with social media data APIs, LLMs, and multimodal generation",
+  "sandbase_value": "Open ecosystem agent platform",
+  "channels": ["blog"],
+  "locales": ["en"],
+  "author": {"name": "SandBase Team", "voice": "technical", "approved_first_person_facts": []},
+  "source_facts": [],
+  "seo_review": {
+    "primary_query": "social media data API for AI agents",
+    "reader": "AI agent developers building social data workflows",
+    "search_intent": "commercial investigation",
+    "location_code": 2840,
+    "language_code": "en",
+    "seed_keywords": [
+      "douyin data API",
+      "xiaohongshu API for agents",
+      "LLM API pricing 2026",
+      "AI video generation API cost",
+      "per-call vs token pricing",
+      "best AI image generation API",
+      "claude opus 5 vs sonnet 5",
+      "kimi k3 review",
+      "best models autonomous agents"
+    ],
+    "target_domain": "sandbase.ai"
+  }
+}

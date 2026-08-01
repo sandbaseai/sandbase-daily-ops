@@ -1,0 +1,29 @@
+{
+  "api_name": "SEO Review - Image and Video",
+  "provider": "SandBase",
+  "provider_description": "Agent platform",
+  "sandbase_value": "Open ecosystem",
+  "channels": ["blog"],
+  "locales": ["en"],
+  "author": {"name": "SandBase Team", "voice": "technical", "approved_first_person_facts": []},
+  "source_facts": [],
+  "seo_review": {
+    "primary_query": "best AI image generation API 2026",
+    "reader": "developers building image generation into products",
+    "search_intent": "commercial investigation",
+    "location_code": 2840,
+    "language_code": "en",
+    "seed_keywords": [
+      "AI video generation API",
+      "text to video API",
+      "image to video AI",
+      "best AI video generation tool",
+      "MiniMax H3 video",
+      "Kling video API",
+      "Seedream AI image",
+      "AI image editing API",
+      "embedding model for RAG"
+    ],
+    "target_domain": "sandbase.ai"
+  }
+}
