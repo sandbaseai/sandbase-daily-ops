@@ -346,3 +346,74 @@ SANDBASE_API_KEY=xxx ./regen-covers.sh --limit=3
 # 全量执行（约 3 分钟/张，93 张 ≈ 5 小时）
 SANDBASE_API_KEY=xxx ./regen-covers.sh
 ```
+
+---
+
+## 封面生成完整工作流（必须遵守）
+
+> ⚠️ 生成的图片 URL（`media.sandbase.ai/files/`）是**临时地址**，不能直接用于博客。
+> 必须上传到 `static.sandbase.ai` 后才算完成。
+
+### 工作流三步走
+
+```
+Step 1: 生成封面
+  → 调用 SandBase API (nano-banana-pro) 生成图片
+  → 获得临时 URL: media.sandbase.ai/files/xxx/0.jpg
+
+Step 2: 上传到永久存储
+  → 下载临时图片
+  → 上传到 COS (static.sandbase.ai/blog/covers/{slug}.{ext})
+  → 获得永久 URL: static.sandbase.ai/blog/covers/{slug}.jpg
+
+Step 3: 更新 frontmatter
+  → 将永久 URL 写入 EN 和 ZH 文章的 image 字段
+```
+
+### 工具和脚本
+
+| 步骤 | 脚本 | 位置 |
+|------|------|------|
+| 生成（单张） | `cover-generator.ts` 的 `generateCoverImage()` | sandbase-blog/scripts/ai-content-generator/ |
+| 生成（批量） | `regen-covers.sh` | sandbase-blog/scripts/ai-content-generator/ |
+| 上传到 static | `migrate_covers.py` | sandbase-blog/scripts/ |
+| 生成+上传（launch 包） | `generate_blog_cover_url.py` | sandbase-daily-ops/skills/api-launch-publish/scripts/ |
+
+### 批量重新生成完整命令
+
+```bash
+# 1. 生成新封面（写入 media.sandbase.ai 临时 URL 到 frontmatter）
+cd sandbase-blog/scripts/ai-content-generator
+export $(grep -v '^#' ~/.config/sandbase/.env | xargs)
+./regen-covers.sh --limit=5   # 或去掉 --limit 全量跑
+
+# 2. 上传到 static.sandbase.ai（替换 frontmatter 中的临时 URL）
+cd sandbase-blog/scripts
+python3 migrate_covers.py               # EN
+python3 migrate_covers.py --locale zh-CN # ZH
+```
+
+### URL 格式规则
+
+| 域名 | 性质 | 能否用于生产 |
+|------|------|-------------|
+| `media.sandbase.ai/files/` | 临时（图片生成 API 返回） | ❌ 不能 |
+| `media.sandbase.ai/uploads/` | 半永久（手动上传） | ⚠️ 可用但不推荐 |
+| `static.sandbase.ai/blog/covers/` | 永久（COS CDN） | ✅ 唯一推荐 |
+
+### 前置条件
+
+环境变量（在 `~/.config/sandbase/.env` 中）：
+
+```
+SANDBASE_API_KEY=sk-xxx        # 图片生成 API
+COS_SECRET_ID=AKIDxxx          # 腾讯云 COS 上传
+COS_SECRET_KEY=xxx             # 腾讯云 COS 上传
+COS_REGION=ap-singapore        # COS 区域
+```
+
+### 验收标准补充
+
+- [ ] 最终 frontmatter 中的 image URL 以 `https://static.sandbase.ai/blog/covers/` 开头
+- [ ] 不存在 `media.sandbase.ai/files/` 的临时 URL 残留
+- [ ] EN 和 ZH 版本使用同一个封面 URL

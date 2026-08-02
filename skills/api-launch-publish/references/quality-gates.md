@@ -64,4 +64,5 @@ Run this review before a package is ready for publishing.
 - [ ] When the DataForSEO gate is enabled, `dataforseo-seo-evidence.json` exists and `review-report.md` includes `## DataForSEO Evidence`.
 - [ ] The reviewer visually inspected every final cover raster, not only its prompt or URL.
 - [ ] Every publishable cover has a deterministic, readable title that matches the article headline or an approved short form.
-- [ ] Final image URLs use `media.sandbase.ai/uploads/`, `media.sandbase.ai/files/`, or a versioned first-party blog asset path. Model-provider URLs, signed URLs, browser blobs, and temporary URLs are rejected.
+- [ ] Final image URLs use `static.sandbase.ai/blog/covers/` (permanent COS CDN). Model-provider URLs (`media.sandbase.ai/files/`), signed URLs, browser blobs, and temporary URLs are rejected.
+- [ ] Before publication, run `sandbase-blog/scripts/migrate_covers.py` to upload any temporary `media.sandbase.ai/files/` URLs to `static.sandbase.ai/blog/covers/`.

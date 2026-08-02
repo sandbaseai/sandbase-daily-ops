@@ -294,7 +294,9 @@ Feedback welcome in this channel.
 
 ## Image Style
 
-Use the fixed SandBase visual system. The image API generates only the background and abstract capability visual; deterministic layout code renders the title, subtitle, eyebrow, and capability label. This is required because image models are unreliable at product names and typography.
+Use the fixed SandBase visual system. Read `references/visual-system.md` for the complete cover generation workflow.
+
+**Critical rule**: Generated image URLs from `media.sandbase.ai/files/` are **temporary**. They must be uploaded to `static.sandbase.ai/blog/covers/` via `sandbase-blog/scripts/migrate_covers.py` before publication. The only acceptable final URL pattern is `https://static.sandbase.ai/blog/covers/{slug}.{ext}`.
 
 Read `references/image-formats.md` before generating images.
 Read `references/visual-system.md` before generating images.
@@ -425,6 +427,6 @@ Before final response:
 - An independent reviewer has written `review-report.md` with `Status: APPROVED`; a `REVISE` result blocks publication.
 - The reviewer has visually checked final raster assets, not just prompts or frontmatter.
 - Every final cover has a readable deterministic headline; a text-free generated background is not itself a publishable cover.
-- The final cover uses a durable URL from `media.sandbase.ai/uploads/`, `media.sandbase.ai/files/`, or a versioned first-party blog asset path. Do not use a temporary model URL.
+- The final cover uses a durable URL from `static.sandbase.ai/blog/covers/`. Temporary URLs from `media.sandbase.ai/files/` must be migrated via `migrate_covers.py` before publication.
 - Public copy describes the integration as a SandBase ecosystem capability, not a provider deployment on SandBase.
 - Xiaohongshu uses a strong native hook and a 4-8 page article-screenshot carousel sourced from the comparison or Top N article; it does not reuse the generic overseas launch poster.
