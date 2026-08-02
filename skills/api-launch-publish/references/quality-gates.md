@@ -17,6 +17,17 @@ Run this review before a package is ready for publishing.
 - [ ] Chinese content is a native rewrite, not a translation.
 - [ ] Each platform has a distinct lead, title, and CTA.
 
+## 真人感与视觉证据
+
+- [ ] 文章包含 2-4 张内嵌截图（终端输出、API 响应、模型输出对比、费用面板等），截图是"证据"不是"装饰"。
+- [ ] 每张截图有 caption（`*说明文字*`）和上下文解释。
+- [ ] 开头使用经验发现式钩子（具体场景/问题/观察），而非概述式开头（"AI is changing..."）。
+- [ ] 关键转折处有思考过程外化的短句（暴露为什么在这里停顿、为什么这个重要）。
+- [ ] 至少有一处限定性声明（明确标注测试范围、数据边界、未验证的场景）。
+- [ ] **真人感短句不照搬 `_base-skill.md` 中的示例句式。** 禁止直接使用 "I paused here because..."、"Found the pattern on the third try"、"This is where my data ends" 等文件中列出的模板句。每篇文章的短句必须是该文章语境下自然的原创表述。
+- [ ] 同一批次发布的多篇文章之间，真人感短句无重复或高度雷同。
+- [ ] 不使用禁用词汇表中的句式（"In today's rapidly evolving landscape"、"Let's dive in"、"Game-changer"、"Seamlessly" 等）。
+
 ## Platform and SEO
 
 - [ ] SandBase Blog is the canonical source when the subject overlaps.
