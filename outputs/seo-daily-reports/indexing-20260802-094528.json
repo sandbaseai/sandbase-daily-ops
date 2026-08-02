@@ -1,0 +1,108 @@
+{
+  "timestamp": "2026-08-02T09:45:28Z",
+  "total_submitted": 200,
+  "success": 6,
+  "errors": 194,
+  "error_details": [
+    {
+      "url": "https://www.sandbase.ai/models",
+      "code": 429,
+      "message": "Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:49477536182'."
+    },
+    {
+      "url": "https://www.sandbase.ai/apis",
+      "code": 429,
+      "message": "Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:49477536182'."
+    },
+    {
+      "url": "https://www.sandbase.ai/vendor",
+      "code": 429,
+      "message": "Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:49477536182'."
+    },
+    {
+      "url": "https://www.sandbase.ai/pricing",
+      "code": 429,
+      "message": "Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:49477536182'."
+    },
+    {
+      "url": "https://www.sandbase.ai/agents",
+      "code": 429,
+      "message": "Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:49477536182'."
+    },
+    {
+      "url": "https://www.sandbase.ai/skills",
+      "code": 429,
+      "message": "Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:49477536182'."
+    },
+    {
+      "url": "https://www.sandbase.ai/",
+      "code": 429,
+      "message": "Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:49477536182'."
+    },
+    {
+      "url": "https://www.sandbase.ai/vendor/openai",
+      "code": 429,
+      "message": "Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:49477536182'."
+    },
+    {
+      "url": "https://www.sandbase.ai/vendor/anthropic",
+      "code": 429,
+      "message": "Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:49477536182'."
+    },
+    {
+      "url": "https://www.sandbase.ai/vendor/google",
+      "code": 429,
+      "message": "Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:49477536182'."
+    },
+    {
+      "url": "https://www.sandbase.ai/vendor/deepseek",
+      "code": 429,
+      "message": "Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:49477536182'."
+    },
+    {
+      "url": "https://www.sandbase.ai/vendor/meta",
+      "code": 429,
+      "message": "Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:49477536182'."
+    },
+    {
+      "url": "https://www.sandbase.ai/vendor/mistral",
+      "code": 429,
+      "message": "Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:49477536182'."
+    },
+    {
+      "url": "https://www.sandbase.ai/vendor/xai",
+      "code": 429,
+      "message": "Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:49477536182'."
+    },
+    {
+      "url": "https://www.sandbase.ai/vendor/microsoft",
+      "code": 429,
+      "message": "Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:49477536182'."
+    },
+    {
+      "url": "https://www.sandbase.ai/vendor/nvidia",
+      "code": 429,
+      "message": "Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:49477536182'."
+    },
+    {
+      "url": "https://www.sandbase.ai/vendor/alibaba",
+      "code": 429,
+      "message": "Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:49477536182'."
+    },
+    {
+      "url": "https://www.sandbase.ai/vendor/cohere",
+      "code": 429,
+      "message": "Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:49477536182'."
+    },
+    {
+      "url": "https://www.sandbase.ai/vendor/perplexity",
+      "code": 429,
+      "message": "Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:49477536182'."
+    },
+    {
+      "url": "https://www.sandbase.ai/vendor/bytedance",
+      "code": 429,
+      "message": "Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:49477536182'."
+    }
+  ]
+}

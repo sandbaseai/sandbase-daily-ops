@@ -1,0 +1,108 @@
+{
+  "timestamp": "2026-08-02T09:42:52Z",
+  "total_submitted": 200,
+  "success": 0,
+  "errors": 200,
+  "error_details": [
+    {
+      "url": "https://www.sandbase.ai/models",
+      "code": 403,
+      "message": "Permission denied. Failed to verify the URL ownership."
+    },
+    {
+      "url": "https://www.sandbase.ai/apis",
+      "code": 403,
+      "message": "Permission denied. Failed to verify the URL ownership."
+    },
+    {
+      "url": "https://www.sandbase.ai/vendor",
+      "code": 403,
+      "message": "Permission denied. Failed to verify the URL ownership."
+    },
+    {
+      "url": "https://www.sandbase.ai/pricing",
+      "code": 403,
+      "message": "Permission denied. Failed to verify the URL ownership."
+    },
+    {
+      "url": "https://www.sandbase.ai/agents",
+      "code": 403,
+      "message": "Permission denied. Failed to verify the URL ownership."
+    },
+    {
+      "url": "https://www.sandbase.ai/skills",
+      "code": 403,
+      "message": "Permission denied. Failed to verify the URL ownership."
+    },
+    {
+      "url": "https://www.sandbase.ai/",
+      "code": 403,
+      "message": "Permission denied. Failed to verify the URL ownership."
+    },
+    {
+      "url": "https://www.sandbase.ai/vendor/openai",
+      "code": 403,
+      "message": "Permission denied. Failed to verify the URL ownership."
+    },
+    {
+      "url": "https://www.sandbase.ai/vendor/anthropic",
+      "code": 403,
+      "message": "Permission denied. Failed to verify the URL ownership."
+    },
+    {
+      "url": "https://www.sandbase.ai/vendor/google",
+      "code": 403,
+      "message": "Permission denied. Failed to verify the URL ownership."
+    },
+    {
+      "url": "https://www.sandbase.ai/vendor/deepseek",
+      "code": 403,
+      "message": "Permission denied. Failed to verify the URL ownership."
+    },
+    {
+      "url": "https://www.sandbase.ai/vendor/meta",
+      "code": 403,
+      "message": "Permission denied. Failed to verify the URL ownership."
+    },
+    {
+      "url": "https://www.sandbase.ai/vendor/mistral",
+      "code": 403,
+      "message": "Permission denied. Failed to verify the URL ownership."
+    },
+    {
+      "url": "https://www.sandbase.ai/vendor/xai",
+      "code": 403,
+      "message": "Permission denied. Failed to verify the URL ownership."
+    },
+    {
+      "url": "https://www.sandbase.ai/vendor/microsoft",
+      "code": 403,
+      "message": "Permission denied. Failed to verify the URL ownership."
+    },
+    {
+      "url": "https://www.sandbase.ai/vendor/nvidia",
+      "code": 403,
+      "message": "Permission denied. Failed to verify the URL ownership."
+    },
+    {
+      "url": "https://www.sandbase.ai/vendor/alibaba",
+      "code": 403,
+      "message": "Permission denied. Failed to verify the URL ownership."
+    },
+    {
+      "url": "https://www.sandbase.ai/vendor/cohere",
+      "code": 403,
+      "message": "Permission denied. Failed to verify the URL ownership."
+    },
+    {
+      "url": "https://www.sandbase.ai/vendor/perplexity",
+      "code": 403,
+      "message": "Permission denied. Failed to verify the URL ownership."
+    },
+    {
+      "url": "https://www.sandbase.ai/vendor/bytedance",
+      "code": 403,
+      "message": "Permission denied. Failed to verify the URL ownership."
+    }
+  ]
+}
