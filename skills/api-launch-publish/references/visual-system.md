@@ -207,3 +207,142 @@ All text must be in English and clearly legible.
 - [ ] 小缩略图下标题仍然可辨认
 - [ ] 产品名称拼写正确
 - [ ] 无空旷无内容的区域
+
+---
+
+## 按文章 Category 的封面分类策略
+
+全部 ~100 篇文章按 `category` 字段分为 6 个封面批次。每类有不同的构图侧重和 prompt 变量，但共享上述统一视觉系统。
+
+### 类型 1：对比类 `model-comparison`（~18 篇）
+
+A vs B 类文章。构图侧重"公平对决"：
+
+| 属性 | 值 |
+|------|------|
+| 标签 | `2026 COMPARISON` |
+| 中栏 | 2-4 个平等的供应商卡片，各带细色线条和一行用例标签 |
+| 右栏 | 中立的决策门连接 agent 工作流节点 |
+| 底部 | 五项能力评估栏 |
+| 视觉感受 | 研究性产品地图，不是稀疏概念图或领奖台 |
+
+适用文章示例：
+- `claude-code-vs-codex-vs-openclaw-2026`
+- `vllm-vs-sglang-2026`
+- `gpt-5-6-vs-claude-5-agents-2026`
+- `autogen-vs-crewai-multi-agent-showdown-2026`
+- `litellm-vs-openrouter-2026`
+- `dify-vs-langgraph-2026`
+
+### 类型 2：Top N / 榜单类 `best-of` + `agent-best-picks`（~14 篇）
+
+最佳推荐 / 选型指南类。构图侧重"市场地图"：
+
+| 属性 | 值 |
+|------|------|
+| 标签 | `2026 TOP PICKS` |
+| 左栏 | 标题 + 简短描述 + 四个筛选标准 |
+| 中栏 | 5-6 个平等的供应商卡片，带一行能力标签 |
+| 右栏 | agent 工作流循环 + 小型结果面板 |
+| 底部 | 全宽能力栏 |
+| 视觉感受 | 研究性市场地图，不是排名领奖台或奖杯 |
+
+适用文章示例：
+- `best-image-to-video-models-agents-2026`
+- `best-ai-image-generation-apis-2026`
+- `best-open-source-ai-agent-frameworks-2026`
+- `ai-agent-infrastructure-stack-2026`
+- `best-mcp-servers-2026-agent-tool-infrastructure`
+- `best-ai-sandboxes-agent-development-secure-execution`
+
+### 类型 3：单模型介绍类 `model-introduction`（~15 篇）
+
+单个模型深度解析。构图以产品卡片为视觉中心：
+
+| 属性 | 值 |
+|------|------|
+| 标签 | `MODEL INTRODUCTION` |
+| 中栏 | 一个大型抽象神经网络形态，单个高亮节点 |
+| 右栏 | 模型能力矩阵或性能对比图 |
+| 特征 | 产品名称作为核心视觉元素，留出充足标题空间 |
+| 视觉感受 | 产品发布页风格，聚焦单一主角 |
+
+适用文章示例：
+- `claude-opus-4-7-coding-agents-2026`
+- `deepseek-v4-open-source-1m-context-2026`
+- `gpt-5-6-luna-sol-terra-explained`
+- `kimi-k3-moonshot-1m-context-2026`
+- `claude-opus-5-deep-dive-2026`
+
+### 类型 4：教程类 `tutorials`（~10 篇）
+
+实操教程。构图侧重代码/流程图感：
+
+| 属性 | 值 |
+|------|------|
+| 标签 | `TUTORIAL` |
+| 中栏 | 工具/技术栈组件展示 |
+| 右栏 | 三步路径流程图（输入→处理→输出） |
+| 特征 | 偏技术实操感，仍保持白底信息密集布局 |
+| 禁止 | 不出现可读代码或真实 shell 命令 |
+
+适用文章示例：
+- `connecting-mcp-servers-to-your-agent-2026`
+- `cost-dashboard-agent-anthropic-sdk`
+- `build-social-monitor-agent-openai-sdk`
+- `batch-image-generation-agent-tutorial`
+- `xiaohongshu-kol-screening-agent-tutorial`
+
+### 类型 5：Agent 生态 / 用例类 `agent-use-cases` + `agent-daily-news`（~24 篇）
+
+架构解析、设计模式、生态新闻。构图侧重工作流和概念连接：
+
+| 属性 | 值 |
+|------|------|
+| 标签 | `DEEP DIVE`（深度分析）或 `2026 COMPARISON`（涉及对比） |
+| 中栏 | 核心概念分层展示 / 能力节点列表 |
+| 右栏 | 输入→处理→输出工作流图，抽象几何节点 |
+| 特征 | 简洁系统架构图，小组已验证能力节点连接到 agent 工作流枢纽 |
+
+适用文章示例：
+- `production-ai-agents-need-a-runtime-layer`
+- `agent-memory-architectures-compared-2026`
+- `mcp-vs-function-calling-ai-agent-tool-integration`
+- `inside-openhands-ai-coding-agent-architecture`
+- `5-agent-design-patterns-robust-cost-effective-ai-systems`
+
+### 类型 6：其他（产品更新 / 开发者工具 / 定价指南 / 行业洞察）（~16 篇）
+
+| 子分类 | 标签 | 构图特征 |
+|--------|------|----------|
+| `product-updates` | `PRODUCT UPDATE` | 一个新能力节点通过绿色细线加入生态系统图 |
+| `developer-tools` | `2026 COMPARISON` | 密集开发者工具决策板，左栏标题+任务决策列表，中栏 4-6 供应商卡片 |
+| `pricing-guides` | `PRICING GUIDE` | 成本 vs 输出的平衡图，简单方块+方向线 |
+| `industry-insights` | `INDUSTRY INSIGHTS` | 单条趋势线穿过小型数据点组 |
+
+---
+
+## 批量重新生成优先级
+
+| 批次 | 分类 | 数量 | 优先级 | 原因 |
+|------|------|------|--------|------|
+| 1 | 对比类 `model-comparison` | ~18 | ⭐⭐⭐ | 视觉差异最明显，最容易验证效果 |
+| 2 | 榜单类 `best-of` / `agent-best-picks` | ~14 | ⭐⭐⭐ | SEO 流量大户，封面统一性最重要 |
+| 3 | 单模型 `model-introduction` | ~15 | ⭐⭐ | 模板化程度高，每篇有一个主角 |
+| 4 | 教程类 `tutorials` | ~10 | ⭐⭐ | 封面风格稍偏代码感 |
+| 5 | Agent 生态 `agent-use-cases` + `agent-daily-news` | ~24 | ⭐ | 概念类文章，封面灵活度大 |
+| 6 | 其他 `product-updates` / `developer-tools` / `pricing-guides` | ~16 | ⭐ | 按需处理 |
+
+**重新生成脚本**：`sandbase-blog/scripts/ai-content-generator/regen-covers.sh`
+
+运行方式：
+```bash
+# 全量 dry-run 看列表
+SANDBASE_API_KEY=xxx ./regen-covers.sh --dry-run
+
+# 先试几张看效果
+SANDBASE_API_KEY=xxx ./regen-covers.sh --limit=3
+
+# 全量执行（约 3 分钟/张，93 张 ≈ 5 小时）
+SANDBASE_API_KEY=xxx ./regen-covers.sh
+```
