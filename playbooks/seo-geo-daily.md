@@ -98,6 +98,57 @@
 - [ ] 博客标题优化已推送，等博客 CI 重建后检查效果
 - [ ] 检查 Dify 文章排名变化（当前 1048 展现，目标进 top 10）
 - [ ] 117 个 vendor 页面分批提交索引（每天 10-20 个）
+- [x] Bing Webmaster Tools DNS 验证（2026-08-02 已完成）
+- [ ] IndexNow 每日分批提交（Bing 新站限额 ~50 URL/天）
+- [ ] 封面全量重新生成（后台运行中，~94 篇）
+
+---
+
+## 七、Bing & IndexNow 每日提交（2 分钟）
+
+> Bing Webmaster Tools 已于 2026-08-02 通过 DNS 验证。
+> 新验证站点有每日 URL 提交限额（~50/请求），需要分批提交。
+
+### 每日操作
+
+```bash
+cd /root/kiro/sandbase-daily-ops
+python3 scripts/submit_indexnow.py --limit 50
+```
+
+### 限额说明
+
+| 引擎 | 每次限额 | 说明 |
+|------|---------|------|
+| Bing | ~50 URL/请求 | 新站限流，验证时间越长限额越高 |
+| Yandex | 200+ | 无明显限制 |
+| IndexNow API | 同 Bing | 走的是 Bing 验证 |
+
+### 提交优先级
+
+1. 核心页面（/models, /apis, /vendor, /pricing）
+2. 顶级供应商（/vendor/openai, /vendor/anthropic 等）
+3. 热门模型详情页（从 sitemap-models.xml 取）
+4. 博客文章（新发布或更新封面的文章）
+
+### 进度追踪
+
+| 日期 | 提交数 | Bing 状态 | Yandex 状态 | 备注 |
+|------|--------|-----------|-------------|------|
+| 8/2 | 50 | ✅ 202 | ✅ 202 | 首次提交，前 50 个核心 URL |
+
+### 脚本位置
+
+- 提交脚本：`scripts/submit_indexnow.py`
+- IndexNow Key：`fe52fdd42c4d42cbbcce6c1a94f7fb5d`
+- Key 文件已部署：`https://www.sandbase.ai/fe52fdd42c4d42cbbcce6c1a94f7fb5d.txt`
+- 报告输出：`outputs/seo-daily-reports/indexnow-*.json`
+
+### 未来优化
+
+- 待 Bing 限额放开后（通常验证 1-2 周后），改为每次 200 URL
+- 可以加入 blog 更新触发：每次发布新文章后自动提交该 URL
+- 考虑写 cron job 每天自动跑
 
 ---
 
