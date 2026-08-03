@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-08-02T14:23:50Z",
+  "total_submitted": 10,
+  "urls_sample": [
+    "https://www.sandbase.ai/models",
+    "https://www.sandbase.ai/apis",
+    "https://www.sandbase.ai/vendor",
+    "https://www.sandbase.ai/pricing",
+    "https://www.sandbase.ai/agents",
+    "https://www.sandbase.ai/skills",
+    "https://www.sandbase.ai/",
+    "https://www.sandbase.ai/vendor/openai",
+    "https://www.sandbase.ai/vendor/anthropic",
+    "https://www.sandbase.ai/vendor/google"
+  ]
+}

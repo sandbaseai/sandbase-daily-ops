@@ -375,7 +375,7 @@ Step 3: 更新 frontmatter
 | 步骤 | 脚本 | 位置 |
 |------|------|------|
 | 生成（单张） | `cover-generator.ts` 的 `generateCoverImage()` | sandbase-blog/scripts/ai-content-generator/ |
-| 生成（批量） | `regen-covers.sh` | sandbase-blog/scripts/ai-content-generator/ |
+| 生成（批量） | `regen-all-covers.ts`（模型：`openai/gpt-image-2`） | sandbase-blog/scripts/ai-content-generator/ |
 | 上传到 static | `migrate_covers.py` | sandbase-blog/scripts/ |
 | 生成+上传（launch 包） | `generate_blog_cover_url.py` | sandbase-daily-ops/skills/api-launch-publish/scripts/ |
 
