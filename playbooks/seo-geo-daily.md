@@ -160,3 +160,20 @@ python3 scripts/submit_indexnow.py --limit 50
 - Google 服务账号: `/root/.config/sandbase/google-service-account.json`
   - 可通过 API 批量查询索引状态（脚本已验证可用）
 - SEO Daily Check 脚本: `skills/api-launch-publish/scripts/seo_daily_check.py`
+
+---
+
+## 补充：博客文章截图与部署
+
+写完新文章或优化旧文章后，执行完整的截图-部署流程：
+
+→ 详见 [`playbooks/blog-screenshot-deploy.md`](./blog-screenshot-deploy.md)
+
+快速流程：
+1. 用 `dataforseo/v3/on_page/page_screenshot` 截图（通过 SandBase API）
+2. 下载检查截图质量（无弹窗/骨架屏）
+3. `sandbase-registry upload-file` 上传到 COS
+4. 插入文章 markdown
+5. `npm run build` 验证
+6. `git push origin main` 部署
+7. Google Indexing API + IndexNow 提交
