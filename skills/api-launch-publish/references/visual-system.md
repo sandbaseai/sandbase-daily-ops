@@ -385,19 +385,28 @@ SANDBASE_API_KEY=xxx ./regen-covers.sh
 > ⚠️ 生成的图片 URL（`media.sandbase.ai/files/`）是**临时地址**，不能直接用于博客。
 > 必须上传到 `static.sandbase.ai` 后才算完成。
 
+> ⚠️⚠️ **两步流程，缺一不可**：
+> 1. `generate_blog_cover_url.py` 只生成**纯背景**（无文字）
+> 2. `render_launch_cover.py` 在背景上渲染**确定性文字**（标题/副标题/能力标签）
+>
+> 直接把背景图当封面发布 = 无文字封面 = 不合格。
+
 ### 工作流三步走
 
 ```
-Step 1: 生成封面
-  → 调用 SandBase API (nano-banana-pro) 生成图片
+Step 1: 生成背景
+  → 调用 SandBase API (nano-banana-pro) 生成抽象背景
   → 获得临时 URL: media.sandbase.ai/files/xxx/0.jpg
+  → 背景图无文字（prompt 明确禁止 text/letters）
 
-Step 2: 上传到永久存储
-  → 下载临时图片
-  → 上传到 COS (static.sandbase.ai/blog/covers/{slug}.{ext})
-  → 获得永久 URL: static.sandbase.ai/blog/covers/{slug}.jpg
+Step 2: 渲染文字（确定性叠加）
+  → 下载背景图到本地
+  → 创建 config JSON（headline, subtitle, eyebrow, capability_line）
+  → 运行 render_launch_cover.py 叠加标题和标签
+  → 输出最终封面（带文字）
 
-Step 3: 更新 frontmatter
+Step 3: 上传到永久存储
+  → 上传最终封面到 COS (static.sandbase.ai/blog/covers/{slug}.jpg)
   → 将永久 URL 写入 EN 和 ZH 文章的 image 字段
 ```
 

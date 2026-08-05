@@ -64,7 +64,11 @@ sandbase-blog/src/content/zh-CN/<slug>.md
 
 ---
 
-## 三、生成封面（2 分钟）
+## 三、生成封面（3 分钟）
+
+> ⚠️ 封面必须两步走：先生成背景 → 再渲染文字。只有背景没有文字的图不能发布。
+
+### Step 1：生成抽象背景
 
 ```bash
 cd /root/kiro/sandbase-daily-ops/skills/api-launch-publish/scripts
@@ -74,40 +78,108 @@ python3 generate_blog_cover_url.py \
   --description "<一句话描述>" \
   --category <category> \
   --article-type <deep-dive|model-intro|comparison|tutorial> \
-  --image-alt "<封面 alt text>" \
-  --out-json /tmp/<slug>-cover.json \
-  --update-markdown /root/kiro/sandbase-blog/src/content/en/<slug>.md \
-  --update-markdown /root/kiro/sandbase-blog/src/content/zh-CN/<slug>.md
+  --out-json /tmp/<slug>-cover.json
 ```
 
-### 封面信息密度控制（重要）
+此步生成的是**纯背景图**（无文字），存在临时 URL `media.sandbase.ai/files/`。
 
-生成封面时注意：
-- **标题**：最多 6-8 个英文单词
-- **副标题**：最多 1 行 10 个词
-- **评估维度**：最多 4 项
-- **底部标签**：最多 4 个
-- **留白**：整体至少 25% 空间
-- **禁止**：中文文字、暗色背景、真人照片
+### Step 2：渲染确定性文字
 
----
+创建封面配置 JSON（`/tmp/<slug>-cover-config.json`）：
 
-## 四、上传到永久存储（1 分钟）
+```json
+{
+  "headline": "短标题（≤8词英文）",
+  "subtitle": "一句话描述（≤10词）",
+  "eyebrow": "ARTICLE TYPE LABEL",
+  "capability_line": "标签1 · 标签2 · 标签3 · 标签4"
+}
+```
+
+eyebrow 对照表：
+
+| category | eyebrow |
+|----------|---------|
+| model-introduction | MODEL INTRODUCTION |
+| model-comparison | 2026 COMPARISON |
+| best-of / agent-best-picks | 2026 TOP PICKS |
+| developer-tools | DEVELOPER TOOLS |
+| tutorials | TUTORIAL |
+| agent-use-cases / agent-daily-news | DEEP DIVE |
+| product-updates | PRODUCT UPDATE |
+
+下载背景并渲染：
+
+```bash
+# 下载背景图
+BG_URL=$(python3 -c "import json; print(json.load(open('/tmp/<slug>-cover.json'))['url'])")
+curl -s -o /tmp/<slug>-bg.jpg "$BG_URL"
+
+# 渲染文字叠加层
+python3 render_launch_cover.py \
+  --background /tmp/<slug>-bg.jpg \
+  --config /tmp/<slug>-cover-config.json \
+  --format 16x9 \
+  --out /tmp/<slug>-final-cover.jpg
+```
+
+### Step 3：上传最终封面到 CDN
 
 ```bash
 cd /root/kiro/sandbase-blog/scripts
 
-# EN 文章
-python3 migrate_covers.py --locale en
+python3 -c "
+import sys; sys.path.insert(0, '.')
+from migrate_covers import load_cos_credentials, upload_to_cos
+creds = load_cos_credentials()
+with open('/tmp/<slug>-final-cover.jpg', 'rb') as f:
+    url = upload_to_cos(f.read(), 'blog/covers/<slug>.jpg', 'image/jpeg', creds)
+print(url)
+"
+```
 
-# ZH 文章
-python3 migrate_covers.py --locale zh-CN
+### Step 4：更新 frontmatter
+
+手动将最终 URL 写入 EN 和 ZH 的 frontmatter `image` 字段，或用 `migrate_covers.py`。
+
+### 封面信息密度控制（重要）
+
+渲染文字时注意：
+- **headline**：最多 6-8 个英文单词
+- **subtitle**：最多 1 行 10 个词
+- **capability_line**：最多 4 个标签，用 `·` 分隔
+- **留白**：整体至少 25% 空间
+- **禁止**：中文文字、暗色背景、真人照片
+
+### 验收标准
+
+- [ ] 封面有可读的英文标题（不是纯背景）
+- [ ] URL 以 `https://static.sandbase.ai/blog/covers/` 开头
+- [ ] 小缩略图（200×112px）下标题仍可辨认
+
+---
+
+## 四、更新 Frontmatter（1 分钟）
+
+封面上传后，确认 frontmatter 中的 image URL 正确：
+
+```bash
+# 检查所有文章 image 字段
+grep "^image:" /root/kiro/sandbase-blog/src/content/en/<slug>.md
+grep "^image:" /root/kiro/sandbase-blog/src/content/zh-CN/<slug>.md
+```
+
+如果没有自动更新，手动写入：
+
+```yaml
+image: https://static.sandbase.ai/blog/covers/<slug>.jpg
 ```
 
 验证 frontmatter 中 URL 格式：
 ```
 image: https://static.sandbase.ai/blog/covers/<slug>.jpg  ✅
 image: https://media.sandbase.ai/files/...                 ❌ 临时URL，不可用
+image:                                                     ❌ 空，没封面
 ```
 
 ---
@@ -158,25 +230,51 @@ python3 scripts/submit_indexnow.py --urls \
 ### 完整发布流程（复制粘贴版）
 
 ```bash
-# 1. 生成封面
+SLUG="your-article-slug"
+
+# 1. 生成背景
 cd /root/kiro/sandbase-daily-ops/skills/api-launch-publish/scripts
 python3 generate_blog_cover_url.py \
   --title "TITLE" --description "DESC" \
   --category CATEGORY --article-type TYPE \
-  --update-markdown /root/kiro/sandbase-blog/src/content/en/SLUG.md \
-  --update-markdown /root/kiro/sandbase-blog/src/content/zh-CN/SLUG.md
+  --out-json /tmp/${SLUG}-cover.json
 
-# 2. 上传到 CDN
+# 2. 下载背景 + 渲染文字
+BG_URL=$(python3 -c "import json; print(json.load(open('/tmp/${SLUG}-cover.json'))['url'])")
+curl -s -o /tmp/${SLUG}-bg.jpg "$BG_URL"
+
+cat > /tmp/${SLUG}-cover-config.json << EOF
+{
+  "headline": "Your Headline Here",
+  "subtitle": "Short subtitle max 10 words",
+  "eyebrow": "ARTICLE TYPE",
+  "capability_line": "Tag1 · Tag2 · Tag3 · Tag4"
+}
+EOF
+
+python3 render_launch_cover.py \
+  --background /tmp/${SLUG}-bg.jpg \
+  --config /tmp/${SLUG}-cover-config.json \
+  --format 16x9 \
+  --out /tmp/${SLUG}-final-cover.jpg
+
+# 3. 上传到 CDN
 cd /root/kiro/sandbase-blog/scripts
-python3 migrate_covers.py --locale en
-python3 migrate_covers.py --locale zh-CN
+python3 -c "
+import sys; sys.path.insert(0, '.')
+from migrate_covers import load_cos_credentials, upload_to_cos
+creds = load_cos_credentials()
+with open('/tmp/${SLUG}-final-cover.jpg', 'rb') as f:
+    url = upload_to_cos(f.read(), 'blog/covers/${SLUG}.jpg', 'image/jpeg', creds)
+print(url)
+"
 
-# 3. 构建验证
+# 4. 构建验证
 cd /root/kiro/sandbase-blog
 npm run build
 
-# 4. 部署
-git add . && git commit -m "publish: SLUG" && git push origin main
+# 5. 部署
+git add . && git commit -m "publish: ${SLUG}" && git push origin main
 ```
 
 ---

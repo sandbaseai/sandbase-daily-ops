@@ -58,7 +58,8 @@ Run this review before a package is ready for publishing.
 - [ ] `input.json` contains author, locales, channels, source facts, and claim constraints.
 - [ ] `manifest.json` records files, canonical URL, image URL, localization state, and publication state.
 - [ ] The cover URL is reused consistently where a shared image is intended.
-- [ ] The image model created only the abstract background. All visible words were rendered by the deterministic cover renderer.
+- [ ] The image model created only the abstract background. All visible words were rendered by the deterministic cover renderer (`render_launch_cover.py`).
+- [ ] The final cover has a **visible, readable English headline** rendered by the deterministic renderer. A pure AI-generated background with no text overlay is NOT a valid cover.
 - [ ] The final image follows the safe area, contrast, format, and typography rules in `visual-system.md`.
 - [ ] `review-report.md` exists and says `Status: APPROVED`; any `REVISE` finding blocks publishing.
 - [ ] When the DataForSEO gate is enabled, `dataforseo-seo-evidence.json` exists and `review-report.md` includes `## DataForSEO Evidence`.
