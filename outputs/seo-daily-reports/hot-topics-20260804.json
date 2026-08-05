@@ -1,0 +1,114 @@
+{
+  "date": "2026-08-04T22:45:04.669917",
+  "hot_content": [
+    {
+      "title": "Tsinghua Team Open Sources VeriLoop Coder-E1 For Agentic Software Engineering - Open Source For You",
+      "url": "https://www.opensourceforu.com/2026/08/tsinghua-veriloop-coder-e1/",
+      "date": "2026-08-04",
+      "highlight": "Tsinghua Team Open Sources Ver\n...\nLoop Coder-E1 For\n...\nHome Content News Tsinghua Team Open Sources VeriLoop Coder-E1 For Agentic Software Engineering\n...\nA Tsinghua SIGS research team open sourced ",
+      "query": "new AI model release coding agent 2026"
+    },
+    {
+      "title": "DeepSeek-V4-Flash-0731: DeepSeek's new open MoE model",
+      "url": "https://datanorth.ai/news/deepseek-releases-deepseek-v4-flash-0731",
+      "date": "2026-08-04",
+      "highlight": "DeepSeek-V4-Flash-0731: DeepSeek's new open MoE model\n...\nDeepSeek releases DeepSeek V4-Flash-0731\n...\nDeepSeek-V4-Flash-0731 is DeepSeek's official V4-Flash release, published on July 31, 2026: a 284",
+      "query": "open source AI model weights release"
+    },
+    {
+      "title": "Qwen3.8-Max arrives with a bold claim: it outperforms GPT-5.6 Sol Max and Fable 5 on agentic computer use | VentureBeat",
+      "url": "https://venturebeat.com/technology/qwen3-8-max-arrives-with-a-bold-claim-it-outperforms-gpt-5-6-sol-max-and-fable-5-on-agentic-computer-use",
+      "date": "2026-08-03",
+      "highlight": "Qwen3.8-Max arrives with a bold claim: it outperforms GPT-5.6 Sol Max and Fable 5 on agentic computer use | VentureBeat\n...\nChinese e-commerce and cloud giant Alibaba's famed Qwen team of AI researche",
+      "query": "new AI model release coding agent 2026"
+    },
+    {
+      "title": "Alibaba Qwen3.8-Max claims 16-day autonomous coding run",
+      "url": "https://www.developer-tech.com/news/alibaba-qwen3-8-max-claims-16-day-autonomous-coding-run/",
+      "date": "2026-08-03",
+      "highlight": "Alibaba Qwen3.8-Max claims 16-day autonomous coding run\n...\n# Alibaba Qwen3.8-Max claims 16-day autonomous coding run\n...\n3rd August 2026\n...\nAlibaba’s Qwen team has released Qwen3.8-Max, a 2.4 trilli",
+      "query": "new AI model release coding agent 2026"
+    },
+    {
+      "title": "Qwen3.8-Max: A New Bar for Coding and Cowork - Alibaba Cloud Community",
+      "url": "https://www.alibabacloud.com/blog/qwen3-8-max-a-new-bar-for-coding-and-cowork_603421",
+      "date": "2026-08-03",
+      "highlight": "# Qwen3.8-Max: A New Bar for Coding and Cowork - Alibaba Cloud Community\n\nPublished: 2026-08-03T00:00:00Z\n...\n3.8-Max: A New Bar for Coding and\n...\nAlibaba Cloud\n...\n](https://community.alibabacloud.c",
+      "query": "new AI model release coding agent 2026"
+    },
+    {
+      "title": "Orchard: An open framework for scalable agentic AI - Microsoft Research",
+      "url": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/",
+      "date": "2026-08-03",
+      "highlight": "- Orchard is an open-source framework for scalable and cost-effective agentic AI research, built around Orchard Env, a reusable environment service for training and evaluating agents across task domai",
+      "query": "new AI model release coding agent 2026"
+    },
+    {
+      "title": "Qwen 3.8 Max vs GLM 5.2 vs Kimi K3 vs DeepSeek V4 Flash (2026): The Complete Frontier Model Comparison | Lovable APP Blog",
+      "url": "https://lovableapp.org/blog/qwen-38-max-vs-glm-52-vs-kimi-k3-vs-deepseek-v4-flash",
+      "date": "2026-08-03",
+      "highlight": "- Kimi K3 (Moonshot, July 16, 2026) is the only one of the four with fully verified third-party scores: 57 on the Artificial Analysis Intelligence Index, #4 of 189 models — the highest ever for an ope",
+      "query": "LLM benchmark comparison frontier model"
+    },
+    {
+      "title": "Open General Intelligence: MiniMax H3 Is Now Open Source - MiniMax News | MiniMax",
+      "url": "https://www.minimax.io/news/minimax-h3-open-source",
+      "date": "2026-08-03",
+      "highlight": "Today, we are officially open-sourcing MiniMax H3, our next-generation general-purpose video model.\n...\nThe H3-Encoder uses the full pretrained weights of Q\n...\n-32B and provides the\n...\n50th layer\n..",
+      "query": "open source AI model weights release"
+    },
+    {
+      "title": "The Pareto Frontier: What the Arena Board Looks Like When You Plot Price Against Score",
+      "url": "https://dsflash.novcog.us.com/the-pareto-frontier",
+      "date": "2026-08-01",
+      "highlight": "A Pareto frontier is the set of options that nothing else beats on every axis at once. Plot each model by price and by score, and a model belongs on the frontier if no other model is both cheaper and ",
+      "query": "LLM benchmark comparison frontier model"
+    },
+    {
+      "title": "MiniMax-M1, the World's First Open-Source, Large-Scale, Hybrid-Attention Reasoning Model - MiniMax News | MiniMax",
+      "url": "https://www.minimax.io/news/minimaxm1",
+      "date": "2026-08-01",
+      "highlight": "-M1, the World's First Open-Source, Large\n...\nScale, Hybrid-Attention Reasoning\n...\n# MiniMax-M1, the World's First Open-Source, Large-Scale, Hybrid-Attention Reasoning Model\n...\nIntroducing our new m",
+      "query": "open source AI model weights release"
+    }
+  ],
+  "keywords_with_volume": [
+    {
+      "keyword": "gemini",
+      "volume": 20400000,
+      "cpc": 0.65,
+      "competition": "LOW"
+    },
+    {
+      "keyword": "lovable",
+      "volume": 165000,
+      "cpc": 2.16,
+      "competition": "MEDIUM"
+    },
+    {
+      "keyword": "gpt-5",
+      "volume": 60500,
+      "cpc": 1.31,
+      "competition": "LOW"
+    },
+    {
+      "keyword": "ai agent",
+      "volume": 49500,
+      "cpc": 24.3,
+      "competition": "MEDIUM"
+    }
+  ],
+  "already_covered": {
+    "gemini": "minimax-h3-vs-kling-3-vs-gemini-omni",
+    "gpt-5": "gpt-5-6-vs-claude-5-agents-2026",
+    "ai agent": "langchain-langgraph-agent-framework-2026"
+  },
+  "suggestions": [
+    {
+      "keyword": "lovable",
+      "volume": 165000,
+      "cpc": 2.16,
+      "competition": "MEDIUM"
+    }
+  ]
+}
