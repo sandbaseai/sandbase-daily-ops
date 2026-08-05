@@ -169,6 +169,21 @@ python3 scripts/submit_indexnow.py --limit 50
 
 → 详见 [`playbooks/blog-screenshot-deploy.md`](./blog-screenshot-deploy.md)
 
+## 补充：热点文章发布
+
+每日热点监控发现选题后，走标准化发布流程：
+
+→ 详见 [`playbooks/article-publish.md`](./article-publish.md)
+
+快速流程：
+1. `daily_hot_topics.py` 发现选题
+2. 写 EN + ZH 文章（按 skill 规范）
+3. `generate_blog_cover_url.py` 生成封面
+4. `migrate_covers.py` 上传到 static.sandbase.ai
+5. `npm run build` 验证
+6. `git push` 部署
+7. IndexNow 提交
+
 快速流程：
 1. 用 `dataforseo/v3/on_page/page_screenshot` 截图（通过 SandBase API）
 2. 下载检查截图质量（无弹窗/骨架屏）

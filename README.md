@@ -21,8 +21,16 @@ skills/
   api-launch-publish/        # API / provider / Agent Service launch workflow
 playbooks/
   api-launch-sop.md          # Human-readable launch checklist
+  seo-geo-daily.md           # SEO/GEO daily ops checklist
+  blog-screenshot-deploy.md  # Screenshot and deploy flow
+  article-publish.md         # Hot topic → article → cover → deploy (daily)
+scripts/
+  daily_hot_topics.py        # Daily hot topic monitoring
+  submit_indexnow.py         # Bing IndexNow submission
+  submit_indexing.py         # Google Indexing API submission
 outputs/
   exa-search-launch/         # First example: Exa Search on SandBase.ai
+  seo-daily-reports/         # Daily SEO/indexing reports
 ```
 
 ## First Skill
