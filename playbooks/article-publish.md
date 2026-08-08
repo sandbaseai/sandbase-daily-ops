@@ -41,8 +41,19 @@ cat /root/kiro/sandbase-blog/scripts/ai-content-generator/content-index.md | gre
 | 结构 | TL;DR + 经验发现式开头 + 对比表格 + FAQ |
 | SEO | EN title ≤60 字符，ZH title ≤30 字符 |
 | 内链 | 至少 2 条指向站内文章 |
-| 封面 | 信息不要太密：标题 ≤8 词，底部标签 ≤4 个，留白 ≥25% |
+| 作者 | 从 `src/data/authors.ts` 中选择合适的人 |
+| 封面 | gpt-image-2 信息密集型，白底三栏 |
 | 禁用 | 无 "seamlessly"、"game-changer"、"let's dive in" 等 AI 味句式 |
+
+### 作者选择
+
+| 作者 | 擅长领域 |
+|------|---------|
+| Marcus Chen | 基础设施、Agent runtime、部署 |
+| Evelyn Park | ML 模型、LLM、多模态 |
+| Daniel Russo | 开发工具、全栈、DX |
+| Sophie Lin | 创意 API、视频/图像生成 |
+| SandBase Team | 产品更新、通用 |
 
 ### 写入路径
 
@@ -66,96 +77,55 @@ sandbase-blog/src/content/zh-CN/<slug>.md
 
 ## 三、生成封面（3 分钟）
 
-> ⚠️ 封面必须两步走：先生成背景 → 再渲染文字。只有背景没有文字的图不能发布。
+> ⚠️ 使用 `gpt-image-2` 一次性生成信息密集型封面（含完整文字和布局）。
+> 不再使用旧的"背景+叠字"模式。
 
-### Step 1：生成抽象背景
-
-```bash
-cd /root/kiro/sandbase-daily-ops/skills/api-launch-publish/scripts
-
-python3 generate_blog_cover_url.py \
-  --title "<英文短标题，6-8词>" \
-  --description "<一句话描述>" \
-  --category <category> \
-  --article-type <deep-dive|model-intro|comparison|tutorial> \
-  --out-json /tmp/<slug>-cover.json
-```
-
-此步生成的是**纯背景图**（无文字），存在临时 URL `media.sandbase.ai/files/`。
-
-### Step 2：渲染确定性文字
-
-创建封面配置 JSON（`/tmp/<slug>-cover-config.json`）：
-
-```json
-{
-  "headline": "短标题（≤8词英文）",
-  "subtitle": "一句话描述（≤10词）",
-  "eyebrow": "ARTICLE TYPE LABEL",
-  "capability_line": "标签1 · 标签2 · 标签3 · 标签4"
-}
-```
-
-eyebrow 对照表：
-
-| category | eyebrow |
-|----------|---------|
-| model-introduction | MODEL INTRODUCTION |
-| model-comparison | 2026 COMPARISON |
-| best-of / agent-best-picks | 2026 TOP PICKS |
-| developer-tools | DEVELOPER TOOLS |
-| tutorials | TUTORIAL |
-| agent-use-cases / agent-daily-news | DEEP DIVE |
-| product-updates | PRODUCT UPDATE |
-
-下载背景并渲染：
+### Step 1：用 regen-one.ts 生成完整封面
 
 ```bash
-# 下载背景图
-BG_URL=$(python3 -c "import json; print(json.load(open('/tmp/<slug>-cover.json'))['url'])")
-curl -s -o /tmp/<slug>-bg.jpg "$BG_URL"
+cd /root/kiro/sandbase-blog/scripts/ai-content-generator
 
-# 渲染文字叠加层
-python3 render_launch_cover.py \
-  --background /tmp/<slug>-bg.jpg \
-  --config /tmp/<slug>-cover-config.json \
-  --format 16x9 \
-  --out /tmp/<slug>-final-cover.jpg
+export SANDBASE_API_KEY=<your-key>
+export COVER_MODEL=openai/gpt-image-2
+
+npx tsx regen-one.ts <slug1> [slug2] ...
 ```
 
-### Step 3：上传最终封面到 CDN
+脚本会：
+1. 读取文章的 title、description、category
+2. 构建信息密集型 prompt（三栏布局、产品卡片、架构图、底部标签）
+3. 调用 gpt-image-2 生成 16:9 PNG
+4. 自动将临时 URL 写入 EN 和 ZH 的 frontmatter
+
+### Step 2：迁移到永久 CDN
 
 ```bash
 cd /root/kiro/sandbase-blog/scripts
 
-python3 -c "
-import sys; sys.path.insert(0, '.')
-from migrate_covers import load_cos_credentials, upload_to_cos
-creds = load_cos_credentials()
-with open('/tmp/<slug>-final-cover.jpg', 'rb') as f:
-    url = upload_to_cos(f.read(), 'blog/covers/<slug>.jpg', 'image/jpeg', creds)
-print(url)
-"
+python3 migrate_covers.py               # EN
+python3 migrate_covers.py --locale zh-CN # ZH
 ```
 
-### Step 4：更新 frontmatter
+这会把 `media.sandbase.ai/files/` 临时 URL 下载并上传到 `static.sandbase.ai/blog/covers/`。
 
-手动将最终 URL 写入 EN 和 ZH 的 frontmatter `image` 字段，或用 `migrate_covers.py`。
+### 封面风格（由 cover-generator.ts 中的 prompt 控制）
 
-### 封面信息密度控制（重要）
-
-渲染文字时注意：
-- **headline**：最多 6-8 个英文单词
-- **subtitle**：最多 1 行 10 个词
-- **capability_line**：最多 4 个标签，用 `·` 分隔
-- **留白**：整体至少 25% 空间
-- **禁止**：中文文字、暗色背景、真人照片
+| 属性 | 要求 |
+|------|------|
+| 背景 | 白色/浅灰 #F8F8F6，**禁止暗色** |
+| 布局 | 三栏：左标题+维度，中产品卡片，右架构图，底部标签栏 |
+| 颜色 | 黑色文字 + SandBase Green #20B987 唯一强调色 |
+| 文字 | 全英文，清晰可读，无中文 |
+| 信息密度 | 标题 + 副标题 + 维度列表 + 产品卡片 + 架构图 + 底部栏 |
+| 禁止 | 中文、暗色、渐变、真人、设备、霓虹 |
 
 ### 验收标准
 
-- [ ] 封面有可读的英文标题（不是纯背景）
+- [ ] 封面是信息密集的白色背景信息图（不是纯抽象背景）
+- [ ] 有清晰可读的英文标题
 - [ ] URL 以 `https://static.sandbase.ai/blog/covers/` 开头
 - [ ] 小缩略图（200×112px）下标题仍可辨认
+- [ ] EN 和 ZH 共用同一张封面
 
 ---
 
@@ -232,49 +202,28 @@ python3 scripts/submit_indexnow.py --urls \
 ```bash
 SLUG="your-article-slug"
 
-# 1. 生成背景
-cd /root/kiro/sandbase-daily-ops/skills/api-launch-publish/scripts
-python3 generate_blog_cover_url.py \
-  --title "TITLE" --description "DESC" \
-  --category CATEGORY --article-type TYPE \
-  --out-json /tmp/${SLUG}-cover.json
+# 1. 生成封面 (gpt-image-2 一次性信息密集型)
+cd /root/kiro/sandbase-blog/scripts/ai-content-generator
+export SANDBASE_API_KEY=$(grep SANDBASE_API_KEY ~/.config/sandbase/.env | tail -1 | cut -d= -f2)
+export COVER_MODEL=openai/gpt-image-2
+npx tsx regen-one.ts ${SLUG}
 
-# 2. 下载背景 + 渲染文字
-BG_URL=$(python3 -c "import json; print(json.load(open('/tmp/${SLUG}-cover.json'))['url'])")
-curl -s -o /tmp/${SLUG}-bg.jpg "$BG_URL"
-
-cat > /tmp/${SLUG}-cover-config.json << EOF
-{
-  "headline": "Your Headline Here",
-  "subtitle": "Short subtitle max 10 words",
-  "eyebrow": "ARTICLE TYPE",
-  "capability_line": "Tag1 · Tag2 · Tag3 · Tag4"
-}
-EOF
-
-python3 render_launch_cover.py \
-  --background /tmp/${SLUG}-bg.jpg \
-  --config /tmp/${SLUG}-cover-config.json \
-  --format 16x9 \
-  --out /tmp/${SLUG}-final-cover.jpg
-
-# 3. 上传到 CDN
+# 2. 迁移封面到永久 CDN
 cd /root/kiro/sandbase-blog/scripts
-python3 -c "
-import sys; sys.path.insert(0, '.')
-from migrate_covers import load_cos_credentials, upload_to_cos
-creds = load_cos_credentials()
-with open('/tmp/${SLUG}-final-cover.jpg', 'rb') as f:
-    url = upload_to_cos(f.read(), 'blog/covers/${SLUG}.jpg', 'image/jpeg', creds)
-print(url)
-"
+python3 migrate_covers.py
+python3 migrate_covers.py --locale zh-CN
 
-# 4. 构建验证
+# 3. 构建验证
 cd /root/kiro/sandbase-blog
 npm run build
 
-# 5. 部署
-git add . && git commit -m "publish: ${SLUG}" && git push origin main
+# 4. 部署
+git add . && git commit -m "publish: ${SLUG} (EN+ZH)" && git push origin main
+
+# 5. 提交索引
+cd /root/kiro/sandbase-daily-ops
+python3 scripts/submit_indexing.py --limit 10
+python3 scripts/submit_indexnow.py --limit 10
 ```
 
 ---
