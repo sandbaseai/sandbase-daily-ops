@@ -41,9 +41,70 @@ cat /root/kiro/sandbase-blog/scripts/ai-content-generator/content-index.md | gre
 | 结构 | TL;DR + 经验发现式开头 + 对比表格 + FAQ |
 | SEO | EN title ≤60 字符，ZH title ≤30 字符 |
 | 内链 | 至少 2 条指向站内文章 |
+| 截图 | **每篇不少于 3 张**（见下方截图规范）|
 | 作者 | 从 `src/data/authors.ts` 中选择合适的人 |
 | 封面 | gpt-image-2 信息密集型，白底三栏 |
 | 禁用 | 无 "seamlessly"、"game-changer"、"let's dive in" 等 AI 味句式 |
+
+### 截图规范（每篇必须 ≥3 张）
+
+> 截图是文章真实感和视觉丰富度的关键。没有截图的文章看起来像 AI 水文。
+
+**数量要求：每篇文章至少 3 张截图**，推荐 3-5 张。分布在文章不同段落中。
+
+**截图类型建议：**
+
+| 类型 | 适用场景 | 推荐来源 |
+|------|---------|---------|
+| 产品首页/官网 | 介绍新工具/平台 | 该产品官网 |
+| 控制台/Dashboard | 展示使用体验 | 产品后台截图 |
+| 代码编辑器 | 展示 IDE 集成 | VS Code / Cursor 截图 |
+| 排行榜/Benchmark | 模型对比文章 | artificialanalysis.ai, lmarena.ai |
+| API 文档页 | 开发者工具文章 | 官方 docs 页面 |
+| GitHub 仓库 | 开源项目介绍 | github.com/{org}/{repo} |
+| 定价页面 | 成本对比文章 | 产品 pricing page |
+
+**截图命令：**
+
+```bash
+export SANDBASE_API_KEY=$(grep SANDBASE_API_KEY ~/.config/sandbase/.env | tail -1 | cut -d= -f2)
+
+curl -s -X POST https://api.sandbase.ai/v1/run \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $SANDBASE_API_KEY" \
+  -d '{
+    "model": "dataforseo/v3/on_page/page_screenshot",
+    "url": "https://目标URL",
+    "browser_preset": "desktop",
+    "full_page_screenshot": false,
+    "disable_cookie_popup": true,
+    "accept_language": "en"
+  }'
+```
+
+**截图处理流程：**
+
+1. 调用 API 截图 → 获取 DataForSEO CDN URL
+2. 下载到 `/tmp/` 验证（无弹窗/骨架屏）
+3. 上传到 COS → `static.sandbase.ai/blog/screenshots/{slug}-{描述}.png`
+4. 在 EN 和 ZH 文章中用 Markdown 图片语法嵌入：
+
+```markdown
+![Alt description in English](https://static.sandbase.ai/blog/screenshots/{slug}-{name}.png)
+*Caption explaining what the screenshot shows and its source.*
+```
+
+**截图分布原则：**
+- 第 1 张：紧跟文章开头或 TL;DR 之后（引起兴趣）
+- 第 2 张：在核心对比/分析段落中（佐证观点）
+- 第 3 张：在实操/架构部分（增加可信度）
+- EN 和 ZH 共用同一张截图，但 alt 和 caption 分别用英文/中文
+
+**禁止：**
+- ❌ 文章里没有任何截图
+- ❌ 截图全部堆在文章开头或结尾
+- ❌ 截图是骨架屏/加载中/被弹窗遮挡
+- ❌ 使用临时 URL（media.sandbase.ai 或 api.dataforseo.com）
 
 ### 作者选择
 
