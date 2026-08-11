@@ -42,6 +42,7 @@
 - `outputs/session-summary-20260803.md`：前任工作总结。
 - `outputs/100-articles-plan/plan.md`：50 个中英双语主题、100 个内容文件的计划。
 - `zty/8.10/sandbase-x-30-day-plan.md`：2026-08-11 至 2026-09-09 的 X/Twitter 增长计划。
+- `zty/8.11/sandbase-x-30-day-detailed-execution-plan.md`：X/Twitter 30 天逐日执行、双方分工、素材和数据检查的详细版。
 
 ## 3. 历史工作记录
 
