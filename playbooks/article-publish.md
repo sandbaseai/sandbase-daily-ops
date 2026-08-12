@@ -138,54 +138,71 @@ sandbase-blog/src/content/zh-CN/<slug>.md
 
 ## 三、生成封面（3 分钟）
 
-> ⚠️ 使用 `gpt-image-2` 一次性生成信息密集型封面（含完整文字和布局）。
-> 不再使用旧的"背景+叠字"模式。
+> 使用 `gpt-image-2` 一次性生成极简风格封面（Linear/Stripe 风格）。
+> 大标题 + 柔和渐变背景，缩略图下清晰可读。
 
-### Step 1：用 regen-one.ts 生成完整封面
+### 封面风格（极简大字）
+
+| 属性 | 要求 |
+|------|------|
+| 风格 | Linear.app / Stripe 博客风格，高端极简 |
+| 背景 | 白色渐变到极淡薄荷绿，或柔和的径向光效 |
+| 文字 | 大号粗体 sans-serif 标题（4-5 词），黑色 #101311 |
+| 点缀 | 最多 1 个几何元素（细线、圆弧、箭头） |
+| 留白 | ≥40% 白色空间 |
+| 禁止 | 图标、图表、产品卡片、多栏布局、小字、PPT 感、中文 |
+| 整体感觉 | 安静、高端、editorial，像 $100M 创业公司的博客 |
+
+### 生成命令
 
 ```bash
 cd /root/kiro/sandbase-blog/scripts/ai-content-generator
 
-export SANDBASE_API_KEY=<your-key>
+export SANDBASE_API_KEY=$(grep SANDBASE_API_KEY ~/.config/sandbase/.env | tail -1 | cut -d= -f2)
 export COVER_MODEL=openai/gpt-image-2
 
 npx tsx regen-one.ts <slug1> [slug2] ...
 ```
 
-脚本会：
-1. 读取文章的 title、description、category
-2. 构建信息密集型 prompt（三栏布局、产品卡片、架构图、底部标签）
-3. 调用 gpt-image-2 生成 16:9 PNG
-4. 自动将临时 URL 写入 EN 和 ZH 的 frontmatter
+### 上传到 CDN（避免缓存问题）
 
-### Step 2：迁移到永久 CDN
+> ⚠️ 同名文件会被 CDN 缓存。每次重新生成封面必须换文件名（加版本号）。
 
 ```bash
 cd /root/kiro/sandbase-blog/scripts
 
-python3 migrate_covers.py               # EN
-python3 migrate_covers.py --locale zh-CN # ZH
+python3 -c "
+import sys, requests, re
+from pathlib import Path
+sys.path.insert(0, '.')
+from migrate_covers import load_cos_credentials, upload_to_cos
+creds = load_cos_credentials()
+
+SLUG = 'your-slug'
+VERSION = 'v5'  # 每次递增
+TEMP_URL = 'https://media.sandbase.ai/files/xxx/0.png'  # regen-one 输出的 URL
+
+data = requests.get(TEMP_URL, timeout=30).content
+key = f'blog/covers/{SLUG}-{VERSION}.png'
+cdn_url = upload_to_cos(data, key, 'image/png', creds)
+print(cdn_url)
+
+# 更新 frontmatter
+for locale in ['en', 'zh-CN']:
+    p = Path(f'../src/content/{locale}/{SLUG}.md')
+    text = p.read_text()
+    text = re.sub(r'^image:.*$', f'image: {cdn_url}', text, flags=re.MULTILINE)
+    p.write_text(text)
+"
 ```
-
-这会把 `media.sandbase.ai/files/` 临时 URL 下载并上传到 `static.sandbase.ai/blog/covers/`。
-
-### 封面风格（由 cover-generator.ts 中的 prompt 控制）
-
-| 属性 | 要求 |
-|------|------|
-| 背景 | 白色/浅灰 #F8F8F6，**禁止暗色** |
-| 布局 | 三栏：左标题+维度，中产品卡片，右架构图，底部标签栏 |
-| 颜色 | 黑色文字 + SandBase Green #20B987 唯一强调色 |
-| 文字 | 全英文，清晰可读，无中文 |
-| 信息密度 | 标题 + 副标题 + 维度列表 + 产品卡片 + 架构图 + 底部栏 |
-| 禁止 | 中文、暗色、渐变、真人、设备、霓虹 |
 
 ### 验收标准
 
-- [ ] 封面是信息密集的白色背景信息图（不是纯抽象背景）
-- [ ] 有清晰可读的英文标题
+- [ ] 封面在 220px 宽缩略图下标题清晰可读
+- [ ] 白色/浅色背景，无暗色
+- [ ] 最多 5 个英文单词的大标题
+- [ ] 无密集信息、无图标堆砌
 - [ ] URL 以 `https://static.sandbase.ai/blog/covers/` 开头
-- [ ] 小缩略图（200×112px）下标题仍可辨认
 - [ ] EN 和 ZH 共用同一张封面
 
 ---
@@ -262,17 +279,29 @@ python3 scripts/submit_indexnow.py --urls \
 
 ```bash
 SLUG="your-article-slug"
+VERSION="v5"  # 每次递增避免 CDN 缓存
 
-# 1. 生成封面 (gpt-image-2 一次性信息密集型)
+# 1. 生成封面 (极简 Linear 风格，一次性生成)
 cd /root/kiro/sandbase-blog/scripts/ai-content-generator
 export SANDBASE_API_KEY=$(grep SANDBASE_API_KEY ~/.config/sandbase/.env | tail -1 | cut -d= -f2)
 export COVER_MODEL=openai/gpt-image-2
 npx tsx regen-one.ts ${SLUG}
 
-# 2. 迁移封面到永久 CDN
+# 2. 上传到 CDN（换文件名绕过缓存）
 cd /root/kiro/sandbase-blog/scripts
-python3 migrate_covers.py
-python3 migrate_covers.py --locale zh-CN
+# 从 regen-one 输出中复制 media.sandbase.ai URL，然后：
+python3 -c "
+import sys, requests, re; sys.path.insert(0, '.')
+from pathlib import Path
+from migrate_covers import load_cos_credentials, upload_to_cos
+creds = load_cos_credentials()
+data = requests.get('TEMP_URL_HERE', timeout=30).content
+cdn_url = upload_to_cos(data, 'blog/covers/${SLUG}-${VERSION}.png', 'image/png', creds)
+for loc in ['en','zh-CN']:
+    p = Path(f'../src/content/{loc}/${SLUG}.md')
+    t = p.read_text(); t = re.sub(r'^image:.*$', f'image: {cdn_url}', t, flags=re.MULTILINE); p.write_text(t)
+print(cdn_url)
+"
 
 # 3. 构建验证
 cd /root/kiro/sandbase-blog
@@ -281,10 +310,19 @@ npm run build
 # 4. 部署
 git add . && git commit -m "publish: ${SLUG} (EN+ZH)" && git push origin main
 
-# 5. 提交索引
+# 5. 提交索引（用 blog.sandbase.ai 域名）
 cd /root/kiro/sandbase-daily-ops
-python3 scripts/submit_indexing.py --limit 10
-python3 scripts/submit_indexnow.py --limit 10
+python3 -c "
+from google.oauth2.service_account import Credentials
+from google.auth.transport.requests import Request
+import requests
+creds = Credentials.from_service_account_file('/root/.config/sandbase/google-service-account.json', scopes=['https://www.googleapis.com/auth/indexing'])
+creds.refresh(Request())
+h = {'Authorization': f'Bearer {creds.token}', 'Content-Type': 'application/json'}
+for url in ['https://blog.sandbase.ai/${SLUG}/', 'https://blog.sandbase.ai/zh-CN/${SLUG}/']:
+    r = requests.post('https://indexing.googleapis.com/v3/urlNotifications:publish', headers=h, json={'url': url, 'type': 'URL_UPDATED'})
+    print(f'{r.status_code} {url}')
+"
 ```
 
 ---
