@@ -24,7 +24,7 @@ from googleapiclient.discovery import build
 KEY_FILE = Path.home() / ".config/sandbase/google-service-account.json"
 ENV_FILE = Path.home() / ".config/sandbase/.env"
 SITE = "sc-domain:sandbase.ai"
-BLOG_PREFIX = "https://www.sandbase.ai/blog/"
+BLOG_PREFIX = "https://blog.sandbase.ai/"
 REPORT_DIR = Path("/root/kiro/sandbase-daily-ops/outputs/seo-daily-reports")
 REPORT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -162,7 +162,7 @@ def generate_report(today: str, page_data: list, query_data: list, indexing_stat
     lines.append("| 页面 | 点击 | 展示 | CTR | 平均排名 |")
     lines.append("|---|---:|---:|---:|---:|")
     for row in blog_pages[:10]:
-        page = row["keys"][0].replace("https://www.sandbase.ai/blog/", "").rstrip("/")
+        page = row["keys"][0].replace("https://blog.sandbase.ai/", "").rstrip("/")
         lines.append(f"| {page} | {row['clicks']} | {row['impressions']} | {row['ctr']*100:.1f}% | {row['position']:.1f} |")
     lines.append("")
 
@@ -193,7 +193,7 @@ def generate_report(today: str, page_data: list, query_data: list, indexing_stat
     # New articles with traffic
     new_with_data = []
     for row in blog_pages:
-        page = row["keys"][0].replace("https://www.sandbase.ai/blog/", "").rstrip("/")
+        page = row["keys"][0].replace("https://blog.sandbase.ai/", "").rstrip("/")
         slug = page.replace("zh-CN/", "")
         if slug in NEW_ARTICLE_SLUGS:
             new_with_data.append((slug, row))
@@ -235,7 +235,7 @@ def main():
     print("  检查收录状态（抽样 10 篇）...")
     indexing_status = {}
     for slug in NEW_ARTICLE_SLUGS[:10]:
-        url = f"https://www.sandbase.ai/blog/{slug}/"
+        url = f"https://blog.sandbase.ai/{slug}/"
         result = fetch_url_inspection(service, url)
         verdict = result.get("indexStatusResult", {}).get("verdict", "unknown")
         coverage = result.get("indexStatusResult", {}).get("coverageState", "unknown")
