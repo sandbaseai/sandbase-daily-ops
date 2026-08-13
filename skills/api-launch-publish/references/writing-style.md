@@ -276,3 +276,83 @@ SandBase Blog 是一个**实用技术博客**，不是新闻聚合站：
 - 引用论文中的关键结论（标注 arXiv 链接）
 - 每篇文章至少 1-2 处权威引用
 - **禁止编造 URL**
+
+---
+
+## 7. 文章类型专项：未发布/传闻模型（Release Watch）
+
+> 来源范文：EvoLink GLM-5.3 Release Watch（2026-08-03）
+
+当一个模型尚未正式发布但社区已在讨论时，写法完全不同于已发布模型的介绍文章。核心原则是 **"区分已确认事实和未确认传闻"**，建立信任而不是博眼球。
+
+### 结构模板
+
+```
+1. 状态声明（第一段就说清楚：未发布/已发布/传闻）
+2. "At a Glance" 状态表（Item / Current State 两列）
+3. Expected 功能列表（每行标注 Evidence Label）
+4. Evidence Board（Confirmed / Reported / Disproven / Unknown 四级分类）
+5. 具体证据分析（GitHub branch, analyst forecast 等逐条拆解）
+6. 前代模型事实基线（用于对比，不混淆为新模型的规格）
+7. "Release ≠ Production" 阶段表（announcement → artifact → route → billing → confidence）
+8. 开发者行动建议（按场景给 Best Action + Reconsider When）
+9. "What We Don't Know" 明确列表
+10. FAQ
+11. Sources + Update Log（带日期的证据更新日志）
+```
+
+### 关键写法技巧
+
+| 技巧 | 说明 | 示例 |
+|------|------|------|
+| 状态前置 | 第一段就说清楚"未发布"，不让读者误解 | "As of August 3, GLM-5.3 has not been officially announced or released." |
+| 证据分级 | 每条信息标注 Confirmed / Reported / Disproven / Unknown | 表格中 Evidence status 列 |
+| 不复制前代数据 | 明确说前代模型的数据不能假设继承 | "Do not copy GLM-5.2's 1M context into GLM-5.3 specifications." |
+| 操作建议而非预测 | 给开发者"现在做什么"而非"会发生什么" | "Ship on a verified route and treat the successor as an evaluation candidate" |
+| 证伪不删 | 被证伪的证据保留在表中标记 Disproven | GitHub branch "No commits history" 详细记录 |
+| 日期戳 | 每条声明带日期，建立文章的"保鲜度合约" | "Evidence last reviewed August 3, 2026" |
+| 不说"即将发布" | 用 "forecast" "reported" 而非 "upcoming" "coming soon" | "analyst forecast, not a Z.ai commitment" |
+
+### 验证阶段模型（可复用于所有 Release Watch 文章）
+
+| 阶段 | 证据 | 安全动作 |
+|------|------|---------|
+| 1. Official announcement | Named release note or model card | 阅读确认的能力和限制 |
+| 2. Official artifact | Documented API ID, weights, or repo | 开始受控集成测试 |
+| 3. Hosted route | Exact-model route + successful request | 对比协议、限制、条款 |
+| 4. Billing verification | Token usage matches documented pricing | 跑成本受控评估流量 |
+| 5. Production confidence | 稳定质量/延迟/错误/容量 + fallback | 扩大上线 |
+
+### 这种文章 vs 普通介绍文章
+
+| 维度 | 已发布模型 | 未发布/传闻模型 |
+|------|-----------|---------------|
+| 第一段 | 经验发现式开头 | 状态声明（未发布） |
+| 数据来源 | 官方 + 自己跑的 | 严格分级标注 |
+| 语气 | 有判断、有观点 | 克制、不预测 |
+| 行动建议 | "用这个" | "先用前代，监控官方" |
+| 更新承诺 | 无 | 有日期的 update log |
+| FAQ | 用法问题 | "是否已发布" "名字是什么" 等 |
+
+### 禁止
+
+- ❌ 把传闻说成事实（"GLM-5.3 will support vision"）
+- ❌ 复制前代规格到新模型规格表里假装已知
+- ❌ 用 "upcoming release" "coming soon" 暗示官方已确认
+- ❌ 把 GitHub URL 存在等同于产品发布
+- ❌ 在标题里写日期暗示发布时间（"GLM-5.3 August 2026 Release"）
+
+### 适用场景
+
+- 新模型传闻但未发布（如 GLM-5.3、GPT-6、Claude 下一代）
+- 已有 leak 但无官方确认的产品
+- 社区讨论热烈但没有可验证 artifact 的情况
+
+### 截图建议（≥3 张）
+
+| 截图 | 来源 |
+|------|------|
+| 前代模型官方页面 | 官方 docs/pricing |
+| GitHub/HuggingFace 相关页面 | 证据来源 |
+| 社区讨论截图 | Twitter/GitHub Issues |
+| Benchmark 排行榜（前代） | artificialanalysis.ai 等 |
