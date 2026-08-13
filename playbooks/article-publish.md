@@ -42,9 +42,42 @@ cat /root/kiro/sandbase-blog/scripts/ai-content-generator/content-index.md | gre
 | SEO | EN title ≤60 字符，ZH title ≤30 字符 |
 | 内链 | 至少 2 条指向站内文章 |
 | 截图 | **每篇不少于 3 张**（见下方截图规范）|
+| SandBase 链接 | **必须包含相关模型/API 的 SandBase 链接和测试结果**（见下方规范）|
 | 作者 | 从 `src/data/authors.ts` 中选择合适的人 |
-| 封面 | gpt-image-2 信息密集型，白底三栏 |
+| 封面 | gpt-image-2 极简 Linear 风格 |
 | 禁用 | 无 "seamlessly"、"game-changer"、"let's dive in" 等 AI 味句式 |
+
+### SandBase 模型链接与测试结果（每篇必须）
+
+> 每篇文章都要带上相关模型/API 在 SandBase 上的链接，让读者能直接试用。
+
+**规则：**
+
+1. **文中提到的每个模型/API**，第一次出现时附带 SandBase 链接：
+   ```markdown
+   [DeepSeek V4 Pro](https://www.sandbase.ai/model/deepseek/deepseek-v4-pro) 在我们的测试中...
+   ```
+
+2. **包含测试结果/实际调用数据**，展示在 SandBase 上的实际体验：
+   - API 响应时间
+   - Token 用量和成本
+   - 输出质量示例
+   - 错误率（如有）
+
+3. **文末或 FAQ 中加入 "Try it on SandBase" 链接**：
+   ```markdown
+   > 在 SandBase 上试用：[DeepSeek V4 Pro API](https://www.sandbase.ai/model/deepseek/deepseek-v4-pro)
+   ```
+
+4. **API 教程类文章**必须包含：
+   - SandBase API 调用代码示例（curl + Python）
+   - 实际响应 JSON 示例
+   - 定价信息
+
+**链接格式：**
+- 模型：`https://www.sandbase.ai/model/{vendor}/{model-slug}`
+- Vendor 页：`https://www.sandbase.ai/vendor/{vendor}`
+- API 列表：`https://www.sandbase.ai/apis`
 
 ### 截图规范（每篇必须 ≥3 张）
 
