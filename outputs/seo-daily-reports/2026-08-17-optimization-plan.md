@@ -299,6 +299,273 @@ To convert between media IDs and shortcodes, see our
 
 ---
 
+## P5：全量 Model/API 详情页丰富化（统一改一遍）
+
+### 目标
+
+当前 5000+ 模型/API 详情页内容相对单薄（只有 playground + readme），需要统一丰富，让每个页面都对搜索引擎和用户有足够的信息密度。
+
+### 当前页面结构
+
+```
+sandbase-fe/src/app/model/[vendor]/[...slug]/page.tsx
+├── <JsonLd />                        ← JSON-LD 结构化数据
+├── <main>
+│   ├── <LLMDetailView />             ← 主要内容
+│   │   ├── <ModelBuilderIntro />     ← 标题、vendor、actions
+│   │   ├── <ModelDetailTabs />       ← Playground / History 切换
+│   │   ├── <LLMChatPlayground />     ← 可交互的 playground
+│   │   └── <ModelReadmeBlock />      ← readme markdown 渲染
+│   └── <RelatedModels />             ← 相关模型推荐（已有）
+└──
+```
+
+### 需要增加的区块（按位置排列）
+
+#### 1. Quick Info 摘要卡片（加在 ModelBuilderIntro 下方）
+
+**文件：** `sandbase-fe/src/features/model-catalog/components/LLMDetailView.tsx`
+
+**加在** `<ModelBuilderIntro />` 和 `<section>` (tabs) 之间：
+
+```tsx
+{/* Quick Info Card */}
+<div className="grid grid-cols-2 gap-3 sm:grid-cols-4 rounded-xl border p-4"
+     style={{ borderColor: 'var(--border-primary)', backgroundColor: 'var(--bg-card)' }}>
+  <div>
+    <span className="text-[11px] uppercase font-semibold" style={{ color: 'var(--text-muted)' }}>Provider</span>
+    <p className="mt-1 text-[14px] font-medium" style={{ color: 'var(--text-primary)' }}>
+      <a href={vendorPath(model.vendor_slug)}>{model.vendor}</a>
+    </p>
+  </div>
+  <div>
+    <span className="text-[11px] uppercase font-semibold" style={{ color: 'var(--text-muted)' }}>Context</span>
+    <p className="mt-1 text-[14px] font-medium" style={{ color: 'var(--text-primary)' }}>
+      {(model.context_length / 1000).toFixed(0)}K tokens
+    </p>
+  </div>
+  <div>
+    <span className="text-[11px] uppercase font-semibold" style={{ color: 'var(--text-muted)' }}>Input Price</span>
+    <p className="mt-1 text-[14px] font-medium" style={{ color: 'var(--text-primary)' }}>
+      ${model.model_card?.prompt_token_price}/M
+    </p>
+  </div>
+  <div>
+    <span className="text-[11px] uppercase font-semibold" style={{ color: 'var(--text-muted)' }}>Output Price</span>
+    <p className="mt-1 text-[14px] font-medium" style={{ color: 'var(--text-primary)' }}>
+      ${model.model_card?.completion_token_price}/M
+    </p>
+  </div>
+</div>
+```
+
+#### 2. 能力标签展示（加在 Quick Info 下方）
+
+```tsx
+{/* Capability Tags */}
+{model.capability_tags?.length > 0 && (
+  <div className="flex flex-wrap gap-2">
+    {model.capability_tags.map(tag => (
+      <span key={tag} className="rounded-full border px-3 py-1 text-[12px] font-medium"
+            style={{ borderColor: 'var(--border-primary)', color: 'var(--text-secondary)' }}>
+        {tag.replace('_', ' ')}
+      </span>
+    ))}
+  </div>
+)}
+```
+
+#### 3. Quick Start 代码片段（加在 Playground 区块下方）
+
+**文件：** `sandbase-fe/src/features/model-catalog/components/LLMDetailView.tsx`
+
+**加在** `</section>` (tabs section 结束) 之后，`<ModelReadmeBlock />` 之前：
+
+```tsx
+{/* Quick Start Code Example */}
+<section className="rounded-xl border p-5" style={{ borderColor: 'var(--border-primary)' }}>
+  <h2 className="text-[16px] font-semibold mb-3" style={{ color: 'var(--text-primary)' }}>
+    Quick Start
+  </h2>
+  <div className="rounded-lg p-4 overflow-x-auto" style={{ backgroundColor: 'var(--bg-secondary)' }}>
+    <pre className="text-[13px] font-mono leading-6" style={{ color: 'var(--text-primary)' }}>
+{`curl -X POST https://api.sandbase.ai/v1/chat/completions \\
+  -H "Authorization: Bearer $SANDBASE_API_KEY" \\
+  -H "Content-Type: application/json" \\
+  -d '{
+    "model": "${model.name}",
+    "messages": [{"role": "user", "content": "Hello"}],
+    "max_tokens": 256
+  }'`}
+    </pre>
+  </div>
+  <p className="mt-3 text-[12px]" style={{ color: 'var(--text-muted)' }}>
+    Get your API key from <a href="/console" className="underline">Console</a>.
+    See <a href={`/model/${model.vendor_slug}/${model.model_slug}/docs`} className="underline">full API docs</a> for all parameters.
+  </p>
+</section>
+```
+
+#### 4. FAQ 区块（加在 ReadmeBlock 之后，RelatedModels 之前）
+
+**文件：** `sandbase-fe/src/app/model/[vendor]/[...slug]/page.tsx` 第 117 行附近
+
+在 `<LLMDetailView />` 和 `<RelatedModels />` 之间插入新组件：
+
+```tsx
+{/* FAQ Section */}
+<ModelFAQ model={model} />
+```
+
+新建文件 `sandbase-fe/src/features/model-catalog/components/ModelFAQ.tsx`：
+
+```tsx
+import type { Model } from '@/features/model-catalog/server/models';
+
+export function ModelFAQ({ model }: { model: Model }) {
+  const faqs = buildFAQs(model);
+  if (faqs.length === 0) return null;
+
+  return (
+    <section className="mt-8 border-t pt-8" style={{ borderColor: 'var(--border-primary)' }}>
+      <h2 className="text-[18px] font-semibold mb-4" style={{ color: 'var(--text-primary)' }}>
+        Frequently Asked Questions
+      </h2>
+      <div className="space-y-3">
+        {faqs.map((faq, i) => (
+          <details key={i} className="group rounded-lg border px-4 py-3"
+                   style={{ borderColor: 'var(--border-primary)' }}>
+            <summary className="cursor-pointer text-[14px] font-medium list-none flex justify-between items-center"
+                     style={{ color: 'var(--text-primary)' }}>
+              {faq.question}
+              <span className="text-[16px] transition-transform group-open:rotate-45">+</span>
+            </summary>
+            <p className="mt-3 text-[13px] leading-6" style={{ color: 'var(--text-muted)' }}>
+              {faq.answer}
+            </p>
+          </details>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function buildFAQs(model: Model) {
+  const faqs = [];
+
+  faqs.push({
+    question: `What is ${model.display_name}?`,
+    answer: model.description?.slice(0, 300) ||
+      `${model.display_name} is a ${model.type} model by ${model.vendor}, available through the SandBase unified API.`,
+  });
+
+  if (model.model_card?.prompt_token_price) {
+    faqs.push({
+      question: `How much does ${model.display_name} cost?`,
+      answer: `Input: $${model.model_card.prompt_token_price}/M tokens. Output: $${model.model_card.completion_token_price}/M tokens. ` +
+        `Cache reads: ${Number(model.model_card.cache_read_multiplier || 1) * 100}% of input price. No minimum commitment, pay as you go.`,
+    });
+  }
+
+  if (model.context_length) {
+    faqs.push({
+      question: `What is the context window of ${model.display_name}?`,
+      answer: `${model.display_name} supports a context window of ${(model.context_length / 1000).toFixed(0)}K tokens (approximately ${Math.round(model.context_length * 0.75 / 1000)}K words).`,
+    });
+  }
+
+  faqs.push({
+    question: `How do I call ${model.display_name} via API?`,
+    answer: `Use the SandBase unified API at api.sandbase.ai/v1/chat/completions with model="${model.name}". ` +
+      `Works with any OpenAI-compatible SDK. Get an API key from the Console to start.`,
+  });
+
+  if (model.capability_tags?.includes('function_calling')) {
+    faqs.push({
+      question: `Does ${model.display_name} support function calling?`,
+      answer: `Yes. ${model.display_name} supports function calling (tool use), structured output, and can be used in agent workflows with tool definitions.`,
+    });
+  }
+
+  return faqs;
+}
+```
+
+#### 5. JSON-LD Schema 增强
+
+**文件：** `sandbase-fe/src/features/model-catalog/components/JsonLd.tsx` 或 `json-ld.ts`
+
+在现有的 JSON-LD 基础上追加 FAQPage schema（让 FAQ 有机会在搜索结果中展示为 Rich Result）：
+
+```typescript
+// 在 serializeJsonLd 或 JsonLd 组件中，追加到 @graph：
+{
+  "@type": "FAQPage",
+  "mainEntity": buildFAQs(model).map(faq => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer
+    }
+  }))
+}
+```
+
+#### 6. SEO Title 模板优化
+
+**文件：** `sandbase-fe/src/features/model-catalog/seo.ts` 第 19 行
+
+```typescript
+// 修改前：
+const title = `${model.display_name} by ${model.vendor}`
+
+// 修改后（增加品牌词和吸引力）：
+const title = `${model.display_name} — API & Pricing | SandBase`
+```
+
+**Description 模板也优化：**
+
+```typescript
+// 修改前（第 20-22 行）：
+const description = model.description
+  ? model.description.slice(0, 160)
+  : `${model.display_name} - ${model.type.toUpperCase()} model by ${model.vendor}. Available on Sandbase unified AI API.`
+
+// 修改后（加入结构化信息）：
+const description = model.description
+  ? model.description.slice(0, 130) + ` Context: ${(model.context_length/1000).toFixed(0)}K. Input: $${model.model_card?.prompt_token_price || '?'}/M.`
+  : `${model.display_name} by ${model.vendor}. ${(model.context_length/1000).toFixed(0)}K context, $${model.model_card?.prompt_token_price || '?'}/M input. Try free on SandBase.`
+```
+
+---
+
+### 实施顺序
+
+| 步骤 | 改动 | 文件 | 影响范围 |
+|------|------|------|----------|
+| 1 | Title/Desc 模板优化 | `seo.ts` | 全部 5000+ 页面 |
+| 2 | Quick Info 卡片 | `LLMDetailView.tsx` | 全部详情页 |
+| 3 | 能力标签展示 | `LLMDetailView.tsx` | 全部详情页 |
+| 4 | Quick Start 代码 | `LLMDetailView.tsx` | 全部详情页 |
+| 5 | FAQ 组件 | 新建 `ModelFAQ.tsx` + `page.tsx` 引用 | 全部详情页 |
+| 6 | FAQ JSON-LD | `JsonLd.tsx` | 全部详情页 |
+| 7 | RelatedModels 已有 | — | ✅ 已有 |
+
+全部是前端模板改动，改一次全站 5000+ 页面自动生效，不需要逐个改数据库。
+
+---
+
+## P6：技术优化（按开发排期）
+
+| 项目 | 说明 | 优先级 |
+|------|------|--------|
+| 模型页 SSR | `/models` 列表页是 CSR，初始 HTML 只有 "Loading..."。改 SSR 可加速收录 | 中 |
+| PageSpeed | 用 PageSpeed Insights 测 `/models` 和模型详情页，优化 LCP | 中 |
+| OG Image | 制作 1200x630 品牌 OG 图，放 `sandbase-fe/public/og-image.png` | 低 |
+
+---
+
 ## 验收标准
 
 完成上述优化后，预期 2-4 周内观察到：
