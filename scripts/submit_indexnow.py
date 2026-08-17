@@ -58,29 +58,35 @@ def build_url_list():
     ]
     urls.extend([f"{SITE_BASE}/vendor/{v}" for v in top_vendors])
 
-    # Priority 3: Top models from sitemap
+    # Priority 3: Top models and vendors from unified sitemap.xml
     try:
         result = subprocess.run(
-            ["curl", "-s", f"{SITE_BASE}/sitemap-models.xml"],
+            ["curl", "-s", f"{SITE_BASE}/sitemap.xml"],
             capture_output=True, text=True, timeout=30
         )
-        model_urls = re.findall(r'<loc>([^<]+)</loc>', result.stdout)
+        sitemap_urls = re.findall(r'<loc>([^<]+)</loc>', result.stdout)
+        # Separate model and vendor URLs
+        model_urls = [u for u in sitemap_urls if '/model/' in u]
+        vendor_urls = [u for u in sitemap_urls if '/vendor/' in u]
         urls.extend(model_urls[:150])
-    except Exception as e:
-        print(f"Warning: Could not fetch sitemap-models.xml: {e}")
-
-    # Priority 4: Remaining vendors
-    try:
-        result = subprocess.run(
-            ["curl", "-s", f"{SITE_BASE}/sitemap-vendors.xml"],
-            capture_output=True, text=True, timeout=30
-        )
-        vendor_urls = re.findall(r'<loc>([^<]+)</loc>', result.stdout)
         for vu in vendor_urls:
             if vu not in urls:
                 urls.append(vu)
     except Exception as e:
-        print(f"Warning: Could not fetch sitemap-vendors.xml: {e}")
+        print(f"Warning: Could not fetch sitemap.xml: {e}")
+
+    # Priority 4: Blog URLs (blog.sandbase.ai)
+    try:
+        result = subprocess.run(
+            ["curl", "-s", "https://blog.sandbase.ai/sitemap-0.xml"],
+            capture_output=True, text=True, timeout=30
+        )
+        blog_urls = re.findall(r'<loc>([^<]+)</loc>', result.stdout)
+        # Only include English (non zh-CN) blog posts
+        blog_en = [u for u in blog_urls if '/zh-CN/' not in u and u != "https://blog.sandbase.ai/"]
+        urls.extend(blog_en[:50])
+    except Exception as e:
+        print(f"Warning: Could not fetch blog sitemap: {e}")
 
     # Deduplicate
     seen = set()
@@ -93,10 +99,10 @@ def build_url_list():
     return deduped
 
 
-def submit_batch(endpoint, urls):
+def submit_batch(endpoint, host, urls):
     """Submit a batch of URLs to an IndexNow endpoint. Max 10,000 per request."""
     body = {
-        "host": SITE_HOST,
+        "host": host,
         "key": INDEXNOW_KEY,
         "urlList": urls,
     }
@@ -110,6 +116,16 @@ def submit_batch(endpoint, urls):
         return response.status_code, response.text[:200]
     except Exception as e:
         return 0, str(e)
+
+
+def group_urls_by_host(urls):
+    """Group URLs by their hostname for correct IndexNow host field."""
+    from urllib.parse import urlparse
+    groups = {}
+    for url in urls:
+        host = urlparse(url).netloc
+        groups.setdefault(host, []).append(url)
+    return groups
 
 
 def main():
@@ -128,6 +144,11 @@ def main():
     urls = urls[:args.limit]
     print(f"\n📋 Total URLs to submit: {len(urls)}")
 
+    # Group by host (www.sandbase.ai vs blog.sandbase.ai)
+    host_groups = group_urls_by_host(urls)
+    for host, host_urls in host_groups.items():
+        print(f"   {host}: {len(host_urls)} URLs")
+
     if args.dry_run:
         print("\n🔍 DRY RUN - URLs that would be submitted:")
         for i, url in enumerate(urls[:30], 1):
@@ -136,23 +157,25 @@ def main():
             print(f"  ... and {len(urls) - 30} more")
         return
 
-    # Submit to each IndexNow endpoint
+    # Submit to each IndexNow endpoint, grouped by host
     print(f"\n🚀 Submitting {len(urls)} URLs to IndexNow endpoints...\n")
 
     for endpoint in INDEXNOW_ENDPOINTS:
         engine_name = endpoint.split("//")[1].split("/")[0].replace("api.indexnow.org", "IndexNow (all)")
-        status, body = submit_batch(endpoint, urls)
+        for host, host_urls in host_groups.items():
+            status, body = submit_batch(endpoint, host, host_urls)
 
-        if status in (200, 202):
-            print(f"  ✅ {engine_name}: HTTP {status} — Accepted")
-        elif status == 207:
-            print(f"  ⚠️  {engine_name}: HTTP {status} — Partial (some URLs may be invalid)")
-        else:
-            print(f"  ❌ {engine_name}: HTTP {status} — {body[:100]}")
+            if status in (200, 202):
+                print(f"  ✅ {engine_name} [{host}]: HTTP {status} — Accepted ({len(host_urls)} URLs)")
+            elif status == 207:
+                print(f"  ⚠️  {engine_name} [{host}]: HTTP {status} — Partial")
+            else:
+                print(f"  ❌ {engine_name} [{host}]: HTTP {status} — {body[:80]}")
 
     # Summary
     print("\n" + "=" * 60)
     print(f"📊 Submitted {len(urls)} URLs to {len(INDEXNOW_ENDPOINTS)} search engines")
+    print(f"   Hosts: {', '.join(host_groups.keys())}")
     print(f"   Engines: Bing, Yandex, and IndexNow partners")
     print(f"   Expected crawl: within 24-48 hours")
 
@@ -163,6 +186,7 @@ def main():
     report = {
         "timestamp": time.strftime("%Y-%m-%dT%H:%M:%SZ"),
         "total_submitted": len(urls),
+        "hosts": {h: len(u) for h, u in host_groups.items()},
         "urls_sample": urls[:20],
     }
     report_file.write_text(json.dumps(report, indent=2))

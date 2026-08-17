@@ -1,0 +1,108 @@
+{
+  "date": "2026-08-07T12:31:42.181025",
+  "hot_content": [
+    {
+      "title": "Meta wants to get inside your terminal with its new coding agent",
+      "url": "https://www.theregister.com/ai-and-ml/2026/08/06/meta-wants-to-get-inside-your-terminal-with-its-new-coding-agent/5283717",
+      "date": "2026-08-06",
+      "highlight": "Meta wants to get inside your terminal with its new coding agent\n...\nTo demonstrate the capabilities of its next-generation Muse Spark model, Meta has released a terminal coding agent called Muse Code",
+      "query": "new AI model release coding agent 2026"
+    },
+    {
+      "title": "Runtime instances: persistent compute for production AI agents on Amazon Bedrock AgentCore | AWS News Blog",
+      "url": "https://aws.amazon.com/blogs/aws/runtime-instances-persistent-compute-for-production-ai-agents-on-amazon-bedrock-agentcore/",
+      "date": "2026-08-06",
+      "highlight": "When you move AI agents from prototype to production, the infrastructure challenges multiply. Your agents need to persist state across multi-step workflows that run for hours or days. They need to coo",
+      "query": "AI agent framework infrastructure production"
+    },
+    {
+      "title": "Introducing Muse Code and Muse Spark 1.2 | Meta AI Research",
+      "url": "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2",
+      "date": "2026-08-05",
+      "highlight": "Introducing Muse Code and Muse Spark 1.2 | Meta AI Research\n...\nWe're excited to release Muse Code (beta), a terminal coding agent powered by Muse Spark 1.2, our newest model. This marks our next step",
+      "query": "new AI model release coding agent 2026"
+    },
+    {
+      "title": "Scaling AI Agent Infrastructure with the MCP Stateless updates\n            \n            \n            - Google Developers Blog",
+      "url": "https://developers.googleblog.com/scaling-ai-agent-infrastructure-with-the-mcp-stateless-updates/",
+      "date": "2026-08-05",
+      "highlight": "As you deploy agentic workflows and scale up your users, your bottlenecks change. When the Model Context Protocol (MCP) was first introduced in late 2024, it provided an elegant, session-oriented fram",
+      "query": "MCP protocol update server tools"
+    },
+    {
+      "title": "MCP Stateless Server Migration 2026: Tutorial | BOVO Digital",
+      "url": "https://www.bovo-digital.tech/en/blog/tutorial-mcp-server-stateless-migration-2026",
+      "date": "2026-08-04",
+      "highlight": "The MCP 2026-07-28 spec does not ask you to rewrite your tools — it asks you to rewrite the transport layer. This tutorial walks you through audit to production with TypeScript and Python code.\n...\nOn",
+      "query": "MCP protocol update server tools"
+    },
+    {
+      "title": "Beyond the Protocol: Applying API Engineering Practices to MCP Servers - Cisco Blogs",
+      "url": "https://blogs.cisco.com/developer/beyond-the-protocol-applying-api-engineering-practices-to-mcp-servers",
+      "date": "2026-08-04",
+      "highlight": "That is useful, but it does not fully solve the enterprise lifecycle problem. We needed a structured artifact that could answer a precise question: What does this specific version of this MCP server e",
+      "query": "MCP protocol update server tools"
+    },
+    {
+      "title": "AI Models Leaderboard August 2026 | LMSys Arena Elo, Pricing & Speed",
+      "url": "https://www.swfte.com/models/leaderboard",
+      "date": "2026-08-04",
+      "highlight": "Large language models ranked by LMSys Arena Elo, MMLU, HumanEval, MATH, pricing, and inference speed. Refreshed monthly with live data from official provider pricing pages, Artificial Analysis, and th",
+      "query": "LLM benchmark comparison frontier model"
+    },
+    {
+      "title": "Build Production-Ready Agents with the GitHub Copilot Harness and Agent Framework | Microsoft Agent Framework",
+      "url": "https://devblogs.microsoft.com/agent-framework/build-production-ready-agents-with-the-github-copilot-harness-and-agent-framework/",
+      "date": "2026-08-04",
+      "highlight": "Developers increasingly want to build agents that can reason about code, modify files, execute commands, interact with developer tools, and work across entire repositories. While GitHub Copilot alread",
+      "query": "AI agent framework infrastructure production"
+    },
+    {
+      "title": "How Duolingo Built a Production-Ready AI Agent Platform",
+      "url": "https://blog.duolingo.com/production-ready-ai-agent-platform/",
+      "date": "2026-08-04",
+      "highlight": "At Duolingo, teams were repeatedly rebuilding the same infrastructure around AI agents. We solved this by creating a shared platform where developers define an agent once, while the platform handles e",
+      "query": "AI agent framework infrastructure production"
+    },
+    {
+      "title": "Huawei Open Sources 505B openPangu AI, Drops Weights And Code - Open Source For You",
+      "url": "https://www.opensourceforu.com/2026/08/huawei-open-sources-505b-openpangu-ai-drops-weights-and-code/",
+      "date": "2026-08-04",
+      "highlight": "Huawei Open Sources 505B openPangu AI, Drops Weights And Code - Open Source For You\n...\nHuawei has released the weights, inference code and technical report for its 505B open-weight AI model, offering",
+      "query": "open source AI model weights release"
+    }
+  ],
+  "keywords_with_volume": [
+    {
+      "keyword": "claude code",
+      "volume": 550000,
+      "cpc": 8.59,
+      "competition": "MEDIUM"
+    },
+    {
+      "keyword": "gpt-5",
+      "volume": 60500,
+      "cpc": 1.31,
+      "competition": "LOW"
+    },
+    {
+      "keyword": "ai agent",
+      "volume": 49500,
+      "cpc": 24.3,
+      "competition": "MEDIUM"
+    },
+    {
+      "keyword": "coding agent",
+      "volume": 1900,
+      "cpc": 22.38,
+      "competition": "MEDIUM"
+    }
+  ],
+  "already_covered": {
+    "claude code": "claude-code-vs-codex-vs-openclaw-2026",
+    "gpt-5": "gpt-5-6-vs-claude-5-agents-2026",
+    "ai agent": "langchain-langgraph-agent-framework-2026",
+    "coding agent": "claude-opus-4-7-coding-agents-2026"
+  },
+  "suggestions": []
+}

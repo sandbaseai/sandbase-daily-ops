@@ -1,0 +1,114 @@
+{
+  "date": "2026-08-10T17:01:31.552249",
+  "hot_content": [
+    {
+      "title": "MCP 2026-07-28 Goes Stateless: What Breaks and How to Migrate | byteiota",
+      "url": "https://byteiota.com/mcp-2026-07-28-goes-stateless-what-breaks-and-how-to-migrate/",
+      "date": "2026-08-09",
+      "highlight": "MCP just killed its session model. The 2026-07-28 specification — the biggest protocol revision since MCP launched in 2024 — removes the stateful handshake, drops session IDs, and makes every request ",
+      "query": "MCP protocol update server tools"
+    },
+    {
+      "title": "Stateless MCP servers: what actually changed · SSD Nodes",
+      "url": "https://www.ssdnodes.com/learn/stateless-mcp-explained",
+      "date": "2026-08-07",
+      "highlight": "MCP revision 2026-07-28 removed sessions and the initialize handshake. What that means for your reverse proxy, health checks, timeouts and auth.\n...\nA stateless MCP server holds no per-client state be",
+      "query": "MCP protocol update server tools"
+    },
+    {
+      "title": "Meta wants to get inside your terminal with its new coding agent",
+      "url": "https://www.theregister.com/ai-and-ml/2026/08/06/meta-wants-to-get-inside-your-terminal-with-its-new-coding-agent/5283717",
+      "date": "2026-08-06",
+      "highlight": "Meta wants to get inside your terminal with its new coding agent\n...\nMuse Spark'\n...\nTo demonstrate the capabilities of its next-generation Muse Spark model, Meta has released a terminal coding agent ",
+      "query": "new AI model release coding agent 2026"
+    },
+    {
+      "title": "Meta launches Muse Code for complex software work with persistent AI agents | InfoWorld",
+      "url": "https://www.infoworld.com/article/4206084/meta-launches-muse-code-for-complex-software-work-with-persistent-ai-agents.html",
+      "date": "2026-08-06",
+      "highlight": "Meta launches Muse Code for complex software work with persistent AI agents | InfoWorld\n...\n# Meta launches Muse Code for complex software work with persistent AI agents\n...\nAug 6, 20264 mins\n...\nMeta",
+      "query": "new AI model release coding agent 2026"
+    },
+    {
+      "title": "The next generation of MCP | Cloudflare Blog",
+      "url": "https://blog.cloudflare.com/mcp-v2/",
+      "date": "2026-08-06",
+      "highlight": "The latest MCP 2026-07-28 specification was released last week, together with updated TypeScript, Python, Go, and C# SDKs. MCP is now a fully stateless protocol. The specification, interaction model a",
+      "query": "MCP protocol update server tools"
+    },
+    {
+      "title": "Introducing Muse Code and Muse Spark 1.2 | Meta AI Research",
+      "url": "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2",
+      "date": "2026-08-05",
+      "highlight": "Introducing Muse Code and Muse Spark 1.2 | Meta AI Research\n...\nWe're excited to release Muse Code (beta), a terminal coding agent powered by Muse Spark 1.2, our newest model. This marks our next step",
+      "query": "new AI model release coding agent 2026"
+    },
+    {
+      "title": "Meta enters the AI coding wars with Muse Spark 1.2 and Muse Code with persistent async background agents | VentureBeat",
+      "url": "https://venturebeat.com/orchestration/meta-enters-the-ai-coding-wars-with-muse-spark-1-2-and-muse-code-with-persistent-async-background-agents",
+      "date": "2026-08-05",
+      "highlight": "Meta enters the AI coding wars with Muse Spark 1.2 and Muse Code with persistent async background agents | VentureBeat\n...\n2:00\n...\nMeta today released Muse Code, a terminal-based AI coding agent now ",
+      "query": "new AI model release coding agent 2026"
+    },
+    {
+      "title": "Meta debuts Muse Code to take on Anthropic and OpenAI - CNBC",
+      "url": "https://www.cnbc.com/2026/08/05/meta-debuts-muse-code-to-take-on-anthropic-and-openai-.html",
+      "date": "2026-08-05",
+      "highlight": "Meta debuts Muse Code to take on Anthropic and OpenAI\n...\n- Meta is rolling out its first coding agent called Muse Code as the company ramps up its investment in AI models and services to try and take",
+      "query": "new AI model release coding agent 2026"
+    },
+    {
+      "title": "Scaling AI Agent Infrastructure with the MCP Stateless updates\n            \n            \n            - Google Developers Blog",
+      "url": "https://developers.googleblog.com/scaling-ai-agent-infrastructure-with-the-mcp-stateless-updates/",
+      "date": "2026-08-05",
+      "highlight": "As you deploy agentic workflows and scale up your users, your bottlenecks change. When the Model Context Protocol (MCP) was first introduced in late 2024, it provided an elegant, session-oriented fram",
+      "query": "MCP protocol update server tools"
+    },
+    {
+      "title": "MCP Stateless Server Migration 2026: Tutorial | BOVO Digital",
+      "url": "https://www.bovo-digital.tech/en/blog/tutorial-mcp-server-stateless-migration-2026",
+      "date": "2026-08-04",
+      "highlight": "The MCP 2026-07-28 spec does not ask you to rewrite your tools — it asks you to rewrite the transport layer. This tutorial walks you through audit to production with TypeScript and Python code.\n...\nOn",
+      "query": "MCP protocol update server tools"
+    }
+  ],
+  "keywords_with_volume": [
+    {
+      "keyword": "anthropic",
+      "volume": 673000,
+      "cpc": 3.2,
+      "competition": "LOW"
+    },
+    {
+      "keyword": "ai agent",
+      "volume": 49500,
+      "cpc": 24.3,
+      "competition": "MEDIUM"
+    },
+    {
+      "keyword": "coding agent",
+      "volume": 1900,
+      "cpc": 22.38,
+      "competition": "MEDIUM"
+    },
+    {
+      "keyword": "open weights",
+      "volume": 320,
+      "cpc": 13.79,
+      "competition": "LOW"
+    }
+  ],
+  "already_covered": {
+    "anthropic": "anthropic-prompt-caching-agents-save-cost-2026",
+    "ai agent": "langchain-langgraph-agent-framework-2026",
+    "coding agent": "claude-opus-4-7-coding-agents-2026"
+  },
+  "suggestions": [
+    {
+      "keyword": "open weights",
+      "volume": 320,
+      "cpc": 13.79,
+      "competition": "LOW"
+    }
+  ]
+}

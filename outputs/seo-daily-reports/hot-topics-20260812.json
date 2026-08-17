@@ -1,0 +1,78 @@
+{
+  "date": "2026-08-12T14:49:56.113136",
+  "hot_content": [
+    {
+      "title": "Introducing Muse Glimmer, an open-weight 30-billion ...",
+      "url": "https://www.facebook.com/AIatMeta/posts/introducing-muse-glimmer-an-open-weight-30-billion-parameter-model-optimized-for/1346681444297947/",
+      "date": "2026-08-11",
+      "highlight": "AI at Meta - Introducing Muse Glimmer,\n...\nopen-weight...\n...\nIntroducing Muse Glimmer, an open-weight 30-billion-parameter model optimized for always-on local agent workflows. Keeping with our long t",
+      "query": "open source AI model weights release"
+    },
+    {
+      "title": "MCP July 2026 Update: Stateless Core, Extensions, and Tasks",
+      "url": "https://newsletter.victordibia.com/p/mcp-july-2026-update-stateless-core",
+      "date": "2026-08-10",
+      "highlight": "# MCP July 2026 Update: Stateless Core, Extensions, and Tasks\n...\n### Issue #67 | All you need to know about the updated MCP spec - stateless core, extensions, task runtime, current SDK support and in",
+      "query": "MCP protocol update server tools"
+    },
+    {
+      "title": "FrontierMath (legacy) Leaderboard (August 2026)",
+      "url": "https://benchlm.ai/benchmarks/frontiermath",
+      "date": "2026-08-10",
+      "highlight": "FrontierMath (legacy) Leaderboard (August 2026): GPT-5.6 Sol Leads at 89% | BenchLM.ai\n...\nThe public FrontierMath (legacy) snapshot ranks GPT-5.6 Sol first at 89%, ahead of GPT-5.6 Terra (84.9%) and ",
+      "query": "LLM benchmark comparison frontier model"
+    },
+    {
+      "title": "Meta launches Muse Glimmer open-weight AI model",
+      "url": "https://www.cnbc.com/2026/08/10/meta-muse-glimmer-open-weight-ai.html",
+      "date": "2026-08-10",
+      "highlight": "Meta launches Muse Glimmer open-weight AI model\n...\n- Meta CEO Mark Zuckerberg said the company would open the weights for Muse Spark 1.2, its latest AI model.\n- Zuckerberg also said the company would",
+      "query": "open source AI model weights release"
+    },
+    {
+      "title": "MCP 2026-07-28: Migration Guide and What Breaks | Marco Orta",
+      "url": "https://ortamarco.me/en/blog/migrate-mcp-server-2026-07-28/",
+      "date": "2026-08-07",
+      "highlight": "# Migrating Your MCP Server to the 2026-07-28 Spec: What Breaks \n\n Marco Orta | 16 mins read \n\nOn July 28, 2026, the Model Context Protocol shipped its most consequential revision yet: the protocol co",
+      "query": "MCP protocol update server tools"
+    },
+    {
+      "title": "Stateless MCP servers: what actually changed · SSD Nodes",
+      "url": "https://www.ssdnodes.com/learn/stateless-mcp-explained",
+      "date": "2026-08-07",
+      "highlight": "A stateless MCP server holds no per-client state between requests. Every request carries the protocol version, the client capabilities and the credentials the server needs to answer it, so any process",
+      "query": "MCP protocol update server tools"
+    },
+    {
+      "title": "Which frontier AI models are actually worth paying for?",
+      "url": "https://www.faros.ai/blog/which-frontier-ai-model-is-worth-the-spend",
+      "date": "2026-08-07",
+      "highlight": "## Cost vs quality vs speed: you usually get two out of three\n...\nMy rule of thumb has always been that with cost, quality, and performance, you tend to get only two out of three every time: pick a qu",
+      "query": "LLM benchmark comparison frontier model"
+    },
+    {
+      "title": "HarnessOpt-Bench: Evaluating LLMs at Harness Optimization | Scale Labs",
+      "url": "https://labs.scale.com/papers/harnessopt-bench",
+      "date": "2026-08-07",
+      "highlight": "As LLMs are increasingly deployed within agentic systems, their capabilities depend not only on the model weights but also on the harness: the prompts, tools, control flow, memory, and orchestration c",
+      "query": "LLM benchmark comparison frontier model"
+    },
+    {
+      "title": "Meta wants to get inside your terminal with its new coding agent",
+      "url": "https://www.theregister.com/ai-and-ml/2026/08/06/meta-wants-to-get-inside-your-terminal-with-its-new-coding-agent/5283717",
+      "date": "2026-08-06",
+      "highlight": "Meta wants to get inside your terminal with its new coding agent\n...\nMuse Code showcases Muse Spark's fresh software engineering chops\n...\nTo demonstrate the capabilities of its next-generation Muse S",
+      "query": "new AI model release coding agent 2026"
+    },
+    {
+      "title": "Meta launches Muse Code for complex software work with persistent AI agents | InfoWorld",
+      "url": "https://www.infoworld.com/article/4206084/meta-launches-muse-code-for-complex-software-work-with-persistent-ai-agents.html",
+      "date": "2026-08-06",
+      "highlight": "Meta launches Muse Code for complex software work with persistent AI agents | InfoWorld\n...\n# Meta launches Muse Code for complex software work with persistent AI agents\n...\nAug 6, 20264 mins\n...\nMeta",
+      "query": "new AI model release coding agent 2026"
+    }
+  ],
+  "keywords_with_volume": [],
+  "already_covered": {},
+  "suggestions": []
+}
