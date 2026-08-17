@@ -566,6 +566,168 @@ const description = model.description
 
 ---
 
+## P7：Model/API Readme 丰富化模板规范
+
+### 目标
+
+给每个模型/API 的 `readme` 字段写入丰富的 markdown 内容，让详情页有足够的**差异化、非结构化内容**（Google 更喜欢有深度的页面）。
+
+### 分工
+
+| 内容类型 | 放哪里 | 谁负责 |
+|----------|--------|--------|
+| 价格、context、tags、curl | 前端模板自动生成（P5） | 研发改一次模板 |
+| 模型特点、场景、对比、建议 | `model_card.readme` 字段 | 运营/AI 批量生成 |
+
+### Readme 标准模板
+
+每个模型的 readme 应包含以下区块（按顺序）：
+
+```markdown
+## Overview
+
+<!-- 1-2 段，说清楚这个模型/API 是什么、核心优势是什么 -->
+<!-- 字数要求：100-200 词，避免空洞 -->
+
+{model.display_name} is {one sentence positioning}.
+It excels at {key strength 1}, {key strength 2}, and {key strength 3}.
+{One sentence on architecture or differentiator, e.g., "Built on a 284B MoE architecture with 13B active parameters"}.
+
+## Best For
+
+<!-- 用 bullet list 列出 3-5 个最佳使用场景 -->
+
+- **Agent workflows** — long-running, multi-step tasks with tool use
+- **Code generation** — project-level refactors and debugging
+- **Structured extraction** — parsing documents into JSON schemas
+- **RAG pipelines** — grounding answers with retrieved context
+- **Cost-sensitive workloads** — high throughput at low per-token cost
+
+## When to Choose This vs Alternatives
+
+<!-- 对比同类模型，帮用户做决策 -->
+
+| Scenario | Choose this model | Consider instead |
+|----------|------------------|-----------------|
+| Budget agent tasks | ✅ $0.14/M input | GPT-4o-mini ($0.15/M) |
+| Maximum reasoning | Consider DeepSeek V4 Pro | ✅ Claude Opus 4.8 |
+| Vision + code | Consider Gemini 3.5 Flash | ✅ This model (text only) |
+
+## Capabilities
+
+<!-- 简短描述支持的能力 -->
+
+- ✅ Chat / Multi-turn conversation
+- ✅ Reasoning (configurable depth)
+- ✅ Function calling / Tool use
+- ✅ Structured output (JSON mode)
+- ❌ Vision (text-only)
+- ❌ Audio input
+
+## Pricing
+
+<!-- 定价表 -->
+
+| Tier | Price |
+|------|-------|
+| Input | ${prompt_token_price}/M tokens |
+| Output | ${completion_token_price}/M tokens |
+| Cache read | {cache_read_multiplier × 100}% of input |
+| Cache write | {cache_write_multiplier × 100}% of input |
+
+**Real-world cost example:** An agent making 50 calls/day × 4K tokens/call ≈ ${monthly_estimate}/month.
+
+## Quick Start
+
+```bash
+curl -X POST https://api.sandbase.ai/v1/chat/completions \
+  -H "Authorization: Bearer $SANDBASE_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "{model.name}",
+    "messages": [{"role": "user", "content": "Hello"}],
+    "max_tokens": 256
+  }'
+```
+
+## Python Example
+
+```python
+from openai import OpenAI
+
+client = OpenAI(
+    base_url="https://api.sandbase.ai/v1",
+    api_key="your-sandbase-key",
+)
+
+response = client.chat.completions.create(
+    model="{model.name}",
+    messages=[{"role": "user", "content": "Explain quantum computing in 3 sentences."}],
+    max_tokens=256,
+)
+print(response.choices[0].message.content)
+```
+
+## FAQ
+
+**Q: What is the context window?**
+A: {context_length/1000}K tokens (approximately {context_length * 0.75 / 1000}K words).
+
+**Q: Does it support streaming?**
+A: Yes. Add `"stream": true` to the request body.
+
+**Q: Can I use it with the OpenAI SDK?**
+A: Yes. Point `base_url` to `https://api.sandbase.ai/v1` and use your SandBase API key.
+
+**Q: Is there a free tier?**
+A: New accounts get free credits. After that, pay-as-you-go with no minimum.
+
+## Related
+
+- [{similar_model_1}](/model/{vendor}/{slug})
+- [{similar_model_2}](/model/{vendor}/{slug})
+- [{comparison_blog}](/blog/{slug})
+```
+
+### 按模型类型的变体
+
+**LLM 模型：** 用上面的完整模板。
+
+**Image/Video 生成 API：** 替换 Quick Start 为对应的请求格式，FAQ 调整为：
+- Q: What resolutions are supported?
+- Q: How long does generation take?
+- Q: What is the cost per image/video?
+
+**Data API（Instagram, Douyin 等）：** 替换为：
+- Overview 说明数据源和更新频率
+- Best For 说明典型用途（竞品监控、KOL 筛选等）
+- 加入 Response Example（JSON 片段）
+- FAQ 调整为：
+  - Q: How fresh is the data?
+  - Q: What rate limits apply?
+  - Q: Do I need the target platform's credentials?
+
+### 批量生成方式
+
+可以用 AI 批量生成 readme：
+
+1. 从数据库导出所有模型的 `name`, `display_name`, `vendor`, `type`, `description`, `capability_tags`, `model_card` 字段
+2. 用 prompt 模板 + LLM 为每个模型生成符合上述规范的 readme
+3. 批量写回数据库的 `model_card.readme` 字段
+4. 人工抽查 10-20 个确认质量后全量更新
+
+建议优先处理高展现页面（按 GSC 展示量排序前 100 个模型），再批量处理剩余。
+
+### 内容质量底线
+
+- 每个 readme 至少 300 词（Google 倾向于收录有深度的页面）
+- 避免纯复制 model description（会被判定为 thin content）
+- 必须包含至少 1 个代码示例
+- 必须包含至少 3 个 FAQ
+- Related 区块至少链接 2 个相关页面（内链价值）
+
+---
+
 ## 验收标准
 
 完成上述优化后，预期 2-4 周内观察到：
