@@ -112,8 +112,8 @@
 ### 每日操作
 
 ```bash
-cd /root/kiro/sandbase-blog
-python3 skills/blog/scripts/submit_indexnow.py --limit 50
+cd /root/kiro/sandbase-daily-ops
+python3 scripts/submit_indexnow.py --limit 50
 ```
 
 ### 限额说明
@@ -139,7 +139,7 @@ python3 skills/blog/scripts/submit_indexnow.py --limit 50
 
 ### 脚本位置
 
-- 提交脚本：`sandbase-blog/skills/blog/scripts/submit_indexnow.py`
+- 提交脚本：`scripts/submit_indexnow.py`
 - IndexNow Key：`fe52fdd42c4d42cbbcce6c1a94f7fb5d`
 - Key 文件已部署：`https://www.sandbase.ai/fe52fdd42c4d42cbbcce6c1a94f7fb5d.txt`
 - 报告输出：`outputs/seo-daily-reports/indexnow-*.json`
@@ -159,7 +159,7 @@ python3 skills/blog/scripts/submit_indexnow.py --limit 50
 - URL Architecture 文档: `sandbase-monorepo/docs/design/url-architecture.md`
 - Google 服务账号: `/root/.config/sandbase/google-service-account.json`
   - 可通过 API 批量查询索引状态（脚本已验证可用）
-- SEO Daily Check 脚本: `sandbase-blog/skills/blog/scripts/seo_daily_check.py`
+- SEO Daily Check 脚本: `scripts/seo_daily_check.py`
 
 ---
 

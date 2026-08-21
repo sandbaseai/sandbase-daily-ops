@@ -1,0 +1,4 @@
+interface:
+  display_name: "Social Publishing"
+  short_description: "Create native SandBase social channel posts"
+  default_prompt: "Use $social-publish to adapt a published SandBase article for selected social channels."
