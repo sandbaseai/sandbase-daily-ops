@@ -1,0 +1,4 @@
+interface:
+  display_name: "Blog Operations"
+  short_description: "Discover topics and monitor Blog search performance"
+  default_prompt: "Use $blog-operations to run the SandBase Blog topic and search-monitoring loop safely."

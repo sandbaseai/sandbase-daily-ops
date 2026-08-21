@@ -22,7 +22,7 @@
 | 字体 Latin | Inter (`/usr/share/fonts/opentype/inter/Inter-*.otf`) |
 | 字体 CJK | Noto Sans CJK SC (`/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc#2`) |
 | API Key 位置 | `~/.config/sandbase/.env`（chmod 600，用户待放入） |
-| DataForSEO 凭据 | 同上文件，`DATAFORSEO_LOGIN` + `DATAFORSEO_PASSWORD` |
+| DataForSEO 调用 | 统一通过 SandBase API，使用 `SANDBASE_API_KEY` |
 
 ---
 
@@ -73,8 +73,6 @@ mkdir -p ~/.config/sandbase
 nano ~/.config/sandbase/.env
 # 内容：
 # SANDBASE_API_KEY=sk-...
-# DATAFORSEO_LOGIN=...
-# DATAFORSEO_PASSWORD=...
 chmod 600 ~/.config/sandbase/.env
 ```
 

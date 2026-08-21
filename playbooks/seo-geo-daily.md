@@ -1,5 +1,7 @@
 # SEO & GEO 每日运维清单
 
+> 本文主要覆盖 `www.sandbase.ai` 主站。Blog 的热点、GSC、排名和发布后联动以 [`blog-content-loop.md`](blog-content-loop.md) 为准；不要从本文推断 Blog 的发布命令。
+
 > 每天花 10-15 分钟执行，持续提升搜索可见性和索引覆盖率。
 
 ---
@@ -175,20 +177,4 @@ python3 scripts/submit_indexnow.py --limit 50
 
 → 详见 [`sandbase-blog/skills/blog/guides/article-publish.md`](https://github.com/sandbaseai/sandbase-blog/blob/main/skills/blog/guides/article-publish.md)
 
-快速流程：
-1. `daily_hot_topics.py` 发现选题
-2. 写 EN + ZH 文章（按 skill 规范）
-3. `generate_blog_cover_url.py` 生成封面
-4. `migrate_covers.py` 上传到 static.sandbase.ai
-5. `npm run build` 验证
-6. `git push` 部署
-7. IndexNow 提交
-
-快速流程：
-1. 用 `dataforseo/v3/on_page/page_screenshot` 截图（通过 SandBase API）
-2. 下载检查截图质量（无弹窗/骨架屏）
-3. `sandbase-registry upload-file` 上传到 COS
-4. 插入文章 markdown
-5. `npm run build` 验证
-6. `git push origin main` 部署
-7. Google Indexing API + IndexNow 提交
+完整流程、自动触发、凭证和数据契约见 [`blog-content-loop.md`](blog-content-loop.md)。Blog 必须通过 feature branch + PR 发布，不得直接 `git push origin main`。Google Indexing API 也不得被描述为普通 Blog 文章的收录保证。

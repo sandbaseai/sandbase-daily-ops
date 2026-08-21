@@ -106,8 +106,7 @@
   COS_SECRET_ID      ← 腾讯云 COS（static.sandbase.ai）
   COS_SECRET_KEY
   COS_REGION=ap-singapore
-  DATAFORSEO_LOGIN   ← DataForSEO 关键词数据
-  DATAFORSEO_PASSWORD
+  # DataForSEO 关键词数据也通过 SandBase API，不配置供应商直连凭据
   
 ~/.config/sandbase/google-service-account.json ← Google Indexing API + GSC
 ```

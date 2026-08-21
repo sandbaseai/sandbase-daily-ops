@@ -13,6 +13,7 @@ import os
 import sys
 from datetime import datetime, timedelta
 import urllib.request
+from pathlib import Path
 
 API_KEY = os.environ.get("SANDBASE_API_KEY")
 if not API_KEY:
@@ -149,8 +150,21 @@ def check_search_volume(keywords):
 def check_existing_coverage(keywords):
     """检查我们博客已有的文章是否覆盖这些关键词"""
     import glob
-    blog_dir = "/root/kiro/sandbase-blog/src/content/en"
-    existing_slugs = [os.path.basename(f).replace(".md", "") for f in glob.glob(f"{blog_dir}/*.md")]
+    local_blog = Path(os.environ.get("SANDBASE_BLOG_REPO", Path(__file__).resolve().parents[2] / "sandbase-blog"))
+    existing_slugs = [Path(f).stem for f in glob.glob(str(local_blog / "src/content/en/*.md"))]
+
+    if not existing_slugs:
+        try:
+            with urllib.request.urlopen("https://blog.sandbase.ai/sitemap-0.xml", timeout=30) as response:
+                sitemap = response.read().decode("utf-8")
+            import re
+            existing_slugs = [
+                url.removeprefix("https://blog.sandbase.ai/").strip("/")
+                for url in re.findall(r"<loc>([^<]+)</loc>", sitemap)
+                if url.startswith("https://blog.sandbase.ai/") and "/zh-CN/" not in url
+            ]
+        except Exception as ex:
+            print(f"  ⚠️ Blog coverage lookup failed: {ex}")
 
     covered = {}
     for kw in keywords:
@@ -236,10 +250,10 @@ def main():
         "suggestions": suggestions[:5]
     }
 
-    report_dir = "/root/kiro/sandbase-daily-ops/outputs/seo-daily-reports"
-    os.makedirs(report_dir, exist_ok=True)
-    report_file = f"{report_dir}/hot-topics-{datetime.now().strftime('%Y%m%d')}.json"
-    with open(report_file, "w") as f:
+    report_dir = Path(__file__).resolve().parents[1] / "outputs/seo-daily-reports"
+    report_dir.mkdir(parents=True, exist_ok=True)
+    report_file = report_dir / f"hot-topics-{datetime.now().strftime('%Y%m%d')}.json"
+    with report_file.open("w", encoding="utf-8") as f:
         json.dump(report, f, indent=2, ensure_ascii=False)
 
     print(f"\n  📁 报告已保存: {report_file}")
