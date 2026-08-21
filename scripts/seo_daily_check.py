@@ -11,9 +11,12 @@ Requires:
 
 from __future__ import annotations
 
+import argparse
 import json
 import os
 import sys
+import urllib.request
+import re
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -21,11 +24,11 @@ from google.oauth2 import service_account
 from googleapiclient.discovery import build
 
 # --- Configuration ---
-KEY_FILE = Path.home() / ".config/sandbase/google-service-account.json"
+KEY_FILE = Path(os.environ.get("GOOGLE_SERVICE_ACCOUNT_FILE", Path.home() / ".config/sandbase/google-service-account.json"))
 ENV_FILE = Path.home() / ".config/sandbase/.env"
 SITE = "sc-domain:sandbase.ai"
 BLOG_PREFIX = "https://blog.sandbase.ai/"
-REPORT_DIR = Path("/root/kiro/sandbase-daily-ops/outputs/seo-daily-reports")
+REPORT_DIR = Path(__file__).resolve().parents[1] / "outputs/seo-daily-reports"
 REPORT_DIR.mkdir(parents=True, exist_ok=True)
 
 # Articles we published (new batch)
@@ -81,6 +84,24 @@ NEW_ARTICLE_SLUGS = [
 ]
 
 
+def discover_article_slugs() -> list[str]:
+    """Discover current English article slugs from the canonical Blog sitemap."""
+    try:
+        with urllib.request.urlopen(f"{BLOG_PREFIX}sitemap-0.xml", timeout=30) as response:
+            sitemap = response.read().decode("utf-8")
+        slugs = []
+        for url in re.findall(r"<loc>([^<]+)</loc>", sitemap):
+            if not url.startswith(BLOG_PREFIX) or "/zh-CN/" in url:
+                continue
+            slug = url.removeprefix(BLOG_PREFIX).strip("/")
+            if slug:
+                slugs.append(slug)
+        return slugs or NEW_ARTICLE_SLUGS
+    except Exception as exc:
+        print(f"  Blog sitemap discovery failed, using fallback list: {exc}")
+        return NEW_ARTICLE_SLUGS
+
+
 def get_gsc_service():
     credentials = service_account.Credentials.from_service_account_file(
         str(KEY_FILE), scopes=["https://www.googleapis.com/auth/webmasters.readonly"]
@@ -104,13 +125,20 @@ def fetch_page_data(service, start_date: str, end_date: str) -> list[dict]:
 
 
 def fetch_query_data(service, start_date: str, end_date: str) -> list[dict]:
-    """Fetch per-query search analytics."""
+    """Fetch per-query search analytics for the Blog property subset."""
     response = service.searchanalytics().query(
         siteUrl=SITE,
         body={
             "startDate": start_date,
             "endDate": end_date,
             "dimensions": ["query"],
+            "dimensionFilterGroups": [{
+                "filters": [{
+                    "dimension": "page",
+                    "operator": "contains",
+                    "expression": BLOG_PREFIX,
+                }]
+            }],
             "rowLimit": 100,
             "dataState": "all",
         },
@@ -129,7 +157,7 @@ def fetch_url_inspection(service, url: str) -> dict:
         return {"error": str(e)}
 
 
-def generate_report(today: str, page_data: list, query_data: list, indexing_status: dict) -> str:
+def generate_report(today: str, page_data: list, query_data: list, indexing_status: dict, article_slugs: list[str]) -> str:
     """Generate markdown report."""
     lines = [
         f"# SEO 巡检报告 {today}",
@@ -154,7 +182,7 @@ def generate_report(today: str, page_data: list, query_data: list, indexing_stat
     lines.append("")
 
     # Traffic - blog pages
-    blog_pages = [r for r in page_data if "/blog/" in r["keys"][0]]
+    blog_pages = [r for r in page_data if r["keys"][0].startswith(BLOG_PREFIX)]
     blog_pages.sort(key=lambda r: r["clicks"], reverse=True)
 
     lines.append("## 流量 Top 10（博客页面）")
@@ -181,7 +209,7 @@ def generate_report(today: str, page_data: list, query_data: list, indexing_stat
     lines.append("")
 
     # Top queries
-    lines.append("## 热门查询词 Top 15")
+    lines.append("## Blog 热门查询词 Top 15")
     lines.append("")
     lines.append("| 查询词 | 点击 | 展示 | CTR | 排名 |")
     lines.append("|---|---:|---:|---:|---:|")
@@ -195,11 +223,11 @@ def generate_report(today: str, page_data: list, query_data: list, indexing_stat
     for row in blog_pages:
         page = row["keys"][0].replace("https://blog.sandbase.ai/", "").rstrip("/")
         slug = page.replace("zh-CN/", "")
-        if slug in NEW_ARTICLE_SLUGS:
+        if slug in article_slugs:
             new_with_data.append((slug, row))
 
     if new_with_data:
-        lines.append("## 新文章表现（本批 48 篇中有数据的）")
+        lines.append("## Blog 文章表现（当前 sitemap 中有数据的）")
         lines.append("")
         lines.append("| 文章 | 点击 | 展示 | CTR | 排名 |")
         lines.append("|---|---:|---:|---:|---:|")
@@ -215,12 +243,18 @@ def generate_report(today: str, page_data: list, query_data: list, indexing_stat
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--slugs", help="Comma-separated Blog slugs to inspect after publication")
+    args = parser.parse_args()
+
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     end_date = (datetime.now() - timedelta(days=2)).strftime("%Y-%m-%d")
     start_date = (datetime.now() - timedelta(days=9)).strftime("%Y-%m-%d")
 
     print(f"[{today}] SEO 巡检开始...")
     service = get_gsc_service()
+    requested_slugs = [slug.strip() for slug in (args.slugs or "").split(",") if slug.strip()]
+    article_slugs = requested_slugs or discover_article_slugs()
 
     # 1. Fetch search analytics
     print("  拉取页面数据...")
@@ -234,7 +268,7 @@ def main():
     # 2. Check indexing (sample 10 new articles to avoid rate limits)
     print("  检查收录状态（抽样 10 篇）...")
     indexing_status = {}
-    for slug in NEW_ARTICLE_SLUGS[:10]:
+    for slug in article_slugs[:10]:
         url = f"https://blog.sandbase.ai/{slug}/"
         result = fetch_url_inspection(service, url)
         verdict = result.get("indexStatusResult", {}).get("verdict", "unknown")
@@ -248,7 +282,7 @@ def main():
         print(f"    {slug}: {indexing_status[slug]}")
 
     # 3. Generate report
-    report = generate_report(today, page_data, query_data, indexing_status)
+    report = generate_report(today, page_data, query_data, indexing_status, article_slugs)
     report_path = REPORT_DIR / f"{today}.md"
     report_path.write_text(report)
     print(f"\n  报告已生成: {report_path}")
