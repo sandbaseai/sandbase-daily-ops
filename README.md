@@ -1,8 +1,8 @@
 # SandBase Daily Ops
 
-Daily operating system for SandBase product launches, content distribution, and community updates.
+Daily operating system for SandBase SEO monitoring, content distribution, and community updates.
 
-This repo keeps reusable skills, playbooks, templates, scripts, and example outputs for shipping SandBase updates consistently across:
+This repo keeps daily monitoring, distribution, community playbooks, and operational reports. Blog authoring and publication assets now live with the site code in [sandbase-blog](https://github.com/sandbaseai/sandbase-blog).
 
 - Blog
 - LinkedIn
@@ -17,78 +17,18 @@ first version stays focused on company-facing global distribution plus Chinese l
 ## Structure
 
 ```text
-skills/
-  api-launch-publish/        # API / provider / Agent Service launch workflow
 playbooks/
-  api-launch-sop.md          # Human-readable launch checklist
   seo-geo-daily.md           # SEO/GEO daily ops checklist
-  blog-screenshot-deploy.md  # Screenshot and deploy flow
-  article-publish.md         # Hot topic → article → cover → deploy (daily)
 scripts/
-  daily_hot_topics.py        # Daily hot topic monitoring
-  submit_indexnow.py         # Bing IndexNow submission
-  submit_indexing.py         # Google Indexing API submission
+  cross_post.py              # Cross-channel distribution helper
 outputs/
-  exa-search-launch/         # First example: Exa Search on SandBase.ai
   seo-daily-reports/         # Daily SEO/indexing reports
 ```
 
-## First Skill
+## Blog operations moved
 
-`skills/api-launch-publish` turns a rough API description into a standard launch package:
+The canonical copies now live in `sandbase-blog`:
 
-```text
-API name + description
-  -> positioning
-  -> 3 blog drafts (owned launch / comparison / 2026 Top N), EN + ZH
-  -> LinkedIn copy
-  -> X copy
-  -> Discord announcement
-  -> Medium argument
-  -> Zhihu question-led answer
-  -> SandBase API generated launch images
-```
+- [`skills/blog/`](https://github.com/sandbaseai/sandbase-blog/tree/main/skills/blog) — the single home for the skill, guides, prompts, references, and helper scripts
 
-Images are generated through SandBase API with:
-
-```json
-{
-  "model": "openai/gpt-image-2",
-  "output_format": "png",
-  "quality": "high"
-}
-```
-
-## Usage
-
-Create or edit a launch config:
-
-```text
-skills/api-launch-publish/references/example-api-launch.json
-```
-
-Preview prompts:
-
-```bash
-python skills/api-launch-publish/scripts/generate_api_launch_images.py \
-  --config skills/api-launch-publish/references/example-api-launch.json \
-  --formats 16x9 4x5 \
-  --print-prompts
-```
-
-Generate images:
-
-```bash
-SANDBASE_API_KEY=... python skills/api-launch-publish/scripts/generate_api_launch_images.py \
-  --config skills/api-launch-publish/references/example-api-launch.json \
-  --out-dir outputs/exa-search-launch \
-  --formats 16x9 4x5
-```
-
-## Example
-
-First launch example:
-
-- `Exa Search on SandBase.ai`
-- From semantic web search to reusable Agent Services
-- Outputs: `outputs/exa-search-launch/`
+Make future Blog workflow changes there so implementation and documentation stay in sync.
