@@ -49,9 +49,9 @@ python3 scripts/track_rankings.py \
 
 ### Run automation
 
-Use `.github/workflows/blog-signals.yml` for scheduled, manual, and `blog_published` runs. Confirm required secrets before dispatching. Ranking runs are manual and must set the billable approval input.
+Use `.github/workflows/blog-signals.yml` for scheduled and manual runs. Confirm required secrets before starting a task. Ranking runs are manual and must set the billable approval input.
 
-After Blog deployment, treat a successful `blog_published` dispatch as the handoff, not as proof that GSC has fresh performance data. If Blog lacks `DAILY_OPS_TOKEN`, rely on the scheduled Daily run and report that fallback accurately.
+Discover Blog changes from the live sitemap and GSC rather than waiting for a cross-repository event. For an immediate targeted inspection, run `python3 scripts/seo_daily_check.py --slugs <comma-separated-slugs>` in Daily. Do not add a cross-repository token or claim Blog deployment triggered monitoring. Route every DataForSEO model through `https://api.sandbase.ai/v1/run` with `SANDBASE_API_KEY`; never request direct provider credentials.
 
 ## Review outputs
 

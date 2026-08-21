@@ -7,8 +7,8 @@
 1. Daily 运行 `scripts/daily_hot_topics.py`，输出 `outputs/seo-daily-reports/hot-topics-YYYYMMDD.json`。
 2. 编辑或自动代理读取最新热点报告，并在 Blog 的 `scripts/ai-content-generator/content-index.md` 与 `src/content/` 中查重。
 3. 在 Blog 按 `skills/blog/SKILL.md` 研究、写 EN/ZH、生成截图和封面、三轮校验并提交 PR。
-4. Blog 合并到 `main` 后部署 Cloudflare Pages；部署成功后发送带有本次英文文章 slugs 的 `blog_published` repository dispatch。
-5. Daily 收到事件后对这些 slugs 运行 GSC/URL Inspection 巡检；定时任务也会独立执行热点与 GSC 巡检。
+4. Blog 合并到 `main` 后独立部署 Cloudflare Pages，不调用 Daily 仓库。
+5. Daily 按自己的定时任务读取线上 sitemap 和 GSC；需要立即检查时，用户在 Daily 手动传入文章 slug。
 6. 需要付费 SERP 排名时，由操作员手动运行 Daily workflow，并明确打开 billable 开关。
 7. 社交分发读取已经发布的 canonical Blog URL，按 `skills/social-publish/SKILL.md` 生成 LinkedIn、X、Discord 或小红书内容。
 
@@ -17,16 +17,14 @@
 Daily workflow：`.github/workflows/blog-signals.yml`
 
 - `schedule`：每日热点与 GSC；每周排名默认关闭。
-- `repository_dispatch: blog_published`：Blog 部署成功后的 GSC/收录巡检。
 - `workflow_dispatch`：人工选择 `daily`、`hot-topics`、`gsc` 或 `rankings`。
 
 需要的 GitHub Secrets：
 
-- `SANDBASE_API_KEY`：热点搜索和搜索量。
+- `SANDBASE_API_KEY`：热点、搜索量和显式批准的 SERP 排名；所有 DataForSEO 模型均经 SandBase API。
 - `GOOGLE_SERVICE_ACCOUNT_JSON`：GSC 只读与 URL Inspection。
-- `DATAFORSEO_LOGIN`、`DATAFORSEO_PASSWORD`：仅显式运行 rankings 时使用。
 
-Blog 仓库可配置 `DAILY_OPS_TOKEN`（对 `sandbaseai/sandbase-daily-ops` 有 Actions 写权限的细粒度 token）。未配置时，Blog 部署仍成功，但不会发送跨仓库事件；Daily 的定时任务继续兜底。
+两个仓库之间不配置 token、不发送 repository dispatch。联动依靠稳定的线上接口（Blog sitemap、canonical URL、GSC）和文档契约。不要使用 DataForSEO 直连账号。
 
 ## 数据契约
 

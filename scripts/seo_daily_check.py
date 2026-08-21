@@ -6,7 +6,6 @@ Run via cron: 0 8 * * * python3 /path/to/seo_daily_check.py
 
 Requires:
 - ~/.config/sandbase/google-service-account.json (GSC access)
-- ~/.config/sandbase/.env (DATAFORSEO_LOGIN, DATAFORSEO_PASSWORD)
 """
 
 from __future__ import annotations

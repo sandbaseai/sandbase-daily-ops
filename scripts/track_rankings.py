@@ -12,17 +12,15 @@ Usage:
 from __future__ import annotations
 
 import argparse
-import base64
 import csv
 import json
 import os
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.error import HTTPError
 from urllib.request import Request, urlopen
 
-API_BASE = "https://api.dataforseo.com/v3"
+SANDBASE_RUN_URL = "https://api.sandbase.ai/v1/run"
 DEFAULT_CONFIG = Path(__file__).resolve().parents[1] / "config/blog-keywords.json"
 
 
@@ -51,30 +49,29 @@ def load_config(path: Path) -> tuple[str, list[dict]]:
     return domain, keywords
 
 
-def request_serp(keyword: str, location: int, language: str, login: str, password: str) -> dict:
-    """Check Google SERP for a keyword, return sandbase.ai ranking."""
-    credential = base64.b64encode(f"{login}:{password}".encode()).decode()
-    payload = [{
+def request_serp(keyword: str, location: int, language: str, api_key: str) -> dict:
+    """Check Google SERP through the SandBase API."""
+    payload = {
+        "model": "dataforseo/v3/serp/google/organic/live/regular",
         "keyword": keyword,
         "location_code": location,
         "language_code": language,
         "depth": 30,  # Check top 30
         "device": "desktop",
-    }]
+    }
     req = Request(
-        f"{API_BASE}/serp/google/organic/live/regular",
+        SANDBASE_RUN_URL,
         data=json.dumps(payload).encode(),
         method="POST",
         headers={
-            "Authorization": f"Basic {credential}",
+            "Authorization": f"Bearer {api_key}",
             "Content-Type": "application/json",
         },
     )
-    try:
-        with urlopen(req, timeout=60) as resp:
-            return json.loads(resp.read())
-    except Exception:
-        return {"tasks": []}
+    with urlopen(req, timeout=90) as resp:
+        response = json.loads(resp.read())
+    outputs = response.get("outputs", [])
+    return outputs[0] if outputs and isinstance(outputs[0], dict) else {}
 
 
 def find_domain_rank(serp_result: dict, domain: str) -> tuple[int | None, str | None]:
@@ -120,10 +117,9 @@ def main():
 
     if args.env_file:
         load_env(Path(args.env_file))
-    login = os.environ.get("DATAFORSEO_LOGIN")
-    password = os.environ.get("DATAFORSEO_PASSWORD")
-    if not login or not password:
-        print("ERROR: DATAFORSEO_LOGIN and DATAFORSEO_PASSWORD required", file=sys.stderr)
+    api_key = os.environ.get("SANDBASE_API_KEY")
+    if not api_key:
+        print("ERROR: SANDBASE_API_KEY required", file=sys.stderr)
         return 1
 
     # Check rankings
@@ -132,7 +128,7 @@ def main():
         lang = kw["language"]
         print(f"  Checking: \"{kw['keyword']}\" ({lang}, loc={kw['location']})...", end=" ")
         try:
-            serp = request_serp(kw["keyword"], kw["location"], lang, login, password)
+            serp = request_serp(kw["keyword"], kw["location"], lang, api_key)
             rank, url = find_domain_rank(serp, target_domain)
             status = f"#{rank}" if rank else "Not in top 30"
             print(status)
@@ -145,7 +141,7 @@ def main():
                 "url": url or "",
                 "target_slug": kw["slug"],
             })
-        except HTTPError as e:
+        except Exception as e:
             print(f"ERROR: {e}")
             results.append({
                 "date": today,
