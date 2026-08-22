@@ -18,7 +18,7 @@ Maintain only:
 
 Blog, Medium, DEV Community, and Zhihu belong to `sandbase-blog/skills/blog/`.
 
-For the upstream热点、GSC、关键词排名和发布后回流过程, use `../blog-operations/SKILL.md` and `playbooks/blog-content-loop.md`. Start social adaptation only from an approved or live canonical article.
+For upstream热点、GSC、关键词排名和发布后巡检, use `sandbase-blog/skills/blog/SKILL.md` and its `docs/content-operations.md`. Start social adaptation only from an approved or live canonical article; do not depend on a cross-repository notification.
 
 ## Required input
 

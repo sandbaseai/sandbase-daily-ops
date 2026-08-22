@@ -1,6 +1,6 @@
 # SEO & GEO 每日运维清单
 
-> 本文主要覆盖 `www.sandbase.ai` 主站。Blog 的热点、GSC、排名和发布后联动以 [`blog-content-loop.md`](blog-content-loop.md) 为准；不要从本文推断 Blog 的发布命令。
+> 本文只覆盖 `www.sandbase.ai` 主站。Blog 的热点、GSC、排名、索引和发布见 [`sandbase-blog/docs/content-operations.md`](https://github.com/sandbaseai/sandbase-blog/blob/main/docs/content-operations.md)。
 
 > 每天花 10-15 分钟执行，持续提升搜索可见性和索引覆盖率。
 
@@ -106,51 +106,9 @@
 
 ---
 
-## 七、Bing & IndexNow 每日提交（2 分钟）
+## 七、Bing & IndexNow
 
-> Bing Webmaster Tools 已于 2026-08-02 通过 DNS 验证。
-> 新验证站点有每日 URL 提交限额（~50/请求），需要分批提交。
-
-### 每日操作
-
-```bash
-cd /root/kiro/sandbase-daily-ops
-python3 scripts/submit_indexnow.py --limit 50
-```
-
-### 限额说明
-
-| 引擎 | 每次限额 | 说明 |
-|------|---------|------|
-| Bing | ~50 URL/请求 | 新站限流，验证时间越长限额越高 |
-| Yandex | 200+ | 无明显限制 |
-| IndexNow API | 同 Bing | 走的是 Bing 验证 |
-
-### 提交优先级
-
-1. 核心页面（/models, /apis, /vendor, /pricing）
-2. 顶级供应商（/vendor/openai, /vendor/anthropic 等）
-3. 热门模型详情页（从 sitemap-models.xml 取）
-4. 博客文章（新发布或更新封面的文章）
-
-### 进度追踪
-
-| 日期 | 提交数 | Bing 状态 | Yandex 状态 | 备注 |
-|------|--------|-----------|-------------|------|
-| 8/2 | 50 | ✅ 202 | ✅ 202 | 首次提交，前 50 个核心 URL |
-
-### 脚本位置
-
-- 提交脚本：`scripts/submit_indexnow.py`
-- IndexNow Key：`fe52fdd42c4d42cbbcce6c1a94f7fb5d`
-- Key 文件已部署：`https://www.sandbase.ai/fe52fdd42c4d42cbbcce6c1a94f7fb5d.txt`
-- 报告输出：`outputs/seo-daily-reports/indexnow-*.json`
-
-### 未来优化
-
-- 待 Bing 限额放开后（通常验证 1-2 周后），改为每次 200 URL
-- 可以加入 blog 更新触发：每次发布新文章后自动提交该 URL
-- 考虑写 cron job 每天自动跑
+本仓库不再维护索引提交脚本或密钥。主站提交应由主站部署仓库提供与其 sitemap、域名验证一致的实现；Blog 提交仅使用 `sandbase-blog/scripts/operations/submit_indexnow.py`，不得拿它提交 `www.sandbase.ai` URL。
 
 ---
 
@@ -159,22 +117,6 @@ python3 scripts/submit_indexnow.py --limit 50
 - Search Console: https://search.google.com/search-console
 - Rich Results Test: https://search.google.com/test/rich-results
 - URL Architecture 文档: `sandbase-monorepo/docs/design/url-architecture.md`
-- Google 服务账号: `/root/.config/sandbase/google-service-account.json`
-  - 可通过 API 批量查询索引状态（脚本已验证可用）
-- SEO Daily Check 脚本: `scripts/seo_daily_check.py`
+- Google 服务账号由密钥管理或部署环境提供，不记录本机绝对路径
 
 ---
-
-## 补充：博客文章截图与部署
-
-写完新文章或优化旧文章后，执行完整的截图-部署流程：
-
-→ 详见 [`sandbase-blog/skills/blog/guides/blog-screenshot-deploy.md`](https://github.com/sandbaseai/sandbase-blog/blob/main/skills/blog/guides/blog-screenshot-deploy.md)
-
-## 补充：热点文章发布
-
-每日热点监控发现选题后，走标准化发布流程：
-
-→ 详见 [`sandbase-blog/skills/blog/guides/article-publish.md`](https://github.com/sandbaseai/sandbase-blog/blob/main/skills/blog/guides/article-publish.md)
-
-完整流程、自动触发、凭证和数据契约见 [`blog-content-loop.md`](blog-content-loop.md)。Blog 必须通过 feature branch + PR 发布，不得直接 `git push origin main`。Google Indexing API 也不得被描述为普通 Blog 文章的收录保证。
