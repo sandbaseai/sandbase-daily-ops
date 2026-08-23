@@ -460,6 +460,26 @@ records the operational decision, evidence, validation, and outcome.
 - **Next action:** Answer maintainer questions only; if merged, compare CLI
   referral traffic and record observed outcomes without causal overclaiming.
 
+### 2026-08-23 — MCP directory eligibility clarification
+
+- **Objective:** Keep the CLI listing accurate while responding to the target
+  directory's automated verification request.
+- **Evidence:** The directory asked for a Glama score badge and Dockerfile/
+  introspection checks. CLI is a local stdio bridge, not a hosted MCP server;
+  adding a hosted-server badge or Docker image would misrepresent its contract.
+- **Action:** Replied on [PR #12702](https://github.com/punkpeye/awesome-mcp-servers/pull/12702#issuecomment-5384935946)
+  explaining the local-stdio boundary and asking whether that project type is
+  eligible. No misleading metadata was added.
+- **Validation:** Current PR remains open; no maintainer decision yet.
+- **Distribution channel:** Same community PR thread; no duplicate outreach.
+- **Baseline:** CLI remains at 33 stars; no Star growth attributed to this
+  pending listing or clarification.
+- **Review dates:** Re-check on 2026-08-30 and 2026-09-06 UTC.
+- **Result:** eligibility clarification pending; listing will be withdrawn if
+  the directory only accepts hosted Dockerized servers.
+- **Next action:** Follow the maintainer's answer and preserve the accurate
+  local-stdio description.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
