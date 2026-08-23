@@ -367,6 +367,30 @@ records the operational decision, evidence, validation, and outcome.
   the npm/GitHub release discrepancy explicit until trusted publishing is
   configured by a package administrator.
 
+### 2026-08-23 — Docs open-source stack navigation
+
+- **Objective:** Give developers arriving at the documentation a clear path to
+  the companion OSS layer that matches their task.
+- **Evidence:** The Docs README linked the CLI but did not present canonical
+  entry points for the Skills repository or the DeepSeek Harness Handbook.
+- **Action:** Added an `Open-source companion projects` section with direct
+  links and concise layer descriptions in [Docs PR #6](https://github.com/sandbaseai/sandbase-docs/pull/6),
+  merged at [`34d9555`](https://github.com/sandbaseai/sandbase-docs/commit/34d955500dd3dea959ed936d766be56e21c13894).
+- **Validation:** README-only change; links resolve to the three named public
+  repositories and their canonical issue/contribution surfaces. The prior
+  VitePress production build remains the available build evidence.
+- **Distribution channel:** Cross-project navigation from the public Docs
+  landing page; no unsolicited external posting.
+- **Deployment state:** Merged to `main`; no runtime, credential, or product
+  behavior changes.
+- **Baseline:** Docs 1 star before and after; no Star growth attributed to
+  internal cross-linking.
+- **Review dates:** 2026-09-06 and 2026-09-20 UTC.
+- **Result:** improved project discovery path; Star outcome pending.
+- **Next action:** Compare Docs referral traffic and outbound clicks after the
+  next traffic window before deciding whether another distribution channel is
+  warranted.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
