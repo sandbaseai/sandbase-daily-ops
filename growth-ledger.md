@@ -391,6 +391,27 @@ records the operational decision, evidence, validation, and outcome.
   next traffic window before deciding whether another distribution channel is
   warranted.
 
+### 2026-08-23 — Docs pull-request build validation
+
+- **Objective:** Keep the documentation `main` branch buildable and make
+  broken documentation changes visible before merge.
+- **Evidence:** Deployment validation ran only on release tags/manual deploys;
+  pull requests had no dedicated VitePress build gate or status badge.
+- **Action:** Added `.github/workflows/validate.yml` and a README badge in
+  [Docs PR #7](https://github.com/sandbaseai/sandbase-docs/pull/7), merged at
+  [`6b851a3`](https://github.com/sandbaseai/sandbase-docs/commit/6b851a31d697ef538cc3ed2eae95f413e51e5993).
+- **Validation:** GitHub Actions run
+  [32626416490](https://github.com/sandbaseai/sandbase-docs/actions/runs/32626416490)
+  passed `npm ci` and `npm run build` on the pull request.
+- **Deployment state:** Merged to `main`; read-only CI, no production or
+  credential changes.
+- **Baseline:** Docs 1 star before and after; no Star growth attributed to CI.
+- **Review dates:** 2026-09-06 and 2026-09-20 UTC.
+- **Result:** main-health and contributor confidence improved; Star outcome
+  pending.
+- **Next action:** Use the green workflow as evidence in future contributor
+  reviews; do not claim it caused Star growth without referral evidence.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
