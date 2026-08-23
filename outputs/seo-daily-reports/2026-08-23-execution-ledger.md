@@ -288,3 +288,11 @@ All future SEO, Blog, GitHub, and third-party distribution operations will be re
 - Result: deployed; shared promotion context and daily inspection system are ready for ongoing use.
 - Review dates: 2026-09-06 and 2026-09-20 for page/query/indexing movement.
 - Next action: repair stale Docs README links, then resume the three-page GSC low-CTR optimization queue.
+
+## Follow-up evidence — 2026-08-23
+
+- GSC refresh `32636342902` completed successfully; corrected 28-day baseline remains 515 site clicks / 44,665 impressions and 168 Blog clicks / 5,578 impressions. Non-brand: 119 clicks / 9,131 impressions / 1.3% CTR.
+- Indexing inspection remains 7/10; pending URLs: `agent-harness-performance-variable-2026`, `agent-observability-logging-tracing-debugging`, and `agent-plugins-1-portable-coding-agent-standard-2026`.
+- CTR experiments deployed: DeepSeek Harness via Blog PR #160 and GLM-5.3 via Blog PR #161. GLM deployment `32636252538` succeeded; live EN/ZH title and description checks passed.
+- Local SEO build: 1,141 pages, 344 sitemap URLs, 688 hreflang targets, 0 unresolved internal paths.
+- Review cadence: evaluate both CTR experiments after 14 days; re-run URL Inspection for the three pending articles.
