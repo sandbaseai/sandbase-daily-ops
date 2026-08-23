@@ -230,3 +230,39 @@ All future SEO, Blog, GitHub, and third-party distribution operations will be re
 - Review dates: GitHub profile/referral traffic and branded query composition after 14 and 28 days.
 - Result: deployed to the public GitHub organization profile.
 - Next action: audit high-traffic repository README first screens for consistent product-category links, then repair or intentionally redirect the `docs.sandbase.ai` DNS surface.
+
+## Experiment 13: official GSC baseline and 100× success criterion
+
+- Objective: replace unmeasured growth claims with a reproducible Google Search Console baseline and an explicit 100× target.
+- Action: after `GOOGLE_SERVICE_ACCOUNT_JSON` was configured for `sandbase-blog`, reran the corrected GSC workflow and archived both the generated report and a concise baseline definition in this repository.
+- Workflow: https://github.com/sandbaseai/sandbase-blog/actions/runs/32611196712 completed successfully in 1m22s, including credential preflight, Search Console collection, and artifact upload.
+- Baseline window: rolling 28 days ending with the standard two-day GSC delay, frozen on 2026-08-23.
+- Primary metric: non-brand Google clicks = 119; 100× target = 11,900 in a comparable rolling 28-day window.
+- Supporting metrics: Blog clicks = 168 (100× reference 16,800); whole-site clicks = 515 (100× reference 51,500); whole-site impressions = 44,665; Blog impressions = 5,578; non-brand impressions = 9,131 at 1.3% CTR.
+- Index evidence: 7 of 10 tracked new articles were indexed; 232 current-sitemap Blog pages had GSC data.
+- Artifacts: `outputs/seo-daily-reports/2026-08-23-gsc-100x-baseline.md` and `outputs/seo-daily-reports/2026-08-23-gsc-28d-baseline-raw.md`.
+- Result: measurement blocker cleared and the 100× denominator frozen.
+- Next action: optimize the position-5–20/low-CTR queue, starting with the three pages responsible for 1,006 impressions and only 3 clicks in the baseline window; rerun equivalent reports at 14 and 28 days.
+
+## Experiment 14: high-authority GitHub README referral network
+
+- Objective: connect SandBase's strongest GitHub discovery surfaces to the live unified LLM/image/video API conversion path.
+- Action: added concise, project-contextual first-screen links to the live API quickstart, model/API catalog, and unified AI API comparison from Harness, Skills, and CLI READMEs.
+- Deployments: https://github.com/sandbaseai/sandbase-harness/pull/71, https://github.com/sandbaseai/sandbase-skills/pull/57, and https://github.com/sandbaseai/cli/pull/26, all merged on 2026-08-23.
+- Validation: Harness quality/test/build and PR-policy checks passed; CLI validation passed; all target URLs returned HTTP 200 before merge.
+- Result: deployed across the 629-star Harness repository, 42-star Skills repository, and 32-star CLI repository.
+- Next action: monitor GitHub referral traffic to the API documentation and unified API hub at 14 and 28 days.
+
+## Experiment 15: Blog Skill compliance correction
+
+- Trigger: operator review identified that the first unified AI API article release did not follow `sandbase-blog/skills/blog/SKILL.md` and omitted Chinese.
+- Audit finding: confirmed. The initial release had only English, used `SandBase Team` instead of the API author persona, reused an unrelated LiteLLM/OpenRouter cover, omitted the content index, lacked the required review/evidence package, and had no embedded evidence screenshots.
+- Corrective action: reread the complete Blog Skill and its article, format, writing, visual, quality, screenshot, and reviewer references; rewrote English; created a native Chinese counterpart under the same slug; changed the author to Sophie Lin; added three inspected evidence screenshots with captions and dated sources; added a dedicated cover; updated the content index; and created an approved review package.
+- DataForSEO evidence: operator approved billable DataForSEO calls through the SandBase API. Google US evidence collected on 2026-08-23 found monthly search-volume estimates of 30 for `unified AI API`, 20 for `unified LLM API`, and 10 for `multimodal AI API`; the sampled SERP supported a commercial-comparison and technical-architecture angle. Metrics remain internal decision evidence, not a traffic promise.
+- Visual QA: rejected one fal screenshot because a cookie overlay obscured it; rejected the first generated cover because it was 3:2 and too sparse. Neither rejected asset is referenced. The final cover is a visually inspected 1600×900 deterministic composition at `https://static.sandbase.ai/blog/covers-v2/unified-ai-api-llm-image-video-2026-00849aa8177f.webp`, shared by EN and ZH.
+- Tool repair: fixed `skills/blog/scripts/generate_blog_cover_url.py` to request PNG from the current `openai/gpt-image-2` route, then use the documented deterministic composition and WebP upload flow.
+- Validation: Node 24.19.0; 25 tests passed; Astro check reported 0 errors and 0 warnings; production build generated 1,129 pages; release gate verified 338 sitemap URLs, 672 hreflang targets, unique indexable metadata, and zero unresolved paths.
+- Deployment: merged https://github.com/sandbaseai/sandbase-blog/pull/14 at 2026-08-23 02:10:07 UTC, merge commit `c27bb01799d8cb8753b69360ce8500f98e15bb09`; Cloudflare deployment https://github.com/sandbaseai/sandbase-blog/actions/runs/32612176132 succeeded in 1m22s.
+- Production verification: English and Chinese routes returned HTTP 200 with distinct correct titles/H1/canonicals, reciprocal `en`/`zh-CN` hreflang, shared dedicated cover, and sitemap inclusion.
+- Result: the identified publishing defect is corrected in production and preserved in the public audit trail.
+- Process change: all future Blog content work must begin by reading `skills/blog/SKILL.md`; publication is blocked until a locale pair, content-index entry, durable dedicated cover, evidence visuals, review report, and full repository checks are present, unless the Skill explicitly permits an exception.
