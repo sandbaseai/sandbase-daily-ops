@@ -319,6 +319,30 @@ records the operational decision, evidence, validation, and outcome.
 - **Next action:** Let the curated-list PR #946 reviewer see the visible green
   validation signal; do not send a separate unsolicited message.
 
+### 2026-08-23 — Docs contributor workflow
+
+- **Objective:** Reduce the cost of a first documentation contribution by
+  making local preview and production-equivalent validation explicit.
+- **Evidence:** `sandbase-docs` had a successful VitePress build, but its
+  README did not explain how contributors could preview or validate a change.
+- **Action:** Added a `Build and contribute locally` section in [Docs PR
+  #5](https://github.com/sandbaseai/sandbase-docs/pull/5), documenting
+  `npm ci`, `npm run dev`, `npm run build`, the generated output directory,
+  and the issue-reporting path. The PR merged at
+  [`e131858`](https://github.com/sandbaseai/sandbase-docs/commit/e13185842b694928ba38d2e7ad0f6df0db9e7c1a).
+- **Validation:** The repository's VitePress build had passed before this
+  README-only change; the attempted follow-up build was interrupted by a
+  stale generated output directory and is not counted as new evidence.
+- **Deployment state:** Merged to `main`; documentation-only, with no runtime,
+  credential, or production deployment changes.
+- **Baseline:** Docs 1 star before and after; no Star growth attributed to this
+  contributor-onboarding change.
+- **Review dates:** 2026-09-06 and 2026-09-20 UTC.
+- **Result:** contributor onboarding improved; Star outcome pending.
+- **Next action:** Watch issue and traffic signals for evidence that the
+  documented workflow improves external contributions; do not claim causal
+  Star growth without a direct referral signal.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
