@@ -173,3 +173,12 @@ All future SEO, Blog, GitHub, and third-party distribution operations will be re
 - Review dates: immediately after credential setup and publication, then referral/backlink review after 14 and 28 days.
 - Result: publishing path validated; external distribution pending credentials and account authorization.
 - Next action: configure DEV/Medium credentials for an approved SandBase publishing identity, create drafts first, verify canonical tags on the rendered drafts, then publish on a staggered schedule.
+
+## Continuous execution schedule
+
+- Automation: `SandBase SEO 100× 日更` (`sandbase-seo-100`).
+- Status: active.
+- Cadence: daily at 09:30 in the user's local timezone.
+- Scope: inspect Blog, operations ledger, production site, GitHub Actions, GSC/index evidence, and the next highest-impact SEO/content/GitHub/distribution opportunity; implement and deploy safe changes; record every operation here.
+- Measurement guardrail: the automation must not claim 100× without corrected GSC evidence and must freeze the first successful rolling 28-day report as the official baseline.
+- Credential behavior: retry the GSC workflow when `GOOGLE_SERVICE_ACCOUNT_JSON` becomes available, while continuing other executable work if it remains absent.
