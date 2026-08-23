@@ -62,3 +62,21 @@ The temporary weekly reference is 310 Google clicks. Its arithmetic 100× equiva
 
 All future SEO, Blog, GitHub, and third-party distribution operations will be recorded in `sandbase-daily-ops`. Implementation remains in the repository that owns the affected production surface.
 
+## Experiment 4: repair the Blog internal-link graph
+
+- Objective: remove broken legacy paths that prevent crawlers and users from reaching related content, then make broken internal links fail CI.
+- Evidence: repository scan found 331 malformed `((//blog/...))` Markdown targets, 20 `/en/blog/...` paths, 18 `/zh-CN/blog/...` paths, and six references to image files that were absent from the repository and production build.
+- Action: normalized legacy article links to current root and `/zh-CN/` routes; preserved valid `/blog/evidence/` static asset paths; removed six references to nonexistent editorial images; added a rendered-build internal link checker; attached it to the production build command.
+- Implementation: 140 English/Chinese content files, `sandbase-blog/scripts/check-internal-links.mjs`, and `sandbase-blog/package.json`.
+- Validation: all 369 known legacy path patterns reduced to zero; Blog tests passed (25 tests); production build passed with 1,118 pages; the new checker inspected 1,117 rendered HTML files and found zero unresolved internal paths.
+- Deployment state: local change; not yet pushed, merged, or deployed because GitHub CLI authentication is unavailable.
+- Baseline: 369 malformed legacy link targets and six unresolved internal image paths.
+- Review dates: immediately after deployment; crawl/index review after 14 and 28 days.
+- Result: pending.
+- Next action: push the Blog branch, create a pull request, deploy, and verify representative repaired links on the live site.
+
+## GitHub authentication state
+
+- `denial123789`: configured but token invalid.
+- `lybing315`: not present in the current GitHub CLI credential store (`gh auth switch` returned `not logged in`).
+- Local commits remain possible; push and pull-request creation require `gh auth login -h github.com` for an authorized account.
