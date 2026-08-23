@@ -196,3 +196,24 @@ All future SEO, Blog, GitHub, and third-party distribution operations will be re
 - Review dates: 14 and 28 days after production deployment.
 - Result: deployed; indexing and GSC measurement pending.
 - Next action: prepare canonical DEV/Medium drafts when credentials are available, and review index/query performance after 14 and 28 days.
+
+## Experiment 11: GitHub repository discovery metadata
+
+- Objective: improve branded and non-brand discovery of SandBase's public developer assets in GitHub search and external search results.
+- Evidence: nine active public repositories had no description, homepage, or topics even though their READMEs defined clear search-relevant use cases. This left GitHub result cards without a useful summary and prevented topic-based discovery.
+- Action: reviewed each repository README, then added a specific English description, the most relevant live homepage, and five or six focused repository topics.
+- Repositories updated:
+  - `sandbase-daily-ops`: SandBase SEO, developer marketing, content marketing, and growth operations.
+  - `dsh-kit`: 102 Cordis plugins for DeepSeek Harness, including search, data, multimodal AI, and MCP.
+  - `dsh101`: bilingual DeepSeek Harness tutorial; homepage set to `https://dsh101.com`.
+  - `sandbase-agents`: reusable SandBase Agent Services registry and delivery standard.
+  - `global-ai-cold-start`: public 30-day developer-brand growth case study.
+  - `awesome-agent-runtime`: curated 500-project production agent-runtime landscape.
+  - `sandbase-lab-sitecheck`: SandBase-powered AI website personality and comprehension test; homepage set to `https://lab-sitecheck.sandbase.ai`.
+  - `agent-sandbox-cookbook`: runnable sandbox compatibility examples and field notes.
+  - `awesome-native-agent-platforms`: curated production agent infrastructure list.
+- Validation: queried all nine repositories through the GitHub API after mutation and confirmed that every repository now returns the intended description, homepage, and topic set. All are active and public.
+- Baseline: 0 of these 9 repositories had a description, homepage, or topic before this pass; 9 of 9 now have all three metadata surfaces populated.
+- Review dates: GitHub referral/search impressions after 14 and 28 days; repository traffic and clone trends where GitHub Insights access permits.
+- Result: deployed directly to GitHub repository metadata on 2026-08-23.
+- Next action: audit the organization profile and README first-screen copy for consistent SandBase product positioning and contextual links to the unified LLM/image/video API surface.
