@@ -298,6 +298,27 @@ records the operational decision, evidence, validation, and outcome.
   PR #946 only if maintainers request additional evidence; do not cross-post
   the same announcement to unrelated communities.
 
+### 2026-08-23 — Skills README validation badge
+
+- **Objective:** Make the new contributor-validation signal visible at the
+  Skills repository's first screen.
+- **Evidence:** Skills PR #58 added and passed the `Validate Skills` workflow on
+  the main branch.
+- **Action:** Added the workflow badge to the README badge row through [Skills
+  PR #59](https://github.com/sandbaseai/sandbase-skills/pull/59), merged at
+  [`e8a0c66`](https://github.com/sandbaseai/sandbase-skills/commit/e8a0c66c560d9fefc0b03f0310486105aa993a24).
+- **Implementation:** README-only discoverability change; no runtime or claim
+  changes.
+- **Validation:** Pull-request workflow passed before merge; badge points to
+  the tracked `validate.yml` workflow and `main` branch.
+- **Deployment state:** Merged to `main`.
+- **Baseline:** Skills 45 stars before and after; no Star growth attributed to
+  a badge.
+- **Review dates:** 2026-09-06 and 2026-09-20 UTC.
+- **Result:** win for visible project health; Star outcome pending.
+- **Next action:** Let the curated-list PR #946 reviewer see the visible green
+  validation signal; do not send a separate unsolicited message.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
