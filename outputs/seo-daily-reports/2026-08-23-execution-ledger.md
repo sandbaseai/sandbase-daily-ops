@@ -160,3 +160,16 @@ All future SEO, Blog, GitHub, and third-party distribution operations will be re
 - Required remediation: add a Google service-account JSON credential as the repository Actions secret `GOOGLE_SERVICE_ACCOUNT_JSON`, and grant that service-account email read access to the relevant Search Console property.
 - Verification after remediation: rerun workflow `32610327525`'s workflow definition with `task=gsc`, download the generated artifact, freeze its rolling 28-day totals as the official baseline, and copy the report into this ledger repository.
 - Measurement status: blocked on credential configuration; the 100× outcome is not yet measurable from the corrected job.
+
+## Experiment 9: canonical third-party long-form distribution readiness
+
+- Objective: earn qualified referral traffic and external discovery from DEV Community and Medium without creating duplicate canonical competition for the SandBase Blog.
+- Evidence: `sandbase-blog` already contained a cross-posting client with DEV/Medium canonical support, but its dry-run mode incorrectly required live API credentials before it could preview a payload. No `DEVTO_API_KEY`, `MEDIUM_TOKEN`, or `MEDIUM_AUTHOR_ID` is configured in the current environment.
+- Action: moved credential checks behind dry-run payload generation while keeping credentials mandatory for real draft/live API calls; generated DEV and Medium previews for the production OpenAI API alternatives hub.
+- Implementation: `sandbase-blog/scripts/operations/publish_long_form.py`, merged through https://github.com/sandbaseai/sandbase-blog/pull/12.
+- Validation: Python compilation passed; DEV preview selected four tags, draft state, 9,201-character body, and canonical `https://blog.sandbase.ai/openai-api-alternatives-2026/`; Medium preview selected three tags, draft state, the same canonical, and the same body.
+- Deployment state: merged to `sandbase-blog` main on 2026-08-23. No third-party draft or public post was created because platform credentials are not configured.
+- Baseline: zero third-party placements for the two new alternatives hubs in this execution cycle.
+- Review dates: immediately after credential setup and publication, then referral/backlink review after 14 and 28 days.
+- Result: publishing path validated; external distribution pending credentials and account authorization.
+- Next action: configure DEV/Medium credentials for an approved SandBase publishing identity, create drafts first, verify canonical tags on the rendered drafts, then publish on a staggered schedule.
