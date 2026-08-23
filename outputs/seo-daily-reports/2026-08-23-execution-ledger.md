@@ -120,3 +120,16 @@ All future SEO, Blog, GitHub, and third-party distribution operations will be re
 - Review dates: immediately after deployment; GSC “Crawled - currently not indexed” and duplicate-page trends after 14 and 28 days.
 - Result: pending deployment.
 - Next action: deploy, request recrawl of representative pagination URLs, and verify Google recognizes the directives.
+
+## Experiment 8: indexable metadata integrity gate
+
+- Objective: prevent indexable pages from shipping with missing or duplicated search-result identity signals.
+- Evidence: the rendered audit found no current duplicate titles or canonicals among indexable pages, but this invariant was not enforced in CI. The repository contains more than 1,100 rendered HTML files, so manual review cannot reliably prevent regressions.
+- Action: extended the SEO release checker to require an H1, title, description, and canonical on every indexable same-origin HTML page and to reject duplicate indexable titles, descriptions, or canonicals.
+- Implementation: `sandbase-blog/scripts/check-internal-links.mjs`.
+- Validation: the gate passed across 1,119 HTML files, 336 indexable/sitemap URLs, and 668 hreflang targets with unique indexable metadata and zero unresolved paths.
+- Deployment state: committed locally on `seo/100x-foundation-20260823`; not yet pushed or deployed.
+- Baseline: metadata integrity was manually auditable but not release-enforced.
+- Review dates: every production build.
+- Result: pending deployment.
+- Next action: deploy and keep the check mandatory in the Cloudflare build workflow.
