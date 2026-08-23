@@ -62,3 +62,10 @@ The temporary weekly reference is 310 Google clicks. Its arithmetic 100× equiva
 
 All future SEO, Blog, GitHub, and third-party distribution operations will be recorded in `sandbase-daily-ops`. Implementation remains in the repository that owns the affected production surface.
 
+## Language-switch UX fix — 2026-08-23
+
+- Issue: switching Blog language could fall back to the article list when an exact alternate URL was not present in page metadata.
+- Fix: `sandbase-blog` PR #158 updates `LanguageSwitcher.astro` to preserve the current contextual route (article, archive, category, tag, or pagination) as a fallback; exact article alternates still take precedence.
+- Validation: `npm run check` (0 errors), `npm test` passed, `npm run build` produced 1,141 pages.
+- Deployment: PR merged; Cloudflare Pages run `32635639243` was in progress at log time.
+- Follow-up: verify one English→Chinese and Chinese→English article switch after deployment, then record HTTP/canonical/hreflang evidence.
