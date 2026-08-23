@@ -21,7 +21,7 @@ The stored values are provisional. During implementation review, the current Blo
 - Action: changed the title to match pricing, self-hosting, and alternatives intent; rewrote the description; added a direct-answer section; added contextual links to the SandBase LLM gateway and first-call guide.
 - Implementation: `sandbase-blog/src/content/en/dify-ai-platform-explained-2026.md`.
 - Validation: Blog tests passed; production build passed; rendered title, description, canonical, `dateModified`, structured data, heading, and links were inspected.
-- Deployment state: local change; not yet pushed, merged, deployed, or indexed.
+- Deployment state: merged in `sandbase-blog#11` and deployed to production on 2026-08-23 at approximately 01:23 UTC; live URL returned HTTP 200 with the updated title and canonical. Google indexing/measurement remains pending.
 - Baseline: 816 impressions / 1 click / 0.1% CTR / position 15.1 over the stored seven-day report.
 - Review dates: 14 and 28 days after deployment.
 - Result: pending.
@@ -34,7 +34,7 @@ The stored values are provisional. During implementation review, the current Blo
 - Action: changed the report to fetch whole-site and Blog page/query data independently; changed the window to 28 days; added brand/non-brand query totals; added an automatic opportunity queue for pages with at least 50 impressions, position 5–20, and CTR below 2%; added a click-gap estimate to 2% CTR.
 - Implementation: `sandbase-blog/scripts/operations/gsc_report.py`.
 - Validation: Python compilation passed; deterministic smoke test passed; Blog test suite passed (25 tests).
-- Deployment state: local change; not yet pushed or run with production GSC credentials.
+- Deployment state: merged in `sandbase-blog#11` and deployed to production on 2026-08-23. The corrected workflow has not yet been run with production GSC credentials.
 - Baseline: provisional until the corrected job runs in CI.
 - Review dates: immediately after merge, then weekly.
 - Result: pending.
@@ -48,7 +48,7 @@ The stored values are provisional. During implementation review, the current Blo
 - Implementation: `sandbase-blog/src/content/en/openrouter-alternatives-2026.md` plus updates to the LiteLLM vs OpenRouter, LiteLLM gateway, Google routing, and LLM API pricing articles.
 - Source verification: OpenRouter provider-routing and fee documentation; Portkey gateway and guardrail documentation; Cloudflare AI Gateway documentation; SandBase Docs and configured SandBase catalog discovery.
 - Validation: production build passed with 1,118 generated pages; title, description, canonical, and all four cluster backlinks were verified in rendered HTML.
-- Deployment state: local change; not yet pushed, merged, deployed, indexed, or measured.
+- Deployment state: merged in `sandbase-blog#11` and deployed to production on 2026-08-23; the live URL returned HTTP 200, has the intended canonical, and appears in the live sitemap. Indexing and measurement remain pending.
 - Baseline: no GSC data yet.
 - Review dates: 14 and 28 days after deployment.
 - Result: pending.
@@ -69,7 +69,7 @@ All future SEO, Blog, GitHub, and third-party distribution operations will be re
 - Action: normalized legacy article links to current root and `/zh-CN/` routes; preserved valid `/blog/evidence/` static asset paths; removed six references to nonexistent editorial images; added a rendered-build internal link checker; attached it to the production build command.
 - Implementation: 140 English/Chinese content files, `sandbase-blog/scripts/check-internal-links.mjs`, and `sandbase-blog/package.json`.
 - Validation: all 369 known legacy path patterns reduced to zero; Blog tests passed (25 tests); production build passed with 1,118 pages; the new checker inspected 1,117 rendered HTML files and found zero unresolved internal paths.
-- Deployment state: local change; not yet pushed, merged, or deployed because GitHub CLI authentication is unavailable.
+- Deployment state: merged in `sandbase-blog#11` and deployed to production on 2026-08-23. The production build and live sitemap passed the new link checks.
 - Baseline: 369 malformed legacy link targets and six unresolved internal image paths.
 - Review dates: immediately after deployment; crawl/index review after 14 and 28 days.
 - Result: pending.
@@ -82,7 +82,7 @@ All future SEO, Blog, GitHub, and third-party distribution operations will be re
 - `lybing315`: was not a GitHub account available in the credential store; it was superseded by the browser-confirmed `liyangbing` identity.
 - Blog pull request: https://github.com/sandbaseai/sandbase-blog/pull/11
 - Operations-ledger pull request: https://github.com/sandbaseai/sandbase-daily-ops/pull/6
-- Current state: branches pushed and pull requests opened; merge, deployment, production GSC run, and index verification remain pending.
+- Current state: both pull requests merged. The Blog deployed successfully through GitHub Actions run `32610190549`; the production GSC run and Google index verification remain pending.
 
 ## Experiment 5: OpenAI API alternatives commercial-intent hub
 
@@ -92,7 +92,7 @@ All future SEO, Blog, GitHub, and third-party distribution operations will be re
 - Implementation: `sandbase-blog/src/content/en/openai-api-alternatives-2026.md` plus two cluster backlinks.
 - Source verification: current official OpenAI API compatibility guidance, Google Gemini OpenAI compatibility documentation, and the SandBase model/first-call documentation in the Docs repository.
 - Validation: Blog tests passed (25 tests); production build passed with 1,120 pages; the internal-link checker inspected 1,119 rendered HTML files and found zero unresolved paths; rendered title, description, canonical, H1, structured data, and cluster links were inspected.
-- Deployment state: committed locally on `seo/100x-foundation-20260823`; not yet pushed, merged, deployed, indexed, or measured.
+- Deployment state: merged in `sandbase-blog#11` and deployed to production on 2026-08-23; the live URL returned HTTP 200, has the intended canonical, and appears in the live sitemap. Indexing and measurement remain pending.
 - Baseline: no GSC data yet.
 - Review dates: 14 and 28 days after deployment.
 - Result: pending.
@@ -105,10 +105,10 @@ All future SEO, Blog, GitHub, and third-party distribution operations will be re
 - Action: extended the rendered-build link checker to require `sitemap-0.xml`, validate every same-origin `<loc>` and hreflang target against generated files, reject duplicate `<loc>` entries, and reject leaked `/en/` URLs because English is served at the root.
 - Implementation: `sandbase-blog/scripts/check-internal-links.mjs`.
 - Validation: production build passed with 1,120 pages; the release gate inspected 1,119 HTML files, 336 sitemap URLs, and 668 hreflang targets with zero unresolved paths, duplicates, or default-locale leaks.
-- Deployment state: committed locally on `seo/100x-foundation-20260823`; not yet pushed or deployed.
+- Deployment state: merged in `sandbase-blog#11` and active in production. Live sitemap verification found 336 URLs, both new hubs, and zero pagination URLs.
 - Baseline: live sitemap 334 URLs; pending sitemap 336 valid URLs.
 - Review dates: every build; live verification immediately after deployment.
-- Result: pending deployment.
+- Result: release gate active; Google crawl effects pending.
 - Next action: push and merge, then compare the live sitemap URL count and fetch representative English/Chinese alternates.
 
 ## Experiment 7: remove duplicate pagination pages from the index
@@ -118,10 +118,10 @@ All future SEO, Blog, GitHub, and third-party distribution operations will be re
 - Action: added `noindex, follow` to pagination pages after page one and to the 404 page; expanded the sitemap release gate so every indexable same-origin canonical must appear in the sitemap and every noindex canonical must stay out.
 - Implementation: `sandbase-blog/src/pages/[locale]/[...page].astro`, `sandbase-blog/src/pages/404.astro`, and `sandbase-blog/scripts/check-internal-links.mjs`.
 - Validation: production build passed; rendered audit now reports exactly 336 indexable HTML pages and 336 sitemap URLs, with 783 supporting/noindex HTML pages; representative English pagination, Chinese pagination, and 404 output all contain `noindex, follow`.
-- Deployment state: committed locally on `seo/100x-foundation-20260823`; not yet pushed or deployed.
+- Deployment state: merged in `sandbase-blog#11` and active in production. `/2/` and `/zh-CN/19/` both returned HTTP 200 with `noindex, follow`; neither pagination pattern appears in the live sitemap.
 - Baseline: 37 unintended indexable pages outside the sitemap.
 - Review dates: immediately after deployment; GSC “Crawled - currently not indexed” and duplicate-page trends after 14 and 28 days.
-- Result: pending deployment.
+- Result: technical fix live; GSC de-indexing trend pending.
 - Next action: deploy, request recrawl of representative pagination URLs, and verify Google recognizes the directives.
 
 ## Experiment 8: indexable metadata integrity gate
@@ -131,8 +131,21 @@ All future SEO, Blog, GitHub, and third-party distribution operations will be re
 - Action: extended the SEO release checker to require an H1, title, description, and canonical on every indexable same-origin HTML page and to reject duplicate indexable titles, descriptions, or canonicals.
 - Implementation: `sandbase-blog/scripts/check-internal-links.mjs`.
 - Validation: the gate passed across 1,119 HTML files, 336 indexable/sitemap URLs, and 668 hreflang targets with unique indexable metadata and zero unresolved paths.
-- Deployment state: committed locally on `seo/100x-foundation-20260823`; not yet pushed or deployed.
+- Deployment state: merged in `sandbase-blog#11` and enforced in the production Cloudflare build workflow.
 - Baseline: metadata integrity was manually auditable but not release-enforced.
 - Review dates: every production build.
-- Result: pending deployment.
+- Result: release gate active.
 - Next action: deploy and keep the check mandatory in the Cloudflare build workflow.
+
+## Production deployment record
+
+- Blog pull request: https://github.com/sandbaseai/sandbase-blog/pull/11 — merged at 2026-08-23 01:22:13 UTC, merge commit `7957a7cfb9d7b566cfd0bedec4504655c8536850`.
+- Operations pull request: https://github.com/sandbaseai/sandbase-daily-ops/pull/6 — merged at 2026-08-23 01:22:22 UTC, merge commit `9a1263f276e5b33ca1b09dab9d92857bf7dc6de3`.
+- Deployment workflow: https://github.com/sandbaseai/sandbase-blog/actions/runs/32610190549 — completed successfully in 1m12s.
+- Production verification:
+  - `https://blog.sandbase.ai/openrouter-alternatives-2026/`: HTTP 200, correct title and canonical.
+  - `https://blog.sandbase.ai/openai-api-alternatives-2026/`: HTTP 200, correct title and canonical.
+  - `https://blog.sandbase.ai/dify-ai-platform-explained-2026/`: HTTP 200 with the updated pricing/self-hosting/alternatives title and correct canonical.
+  - `https://blog.sandbase.ai/2/` and `/zh-CN/19/`: HTTP 200 with `noindex, follow`.
+  - live sitemap: 336 URLs, both new hubs present, zero numeric pagination URLs.
+- Remaining measurement work: run the corrected production GSC job, freeze the official rolling 28-day baseline, then review CTR, position, index coverage, and non-brand clicks at 14 and 28 days.
