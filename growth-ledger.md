@@ -93,6 +93,30 @@ records the operational decision, evidence, validation, and outcome.
   acceptance test covering stdio config, credential ownership, doctor, and
   unregister before changing the 25-client contract.
 
+### 2026-08-23 — CLI test isolation repair
+
+- **Objective:** Restore a reproducible green main-branch validation for the
+  CLI package.
+- **Evidence:** The full suite initially failed because host-level
+  `/Users/.../.kiro/settings/mcp.json` and workspace `PWD` leaked into packaged
+  Kiro maintenance tests. This was an environment-contamination failure, not a
+  user-facing compatibility result.
+- **Action:** Isolated the tests with temporary `HOME`, `KIRO_HOME`, and `PWD`,
+  and aligned one stale test with the current read-only Kiro Skill contract.
+- **Implementation:** [CLI PR #27](https://github.com/sandbaseai/cli/pull/27),
+  merged to `main`.
+- **Validation:** `npm run lint`; `npm test` — 150 tests, 149 passed, 1
+  skipped, 0 failed; `npm run audit:package` passed. The merge commit is
+  [`4b02eb6`](https://github.com/sandbaseai/cli/commit/4b02eb64b7290744ab1a478e7ff17964b314ba04).
+- **Deployment state:** Merged; package source is healthy. No release was
+  cut because this is a test-only repair.
+- **Baseline:** CLI 33 stars before and after the action; no growth is claimed
+  from a maintenance fix.
+- **Review dates:** 2026-09-06 and 2026-09-20 UTC.
+- **Result:** win for reproducibility; star outcome pending.
+- **Next action:** Use the green CLI validation as evidence in the next
+  client-specific distribution draft, beginning with supported catalog targets.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
