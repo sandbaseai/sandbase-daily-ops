@@ -412,6 +412,31 @@ records the operational decision, evidence, validation, and outcome.
 - **Next action:** Use the green workflow as evidence in future contributor
   reviews; do not claim it caused Star growth without referral evidence.
 
+### 2026-08-23 — External Agent Skills directory submission
+
+- **Objective:** Reach research-agent developers through an independently
+  maintained directory with an explicit quality and safety review rubric.
+- **Evidence:** `Ezeafk/awesome-agent-skills` requires reusable structure,
+  installation/usage guidance, platform fit, validation examples, and safety
+  notes; it scores entries before inclusion.
+- **Action:** Submitted [awesome-agent-skills PR #27](https://github.com/Ezeafk/awesome-agent-skills/pull/27)
+  for `sandbaseai/sandbase-skills` in the Research section, using the
+  canonical repo URL and a factual description. The submission includes a
+  rubric-based 10/10 evaluation with links to the repository's validator,
+  examples, CI, and credential guidance.
+- **Validation:** The target contribution guide and README were inspected;
+  the entry follows the six-column table format and its repository link is
+  public. The PR is currently open with no maintainer decision.
+- **Distribution channel:** Independent community-curated directory; no paid
+  placement, automated engagement, or unsolicited mass outreach.
+- **Deployment state:** Pending external review; no product repository change.
+- **Baseline:** Skills 45 stars before submission; no Star growth attributed
+  to a pending directory PR.
+- **Review dates:** Re-check PR state on 2026-08-30 and 2026-09-06 UTC.
+- **Result:** qualified distribution experiment pending review.
+- **Next action:** Respond only to maintainer questions; if merged, record the
+  merge and compare referral traffic before making any causal claim.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
