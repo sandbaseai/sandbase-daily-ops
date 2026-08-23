@@ -166,6 +166,36 @@ records the operational decision, evidence, validation, and outcome.
   additional host-agent installation path before preparing another distribution
   action.
 
+### 2026-08-23 — GitHub traffic leading-indicator snapshot
+
+- **Objective:** Add a measurable leading indicator for developer discovery
+  while keeping Stars as the only authoritative Star metric.
+- **Evidence:** GitHub's repository traffic API (14-day window ending with the
+  latest available day) returned the following direct snapshots:
+
+  | Repository | Views | Unique viewers | Clones | Unique cloners |
+  |---|---:|---:|---:|---:|
+  | `sandbase-skills` | 388 | 101 | 1,387 | 433 |
+  | `cli` | 164 | 64 | 364 | 136 |
+  | `deepseek-harness-handbook` | 931 | 306 | 1,453 | 319 |
+  | `sandbase-docs` | 57 | 9 | 78 | 54 |
+
+- **Action:** Recorded this snapshot for channel comparison and future
+  before/after checks. Traffic is not interpreted as Stars, adoption, or
+  causality.
+- **Implementation:** `growth-ledger.md` in `sandbase-daily-ops`.
+- **Validation:** Queried `gh api repos/sandbaseai/<repo>/traffic/views` and
+  `/traffic/clones` for all four repositories; direct Star counts remain
+  separately verified from `gh repo view`.
+- **Deployment state:** Ledger entry pending merge.
+- **Baseline:** Stars remain Skills 45, CLI 33, Handbook 40, Docs 1.
+- **Review dates:** Re-query GitHub traffic and Stars on 2026-09-06 and
+  2026-09-20 UTC; compare like-for-like windows.
+- **Result:** pending.
+- **Next action:** Prioritize one distribution message for the high-view,
+  high-clone Handbook and Skills surfaces, and one Docs/CLI onboarding message
+  where traffic is lower, recording channel-level evidence separately.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
