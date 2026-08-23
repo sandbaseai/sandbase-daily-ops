@@ -117,6 +117,32 @@ records the operational decision, evidence, validation, and outcome.
 - **Next action:** Use the green CLI validation as evidence in the next
   client-specific distribution draft, beginning with supported catalog targets.
 
+### 2026-08-23 — Docs generator prerequisite clarification
+
+- **Objective:** Make a fresh `sandbase-docs` checkout's generated-reference
+  workflow discoverable and prevent contributors from mistaking a missing
+  registry checkout for a broken VitePress site.
+- **Evidence:** `npm run test:generator` fails without sibling
+  `../sandbase-registry/data/llm`; the generator source resolves that path
+  explicitly. A normal VitePress build uses committed generated pages and does
+  not require the sibling checkout.
+- **Action:** Documented the prerequisite and the distinction in the Docs
+  README.
+- **Implementation:** [Docs PR #4](https://github.com/sandbaseai/sandbase-docs/pull/4),
+  merged to `main` at [`c9ebeea`](https://github.com/sandbaseai/sandbase-docs/commit/c9ebeeadebb8ee0ad5182319b9d85be5398041ea).
+- **Validation:** `npm ci` and `npm run build` passed; VitePress completed in
+  49.74 seconds. Generator tests remain explicitly unverified because the
+  required registry checkout is unavailable in this workspace.
+- **Deployment state:** README change merged; no production deployment was
+  triggered.
+- **Baseline:** Docs 1 star before and after; no growth is attributed to this
+  contributor-experience fix.
+- **Review dates:** 2026-09-06 and 2026-09-20 UTC.
+- **Result:** win for onboarding clarity; star outcome pending.
+- **Next action:** Re-run the generator in the authorized workspace that has
+  the matching registry checkout, then record the result and any live Docs
+  deployment state.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
