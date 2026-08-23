@@ -501,6 +501,23 @@ records the operational decision, evidence, validation, and outcome.
 - **Next action:** Focus CLI distribution on channels that explicitly support
   local stdio bridges and immutable release archives.
 
+### 2026-08-23 — CLI organic Star snapshot
+
+- **Objective:** Record the latest directly observed public Star signal without
+  overstating causality.
+- **Evidence:** GitHub API reported `sandbaseai/cli` at 34 stars, up from the
+  prior ledger baseline of 33; forks remained 1. The other three repositories
+  remained at 45, 41, and 1 respectively.
+- **Action:** Added this snapshot after a fresh API read. No automated starring,
+  paid placement, or attribution to a particular PR was made.
+- **Validation:** Direct repository metadata query on 2026-08-23 UTC; the
+  external Skills directory PR remains open and the CLI MCP listing was closed
+  as ineligible.
+- **Deployment state:** No code or production changes; ledger-only record.
+- **Result:** +1 observed CLI Star, attribution pending.
+- **Next action:** Re-query all four repositories and traffic/referral windows
+  on the next scheduled review before making any causal claim.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
