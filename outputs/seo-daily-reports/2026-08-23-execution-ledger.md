@@ -78,8 +78,11 @@ All future SEO, Blog, GitHub, and third-party distribution operations will be re
 ## GitHub authentication state
 
 - `denial123789`: currently authenticated in GitHub CLI with repository access, but intentionally not used because the requested identity is `lybing315`.
-- `lybing315`: not present in the current GitHub CLI credential store (`gh auth switch` returned `not logged in`).
-- Local commits remain possible. Push and pull-request creation are paused until the user confirms the GitHub device authorization for `lybing315`.
+- `liyangbing`: authenticated through GitHub device authorization and active in GitHub CLI. The browser explicitly displayed `Signed in as liyangbing`; the user confirmed use of the displayed account.
+- `lybing315`: was not a GitHub account available in the credential store; it was superseded by the browser-confirmed `liyangbing` identity.
+- Blog pull request: https://github.com/sandbaseai/sandbase-blog/pull/11
+- Operations-ledger pull request: https://github.com/sandbaseai/sandbase-daily-ops/pull/6
+- Current state: branches pushed and pull requests opened; merge, deployment, production GSC run, and index verification remain pending.
 
 ## Experiment 5: OpenAI API alternatives commercial-intent hub
 
