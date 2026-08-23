@@ -252,6 +252,27 @@ records the operational decision, evidence, validation, and outcome.
   the package trusted publisher is configured; then record whether the public
   install path is synchronized.
 
+### 2026-08-23 — Handbook Star snapshot update
+
+- **Objective:** Keep the authoritative Star baseline current after the latest
+  GitHub verification.
+- **Evidence:** `gh repo view sandbaseai/deepseek-harness-handbook --json
+  stargazerCount` returned **41** at 2026-08-23 UTC, up from the previously
+  recorded 40. Skills remained 45, CLI 33, and Docs 1.
+- **Action:** Recorded the new count as an observed change without assigning it
+  to the discussion reply, curated-list work, or any other single channel.
+- **Implementation:** This ledger only; no product repository change.
+- **Validation:** Direct GitHub repository metadata query; no estimated or
+  third-party count used.
+- **Deployment state:** Ledger entry pending merge.
+- **Baseline:** Four-repository Stars now 45 / 33 / 41 / 1 in the order defined
+  at the top of this file.
+- **Review dates:** Re-query all four repositories and traffic windows on
+  2026-08-30, 2026-09-06, and 2026-09-20 UTC.
+- **Result:** +1 observed for Handbook; attribution pending.
+- **Next action:** Look for a supporting referral or discussion signal before
+  claiming an effective distribution pattern.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
