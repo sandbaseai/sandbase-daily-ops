@@ -67,6 +67,32 @@ records the operational decision, evidence, validation, and outcome.
 - **Next action:** Record any maintainer/developer response and re-query the
   handbook star count before considering another distribution action.
 
+### 2026-08-23 — CLI/Cline compatibility triage
+
+- **Objective:** Answer an open request about installing SandBase CLI in Cline
+  without implying unsupported client compatibility.
+- **Evidence:** The CLI v0.1.17 source catalog contains 25 explicit client IDs
+  and does not contain `cline`; its bridge validates the client identity before
+  reading credentials. Cline's official configuration docs identify
+  `~/.cline/data/settings/cline_mcp_settings.json` and project `.cline/mcp.json`
+  as MCP configuration locations.
+- **Action:** Posted the evidence-backed boundary and official Cline references
+  in [CLI issue #23](https://github.com/sandbaseai/cli/issues/23#issuecomment-5384753015).
+  The reply explicitly rejects reusing another client identity or credential as
+  a workaround.
+- **Implementation:** No CLI code change; feature remains unclaimed until a
+  real adapter can be tested end to end.
+- **Validation:** Source catalog and bridge behavior inspected locally; official
+  Cline documentation links resolve; no credential or secret was posted.
+- **Deployment state:** Published issue response.
+- **Baseline:** CLI 33 stars at the latest direct GitHub snapshot; no post-action
+  change is attributed.
+- **Review dates:** 2026-09-06 and 2026-09-20 UTC.
+- **Result:** pending.
+- **Next action:** If maintainers want support, define a scoped Cline adapter
+  acceptance test covering stdio config, credential ownership, doctor, and
+  unregister before changing the 25-client contract.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
