@@ -437,6 +437,29 @@ records the operational decision, evidence, validation, and outcome.
 - **Next action:** Respond only to maintainer questions; if merged, record the
   merge and compare referral traffic before making any causal claim.
 
+### 2026-08-23 — CLI MCP directory submission
+
+- **Objective:** Reach developers actively searching for MCP aggregators and
+  client bridges through a high-traffic, community-maintained directory.
+- **Evidence:** `punkpeye/awesome-mcp-servers` documents a contribution path
+  for new servers, requires canonical links and concise accurate descriptions,
+  and explicitly provides an agent PR fast-track marker.
+- **Action:** Submitted [PR #12702](https://github.com/punkpeye/awesome-mcp-servers/pull/12702)
+  adding `sandbaseai/cli` to Aggregators. The entry describes the local stdio
+  bridge and links to the immutable v0.1.17 release install command.
+- **Validation:** The target README and contribution guide were inspected;
+  the entry uses the existing Markdown format and public canonical URL. PR is
+  open and awaiting maintainer review.
+- **Distribution channel:** Independent MCP directory; no paid placement or
+  automated engagement beyond the repository's documented PR marker.
+- **Deployment state:** Pending external review; no product repository change.
+- **Baseline:** CLI 33 stars before submission; no Star growth attributed to a
+  pending listing.
+- **Review dates:** Re-check PR state on 2026-08-30 and 2026-09-06 UTC.
+- **Result:** qualified MCP-discovery experiment pending review.
+- **Next action:** Answer maintainer questions only; if merged, compare CLI
+  referral traffic and record observed outcomes without causal overclaiming.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
