@@ -182,3 +182,17 @@ All future SEO, Blog, GitHub, and third-party distribution operations will be re
 - Scope: inspect Blog, operations ledger, production site, GitHub Actions, GSC/index evidence, and the next highest-impact SEO/content/GitHub/distribution opportunity; implement and deploy safe changes; record every operation here.
 - Measurement guardrail: the automation must not claim 100× without corrected GSC evidence and must freeze the first successful rolling 28-day report as the official baseline.
 - Credential behavior: retry the GSC workflow when `GOOGLE_SERVICE_ACCOUNT_JSON` becomes available, while continuing other executable work if it remains absent.
+
+## Experiment 10: unified AI API commercial-intent hub
+
+- Objective: capture “unified AI API,” “one API for LLM/image/video,” and multimodal API architecture intent that directly matches SandBase's differentiated model-plus-tool surface.
+- Evidence: the production sitemap contained 336 indexable URLs but no dedicated page for this topic. The OpenAI/OpenRouter alternatives hubs and image/video API comparisons discussed pieces of the problem without owning the unified intent.
+- Action: created an architecture-first comparison of SandBase, fal, Replicate, and OpenRouter; documented OpenAI-compatible LLM calls versus asynchronous media jobs, webhooks, normalization boundaries, selection criteria, and production checks; added contextual links from four relevant cluster pages; corrected an existing statement that inaccurately described video generation as OpenAI-compatible.
+- Implementation: `sandbase-blog/src/content/en/unified-ai-api-llm-image-video-2026.md` plus four cluster pages, merged through https://github.com/sandbaseai/sandbase-blog/pull/13.
+- Source verification: current official fal Model API documentation, Replicate official-model documentation, OpenRouter model/image API documentation, and the SandBase Docs repository.
+- Validation: Blog tests passed (25 tests); production build passed with 1,124 pages; the release gate inspected 1,123 HTML files, 337 sitemap URLs, and 668 hreflang targets with unique indexable metadata and zero unresolved paths; rendered title, description, canonical, H1, JSON-LD, and backlinks were inspected.
+- Deployment state: merged to `sandbase-blog` main at 2026-08-23 01:35:58 UTC and deployed successfully through https://github.com/sandbaseai/sandbase-blog/actions/runs/32610752608. The live URL returned HTTP 200 with the intended title/canonical and appears once in the 337-URL production sitemap.
+- Baseline: no GSC data yet; official baseline remains blocked on `GOOGLE_SERVICE_ACCOUNT_JSON`.
+- Review dates: 14 and 28 days after production deployment.
+- Result: deployed; indexing and GSC measurement pending.
+- Next action: prepare canonical DEV/Medium drafts when credentials are available, and review index/query performance after 14 and 28 days.
