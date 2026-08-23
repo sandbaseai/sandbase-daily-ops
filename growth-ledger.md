@@ -480,6 +480,27 @@ records the operational decision, evidence, validation, and outcome.
 - **Next action:** Follow the maintainer's answer and preserve the accurate
   local-stdio description.
 
+### 2026-08-23 — MCP directory submission closed for eligibility
+
+- **Objective:** Resolve the CLI directory experiment without misrepresenting
+  a local bridge as a hosted MCP server.
+- **Evidence:** The directory's automated check required a Glama listing,
+  Dockerfile, and introspection response; no maintainer exception was offered.
+- **Action:** Closed [PR #12702](https://github.com/punkpeye/awesome-mcp-servers/pull/12702)
+  with a public explanation that the local-stdio contract does not satisfy the
+  hosted-server requirement.
+- **Validation:** PR is now closed; no Glama badge, Docker image, or unsupported
+  endpoint claim was added.
+- **Distribution channel:** One completed, documented directory experiment;
+  no further outreach to that list planned.
+- **Baseline:** CLI 33 stars before and after; no Star growth attributed to the
+  ineligible listing.
+- **Review dates:** None for this closed experiment; retain the record for
+  future channel selection.
+- **Result:** closed safely as ineligible; accuracy preserved.
+- **Next action:** Focus CLI distribution on channels that explicitly support
+  local stdio bridges and immutable release archives.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
