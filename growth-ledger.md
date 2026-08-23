@@ -225,6 +225,33 @@ records the operational decision, evidence, validation, and outcome.
   merge and compare the next 14-day GitHub traffic window without claiming
   causal Star growth.
 
+### 2026-08-23 — CLI npm/MCP Registry trusted-publishing triage
+
+- **Objective:** Remove ambiguity around the CLI's public npm lag and give the
+  maintainer a safe, actionable release diagnosis.
+- **Evidence:** The repository workflows already request GitHub OIDC
+  (`id-token: write`), install npm 11.15+, publish without `NODE_AUTH_TOKEN`,
+  and use OIDC for the MCP Registry. Public npm currently reports
+  `@sandbaseai/cli` latest `0.1.14`, while the immutable GitHub release is
+  `v0.1.17`.
+- **Action:** Posted the repository-side evidence and exact npm package/admin
+  configuration boundary in [CLI issue
+  #24](https://github.com/sandbaseai/cli/issues/24#issuecomment-5384829547).
+  The response explicitly says not to add a token to the repository.
+- **Implementation:** No code or workflow change; this requires package/org
+  administrator access and should be verified by a maintainer before rerunning
+  a release tag.
+- **Validation:** Inspected the release and MCP Registry workflows and queried
+  npm dist-tags directly; no secret or private configuration was exposed.
+- **Deployment state:** Published issue response; npm state unchanged.
+- **Baseline:** CLI 33 stars before and after; no growth attributed to a release
+  diagnosis.
+- **Review dates:** 2026-08-30 and 2026-09-06 UTC.
+- **Result:** pending maintainer action.
+- **Next action:** Re-query npm dist-tags and the v0.1.17 Registry listing after
+  the package trusted publisher is configured; then record whether the public
+  install path is synchronized.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
