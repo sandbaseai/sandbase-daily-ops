@@ -20,6 +20,7 @@ Use this checklist after reading [`master-context.md`](master-context.md). Recor
 
 ### 3. Website and Docs
 
+- [ ] Treat `sandbase-monorepo` as PR-only: do not push directly to main and do not trigger production deployment; record the PR for operator review.
 - [ ] Homepage and main capability pages preserve the master positioning and one clear CTA.
 - [ ] Quickstart, authentication, current API base URL, model/API selection, streaming, async jobs, and errors are reachable.
 - [ ] Claims such as model count, API count, supported clients, and pricing are verified before reuse.
@@ -57,6 +58,7 @@ Use this checklist after reading [`master-context.md`](master-context.md). Recor
 - [ ] Compare keyword clusters for cannibalization, orphan pages, and missing decision-stage content.
 - [ ] Review GitHub traffic/stars/clones, Blog referrals, first-call funnel data, and install/release health where available.
 - [ ] Audit private/public ownership boundaries and make sure no secret or private context entered the public ledger.
+- [ ] Confirm no automation, script, or operator run bypassed the `sandbase-monorepo` PR-only/no-deploy boundary.
 - [ ] Reconcile website, Docs, Blog, organization profile, and core README wording against the master context.
 
 ## Monthly: outcome review
