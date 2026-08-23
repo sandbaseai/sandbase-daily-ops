@@ -48,6 +48,25 @@ records the operational decision, evidence, validation, and outcome.
 - **Result:** pending.
 - **Next action:** Identify one high-intent developer problem per repository, ship a source-backed improvement through a focused PR, then distribute the specific artifact in a directly relevant channel.
 
+### 2026-08-23 — handbook discussion answer
+
+- **Objective:** Help developers reporting DeepSeek Harness failures choose the
+  next diagnostic step from a recognizable symptom.
+- **Evidence:** The handbook's Failure Router is live and separates provider,
+  tool, approval, sandbox, session, and client boundaries; the related Ideas
+  discussion asks for the next failure to verify.
+- **Action:** Posted a concise, source-linked answer in discussion [#99](https://github.com/sandbaseai/deepseek-harness-handbook/discussions/99#discussioncomment-18121882), inviting exact symptoms and verified revisions for gaps the router cannot classify.
+- **Implementation:** Existing guide; no product-code change.
+- **Validation:** Live guide URL and discussion URL resolve; no star request or
+  unrelated cross-posting.
+- **Deployment state:** Published discussion reply.
+- **Baseline:** Handbook 40 stars at the start-of-day GitHub snapshot; no
+  post-action star change is attributed yet.
+- **Review dates:** 2026-09-06 and 2026-09-20 UTC.
+- **Result:** pending.
+- **Next action:** Record any maintainer/developer response and re-query the
+  handbook star count before considering another distribution action.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
