@@ -196,6 +196,35 @@ records the operational decision, evidence, validation, and outcome.
   high-clone Handbook and Skills surfaces, and one Docs/CLI onboarding message
   where traffic is lower, recording channel-level evidence separately.
 
+### 2026-08-23 — curated Agent Skills inclusion PR
+
+- **Objective:** Create durable discovery for the Skills repository through a
+  relevant, community-maintained directory rather than repetitive social posts.
+- **Evidence:** `VoltAgent/awesome-agent-skills` requires a public working Skill,
+  documentation, a short description of 10 words or fewer, and community usage;
+  its README did not already contain SandBase. The candidate Skill is public,
+  documented, has 45 GitHub stars, and the latest GitHub traffic snapshot shows
+  1,387 clones in 14 days.
+- **Action:** Submitted [VoltAgent/awesome-agent-skills PR
+  #946](https://github.com/VoltAgent/awesome-agent-skills/pull/946) adding the
+  link-only entry for `sandbaseai/sandbase-skills/multi-source-search` under
+  Community Skills → Marketing.
+- **Implementation:** Fork branch `liyangbing:add-sandbase-multi-source-search`
+  in the target list; no target repository or Skills code was modified directly.
+- **Validation:** Target CONTRIBUTING.md inspected; entry uses the required
+  format and six-word description; source URL was checked against the public
+  repository. A transient GitHub HEAD request timed out, so live URL health is
+  not overstated beyond the repository/API evidence.
+- **Deployment state:** External PR open; maintainer review pending.
+- **Baseline:** Skills 45 stars before submission; no star change attributed to
+  a pending PR.
+- **Review dates:** Check PR state and direct Stars on 2026-08-30, 2026-09-06,
+  and 2026-09-20 UTC.
+- **Result:** pending.
+- **Next action:** Respond only to maintainer feedback; if merged, record the
+  merge and compare the next 14-day GitHub traffic window without claiming
+  causal Star growth.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
