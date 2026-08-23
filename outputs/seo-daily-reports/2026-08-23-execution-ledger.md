@@ -217,3 +217,16 @@ All future SEO, Blog, GitHub, and third-party distribution operations will be re
 - Review dates: GitHub referral/search impressions after 14 and 28 days; repository traffic and clone trends where GitHub Insights access permits.
 - Result: deployed directly to GitHub repository metadata on 2026-08-23.
 - Next action: audit the organization profile and README first-screen copy for consistent SandBase product positioning and contextual links to the unified LLM/image/video API surface.
+
+## Experiment 12: GitHub organization unified API positioning
+
+- Objective: make the SandBase GitHub organization homepage immediately relevant to developers searching for LLM, image, video, and unified AI APIs without discarding the established agent-runtime positioning.
+- Evidence: the organization profile led with “safe runtime layer for enterprise AI agents” and had no first-screen mention of image API, video API, or the unified multimodal API. Its docs and blog navigation also used less direct URLs than the current live surfaces.
+- Action: changed the first-screen value proposition to “One API for LLMs, image generation, video generation, tools, and production AI agents”; added a dedicated modality section covering the OpenAI-compatible LLM endpoint, Flux image jobs, Kling video jobs, and data/tool APIs; added direct CTAs for API keys, API reference, model/API catalog, and the unified AI API comparison hub.
+- Implementation: merged https://github.com/sandbaseai/.github/pull/22 at 2026-08-23 01:44:03 UTC, merge commit `5c13b242200bb235c4056b7d250a412c5d04f240`.
+- Link validation: website, live docs under `https://www.sandbase.ai/docs/`, console API-key page, Blog homepage, and unified API hub all returned HTTP 200 before merge.
+- Additional repair: `docs.sandbase.ai` did not resolve during validation, so no new links were pointed there. The `sandbase-docs` repository homepage was changed from that non-resolving host to `https://www.sandbase.ai/docs/` and verified through the GitHub API.
+- Baseline: zero first-screen mentions of LLM/image/video API modalities; after deployment all three modalities plus tools and agent runtime appear in the organization profile's opening section.
+- Review dates: GitHub profile/referral traffic and branded query composition after 14 and 28 days.
+- Result: deployed to the public GitHub organization profile.
+- Next action: audit high-traffic repository README first screens for consistent product-category links, then repair or intentionally redirect the `docs.sandbase.ai` DNS surface.
