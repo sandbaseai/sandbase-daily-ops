@@ -143,6 +143,29 @@ records the operational decision, evidence, validation, and outcome.
   the matching registry checkout, then record the result and any live Docs
   deployment state.
 
+### 2026-08-23 — Skills bounded-research discussion answer
+
+- **Objective:** Help Agent builders stop research loops without hiding
+  uncertainty or overstating source confidence.
+- **Evidence:** The Skills repository ships the `multi-source-search` workflow
+  and an offline validator that checks duplicate identities, unused evidence,
+  inflated confidence, and unresolved high-confidence conflicts.
+- **Action:** Posted a practical, source-linked answer in [Skills discussion
+  #31](https://github.com/sandbaseai/sandbase-skills/discussions/31#discussioncomment-18121945),
+  explicitly stating that the validator checks internal consistency rather than
+  truth of a source.
+- **Implementation:** Existing open-source Skill and validator; no code change.
+- **Validation:** Live Skill path and discussion URL resolve; no star request or
+  unsupported provider claim was made.
+- **Deployment state:** Published discussion reply.
+- **Baseline:** Skills 45 stars before and after the action; no growth is
+  attributed without a supporting referral signal.
+- **Review dates:** 2026-09-06 and 2026-09-20 UTC.
+- **Result:** pending.
+- **Next action:** Record replies or concrete adoption evidence, then test one
+  additional host-agent installation path before preparing another distribution
+  action.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
