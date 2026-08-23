@@ -7,6 +7,10 @@ This repository is the **canonical operations ledger** for SandBase growth work.
 ## Structure
 
 ```text
+promotion-plan/
+  master-context.md          # canonical product, positioning, channel, and SEO context
+  daily-audit.md             # repeatable daily/weekly inspection checklist
+  logs/                      # dated audit and promotion execution records
 playbooks/
   operations-ledger.md       # canonical recording rules and experiment template
   seo-geo-daily.md           # www.sandbase.ai main-site checklist
@@ -16,6 +20,10 @@ skills/
 outputs/
   seo-daily-reports/         # dated SEO reports and cross-repository execution ledger
 ```
+
+## Promotion system
+
+Start every promotion or SEO task with [`promotion-plan/master-context.md`](promotion-plan/master-context.md). It is the canonical cross-channel brief for the website, Docs, Blog, GitHub, API, CLI/MCP, Skills, Harness, audiences, positioning, keyword clusters, and conversion paths. Run [`promotion-plan/daily-audit.md`](promotion-plan/daily-audit.md) and append evidence to `promotion-plan/logs/`; do not silently change product claims or channel roles in an isolated repository.
 
 ## Blog operations moved
 
