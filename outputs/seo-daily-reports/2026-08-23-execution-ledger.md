@@ -149,3 +149,14 @@ All future SEO, Blog, GitHub, and third-party distribution operations will be re
   - `https://blog.sandbase.ai/2/` and `/zh-CN/19/`: HTTP 200 with `noindex, follow`.
   - live sitemap: 336 URLs, both new hubs present, zero numeric pagination URLs.
 - Remaining measurement work: run the corrected production GSC job, freeze the official rolling 28-day baseline, then review CTR, position, index coverage, and non-brand clicks at 14 and 28 days.
+
+## GSC baseline run attempt
+
+- Workflow run: https://github.com/sandbaseai/sandbase-blog/actions/runs/32610327525
+- Trigger: manual `Blog operations` run with `task=gsc` on `main`, immediately after the production deployment.
+- Result: failed at the credential preflight before any Search Console request was made.
+- Root cause: the `sandbase-blog` repository does not have the required `GOOGLE_SERVICE_ACCOUNT_JSON` Actions secret configured.
+- Local credential check: no matching GSC/service-account environment variable or credential file was found in the current workspace/configuration paths; no secret content was read or exposed.
+- Required remediation: add a Google service-account JSON credential as the repository Actions secret `GOOGLE_SERVICE_ACCOUNT_JSON`, and grant that service-account email read access to the relevant Search Console property.
+- Verification after remediation: rerun workflow `32610327525`'s workflow definition with `task=gsc`, download the generated artifact, freeze its rolling 28-day totals as the official baseline, and copy the report into this ledger repository.
+- Measurement status: blocked on credential configuration; the 100× outcome is not yet measurable from the corrected job.
