@@ -266,3 +266,17 @@ All future SEO, Blog, GitHub, and third-party distribution operations will be re
 - Production verification: English and Chinese routes returned HTTP 200 with distinct correct titles/H1/canonicals, reciprocal `en`/`zh-CN` hreflang, shared dedicated cover, and sitemap inclusion.
 - Result: the identified publishing defect is corrected in production and preserved in the public audit trail.
 - Process change: all future Blog content work must begin by reading `skills/blog/SKILL.md`; publication is blocked until a locale pair, content-index entry, durable dedicated cover, evidence visuals, review report, and full repository checks are present, unless the Skill explicitly permits an exception.
+
+## Experiment 16: unified promotion context and alternatives correction
+
+- Objective: consolidate website, Docs, Blog, GitHub, API, Skills, CLI/MCP, Harness, positioning, audiences, SEO clusters, conversion paths, claim boundaries, and inspection rules into one reusable promotion context.
+- Action: created `promotion-plan/master-context.md`, `promotion-plan/daily-audit.md`, and the dated `promotion-plan/logs/2026-08-23.md`; updated the repository entry point so every future promotion task starts from the same context and records evidence back into the same folder.
+- Portfolio verification: canonical website, Docs, Store, Blog, and GitHub organization returned HTTP 200. GitHub repository metadata and first-screen README positioning were reviewed for the core Docs, Skills, and Harness surfaces. The audit records `docs.sandbase.ai` as non-canonical/unresolved and routes promotion to `https://www.sandbase.ai/docs/`.
+- Blog correction: operator review confirmed that `openai-api-alternatives-2026` and `openrouter-alternatives-2026` had the same compliance defects as the earlier unified API article. Both now have native Chinese counterparts, Sophie Lin authorship, independent covers, three evidence screenshots, content-index entries, DataForSEO evidence, and approved review reports.
+- SEO evidence: Google US estimates collected through SandBase API on 2026-08-23 were 320 for `OpenAI API alternatives`, 390 for `OpenAI compatible API`, 720 for singular/plural `OpenRouter alternative(s)`, and 20 for `self hosted OpenRouter`. The evidence remains internal planning input.
+- Validation: 25 Blog tests passed; Astro check reported 0 errors/0 warnings; build produced 1,133 pages, 340 sitemap URLs, 680 hreflang targets, and zero unresolved paths.
+- Deployment: [sandbase-blog PR #15](https://github.com/sandbaseai/sandbase-blog/pull/15) merged as `e10134dca5b066bd0c757ef14995b9bd05bb1356`; [Cloudflare run 32612924193](https://github.com/sandbaseai/sandbase-blog/actions/runs/32612924193) succeeded.
+- Production verification: all four English/Chinese alternatives routes returned HTTP 200 with Sophie Lin, reciprocal hreflang, and their correct dedicated cover.
+- Result: deployed; shared promotion context and daily inspection system are ready for ongoing use.
+- Review dates: 2026-09-06 and 2026-09-20 for page/query/indexing movement.
+- Next action: repair stale Docs README links, then resume the three-page GSC low-CTR optimization queue.
