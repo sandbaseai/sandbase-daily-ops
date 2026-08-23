@@ -273,6 +273,31 @@ records the operational decision, evidence, validation, and outcome.
 - **Next action:** Look for a supporting referral or discussion signal before
   claiming an effective distribution pattern.
 
+### 2026-08-23 — Skills pull-request validation workflow
+
+- **Objective:** Make contributions and directory reviews more trustworthy by
+  running the repository's existing validation contract on every pull request.
+- **Evidence:** Skills had local validators and tests but no tracked GitHub
+  Actions workflow. The first CI run exposed two real repository facts: no
+  package lockfile exists, and setup-node's npm cache requires one.
+- **Action:** Added a read-only workflow, corrected it to use `npm install`
+  without a lockfile or cache, and merged [Skills PR
+  #58](https://github.com/sandbaseai/sandbase-skills/pull/58).
+- **Implementation:** `.github/workflows/validate.yml`; merge commit
+  [`3140141`](https://github.com/sandbaseai/sandbase-skills/commit/31401410162507f979f45dbceed1ed97e5964a82).
+- **Validation:** GitHub Actions run [32625741620](https://github.com/sandbaseai/sandbase-skills/actions/runs/32625741620)
+  passed catalog validation, 6 Node tests, 29 Python tests, Agent Plugin
+  validation, 88-skill marketplace validation, and package audit.
+- **Deployment state:** Merged to `main`; no credentials, model calls, or
+  production deployment involved.
+- **Baseline:** Skills 45 stars before and after; no Star growth attributed to
+  a CI maintenance change.
+- **Review dates:** 2026-09-06 and 2026-09-20 UTC.
+- **Result:** win for contributor confidence; Star outcome pending.
+- **Next action:** Reference the green validation in the pending curated-list
+  PR #946 only if maintainers request additional evidence; do not cross-post
+  the same announcement to unrelated communities.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
