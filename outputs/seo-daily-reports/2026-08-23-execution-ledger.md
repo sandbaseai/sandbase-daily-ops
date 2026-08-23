@@ -77,6 +77,20 @@ All future SEO, Blog, GitHub, and third-party distribution operations will be re
 
 ## GitHub authentication state
 
-- `denial123789`: configured but token invalid.
+- `denial123789`: currently authenticated in GitHub CLI with repository access, but intentionally not used because the requested identity is `lybing315`.
 - `lybing315`: not present in the current GitHub CLI credential store (`gh auth switch` returned `not logged in`).
-- Local commits remain possible; push and pull-request creation require `gh auth login -h github.com` for an authorized account.
+- Local commits remain possible. Push and pull-request creation are paused until the user confirms the GitHub device authorization for `lybing315`.
+
+## Experiment 5: OpenAI API alternatives commercial-intent hub
+
+- Objective: capture searches from developers actively evaluating an OpenAI replacement and route qualified readers toward SandBase's unified model and API surface.
+- Evidence: the existing corpus covered OpenRouter, LiteLLM, routing, and LLM pricing, but had no page directly targeting “OpenAI API alternatives.” The new page is intentionally separated from “OpenRouter alternatives” to avoid conflating direct model providers, managed aggregators, and self-hosted gateways.
+- Action: created a six-option comparison covering Anthropic, Google Gemini, SandBase, OpenRouter, LiteLLM, and Portkey; added an OpenAI SDK migration example, compatibility caveats, production checklist, FAQ, and links to SandBase Docs; added contextual cluster links from the OpenRouter alternatives and LLM API pricing pages.
+- Implementation: `sandbase-blog/src/content/en/openai-api-alternatives-2026.md` plus two cluster backlinks.
+- Source verification: current official OpenAI API compatibility guidance, Google Gemini OpenAI compatibility documentation, and the SandBase model/first-call documentation in the Docs repository.
+- Validation: Blog tests passed (25 tests); production build passed with 1,120 pages; the internal-link checker inspected 1,119 rendered HTML files and found zero unresolved paths; rendered title, description, canonical, H1, structured data, and cluster links were inspected.
+- Deployment state: committed locally on `seo/100x-foundation-20260823`; not yet pushed, merged, deployed, indexed, or measured.
+- Baseline: no GSC data yet.
+- Review dates: 14 and 28 days after deployment.
+- Result: pending.
+- Next action: push the Blog branch after `lybing315` authorization, create a pull request, deploy, submit the URL for crawling, and track non-brand impressions/clicks separately.
