@@ -6,7 +6,8 @@ post and generation/source details; never commit credentials, temporary URLs,
 fake UI, fake metrics, customer logos, or testimonials without approval.
 
 Current asset: `sandbase-skills-workflow-2026-08-23.png` — generated through the
-SandBase API with model `openai/gpt-image-2` (task
-`12eb9a91-a449-454d-bd45-4ec4c46b484b`). It shows modular workflow blocks
-converging into a repeatable Agent workflow and completed deliverable. No
-product UI or performance claim is depicted.
+SandBase API with model `openai/gpt-image-2` (replacement task
+`5d56f716-73e3-4b45-96f2-3f162c2995f6`). It shows a concrete developer
+workspace with research, marketing, social-analytics, and checklist artifacts
+feeding a reusable Agent workflow. No product UI or performance claim is
+depicted.
