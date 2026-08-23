@@ -94,3 +94,16 @@ All future SEO, Blog, GitHub, and third-party distribution operations will be re
 - Review dates: 14 and 28 days after deployment.
 - Result: pending.
 - Next action: push the Blog branch after `lybing315` authorization, create a pull request, deploy, submit the URL for crawling, and track non-brand impressions/clicks separately.
+
+## Experiment 6: sitemap and hreflang release gate
+
+- Objective: prevent deploys that advertise nonexistent, duplicated, or unflattened URLs to Google through the sitemap and hreflang graph.
+- Evidence: the live `robots.txt` and sitemap endpoints both return HTTP 200; the live sitemap currently contains 334 URLs. The pending build contains 336 URLs after adding the two English commercial-intent hubs. The existing build gate checked rendered links but did not verify sitemap targets.
+- Action: extended the rendered-build link checker to require `sitemap-0.xml`, validate every same-origin `<loc>` and hreflang target against generated files, reject duplicate `<loc>` entries, and reject leaked `/en/` URLs because English is served at the root.
+- Implementation: `sandbase-blog/scripts/check-internal-links.mjs`.
+- Validation: production build passed with 1,120 pages; the release gate inspected 1,119 HTML files, 336 sitemap URLs, and 668 hreflang targets with zero unresolved paths, duplicates, or default-locale leaks.
+- Deployment state: committed locally on `seo/100x-foundation-20260823`; not yet pushed or deployed.
+- Baseline: live sitemap 334 URLs; pending sitemap 336 valid URLs.
+- Review dates: every build; live verification immediately after deployment.
+- Result: pending deployment.
+- Next action: push and merge, then compare the live sitemap URL count and fetch representative English/Chinese alternates.
