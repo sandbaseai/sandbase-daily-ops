@@ -107,3 +107,16 @@ All future SEO, Blog, GitHub, and third-party distribution operations will be re
 - Review dates: every build; live verification immediately after deployment.
 - Result: pending deployment.
 - Next action: push and merge, then compare the live sitemap URL count and fetch representative English/Chinese alternates.
+
+## Experiment 7: remove duplicate pagination pages from the index
+
+- Objective: keep Google focused on article and language-homepage canonicals instead of 36 repetitive archive-pagination pages and the 404 document.
+- Evidence: rendered metadata audit found 373 indexable HTML pages but only 336 sitemap URLs. The 37-page gap consisted of `/2/` through `/19/`, their `/zh-CN/` counterparts, and `/404/`. Pagination was excluded from the sitemap but did not carry the `noindex, follow` directive claimed by the repository's technical SEO comments.
+- Action: added `noindex, follow` to pagination pages after page one and to the 404 page; expanded the sitemap release gate so every indexable same-origin canonical must appear in the sitemap and every noindex canonical must stay out.
+- Implementation: `sandbase-blog/src/pages/[locale]/[...page].astro`, `sandbase-blog/src/pages/404.astro`, and `sandbase-blog/scripts/check-internal-links.mjs`.
+- Validation: production build passed; rendered audit now reports exactly 336 indexable HTML pages and 336 sitemap URLs, with 783 supporting/noindex HTML pages; representative English pagination, Chinese pagination, and 404 output all contain `noindex, follow`.
+- Deployment state: committed locally on `seo/100x-foundation-20260823`; not yet pushed or deployed.
+- Baseline: 37 unintended indexable pages outside the sitemap.
+- Review dates: immediately after deployment; GSC “Crawled - currently not indexed” and duplicate-page trends after 14 and 28 days.
+- Result: pending deployment.
+- Next action: deploy, request recrawl of representative pagination URLs, and verify Google recognizes the directives.
