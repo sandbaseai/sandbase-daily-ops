@@ -343,6 +343,30 @@ records the operational decision, evidence, validation, and outcome.
   documented workflow improves external contributions; do not claim causal
   Star growth without a direct referral signal.
 
+### 2026-08-23 — CLI release checksum
+
+- **Objective:** Improve supply-chain transparency for the immutable CLI
+  archive used by automated and manual installers.
+- **Evidence:** The CLI README and `llms-install.md` pinned the GitHub release
+  tarball, but did not publish an expected digest for an operator to verify.
+- **Action:** Published the SHA-256 digest and a copy-then-verify command in
+  [CLI PR #28](https://github.com/sandbaseai/cli/pull/28), merged at
+  [`5c3ef06`](https://github.com/sandbaseai/cli/commit/5c3ef0615667a61aac9750330808453677406a2d).
+- **Validation:** Downloaded the public v0.1.17 archive and computed
+  `1ad535b2899ca460b57b3c268aef278fee28fd28e649a89b92951514fd71fffa`;
+  `npm run audit:package` passed. The full test run reached the test suite but
+  exceeded the short command window, so it is not claimed as new evidence.
+- **Deployment state:** Merged to `main`; documentation-only, no runtime or
+  credential changes.
+- **Baseline:** CLI 33 stars before and after; no Star growth attributed to a
+  checksum documentation change.
+- **Review dates:** 2026-09-06 and 2026-09-20 UTC.
+- **Result:** stronger reproducibility and installer trust; Star outcome
+  pending.
+- **Next action:** Monitor installation questions and referral traffic; keep
+  the npm/GitHub release discrepancy explicit until trusted publishing is
+  configured by a package administrator.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
