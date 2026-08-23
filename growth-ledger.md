@@ -518,6 +518,23 @@ records the operational decision, evidence, validation, and outcome.
 - **Next action:** Re-query all four repositories and traffic/referral windows
   on the next scheduled review before making any causal claim.
 
+### 2026-08-23 — CLI traffic follow-up window
+
+- **Objective:** Check whether the observed CLI Star increase coincides with
+  measurable repository discovery without inventing attribution.
+- **Evidence:** GitHub Traffic API reported CLI page views of 21, 20, and 29
+  on 2026-08-20, 2026-08-21, and 2026-08-22 (70 total; 41 unique visitors).
+  Popular referrers were GitHub (63 views, 26 uniques), iohub.inshub.cn (2,
+  1), and wx.mail.qq.com (1, 1). The API does not identify which action caused
+  the +1 Star.
+- **Action:** Recorded this follow-up window against the prior CLI Star
+  snapshot; no new external posting or engagement was performed.
+- **Validation:** Values read directly from the repository Traffic API on
+  2026-08-23 UTC; referral totals are directional and not a causal experiment.
+- **Result:** discovery signal observed; attribution pending.
+- **Next action:** Re-query after the next scheduled window and compare with
+  any maintainer decisions on external directory submissions.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
