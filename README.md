@@ -2,16 +2,19 @@
 
 Daily operating system for SandBase social distribution and community updates. Blog authoring, topic discovery, GSC, ranking, indexing, Medium/DEV/Zhihu long-form adaptations, and publication now live with the site code in [sandbase-blog](https://github.com/sandbaseai/sandbase-blog).
 
+This repository is the **canonical operations ledger** for SandBase growth work. Implementation stays in the owning product repository, while every SEO, content, GitHub, distribution, or outreach action is recorded here with its evidence, deployment state, and review date. See [`playbooks/operations-ledger.md`](playbooks/operations-ledger.md).
+
 ## Structure
 
 ```text
 playbooks/
+  operations-ledger.md       # canonical recording rules and experiment template
   seo-geo-daily.md           # www.sandbase.ai main-site checklist
 scripts/
 skills/
   social-publish/            # LinkedIn, X, Discord, Xiaohongshu skill
 outputs/
-  seo-daily-reports/         # Historical reports; not executable source of truth
+  seo-daily-reports/         # dated SEO reports and cross-repository execution ledger
 ```
 
 ## Blog operations moved
