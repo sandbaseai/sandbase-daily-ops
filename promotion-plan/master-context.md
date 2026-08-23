@@ -63,6 +63,12 @@ Avoid leading with an undifferentiated list of thousands of capabilities. Breadt
 
 `docs.sandbase.ai` did not resolve during the 2026-08-23 audit. New promotion must use `https://www.sandbase.ai/docs/` until DNS and redirects are deliberately repaired. The `sandbase-docs` README still contains stale `docs.sandbase.ai` links and must be corrected in its owning repository.
 
+### Repository authority boundary
+
+- `sandbase-monorepo` is the protected main product repository. Promotion operations may inspect it, prepare a feature branch, and open a PR, but must **never push directly to its main branch or trigger its production deployment**. A human/operator owns merge and deployment approval there.
+- The separate Blog, Docs, GitHub tool repositories, and `sandbase-daily-ops` may continue through their normal feature-branch, PR, merge, and deployment workflows under the current operator authorization.
+- A terminal instruction such as “continue,” “finish,” or “daily audit” does not widen this boundary.
+
 ## 4. Public GitHub portfolio
 
 ### Core products
@@ -176,7 +182,7 @@ Every acquisition page should have one primary next step. Cross-links must be co
 
 1. Correct and monitor the two API-alternatives hubs now published bilingually.
 2. Optimize the GSC position-5–20 / low-CTR queue: DeepSeek Harness preview, GLM 5.3 release, and Claude Opus 5.
-3. Repair stale `docs.sandbase.ai` links in the public Docs README and verify API endpoint examples against current production Docs.
+3. Verify the corrected Docs README deployment and monitor the restored CLI setup route.
 4. Build supporting API cluster pages only where search intent is distinct and primary evidence exists.
 5. Prepare approved DEV/Medium/Zhihu adaptations; publish only with credentials and operator-reviewed channel fit.
 6. Review equivalent GSC windows after 14 and 28 days.
