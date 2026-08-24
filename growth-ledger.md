@@ -544,6 +544,15 @@ records the operational decision, evidence, validation, and outcome.
 - **Result:** Crawl paths and OG asset durability improved; CTR impact remains an open experiment, not yet attributed.
 - **Next hypothesis:** Re-query GSC after a full reporting window, then keep winners and revert/iterate only where impressions and CTR support it.
 
+### 2026-08-24 — Daily audit and recrawl follow-up
+
+- **Scope:** `sandbase-blog`, public acquisition surfaces, and protected-repository boundary.
+- **Evidence:** GSC workflow `32683305503` reported 173 Blog clicks / 5,868 impressions and 0/2 indexing for GitHub MCP and Agent Observability. Live HTTP checks returned 200 for the website, Docs, Blog, GitHub organization, Skills, and CLI. Blog sitemap showed `lastmod=2026-08-24` for both pending pages.
+- **Action:** Added the canonical daily audit at `promotion-plan/logs/2026-08-24.md`; no new content churn or protected monorepo mutation.
+- **Validation:** Existing Blog deployments `32682968952` and `32683151865` succeeded; prior build gate remained 0 errors / 344 sitemap URLs / 688 hreflang targets / 0 unresolved paths.
+- **Result:** Recrawl signals and discovery paths are verified; indexing remains an external Google-state blocker, not evidence of a source defect.
+- **Review:** Check indexing on 2026-08-31, 14-day outcomes on 2026-09-07, and 28-day outcomes on 2026-09-21.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
