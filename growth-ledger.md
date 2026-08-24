@@ -535,6 +535,15 @@ records the operational decision, evidence, validation, and outcome.
 - **Next action:** Re-query after the next scheduled window and compare with
   any maintainer decisions on external directory submissions.
 
+### 2026-08-24 — Blog SEO execution batch
+
+- **Scope:** `sandbaseai/sandbase-blog`; protected monorepo untouched.
+- **Actions:** Added bilingual homepage internal-link hubs; added `WebSite` JSON-LD; ran three GSC-informed CTR experiments (DeepSeek Harness Preview, GLM-5.3, Claude Opus 5); migrated durable covers for DeepSeek comparison, DeepSeek Preview, and DSH Capability Seams from legacy media URLs.
+- **Evidence:** Blog builds passed at 1,141 pages / 344 sitemap URLs / 688 hreflang targets / 0 unresolved paths. Deployments and public HTML checks passed for each merged change. GSC run `32679974382` still showed the pre-experiment baseline because of reporting delay.
+- **PRs:** Blog #202–#211; operations record in [daily-ops #223](https://github.com/sandbaseai/sandbase-daily-ops/pull/223).
+- **Result:** Crawl paths and OG asset durability improved; CTR impact remains an open experiment, not yet attributed.
+- **Next hypothesis:** Re-query GSC after a full reporting window, then keep winners and revert/iterate only where impressions and CTR support it.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
