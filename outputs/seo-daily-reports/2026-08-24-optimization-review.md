@@ -2,7 +2,8 @@
 
 > 生成日期：2026-08-24
 > 对照计划：[2026-08-17 SEO 转化率优化计划](./2026-08-17-optimization-plan.md)
-> 数据来源：Google Search Console、GSC URL Inspection、线上页面与 sitemap 实测、Blog 源码检查
+> 数据来源：Google Search Console、GSC URL Inspection、线上页面与 sitemap 实测、最新代码复检
+> 代码基线：`sandbase-blog@e84d157`、`sandbase-monorepo@fe67433c8b`、`sandbase-daily-ops@50b5350`
 > GSC 最新可用日期：2026-08-22（约 2 天延迟）
 > 当前结论：**曝光和点击继续增长，但全站 CTR、平均排名与重点词排名未达到计划验收线，需要继续做搜索意图聚合与摘要优化。**
 
@@ -17,6 +18,7 @@
 - 计划重点页 8/8 URL Inspection 均为 **PASS / Submitted and indexed**，Google canonical 与页面声明一致。
 - 日报抽样文章收录为 **7/10**；2 篇处于 `Discovered - currently not indexed`，1 篇存在 `Google chose different canonical`。
 - 线上主站和 Blog 的 robots、sitemap 均可访问；但 `sitemap.xml` 与 `sitemap-index.xml` 的 URL 集合明显不一致，需要统一口径。
+- 最新代码复检发现 Blog 在 8/23 已集中更新 GLM、DeepSeek 和收录异常文章元数据；最新版 GSC 脚本也已改为 28 天全站/Blog 双口径。本报告已按最新代码重新执行，不再沿用旧脚本结论。
 
 ---
 
@@ -81,7 +83,7 @@
 | Instagram media ID → shortcode | `Convert media ID to shortcode by Instagram \| SandBase` | 仍偏数据库式命名，缺少 `Instagram`、`Free API` 等强意图词 |
 | Instagram shortcode → media ID | `Convert shortcode to media ID by Instagram \| SandBase` | 同上 |
 | Douyin sec user ID | `Extract list user id by Douyin \| SandBase` | 未覆盖用户实际搜索的 `sec_user_id lookup/resolve` 意图 |
-| GLM 5.3 | `GLM 5.3 Release Date (2026): API, Pricing & Benchmark Results \| SandBase Blog` | ✅ 已明显优化且 canonical 正确 |
+| GLM 5.3 | `GLM-5.3 Review (2026): Release Date, API Pricing & Benchmarks \| SandBase Blog` | ✅ 8/23 再次优化，线上与最新源码一致，canonical 正确 |
 
 ### 4.2 Instagram 搜索意图互相竞争
 
@@ -145,7 +147,7 @@
 - `agent-plugins-1-portable-coding-agent-standard-2026`：Discovered - currently not indexed
 - `agent-observability-logging-tracing-debugging`：Duplicate, Google chose different canonical than user
 
-建议先处理重复 canonical 页面；另外两篇先检查内链、内容差异化和 sitemap 更新时间，再通过 GSC URL Inspection 手动请求，不使用普通文章不适用的 Google Indexing API。
+最新源码和线上页面已在 8/23 更新元数据，3 个 URL 当前均返回 200 并声明正确的 `blog.sandbase.ai` self-canonical；但 GSC 对 observability 文章仍选择旧的 `http://www.sandbase.ai/blog/...` canonical，说明修复尚待 Google 重抓生效。建议继续监控 canonical 切换；另外两篇先检查内链、内容差异化和 sitemap 更新时间，再通过 GSC URL Inspection 手动请求，不使用普通文章不适用的 Google Indexing API。
 
 ### 7.2 重点页抽查
 
@@ -188,14 +190,14 @@
 
 抽查模型/API 页有 SoftwareApplication，但未发现 `FAQPage`；计划 P3/P5 的 FAQ 展示和 FAQ JSON-LD 尚未完成。应先在高展现页面试点，不建议直接对全站生成低质量重复 FAQ。
 
-#### C. 巡检脚本口径标注错误
+#### C. 最新巡检脚本已修复旧口径，聚合 KPI 仍需校准
 
-当前 `sandbase-blog/scripts/operations/gsc_report.py`：
+最新 `sandbase-blog@e84d157` 已将 `gsc_report.py` 改为 28 天窗口，并分别查询全站与 Blog 页面/查询数据。重新执行得到：
 
-- 页面查询已限定 Blog URL，但报告“总体数据”仍标为“全站 / 博客”，导致两列完全相同。
-- 日期计算为 `today-9` 至 `today-2`，包含首尾共 8 天，但报告写“过去 7 天”。
+- 页面维度求和：全站 532 点击 / 47,267 展示；Blog 173 点击 / 5,868 展示。
+- 同期 GSC 无维度聚合：全站 529 点击 / 45,081 展示 / CTR 1.17% / 平均排名 19.49；Blog 173 点击 / 5,868 展示 / CTR 2.95% / 平均排名 16.71。
 
-本报告没有使用该错误的“全站”数字，而是另行调用 GSC 无维度聚合获取准确全站数据。建议修正脚本标签和日期窗口。
+旧报告中的“Blog-only 却标全站”和“8 天标成 7 天”问题已不存在。剩余问题是全站 KPI 仍通过页面行求和，和 GSC 无维度聚合相差 3 点击、2,186 展示；正式 KPI 应优先使用无维度聚合，页面维度仅用于机会页分析。
 
 ### 8.3 GEO 边界
 
@@ -208,11 +210,11 @@
 | 计划项 | 当前状态 | 证据/备注 |
 |---|---|---|
 | P0 模型/API Title/Description 优化 | 部分完成 | 模板已有品牌词，但计划重点页仍是数据库式命名，CTR 无明显改善 |
-| P0 GLM 5.3 标题优化 | 已完成 | live Title、Description 已更新 |
+| P0 GLM 5.3 标题优化 | 已完成并在 8/23 迭代 | live 与最新源码 Title/Description 一致 |
 | P1 Instagram 教程加 3 个模型页内链 | 未完成 | 当前文章只出现 API 调用路径，未发现计划中的模型详情页链接 |
 | P1 DeepSeek 主文加 V4 Pro/Flash 内链 | 已完成 | 中英文均已存在 |
 | P1 GLM 文章加 Z.ai/GLM 5.2 内链 | 已完成 | 中英文均已存在 |
-| P1 开源 Agent 框架文章链接 `/agents` | 未发现 | 建议补充 |
+| P1 开源 Agent 框架文章链接 `/agents` | 文章正文未发现 | 全局 Navigation/Footer/Sidebar 已有 `/agents`，仍建议补正文上下文链接 |
 | P2 3 篇高展现 API 教程 | 未按计划 slug 创建 | Instagram 主题当前最需要聚合页 |
 | P3/P5 SoftwareApplication schema | 已完成 | live 页面可见 |
 | P3/P5 模型页 FAQ + FAQPage | 未完成 | live 与源码抽查均未发现 |
@@ -233,7 +235,7 @@
 ### P1：技术与数据质量
 
 5. **统一 sitemap**：确定 `sitemap.xml` 或 `sitemap-index.xml` 为唯一权威入口，核对 2,381/748 条差异和 1 条重复记录。
-6. **修正 GSC 日报脚本**：Blog-only 报告不再标“全站”，并把日期窗口改成真正 7 天；如需全站指标，增加独立无维度聚合查询。
+6. **校准 GSC 日报聚合方式**：28 天全站/Blog 双口径已完成；下一步增加无维度聚合作为正式 KPI，避免页面行求和与站点总量不一致。
 7. **为高展现模型页试点 FAQ**：先做 Instagram、Douyin、Wechat 各 1~2 页，确保 FAQ 与页面数据和真实搜索问题相关，再加入 FAQPage schema。
 
 ### P2：继续观察
