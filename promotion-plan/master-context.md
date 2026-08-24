@@ -1,6 +1,6 @@
 # SandBase Promotion Master Context
 
-Last verified: 2026-08-23
+Last verified: 2026-08-24
 Owner: SandBase growth operations
 System of record: `sandbaseai/sandbase-daily-ops`
 
@@ -73,9 +73,9 @@ Avoid leading with an undifferentiated list of thousands of capabilities. Breadt
 
 ### Core products
 
-- `sandbase-harness` — local-first Agent runtime; strongest current GitHub discovery surface (629 stars at audit time).
-- `sandbase-skills` — 88 installable Agent Skills and portable workflow distribution (42 stars).
-- `cli` — local CLI/MCP bridge for 25 AI client targets and SandBase capabilities (32 stars).
+- `sandbase-harness` — local-first Agent runtime; strongest current GitHub discovery surface (630 stars at audit time).
+- `sandbase-skills` — 88 installable Agent Skills and portable workflow distribution (49 stars).
+- `cli` — local CLI/MCP bridge for 25 AI client targets and SandBase capabilities (41 stars).
 - `sandbase-docs` — public documentation source and API positioning (1 star).
 - `.github` — organization landing page and cross-product navigation.
 - `sandbase-daily-ops` — public promotion and SEO operating ledger.
@@ -192,3 +192,10 @@ Every acquisition page should have one primary next step. Cross-links must be co
 Update this file when any of the following changes: canonical domain, product name, primary value proposition, API base URL, documented capability count, supported client count, Skill count, owning repository, audience, conversion path, baseline, or success metric.
 
 Every update must include the date, evidence URL or repository commit, owner, and any downstream surfaces requiring synchronization. Conflicts are resolved in favor of current production Docs and verified runtime behavior, followed by repository code and approved product decisions; old Blog copy or cached search snippets are not authoritative.
+
+### 2026-08-24 metadata verification
+
+- Evidence: GitHub repository metadata API for [`sandbase-harness`](https://api.github.com/repos/sandbaseai/sandbase-harness), [`sandbase-skills`](https://api.github.com/repos/sandbaseai/sandbase-skills), and [`cli`](https://api.github.com/repos/sandbaseai/cli); Docs health endpoint [`/docs/health`](https://www.sandbase.ai/docs/health) returned HTTP 200.
+- Owner: SandBase growth operations.
+- Change: refreshed observed star counts only; product positioning, client counts, Skill count, and canonical URLs unchanged.
+- Downstream: daily audit and growth ledger updated in the same execution batch.
