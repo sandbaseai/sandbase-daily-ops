@@ -553,6 +553,13 @@ records the operational decision, evidence, validation, and outcome.
 - **Result:** Recrawl signals and discovery paths are verified; indexing remains an external Google-state blocker, not evidence of a source defect.
 - **Review:** Check indexing on 2026-08-31, 14-day outcomes on 2026-09-07, and 28-day outcomes on 2026-09-21.
 
+### 2026-08-24 — Public repository metadata verification
+
+- **Evidence:** GitHub API reported `sandbase-harness` 630 stars, `sandbase-skills` 49 stars, and `cli` 41 stars; Docs health returned HTTP 200 and its README no longer contains `docs.sandbase.ai` links.
+- **Action:** Refreshed observed star counts and verification date in `promotion-plan/master-context.md`; no product positioning or capability count was changed.
+- **Validation:** API responses and the Docs health endpoint were read directly on 2026-08-24 UTC.
+- **Result:** Context now reflects current public metadata; attribution to any individual promotion action remains unclaimed.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
