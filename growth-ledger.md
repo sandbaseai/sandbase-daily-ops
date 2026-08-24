@@ -560,6 +560,14 @@ records the operational decision, evidence, validation, and outcome.
 - **Validation:** API responses and the Docs health endpoint were read directly on 2026-08-24 UTC.
 - **Result:** Context now reflects current public metadata; attribution to any individual promotion action remains unclaimed.
 
+### 2026-08-24 — Approved third-party distribution queue
+
+- **Source:** live canonical [OpenAI API alternatives](https://blog.sandbase.ai/openai-api-alternatives-2026/), with EN/ZH content and durable cover already verified in Blog.
+- **Action:** Prepared channel-native drafts for LinkedIn, X, Discord, and Xiaohongshu under `social/`; each preserves canonical attribution and states operator-review status.
+- **Validation:** Facts were limited to the source article; no external account, credential, or publishing API was used.
+- **Result:** Four reviewable promotion assets are queued without duplicate live canonicals or unsolicited posting.
+- **Next action:** Operator reviews channel fit and authorizes staggered publication; measure referral clicks and indexed canonical discovery after publication.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
