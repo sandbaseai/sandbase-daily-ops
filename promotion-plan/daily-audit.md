@@ -30,6 +30,7 @@ Use this checklist after reading [`master-context.md`](master-context.md). Recor
 
 - [ ] New or changed articles satisfy `sandbase-blog/skills/blog/SKILL.md`.
 - [ ] EN and native ZH pair, author, durable cover, screenshots, sources, index, and review report are complete.
+- [ ] Run and pass `python3 skills/blog/scripts/validate_article_quality.py --slug <slug>`; then record the three editorial review passes (truth/usefulness, human voice, publication).
 - [ ] Tests/check/build and deployment succeeded; live routes return 200 with reciprocal hreflang.
 - [ ] Existing high-impression pages are improved before publishing overlapping articles.
 
