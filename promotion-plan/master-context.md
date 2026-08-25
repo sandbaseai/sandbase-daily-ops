@@ -114,6 +114,10 @@ Public repositories must maintain a useful first-screen description, relevant ho
 - Agent Skills, MCP server, AI search API, social data API, web research Agent, marketing automation API, data APIs for Agents.
 - Required bridge: describe the workflow separately from the provider or execution layer.
 
+### X/Twitter API opportunity
+
+The public SandBase catalog currently exposes a Twitter vendor surface at [`/vendor/twitter`](https://www.sandbase.ai/vendor/twitter), verified 2026-08-25. Observed routes include search timeline, trending, tweet detail, user profile, user media, replies, followers, followings, comments, retweet-user list, and a `user-post-tweet` route. Treat read routes as data/API content opportunities. Treat posting as a side-effecting capability that requires explicit operator authorization and must never be implied by a Blog tutorial.
+
 ### Runtime and infrastructure intent
 
 - Agent runtime, Agent sandbox, tool governance, audit/replay, persistent Agent sessions, model gateway, coding Agent infrastructure.
@@ -186,6 +190,33 @@ Every acquisition page should have one primary next step. Cross-links must be co
 4. Build supporting API cluster pages only where search intent is distinct and primary evidence exists.
 5. Prepare approved DEV/Medium/Zhihu adaptations; publish only with credentials and operator-reviewed channel fit.
 6. Review equivalent GSC windows after 14 and 28 days.
+
+## 11A. Hot-source pool for daily editorial discovery
+
+Use these companies as a bounded discovery pool for daily Blog topic research. Prefer official X accounts, product announcements, release notes, engineering blogs, and named maintainers over reposts. X signals are topic discovery only; every publishable claim still requires primary-source verification.
+
+1. Anthropic / Claude
+2. OpenAI
+3. Google DeepMind
+4. Google Cloud
+5. Vercel
+6. Cloudflare
+7. OpenRouter
+8. Hugging Face
+9. Zhipu AI / 智谱
+10. MiniMax
+11. Moonshot AI / Kimi
+12. DeepSeek
+13. Meta AI
+14. xAI
+15. Mistral AI
+16. Cohere
+17. Together AI
+18. Replicate
+19. Groq
+20. E2B
+
+Daily selection rule: first check the current GSC opportunity queue and existing content index, then use this pool to find a distinct reader task. Do not convert a viral post into a Blog article without a source ledger, product-boundary check, and operator confirmation of the proposed title.
 
 ## 12. Context update rules
 
