@@ -997,6 +997,23 @@ records the operational decision, evidence, validation, and outcome.
 - **Next action:** Recheck the run conclusion before any further docs-site
   promotion claim.
 
+### 2026-08-27 — Handbook Show HN release update
+
+- **Evidence:** The existing [Show HN discussion #157](https://github.com/sandbaseai/deepseek-harness-handbook/discussions/157)
+  had no comments after its original announcement. Handbook `v0.5.99` is now
+  the latest published release.
+- **Action:** Added one maintainer-facing update at
+  https://github.com/sandbaseai/deepseek-harness-handbook/discussions/157#discussioncomment-18170089
+  describing the release and inviting versioned, reproducible reports for
+  future source-backed guides. The comment does not repeat a Star request.
+- **Validation:** GitHub GraphQL returned the public comment URL and the
+  release metadata was verified directly on 2026-08-27 UTC.
+- **Result:** Existing interested readers now have a concrete release update
+  and a clear way to contribute evidence; no causal Star attribution is made.
+  Current counts remain Skills 63, CLI 57, Handbook 67, Docs 1.
+- **Next action:** Monitor discussion engagement and measure traffic/Stars in
+  the next available window without additional duplicate comments.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
