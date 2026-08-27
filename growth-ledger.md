@@ -671,6 +671,21 @@ records the operational decision, evidence, validation, and outcome.
 - **Next action:** Wait for a substantive maintainer response or fresh traffic
   window, then record the delta and link the exact public evidence.
 
+### 2026-08-27 — Reactivation Star delta
+
+- **Evidence:** A fresh GitHub API check reports Skills 62, CLI 57, Handbook
+  66, and Docs 1 Star. CLI increased by one from the previous direct snapshot;
+  the other repositories are unchanged. Ezeafk/awesome-agent-skills PR #27 is
+  still open with no comments or reviews.
+- **Action:** Recorded the organic CLI delta and kept the existing compliant
+  distribution queue; no causal claim is made about the source of the Star.
+- **Validation:** Repository metadata and PR state were read directly on
+  2026-08-27 UTC. `sandbase-daily-ops` main was clean before this update.
+- **Result:** CLI now has 57 verified Stars; all four repositories remain
+  below the 100-Star target.
+- **Next action:** Continue value-led promotion and recheck after the next
+  traffic window or directory-maintainer activity.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
