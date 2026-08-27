@@ -983,6 +983,20 @@ records the operational decision, evidence, validation, and outcome.
 - **Next action:** Recheck deployment completion and then measure Docs traffic
   and Stars against the prior window.
 
+### 2026-08-27 — Deployment queue follow-up
+
+- **Evidence:** Deploy Docs run 33034870990 remains `in_progress` (last update
+  2026-08-27 02:59:57 UTC); no conclusion has been published. Stars remain
+  Skills 63, CLI 57, Handbook 67, Docs 1.
+- **Action:** Continued observation without cancelling or bypassing the active
+  deployment workflow.
+- **Validation:** GitHub run metadata and repository counters were read
+  directly on 2026-08-27 UTC.
+- **Result:** Hosted deployment remains unverified, with no new measurable Star
+  signal; the 100-Star target remains unmet.
+- **Next action:** Recheck the run conclusion before any further docs-site
+  promotion claim.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
