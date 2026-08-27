@@ -951,6 +951,23 @@ records the operational decision, evidence, validation, and outcome.
 - **Next action:** Recheck after workflow completion and record any deployment
   result or Star/traffic delta.
 
+### 2026-08-27 — Release and Star baseline recheck
+
+- **Evidence:** GitHub latest releases are Skills `v0.3.5` (2026-08-20), CLI
+  `v0.1.17` (2026-08-19), and Handbook `v0.5.99` (2026-08-27); Docs has no
+  published release, consistent with its documentation-site role. Current
+  Stars remain Skills 63, CLI 57, Handbook 67, Docs 1.
+- **Action:** Confirmed each project's release surface before planning further
+  announcements; did not create an artificial Docs release or imply a new
+  release where none exists.
+- **Validation:** GitHub Releases and repository metadata APIs were read
+  directly on 2026-08-27 UTC.
+- **Result:** Handbook has a fresh release that can support future
+  channel-native promotion; no immediate Star delta is attributable to this
+  check.
+- **Next action:** Use the current release notes and verified docs links in a
+  targeted announcement, then measure traffic and Stars in the next window.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
