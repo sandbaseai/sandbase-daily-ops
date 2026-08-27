@@ -936,6 +936,21 @@ records the operational decision, evidence, validation, and outcome.
 - **Next action:** Recheck after both workflows complete and compare the next
   available traffic window.
 
+### 2026-08-27 — Docs workflow still active
+
+- **Evidence:** Direct GitHub Actions inspection shows main `Validate Docs`
+  run 33034860136 (`build`) and `Deploy Docs` run 33034870990 (`validate`)
+  still `in_progress`; the preceding validation run succeeded.
+- **Action:** Left the active workflows untouched and did not cancel, bypass,
+  or force deployment while jobs are running.
+- **Validation:** `gh run view -R sandbaseai/sandbase-docs` returned both live
+  job states on 2026-08-27 UTC. No Star change was observed (Skills 63, CLI 57,
+  Handbook 67, Docs 1).
+- **Result:** No new failure or growth signal; the 100-Star target remains
+  unmet.
+- **Next action:** Recheck after workflow completion and record any deployment
+  result or Star/traffic delta.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
