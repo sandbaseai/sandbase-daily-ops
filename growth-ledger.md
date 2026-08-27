@@ -568,6 +568,27 @@ records the operational decision, evidence, validation, and outcome.
 - **Result:** Four reviewable promotion assets are queued without duplicate live canonicals or unsolicited posting.
 - **Next action:** Operator reviews channel fit and authorizes staggered publication; measure referral clicks and indexed canonical discovery after publication.
 
+### 2026-08-27 — Four-repository growth snapshot
+
+- **Objective:** Reconcile current public Star and traffic signals after the
+  latest promotion and SEO work, using GitHub as the authority.
+- **Evidence:** GitHub API reported Skills 62 stars (up from the prior 45
+  snapshot), CLI 55 (from 34), Handbook 66 (from 41), and Docs 1. Forks were
+  3, 4, 10, and 0 respectively. The latest available Traffic API days were:
+  Skills 67 views/23 uniques (Aug 25), CLI 3/2, Handbook 65/31, and Docs
+  105/6. Referrer data was strongest from GitHub for all four; Handbook also
+  showed sandbaseai.github.io and search referrals.
+- **Action:** Recorded the direct API snapshot on 2026-08-27 UTC. No Star is
+  attributed to a particular PR, post, or SEO change because the APIs do not
+  provide that causal link.
+- **Validation:** Repository metadata and Traffic API responses were read
+  directly; external Skills directory PR #27 remains open.
+- **Deployment state:** Ledger-only update; no product or production changes.
+- **Result:** substantial organic growth observed; 100-Star threshold remains
+  unmet for every repository.
+- **Next action:** Continue measuring referral and traffic windows, and focus
+  future promotion on the two projects closest to 100 without neglecting Docs.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
