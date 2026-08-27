@@ -1086,6 +1086,26 @@ records the operational decision, evidence, validation, and outcome.
   low-noise value-led distribution, and measure the next window before drawing
   any channel conclusion.
 
+### 2026-08-28 — Organization profile cross-project discovery
+
+- **Evidence:** The public `sandbaseai/.github` profile featured CLI, Skills,
+  and the Handbook but had no direct featured-project or Start Here link for
+  `sandbase-docs`, whose direct GitHub snapshot is 1 Star.
+- **Action:** Added an official SandBase Docs project row and API-docs starting
+  link to the organization profile. Commit: https://github.com/sandbaseai/.github/commit/3d207a3
+- **Validation:** Pushed to `main`; GitHub commit is publicly reachable and the
+  edited Markdown contains both links. This is a discovery improvement, not a
+  claim of Star attribution.
+- **Distribution channel:** GitHub organization profile, visible to visitors
+  across all SandBase repositories.
+- **Star count before/after:** Skills 67→67, CLI 61→61, Handbook 73→73,
+  Docs 1→1 at the time of the action; no causal lift is claimed.
+- **Result:** Docs now has a first-class cross-project discovery path from the
+  organization landing page.
+- **Next hypothesis:** Measure the next GitHub traffic window for Docs and
+  avoid additional profile edits unless a missing, high-intent entry point is
+  evidenced.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
