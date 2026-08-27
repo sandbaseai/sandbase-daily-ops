@@ -802,6 +802,19 @@ records the operational decision, evidence, validation, and outcome.
 - **Next action:** Recheck the run result; merge only after a successful check
   and required review conditions are satisfied.
 
+### 2026-08-27 — Docs PR runner status
+
+- **Evidence:** PR #10's required `build` workflow run
+  (33034389045) remains `in_progress`; GitHub reports no assigned runner yet.
+- **Action:** Kept the PR open and did not bypass required checks or merge
+  around the repository's validation gate.
+- **Validation:** `gh run view -R sandbaseai/sandbase-docs` returned the live
+  workflow status on 2026-08-27 UTC.
+- **Result:** No new review or Star signal; current counts remain Skills 62,
+  CLI 57, Handbook 66, Docs 1.
+- **Next action:** Recheck runner availability and mergeability when the
+  required build completes.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
