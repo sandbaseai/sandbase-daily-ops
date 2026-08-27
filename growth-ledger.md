@@ -589,6 +589,25 @@ records the operational decision, evidence, validation, and outcome.
 - **Next action:** Continue measuring referral and traffic windows, and focus
   future promotion on the two projects closest to 100 without neglecting Docs.
 
+### 2026-08-27 — Directory review and Star delta follow-up
+
+- **Evidence:** A fresh GitHub API read reported Skills 62 stars, CLI 56,
+  Handbook 66, and Docs 1. Compared with the prior ledger snapshot, CLI is
+  +1; the other three are unchanged. Latest available Traffic API data remains
+  through 2026-08-25: Skills 67/23, CLI 3/2, Handbook 65/31, and Docs 105/6
+  views/uniques respectively.
+- **Distribution status:** VoltAgent/awesome-agent-skills PR #946 is now
+  merged (2026-08-25); Ezeafk/awesome-agent-skills PR #27 remains open. No
+  causal attribution is made between either directory review and Star changes.
+- **Validation:** Repository metadata, Traffic API responses, and both PR
+  states were read directly on 2026-08-27 UTC. Main is healthy and this is a
+  ledger-only update.
+- **Result:** One additional verified CLI Star; all four repositories remain
+  below the 100-Star target.
+- **Next hypothesis:** Recheck after the next traffic window and, for open
+  directory submissions, wait for maintainer review rather than duplicating
+  listings or posting unsolicited promotion.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
