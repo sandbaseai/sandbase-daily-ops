@@ -1014,6 +1014,27 @@ records the operational decision, evidence, validation, and outcome.
 - **Next action:** Monitor discussion engagement and measure traffic/Stars in
   the next available window without additional duplicate comments.
 
+### 2026-08-27 — Referrer channel analysis
+
+- **Evidence:** GitHub popular-referrers API shows the strongest non-GitHub
+  source is `sandbaseai.github.io` → Handbook (201 views / 46 uniques),
+  followed by Google (55 / 35). Skills also receives 6 / 4 from
+  `awesome-dsh-plugin.com`; CLI's external referrers are sparse (2 / 1 from
+  iohub.inshub.cn and 1 / 1 Google); Docs has only GitHub in the current
+  report (51 / 7).
+- **Action:** Identified the Handbook's hosted site and search indexing as the
+  highest-confidence channels for future useful announcements; no automated
+  or bulk referral activity was created.
+- **Validation:** Values were read directly from each repository's GitHub
+  `traffic/popular/referrers` endpoint on 2026-08-27 UTC. Referrer data is
+  aggregated and does not prove Star causality.
+- **Result:** The next promotion hypothesis is evidence-led: improve the
+  Handbook site's release/guide landing paths and cross-link relevant projects,
+  then compare referral and Star conversion.
+- **Next action:** Use the existing `v0.5.99` release and canonical site as the
+  anchor for one targeted update; avoid repeating channels with no observed
+  signal.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
