@@ -1224,6 +1224,25 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Continue one useful follow-up per distinct discussion,
   then measure referral traffic rather than posting duplicate announcements.
 
+### 2026-08-28 — High-quality Chinese MCP directory PR
+
+- **Evidence:** `yzfly/Awesome-MCP-ZH` explicitly accepts real, installable,
+  documented MCP resources and asks contributors to submit a focused PR.
+  SandBase CLI has public source, Apache-2.0 licensing, local MCP bridging,
+  and documented client/release verification paths.
+- **Action:** Added a factual SandBase CLI entry and submitted PR #512:
+  https://github.com/yzfly/Awesome-MCP-ZH/pull/512
+- **Validation:** Fork branch commit `76bc0f0` pushed successfully; PR is open
+  for maintainer review. Description contains no Star or ranking request.
+- **Distribution channel:** Curated Chinese MCP directory with explicit
+  contribution rules and an audience aligned to CLI/MCP adoption.
+- **Star count before/after:** CLI 61→61 at submission time; Skills 67,
+  Handbook 73, Docs 1; no causal attribution or artificial engagement.
+- **Result:** A qualified, maintainer-reviewed discovery path is now active for
+  SandBase CLI.
+- **Next hypothesis:** Answer maintainer feedback and amend the single PR if
+  requested; do not duplicate the entry in other lists until this review ends.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
