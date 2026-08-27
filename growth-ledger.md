@@ -1069,6 +1069,23 @@ records the operational decision, evidence, validation, and outcome.
 - **Next action:** Revisit this directory only if CLI gains the required
   standalone-server/verification metadata; otherwise focus on existing channels.
 
+### 2026-08-28 — Organic Star and traffic delta
+
+- **Evidence:** GitHub API snapshot on 2026-08-28 reports Skills 67, CLI 61,
+  Handbook 73, Docs 1 Stars. Compared with the prior 63/57/67/1 baseline,
+  deltas are +4, +4, +6, and 0. Latest view totals/uniques are Skills
+  450/163, CLI 190/73, Handbook 1,218/430, Docs 206/19.
+- **Action:** Recorded the new counters and traffic window without attributing
+  growth to any individual post, PR, directory, or discussion.
+- **Validation:** Repository Stars, forks, timestamps, and private traffic
+  endpoints were read directly from GitHub on 2026-08-28 UTC. Ezeafk PR #27 is
+  now closed without merge, so no directory acceptance is claimed.
+- **Result:** Three repositories show meaningful organic increases, but none has
+  reached 100 Stars: Skills 67, CLI 61, Handbook 73, Docs 1.
+- **Next action:** Preserve the verified release/site entry points, continue
+  low-noise value-led distribution, and measure the next window before drawing
+  any channel conclusion.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
