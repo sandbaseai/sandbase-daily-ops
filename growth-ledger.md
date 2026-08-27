@@ -1051,6 +1051,24 @@ records the operational decision, evidence, validation, and outcome.
   anchor for one targeted update; avoid repeating channels with no observed
   signal.
 
+### 2026-08-27 — MCP directory eligibility review
+
+- **Evidence:** Reviewed `punkpeye/awesome-mcp-servers` contribution rules and
+  current entries. The list accepts local stdio servers, but its entries are
+  expected to describe a discrete MCP server and commonly include Glama
+  verification metadata. SandBase CLI is a multi-client bridge/gateway rather
+  than a single-purpose server, and a prior submission to a similar directory
+  was closed for unmet registry requirements.
+- **Action:** Chose not to submit a duplicate or low-fit PR; retained the
+  existing CLI release, MCPRepository, and skills.sh distribution links.
+- **Validation:** Contribution guide and current README format were read
+  directly on 2026-08-27 UTC; no external repository was modified.
+- **Result:** Avoided a likely rejected listing while preserving accurate,
+  already-supported discovery channels. Star counts remain Skills 63, CLI 57,
+  Handbook 67, Docs 1.
+- **Next action:** Revisit this directory only if CLI gains the required
+  standalone-server/verification metadata; otherwise focus on existing channels.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
