@@ -1154,6 +1154,24 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Recheck profile claims only when the source README
   changes materially, avoiding noisy edits.
 
+### 2026-08-28 — Enable Docs community feedback channel
+
+- **Evidence:** `sandbase-docs` had GitHub Discussions disabled while its
+  README directs contributors to canonical issue and contribution paths. This
+  removed a low-friction place for integration questions and reusable answers.
+- **Action:** Enabled GitHub Discussions on `sandbaseai/sandbase-docs` through
+  the repository settings API.
+- **Validation:** GitHub API returned `has_discussions=true`; the repository
+  remains public and at 1 Star. No discussion, comment, or Star was generated
+  automatically.
+- **Distribution channel:** Docs repository community surface.
+- **Star count before/after:** Skills 67→67, CLI 61→61, Handbook 73→73,
+  Docs 1→1; no causal attribution.
+- **Result:** Developers can now ask public API/documentation questions and
+  leave discoverable answers alongside the Docs repository.
+- **Next hypothesis:** Seed no promotional thread; wait for a genuine user
+  question, then answer with canonical docs links and measure referral traffic.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
