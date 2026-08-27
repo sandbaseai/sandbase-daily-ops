@@ -1262,6 +1262,22 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Wait for maintainer review and respond only to concrete
   feedback; avoid further directory submissions until these two reviews settle.
 
+### 2026-08-28 — Directory review follow-up
+
+- **Evidence:** Follow-up check found `Awesome-MCP-ZH#512` closed at
+  2026-08-27T23:52:21Z without merge and without maintainer feedback; no
+  acceptance is claimed. `awesome-mcp-clients#294` remains open and clean.
+- **Action:** Recorded the review outcomes and stopped any duplicate resubmission
+  to the Chinese directory; retained the single pending clients-directory PR:
+  https://github.com/punkpeye/awesome-mcp-clients/pull/294
+- **Validation:** Both PR states were read directly with `gh pr view`; CLI Star
+  count remains 61, with no attribution inferred from the submissions.
+- **Distribution channel:** Curated MCP directories under maintainer review.
+- **Result:** Promotion remains policy-compliant and avoids repeated closed-list
+  submissions or unsolicited follow-up noise.
+- **Next hypothesis:** Wait for #294 review; only revise or respond to explicit
+  maintainer feedback.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
