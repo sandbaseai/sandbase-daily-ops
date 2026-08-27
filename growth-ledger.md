@@ -815,6 +815,22 @@ records the operational decision, evidence, validation, and outcome.
 - **Next action:** Recheck runner availability and mergeability when the
   required build completes.
 
+### 2026-08-27 — Docs contributor guide merged
+
+- **Evidence:** SandBase Docs PR #10 completed its required `build` check
+  successfully at 2026-08-27 02:51 UTC and became clean/mergeable.
+- **Action:** Squash-merged [PR #10](https://github.com/sandbaseai/sandbase-docs/pull/10)
+  into `main` and deleted the topic branch. Merge commit:
+  `3c85ea69b26658cf424091a144f3b36974764e1e`.
+- **Validation:** GitHub PR metadata confirms `MERGED`; the required workflow
+  concluded `success` before merge.
+- **Result:** The public docs repository now has a contributor funnel with
+  validated local-build instructions, improving sustainable community
+  participation. No Star causality is claimed; counts remain Skills 62, CLI
+  57, Handbook 66, Docs 1.
+- **Next action:** Verify the merged guide on `main`, then monitor traffic and
+  Stars for the next measurement window.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
