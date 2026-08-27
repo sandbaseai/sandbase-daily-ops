@@ -1243,6 +1243,25 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Answer maintainer feedback and amend the single PR if
   requested; do not duplicate the entry in other lists until this review ends.
 
+### 2026-08-28 — High-quality MCP clients directory PR
+
+- **Evidence:** `punkpeye/awesome-mcp-clients` explicitly welcomes new clients,
+  requires a repository link and concise functionality description, and asks
+  for alphabetical, accurate entries. SandBase CLI is a public Apache-2.0
+  local MCP bridge/CLI with documented client support.
+- **Action:** Added a factual SandBase CLI client entry and submitted PR #294:
+  https://github.com/punkpeye/awesome-mcp-clients/pull/294
+- **Validation:** Fork branch commit `4fe72a5` pushed successfully; the PR
+  includes no Star/排名 request or artificial engagement language.
+- **Distribution channel:** Curated MCP client directory with explicit
+  contribution rules and a developer audience aligned to CLI adoption.
+- **Star count before/after:** CLI 61→61 at submission time; Skills 67,
+  Handbook 73, Docs 1; no causal attribution.
+- **Result:** A second, independent maintainer-reviewed discovery path is open
+  for SandBase CLI, without duplicating the same destination in one list.
+- **Next hypothesis:** Wait for maintainer review and respond only to concrete
+  feedback; avoid further directory submissions until these two reviews settle.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
