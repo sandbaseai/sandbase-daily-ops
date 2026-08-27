@@ -890,6 +890,21 @@ records the operational decision, evidence, validation, and outcome.
 - **Next action:** Verify `main` remains healthy and measure the next Docs
   traffic/Star window before making another metadata or content change.
 
+### 2026-08-27 — Handbook organic Star delta
+
+- **Evidence:** Fresh GitHub metadata reports `deepseek-harness-handbook` at
+  67 Stars, up from the prior recorded 66. Skills remains 63, CLI 57, and Docs
+  1. The latest Docs `main` validation run is still in progress.
+- **Action:** Recorded the directly observed Handbook increase without
+  attributing it to any particular article, link, or directory.
+- **Validation:** Repository counters, default branches, and workflow list were
+  read directly from GitHub on 2026-08-27 UTC; all four default branches are
+  `main`.
+- **Result:** Handbook now has 67 verified Stars; all repositories remain below
+  the 100-Star target. No artificial engagement was used.
+- **Next action:** Continue useful, channel-native promotion and recheck the
+  Docs deployment/validation result before the next traffic window.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
