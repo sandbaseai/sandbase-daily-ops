@@ -831,6 +831,21 @@ records the operational decision, evidence, validation, and outcome.
 - **Next action:** Verify the merged guide on `main`, then monitor traffic and
   Stars for the next measurement window.
 
+### 2026-08-27 — README contribution entry-point PR
+
+- **Evidence:** After PR #10 merged, the README's contribution section did not
+  link directly to the new `CONTRIBUTING.md` guide.
+- **Action:** Opened [PR #11](https://github.com/sandbaseai/sandbase-docs/pull/11)
+  to add that direct link, so repository visitors can move from discovery to
+  the validated contribution workflow in one click.
+- **Validation:** Markdown-only change committed as `9674013`, pushed to the
+  remote branch, and submitted for review on 2026-08-27 UTC.
+- **Result:** Improves contributor conversion without changing runtime docs or
+  making Star attribution claims. Current baseline remains Skills 62, CLI 57,
+  Handbook 66, Docs 1.
+- **Next action:** Monitor PR #11, merge after normal checks/review, and then
+  compare Docs traffic and Stars in the next window.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
