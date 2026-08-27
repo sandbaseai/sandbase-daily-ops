@@ -769,6 +769,25 @@ records the operational decision, evidence, validation, and outcome.
 - **Next action:** Respond promptly if either maintainer requests changes and
   measure the next traffic window after review activity.
 
+### 2026-08-27 — GitHub traffic measurement window
+
+- **Evidence:** GitHub's private traffic API returned the latest available
+  14-day window (through 2026-08-25 UTC). Clone totals/uniques were Skills
+  1,607/592, CLI 419/162, Handbook 1,506/343, Docs 702/193. View totals/
+  uniques were 427/156, 181/71, 1,131/401, and 178/16 respectively.
+- **Action:** Captured the channel-health baseline to guide future
+  value-led announcements; no artificial traffic or Star activity was used.
+- **Validation:** Values were read directly from each repository's GitHub
+  `/traffic/clones` and `/traffic/views` endpoints on 2026-08-27 UTC. Traffic
+  data has the normal GitHub reporting lag, so no same-day causal inference is
+  made.
+- **Result:** Handbook and Skills show the strongest sustained discovery,
+  while Docs has a recent clone spike; Star counts remain Skills 62, CLI 57,
+  Handbook 66, Docs 1. The 100-Star target remains unmet.
+- **Next action:** Compare the next available window against this baseline and
+  prioritize useful, channel-native content for the repositories with lower
+  conversion (especially Docs and CLI).
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
