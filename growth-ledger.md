@@ -788,6 +788,20 @@ records the operational decision, evidence, validation, and outcome.
   prioritize useful, channel-native content for the repositories with lower
   conversion (especially Docs and CLI).
 
+### 2026-08-27 — Contributor PR CI follow-up
+
+- **Evidence:** SandBase Docs PR #10 remains open; its required `build` check
+  is still pending at GitHub Actions run
+  https://github.com/sandbaseai/sandbase-docs/actions/runs/33034389045 .
+- **Action:** Monitored the required check and withheld merging until GitHub
+  reports a completed result and normal mergeability.
+- **Validation:** `gh pr checks` and PR metadata were read directly on
+  2026-08-27 UTC; no source changes were made during this follow-up.
+- **Result:** The contributor funnel change is awaiting automated validation;
+  no Star attribution is claimed and the 100-Star target remains unmet.
+- **Next action:** Recheck the run result; merge only after a successful check
+  and required review conditions are satisfied.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
