@@ -1139,6 +1139,21 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Keep the existing canonical links and wait for a new
   traffic window before changing channel mix or repeating outreach.
 
+### 2026-08-28 — Organization profile freshness correction
+
+- **Evidence:** The organization profile described the Handbook as having 80
+  English-canonical guides, while the current Handbook README reports 143.
+- **Action:** Corrected the profile to the verified 143-guide count. Commit:
+  https://github.com/sandbaseai/.github/commit/3981a2a
+- **Validation:** Pushed to `main`; source README and profile wording were read
+  directly from GitHub. Star counts at the check stayed Skills 67, CLI 61,
+  Handbook 73, Docs 1.
+- **Distribution channel:** GitHub organization profile.
+- **Result:** Visitors now see an accurate, stronger discovery description;
+  this is not evidence of Star causality.
+- **Next hypothesis:** Recheck profile claims only when the source README
+  changes materially, avoiding noisy edits.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
