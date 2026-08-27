@@ -1191,6 +1191,23 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Answer only genuine follow-up questions and compare Docs
   traffic/referrers in the next available window.
 
+### 2026-08-28 — CLI developer discussion interaction
+
+- **Evidence:** CLI discussion #47 explained the 2,000+ model workflow but had
+  no comments with a safe preview path.
+- **Action:** Added a practical follow-up showing the read-only `catalog --json`
+  command, release link, and checksum guidance:
+  https://github.com/sandbaseai/cli/discussions/47#discussioncomment-18181647
+- **Validation:** GitHub returned the public comment URL. The comment is
+  technical, non-incentivized, and does not request manufactured engagement.
+- **Distribution channel:** Existing CLI GitHub Discussion.
+- **Star count before/after:** Skills 67→67, CLI 61→61, Handbook 73→73,
+  Docs 1→1; no causal attribution.
+- **Result:** Readers can safely inspect supported targets before connecting a
+  client, reducing friction for legitimate adoption.
+- **Next hypothesis:** Engage only on genuine follow-up questions and compare
+  CLI referral traffic in the next window.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
