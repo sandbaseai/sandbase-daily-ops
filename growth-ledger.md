@@ -719,6 +719,23 @@ records the operational decision, evidence, validation, and outcome.
 - **Next action:** Recheck repository traffic and Stars after a reasonable
   discovery window, and avoid adding speculative or duplicated topics.
 
+### 2026-08-27 — Docs repository search description update
+
+- **Evidence:** `sandbase-docs`'s prior GitHub description was generic
+  (`One API for 2000+ AI models, 2,000+ tools, and managed agents`) and did
+  not describe the public documentation scope shown in its README.
+- **Action:** Updated the repository description to: “Official SandBase
+  developer documentation: one API for LLMs, image, video, audio, embeddings,
+  real-world APIs, and reusable Agents.”
+- **Validation:** GitHub repository metadata API returned the exact new
+  description on 2026-08-27 UTC; wording matches the current README entry
+  points and makes no unverifiable adoption claim.
+- **Result:** GitHub search and repository cards now expose clearer intent for
+  developers looking for SandBase documentation. No immediate Star causality
+  is claimed; baseline remains Skills 62, CLI 57, Handbook 66, Docs 1.
+- **Next action:** Measure traffic and Stars after the discovery window; keep
+  metadata aligned with the README as the product evolves.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
