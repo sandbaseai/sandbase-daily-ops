@@ -1208,6 +1208,22 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Engage only on genuine follow-up questions and compare
   CLI referral traffic in the next window.
 
+### 2026-08-28 — Skills installation discussion interaction
+
+- **Evidence:** Skills discussion #48 described preview/install usage but had no
+  follow-up comment covering release-integrity verification.
+- **Action:** Added a concise checksum-verification command and source/issues
+  links: https://github.com/sandbaseai/sandbase-skills/discussions/48#discussioncomment-18181653
+- **Validation:** GitHub returned the public comment URL; content is technical,
+  reproducible, and contains no artificial engagement request.
+- **Distribution channel:** Existing SandBase Skills GitHub Discussion.
+- **Star count before/after:** Skills 67→67, CLI 61→61, Handbook 73→73,
+  Docs 1→1; no causal attribution.
+- **Result:** Developers can verify the downloaded artifact before trying the
+  Skill, reducing adoption friction and support ambiguity.
+- **Next hypothesis:** Continue one useful follow-up per distinct discussion,
+  then measure referral traffic rather than posting duplicate announcements.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
