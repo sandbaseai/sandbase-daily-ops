@@ -920,6 +920,22 @@ records the operational decision, evidence, validation, and outcome.
 - **Next action:** Recheck when the in-progress run resolves or a new traffic
   window becomes available.
 
+### 2026-08-27 — Docs deployment queue recheck
+
+- **Evidence:** GitHub now shows the latest `sandbase-docs` main workflows as
+  `Validate Docs` (run 33034860136) and `Deploy Docs` (run 33034870990), both
+  still `in_progress`. Star counts remain Skills 63, CLI 57, Handbook 67,
+  Docs 1; view totals remain 427/156, 181/71, 1,131/401, and 178/16.
+- **Action:** Kept the deployment queue under observation and made no changes
+  while required validation/deployment jobs are active.
+- **Validation:** Workflow, repository metadata, and traffic endpoints were
+  read directly from GitHub on 2026-08-27 UTC; no causal traffic or Star claim
+  is made.
+- **Result:** No new measurable growth signal or failure was observed; the
+  100-Star target remains outstanding.
+- **Next action:** Recheck after both workflows complete and compare the next
+  available traffic window.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
