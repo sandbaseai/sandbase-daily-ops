@@ -860,6 +860,21 @@ records the operational decision, evidence, validation, and outcome.
 - **Next action:** Merge after successful CI and normal review conditions, then
   measure Docs traffic and Stars.
 
+### 2026-08-27 — Skills organic Star delta
+
+- **Evidence:** A fresh GitHub repository metadata snapshot reports
+  `sandbase-skills` at 63 Stars, up from the prior recorded 62; CLI 57,
+  Handbook 66, and Docs 1 are unchanged. Docs PR #11 remains open with its
+  `build` check in progress.
+- **Action:** Recorded the directly observed Skills increase without assigning
+  it to any specific post, directory listing, or PR.
+- **Validation:** Values and PR state were read directly from GitHub on
+  2026-08-27 UTC; no artificial Star activity or source change was made.
+- **Result:** Skills is now at 63 verified Stars; all four repositories remain
+  below the 100-Star target.
+- **Next action:** Continue compliant distribution and use the next traffic
+  window to test which public entry points improve conversion.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
