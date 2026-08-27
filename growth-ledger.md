@@ -640,6 +640,23 @@ records the operational decision, evidence, validation, and outcome.
 - **Next action:** Recheck after maintainer activity or the next traffic
   window, and record only directly verifiable deltas.
 
+### 2026-08-27 — Repository conversion-surface audit
+
+- **Evidence:** GitHub metadata confirms all four repositories use `main` as
+  the default branch and expose a top-level README. Current Stars are Skills
+  62, CLI 56, Handbook 66, and Docs 1; open issue counts are 0, 2, 3, and 1.
+- **Action:** Reviewed the public entry-point surface before proposing further
+  promotion. No broken README endpoint or urgent zero-context issue was found,
+  so no speculative copy change was made.
+- **Validation:** Repository metadata and README availability were read
+  directly on 2026-08-27 UTC. This is a review-only ledger entry; no main
+  branch was modified in the product repositories.
+- **Result:** Public entry points remain reachable; the 100-Star requirement
+  remains unmet and requires continued organic distribution.
+- **Next action:** Use the next confirmed product improvement or maintainer
+  response as the basis for a channel-native announcement, then measure its
+  referral window without claiming causality.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
