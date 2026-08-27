@@ -624,6 +624,22 @@ records the operational decision, evidence, validation, and outcome.
 - **Next action:** Continue value-led distribution and recheck the open
   directory PR and Star/traffic deltas in the next measurement window.
 
+### 2026-08-27 — Promotion queue status check
+
+- **Evidence:** GitHub API recheck found no Star change: Skills 62, CLI 56,
+  Handbook 66, Docs 1. Ezeafk/awesome-agent-skills PR #27 remains open with
+  no comments or reviews and unchanged since 2026-08-23.
+- **Action:** Kept the approved directory submission in the review queue;
+  did not duplicate the listing or use unsolicited outreach while awaiting
+  maintainer action.
+- **Validation:** Repository metadata and PR state were read directly on
+  2026-08-27 UTC; `sandbase-daily-ops` main was clean before this ledger-only
+  append.
+- **Result:** No new attributable promotion signal; all four repositories
+  remain below the 100-Star target.
+- **Next action:** Recheck after maintainer activity or the next traffic
+  window, and record only directly verifiable deltas.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
