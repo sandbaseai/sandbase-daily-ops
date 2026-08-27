@@ -686,6 +686,23 @@ records the operational decision, evidence, validation, and outcome.
 - **Next action:** Continue value-led promotion and recheck after the next
   traffic window or directory-maintainer activity.
 
+### 2026-08-27 — Directory PR verification follow-up
+
+- **Evidence:** Ezeafk/awesome-agent-skills PR #27 remains open. A single
+  maintainer-facing follow-up comment was added at
+  https://github.com/Ezeafk/awesome-agent-skills/pull/27#issuecomment-5433689741
+  with the canonical repository URL, `skills.json`/CI validation details,
+  MIT license, and a request to flag any format changes.
+- **Action:** Supplied concise, reviewable context to the existing directory
+  submission; did not create a duplicate PR or send unsolicited bulk outreach.
+- **Validation:** Comment URL and PR state were read from GitHub on
+  2026-08-27 UTC. Direct Star snapshot at the same window: Skills 62, CLI 57,
+  Handbook 66, Docs 1; no causal attribution is inferred.
+- **Result:** The submission now has maintainer-verifiable context while the
+  four repositories remain below the 100-Star target.
+- **Next action:** Await maintainer response; if requested, adjust only the
+  directory entry and measure the next public traffic/Star window.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
