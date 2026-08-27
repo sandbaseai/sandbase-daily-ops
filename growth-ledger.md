@@ -905,6 +905,21 @@ records the operational decision, evidence, validation, and outcome.
 - **Next action:** Continue useful, channel-native promotion and recheck the
   Docs deployment/validation result before the next traffic window.
 
+### 2026-08-27 — Main validation and Star recheck
+
+- **Evidence:** The latest `sandbase-docs` main `Validate Docs` run
+  (33034796517) is still reported `in_progress`; the preceding main and PR
+  validation runs completed successfully. Current Stars are Skills 63, CLI 57,
+  Handbook 67, Docs 1.
+- **Action:** Continued monitoring the deployment gate and kept promotion
+  activity value-led while avoiding duplicate outreach.
+- **Validation:** GitHub Actions and repository metadata were read directly on
+  2026-08-27 UTC; no code or metadata was changed in this check.
+- **Result:** No new Star delta or deployment failure was observed; the
+  100-Star target remains outstanding.
+- **Next action:** Recheck when the in-progress run resolves or a new traffic
+  window becomes available.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
