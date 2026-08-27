@@ -754,6 +754,21 @@ records the operational decision, evidence, validation, and outcome.
 - **Next action:** Monitor PR #10 for review, respond to requested edits, and
   recheck traffic/Stars after the guide is merged.
 
+### 2026-08-27 — Promotion queue and PR health recheck
+
+- **Evidence:** GitHub reports `sandbase-docs` PR #10 still open, with no
+  merge or review decision; Ezeafk/awesome-agent-skills PR #27 also remains
+  open with one maintainer-visible follow-up comment. Direct Star counts are
+  Skills 62, CLI 57, Handbook 66, Docs 1.
+- **Action:** Kept both review queues active without duplicate comments or
+  unsolicited outreach.
+- **Validation:** PR metadata and repository counters were read directly from
+  GitHub on 2026-08-27 UTC; no product repository was modified in this check.
+- **Result:** No new Star or maintainer signal is attributable to report; all
+  four repositories remain below the 100-Star target.
+- **Next action:** Respond promptly if either maintainer requests changes and
+  measure the next traffic window after review activity.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
