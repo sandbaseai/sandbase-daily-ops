@@ -846,6 +846,20 @@ records the operational decision, evidence, validation, and outcome.
 - **Next action:** Monitor PR #11, merge after normal checks/review, and then
   compare Docs traffic and Stars in the next window.
 
+### 2026-08-27 — README link PR validation pending
+
+- **Evidence:** SandBase Docs PR #11 remains open and its required `build`
+  check is still `in_progress`; merge state is `UNSTABLE` until the check
+  completes.
+- **Action:** Continued monitoring without bypassing the required workflow or
+  duplicating the contribution request.
+- **Validation:** PR metadata was read directly from GitHub on 2026-08-27 UTC;
+  no product source changed during this check.
+- **Result:** The README entry-point improvement awaits CI; no new Star signal
+  is claimed. Baseline remains Skills 62, CLI 57, Handbook 66, Docs 1.
+- **Next action:** Merge after successful CI and normal review conditions, then
+  measure Docs traffic and Stars.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
