@@ -875,6 +875,21 @@ records the operational decision, evidence, validation, and outcome.
 - **Next action:** Continue compliant distribution and use the next traffic
   window to test which public entry points improve conversion.
 
+### 2026-08-27 — README contribution link merged
+
+- **Evidence:** SandBase Docs PR #11's `Validate Docs` workflow completed
+  successfully (run 33034637810), and the PR became mergeable.
+- **Action:** Squash-merged [PR #11](https://github.com/sandbaseai/sandbase-docs/pull/11)
+  into `main` and removed its topic branch. Merge commit:
+  `6897fba4e2c15472c5c77103e43dbb7d9ce2ee1b`.
+- **Validation:** GitHub metadata confirms `MERGED`; the validation run
+  concluded `success` before the merge.
+- **Result:** README visitors can now reach the contributor guide directly,
+  completing the docs contribution funnel. No Star causality is claimed;
+  baseline remains Skills 63, CLI 57, Handbook 66, Docs 1.
+- **Next action:** Verify `main` remains healthy and measure the next Docs
+  traffic/Star window before making another metadata or content change.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
