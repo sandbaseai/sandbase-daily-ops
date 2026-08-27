@@ -968,6 +968,21 @@ records the operational decision, evidence, validation, and outcome.
 - **Next action:** Use the current release notes and verified docs links in a
   targeted announcement, then measure traffic and Stars in the next window.
 
+### 2026-08-27 — Post-merge deployment verification
+
+- **Evidence:** After PR #11 merged, `Validate Docs` main completed
+  successfully, while `Deploy Docs` run 33034870990 remains `in_progress`.
+  Repository counters are unchanged: Skills 63, CLI 57, Handbook 67, Docs 1
+  Stars (forks 3, 4, 10, 0).
+- **Action:** Kept the deployment workflow running and did not claim the README
+  link was live on the hosted site until deployment reports completion.
+- **Validation:** GitHub Actions and repository metadata were read directly on
+  2026-08-27 UTC.
+- **Result:** Source merge is verified, hosted deployment is not yet verified;
+  no new Star attribution is claimed.
+- **Next action:** Recheck deployment completion and then measure Docs traffic
+  and Stars against the prior window.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
