@@ -1172,6 +1172,25 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Seed no promotional thread; wait for a genuine user
   question, then answer with canonical docs links and measure referral traffic.
 
+### 2026-08-28 — Docs integration Q&A index
+
+- **Evidence:** After Discussions was enabled, `sandbase-docs` had no public
+  Q&A topic to help a new developer find the canonical getting-started,
+  API-reference, store, and agent links.
+- **Action:** Created the practical Q&A index:
+  https://github.com/sandbaseai/sandbase-docs/discussions/12
+- **Validation:** GitHub returned the public discussion URL in the Q&A
+  category. The post contains no credentials, incentives, or automated
+  engagement request.
+- **Distribution channel:** Docs repository Discussions, linked to canonical
+  hosted docs and issue reporting.
+- **Star count before/after:** Skills 67→67, CLI 61→61, Handbook 73→73,
+  Docs 1→1; no causal attribution.
+- **Result:** A durable, searchable integration entry point now exists for
+  developers arriving from GitHub.
+- **Next hypothesis:** Answer only genuine follow-up questions and compare Docs
+  traffic/referrers in the next available window.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
