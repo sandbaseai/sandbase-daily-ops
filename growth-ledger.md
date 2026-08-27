@@ -1106,6 +1106,22 @@ records the operational decision, evidence, validation, and outcome.
   avoid additional profile edits unless a missing, high-intent entry point is
   evidenced.
 
+### 2026-08-28 — Handbook scorecard maintenance update
+
+- **Evidence:** Discussion #218 had a browser-only Agent Harness Evaluation
+  Scorecard with no comments; the tool and rubric are publicly reproducible.
+- **Action:** Added a factual maintenance comment with the scorecard, source,
+  and issue links: https://github.com/sandbaseai/deepseek-harness-handbook/discussions/218#discussioncomment-18181565
+- **Validation:** GitHub returned the public comment URL; no automated or
+  incentivized engagement was used.
+- **Distribution channel:** Existing high-intent Handbook discussion.
+- **Star count before/after:** Skills 67→67, CLI 61→61, Handbook 73→73,
+  Docs 1→1 at action time; no causal attribution.
+- **Result:** The scorecard discussion now has a maintained, actionable path
+  from evaluation to reproducible implementation feedback.
+- **Next hypothesis:** Watch discussion engagement and referral traffic before
+  adding another comment or opening a new promotional thread.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
