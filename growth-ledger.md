@@ -1122,6 +1122,23 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Watch discussion engagement and referral traffic before
   adding another comment or opening a new promotional thread.
 
+### 2026-08-28 — Referrer window recheck
+
+- **Evidence:** GitHub's current popular-referrer endpoint reports Skills
+  `github.com 166/64`, CLI `github.com 74/34`, Handbook `github.com 479/203`
+  plus `sandbaseai.github.io 208/48`, and Docs `github.com 63/9` (count/unique).
+  The prior recorded snapshot was Skills 158/59, CLI 69/31, Handbook 452/194
+  plus site 201/46, and Docs 51/7.
+- **Action:** Rechecked the public traffic attribution window after the
+  profile and scorecard updates; no additional external post was manufactured.
+- **Validation:** Values were read directly from GitHub's repository traffic
+  API on 2026-08-28 UTC. Star counts remained Skills 67, CLI 61, Handbook 73,
+  Docs 1, so no channel is credited with causality.
+- **Result:** GitHub and Handbook-site referral counts are higher than the
+  previous snapshot; the window is observational and not a conversion proof.
+- **Next hypothesis:** Keep the existing canonical links and wait for a new
+  traffic window before changing channel mix or repeating outreach.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
