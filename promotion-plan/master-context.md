@@ -74,8 +74,10 @@ Avoid leading with an undifferentiated list of thousands of capabilities. Breadt
 ### Core products
 
 - `sandbase-harness` — local-first Agent runtime; strongest current GitHub discovery surface (630 stars at audit time).
-- `sandbase-skills` — 88 installable Agent Skills and portable workflow distribution (49 stars).
-- `cli` — local CLI/MCP bridge for 25 AI client targets and SandBase capabilities (41 stars).
+- `sandbase-skills` — 88 installable Agent Skills and portable workflow distribution (62 stars at 2026-08-27 UTC audit).
+- `cli` — local CLI/MCP bridge for 25 AI client targets and SandBase capabilities (55 stars at 2026-08-27 UTC audit).
+- `deepseek-harness-handbook` — source-backed, multilingual operator handbook for DeepSeek Harness (66 stars at 2026-08-27 UTC audit).
+- `sandbase-docs` — public API, model, Agent, and CLI documentation (1 star at 2026-08-27 UTC audit).
 - `sandbase-docs` — public documentation source and API positioning (1 star).
 - `.github` — organization landing page and cross-product navigation.
 - `sandbase-daily-ops` — public promotion and SEO operating ledger.
@@ -230,3 +232,10 @@ Every update must include the date, evidence URL or repository commit, owner, an
 - Owner: SandBase growth operations.
 - Change: refreshed observed star counts only; product positioning, client counts, Skill count, and canonical URLs unchanged.
 - Downstream: daily audit and growth ledger updated in the same execution batch.
+
+### 2026-08-27 metadata verification
+
+- Evidence: direct GitHub repository metadata API for [`sandbase-skills`](https://api.github.com/repos/sandbaseai/sandbase-skills), [`cli`](https://api.github.com/repos/sandbaseai/cli), [`deepseek-harness-handbook`](https://api.github.com/repos/sandbaseai/deepseek-harness-handbook), and [`sandbase-docs`](https://api.github.com/repos/sandbaseai/sandbase-docs).
+- Owner: SandBase growth operations.
+- Change: refreshed observed public Star counts to 62, 55, 66, and 1 respectively; no product positioning or capability claims changed.
+- Downstream: growth ledger snapshot added; attribution remains unclaimed because GitHub metadata does not identify causality.
