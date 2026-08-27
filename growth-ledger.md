@@ -997,6 +997,22 @@ records the operational decision, evidence, validation, and outcome.
 - **Next action:** Recheck the run conclusion before any further docs-site
   promotion claim.
 
+### 2026-08-27 — Docs production deployment verified
+
+- **Evidence:** Deploy Docs run 33034870990 completed successfully at
+  2026-08-27 03:04:39 UTC. Both `validate` and `build-and-deploy` jobs passed,
+  including the production URL health check.
+- **Action:** Confirmed the merged contributor entry is deployed before using
+  the docs site as a promotion destination.
+- **Validation:** GitHub run metadata reports `completed/success`; a live
+  request to https://www.sandbase.ai/docs/ returned page content containing
+  the contribution entry text. All four default branches remain `main`.
+- **Result:** The Docs contribution funnel is now verified in production. Star
+  counts remain Skills 63, CLI 57, Handbook 67, Docs 1; no causal attribution
+  is inferred.
+- **Next action:** Use the live docs and Handbook release page in targeted,
+  channel-native promotion, then measure the next traffic/Star window.
+
 ### 2026-08-27 — Handbook Show HN release update
 
 - **Evidence:** The existing [Show HN discussion #157](https://github.com/sandbaseai/deepseek-harness-handbook/discussions/157)
