@@ -736,6 +736,24 @@ records the operational decision, evidence, validation, and outcome.
 - **Next action:** Measure traffic and Stars after the discovery window; keep
   metadata aligned with the README as the product evolves.
 
+### 2026-08-27 — Documentation contributor funnel PR
+
+- **Evidence:** `sandbase-docs` had no top-level contributor guide, making the
+  path from discovery to a safe, validated documentation contribution unclear.
+- **Action:** Opened [PR #10](https://github.com/sandbaseai/sandbase-docs/pull/10)
+  adding `CONTRIBUTING.md` with issue/PR guidance, `npm ci` + `npm run build`
+  validation, source-of-truth and link conventions, and credential-safety
+  rules.
+- **Validation:** `npm run build` completed successfully in 54.8 seconds on
+  2026-08-27 UTC. The branch is pushed and the pull request is open for
+  maintainer review.
+- **Result:** External developers now have a clear, low-friction path to make
+  useful contributions, improving the repository's conversion surface without
+  claiming any Star attribution. Baseline remains Skills 62, CLI 57, Handbook
+  66, Docs 1.
+- **Next action:** Monitor PR #10 for review, respond to requested edits, and
+  recheck traffic/Stars after the guide is merged.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
