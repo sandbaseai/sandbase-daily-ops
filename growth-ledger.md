@@ -608,6 +608,22 @@ records the operational decision, evidence, validation, and outcome.
   directory submissions, wait for maintainer review rather than duplicating
   listings or posting unsolicited promotion.
 
+### 2026-08-27 — Main-branch health verification
+
+- **Evidence:** Direct GitHub API checks still report Skills 62, CLI 56,
+  Handbook 66, and Docs 1 Star. The latest main-branch workflow runs for all
+  four repositories completed successfully (Skills Validate Skills, CLI CI,
+  Handbook Content check, Docs Validate Docs/Deploy Docs).
+- **Action:** Confirmed the promotion changes remain compatible with the
+  repositories' default branches; no source churn was introduced while the
+  open directory submission awaits review.
+- **Validation:** Commit status and Actions run results were read directly on
+  2026-08-27 UTC. No causal Star attribution is inferred from green checks.
+- **Result:** Main-branch health requirement remains verified; Star counts are
+  unchanged since the preceding snapshot.
+- **Next action:** Continue value-led distribution and recheck the open
+  directory PR and Star/traffic deltas in the next measurement window.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
