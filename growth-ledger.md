@@ -703,6 +703,22 @@ records the operational decision, evidence, validation, and outcome.
 - **Next action:** Await maintainer response; if requested, adjust only the
   directory entry and measure the next public traffic/Star window.
 
+### 2026-08-27 — GitHub Topics discoverability update
+
+- **Evidence:** `sandbase-docs` had eight Topics while the other three
+  repositories already had broad, relevant topic coverage.
+- **Action:** Added accurate discovery Topics to `sandbase-docs`:
+  `documentation`, `agent-harness`, `deepseek`, `deepseek-harness`, `sandbase`,
+  and `sandbaseai` (retaining its existing topics).
+- **Validation:** GitHub Topics replacement API returned the complete 14-topic
+  set successfully on 2026-08-27 UTC. No code, release, or README content was
+  changed; this is a reversible metadata update.
+- **Result:** The documentation repository is now more discoverable through
+  GitHub's topic navigation and search. No immediate Star attribution is
+  claimed; baseline snapshot remains Skills 62, CLI 57, Handbook 66, Docs 1.
+- **Next action:** Recheck repository traffic and Stars after a reasonable
+  discovery window, and avoid adding speculative or duplicated topics.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
