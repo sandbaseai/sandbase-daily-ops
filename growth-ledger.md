@@ -2839,6 +2839,23 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Keep release version and security claims synchronized;
   do not submit duplicate entries to the same directory.
 
+### 2026-08-28 — Handbook entry in 200-Star DSH directory
+
+- **Objective:** Increase durable discovery for the DeepSeek Harness Handbook
+  through a focused community-maintained resource list.
+- **Evidence:** [Dominic789654/awesome-deepseek-harness#26](https://github.com/Dominic789654/awesome-deepseek-harness/pull/26)
+  is merged; the directory currently has 204 GitHub Stars and explicitly
+  curates DSH plugins, skills, MCP servers, and operator resources.
+- **Validation:** GitHub API reports the PR as `MERGED` and the directory's
+  current Star count as 204.
+- **Distribution channel:** Focused DeepSeek Harness ecosystem directory.
+- **Star count at checkpoint:** Skills 72; CLI 66; Handbook 77; Docs 1;
+  no causal Star increase is claimed.
+- **Result:** Handbook has a relevant, maintainer-reviewed listing in a
+  substantive community directory.
+- **Next hypothesis:** Keep the listing aligned with handbook releases and
+  avoid duplicate submissions to the same directory.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
