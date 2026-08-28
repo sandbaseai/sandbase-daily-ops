@@ -1598,6 +1598,23 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Respond with reproducible install/validation details if
   requested; do not repost after an editorial rejection.
 
+### 2026-08-28 — AI coding tools directory submission
+
+- **Evidence:** `ai-for-developers/awesome-ai-coding-tools` invites
+  contributions by PR and maintains dedicated CLI and MCP sections.
+- **Action:** Opened PR #658 adding SandBase CLI to the CLI Tools section with
+  a factual local-MCP-bridge and multi-client description:
+  https://github.com/ai-for-developers/awesome-ai-coding-tools/pull/658
+- **Validation:** Checked the canonical CLI metadata and README before writing
+  the one-line entry; no fabricated star counts, rankings, or user claims were
+  included.
+- **Distribution channel:** Curated AI coding tools directory.
+- **Star count before/after:** Skills 67→67; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** A new discovery path for CLI users is awaiting maintainer review.
+- **Next hypothesis:** Answer factual questions if requested and respect the
+  maintainer's decision without duplicate submissions.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
