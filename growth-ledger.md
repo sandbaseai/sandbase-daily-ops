@@ -2428,6 +2428,25 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Wait for maintainer review and answer only concrete
   follow-up questions.
 
+### 2026-08-28 — SandBase Docs quickstart announcement
+
+- **Evidence:** `sandbaseai/sandbase-docs` has Discussions enabled with an
+  Announcements category; the docs now expose a consolidated Getting Started
+  path for client/MCP setup and API references.
+- **Action:** Published announcement #13 with the canonical quickstart URL and
+  a reproducible issue-reporting prompt:
+  https://github.com/sandbaseai/sandbase-docs/discussions/13
+- **Validation:** Confirmed the discussion was created in the official Docs
+  repository and linked only the public docs site; no external engagement was
+  fabricated.
+- **Distribution channel:** Official SandBase Docs Discussions / Announcements.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** Added a durable, searchable onboarding touchpoint for developers
+  discovering the Docs repository.
+- **Next hypothesis:** Answer concrete setup questions with reproducible steps
+  and link back to the canonical quickstart.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
