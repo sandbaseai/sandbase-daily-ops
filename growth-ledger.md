@@ -2376,6 +2376,23 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Wait for maintainer review and answer only concrete
   follow-up questions.
 
+### 2026-08-28 — Skills evidence follow-up in n-skills
+
+- **Evidence:** `numman-ali/n-skills` is a 1k+ star skills directory; open issue
+  #46 proposes SandBase and had no comments before this action.
+- **Action:** Added the exact `multi-source-search` SKILL.md path, offline
+  validation scope, and related CLI MCP/OAuth context:
+  https://github.com/numman-ali/n-skills/issues/46#issuecomment-5447297644
+- **Validation:** Rechecked the canonical Skills/CLI repositories and left
+  quality and inclusion decisions to the maintainer.
+- **Distribution channel:** Curated Agent Skills directory.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** Existing submission has precise, source-backed paths without
+  duplicate threads or manufactured engagement.
+- **Next hypothesis:** Wait for maintainer review and answer only concrete
+  questions.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
