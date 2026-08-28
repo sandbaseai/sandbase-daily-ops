@@ -2061,6 +2061,24 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Wait for editorial response and answer only concrete
   follow-up questions.
 
+### 2026-08-28 — SandBase Skills proposal to Libukai Agent Skills guide
+
+- **Evidence:** `libukai/awesome-agent-skills` is a 5k+ star bilingual guide
+  that emphasizes a small, high-quality set of skills and supports community
+  recommendations; no SandBase entry was found.
+- **Action:** Opened bilingual issue #137 proposing the canonical Skills repo:
+  https://github.com/libukai/awesome-agent-skills/issues/137
+- **Validation:** Confirmed the repo exposes multiple documented SKILL.md
+  packages and accurately described the multi-source research/offline
+  validation scope; current direct count is 68 stars.
+- **Distribution channel:** Chinese/English Agent Skills resource guide.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** A relevant, non-duplicative discovery proposal is queued for
+  maintainer review without manufactured engagement.
+- **Next hypothesis:** Wait for editorial feedback and answer only concrete
+  questions about quality, compatibility, or usage.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
