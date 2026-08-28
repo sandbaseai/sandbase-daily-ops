@@ -1473,6 +1473,26 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Keep #407 as the active external submission and pursue
   only a distinct, clearly documented channel thereafter.
 
+### 2026-08-28 — DeepSeek integration troubleshooting interaction
+
+- **Evidence:** DeepSeek's official agent directory has an open Chinese issue
+  reporting Claude Desktop `anthropic/v1/models` 404 errors and model-name
+  incompatibilities.
+- **Action:** Added a disclosed, technically scoped alternative using SandBase
+  CLI's local MCP bridge, with read-only catalog and OAuth connect commands:
+  https://github.com/deepseek-ai/awesome-deepseek-agent/issues/62#issuecomment-5446807952
+- **Validation:** The reply explicitly states this is not a direct fix for the
+  404 and links the CLI repository and official MCP Registry; no unsupported
+  compatibility claim or engagement request was made.
+- **Distribution channel:** Existing user troubleshooting issue in the
+  official DeepSeek integration repository.
+- **Star count before/after:** CLI 61→61; Skills 67, Handbook 73, Docs 1;
+  no causal attribution.
+- **Result:** Provided a relevant, reproducible path to readers with the
+  reported endpoint problem.
+- **Next hypothesis:** Respond only if the issue author asks for client-version
+  or connection-specific help.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
