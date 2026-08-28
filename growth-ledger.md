@@ -1493,6 +1493,19 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Respond only if the issue author asks for client-version
   or connection-specific help.
 
+### 2026-08-28 — Official DeepSeek guide PR outcome
+
+- **Evidence:** Direct GitHub check shows `deepseek-ai/awesome-deepseek-agent#407`
+  was closed without merge and without maintainer comments.
+- **Action:** Recorded the closure and stopped follow-up on the PR; no duplicate
+  guide submission was made.
+- **Validation:** `closedAt` is present and `mergedAt` is null. Target counts
+  remain Skills 67, CLI 61, Handbook 73, Docs 1.
+- **Result:** Promotion history remains accurate and respects the directory's
+  decision.
+- **Next hypothesis:** Wait for a new explicit contribution opportunity rather
+  than reopening or reposting the closed guide.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
