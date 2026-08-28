@@ -1718,6 +1718,23 @@ records the operational decision, evidence, validation, and outcome.
 - **Result:** Prevented a likely failed install for Chinese-speaking readers.
 - **Next hypothesis:** Continue only with concrete, source-backed corrections.
 
+### 2026-08-28 — Corrected stale star count in MCP catalog issue
+
+- **Evidence:** `Rodert/awesome-mcp#26` recorded 58 Stars at submission time;
+  the canonical repository currently reports 61.
+- **Action:** Posted a concise correction linking the live stargazer page and
+  advising generated catalogs not to hard-code the count:
+  https://github.com/Rodert/awesome-mcp/issues/26#issuecomment-5446990691
+- **Validation:** Verified the current count and release `v0.1.17` directly on
+  GitHub; no artificial engagement or popularity claim was added.
+- **Distribution channel:** MCP catalog collection issue.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** Improved freshness and accuracy of a potentially generated MCP
+  catalog entry.
+- **Next hypothesis:** Keep correcting stale metadata when it is concretely
+  evidenced, without repeating already-correct submissions.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
