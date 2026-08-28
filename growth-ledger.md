@@ -2340,6 +2340,24 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Wait for maintainer review and answer only concrete
   follow-up questions.
 
+### 2026-08-28 — CLI MCP section follow-up in Awesome Generative AI
+
+- **Evidence:** `filipecalegario/awesome-generative-ai` is a 3k+ star AI
+  resource list; open issue #681 proposes SandBase CLI for its MCP section and
+  had no comments before this action.
+- **Action:** Added a concise follow-up with Apache-2.0, 25-client support,
+  OAuth, official Registry, v0.1.17 release, and SHA-256 evidence:
+  https://github.com/filipecalegario/awesome-generative-ai/issues/681#issuecomment-5447282375
+- **Validation:** Rechecked the canonical CLI README/release and left the
+  maintainer to decide inclusion; no duplicate thread was created.
+- **Distribution channel:** Curated generative-AI resource directory.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** Existing proposal now has source-backed onboarding evidence
+  without manufactured engagement.
+- **Next hypothesis:** Wait for maintainer review and answer only concrete
+  follow-up questions.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
