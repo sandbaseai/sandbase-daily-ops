@@ -73,12 +73,11 @@ Avoid leading with an undifferentiated list of thousands of capabilities. Breadt
 
 ### Core products
 
-- `sandbase-harness` — local-first Agent runtime; strongest current GitHub discovery surface (630 stars at audit time).
-- `sandbase-skills` — 88 installable Agent Skills and portable workflow distribution (62 stars at 2026-08-27 UTC audit).
-- `cli` — local CLI/MCP bridge for 25 AI client targets and SandBase capabilities (55 stars at 2026-08-27 UTC audit).
-- `deepseek-harness-handbook` — source-backed, multilingual operator handbook for DeepSeek Harness (66 stars at 2026-08-27 UTC audit).
-- `sandbase-docs` — public API, model, Agent, and CLI documentation (1 star at 2026-08-27 UTC audit).
-- `sandbase-docs` — public documentation source and API positioning (1 star).
+- `sandbase-harness` — local-first Agent runtime; strongest current GitHub discovery surface (635 stars at 2026-08-28 UTC audit).
+- `sandbase-skills` — 88 installable Agent Skills and portable workflow distribution (68 stars at 2026-08-28 UTC audit).
+- `cli` — local CLI/MCP bridge for 25 AI client targets and 2,000+ AI models and APIs (64 stars at 2026-08-28 UTC audit; active milestone: 100).
+- `deepseek-harness-handbook` — source-backed, multilingual operator handbook for DeepSeek Harness (73 stars at 2026-08-28 UTC audit).
+- `sandbase-docs` — public API, model, Agent, and CLI documentation (1 star at 2026-08-28 UTC audit).
 - `.github` — organization landing page and cross-product navigation.
 - `sandbase-daily-ops` — public promotion and SEO operating ledger.
 
@@ -239,3 +238,11 @@ Every update must include the date, evidence URL or repository commit, owner, an
 - Owner: SandBase growth operations.
 - Change: refreshed observed public Star counts to 62, 55, 66, and 1 respectively; no product positioning or capability claims changed.
 - Downstream: growth ledger snapshot added; attribution remains unclaimed because GitHub metadata does not identify causality.
+
+### 2026-08-28 metadata and CLI distribution verification
+
+- Evidence: direct GitHub repository metadata API for [`sandbase-harness`](https://api.github.com/repos/sandbaseai/sandbase-harness), [`sandbase-skills`](https://api.github.com/repos/sandbaseai/sandbase-skills), [`cli`](https://api.github.com/repos/sandbaseai/cli), [`deepseek-harness-handbook`](https://api.github.com/repos/sandbaseai/deepseek-harness-handbook), and [`sandbase-docs`](https://api.github.com/repos/sandbaseai/sandbase-docs).
+- Owner: SandBase growth operations.
+- Change: refreshed observed public Star counts to 635, 68, 64, 73, and 1 respectively; corrected the CLI capability line to the verified 25-client and 2,000+-model/API claims; removed the duplicate Docs inventory entry.
+- Distribution evidence: official [CLI project page](https://sandbaseai.github.io/cli/), [MCP Registry release](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.sandbaseai%2Fcli/versions/0.1.17), [Homebrew tap](https://github.com/sandbaseai/homebrew-tap), [Docs](https://github.com/sandbaseai/sandbase-docs), and [organization profile](https://github.com/sandbaseai) now route qualified users to the CLI repository.
+- Downstream: execution details recorded in [`logs/2026-08-28.md`](logs/2026-08-28.md). No causal attribution is claimed: repository metadata proves the observed counts, not which distribution action produced them.

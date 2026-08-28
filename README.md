@@ -4,6 +4,10 @@ Daily operating system for SandBase social distribution and community updates. B
 
 This repository is the **canonical operations ledger** for SandBase growth work. Implementation stays in the owning product repository, while every SEO, content, GitHub, distribution, or outreach action is recorded here with its evidence, deployment state, and review date. See [`playbooks/operations-ledger.md`](playbooks/operations-ledger.md).
 
+## Active public experiment
+
+The current open-source distribution milestone is helping [`sandbaseai/cli`](https://github.com/sandbaseai/cli) reach 100 legitimate GitHub Stars through useful documentation, working installation paths, and relevant ecosystem discovery. Follow the dated [2026-08-28 evidence log](promotion-plan/logs/2026-08-28.md) for the authoritative snapshot, completed actions, guardrails, and next queue. Star the project only if the CLI or its six MCP tools are useful to you.
+
 ## Structure
 
 ```text
