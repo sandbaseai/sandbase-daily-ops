@@ -2630,6 +2630,24 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Wait for human review or requested changes; do not add
   further comments unless asked.
 
+### 2026-08-29 — CLI listing follow-up in Awesome CLI Apps
+
+- **Evidence:** `toolleeo/awesome-cli-apps-in-a-csv` is a 2.5k+ star CLI
+  directory; open issue #375 proposes SandBase CLI and had no comments before
+  this action.
+- **Action:** Added a concise follow-up with Apache-2.0, 25-client setup,
+  OAuth, v0.1.17 release/checksum, and official MCP Registry evidence:
+  https://github.com/toolleeo/awesome-cli-apps-in-a-csv/issues/375#issuecomment-5450187127
+- **Validation:** Rechecked canonical CLI sources and left field mapping and
+  inclusion to the maintainer; no duplicate issue was created.
+- **Distribution channel:** Curated CLI applications directory.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** Existing listing request now has source-backed metadata for review
+  without manufactured engagement.
+- **Next hypothesis:** Wait for maintainer feedback and answer only concrete
+  data-field questions.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
