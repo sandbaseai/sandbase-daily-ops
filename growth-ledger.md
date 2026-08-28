@@ -1615,6 +1615,22 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Answer factual questions if requested and respect the
   maintainer's decision without duplicate submissions.
 
+### 2026-08-28 — Directory review outcomes
+
+- **Evidence:** Direct GitHub checks show the Open AI developer tools PR #26
+  and Awesome Codex CLI PR #222 are closed, both without merge or maintainer
+  comments; AI Coding Tools PR #658 remains open without comments.
+- **Action:** Recorded the editorial outcomes and stopped follow-up on the two
+  closed submissions; no duplicate reposts or requests for artificial stars
+  were made.
+- **Validation:** `mergedAt` is null for both closed PRs; target counts remain
+  Skills 67, CLI 61, Handbook 73, Docs 1.
+- **Distribution channel:** Three independent curated developer-tool lists.
+- **Result:** Outreach records now reflect current public states and preserve
+  the one still-live review path.
+- **Next hypothesis:** Respond only to substantive maintainer feedback on #658
+  or a new, clearly documented contribution opportunity.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
