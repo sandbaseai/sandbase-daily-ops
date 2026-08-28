@@ -2447,6 +2447,24 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Answer concrete setup questions with reproducible steps
   and link back to the canonical quickstart.
 
+### 2026-08-28 — CLI Claude Code directory follow-up
+
+- **Evidence:** `jqueryscript/awesome-claude-code` is a 500+ star Claude Code
+  resource list; open issue #624 proposes SandBase CLI and had no comments
+  before this action.
+- **Action:** Added a concise follow-up with Claude Code local MCP setup, OAuth,
+  v0.1.17 release/checksum, and 25-client scope:
+  https://github.com/jqueryscript/awesome-claude-code/issues/624#issuecomment-5447318236
+- **Validation:** Rechecked the canonical CLI README/release and left the
+  maintainer to decide inclusion; no duplicate issue was opened.
+- **Distribution channel:** Curated Claude Code tools directory.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** Existing proposal now contains practical, source-backed
+  onboarding evidence without manufactured engagement.
+- **Next hypothesis:** Wait for maintainer review and answer only concrete
+  follow-up questions.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
