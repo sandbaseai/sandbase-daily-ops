@@ -1390,6 +1390,24 @@ records the operational decision, evidence, validation, and outcome.
 - **Result:** Public promotion metadata is now precise and reproducible.
 - **Next hypothesis:** Await the directory's quality-score evaluation and review.
 
+### 2026-08-28 — Agent Skills collection PR
+
+- **Evidence:** `skillmatic-ai/awesome-agent-skills` explicitly accepts
+  high-quality Agent Skills resources, requires concise links, and had no
+  SandBase entry. The SandBase repository is public, documented, and uses the
+  `SKILL.md` format.
+- **Action:** Added `sandbaseai/sandbase-skills` under Popular Collections and
+  opened PR #161: https://github.com/skillmatic-ai/awesome-agent-skills/pull/161
+- **Validation:** Fork branch `add-sandbase-skills` commit `05c76f9` was pushed;
+  the PR contains one factual link and no ranking or engagement request.
+- **Distribution channel:** Curated Agent Skills resource directory.
+- **Star count before/after:** Skills 67→67; CLI 61, Handbook 73, Docs 1;
+  no causal attribution.
+- **Result:** Added an independent discovery path specifically for the Skills
+  repository.
+- **Next hypothesis:** Wait for maintainer review and respond only to concrete
+  feedback.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
