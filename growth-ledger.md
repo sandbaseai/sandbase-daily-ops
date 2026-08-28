@@ -1701,6 +1701,23 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Continue correcting concrete inaccuracies only when they
   appear in public editorial queues.
 
+### 2026-08-28 — Corrected package name in Chinese AI tools directory
+
+- **Evidence:** `0voice/awesome-ai-tools#125` repeated the incorrect
+  `@sandbase/cli` install name in an otherwise complete Chinese-language
+  submission.
+- **Action:** Added a single factual correction with the official
+  `@sandbaseai/cli` package, immutable release, and read-only catalog command:
+  https://github.com/0voice/awesome-ai-tools/issues/125#issuecomment-5446979709
+- **Validation:** Checked npm metadata and the canonical `v0.1.17` release;
+  preserved the issue's affiliation disclosure and made no star or popularity
+  claims.
+- **Distribution channel:** Chinese AI tools directory editorial issue.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** Prevented a likely failed install for Chinese-speaking readers.
+- **Next hypothesis:** Continue only with concrete, source-backed corrections.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
