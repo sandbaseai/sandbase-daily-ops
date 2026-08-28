@@ -1735,6 +1735,24 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Keep correcting stale metadata when it is concretely
   evidenced, without repeating already-correct submissions.
 
+### 2026-08-28 — Corrected handbook guide count in Claude Code directory issue
+
+- **Evidence:** `hesreallyhim/awesome-claude-code#2610` proposed the Handbook
+  with “115+” guides; the current repository catalog verifies 143 guides.
+- **Action:** Replied once with the updated count and canonical repository link,
+  noting that the number is maintained data and may change:
+  https://github.com/hesreallyhim/awesome-claude-code/issues/2610#issuecomment-5446995833
+- **Validation:** Checked the handbook's current catalog and preserved the
+  submitter's disclosure and Apache-2.0 attribution; no fabricated metrics or
+  engagement request was added.
+- **Distribution channel:** Curated Claude Code documentation directory issue.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** Improved factual accuracy of a high-relevance documentation
+  discovery opportunity for Claude Code users.
+- **Next hypothesis:** Answer only further editorial questions with source
+  evidence; avoid duplicate submissions.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
