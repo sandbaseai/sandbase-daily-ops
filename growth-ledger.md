@@ -2820,6 +2820,25 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Keep marketplace metadata current and respond only to
   actual maintainer requests.
 
+### 2026-08-28 — CLI ecosystem listings verified (batch 2)
+
+- **Objective:** Broaden CLI discovery across established MCP, Gemini, AI-tools,
+  and Chinese developer directories.
+- **Evidence:** Verified merged PRs: [awesome-gemini-cli#99](https://github.com/Piebald-AI/awesome-gemini-cli/pull/99),
+  [Awesome-MCP-Server#70](https://github.com/AIAnytime/Awesome-MCP-Server/pull/70),
+  [TensorBlock/awesome-mcp-servers#1835](https://github.com/TensorBlock/awesome-mcp-servers/pull/1835),
+  [awesome-ai-tools#232](https://github.com/QAInsights/awesome-ai-tools/pull/232),
+  [chinese-independent-developer#1287](https://github.com/1c7/chinese-independent-developer/pull/1287),
+  and [Awesome-MCP#27](https://github.com/Albertchamberlain/Awesome-MCP/pull/27).
+- **Validation:** GitHub PR metadata reports all six as `MERGED`; URLs resolve
+  to the external histories.
+- **Distribution channel:** Maintainer-curated ecosystem directories.
+- **Star count at checkpoint:** Skills 72; CLI 66; Handbook 77; Docs 1;
+  no causal Star increase is claimed.
+- **Result:** Six additional long-lived CLI discovery paths are live.
+- **Next hypothesis:** Keep release version and security claims synchronized;
+  do not submit duplicate entries to the same directory.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
