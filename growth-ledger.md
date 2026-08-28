@@ -1970,6 +1970,20 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Respond to any maintainer comment; do not add duplicate
   entries while the PR is under review.
 
+### 2026-08-28 — Walking Labs directory PR outcome
+
+- **Evidence:** `walkinglabs/awesome-harness-engineering#84` was closed on
+  2026-08-28 without merge, comments, or review feedback.
+- **Action:** Recorded the editorial outcome and stopped follow-up; no duplicate
+  submission or reopening was attempted.
+- **Validation:** GitHub reports `mergedAt: null`; target counts remain Skills
+  68, CLI 61, Handbook 73, Docs 1.
+- **Distribution channel:** Curated harness-engineering tools and guides list.
+- **Result:** Outreach history remains accurate and respects the directory's
+  decision.
+- **Next hypothesis:** Use only new, explicitly open documentation channels for
+  the Handbook; do not repost this closed PR.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
