@@ -1459,6 +1459,20 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Respond to maintainer checks and update only when
   concrete documentation feedback arrives.
 
+### 2026-08-28 — Closed directory submissions status
+
+- **Evidence:** Direct GitHub checks show `awesome-agent-skills#161` and
+  `awesome-mcp-servers#13046` were closed without merge and without review
+  comments. The official DeepSeek guide PR #407 remains open and clean.
+- **Action:** Recorded both closures and stopped follow-up on those PRs; no
+  duplicate resubmissions were made.
+- **Validation:** `mergedAt` is null for both closed PRs; target counts remain
+  Skills 67, CLI 61, Handbook 73, Docs 1.
+- **Result:** Outreach history is accurate and avoids repeatedly submitting to
+  closed directory workflows.
+- **Next hypothesis:** Keep #407 as the active external submission and pursue
+  only a distinct, clearly documented channel thereafter.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
