@@ -2537,6 +2537,24 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Use actual reports to improve client compatibility and
   documentation; do not manufacture replies.
 
+### 2026-08-28 — Handbook implementation-start announcement
+
+- **Evidence:** `sandbaseai/deepseek-harness-handbook` has Discussions enabled
+  with an Announcements category; its bilingual README provides implementation
+  coverage of runtime, tools, sandbox, sessions, runbooks, and troubleshooting.
+- **Action:** Published announcement #248 with a durable “Start here” guide
+  index and a request for reproducible user context:
+  https://github.com/sandbaseai/deepseek-harness-handbook/discussions/248
+- **Validation:** Linked the canonical README and asked contributors to share
+  runtime/client details rather than making adoption claims.
+- **Distribution channel:** Official Handbook Discussions / Announcements.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** Added a searchable onboarding touchpoint for Agent builders and
+  a path for real implementation feedback.
+- **Next hypothesis:** Answer concrete workflow questions and incorporate
+  reproducible feedback into the handbook.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
