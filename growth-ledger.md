@@ -1889,6 +1889,20 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Provide source or runbook evidence if maintainers ask;
   respect editorial decisions without reposting.
 
+### 2026-08-28 — Harness engineering directory PR outcome
+
+- **Evidence:** Direct GitHub check shows `ai-boost/awesome-harness-engineering#221`
+  was closed without merge and without maintainer comments.
+- **Action:** Recorded the editorial outcome and stopped follow-up; no duplicate
+  PR or reopening was attempted.
+- **Validation:** `mergedAt` is null and the target counts remain Skills 68,
+  CLI 61, Handbook 73, Docs 1.
+- **Distribution channel:** Curated harness-engineering resource directory.
+- **Result:** Outreach history remains accurate and respects the directory's
+  decision.
+- **Next hypothesis:** Pursue only a distinct, explicitly open channel for the
+  Handbook, not a repost of this closed PR.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
