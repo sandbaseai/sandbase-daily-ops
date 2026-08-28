@@ -1544,6 +1544,24 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Improve the listing only when factual metadata changes;
   otherwise focus on distinct communities with explicit contribution paths.
 
+### 2026-08-28 — Open AI developer tools directory submission
+
+- **Evidence:** `Sami-Uysal/awesome-open-ai-developer-tools` documents explicit
+  inclusion criteria (open source, active maintenance, real developer utility,
+  no duplicate) and accepts one-tool PRs.
+- **Action:** Opened PR #26 adding SandBase CLI with Apache-2.0 license, active
+  maturity, 25-client support, read-only catalog verification, and checksum
+  details: https://github.com/Sami-Uysal/awesome-open-ai-developer-tools/pull/26
+- **Validation:** Verified the canonical CLI repository license, release
+  `v0.1.17`, latest push date, README claims, and contribution format before
+  submitting; no star counts or unsupported marketing claims were added.
+- **Distribution channel:** Curated open-source AI developer-tools directory.
+- **Star count before/after:** Skills 67→67; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** A new, rule-compliant discovery path is live for maintainer review.
+- **Next hypothesis:** Answer maintainer questions with reproducible install or
+  compatibility evidence; do not repost if declined.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
