@@ -2769,6 +2769,21 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Do not comment again unless the maintainer asks for
   changes or closes the issue.
 
+### 2026-08-28 — Docs README discovery CTA shipped
+
+- **Objective:** Improve conversion from documentation readers to durable GitHub
+  discovery and useful community feedback.
+- **Action:** Added a concise, non-incentivized README call to action linking to
+  the Docs Star page and redacted-example issue tracker.
+- **Validation:** Change was rebased onto the latest `main` and pushed at
+  commit `0ce1f78`; links target canonical GitHub pages.
+- **Distribution channel:** `sandbase-docs` README / organic documentation
+  traffic.
+- **Star count at action:** Skills 72; CLI 66; Handbook 77; Docs 1.
+- **Result:** Live README now offers a clear feedback and discovery path.
+- **Next hypothesis:** Use responses from the linked issue tracker to improve
+  examples; do not attribute Stars without referral evidence.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
