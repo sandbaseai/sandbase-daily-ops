@@ -1312,6 +1312,23 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Wait for #292 maintainer feedback; pursue a new channel
   only when it has a distinct audience and explicit contribution fit.
 
+### 2026-08-28 — mcp.so directory submission
+
+- **Evidence:** `chatmcp/mcpso#1` is an open submission thread for MCP servers;
+  a paginated comment search confirmed SandBase CLI was not already listed.
+- **Action:** Posted one factual, disclosed entry with repository, release, and
+  official registry links: https://github.com/chatmcp/mcpso/issues/1#issuecomment-5446685099
+- **Validation:** GitHub returned the public comment URL. The entry describes
+  the open-source CLI/local bridge and asks maintainers to verify and categorize
+  it; it contains no Star or ranking request.
+- **Distribution channel:** `mcp.so` community submission thread (MCP-focused
+  directory; approximately 2,100 GitHub Stars on the host repository).
+- **Star count before/after:** CLI 61→61 at submission time; Skills 67,
+  Handbook 73, Docs 1; no causal attribution.
+- **Result:** Added a distinct MCP-directory discovery path for SandBase CLI.
+- **Next hypothesis:** Wait for directory maintainer handling and respond only
+  to concrete verification questions.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
