@@ -2870,6 +2870,23 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Measure discovery through genuine issue/referral signals
   before adding further metadata.
 
+### 2026-08-28 — Skills and Handbook topic discovery refresh
+
+- **Objective:** Improve GitHub-native discovery for the two agent-focused
+  repositories using terms developers actually search.
+- **Action:** Replaced low-signal topics within GitHub's 20-topic limit with
+  `agent-skills-marketplace`, `ai-workflows`, `research-automation`,
+  `ai-coding-assistant`, and `developer-documentation` while preserving the
+  core ecosystem topics.
+- **Validation:** GitHub Topics API returned exactly 20 topics for each
+  repository after the update.
+- **Distribution channel:** GitHub search and topic pages.
+- **Star count at action:** Skills 72; CLI 66; Handbook 77; Docs 1.
+- **Result:** Search metadata now better matches Skills workflows and Handbook
+  operator documentation; no Star increase is attributed.
+- **Next hypothesis:** Avoid further topic churn unless search terminology or
+  project scope materially changes.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
