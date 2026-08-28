@@ -1362,6 +1362,22 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Wait for human/automated review outcome and respond only
   to further concrete checks.
 
+### 2026-08-28 — Glama score follow-up
+
+- **Evidence:** The directory bot confirmed the badge but requested that the
+  Glama server page have a completed quality evaluation. The page is live, but
+  no quality score is currently exposed in the fetched HTML.
+- **Action:** Left the requested badge in place and verified the exact Glama
+  path; no unsupported score claim was added to the PR.
+- **Validation:** `awesome-mcp-servers#13046` remains open and clean; the
+  current page is https://glama.ai/mcp/servers/sandbaseai/cli/score.
+- **Distribution channel:** Curated MCP server directory with Glama quality
+  gating.
+- **Result:** Badge requirement is satisfied; score evaluation remains a
+  maintainer/Glama-side prerequisite rather than something to fabricate.
+- **Next hypothesis:** Wait for Glama evaluation or further maintainer
+  instructions before changing the PR again.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
