@@ -1871,6 +1871,24 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Respond only when maintainers request additional source
   evidence.
 
+### 2026-08-28 — DeepSeek Harness Handbook added to harness engineering directory
+
+- **Evidence:** `ai-boost/awesome-harness-engineering` accepts resources that
+  address concrete harness problems and explicitly welcomes PR contributions.
+- **Action:** Opened PR #221 adding the Handbook to Foundations as a
+  source-backed, model-specific companion covering runtime boundaries, tools,
+  controls, sessions, recovery, runbooks, and diagnostics:
+  https://github.com/ai-boost/awesome-harness-engineering/pull/221
+- **Validation:** Checked the directory's contribution criteria and based the
+  entry on the canonical Handbook README; no inflated metrics or popularity
+  claims were used.
+- **Distribution channel:** Curated harness-engineering resource directory.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** Created a new, high-relevance discovery path for the Handbook.
+- **Next hypothesis:** Provide source or runbook evidence if maintainers ask;
+  respect editorial decisions without reposting.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
