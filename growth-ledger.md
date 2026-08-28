@@ -2648,6 +2648,23 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Wait for maintainer feedback and answer only concrete
   data-field questions.
 
+### 2026-08-29 — Organic Star movement checkpoint
+
+- **Evidence:** Direct GitHub API verification shows Skills 69, CLI 66,
+  Handbook 74, and Docs 1 stars; the prior checkpoint was 68 / 61 / 73 / 1.
+- **Action:** Recorded the observed movement without attributing it to any
+  single comment, issue, or PR.
+- **Validation:** Counts were queried directly from the four canonical GitHub
+  repositories at the same checkpoint; no synthetic accounts or automation were
+  used.
+- **Distribution channel:** Cross-channel promotion ledger checkpoint.
+- **Star count before/after:** Skills 68→69; CLI 61→66; Handbook 73→74;
+  Docs 1→1; causal attribution unknown.
+- **Result:** Three projects gained organic Stars, while Docs was unchanged;
+  none has reached the 100-Star target yet.
+- **Next hypothesis:** Continue only evidence-based outreach and recheck after
+  genuine maintainer/user activity, without claiming causality.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
