@@ -2519,6 +2519,24 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Respond to actual usage reports and use them to improve
   documentation or compatibility.
 
+### 2026-08-28 — SandBase CLI client setup clinic
+
+- **Evidence:** `sandbaseai/cli` has Discussions enabled with a Q&A category;
+  client/version and OS reports can produce useful, reproducible compatibility
+  feedback.
+- **Action:** Published discussion #56 inviting users to share redacted setup
+  results for supported MCP clients and linking verified release instructions:
+  https://github.com/sandbaseai/cli/discussions/56
+- **Validation:** Included the canonical installation/checksum README section,
+  requested secrets be redacted, and asked for exact versions/commands.
+- **Distribution channel:** Official CLI Discussions / Q&A.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** Added a durable technical feedback and discovery touchpoint for
+  real CLI users.
+- **Next hypothesis:** Use actual reports to improve client compatibility and
+  documentation; do not manufacture replies.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
