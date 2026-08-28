@@ -1439,6 +1439,26 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Use only a new directory with explicit contribution
   criteria and distinct audience; do not reopen the closed PR.
 
+### 2026-08-28 — Official DeepSeek integration guide PR
+
+- **Evidence:** `deepseek-ai/awesome-deepseek-agent` explicitly accepts
+  bilingual integration guides covering installation, configuration, and first
+  run. SandBase CLI was not in its tools table.
+- **Action:** Added English and Simplified Chinese SandBase CLI guides and
+  synchronized both README tables; opened PR #407:
+  https://github.com/deepseek-ai/awesome-deepseek-agent/pull/407
+- **Validation:** Fork branch `add-sandbase-cli-guide` commit `5777207` was
+  pushed. The guide uses the verified v0.1.17 release commands, current
+  DeepSeek V4 naming, and documents 1M context without hard-coding volatile
+  pricing or availability.
+- **Distribution channel:** Official DeepSeek community integration directory.
+- **Star count before/after:** CLI 61→61; Skills 67, Handbook 73, Docs 1;
+  no causal attribution.
+- **Result:** Created a durable, search-indexed onboarding path for DeepSeek
+  users evaluating SandBase CLI.
+- **Next hypothesis:** Respond to maintainer checks and update only when
+  concrete documentation feedback arrives.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
