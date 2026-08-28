@@ -2919,6 +2919,22 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Preserve factual metadata and let directory maintainers
   control future updates.
 
+### 2026-08-28 — Final maintainer follow-up for Skills PR
+
+- **Objective:** Keep the high-reach Skills listing actionable without repeated
+  promotion.
+- **Action:** Sent one concise follow-up on
+  [`awesome-claude-skills#1758`](https://github.com/ComposioHQ/awesome-claude-skills/pull/1758#issuecomment-5452648642),
+  confirming green validation/security checks and offering wording/category
+  changes.
+- **Validation:** GitHub returned the live comment URL; no Star request or
+  unsupported claim was added.
+- **Distribution channel:** Maintainer-reviewed Claude Skills directory.
+- **Star count at action:** Skills 72; CLI 66; Handbook 77; Docs 1.
+- **Result:** One final actionable reminder sent; no further follow-ups planned
+  unless the maintainer responds.
+- **Next hypothesis:** Let the directory's normal review queue decide inclusion.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
