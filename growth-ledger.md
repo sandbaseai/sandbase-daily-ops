@@ -2322,6 +2322,24 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Wait for maintainer review and answer only concrete
   follow-up questions.
 
+### 2026-08-28 — CLI OpenClaw directory follow-up
+
+- **Evidence:** `alvinreal/awesome-openclaw` is a 700+ star OpenClaw resource
+  list; open issue #75 proposes SandBase CLI and had no comments before this
+  action.
+- **Action:** Added a concise follow-up with OpenClaw configuration, local MCP
+  bridge, OAuth onboarding, v0.1.17 release, and SHA-256 evidence:
+  https://github.com/alvinreal/awesome-openclaw/issues/75#issuecomment-5447277239
+- **Validation:** Rechecked the canonical CLI README/release and left the
+  maintainer to make the inclusion decision; no duplicate issue was opened.
+- **Distribution channel:** Curated OpenClaw/Agent resources directory.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** Existing proposal now has reproducible integration evidence
+  without manufactured engagement.
+- **Next hypothesis:** Wait for maintainer review and answer only concrete
+  follow-up questions.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
