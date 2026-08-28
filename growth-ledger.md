@@ -2286,6 +2286,23 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Wait for editorial feedback and answer only concrete
   quality or compatibility questions.
 
+### 2026-08-28 — CLI evidence follow-up in Awesome MCP List
+
+- **Evidence:** `MobinX/awesome-mcp-list` is an 800+ star MCP directory; open
+  issue #390 proposes SandBase CLI and had no comments before this action.
+- **Action:** Added a concise Chinese follow-up with local MCP bridge, 25-client
+  configuration, OAuth onboarding, v0.1.17 release, and SHA-256 evidence:
+  https://github.com/MobinX/awesome-mcp-list/issues/390#issuecomment-5447268078
+- **Validation:** Rechecked the canonical CLI README/release and left the
+  maintainer to decide inclusion; no duplicate issue was created.
+- **Distribution channel:** Curated MCP server list issue queue.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** The existing proposal now contains reproducible onboarding facts
+  without manufactured engagement.
+- **Next hypothesis:** Wait for maintainer review and answer only concrete
+  follow-up questions.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
