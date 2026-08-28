@@ -2252,6 +2252,23 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Wait for maintainer review and answer only concrete
   questions.
 
+### 2026-08-28 — Skills/CLI evidence follow-up in Skillmatic index
+
+- **Evidence:** Open issue #156 in `skillmatic-ai/awesome-agent-skills` proposes
+  SandBase and had no maintainer comments; a prior PR path was not reused.
+- **Action:** Added one factual follow-up linking the CLI local MCP bridge,
+  OAuth, 25-client setup, v0.1.17 checksum, and the Skills repo's SKILL.md
+  packages: https://github.com/skillmatic-ai/awesome-agent-skills/issues/156#issuecomment-5447247922
+- **Validation:** Claims were checked against canonical public READMEs and the
+  maintainer was left to decide the skills/tool boundary.
+- **Distribution channel:** Curated Agent Skills index issue queue.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** Existing proposal has updated, verifiable context without a
+  duplicate thread or manufactured engagement.
+- **Next hypothesis:** Wait for editorial review and answer only concrete
+  questions.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
