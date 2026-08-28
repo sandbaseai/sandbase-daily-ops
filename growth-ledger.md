@@ -1683,6 +1683,24 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Respond to further editorial questions with immutable
   release or source evidence only.
 
+### 2026-08-28 — Corrected package name in external AI tools issue
+
+- **Evidence:** `mahseema/awesome-ai-tools#2055` proposed installing
+  `@sandbase/cli`, which is an unrelated package; the SandBase package is
+  `@sandbaseai/cli`.
+- **Action:** Posted a factual correction with npm metadata and the immutable
+  v0.1.17 release/`catalog --json` verification command:
+  https://github.com/mahseema/awesome-ai-tools/issues/2055#issuecomment-5446971018
+- **Validation:** Confirmed the package name and release against the public
+  npm registry and canonical GitHub release; no marketing or star claims added.
+- **Distribution channel:** AI tools directory editorial issue.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** Reduced the risk of readers installing an unrelated package from
+  an otherwise active directory submission.
+- **Next hypothesis:** Continue correcting concrete inaccuracies only when they
+  appear in public editorial queues.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
