@@ -2131,6 +2131,24 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Wait for maintainer evaluation and answer only concrete
   questions.
 
+### 2026-08-28 — Maintainer-approved CLI catalog PR
+
+- **Evidence:** `yeaight7/awesome-ai-devtools#30` explicitly approved the
+  SandBase CLI suggestion and requested a fork-based PR using its template.
+- **Action:** Opened PR #33 with the metadata entry and generated README/
+  comparison updates:
+  https://github.com/yeaight7/awesome-ai-devtools/pull/33
+- **Validation:** Ran `npm install --ignore-scripts`, `npm run sort`,
+  `npm run generate`, `npm test` (59/59), `npm run validate` (warnings only),
+  and `git diff --check`; all required gates passed.
+- **Distribution channel:** Curated AI developer-tools catalog.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** Converted an approved suggestion into a reviewable, tested PR;
+  no fabricated engagement or claims were used.
+- **Next hypothesis:** Respond to maintainer review and preserve the catalog's
+  metadata requirements until merge or explicit rejection.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
