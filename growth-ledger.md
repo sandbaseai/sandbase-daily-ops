@@ -1771,6 +1771,22 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Follow up only if the maintainer confirms the category
   fit or asks for evidence.
 
+### 2026-08-28 — Corrected stale count in Codex directory issue
+
+- **Evidence:** `milisp/awesome-codex-cli#111` cited 60 GitHub Stars for SandBase
+  CLI; the canonical repository currently reports 61.
+- **Action:** Replied with the live Stargazers link and confirmed that the
+  v0.1.17 release and MCP Registry references remain current:
+  https://github.com/milisp/awesome-codex-cli/issues/111#issuecomment-5447017490
+- **Validation:** Verified the count directly against GitHub and did not add
+  any artificial popularity language.
+- **Distribution channel:** Curated Codex CLI directory issue.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** Kept a Codex-specific listing accurate for readers and maintainers.
+- **Next hypothesis:** Continue factual corrections only where a concrete stale
+  value is present.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
