@@ -2685,6 +2685,23 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Focus subsequent promotion on existing maintainer-owned
   listings and user-facing documentation rather than creating additional forks.
 
+### 2026-08-28 — Docs community use-case request
+
+- **Objective:** Create a genuine feedback loop for the lowest-discovery
+  project, `sandbase-docs`, rather than manufacturing engagement.
+- **Action:** Opened [Docs issue #14](https://github.com/sandbaseai/sandbase-docs/issues/14)
+  requesting redacted, reproducible LLM/image/video/embedding/agent examples
+  from users.
+- **Validation:** GitHub returned the live issue URL; the body explicitly asks
+  contributors not to share credentials and will turn validated examples into
+  documentation improvements.
+- **Distribution channel:** Project issue tracker; no Star request or causal
+  Star claim.
+- **Star count at action:** Skills 72; CLI 66; Handbook 77; Docs 1.
+- **Result:** Published and awaiting community responses.
+- **Next hypothesis:** Convert the first validated response into a focused
+  docs PR and link it back to the issue.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
