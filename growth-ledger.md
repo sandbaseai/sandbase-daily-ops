@@ -2856,6 +2856,20 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Keep the listing aligned with handbook releases and
   avoid duplicate submissions to the same directory.
 
+### 2026-08-28 — Docs GitHub topic discovery refresh
+
+- **Objective:** Improve organic discovery for `sandbase-docs` in GitHub search.
+- **Action:** Added accurate topics `ai-api`, `api-documentation`,
+  `developer-docs`, and `openai-compatible` while retaining existing project
+  topics via the GitHub Topics API.
+- **Validation:** GitHub API returned the complete updated topic list.
+- **Distribution channel:** GitHub repository search and topic pages.
+- **Star count at action:** Skills 72; CLI 66; Handbook 77; Docs 1.
+- **Result:** Docs now has explicit search terms matching its API and
+  documentation scope; no Star increase is attributed.
+- **Next hypothesis:** Measure discovery through genuine issue/referral signals
+  before adding further metadata.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
