@@ -2720,6 +2720,22 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Use the merged listing as a reference when answering
   relevant user questions, and pursue only new maintainer-led opportunities.
 
+### 2026-08-28 — Additional curated listings merged
+
+- **Objective:** Expand durable discovery for CLI and Harness projects through
+  maintainer-owned directories.
+- **Evidence:** GitHub merged [`michielhdoteth/awesome-ai-agent-tools#23`](https://github.com/michielhdoteth/awesome-ai-agent-tools/pull/23)
+  (SandBase CLI MCP server) and [`milisp/awesome-codex-cli#110`](https://github.com/milisp/awesome-codex-cli/pull/110)
+  (SandBase CLI MCP bridge).
+- **Validation:** GitHub Search API reports both PRs as merged; links resolve to
+  the external repositories' histories.
+- **Distribution channel:** Curated AI-agent and Codex CLI directories.
+- **Star count at checkpoint:** Skills 72; CLI 66; Handbook 77; Docs 1;
+  no causal Star increase is claimed.
+- **Result:** Two additional third-party listings are live.
+- **Next hypothesis:** Maintain accurate release metadata in each listing and
+  only update when a maintainer or release changes it.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
