@@ -2901,6 +2901,24 @@ records the operational decision, evidence, validation, and outcome.
   without leaving the canonical project context.
 - **Next hypothesis:** Keep this list limited to maintained, merged listings.
 
+### 2026-08-28 — Skills and CLI listings in large agent directories
+
+- **Objective:** Expand durable discovery through high-reach, maintainer-owned
+  agent catalogs.
+- **Evidence:** [agentic-awesome-skills#1279](https://github.com/sickn33/agentic-awesome-skills/pull/1279)
+  merged a SandBase MCP Skill entry; that directory currently has 45k+ Stars.
+  [awesome-hermes-agent#364](https://github.com/0xNyk/awesome-hermes-agent/pull/364)
+  also merged a correction to the SandBase CLI listing.
+- **Validation:** GitHub PR metadata reports both as `MERGED`; directory Star
+  count was queried directly for the reach context.
+- **Distribution channel:** Agent Skills and Hermes Agent ecosystem catalogs.
+- **Star count at checkpoint:** Skills 72; CLI 66; Handbook 77; Docs 1;
+  no causal Star increase is claimed.
+- **Result:** One high-reach Skills listing and one accuracy-maintenance CLI
+  listing are live.
+- **Next hypothesis:** Preserve factual metadata and let directory maintainers
+  control future updates.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
