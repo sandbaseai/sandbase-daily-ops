@@ -2736,6 +2736,23 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Maintain accurate release metadata in each listing and
   only update when a maintainer or release changes it.
 
+### 2026-08-28 — MCP ecosystem listing and reviewed tutorial merged
+
+- **Objective:** Add durable discovery paths for the CLI beyond repeated social
+  mentions.
+- **Evidence:** [`awesome-agent-cortex#72`](https://github.com/0xNyk/awesome-agent-cortex/pull/72)
+  was merged with a SandBase CLI MCP ecosystem entry; the reviewed
+  [SandBase Blog PR #261](https://github.com/sandbaseai/sandbase-blog/pull/261)
+  was also merged for a developer tutorial.
+- **Validation:** GitHub PR metadata reports both states as `MERGED` with live
+  links; no Star increase is attributed to either action.
+- **Distribution channel:** Third-party MCP directory and first-party
+  developer tutorial.
+- **Star count at checkpoint:** Skills 72; CLI 66; Handbook 77; Docs 1.
+- **Result:** Two additional evidence-backed discovery assets are live.
+- **Next hypothesis:** Keep tutorial commands aligned with the immutable CLI
+  release and answer only concrete reader questions.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
