@@ -2784,6 +2784,24 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Use responses from the linked issue tracker to improve
   examples; do not attribute Stars without referral evidence.
 
+### 2026-08-28 — Skills directory listings verified
+
+- **Objective:** Improve durable discovery for `sandbase-skills` through
+  maintainer-owned directories relevant to Agent Skills.
+- **Evidence:** GitHub search found merged listings in
+  [awesome-dsh-plugin#48](https://github.com/Anil-matcha/awesome-dsh-plugin/pull/48),
+  [awesome-agent-skills#39](https://github.com/junminhong/awesome-agent-skills/pull/39),
+  [Agents Skill Exchange#49](https://github.com/agentskillexchange/skills/pull/49),
+  and [VoltAgent/awesome-agent-skills#946](https://github.com/VoltAgent/awesome-agent-skills/pull/946).
+- **Validation:** GitHub Search API reports each PR as merged; links resolve to
+  the external repositories' histories.
+- **Distribution channel:** Curated Agent Skills registries and directories.
+- **Star count at checkpoint:** Skills 72; CLI 66; Handbook 77; Docs 1;
+  no causal Star increase is claimed.
+- **Result:** Four third-party, maintainer-reviewed discovery paths are live.
+- **Next hypothesis:** Keep the flagship Skill metadata and install commands
+  synchronized with releases; avoid duplicate submissions.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
