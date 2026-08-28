@@ -1345,6 +1345,23 @@ records the operational decision, evidence, validation, and outcome.
 - **Result:** Opened a distinct high-reach discovery path for the CLI.
 - **Next hypothesis:** Wait for maintainer review and amend only if requested.
 
+### 2026-08-28 — MCP directory validation follow-up
+
+- **Evidence:** `awesome-mcp-servers#13046` received an automated maintainer
+  check requesting a Glama score badge. Direct HTTP verification confirmed the
+  existing Glama listing at https://glama.ai/mcp/servers/sandbaseai/cli.
+- **Action:** Updated the PR entry with the requested badge and replied with
+  the verification details: https://github.com/punkpeye/awesome-mcp-servers/pull/13046#issuecomment-5446708909
+- **Validation:** Commit `aea670f` pushed to the PR branch; the badge points to
+  the verified Glama server page and no engagement request was added.
+- **Distribution channel:** Curated MCP server directory with Glama validation.
+- **Star count before/after:** CLI 61→61; Skills 67, Handbook 73, Docs 1;
+  no causal attribution.
+- **Result:** Satisfied the directory's concrete validation request and kept
+  the submission eligible for maintainer review.
+- **Next hypothesis:** Wait for human/automated review outcome and respond only
+  to further concrete checks.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
