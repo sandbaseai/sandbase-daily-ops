@@ -2181,6 +2181,23 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Wait for maintainer review or merge; respond only to
   concrete requested changes.
 
+### 2026-08-28 — CLI onboarding evidence in Freeapps
+
+- **Evidence:** `Qutaifan/Freeapps#34` is an open SandBase CLI suggestion with
+  no maintainer comments.
+- **Action:** Added a concise follow-up with the official one-command `npx`
+  installer, SHA-256 verification, CI, and MCP Registry links:
+  https://github.com/Qutaifan/Freeapps/issues/34#issuecomment-5447209899
+- **Validation:** Matched the command to the canonical v0.1.17 release and
+  left categorization to the directory maintainer.
+- **Distribution channel:** Curated free developer-tools directory.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** Maintainer has reproducible onboarding evidence for the existing
+  proposal; no duplicate thread or manufactured engagement was created.
+- **Next hypothesis:** Wait for maintainer response and answer only concrete
+  questions.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
