@@ -2198,6 +2198,25 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Wait for maintainer response and answer only concrete
   questions.
 
+### 2026-08-28 — Handbook proposal to AutoJunjie Agent Harness list
+
+- **Evidence:** `AutoJunjie/awesome-agent-harness` is a 500+ star harness
+  engineering list with an explicit contributing section and no existing
+  DeepSeek Harness Handbook entry.
+- **Action:** Opened issue #55 proposing the Handbook for its documentation /
+  resources coverage:
+  https://github.com/AutoJunjie/awesome-agent-harness/issues/55
+- **Validation:** Linked the canonical Apache-2.0 repository and described its
+  bilingual runtime, tool/sandbox/session, runbook, and troubleshooting scope;
+  current direct count is 73 stars and 143 verified guides.
+- **Distribution channel:** Curated Agent Harness engineering resource list.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** A distinct, scope-relevant discovery proposal is open for
+  maintainer review without manufactured engagement.
+- **Next hypothesis:** Answer only concrete editorial or verification
+  questions and stop if declined.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
