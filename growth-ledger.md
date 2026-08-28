@@ -2802,6 +2802,24 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Keep the flagship Skill metadata and install commands
   synchronized with releases; avoid duplicate submissions.
 
+### 2026-08-28 — Additional Skills marketplace listings verified
+
+- **Objective:** Extend durable discovery for Skills and the Harness handbook
+  through relevant maintained catalogs.
+- **Evidence:** Verified merged PRs in [awesome-dsh-plugin#89](https://github.com/beancookie/awesome-dsh-plugin/pull/89),
+  [awesome-dsh-plugin#1883](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/pull/1883),
+  [aiskillstore/marketplace#3198](https://github.com/aiskillstore/marketplace/pull/3198),
+  and [awesome-deepseek-harness#141](https://github.com/0xsline/awesome-deepseek-harness/pull/141).
+- **Validation:** GitHub PR metadata reports each as `MERGED`; links resolve to
+  the external project histories.
+- **Distribution channel:** Agent Skills marketplaces and DeepSeek Harness
+  resource directory.
+- **Star count at checkpoint:** Skills 72; CLI 66; Handbook 77; Docs 1;
+  no causal Star increase is claimed.
+- **Result:** Four more maintainer-reviewed listings are live.
+- **Next hypothesis:** Keep marketplace metadata current and respond only to
+  actual maintainer requests.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
