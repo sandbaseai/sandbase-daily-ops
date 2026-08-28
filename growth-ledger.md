@@ -2217,6 +2217,23 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Answer only concrete editorial or verification
   questions and stop if declined.
 
+### 2026-08-28 — CLI verification follow-up in Doocs Awesome AI
+
+- **Evidence:** Open issue #20 in `doocs/awesome-ai` proposes SandBase CLI and
+  had no maintainer follow-up before this action.
+- **Action:** Added a concise Chinese comment with official MCP Registry,
+  v0.1.17 release/checksum, local bridge, 25 clients, and 2,000+ model/API
+  evidence: https://github.com/doocs/awesome-ai/issues/20#issuecomment-5447232465
+- **Validation:** Claims were matched to the canonical CLI README/release and
+  the maintainer was left to decide inclusion under the directory's rules.
+- **Distribution channel:** Chinese curated AI resources directory.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** An existing proposal now has reproducible review evidence without
+  a duplicate thread or manufactured engagement.
+- **Next hypothesis:** Wait for maintainer response and answer only concrete
+  questions.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
