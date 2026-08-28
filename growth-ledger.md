@@ -1525,6 +1525,25 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Let the directory maintainer handle editorial review;
   respond only to further factual questions.
 
+### 2026-08-28 — MCP Servers directory listing verified
+
+- **Evidence:** The directory's submission page states that MCP projects are
+  submitted through the website rather than by pull request. A direct lookup
+  confirms SandBase CLI already has a live listing at
+  https://mcpservers.org/servers/sandbaseai/cli.
+- **Action:** Avoided a duplicate submission and recorded the existing listing
+  as the active MCP discovery surface.
+- **Validation:** The live page title is “SandBase MCP Server” and describes
+  the open-source CLI/local MCP bridge; URL returned HTTP 200 on 2026-08-28.
+- **Distribution channel:** mcpservers.org directory (organic search and
+  directory discovery).
+- **Star count before/after:** Skills 67→67; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** Confirmed a high-intent MCP directory presence without creating
+  duplicate or low-quality outreach.
+- **Next hypothesis:** Improve the listing only when factual metadata changes;
+  otherwise focus on distinct communities with explicit contribution paths.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
