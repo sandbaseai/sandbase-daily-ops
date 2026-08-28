@@ -2303,6 +2303,25 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Wait for maintainer review and answer only concrete
   follow-up questions.
 
+### 2026-08-28 — CLI evidence follow-up in DeepSeek integration list
+
+- **Evidence:** Open issue #716 in `deepseek-ai/awesome-deepseek-integration`
+  proposes SandBase CLI for provider discovery and had no comments before this
+  action.
+- **Action:** Added a factual follow-up linking the local MCP bridge, 25-client
+  support, official Registry, v0.1.17 release, and SHA-256 verification:
+  https://github.com/deepseek-ai/awesome-deepseek-integration/issues/716#issuecomment-5447272589
+- **Validation:** Explicitly scoped DeepSeek availability to runtime account
+  permissions and the official catalog; no unsupported availability claim was
+  made.
+- **Distribution channel:** DeepSeek ecosystem integration directory.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** Existing proposal now has source-backed onboarding evidence
+  without a duplicate thread or manufactured engagement.
+- **Next hypothesis:** Wait for maintainer review and answer only concrete
+  follow-up questions.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
