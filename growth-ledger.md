@@ -1821,6 +1821,24 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Continue source-backed corrections only where a stale
   value is explicitly visible.
 
+### 2026-08-28 — Updated adoption signal in MCP directory issue
+
+- **Evidence:** `hireblackout/awesome-mcp-servers#43` proposed a conservative
+  Tier 4 listing but retained a stale 58-Star count; GitHub currently reports
+  61.
+- **Action:** Replied with the live Stargazers URL and preserved the issue's
+  honest caveat that independent usage consensus is not established:
+  https://github.com/hireblackout/awesome-mcp-servers/issues/43#issuecomment-5447031437
+- **Validation:** Verified the current count on the canonical repository and
+  made no changes to the submitted test, release, or download claims.
+- **Distribution channel:** Curated MCP server directory issue.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** Improved an external listing's factual freshness without
+  overstating project maturity.
+- **Next hypothesis:** Let maintainers decide tier placement and respond only
+  to further factual questions.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
