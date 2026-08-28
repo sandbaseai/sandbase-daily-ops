@@ -1329,6 +1329,22 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Wait for directory maintainer handling and respond only
   to concrete verification questions.
 
+### 2026-08-28 — High-star MCP servers directory PR
+
+- **Evidence:** `punkpeye/awesome-mcp-servers` contribution guidelines
+  explicitly welcome new servers and require a concise, accurate categorized
+  entry. A repository search found no SandBase CLI entry.
+- **Action:** Added SandBase CLI under Aggregators and opened PR #13046:
+  https://github.com/punkpeye/awesome-mcp-servers/pull/13046
+- **Validation:** Fork branch `add-sandbase-cli-server` was pushed; the PR
+  contains only one factual entry and no ranking or engagement request.
+- **Distribution channel:** Curated MCP server directory (approximately
+  92,000 GitHub Stars on the host repository).
+- **Star count before/after:** CLI 61→61 at submission time; Skills 67,
+  Handbook 73, Docs 1; no causal attribution.
+- **Result:** Opened a distinct high-reach discovery path for the CLI.
+- **Next hypothesis:** Wait for maintainer review and amend only if requested.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
