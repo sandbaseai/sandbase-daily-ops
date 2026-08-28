@@ -1278,6 +1278,25 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Wait for #294 review; only revise or respond to explicit
   maintainer feedback.
 
+### 2026-08-28 — MCP developer-tools directory PR
+
+- **Evidence:** `punkpeye/awesome-mcp-devtools` publishes contribution rules
+  that welcome developer tools and require concise, accurate, categorized
+  entries. A repository search confirmed SandBase CLI was not already listed.
+- **Action:** Added one factual entry under Development Tools and opened PR
+  #292: https://github.com/punkpeye/awesome-mcp-devtools/pull/292
+- **Validation:** Fork branch `add-sandbase-cli` commit `fcfb5c0` was pushed;
+  the PR targets `main` and contains no ranking, Star, or engagement request.
+- **Distribution channel:** Curated MCP developer-tools directory with an
+  audience aligned to CLI/MCP adoption.
+- **Star count before/after:** CLI 61→61 at submission time; Skills 67,
+  Handbook 73, Docs 1; no causal attribution.
+- **Result:** A third distinct, maintainer-reviewed discovery path is open for
+  SandBase CLI, while the prior clients-directory PR remains the only other
+  active submission.
+- **Next hypothesis:** Wait for maintainer review and respond only to concrete
+  feedback; do not post duplicate entries or unsolicited comments.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
