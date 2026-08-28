@@ -1984,6 +1984,28 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Use only new, explicitly open documentation channels for
   the Handbook; do not repost this closed PR.
 
+### 2026-08-28 — SandBase CLI submission attempt to Appcypher MCP directory
+
+- **Evidence:** `appcypher/awesome-mcp-servers` lists production-ready and
+  experimental MCP servers; its Development Tools section had no SandBase
+  entry. Contribution rules request one focused PR per suggestion and a
+  succinct, useful description.
+- **Action:** Prepared a one-line `SandBase CLI` entry in fork branch
+  `denial123789/awesome-mcp-servers:add-sandbase-cli`:
+  https://github.com/denial123789/awesome-mcp-servers/tree/add-sandbase-cli
+- **Validation:** Confirmed the CLI README documents its local MCP bridge,
+  25 clients, 2,000+ models/APIs, release checksum, CI, and MCP Registry
+  listing. Upstream issues are disabled; authenticated PR creation was denied
+  for both available accounts, so no upstream PR was fabricated.
+- **Distribution channel:** Curated MCP server directory (submission blocked
+  at upstream permission boundary).
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** The candidate entry is ready for maintainer review, but no
+  upstream change was made. Stopped rather than bypassing repository controls.
+- **Next hypothesis:** If a maintainer invites a PR or enables issues, submit
+  the prepared focused change; otherwise do not repost.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
