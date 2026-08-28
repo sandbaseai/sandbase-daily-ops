@@ -1787,6 +1787,24 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Continue factual corrections only where a concrete stale
   value is present.
 
+### 2026-08-28 — Corrected stale count in AI Gateway scope issue
+
+- **Evidence:** `12britz/awesome-ai-gateways#30` asks whether SandBase CLI fits
+  the managed-gateway category and cites 58 Stars; the canonical repository
+  currently reports 61.
+- **Action:** Replied with the live Stargazers link and left the scope decision
+  to the maintainer, preserving the accurate caveat that SandBase is not a
+  self-hosted/OpenAI-compatible proxy:
+  https://github.com/12britz/awesome-ai-gateways/issues/30#issuecomment-5447021908
+- **Validation:** Verified the count and release references on GitHub; no PR,
+  popularity request, or unsupported gateway claim was made.
+- **Distribution channel:** Curated AI Gateway directory scope discussion.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** Supplied current evidence without forcing an out-of-scope listing.
+- **Next hypothesis:** Follow up only if the maintainer requests more evidence
+  or confirms the category fit.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
