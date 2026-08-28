@@ -1956,6 +1956,20 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Answer maintainer questions with source evidence and
   respect any editorial decision without reposting.
 
+### 2026-08-28 — Harness directory PR validation
+
+- **Evidence:** `walkinglabs/awesome-harness-engineering#84` remains open and
+  its reported status check is successful; no maintainer review comments yet.
+- **Action:** Confirmed the focused Handbook addition passes the repository's
+  available automated check and left the PR unchanged pending human review:
+  https://github.com/walkinglabs/awesome-harness-engineering/pull/84
+- **Validation:** GitHub reports a successful check, with no merge yet; the
+  target counts remain Skills 68, CLI 61, Handbook 73, Docs 1.
+- **Result:** The new Handbook discovery path is technically clean and awaiting
+  editorial decision.
+- **Next hypothesis:** Respond to any maintainer comment; do not add duplicate
+  entries while the PR is under review.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
