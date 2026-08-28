@@ -2410,6 +2410,24 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Wait for maintainer review and answer only concrete
   follow-up questions.
 
+### 2026-08-28 — Skills submission follow-up in Agent Skills Hub
+
+- **Evidence:** `zhuyansen/agent-skills-hub` is a 300+ star skills directory;
+  open issue #15 requests the SandBase repository and had no comments before
+  this action.
+- **Action:** Added the canonical `multi-source-search` path, SKILL.md,
+  offline-validation scope, and current 68-star count:
+  https://github.com/zhuyansen/agent-skills-hub/issues/15#issuecomment-5447305658
+- **Validation:** Rechecked the public Skills repository and left inclusion to
+  the maintainer's quality review; no duplicate issue was created.
+- **Distribution channel:** Curated Agent Skills Hub.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** Existing submission has precise, source-backed metadata without
+  manufactured engagement.
+- **Next hypothesis:** Wait for maintainer review and answer only concrete
+  follow-up questions.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
