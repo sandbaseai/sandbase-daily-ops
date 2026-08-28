@@ -1506,6 +1506,25 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Wait for a new explicit contribution opportunity rather
   than reopening or reposting the closed guide.
 
+### 2026-08-28 — Independent CLI directory suggestion correction
+
+- **Evidence:** A third-party user opened `jamesmurdza/awesome-ai-devtools#1026`
+  suggesting SandBase CLI, but the proposed npm package name was inaccurate.
+  Package metadata verifies the published name is `@sandbaseai/cli`.
+- **Action:** Replied with the corrected install/package detail and immutable
+  release, package, and Registry links:
+  https://github.com/jamesmurdza/awesome-ai-devtools/issues/1026#issuecomment-5446831848
+- **Validation:** Verified `package.json` reports `@sandbaseai/cli` version
+  `0.1.17`; no unsupported feature or engagement claim was added.
+- **Distribution channel:** External developer-tools directory editorial issue
+  initiated by an independent contributor.
+- **Star count before/after:** CLI 61→61; Skills 67, Handbook 73, Docs 1;
+  no causal attribution.
+- **Result:** Improved the accuracy of an independent promotion opportunity and
+  reduced the chance of failed installs for readers.
+- **Next hypothesis:** Let the directory maintainer handle editorial review;
+  respond only to further factual questions.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
