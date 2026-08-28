@@ -1426,6 +1426,19 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Wait for maintainer review and answer only concrete
   questions.
 
+### 2026-08-28 — Handbook directory PR outcome
+
+- **Evidence:** Direct GitHub check shows `awesome-deepseek-harness#513` was
+  closed without merge and without maintainer comments.
+- **Action:** Recorded the outcome and stopped follow-up on that PR; no
+  duplicate resubmission was made.
+- **Validation:** `mergedAt` is null and `closedAt` is present; Handbook remains
+  at 73 Stars, with no causal attribution.
+- **Result:** Promotion history remains accurate and avoids repeated closed-list
+  submissions.
+- **Next hypothesis:** Use only a new directory with explicit contribution
+  criteria and distinct audience; do not reopen the closed PR.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
