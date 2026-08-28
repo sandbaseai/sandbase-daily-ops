@@ -2079,6 +2079,24 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Wait for editorial feedback and answer only concrete
   questions about quality, compatibility, or usage.
 
+### 2026-08-28 — Handbook evidence follow-up in Learning Weekly
+
+- **Evidence:** Existing self-recommendation issue #108 in
+  `eryajf/learning-weekly` remains open with no comments.
+- **Action:** Added a concise Chinese follow-up with current, verifiable
+  Handbook scope (bilingual content, 143 guides, runbooks and troubleshooting)
+  and offered to adapt the summary to editorial format:
+  https://github.com/eryajf/learning-weekly/issues/108#issuecomment-5447176399
+- **Validation:** Linked the canonical repository and stated the observed
+  approximate 73-star count without attributing stars to the comment.
+- **Distribution channel:** Chinese developer-learning weekly submission.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** Editors have updated factual material for an existing submission;
+  no duplicate issue or artificial engagement was created.
+- **Next hypothesis:** Wait for editorial response and answer only concrete
+  requests.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
