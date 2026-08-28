@@ -2113,6 +2113,24 @@ records the operational decision, evidence, validation, and outcome.
   existing proposal; no duplicate thread or artificial engagement created.
 - **Next hypothesis:** Wait for review and answer only specific follow-ups.
 
+### 2026-08-28 — CLI evidence follow-up in Awesome Generative AI APIs
+
+- **Evidence:** Existing issue #435 in `foss42/awesome-generative-ai-apis` is
+  open and directly concerns adding SandBase as an AI gateway/aggregator.
+- **Action:** Added a factual maintainer follow-up linking the official MCP
+  Registry, v0.1.17 release/checksum, local bridge, 2,000+ model/API scope,
+  and API quickstart docs:
+  https://github.com/foss42/awesome-generative-ai-apis/issues/435#issuecomment-5447183545
+- **Validation:** Rechecked the canonical CLI README and docs; no unsupported
+  performance or adoption claims were added.
+- **Distribution channel:** Curated generative-AI API directory issue queue.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** The open proposal now has reproducible review links; no duplicate
+  thread or artificial engagement was created.
+- **Next hypothesis:** Wait for maintainer evaluation and answer only concrete
+  questions.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
