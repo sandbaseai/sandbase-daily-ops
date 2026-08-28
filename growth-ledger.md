@@ -1378,6 +1378,18 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Wait for Glama evaluation or further maintainer
   instructions before changing the PR again.
 
+### 2026-08-28 — PR comment accuracy correction
+
+- **Evidence:** Review of `awesome-mcp-servers#13046` found the prior reply
+  contained a literal shell substitution string in the commit reference.
+- **Action:** Edited the public reply to reference the actual badge commit
+  `aea670f`: https://github.com/punkpeye/awesome-mcp-servers/pull/13046#issuecomment-5446708909
+- **Validation:** GitHub API returned the edited comment URL; no repository
+  content or claim about an unverified Glama score was changed.
+- **Distribution channel:** The same maintainer-review PR.
+- **Result:** Public promotion metadata is now precise and reproducible.
+- **Next hypothesis:** Await the directory's quality-score evaluation and review.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
