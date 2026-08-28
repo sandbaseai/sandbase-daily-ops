@@ -2234,6 +2234,24 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Wait for maintainer response and answer only concrete
   questions.
 
+### 2026-08-28 — CLI Cursor directory follow-up
+
+- **Evidence:** Open issue #54 in `hao-ji-xing/awesome-cursor` proposes SandBase
+  CLI for its MCPs section and had no comments before this action.
+- **Action:** Added a concise Chinese follow-up describing Cursor-compatible
+  local MCP configuration, OAuth onboarding, diagnostics/rollback, and the
+  v0.1.17 release/checksum:
+  https://github.com/hao-ji-xing/awesome-cursor/issues/54#issuecomment-5447237434
+- **Validation:** Rechecked the canonical CLI README/release and left the
+  maintainer to make the inclusion decision.
+- **Distribution channel:** Curated Cursor MCP resource list.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** The existing proposal now has practical, verifiable onboarding
+  details without opening a duplicate thread.
+- **Next hypothesis:** Wait for maintainer review and answer only concrete
+  questions.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
