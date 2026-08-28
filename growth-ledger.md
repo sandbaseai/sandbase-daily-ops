@@ -1580,6 +1580,24 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Provide install or compatibility evidence if the
   maintainer requests it; respect any editorial decision without reposting.
 
+### 2026-08-28 — Codex Skills collection submission
+
+- **Evidence:** `ComposioHQ/awesome-codex-skills` explicitly welcomes PRs for
+  real, reusable skills with precise descriptions and tested metadata.
+- **Action:** Opened PR #260 adding SandBase Skills as an external portable
+  collection, with the evidence-ledger search workflow and exact Codex install
+  command: https://github.com/composio-community/awesome-codex-skills/pull/260
+- **Validation:** Checked the canonical repository README for the current
+  install command and workflow description; used the published count of 88
+  installable skills and made no star or usage claims.
+- **Distribution channel:** Curated Codex Skills directory.
+- **Star count before/after:** Skills 67→67; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** A distinct, high-intent discovery path for `sandbase-skills` is
+  awaiting maintainer review.
+- **Next hypothesis:** Respond with reproducible install/validation details if
+  requested; do not repost after an editorial rejection.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
