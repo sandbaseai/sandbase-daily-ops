@@ -2393,6 +2393,23 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Wait for maintainer review and answer only concrete
   questions.
 
+### 2026-08-28 — Skills evidence follow-up in Awesome LLM Skills
+
+- **Evidence:** `Prat011/awesome-llm-skills` is a 1.6k+ star skills directory;
+  open issue #222 proposes SandBase and had no comments before this action.
+- **Action:** Added the exact `multi-source-search` path, SKILL.md/offline
+  validation scope, and local MCP bridge context:
+  https://github.com/Prat011/awesome-llm-skills/issues/222#issuecomment-5447301561
+- **Validation:** Rechecked canonical Skills/CLI repositories and left the
+  maintainer to decide inclusion under its quality criteria.
+- **Distribution channel:** Curated LLM/Agent Skills directory.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** Existing proposal now has precise source evidence without a
+  duplicate thread or manufactured engagement.
+- **Next hypothesis:** Wait for maintainer review and answer only concrete
+  follow-up questions.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
