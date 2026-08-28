@@ -2025,6 +2025,24 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Wait for maintainer feedback and answer only concrete
   questions; do not duplicate the proposal elsewhere in this directory.
 
+### 2026-08-28 — SandBase Skills proposal to Agent Skill Index
+
+- **Evidence:** `heilcheng/awesome-agent-skills` is a 6k+ star index with a
+  defined Community Skills → Development and Testing category and explicit
+  SKILL.md quality requirements. No SandBase entry was present.
+- **Action:** Opened issue #448 with a concise entry proposal:
+  https://github.com/heilcheng/awesome-agent-skills/issues/448
+- **Validation:** Confirmed the public repository contains documented SKILL.md
+  files and 68 GitHub stars; the proposal links the canonical repository and
+  avoids unsupported usage claims.
+- **Distribution channel:** Curated Agent Skill Index maintainer queue.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** A new, scope-matched discovery path is open for independent
+  maintainer review; no manufactured engagement was used.
+- **Next hypothesis:** Respond only to concrete quality or usage questions and
+  stop if the maintainer declines.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
