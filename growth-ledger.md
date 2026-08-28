@@ -2358,6 +2358,24 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Wait for maintainer review and answer only concrete
   follow-up questions.
 
+### 2026-08-28 — Multi-source-search index follow-up
+
+- **Evidence:** `futantan/agent-skills.md` is a 200+ star skills index; open
+  issue #25 requests indexing SandBase's `multi-source-search` skill and had no
+  comments before this action.
+- **Action:** Added the canonical skill-path URL, SKILL.md/offline-validation
+  scope, and current 68-star count:
+  https://github.com/futantan/agent-skills.md/issues/25#issuecomment-5447292309
+- **Validation:** Linked the exact repository subdirectory and asked the
+  maintainer to check link and compatibility independently.
+- **Distribution channel:** Curated Agent Skills index issue queue.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** Existing indexing request now has precise source evidence without
+  duplicate threads or manufactured engagement.
+- **Next hypothesis:** Wait for maintainer review and answer only concrete
+  follow-up questions.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
