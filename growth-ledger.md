@@ -2097,6 +2097,22 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Wait for editorial response and answer only concrete
   requests.
 
+### 2026-08-28 — CLI verification follow-up in Awesome Agent CLI
+
+- **Evidence:** `Ariestar/awesome-agent-cli#8` is an open, directly relevant
+  SandBase CLI proposal with no maintainer comments.
+- **Action:** Added a reproducible install command and security-oriented
+  evidence (release SHA-256, CI, MCP Registry, and 25-client documentation):
+  https://github.com/Ariestar/awesome-agent-cli/issues/8#issuecomment-5447179927
+- **Validation:** Matched the command and checksum to the canonical CLI
+  README/release and asked the maintainer to evaluate independently.
+- **Distribution channel:** Curated AI-agent CLI directory issue queue.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** Maintainer has concrete, reproducible onboarding evidence for the
+  existing proposal; no duplicate thread or artificial engagement created.
+- **Next hypothesis:** Wait for review and answer only specific follow-ups.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
