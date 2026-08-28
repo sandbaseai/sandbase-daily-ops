@@ -1921,6 +1921,24 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Keep monitoring only for concrete listing inaccuracies;
   do not add promotional comments to an already-correct entry.
 
+### 2026-08-28 — Handbook submission to Awesome Agent Harness
+
+- **Evidence:** `Picrew/awesome-agent-harness` accepts practical harness
+  runtimes, documentation, and tooling via a data-driven catalog; its rules
+  require concise bilingual summaries, tags, and inclusion rationale.
+- **Action:** Opened issue #82 proposing the Handbook under Documentation /
+  Learning with a source-backed, implementation-focused description:
+  https://github.com/Picrew/awesome-agent-harness/issues/82
+- **Validation:** Confirmed the Handbook is Apache-2.0, bilingual, actively
+  documented, and distinct from the repository's existing official runtime and
+  paper entries; affiliation was disclosed.
+- **Distribution channel:** Curated Agent Harness engineering directory.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** Created a new, scope-appropriate discovery path for the Handbook.
+- **Next hypothesis:** If maintainers approve the scope, prepare the exact
+  `data/projects.yaml` entry and run their verification pipeline.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
