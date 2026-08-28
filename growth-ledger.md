@@ -1805,6 +1805,22 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Follow up only if the maintainer requests more evidence
   or confirms the category fit.
 
+### 2026-08-28 — Updated stale count in Chinese LLM resources issue
+
+- **Evidence:** `WangRongsheng/awesome-LLM-resources#209` cited 58 Stars for
+  SandBase CLI; the canonical repository currently reports 61.
+- **Action:** Added a Chinese-language correction and live Stargazers link:
+  https://github.com/WangRongsheng/awesome-LLM-resources/issues/209#issuecomment-5447026601
+- **Validation:** Verified the current count directly on GitHub and confirmed
+  the existing v0.1.17 command remains valid; no artificial engagement was
+  requested.
+- **Distribution channel:** Chinese LLM resources directory issue.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** Kept a high-relevance Chinese resource listing factually current.
+- **Next hypothesis:** Continue source-backed corrections only where a stale
+  value is explicitly visible.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
