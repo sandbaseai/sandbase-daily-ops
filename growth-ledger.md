@@ -2593,6 +2593,24 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Wait for maintainer review and answer only concrete
   follow-up questions.
 
+### 2026-08-28 — External review state update
+
+- **Evidence:** `awesome-ai-devtools#33` remains open with CI passing and a
+  second maintainer-facing metadata clarification; `sickn33/agentic-awesome-skills#1270`
+  is now closed.
+- **Action:** Preserved the factual release/checksum, Apache-2.0, 25-client,
+  and six-tool MCP evidence in the open PR discussion; stopped follow-up on the
+  closed skills request.
+- **Validation:** GitHub API confirms PR #33 is unmerged/open and issue #1270
+  is closed; no Star movement is attributed.
+- **Distribution channel:** AI developer-tools PR review and Agent Skills index.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** Open review has current source evidence; closed request is not
+  reposted, preserving an accurate outreach history.
+- **Next hypothesis:** Respond only to new maintainer requests and record the
+  closure reason if GitHub exposes one.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
