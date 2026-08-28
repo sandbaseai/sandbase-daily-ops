@@ -2043,6 +2043,24 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Respond only to concrete quality or usage questions and
   stop if the maintainer declines.
 
+### 2026-08-28 — Verification follow-up on Awesome AI Coding Tools
+
+- **Evidence:** Existing issue #656 in `ai-for-developers/awesome-ai-coding-tools`
+  proposes SandBase CLI and remains open with no maintainer comments.
+- **Action:** Added one factual follow-up comment with current README evidence
+  (local MCP bridge, 25 clients, release checksum, CI, and official Registry):
+  https://github.com/ai-for-developers/awesome-ai-coding-tools/issues/656#issuecomment-5447167205
+- **Validation:** Confirmed the canonical CLI README and avoided opening a
+  duplicate issue or PR; wording explicitly leaves taxonomy decisions to the
+  maintainer.
+- **Distribution channel:** Curated AI coding tools issue queue.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** Maintainer now has updated, verifiable evidence for an existing
+  proposal; no artificial engagement was created.
+- **Next hypothesis:** Wait for editorial response and answer only concrete
+  follow-up questions.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
