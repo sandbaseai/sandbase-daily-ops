@@ -2465,6 +2465,24 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Wait for maintainer review and answer only concrete
   follow-up questions.
 
+### 2026-08-28 — Skills Codex directory follow-up
+
+- **Evidence:** `composio-community/awesome-codex-skills` is a 16k+ star Codex
+  skills directory; open issue #244 proposes SandBase and had no comments
+  before this action.
+- **Action:** Added a concise follow-up with the canonical `multi-source-search`
+  path, SKILL.md/offline-validation scope, and CLI MCP/OAuth context:
+  https://github.com/composio-community/awesome-codex-skills/issues/244#issuecomment-5447323267
+- **Validation:** Rechecked the public Skills/CLI repositories and left
+  inclusion to the directory's quality and compatibility review.
+- **Distribution channel:** Curated Codex skills directory.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** Existing submission now has precise, source-backed Codex context
+  without a duplicate thread or manufactured engagement.
+- **Next hypothesis:** Wait for maintainer review and answer only concrete
+  follow-up questions.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
