@@ -1666,6 +1666,23 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Continue only with substantive, rule-compliant outreach
   and product improvements that earn voluntary stars.
 
+### 2026-08-28 — Corrected stale star count in external listing issue
+
+- **Evidence:** `hades217/awesome-ai#132` contains a SandBase CLI proposal with
+  a stale “59” star count; the canonical GitHub API currently reports 61.
+- **Action:** Replied with the current count and authoritative stargazer/release
+  links, noting the issue's existing description otherwise needs no change:
+  https://github.com/hades217/awesome-ai/issues/132#issuecomment-5446966148
+- **Validation:** Verified the count from the canonical repository and release
+  `v0.1.17`; did not add inflated metrics or an engagement request.
+- **Distribution channel:** Open-source AI directory editorial issue.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** Improved factual accuracy for readers and maintainers of an open
+  discovery channel.
+- **Next hypothesis:** Respond to further editorial questions with immutable
+  release or source evidence only.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
