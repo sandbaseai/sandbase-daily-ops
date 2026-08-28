@@ -1939,6 +1939,23 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** If maintainers approve the scope, prepare the exact
   `data/projects.yaml` entry and run their verification pipeline.
 
+### 2026-08-28 — Handbook submission to second harness directory
+
+- **Evidence:** `walkinglabs/awesome-harness-engineering` explicitly accepts
+  practical harness resources and asks for concise, non-promotional entries;
+  the Handbook was not present in its README.
+- **Action:** Opened PR #84 adding the Handbook to Courses & Learning Resources
+  with a source-backed description of its runbooks and diagnostics:
+  https://github.com/walkinglabs/awesome-harness-engineering/pull/84
+- **Validation:** Checked the contribution rules, canonical Handbook content,
+  and duplicate absence before submitting; affiliation was disclosed.
+- **Distribution channel:** Curated harness-engineering tools and guides list.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** Added a distinct high-relevance discovery path for Handbook users.
+- **Next hypothesis:** Answer maintainer questions with source evidence and
+  respect any editorial decision without reposting.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
