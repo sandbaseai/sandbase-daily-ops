@@ -1562,6 +1562,24 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Answer maintainer questions with reproducible install or
   compatibility evidence; do not repost if declined.
 
+### 2026-08-28 — Codex CLI ecosystem directory submission
+
+- **Evidence:** `RoggeOhta/awesome-codex-cli` accepts additions by PR and
+  requires direct Codex relevance, active maintenance, a clear description,
+  and a live GitHub star badge.
+- **Action:** Opened PR #222 adding SandBase CLI under General-Purpose MCP with
+  its Codex support, 25-client catalog, and read-only compatibility check:
+  https://github.com/RoggeOhta/awesome-codex-cli/pull/222
+- **Validation:** Confirmed the canonical CLI README lists Codex as a supported
+  client, release `v0.1.17` is current, and the entry uses the required badge
+  format; no inflated or fabricated metrics were used.
+- **Distribution channel:** Curated Codex CLI ecosystem directory.
+- **Star count before/after:** Skills 67→67; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** A second distinct, rule-compliant directory review is now active.
+- **Next hypothesis:** Provide install or compatibility evidence if the
+  maintainer requests it; respect any editorial decision without reposting.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
