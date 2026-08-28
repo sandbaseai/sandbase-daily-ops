@@ -2665,6 +2665,26 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Continue only evidence-based outreach and recheck after
   genuine maintainer/user activity, without claiming causality.
 
+### 2026-08-28 — Remove unused third-party forks
+
+- **Objective:** Reduce organization clutter without touching canonical SandBase
+  projects or external contributors' personal repositories.
+- **Evidence:** Direct GitHub organization API showed 49 repositories with
+  `fork=true`; each was an `awesome-*` third-party copy with 0 Stars and 0
+  open issues, created or pushed in the current batch window.
+- **Action:** Deleted the 49 identified repositories from the `sandbaseai`
+  organization with explicit per-repository delete commands.
+- **Validation:** Re-queried the organization API after deletion; remaining
+  organization Fork count is 0. The four in-scope canonical repositories were
+  not modified.
+- **Distribution channel:** Repository hygiene; no Star or engagement claim.
+- **Star count before/after:** Skills 72→72; CLI 66→66; Handbook 77→77;
+  Docs 1→1.
+- **Result:** Cleanup complete; deleted GitHub repositories are not readily
+  self-service recoverable.
+- **Next hypothesis:** Focus subsequent promotion on existing maintainer-owned
+  listings and user-facing documentation rather than creating additional forks.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
