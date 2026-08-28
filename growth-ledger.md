@@ -2753,6 +2753,22 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Keep tutorial commands aligned with the immutable CLI
   release and answer only concrete reader questions.
 
+### 2026-08-28 — Maintainer-friendly follow-up on AI tools recommendation
+
+- **Objective:** Keep a pending third-party recommendation actionable without
+  repeated promotional comments.
+- **Action:** Added one concise follow-up to
+  [`Awesome-AITools#896`](https://github.com/ikaijua/Awesome-AITools/issues/896#issuecomment-5452538524),
+  confirming template compliance and inviting maintainers to request missing
+  fields or recategorization.
+- **Validation:** GitHub returned the live comment URL; no Star request,
+  unsupported claim, or sensitive data was included.
+- **Distribution channel:** Maintainer-reviewed AI tools directory.
+- **Star count at action:** Skills 72; CLI 66; Handbook 77; Docs 1.
+- **Result:** Pending recommendation remains easy for maintainers to process.
+- **Next hypothesis:** Do not comment again unless the maintainer asks for
+  changes or closes the issue.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
