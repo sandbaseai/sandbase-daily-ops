@@ -1408,6 +1408,24 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Wait for maintainer review and respond only to concrete
   feedback.
 
+### 2026-08-28 — DeepSeek Harness directory accuracy PR
+
+- **Evidence:** `0xsline/awesome-deepseek-harness` already links the Handbook,
+  but its Related section still stated 79 guides. The current Handbook index
+  verifies 143 source-backed guides.
+- **Action:** Corrected the existing listing and opened PR #513:
+  https://github.com/0xsline/awesome-deepseek-harness/pull/513
+- **Validation:** Fork branch `update-handbook-count` commit `c639bb1` was
+  pushed; links and functionality text were preserved, with only the verified
+  count changed.
+- **Distribution channel:** DeepSeek Harness-specific curated directory.
+- **Star count before/after:** Handbook 73→73; Skills 67, CLI 61, Docs 1;
+  no causal attribution.
+- **Result:** Improved listing accuracy while keeping the Handbook visible to
+  a highly relevant audience.
+- **Next hypothesis:** Wait for maintainer review and answer only concrete
+  questions.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
