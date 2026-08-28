@@ -2887,6 +2887,20 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Avoid further topic churn unless search terminology or
   project scope materially changes.
 
+### 2026-08-28 — CLI README cross-links community directories
+
+- **Objective:** Turn third-party directory exposure into a visible, useful
+  discovery path from the canonical CLI repository.
+- **Action:** Added links to the merged Awesome Agent Cortex, Awesome AI Agent
+  Tools, and Awesome Codex CLI directories in the CLI README Community section.
+- **Validation:** Change was rebased onto latest `main` and pushed at commit
+  `00f144a`; links point to the named external repositories.
+- **Distribution channel:** CLI README cross-navigation.
+- **Star count at action:** Skills 72; CLI 66; Handbook 77; Docs 1.
+- **Result:** Visitors can discover independently maintained ecosystem listings
+  without leaving the canonical project context.
+- **Next hypothesis:** Keep this list limited to maintained, merged listings.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
