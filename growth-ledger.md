@@ -2555,6 +2555,25 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Answer concrete workflow questions and incorporate
   reproducible feedback into the handbook.
 
+### 2026-08-28 — Skills worked-example showcase
+
+- **Evidence:** `sandbaseai/sandbase-skills` Discussions provides a Show and
+  tell category; a concrete workflow is more useful to prospective users than
+  a generic promotional claim.
+- **Action:** Published discussion #62 with a four-step reproducible
+  `multi-source-search` workflow and a request for redacted client/task/
+  validation reports: https://github.com/sandbaseai/sandbase-skills/discussions/62
+- **Validation:** Linked the canonical skill path, required source/uncertainty
+  recording and offline validation, and asked users to review evidence before
+  downstream use.
+- **Distribution channel:** Official Skills Discussions / Show and tell.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** Added a practical discovery and onboarding artifact for real
+  users, without manufactured replies or star claims.
+- **Next hypothesis:** Use genuine user reports to refine examples and
+  documentation.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
