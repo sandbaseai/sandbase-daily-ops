@@ -2574,6 +2574,25 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Use genuine user reports to refine examples and
   documentation.
 
+### 2026-08-29 — CLI listing verification in Awesome AI Agents 2026
+
+- **Evidence:** `ARUNAGIRINATHAN-K/awesome-ai-agents-2026` is a 300+ star AI
+  agents directory; open issue #235 requests an update to the SandBase CLI
+  listing and had no comments before this action.
+- **Action:** Added a factual follow-up with the local MCP bridge, 25 clients,
+  v0.1.17 release, SHA-256, and official Registry links, while scoping model
+  availability to runtime permissions:
+  https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/issues/235#issuecomment-5450152545
+- **Validation:** Rechecked the canonical CLI README/release and avoided
+  unsupported model-count claims.
+- **Distribution channel:** Curated AI agents directory.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** Existing listing request now has source-backed update details
+  without duplicate threads or manufactured engagement.
+- **Next hypothesis:** Wait for maintainer review and answer only concrete
+  follow-up questions.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
