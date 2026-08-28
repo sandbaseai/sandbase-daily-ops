@@ -2483,6 +2483,24 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Wait for maintainer review and answer only concrete
   follow-up questions.
 
+### 2026-08-28 — Skills import verification in Agentic Awesome Skills
+
+- **Evidence:** `sickn33/agentic-awesome-skills` is a 45k+ star skills
+  directory; open request #1270 asks to import the reviewed SandBase MCP skill
+  and had no comments before this action.
+- **Action:** Added canonical repository and `multi-source-search` path,
+  SKILL.md/offline-validation scope, and the CLI local MCP bridge context:
+  https://github.com/sickn33/agentic-awesome-skills/issues/1270#issuecomment-5447328193
+- **Validation:** Rechecked the public Skills/CLI repositories and left the
+  import decision to the directory maintainers.
+- **Distribution channel:** Curated Agentic Awesome Skills index.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** A high-reach existing request now has precise source evidence
+  without duplicate threads or manufactured engagement.
+- **Next hypothesis:** Wait for maintainer review and answer only concrete
+  verification questions.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
