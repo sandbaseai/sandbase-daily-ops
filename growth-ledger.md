@@ -1903,6 +1903,24 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Pursue only a distinct, explicitly open channel for the
   Handbook, not a repost of this closed PR.
 
+### 2026-08-28 — Hermes directory listing corrected and merged
+
+- **Evidence:** `0xNyk/awesome-hermes-agent#363` reported that the accepted
+  SandBase CLI listing incorrectly attributed sandbox functionality to the CLI.
+- **Action:** The maintainer merged the correction through PR #364, replacing
+  the description with the verified six-tool local MCP bridge scope:
+  https://github.com/0xNyk/awesome-hermes-agent/issues/363
+- **Validation:** The issue confirms the change landed on `main`; beta marker,
+  link, attribution, Apache-2.0 license, and Registry/source evidence were
+  preserved.
+- **Distribution channel:** Hermes agent integrations directory.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** A live external listing now accurately separates the CLI from the
+  SandBase sandbox project, improving trust for Hermes users.
+- **Next hypothesis:** Keep monitoring only for concrete listing inaccuracies;
+  do not add promotional comments to an already-correct entry.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
