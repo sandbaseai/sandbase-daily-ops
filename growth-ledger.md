@@ -2702,6 +2702,24 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Convert the first validated response into a focused
   docs PR and link it back to the issue.
 
+### 2026-08-28 — Awesome AI Devtools listing merged
+
+- **Objective:** Earn durable discovery for the CLI through a maintainer-owned
+  catalog with a real review process.
+- **Evidence:** `yeaight7/awesome-ai-devtools#33` was merged after the maintainer
+  requested official-source confirmation and passing sort/generate/test gates.
+- **Action:** Supplied the requested provenance and validation details; the PR
+  now appears in the merged project history.
+- **Validation:** Maintainer bot review recorded the required checks; GitHub
+  reports the PR state as `MERGED`.
+- **Distribution channel:** Curated AI developer-tools catalog.
+- **Star count at checkpoint:** Skills 72; CLI 66; Handbook 77; Docs 1;
+  no causal Star increase is claimed.
+- **Result:** Permanent third-party listing obtained without duplicate PRs or
+  manufactured engagement.
+- **Next hypothesis:** Use the merged listing as a reference when answering
+  relevant user questions, and pursue only new maintainer-led opportunities.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
