@@ -1297,6 +1297,21 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Wait for maintainer review and respond only to concrete
   feedback; do not post duplicate entries or unsolicited comments.
 
+### 2026-08-28 — External directory review status
+
+- **Evidence:** Direct GitHub checks show `awesome-mcp-devtools#292` remains
+  open and clean with no reviews/comments. The earlier
+  `awesome-mcp-clients#294` is now closed, also without review feedback.
+- **Action:** Updated the outreach state and stopped follow-up on the closed
+  PR; no replacement submission was made.
+- **Validation:** `gh pr view` returned the current states and the four target
+  repositories remain at Skills 67, CLI 61, Handbook 73, Docs 1.
+- **Distribution channel:** Maintainer-reviewed MCP directories.
+- **Result:** One relevant PR remains pending while avoiding repeated or
+  unsolicited directory noise.
+- **Next hypothesis:** Wait for #292 maintainer feedback; pursue a new channel
+  only when it has a distinct audience and explicit contribution fit.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
