@@ -1839,6 +1839,22 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Let maintainers decide tier placement and respond only
   to further factual questions.
 
+### 2026-08-28 — Updated OpenClaw directory adoption signal
+
+- **Evidence:** `vincentkoc/awesome-openclaw#130` cited 58 GitHub Stars for
+  SandBase CLI; the canonical repository currently reports 61.
+- **Action:** Replied with the live Stargazers link and kept the existing
+  OpenClaw integration, release, and checksum claims unchanged:
+  https://github.com/vincentkoc/awesome-openclaw/issues/130#issuecomment-5447036186
+- **Validation:** Verified the count directly on GitHub and made no new
+  popularity or download claims.
+- **Distribution channel:** OpenClaw ecosystem directory issue.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** Kept a client-specific discovery listing factually current.
+- **Next hypothesis:** Respond only to maintainer requests or concrete stale
+  metadata in other client directories.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
