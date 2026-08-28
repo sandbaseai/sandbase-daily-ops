@@ -1753,6 +1753,24 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Answer only further editorial questions with source
   evidence; avoid duplicate submissions.
 
+### 2026-08-28 — Corrected stale count in command-line tools scope check
+
+- **Evidence:** `ad-si/awesome-command-line-tools#6` asks whether SandBase CLI
+  fits its scope and cites 58 Stars; the canonical repository currently shows
+  61.
+- **Action:** Replied with the live Stargazers link and current count while
+  explicitly respecting the maintainer's scope decision:
+  https://github.com/ad-si/awesome-command-line-tools/issues/6#issuecomment-5447005527
+- **Validation:** Verified the count and `v0.1.17` release directly; no PR was
+  opened and no popularity request was made.
+- **Distribution channel:** Curated command-line tools scope discussion.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** Supplied a precise fact for editorial review without forcing an
+  out-of-scope submission.
+- **Next hypothesis:** Follow up only if the maintainer confirms the category
+  fit or asks for evidence.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
