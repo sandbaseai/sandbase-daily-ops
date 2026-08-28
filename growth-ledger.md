@@ -1631,6 +1631,24 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Respond only to substantive maintainer feedback on #658
   or a new, clearly documented contribution opportunity.
 
+### 2026-08-28 — Duplicate submission closed in favor of existing issue
+
+- **Evidence:** The target directory already had issue #656, opened by an
+  independent maintainer-affiliated submitter, with a detailed factual SandBase
+  CLI proposal and disclosure. PR #658 duplicated that same editorial path.
+- **Action:** Closed PR #658 and left a public note directing review to the
+  existing issue: https://github.com/ai-for-developers/awesome-ai-coding-tools/issues/656
+- **Validation:** Confirmed issue #656 contains the canonical repository URL,
+  CLI/MCP capabilities, Apache-2.0 license, registry package, and disclosure;
+  no second comment or competing entry was posted.
+- **Distribution channel:** AI coding tools directory editorial queue.
+- **Star count before/after:** Skills 67→67; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** Reduced duplicate noise while preserving the stronger existing
+  promotion opportunity.
+- **Next hypothesis:** Support the existing issue only when maintainers ask for
+  factual evidence; avoid reopening or reposting the closed PR.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
