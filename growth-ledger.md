@@ -1649,6 +1649,23 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Support the existing issue only when maintainers ask for
   factual evidence; avoid reopening or reposting the closed PR.
 
+### 2026-08-28 — Organic star delta after directory outreach
+
+- **Evidence:** Direct GitHub API read shows `sandbase-skills` at 68 stars,
+  up from the previously recorded 67; CLI remains 61, Handbook 73, and Docs
+  1. The change is not attributable to any single channel.
+- **Action:** Recorded the observed delta without claiming causation or asking
+  for artificial starring.
+- **Validation:** Counts were read from the four canonical repository records
+  on GitHub; no synthetic accounts, scripted stars, or exchange activity were
+  used.
+- **Distribution channel:** Aggregate organic discovery following prior
+  directory and ecosystem submissions.
+- **Result:** Skills has a small, verifiable organic increase; the 100-star
+  target remains unmet for all four repositories.
+- **Next hypothesis:** Continue only with substantive, rule-compliant outreach
+  and product improvements that earn voluntary stars.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
