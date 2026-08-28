@@ -2006,6 +2006,25 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** If a maintainer invites a PR or enables issues, submit
   the prepared focused change; otherwise do not repost.
 
+### 2026-08-28 — SandBase CLI proposal to Awesome MCP Servers (YuzeHao2023)
+
+- **Evidence:** `YuzeHao2023/Awesome-MCP-Servers` is a 1k+ star community
+  catalog with an explicit Development Tools category; SandBase CLI was not
+  present and the repository accepts issue proposals.
+- **Action:** Opened issue #450 with a concise, source-backed entry proposal:
+  https://github.com/YuzeHao2023/Awesome-MCP-Servers/issues/450
+- **Validation:** Rechecked the CLI README for installation, release
+  checksum, CI, MCP Registry, 25 clients, and 2,000+ models/APIs before
+  posting; no duplicate SandBase entry was found.
+- **Distribution channel:** Curated MCP server directory, maintainer issue
+  queue.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** A factual, single-project discovery proposal is open for
+  maintainer review; no manufactured engagement or star claim was made.
+- **Next hypothesis:** Wait for maintainer feedback and answer only concrete
+  questions; do not duplicate the proposal elsewhere in this directory.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
