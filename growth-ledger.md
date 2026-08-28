@@ -2269,6 +2269,23 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Wait for editorial review and answer only concrete
   questions.
 
+### 2026-08-28 — SandBase Skills proposal to JackyST0 Agent Skills list
+
+- **Evidence:** `JackyST0/awesome-agent-skills` is a 600+ star Chinese Agent
+  Skills directory; its README contained no SandBase entry.
+- **Action:** Opened issue #85 with a concise Chinese recommendation:
+  https://github.com/JackyST0/awesome-agent-skills/issues/85
+- **Validation:** Linked the canonical Apache-2.0 repository and described only
+  its documented multi-source research, offline validation, and SKILL.md scope;
+  current direct count is 68 stars.
+- **Distribution channel:** Chinese curated Agent Skills directory.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** A new, non-duplicative discovery proposal is open for maintainer
+  review without manufactured engagement.
+- **Next hypothesis:** Wait for editorial feedback and answer only concrete
+  quality or compatibility questions.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
