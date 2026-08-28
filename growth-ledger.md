@@ -2501,6 +2501,24 @@ records the operational decision, evidence, validation, and outcome.
 - **Next hypothesis:** Wait for maintainer review and answer only concrete
   verification questions.
 
+### 2026-08-28 — SandBase Skills usage discussion
+
+- **Evidence:** `sandbaseai/sandbase-skills` has Discussions enabled with a
+  Q&A category; a user-focused prompt can collect reproducible usage feedback
+  without making adoption claims.
+- **Action:** Published Q&A discussion #61 asking users to share client,
+  research task, and validation outcomes for `multi-source-search`:
+  https://github.com/sandbaseai/sandbase-skills/discussions/61
+- **Validation:** Linked the canonical skill path and explicitly requested
+  concrete examples or reproducible issues rather than promotional replies.
+- **Distribution channel:** Official Skills Discussions / Q&A.
+- **Star count before/after:** Skills 68→68; CLI 61→61; Handbook 73→73;
+  Docs 1→1; no causal attribution.
+- **Result:** Created a durable feedback and discovery entry point for real
+  users of the Skills repository.
+- **Next hypothesis:** Respond to actual usage reports and use them to improve
+  documentation or compatibility.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
