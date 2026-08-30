@@ -13,4 +13,6 @@ Start with the [MCP installation guide](https://github.com/sandbaseai/sandbase-h
 
 Feedback and deployment reports: https://github.com/sandbaseai/sandbase-harness/discussions/116
 
+DeepSeek Harness walkthroughs are now live in [English](https://blog.sandbase.ai/deepseek-harness-developer-preview-2026/) and [中文](https://blog.sandbase.ai/zh-CN/deepseek-harness-developer-preview-2026/), both refreshed for the pinned SandBase Harness v0.3.8 integration.
+
 Discovery updates (all pending external review): [Awesome MCP Collection](https://github.com/JustInCache/awesome-mcp-collection/pull/38), [Awesome Agent OS](https://github.com/cueos/awesome-agent-os/pull/2), and [Awesome X-Ops](https://github.com/xlabs-club/awesome-x-ops/pull/250). Inclusion requests are not endorsements or security certifications.
