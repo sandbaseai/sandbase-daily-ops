@@ -10,4 +10,4 @@ This makes it useful for teams evaluating self-owned Agent infrastructure: start
 
 The important qualification is deployment-specific: Docker, Kubernetes, and worker backends do not provide identical isolation properties. SandBase Harness does not claim universal microVM or kernel isolation.
 
-Read the installation guide and source-backed release details: https://github.com/sandbaseai/sandbase-harness/blob/main/docs/mcp-install.md
+Read the installation guide and source-backed release details: https://github.com/sandbaseai/sandbase-harness/blob/main/docs/installation.md
