@@ -29,3 +29,5 @@ Another pending listing request: Awesome MCP List PR #409 https://github.com/Mob
 For a maturity-gated runtime catalog, Awesome Agent Runtimes PR #4 https://github.com/beejmaxx/awesome-agent-runtimes/pull/4 proposes SandBase Harness for its watchlist. Review is pending; no core-catalog inclusion is claimed.
 
 Infrastructure review: Awesome Agent Infra PR #6 https://github.com/shenli/awesome-agent-infra/pull/6 adds SandBase Harness to Runtime and Control Plane. Maintainer review is pending.
+
+Another community review path: Awesome AI Developer Stack PR #2 https://github.com/masrisystems/awesome-ai-developer-stack/pull/2 adds SandBase Harness to its MCP Servers table. Review is pending.

@@ -33,3 +33,5 @@ The [Awesome MCP List PR #409](https://github.com/MobinX/awesome-mcp-list/pull/4
 The [Awesome Agent Runtimes PR #4](https://github.com/beejmaxx/awesome-agent-runtimes/pull/4) takes a deliberately maturity-aware path: it proposes SandBase Harness for the project's watchlist, with the 180-day and 5,000-star gates recorded explicitly. Review is pending; no core-catalog inclusion is claimed.
 
 The infrastructure-focused [Awesome Agent Infra PR #6](https://github.com/shenli/awesome-agent-infra/pull/6) adds SandBase Harness to its Runtime and Control Plane table. It remains pending maintainer review and is not an endorsement.
+
+The [Awesome AI Developer Stack PR #2](https://github.com/masrisystems/awesome-ai-developer-stack/pull/2) adds SandBase Harness to a broader MCP Servers directory table. It remains pending maintainer review and uses the official repository as its source.

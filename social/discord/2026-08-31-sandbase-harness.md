@@ -34,3 +34,5 @@ Another pending directory request: [Awesome MCP List PR #409](https://github.com
 Maturity-aware review path: [Awesome Agent Runtimes PR #4](https://github.com/beejmaxx/awesome-agent-runtimes/pull/4) proposes SandBase Harness for its watchlist, not the active core catalog. Review is pending.
 
 Infrastructure review path: [Awesome Agent Infra PR #6](https://github.com/shenli/awesome-agent-infra/pull/6), adding SandBase Harness to Runtime and Control Plane. Review is pending.
+
+Another pending directory request: [Awesome AI Developer Stack PR #2](https://github.com/masrisystems/awesome-ai-developer-stack/pull/2), adding SandBase Harness to its MCP Servers table. This is a review request only.
