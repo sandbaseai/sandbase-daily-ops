@@ -21,3 +21,5 @@ More ecosystem submissions: Agentic Community Landscape PR #2 https://github.com
 Public discovery: MCPVault now has an auto-indexed, unclaimed listing https://mcpvault.io/servers/sandbase-harness (automated signal, not a maintainer certification).
 
 Boundary: isolation depends on the selected deployment backend; this is not a universal microVM or kernel-isolation claim.
+
+Additional community review paths: Collective AI Tools #332 https://github.com/hanishrao/collective-ai-tools/issues/332 and Awesome Agent Skills PR #79 https://github.com/philipbankier/awesome-agent-skills/pull/79. Both are pending maintainer review.
