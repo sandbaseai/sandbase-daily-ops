@@ -49,3 +49,5 @@ Security-focused runtime review: Awesome Agent Sandboxing PR #2 https://github.c
 Another self-hosted sandbox review: Awesome Agent Sandbox PR #2 https://github.com/vivy-yi/awesome-agent-sandbox/pull/2 adds SandBase Harness to its Open Source table. Maintainer review is pending; no endorsement is claimed.
 
 New guide review: Awesome Sandbox PR #27 https://github.com/restyler/awesome-sandbox adds a dedicated SandBase Harness runtime/sandbox case study. GitGuardian is still running and maintainer review is pending; no security certification is claimed.
+
+Evidence-dataset review: AI Agent Sandboxes PR #3 https://github.com/pjlsergeant/ai-sandboxes adds source-linked SandBase Harness metadata to a structured sandbox dataset. Maintainer review is pending; backend limits remain explicit.

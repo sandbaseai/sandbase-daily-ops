@@ -54,3 +54,5 @@ Security-focused runtime review: [Awesome Agent Sandboxing PR #2](https://github
 Another pending self-hosted sandbox review: [Awesome Agent Sandbox PR #2](https://github.com/vivy-yi/awesome-agent-sandbox/pull/2), adding SandBase Harness to the Open Source table. Review only; no endorsement is claimed.
 
 New guide review: [Awesome Sandbox PR #27](https://github.com/restyler/awesome-sandbox/pull/27), adding a dedicated SandBase Harness runtime/sandbox case study. Maintainer review is pending; this is not a security certification.
+
+Evidence-dataset review: [AI Agent Sandboxes PR #3](https://github.com/pjlsergeant/ai-sandboxes/pull/3), adding source-linked SandBase Harness metadata to a structured sandbox dataset. Maintainer review is pending; this is not an endorsement or security certification.
