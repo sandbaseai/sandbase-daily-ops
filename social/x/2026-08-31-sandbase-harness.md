@@ -31,3 +31,7 @@ For a maturity-gated runtime catalog, Awesome Agent Runtimes PR #4 https://githu
 Infrastructure review: Awesome Agent Infra PR #6 https://github.com/shenli/awesome-agent-infra/pull/6 adds SandBase Harness to Runtime and Control Plane. Maintainer review is pending.
 
 Another community review path: Awesome AI Developer Stack PR #2 https://github.com/masrisystems/awesome-ai-developer-stack/pull/2 adds SandBase Harness to its MCP Servers table. Review is pending.
+
+Further review paths: Awesome CLI Coding Agents PR #314 https://github.com/bradAGI/awesome-cli-coding-agents/pull/314, Awesome Agentic AI 中文 PR #213 https://github.com/WenyuChiou/awesome-agentic-ai-zh/pull/213, Awesome Terminal Agents PR #5 https://github.com/EnigmaYYYY/awesome-terminal-agents/pull/5, Awesome Agent Sandbox PR #2 https://github.com/yanmxa/awesome-agent-sandbox/pull/2, and Awesome Agent Cortex PR #74 https://github.com/0xNyk/awesome-agent-cortex/pull/74. All remain pending maintainer review.
+
+These are discovery submissions only; inclusion is not endorsement or security certification. Isolation depends on the selected deployment backend.
