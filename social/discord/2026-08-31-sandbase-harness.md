@@ -22,3 +22,5 @@ One more public listing is confirmed in [Awesome AI Engineering](https://github.
 New directory submissions awaiting review: [MeshKore #14](https://meshkore.com/submit) and [Agent Switchboard PR #44](https://github.com/assafbar2/agentswitchboard.dev/pull/44). These are discovery submissions only, not endorsements or security certifications.
 
 Hugging Face agent-harness registry: [PR #2432](https://github.com/huggingface/huggingface.js/pull/2432), pending review and limited to attribution metadata.
+
+Additional pending review paths: [Agentic Community Landscape PR #2](https://github.com/agentic-community/agentic-landscape/pull/2), [Awesome AI Agent Engineering PR #1](https://github.com/sspoisk/awesome-ai-agent-engineering/pull/1), and [MyMCPTools issue #8](https://github.com/shibley/mymcptools/issues/8). These are independent directory submissions, not endorsements or security certifications.
