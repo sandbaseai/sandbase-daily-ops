@@ -63,4 +63,4 @@ New MCP directory review: [Awesome MCP Collection PR #39](https://github.com/Jus
 
 Additional MCP directory review: [Awesome MCP issue #99](https://github.com/abordage/awesome-mcp/issues/99) requests SandBase Harness for Aggregators & Gateways. Maintainer review is pending; this is a source-linked reference, not an endorsement or security certification.
 
-New gateway directory review: [Awesome MCP Gateways PR #81](https://github.com/e2b-dev/awesome-mcp-gateways/pull/81) adds SandBase Harness to Open-source MCP Gateways. Maintainer review and CLA verification are pending; this is not an endorsement or security certification.
+New gateway directory review: [Awesome MCP Gateways PR #77](https://github.com/e2b-dev/awesome-mcp-gateways/pull/77) adds SandBase Harness to Open-source MCP Gateways. Maintainer review and CLA verification are pending; this is not an endorsement or security certification.
