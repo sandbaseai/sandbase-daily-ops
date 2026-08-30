@@ -23,3 +23,5 @@ Two additional discovery submissions are now in review: [MeshKore](https://meshk
 The Hugging Face [agent-harness registry PR #2432](https://github.com/huggingface/huggingface.js/pull/2432) is also under review; it adds attribution metadata only and does not change runtime behavior.
 
 The latest review queue also includes [Agentic Community Landscape PR #2](https://github.com/agentic-community/agentic-landscape/pull/2), [Awesome AI Agent Engineering PR #1](https://github.com/sspoisk/awesome-ai-agent-engineering/pull/1), and [MyMCPTools issue #8](https://github.com/shibley/mymcptools/issues/8). Each submission uses official repository and release evidence and remains subject to the destination maintainer's review.
+
+Separately, [MCPVault now exposes a public auto-indexed listing](https://mcpvault.io/servers/sandbase-harness). The page is currently marked unclaimed and its quality signals are computed from public repository data; this is an independent discovery page, not a project-maintainer certification.

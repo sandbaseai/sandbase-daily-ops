@@ -18,4 +18,6 @@ Hugging Face agent-harness registry PR: https://github.com/huggingface/huggingfa
 
 More ecosystem submissions: Agentic Community Landscape PR #2 https://github.com/agentic-community/agentic-landscape/pull/2, Awesome AI Agent Engineering PR #1 https://github.com/sspoisk/awesome-ai-agent-engineering/pull/1, and MyMCPTools issue #8 https://github.com/shibley/mymcptools/issues/8. All are pending maintainer review.
 
+Public discovery: MCPVault now has an auto-indexed, unclaimed listing https://mcpvault.io/servers/sandbase-harness (automated signal, not a maintainer certification).
+
 Boundary: isolation depends on the selected deployment backend; this is not a universal microVM or kernel-isolation claim.
