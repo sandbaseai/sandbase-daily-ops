@@ -10,4 +10,6 @@ Try the MCP setup: https://github.com/sandbaseai/sandbase-harness/blob/main/docs
 
 DeepSeek Harness walkthrough: https://blog.sandbase.ai/deepseek-harness-developer-preview-2026/
 
+Now publicly listed in Awesome AI Engineering: https://github.com/Eric-LLMs/Awesome-AI-Engineering/pull/4
+
 Boundary: isolation depends on the selected deployment backend; this is not a universal microVM or kernel-isolation claim.
