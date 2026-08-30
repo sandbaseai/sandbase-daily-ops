@@ -2935,6 +2935,22 @@ records the operational decision, evidence, validation, and outcome.
   unless the maintainer responds.
 - **Next hypothesis:** Let the directory's normal review queue decide inclusion.
 
+### 2026-08-30 — Personal promotion Fork cleanup
+
+- **Objective:** Remove clearly temporary external-project Forks created for
+  promotion work while preserving long-lived technical Forks.
+- **Evidence:** Audited Forks under `denial123789` and `liyangbing`; selected
+  only 2026 promotion-batch repositories with zero Stars/issues.
+- **Action:** Deleted 12 explicit temporary Forks under `denial123789`.
+  Eleven analogous Forks under `liyangbing` remain because the active token
+  lacks `delete_repo` administration permission (GitHub returned HTTP 403).
+- **Validation:** Re-queried both accounts; no selected `denial123789` Forks
+  remain. Historical 2013–2025 technical Forks were not touched.
+- **Result:** Cleanup is partial and permission-bounded; no permission bypass
+  was attempted.
+- **Next action:** If desired, run the same explicit deletes while authenticated
+  as an account with repository-delete permission for `liyangbing`.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
