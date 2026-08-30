@@ -2951,6 +2951,18 @@ records the operational decision, evidence, validation, and outcome.
 - **Next action:** If desired, run the same explicit deletes while authenticated
   as an account with repository-delete permission for `liyangbing`.
 
+### 2026-08-30 — Complete remaining temporary Fork cleanup
+
+- **Objective:** Finish removal of the explicitly identified 2026 promotion
+  Fork batch after repository-delete authorization was granted.
+- **Action:** Authenticated `liyangbing` with the approved `delete_repo` scope
+  and deleted the 11 remaining temporary Forks listed in the prior audit.
+- **Validation:** Re-queried `users/liyangbing/repos`; zero Forks remain from
+  the 2026 promotion batch. Historical technical Forks were not targeted.
+- **Result:** The scoped external-project Fork cleanup is complete.
+- **Recoverability:** GitHub repository deletion is not self-service
+  recoverable; no other repositories were removed.
+
 ## Recording rules
 
 For every later action, record the timestamp, repository, objective, source
