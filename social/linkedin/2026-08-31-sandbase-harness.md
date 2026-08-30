@@ -41,3 +41,5 @@ The current review queue also includes [Awesome CLI Coding Agents PR #314](https
 These listings should be read as community review paths, not endorsements or security certifications. Isolation remains dependent on the selected deployment backend.
 
 An additional infrastructure-focused submission is [Awesome Agent Infrastructure PR #23](https://github.com/backblaze-labs/awesome-agent-infrastructure/pull/23), which proposes SandBase Harness for its Execution Sandboxes section. The PR follows the repository's `entries.yaml` contribution format and is awaiting maintainer review; it is not a listing or endorsement yet.
+
+The sandbox-focused [Awesome Agent Sandboxes PR #9](https://github.com/dloss/awesome-agent-sandboxes/pull/9) proposes a concise Containers entry for SandBase Harness. It remains a community review request, with the important qualification that isolation depends on the selected backend and deployment configuration.

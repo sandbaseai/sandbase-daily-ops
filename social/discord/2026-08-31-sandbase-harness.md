@@ -42,3 +42,5 @@ More pending review paths: [Awesome CLI Coding Agents PR #314](https://github.co
 Isolation depends on the selected deployment backend; no universal microVM or kernel-isolation claim is made.
 
 New infrastructure review path: [Awesome Agent Infrastructure PR #23](https://github.com/backblaze-labs/awesome-agent-infrastructure/pull/23), proposing SandBase Harness for Execution Sandboxes. Maintainer review is pending; this is not an endorsement or security certification.
+
+Another pending sandbox submission: [Awesome Agent Sandboxes PR #9](https://github.com/dloss/awesome-agent-sandboxes/pull/9), adding SandBase Harness to Containers. This is a review request only; isolation depends on the selected backend and deployment configuration.

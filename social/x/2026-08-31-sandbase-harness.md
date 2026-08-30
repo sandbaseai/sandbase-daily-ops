@@ -37,3 +37,5 @@ Further review paths: Awesome CLI Coding Agents PR #314 https://github.com/bradA
 These are discovery submissions only; inclusion is not endorsement or security certification. Isolation depends on the selected deployment backend.
 
 New infrastructure review path: Awesome Agent Infrastructure PR #23 https://github.com/backblaze-labs/awesome-agent-infrastructure/pull/23 adds SandBase Harness to Execution Sandboxes. Maintainer review is pending; no listing, endorsement, or security certification is claimed.
+
+Another sandbox review path: Awesome Agent Sandboxes PR #9 https://github.com/dloss/awesome-agent-sandboxes/pull/9 adds SandBase Harness to Containers. It is pending maintainer review; isolation remains backend/deployment dependent.
