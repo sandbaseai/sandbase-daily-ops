@@ -53,3 +53,5 @@ New guide review: Awesome Sandbox PR #27 https://github.com/restyler/awesome-san
 Evidence-dataset review: AI Agent Sandboxes PR #3 https://github.com/pjlsergeant/ai-sandboxes adds source-linked SandBase Harness metadata to a structured sandbox dataset. Maintainer review is pending; backend limits remain explicit.
 
 Developer discovery: Awesome AI Coding Tools PR #665 https://github.com/ai-for-developers/awesome-ai-coding-tools/pull/665 adds SandBase Harness to MCP Servers and Directories. Review pending; source-linked reference only.
+
+New MCP directory review: Awesome MCP Collection PR #39 https://github.com/JustInCache/awesome-mcp-collection/pull/39 adds SandBase Harness to Development & Version Control. Review pending; source-linked reference only, not an endorsement or security certification.
