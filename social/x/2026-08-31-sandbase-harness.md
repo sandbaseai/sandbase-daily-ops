@@ -16,4 +16,6 @@ New directory submissions are under review: MeshKore (#14) https://meshkore.com/
 
 Hugging Face agent-harness registry PR: https://github.com/huggingface/huggingface.js/pull/2432 (review pending)
 
+More ecosystem submissions: Agentic Community Landscape PR #2 https://github.com/agentic-community/agentic-landscape/pull/2, Awesome AI Agent Engineering PR #1 https://github.com/sspoisk/awesome-ai-agent-engineering/pull/1, and MyMCPTools issue #8 https://github.com/shibley/mymcptools/issues/8. All are pending maintainer review.
+
 Boundary: isolation depends on the selected deployment backend; this is not a universal microVM or kernel-isolation claim.
