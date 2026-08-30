@@ -27,3 +27,5 @@ Additional community review paths: Collective AI Tools #332 https://github.com/h
 Another pending listing request: Awesome MCP List PR #409 https://github.com/MobinX/awesome-mcp-list/pull/409. It adds SandBase Harness to AI Agents & Frameworks; review is pending.
 
 For a maturity-gated runtime catalog, Awesome Agent Runtimes PR #4 https://github.com/beejmaxx/awesome-agent-runtimes/pull/4 proposes SandBase Harness for its watchlist. Review is pending; no core-catalog inclusion is claimed.
+
+Infrastructure review: Awesome Agent Infra PR #6 https://github.com/shenli/awesome-agent-infra/pull/6 adds SandBase Harness to Runtime and Control Plane. Maintainer review is pending.
