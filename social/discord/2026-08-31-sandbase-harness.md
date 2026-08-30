@@ -24,3 +24,5 @@ New directory submissions awaiting review: [MeshKore #14](https://meshkore.com/s
 Hugging Face agent-harness registry: [PR #2432](https://github.com/huggingface/huggingface.js/pull/2432), pending review and limited to attribution metadata.
 
 Additional pending review paths: [Agentic Community Landscape PR #2](https://github.com/agentic-community/agentic-landscape/pull/2), [Awesome AI Agent Engineering PR #1](https://github.com/sspoisk/awesome-ai-agent-engineering/pull/1), and [MyMCPTools issue #8](https://github.com/shibley/mymcptools/issues/8). These are independent directory submissions, not endorsements or security certifications.
+
+Public discovery update: [MCPVault lists SandBase Harness](https://mcpvault.io/servers/sandbase-harness) as an auto-indexed, unclaimed entry. Its automated quality signals are not a maintainer review or security certification.
