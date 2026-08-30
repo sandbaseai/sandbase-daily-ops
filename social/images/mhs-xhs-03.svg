@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1440" viewBox="0 0 1080 1440">
+<rect width="1080" height="1440" fill="#111a22"/>
+<rect x="54" y="54" width="972" height="1332" rx="34" fill="#17242d" stroke="#3e7d72" stroke-width="3"/>
+<text x="92" y="150" fill="#9ff0c2" font-family="PingFang SC,Hiragino Sans GB,sans-serif" font-size="34" font-weight="700">重点 02</text>
+<text x="92" y="245" fill="#ffffff" font-family="PingFang SC,Hiragino Sans GB,sans-serif" font-size="70" font-weight="700">模型不直接控机器</text>
+<text x="92" y="330" fill="#ffbf69" font-family="PingFang SC,Hiragino Sans GB,sans-serif" font-size="44" font-weight="700">AI 判断，确定性代码执行</text>
+<g transform="translate(92 470)">
+<rect width="896" height="570" rx="30" fill="#0d1419"/>
+<rect x="42" y="64" width="812" height="112" rx="22" fill="#263d4d"/>
+<text x="80" y="136" fill="#ffffff" font-family="PingFang SC,Hiragino Sans GB,sans-serif" font-size="39" font-weight="700">Claude / Agent：观察、判断</text>
+<path d="M448 190 V264" stroke="#8bd4ff" stroke-width="9"/>
+<polygon points="448,292 420,250 476,250" fill="#8bd4ff"/>
+<rect x="42" y="316" width="812" height="112" rx="22" fill="#31574e"/>
+<text x="80" y="388" fill="#ffffff" font-family="PingFang SC,Hiragino Sans GB,sans-serif" font-size="39" font-weight="700">MHS：统一接口、安全边界</text>
+<path d="M448 442 V500" stroke="#ffbf69" stroke-width="9"/>
+<polygon points="448,528 420,486 476,486" fill="#ffbf69"/>
+<rect x="42" y="548" width="812" height="112" rx="22" fill="#604d32"/>
+<text x="80" y="620" fill="#ffffff" font-family="PingFang SC,Hiragino Sans GB,sans-serif" font-size="39" font-weight="700">本地代码：高速、可检查地执行</text>
+</g>
+<text x="92" y="1140" fill="#d6e4ed" font-family="PingFang SC,Hiragino Sans GB,sans-serif" font-size="34">目前仍是研究预览：</text>
+<text x="92" y="1200" fill="#ffbf69" font-family="PingFang SC,Hiragino Sans GB,sans-serif" font-size="34" font-weight="700">需可编程设备，也需要专家监督</text>
+<text x="92" y="1300" fill="#9eb5c4" font-family="PingFang SC,Hiragino Sans GB,sans-serif" font-size="27">来源：Anthropic 官方 MHS 说明</text>
+</svg>

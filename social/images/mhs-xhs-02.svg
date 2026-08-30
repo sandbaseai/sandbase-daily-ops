@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1440" viewBox="0 0 1080 1440">
+<rect width="1080" height="1440" fill="#101820"/>
+<rect x="54" y="54" width="972" height="1332" rx="34" fill="#162432" stroke="#3a6d8f" stroke-width="3"/>
+<text x="92" y="150" fill="#8bd4ff" font-family="PingFang SC,Hiragino Sans GB,sans-serif" font-size="34" font-weight="700">重点 01</text>
+<text x="92" y="245" fill="#ffffff" font-family="PingFang SC,Hiragino Sans GB,sans-serif" font-size="72" font-weight="700">MHS 解决什么？</text>
+<text x="92" y="330" fill="#ffbf69" font-family="PingFang SC,Hiragino Sans GB,sans-serif" font-size="52" font-weight="700">硬件接口碎片化</text>
+<line x1="92" y1="390" x2="988" y2="390" stroke="#31536b" stroke-width="3"/>
+<text x="92" y="480" fill="#d6e4ed" font-family="PingFang SC,Hiragino Sans GB,sans-serif" font-size="38">相机、机械臂、显微镜、</text>
+<text x="92" y="540" fill="#d6e4ed" font-family="PingFang SC,Hiragino Sans GB,sans-serif" font-size="38">液体处理器，往往各说各话。</text>
+<g transform="translate(92 640)">
+<rect width="896" height="470" rx="28" fill="#0d141b" stroke="#426d88" stroke-width="3"/>
+<text x="44" y="82" fill="#8bd4ff" font-family="PingFang SC,Hiragino Sans GB,sans-serif" font-size="32" font-weight="700">传统方式</text>
+<text x="44" y="150" fill="#ffffff" font-family="PingFang SC,Hiragino Sans GB,sans-serif" font-size="38">每新增一台设备</text>
+<text x="44" y="212" fill="#ffbf69" font-family="PingFang SC,Hiragino Sans GB,sans-serif" font-size="42" font-weight="700">都要重新写集成代码</text>
+<path d="M55 290 H840" stroke="#345365" stroke-width="4" stroke-dasharray="14 14"/>
+<text x="44" y="370" fill="#8bd4ff" font-family="PingFang SC,Hiragino Sans GB,sans-serif" font-size="32" font-weight="700">MHS 的思路</text>
+<text x="44" y="432" fill="#ffffff" font-family="PingFang SC,Hiragino Sans GB,sans-serif" font-size="38">在中间加一层统一翻译器</text>
+</g>
+<text x="92" y="1250" fill="#9eb5c4" font-family="PingFang SC,Hiragino Sans GB,sans-serif" font-size="27">信息来源：Anthropic MHS research preview</text>
+<text x="92" y="1310" fill="#607887" font-family="PingFang SC,Hiragino Sans GB,sans-serif" font-size="24">内容整理自公开报道与官方资料</text>
+</svg>
