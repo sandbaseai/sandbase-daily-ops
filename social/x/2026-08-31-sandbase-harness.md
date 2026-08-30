@@ -45,3 +45,5 @@ New coding-agent sandbox review: Awesome Agent Sandbox PR #4 https://github.com/
 Structured sandbox catalog review: Awesome Agent Sandboxes PR #59 https://github.com/msyvr/awesome-agent-sandboxes/pull/59 adds SandBase Harness metadata and regenerated reference outputs. Maintainer review is pending; backend/deployment isolation limits remain explicit.
 
 Security-focused runtime review: Awesome Agent Sandboxing PR #2 https://github.com/IronSecCo/awesome-agent-sandboxing/pull/2 adds SandBase Harness to Self-hosted Agent Runtimes. Review is pending; this is not a security certification.
+
+Another self-hosted sandbox review: Awesome Agent Sandbox PR #2 https://github.com/vivy-yi/awesome-agent-sandbox/pull/2 adds SandBase Harness to its Open Source table. Maintainer review is pending; no endorsement is claimed.

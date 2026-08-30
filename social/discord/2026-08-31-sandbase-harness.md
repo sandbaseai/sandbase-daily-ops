@@ -50,3 +50,5 @@ Another pending sandbox review: [Awesome Agent Sandbox PR #4](https://github.com
 Structured catalog review: [Awesome Agent Sandboxes PR #59](https://github.com/msyvr/awesome-agent-sandboxes/pull/59), adding SandBase Harness metadata and regenerated catalog outputs. Maintainer review is pending; isolation depends on the selected backend and deployment configuration.
 
 Security-focused runtime review: [Awesome Agent Sandboxing PR #2](https://github.com/IronSecCo/awesome-agent-sandboxing/pull/2), adding SandBase Harness to Self-hosted Agent Runtimes. Review is pending; it is not a security certification.
+
+Another pending self-hosted sandbox review: [Awesome Agent Sandbox PR #2](https://github.com/vivy-yi/awesome-agent-sandbox/pull/2), adding SandBase Harness to the Open Source table. Review only; no endorsement is claimed.
