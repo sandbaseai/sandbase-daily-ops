@@ -55,3 +55,5 @@ The [Awesome Agent Sandbox PR #2](https://github.com/vivy-yi/awesome-agent-sandb
 The broader [Awesome Sandbox PR #27](https://github.com/restyler/awesome-sandbox/pull/27) proposes a dedicated case study covering SandBase Harness's self-hosted runtime, tool governance, persistent sessions, audit/replay, and selectable sandbox providers. It remains pending maintainer review, with the backend-dependent isolation boundary stated explicitly.
 
 The structured [AI Agent Sandboxes PR #3](https://github.com/pjlsergeant/ai-sandboxes/pull/3) proposes an evidence-linked dataset entry for SandBase Harness. It records official source links, persistent sessions, MCP/tool governance, approvals, audit/replay, and selectable backends while preserving the distinction between local path isolation and backend-specific properties.
+
+For developer discovery, [Awesome AI Coding Tools PR #665](https://github.com/ai-for-developers/awesome-ai-coding-tools/pull/665) proposes adding SandBase Harness to its MCP Servers and Directories section. The entry links the canonical repository and describes the local stdio bridge and self-hosted runtime; directory review is pending.
