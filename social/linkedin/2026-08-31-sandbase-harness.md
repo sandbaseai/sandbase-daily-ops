@@ -35,3 +35,7 @@ The [Awesome Agent Runtimes PR #4](https://github.com/beejmaxx/awesome-agent-run
 The infrastructure-focused [Awesome Agent Infra PR #6](https://github.com/shenli/awesome-agent-infra/pull/6) adds SandBase Harness to its Runtime and Control Plane table. It remains pending maintainer review and is not an endorsement.
 
 The [Awesome AI Developer Stack PR #2](https://github.com/masrisystems/awesome-ai-developer-stack/pull/2) adds SandBase Harness to a broader MCP Servers directory table. It remains pending maintainer review and uses the official repository as its source.
+
+The current review queue also includes [Awesome CLI Coding Agents PR #314](https://github.com/bradAGI/awesome-cli-coding-agents/pull/314), [Awesome Agentic AI 中文 PR #213](https://github.com/WenyuChiou/awesome-agentic-ai-zh/pull/213), [Awesome Terminal Agents PR #5](https://github.com/EnigmaYYYY/awesome-terminal-agents/pull/5), [Awesome Agent Sandbox PR #2](https://github.com/yanmxa/awesome-agent-sandbox/pull/2), and [Awesome Agent Cortex PR #74](https://github.com/0xNyk/awesome-agent-cortex/pull/74). Each is a focused discovery request awaiting the destination maintainer's review.
+
+These listings should be read as community review paths, not endorsements or security certifications. Isolation remains dependent on the selected deployment backend.
