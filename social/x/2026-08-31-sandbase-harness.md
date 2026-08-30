@@ -12,4 +12,6 @@ DeepSeek Harness walkthrough: https://blog.sandbase.ai/deepseek-harness-develope
 
 Now publicly listed in Awesome AI Engineering: https://github.com/Eric-LLMs/Awesome-AI-Engineering/pull/4
 
+New directory submissions are under review: MeshKore (#14) https://meshkore.com/submit and Agent Switchboard PR #44 https://github.com/assafbar2/agentswitchboard.dev/pull/44
+
 Boundary: isolation depends on the selected deployment backend; this is not a universal microVM or kernel-isolation claim.
