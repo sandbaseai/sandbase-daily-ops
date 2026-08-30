@@ -18,3 +18,5 @@ DeepSeek Harness walkthroughs are now live in [English](https://blog.sandbase.ai
 Discovery updates (all pending external review): [Awesome MCP Collection](https://github.com/JustInCache/awesome-mcp-collection/pull/38), [Awesome Agent OS](https://github.com/cueos/awesome-agent-os/pull/2), and [Awesome X-Ops](https://github.com/xlabs-club/awesome-x-ops/pull/250). Inclusion requests are not endorsements or security certifications.
 
 One more public listing is confirmed in [Awesome AI Engineering](https://github.com/Eric-LLMs/Awesome-AI-Engineering/pull/4); it is an independent catalog entry, not a certification.
+
+New directory submissions awaiting review: [MeshKore #14](https://meshkore.com/submit) and [Agent Switchboard PR #44](https://github.com/assafbar2/agentswitchboard.dev/pull/44). These are discovery submissions only, not endorsements or security certifications.
