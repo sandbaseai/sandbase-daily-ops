@@ -57,3 +57,5 @@ Developer discovery: Awesome AI Coding Tools PR #665 https://github.com/ai-for-d
 New MCP directory review: Awesome MCP Collection PR #39 https://github.com/JustInCache/awesome-mcp-collection/pull/39 adds SandBase Harness to Development & Version Control. Review pending; source-linked reference only, not an endorsement or security certification.
 
 Additional MCP directory review: Awesome MCP issue #99 https://github.com/abordage/awesome-mcp/issues/99 requests SandBase Harness for Aggregators & Gateways. Review pending; source-linked reference only, not an endorsement or security certification.
+
+New gateway directory review: Awesome MCP Gateways PR #81 https://github.com/e2b-dev/awesome-mcp-gateways/pull/81 adds SandBase Harness to Open-source MCP Gateways. Maintainer review and CLA verification are pending; source-linked reference only, not an endorsement or security certification.

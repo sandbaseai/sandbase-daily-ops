@@ -3004,3 +3004,22 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Let the maintainer decide whether the entry fits the
   directory's gateway scope; do not retry the broken fork path.
+
+### 2026-08-31 — Awesome MCP Gateways review path
+
+- **Objective:** Add a high-relevance, criteria-based MCP gateway discovery
+  path.
+- **Action:** Opened [e2b-dev/awesome-mcp-gateways#81](https://github.com/e2b-dev/awesome-mcp-gateways/pull/81)
+  under Open-source MCP Gateways.
+- **Validation:** SandBase currently has 639 GitHub stars and 4 contributors,
+  meeting the destination's stated 200-star / 2-contributor threshold. The PR
+  changes one README line; GitHub reports `MERGEABLE`, while
+  `verification/cla-signed` has not concluded.
+- **Distribution channel:** GitHub gateway directory review; corresponding
+  social drafts are marked `NEEDS REVIEW` and require operator/account
+  authorization.
+- **Boundary:** No directory endorsement or security certification is claimed;
+  isolation remains deployment-dependent.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Let the destination maintainer resolve the CLA check and
+  review the factual one-line entry before any follow-up.
