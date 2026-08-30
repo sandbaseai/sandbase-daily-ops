@@ -2987,3 +2987,20 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Let the maintainer review the focused entry before any
   follow-up; avoid duplicate submissions to overlapping directories.
+
+### 2026-08-31 — Awesome MCP issue review path
+
+- **Objective:** Add a relevant MCP gateway/runtime discovery path without
+  creating a duplicate or invalid PR.
+- **Action:** Opened [abordage/awesome-mcp#99](https://github.com/abordage/awesome-mcp/issues/99)
+  using the repository's public issue workflow after the existing personal fork
+  was found to have no comparable upstream history.
+- **Validation:** The issue contains one factual entry for Aggregators &
+  Gateways and links the canonical repository; the request is pending review.
+- **Distribution channel:** GitHub directory issue; corresponding social drafts
+  are marked `NEEDS REVIEW` and require operator/account authorization.
+- **Boundary:** No directory endorsement or security certification is claimed;
+  isolation remains deployment-dependent.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Let the maintainer decide whether the entry fits the
+  directory's gateway scope; do not retry the broken fork path.

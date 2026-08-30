@@ -59,3 +59,5 @@ The structured [AI Agent Sandboxes PR #3](https://github.com/pjlsergeant/ai-sand
 For developer discovery, [Awesome AI Coding Tools PR #665](https://github.com/ai-for-developers/awesome-ai-coding-tools/pull/665) proposes adding SandBase Harness to its MCP Servers and Directories section. The entry links the canonical repository and describes the local stdio bridge and self-hosted runtime; directory review is pending.
 
 The new [Awesome MCP Collection PR #39](https://github.com/JustInCache/awesome-mcp-collection/pull/39) proposes SandBase Harness for its Development & Version Control category. The entry records the TypeScript/Apache-2.0 project, MCP bridge, sandboxed sessions, credentials, approvals, audit, and replay; it remains a maintainer review request rather than an endorsement or security certification.
+
+An additional review request is open in [Awesome MCP issue #99](https://github.com/abordage/awesome-mcp/issues/99), proposing SandBase Harness for Aggregators & Gateways. It is a factual, source-linked directory request and remains subject to maintainer review; it is not an endorsement or security certification.
