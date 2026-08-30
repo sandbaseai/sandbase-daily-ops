@@ -2970,3 +2970,20 @@ problem, exact implementation/PR or release URL, validation, distribution
 channel, direct star count before and after, observed referral or engagement,
 deployment state, result, and the next hypothesis. Never buy, trade, automate,
 or manufacture stars, followers, comments, issues, forks, or contributors.
+### 2026-08-31 — Awesome MCP Collection review path
+
+- **Objective:** Add a relevant, maintainer-controlled MCP directory review path
+  for SandBase Harness.
+- **Action:** Prepared a source-linked entry in the Development & Version
+  Control table and opened
+  [JustInCache/awesome-mcp-collection#39](https://github.com/JustInCache/awesome-mcp-collection/pull/39).
+- **Validation:** The PR contains one README table row, follows the required
+  name/repository/stars/language/description format, and GitHub reports it
+  `OPEN` and `MERGEABLE` with no reported checks at submission time.
+- **Distribution channel:** GitHub directory review; corresponding social
+  drafts are marked `NEEDS REVIEW` and require operator/account authorization.
+- **Boundary:** Directory inclusion is not endorsement or security
+  certification; isolation remains deployment-dependent.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Let the maintainer review the focused entry before any
+  follow-up; avoid duplicate submissions to overlapping directories.
