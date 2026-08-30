@@ -51,3 +51,5 @@ The structured [Awesome Agent Sandboxes PR #59](https://github.com/msyvr/awesome
 The security-focused [Awesome Agent Sandboxing PR #2](https://github.com/IronSecCo/awesome-agent-sandboxing/pull/2) proposes SandBase Harness for its Self-hosted Agent Runtimes section. It is a factual review request, not a security certification, and keeps the backend/deployment isolation boundary explicit.
 
 The [Awesome Agent Sandbox PR #2](https://github.com/vivy-yi/awesome-agent-sandbox/pull/2) is another focused community review request, adding SandBase Harness to a Self-hosted / Open Source sandbox table. It remains pending maintainer review and uses a concise, capability-oriented description.
+
+The broader [Awesome Sandbox PR #27](https://github.com/restyler/awesome-sandbox/pull/27) proposes a dedicated case study covering SandBase Harness's self-hosted runtime, tool governance, persistent sessions, audit/replay, and selectable sandbox providers. It remains pending maintainer review, with the backend-dependent isolation boundary stated explicitly.
