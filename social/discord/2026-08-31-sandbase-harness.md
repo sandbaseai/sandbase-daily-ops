@@ -40,3 +40,5 @@ Another pending directory request: [Awesome AI Developer Stack PR #2](https://gi
 More pending review paths: [Awesome CLI Coding Agents PR #314](https://github.com/bradAGI/awesome-cli-coding-agents/pull/314), [Awesome Agentic AI 中文 PR #213](https://github.com/WenyuChiou/awesome-agentic-ai-zh/pull/213), [Awesome Terminal Agents PR #5](https://github.com/EnigmaYYYY/awesome-terminal-agents/pull/5), [Awesome Agent Sandbox PR #2](https://github.com/yanmxa/awesome-agent-sandbox/pull/2), and [Awesome Agent Cortex PR #74](https://github.com/0xNyk/awesome-agent-cortex/pull/74). These are discovery submissions only, not endorsements or security certifications.
 
 Isolation depends on the selected deployment backend; no universal microVM or kernel-isolation claim is made.
+
+New infrastructure review path: [Awesome Agent Infrastructure PR #23](https://github.com/backblaze-labs/awesome-agent-infrastructure/pull/23), proposing SandBase Harness for Execution Sandboxes. Maintainer review is pending; this is not an endorsement or security certification.

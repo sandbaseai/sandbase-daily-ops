@@ -35,3 +35,5 @@ Another community review path: Awesome AI Developer Stack PR #2 https://github.c
 Further review paths: Awesome CLI Coding Agents PR #314 https://github.com/bradAGI/awesome-cli-coding-agents/pull/314, Awesome Agentic AI 中文 PR #213 https://github.com/WenyuChiou/awesome-agentic-ai-zh/pull/213, Awesome Terminal Agents PR #5 https://github.com/EnigmaYYYY/awesome-terminal-agents/pull/5, Awesome Agent Sandbox PR #2 https://github.com/yanmxa/awesome-agent-sandbox/pull/2, and Awesome Agent Cortex PR #74 https://github.com/0xNyk/awesome-agent-cortex/pull/74. All remain pending maintainer review.
 
 These are discovery submissions only; inclusion is not endorsement or security certification. Isolation depends on the selected deployment backend.
+
+New infrastructure review path: Awesome Agent Infrastructure PR #23 https://github.com/backblaze-labs/awesome-agent-infrastructure/pull/23 adds SandBase Harness to Execution Sandboxes. Maintainer review is pending; no listing, endorsement, or security certification is claimed.
