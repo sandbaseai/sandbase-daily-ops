@@ -39,3 +39,5 @@ These are discovery submissions only; inclusion is not endorsement or security c
 New infrastructure review path: Awesome Agent Infrastructure PR #23 https://github.com/backblaze-labs/awesome-agent-infrastructure/pull/23 adds SandBase Harness to Execution Sandboxes. Maintainer review is pending; no listing, endorsement, or security certification is claimed.
 
 Another sandbox review path: Awesome Agent Sandboxes PR #9 https://github.com/dloss/awesome-agent-sandboxes/pull/9 adds SandBase Harness to Containers. It is pending maintainer review; isolation remains backend/deployment dependent.
+
+New coding-agent sandbox review: Awesome Agent Sandbox PR #4 https://github.com/fishman/awesome-agent-sandbox adds SandBase Harness to its Container Sandboxes list and comparison table. Maintainer review is pending; no endorsement or security certification is claimed.
