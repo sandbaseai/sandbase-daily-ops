@@ -8,4 +8,6 @@ SandBase Harness v0.3.8 is a local-first TypeScript runtime with an MCP bridge, 
 
 Try the MCP setup: https://github.com/sandbaseai/sandbase-harness/blob/main/docs/installation.md
 
+DeepSeek Harness walkthrough: https://blog.sandbase.ai/deepseek-harness-developer-preview-2026/
+
 Boundary: isolation depends on the selected deployment backend; this is not a universal microVM or kernel-isolation claim.
