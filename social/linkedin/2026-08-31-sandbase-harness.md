@@ -45,3 +45,5 @@ An additional infrastructure-focused submission is [Awesome Agent Infrastructure
 The sandbox-focused [Awesome Agent Sandboxes PR #9](https://github.com/dloss/awesome-agent-sandboxes/pull/9) proposes a concise Containers entry for SandBase Harness. It remains a community review request, with the important qualification that isolation depends on the selected backend and deployment configuration.
 
 Another focused review request is [Awesome Agent Sandbox PR #4](https://github.com/fishman/awesome-agent-sandbox), which adds SandBase Harness to a coding-agent sandbox comparison table. The entry describes its local, Docker, Kubernetes, and worker options without implying identical isolation guarantees across deployments.
+
+The structured [Awesome Agent Sandboxes PR #59](https://github.com/msyvr/awesome-agent-sandboxes/pull/59) adds SandBase Harness metadata to a maintained sandbox landscape and regenerates its README, JSON, and reference outputs. It remains pending maintainer review; the entry explicitly separates local path isolation from backend-dependent deployment properties.

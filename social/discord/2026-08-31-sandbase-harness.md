@@ -46,3 +46,5 @@ New infrastructure review path: [Awesome Agent Infrastructure PR #23](https://gi
 Another pending sandbox submission: [Awesome Agent Sandboxes PR #9](https://github.com/dloss/awesome-agent-sandboxes/pull/9), adding SandBase Harness to Containers. This is a review request only; isolation depends on the selected backend and deployment configuration.
 
 Another pending sandbox review: [Awesome Agent Sandbox PR #4](https://github.com/fishman/awesome-agent-sandbox), adding SandBase Harness to Container Sandboxes and its comparison table. Review only; no endorsement or security certification is claimed.
+
+Structured catalog review: [Awesome Agent Sandboxes PR #59](https://github.com/msyvr/awesome-agent-sandboxes/pull/59), adding SandBase Harness metadata and regenerated catalog outputs. Maintainer review is pending; isolation depends on the selected backend and deployment configuration.
