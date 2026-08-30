@@ -19,3 +19,5 @@ Recent ecosystem review submissions include [Awesome MCP Collection](https://git
 An additional public listing is now live in [Awesome AI Engineering](https://github.com/Eric-LLMs/Awesome-AI-Engineering/pull/4), alongside the previously merged ecosystem entries.
 
 Two additional discovery submissions are now in review: [MeshKore](https://meshkore.com/submit), submission #14, and [Agent Switchboard PR #44](https://github.com/assafbar2/agentswitchboard.dev/pull/44). They are review-controlled and are not being presented as live listings or endorsements.
+
+The Hugging Face [agent-harness registry PR #2432](https://github.com/huggingface/huggingface.js/pull/2432) is also under review; it adds attribution metadata only and does not change runtime behavior.
