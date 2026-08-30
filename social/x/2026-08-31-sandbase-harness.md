@@ -25,3 +25,5 @@ Boundary: isolation depends on the selected deployment backend; this is not a un
 Additional community review paths: Collective AI Tools #332 https://github.com/hanishrao/collective-ai-tools/issues/332 and Awesome Agent Skills PR #79 https://github.com/philipbankier/awesome-agent-skills/pull/79. Both are pending maintainer review.
 
 Another pending listing request: Awesome MCP List PR #409 https://github.com/MobinX/awesome-mcp-list/pull/409. It adds SandBase Harness to AI Agents & Frameworks; review is pending.
+
+For a maturity-gated runtime catalog, Awesome Agent Runtimes PR #4 https://github.com/beejmaxx/awesome-agent-runtimes/pull/4 proposes SandBase Harness for its watchlist. Review is pending; no core-catalog inclusion is claimed.

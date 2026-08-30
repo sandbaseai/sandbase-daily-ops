@@ -29,3 +29,5 @@ Separately, [MCPVault now exposes a public auto-indexed listing](https://mcpvaul
 Two additional community review paths are now open: [Collective AI Tools Issue #332](https://github.com/hanishrao/collective-ai-tools/issues/332), submitted separately from the existing SandBase CLI entry, and [Awesome Agent Skills PR #79](https://github.com/philipbankier/awesome-agent-skills/pull/79), which adds the runtime to its MCP infrastructure section. Both remain pending maintainer review.
 
 The [Awesome MCP List PR #409](https://github.com/MobinX/awesome-mcp-list/pull/409) is another focused community listing request, adding SandBase Harness to AI Agents & Frameworks. It remains pending maintainer review and does not represent an endorsement.
+
+The [Awesome Agent Runtimes PR #4](https://github.com/beejmaxx/awesome-agent-runtimes/pull/4) takes a deliberately maturity-aware path: it proposes SandBase Harness for the project's watchlist, with the 180-day and 5,000-star gates recorded explicitly. Review is pending; no core-catalog inclusion is claimed.
