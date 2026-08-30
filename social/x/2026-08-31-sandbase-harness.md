@@ -51,3 +51,5 @@ Another self-hosted sandbox review: Awesome Agent Sandbox PR #2 https://github.c
 New guide review: Awesome Sandbox PR #27 https://github.com/restyler/awesome-sandbox adds a dedicated SandBase Harness runtime/sandbox case study. GitGuardian is still running and maintainer review is pending; no security certification is claimed.
 
 Evidence-dataset review: AI Agent Sandboxes PR #3 https://github.com/pjlsergeant/ai-sandboxes adds source-linked SandBase Harness metadata to a structured sandbox dataset. Maintainer review is pending; backend limits remain explicit.
+
+Developer discovery: Awesome AI Coding Tools PR #665 https://github.com/ai-for-developers/awesome-ai-coding-tools/pull/665 adds SandBase Harness to MCP Servers and Directories. Review pending; source-linked reference only.
