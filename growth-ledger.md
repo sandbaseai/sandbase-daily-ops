@@ -3196,3 +3196,12 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** Isolation and security posture depend on the selected deployment/backend; the entry makes no security certification or maintainer endorsement claim.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Let the directory maintainer review the focused entry; do not add scanner or certification claims that are not supported by the project sources.
+### 2026-08-31 — Awesome Agent Runtime Security review path
+
+- **Objective:** Reach a focused agent-sandbox/security directory with a source-backed multi-backend runtime entry.
+- **Action:** Opened [Awesome Agent Runtime Security PR #30](https://github.com/bureado/awesome-agent-runtime-security/pull/30) under Sandboxing & Isolation.
+- **Validation:** The one-row change links the canonical SandBase repository and describes sandboxed tools, credential boundaries, policy controls, persistent sessions, audit/replay, and MCP. GitHub reports `OPEN / MERGEABLE / CLEAN`; no automated checks are reported. A verification note is [recorded on the PR](https://github.com/bureado/awesome-agent-runtime-security/pull/30#issuecomment-5472531934).
+- **Distribution channel:** GitHub directory review; X, LinkedIn, and Discord drafts remain `NEEDS REVIEW` and require operator/account authorization.
+- **Boundary:** The directory's scope includes sandboxing/isolation, but SandBase does not claim universal microVM or kernel isolation; posture depends on the selected deployment/backend. No endorsement or security certification is claimed.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Let the maintainer review the focused entry and respond to the explicit deployment boundary.
