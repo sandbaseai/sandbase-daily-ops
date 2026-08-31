@@ -3346,6 +3346,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Let users test the guide and use reproducible feedback to improve the bridge; keep dsh-index separately pending its rebase.
 
+### 2026-08-31 — Surface merged handbook guide in project discovery
+
+- **Objective:** Make the verified DeepSeek Harness integration discoverable from the project's primary README.
+- **Action:** Moved handbook PR #291 from the pending-review list to the merged-results list in the English and Chinese READMEs, and pointed the Discussion entry to the merge update.
+- **Validation:** The handbook guide is merged at `425dd255`; the README update is pushed to SandBase Harness `main` as `ae440ec`.
+- **Distribution channel:** Project README and official GitHub Discussion; external social channels remain review-gated drafts.
+- **Boundary:** The handbook is a source-backed integration guide, not an endorsement or security certification; isolation remains backend/deployment dependent.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Use the merged guide as the canonical integration reference while dsh-index remains pending rebase.
+
 ### 2026-08-31 — Channel drafts corrected after handbook merge
 
 - **Objective:** Prevent review-gated outreach from carrying stale “handbook blocked” language after the integration was merged.
