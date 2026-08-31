@@ -3745,3 +3745,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** Only verified public references were added; Claw360 remains a separate manual candidate and was not represented as a listing.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Keep machine-readable discovery links current when a third-party listing materially changes status.
+
+### 2026-08-31 — Qualify PromptFrenzy directory candidate
+
+- **Objective:** Assess a new AI-tool directory without creating an inaccurate reciprocal-link claim.
+- **Action:** Reviewed the [PromptFrenzy AI Directory submission contract](https://www.promptfrenzy.com/for-llms), which accepts a no-auth API submission but requires a static dofollow badge on the tool's own durable domain.
+- **Validation:** SandBase Harness does not currently have a verified Harness-specific site page suitable for that badge; the GitHub repository and the broader SandBase platform site were not represented as the Harness product domain. The project record was updated in [02fdbb6](https://github.com/sandbaseai/sandbase-harness/commit/02fdbb6), with no badge or directory submission created.
+- **Distribution channel:** PromptFrenzy AI Tools Directory; this remains a qualification candidate, not a listing or endorsement.
+- **Boundary:** No unrelated website change, false reciprocal link, or unverified submission was made.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Revisit only if a canonical Harness-specific site page becomes available and the project owner approves the reciprocal badge.
