@@ -1,5 +1,14 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Verify Awesome Claude Code SandBase CLI suggestion
+
+- **Objective:** Make an existing SandBase CLI suggestion actionable with current source evidence, without creating a duplicate issue or PR.
+- **Action:** Posted a maintainer verification on [Awesome Claude Code issue #2657](https://github.com/hesreallyhim/awesome-claude-code/issues/2657#issuecomment-5476542147), linking the canonical CLI repository, v0.1.17 release, Apache-2.0 license, MCP Registry identity, and 25-client setup guide.
+- **Validation:** The target repository is active and unarchived with 53k+ stars; the suggestion had no prior comments. The note is a disclosed project-maintainer follow-up and leaves scope, ranking, endorsement, and security decisions to the list maintainer.
+- **Distribution channel:** Community-maintained Claude Code ecosystem list.
+- **Boundary:** No inclusion, ranking, endorsement, security certification, traffic, or causal referral is claimed.
+- **Next hypothesis:** Wait for maintainer review or requested changes; do not duplicate the existing suggestion.
+
 ## 2026-08-31 — Submit to Awesome LLM Agents infrastructure catalog
 
 - **Objective:** Add a source-backed SandBase Harness entry to an actively maintained LLM-agent framework catalog without duplicating existing submissions.
