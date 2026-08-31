@@ -4054,6 +4054,15 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** No public post, endorsement, security certification, traffic, or causal referral is claimed.
 - **Next hypothesis:** Await editorial approval and Kubernetes maintainer guidance before further outreach.
 
+### 2026-08-31 — Qualify MCPub and MCP Central submission paths
+
+- **Objective:** Evaluate newly discovered MCP directory routes without creating an invalid or duplicate listing.
+- **Action:** Reviewed the public mcpub submission requirements and MCP Central publisher documentation. No submission was made.
+- **Validation:** mcpub requires a public MCP endpoint and `/.well-known/mcp.json`; the current Harness bridge uses a user-owned API URL/API key and is not a public hosted endpoint. MCP Central documents itself as a mirror of the official MCP Registry, where the canonical Harness record already exists.
+- **Distribution channel:** Public MCP directory submission paths.
+- **Boundary:** This is a qualified skip, not a failed promotion. No endpoint, listing, endorsement, security certification, traffic, or causal referral was claimed.
+- **Next hypothesis:** Revisit mcpub only if the project intentionally publishes a public MCP endpoint; continue using the official Registry record for MCP Central discovery.
+
 ### 2026-08-31 — Correct Picrew harness verification link
 
 - **Objective:** Repair a stale source link in the canonical Picrew agent-harness submission.
