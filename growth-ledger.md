@@ -3976,6 +3976,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for Atlas editorial review or requested evidence before a follow-up.
 
+### 2026-08-31 — Submit Awesome Agent OS runtime entry
+
+- **Objective:** Add SandBase Harness to a curated directory organized around the runtime, sandbox, memory, and tool needs of working agents.
+- **Action:** Opened [Awesome Agent OS PR #3](https://github.com/cueos/awesome-agent-os/pull/3), adding one concise SandBase Harness entry to Runtimes with the canonical repository and current star count.
+- **Validation:** The destination has a one-project-per-PR contribution rule and a weekly link/archive/activity check. `git diff --check` passed; the local Python 3.10 environment could not run the destination checker because it imports `datetime.UTC`, while destination CI runs on `ubuntu-latest`.
+- **Distribution channel:** Curated agent-runtime and agent-infrastructure directory review path.
+- **Boundary:** The entry describes documented durable sessions, sandboxed tools, MCP, approvals, credentials, and replay; project affiliation is disclosed and no directory endorsement or security certification is claimed.
+- **Star count / referral:** The entry records 640 GitHub stars at submission time; no causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for destination CI and maintainer review or requested changes.
+
 ### 2026-08-31 — Publish Agent Plugin integration update
 
 - **Objective:** Give existing users a source-backed update about the new portable Agent Plugin integration and its review path.
