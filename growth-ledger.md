@@ -3605,3 +3605,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** The destination requires changes through its generator workflow; no generated files were edited and no duplicate PR was opened.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for the maintainer's review of PR #99; respond only to concrete requested changes.
+
+### 2026-08-31 — Verify dedicated Awesome Agent Harnesses listing
+
+- **Objective:** Keep a dedicated, high-relevance harness directory's existing SandBase submission current and easy for its maintainer to review.
+- **Action:** Revalidated [Awesome Agent Harnesses PR #5](https://github.com/Anandesh-Sharma/awesome-agent-harnesses/pull/5), which adds SandBase Harness to the coding-agent harness map, and posted a current v0.3.8 verification follow-up.
+- **Validation:** GitHub reports the PR `CLEAN` and `MERGEABLE`; CodeRabbit reports `SUCCESS`. The follow-up confirms Apache-2.0, persistent sessions, governed MCP/tool wiring, approvals, credentials, artifacts, audit/replay, and backend/deployment-dependent isolation ([comment](https://github.com/Anandesh-Sharma/awesome-agent-harnesses/pull/5#issuecomment-5473341966)). Project documentation was synchronized in [`f53364e`](https://github.com/sandbaseai/sandbase-harness/commit/f53364e).
+- **Distribution channel:** Dedicated community-maintained Agent Harness directory; no inclusion, endorsement, benchmark, security certification, traffic, or social-account publication is claimed.
+- **Boundary:** This is an existing maintainer-controlled PR; no duplicate PR or issue was opened.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for maintainer review and respond only to concrete requested changes.
