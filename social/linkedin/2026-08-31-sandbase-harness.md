@@ -65,3 +65,5 @@ An additional review request is open in [Awesome MCP issue #99](https://github.c
 The canonical [Awesome MCP Gateways PR #77](https://github.com/e2b-dev/awesome-mcp-gateways/pull/77) proposes SandBase Harness for the Open-source MCP Gateways list. GitHub reports the PR as mergeable; its CLA verification is awaiting a conclusion, so this remains a maintainer review request rather than an endorsement or security certification.
 
 The new [Awesome AI Harness PR #4](https://github.com/weiwei966/awesome-ai-harness/pull/4) proposes SandBase Harness for the SDKs & runtimes section. The entry explains session state, governed MCP tools, approvals, credential scoping, audit/replay, and selectable deployment backends; it remains a factual maintainer review request, not an endorsement or security certification.
+
+The new [Awesome AI Coding Sandboxes PR #15](https://github.com/fhiltscher/awesome-ai-coding-sandboxes/pull/15) proposes SandBase Harness for the directory's Adjacent runtimes section. It explicitly distinguishes a provider-backed runtime from a standalone isolation engine; review is pending and the entry is not a security certification.
