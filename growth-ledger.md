@@ -4046,6 +4046,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Continue monitoring for substantive destination changes before posting further follow-ups.
 
+### 2026-08-31 — Refresh Hugging Face attribution review
+
+- **Objective:** Help the Hugging Face agent-harness registry review the corrected SandBase attribution metadata without reintroducing a false identity signal.
+- **Action:** Posted a source-backed follow-up on [huggingface.js PR #2432](https://github.com/huggingface/huggingface.js/pull/2432), linking v0.3.8, the canonical installation guide, and the corrected handling of the data-directory variable.
+- **Validation:** GitHub reports the PR open and mergeable; Cursor Bugbot is successful. The follow-up confirms the standard identifiers, user-owned managed-agents API, and backend/deployment-dependent isolation boundary.
+- **Distribution channel:** Hugging Face agent-harness attribution registry review path.
+- **Boundary:** Project affiliation is disclosed; this is metadata attribution, not a hosted integration, directory endorsement, or security certification.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for Hugging Face maintainer review; no further comment until a requested change or status transition.
+
 ### 2026-08-31 — Publish Agent Plugin integration update
 
 - **Objective:** Give existing users a source-backed update about the new portable Agent Plugin integration and its review path.
