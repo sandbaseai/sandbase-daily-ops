@@ -1,5 +1,14 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Nominate SandBase Harness to Awesome MCP Registry
+
+- **Objective:** Submit the public MCP bridge to an active automated MCP registry using its documented nomination workflow.
+- **Action:** Posted maintainer verification on [Awesome MCP Registry issue #49](https://github.com/sunnamed434/awesome-mcp-registry/issues/49#issuecomment-5476721836), linking the current v0.3.8 release, official Registry identity, published image, and installation/configuration guide.
+- **Validation:** The nomination asks the registry to apply its normal automated evaluation and does not request a predetermined score. It discloses project affiliation and states the user-owned API requirement and backend/deployment-dependent isolation boundary.
+- **Distribution channel:** Awesome MCP Registry automated directory evaluation.
+- **Boundary:** No listing, score, ranking, endorsement, or security certification is claimed before the registry's evaluation.
+- **Next hypothesis:** Wait for the registry's automated result and curator policy; do not create duplicate nominations.
+
 ## 2026-08-31 — Submit MCPRadar independent scan request
 
 - **Objective:** Add an independent MCP security-scanning review path for the published SandBase Harness bridge.
