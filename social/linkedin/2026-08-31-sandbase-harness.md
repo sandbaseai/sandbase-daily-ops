@@ -54,6 +54,8 @@ The security-focused [Awesome Agent Sandboxing PR #2](https://github.com/IronSec
 
 The focused [Awesome Agent Runtime Security PR #30](https://github.com/bureado/awesome-agent-runtime-security/pull/30) proposes SandBase Harness for the directory's Sandboxing & Isolation section. It uses a single source-linked row, keeps the deployment/backend qualification explicit, and is currently clean and mergeable while maintainer review is pending. It is a discovery request, not an endorsement or security certification.
 
+The high-visibility [Awesome LLM Security PR #313](https://github.com/corca-ai/awesome-llm-security/pull/313) proposes SandBase Harness for the Tools section as a runtime-governance reference. It describes documented tool boundaries, credential scoping, approvals, audit/replay, and MCP without calling the project a vulnerability scanner; the PR is clean and mergeable while maintainer review is pending. Isolation remains deployment/backend dependent, and the submission is not an endorsement or security certification.
+
 The [Awesome Agent Sandbox PR #2](https://github.com/vivy-yi/awesome-agent-sandbox/pull/2) is another focused community review request, adding SandBase Harness to a Self-hosted / Open Source sandbox table. It remains pending maintainer review and uses a concise, capability-oriented description.
 
 The broader [Awesome Sandbox PR #27](https://github.com/restyler/awesome-sandbox/pull/27) proposes a dedicated case study covering SandBase Harness's self-hosted runtime, tool governance, persistent sessions, audit/replay, and selectable sandbox providers. It remains pending maintainer review, with the backend-dependent isolation boundary stated explicitly.

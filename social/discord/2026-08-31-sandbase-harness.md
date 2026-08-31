@@ -55,6 +55,8 @@ Security-focused runtime review: [Awesome Agent Sandboxing PR #2](https://github
 
 Runtime-security directory review: [Awesome Agent Runtime Security PR #30](https://github.com/bureado/awesome-agent-runtime-security/pull/30), adding SandBase Harness to Sandboxing & Isolation. Maintainer review is pending; this is not an endorsement or security certification, and isolation depends on the selected backend and deployment configuration.
 
+High-visibility security directory review: [Awesome LLM Security PR #313](https://github.com/corca-ai/awesome-llm-security/pull/313), adding SandBase Harness to Tools as a runtime-governance reference. Maintainer review is pending; this is not a vulnerability-scanner claim, endorsement, or security certification, and isolation depends on the selected backend and deployment configuration.
+
 Another pending self-hosted sandbox review: [Awesome Agent Sandbox PR #2](https://github.com/vivy-yi/awesome-agent-sandbox/pull/2), adding SandBase Harness to the Open Source table. Review only; no endorsement is claimed.
 
 New guide review: [Awesome Sandbox PR #27](https://github.com/restyler/awesome-sandbox/pull/27), adding a dedicated SandBase Harness runtime/sandbox case study. Maintainer review is pending; this is not a security certification.
