@@ -3906,6 +3906,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Monitor profile metadata and user feedback before another announcement.
 
+### 2026-08-31 — Reconcile superseded TensorBlock intake
+
+- **Objective:** Prevent the closed automated TensorBlock intake from being mistaken for the canonical MCP listing or installation source.
+- **Action:** Verified that TensorBlock issue #2067 and automated PR #2068 are closed as superseded by direct contributor PR #2060, which merged and exposes the public profile. The historical incomplete-install correction remains linked for context.
+- **Validation:** Updated the SandBase Harness README, Chinese README, and promotion ledger in [`d76e5dc`](https://github.com/sandbaseai/sandbase-harness/commit/d76e5dc), explicitly directing users to the merged entry/profile and away from the incomplete generated metadata. No duplicate retry, traffic, endorsement, or security-certification claim was made.
+- **Distribution channel:** TensorBlock MCP directory intake and public profile.
+- **Boundary:** This is a corrective status reconciliation, not a new submission; canonical PR #2060 remains the sole active TensorBlock listing path.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Monitor the merged profile and keep repository release/docs as the installation source of truth.
+
 ### 2026-08-31 — Verify two MCP security directory paths
 
 - **Objective:** Strengthen two open security/MCP directory PRs with current source evidence while preserving their review and certification boundaries.
