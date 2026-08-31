@@ -134,3 +134,11 @@ Latest public update: [official Discussion #116](https://github.com/sandbaseai/s
 Curator review: [AAE Agent Engineering issue #1](https://github.com/Lxcardoza993/AAE/issues/1) proposes SandBase Harness for the Agent Harness category. Placement is pending and is not an endorsement or security certification.
 
 Kubernetes integration scope review: [Agent Sandbox issue #1500](https://github.com/kubernetes-sigs/agent-sandbox/issues/1500) asks whether a source-linked SandBase Harness compatibility/deployment example belongs in the documentation. No existing adapter or inclusion is claimed; maintainer guidance is pending.
+
+Public discovery update:
+
+- [Awesome Agent Plugins](https://github.com/ZeroPointRepo/awesome-agent-plugins#the-catalog-verified-agent-plugins) now lists SandBase Harness under Dev & Coding.
+- [Awesome DeepSeek Harness Top 500 #3](https://github.com/weekend-project-space/awesome-deepseek-harness-top-500/issues/3) was confirmed merged.
+- [Blue-Whale-Harness #153](https://github.com/leenkcool/Blue-Whale-Harness/issues/153) confirms a generated public catalog/site entry as a sandbox Runtime/MCP integration.
+
+These are community listings, not endorsements or security certifications. SandBase Harness is self-hosted; isolation depends on the selected backend and deployment configuration. Verification is recorded in [Discussion #116](https://github.com/sandbaseai/sandbase-harness/discussions/116#discussioncomment-18216740).
