@@ -9,6 +9,15 @@
 - **Boundary:** This is a maintainer handoff, not an index publication, endorsement, security certification, traffic result, or causal referral. Sandboxing/isolation remains dependent on the selected backend and deployment configuration.
 - **Next hypothesis:** Wait for a maintainer with write access to update `chore/bump`; do not create a duplicate submission while the canonical PR remains open.
 
+## 2026-08-31 — Repair generated catalog submission
+
+- **Objective:** Make the high-visibility Best of Agent Harnesses submission conform to the destination's actual contribution workflow.
+- **Action:** Updated [PR #99](https://github.com/RyanAlberts/best-of-Agent-Harnesses/pull/99) so the SandBase Harness entry is defined in `scripts/generate.py` (`PROJECTS`, `META`, and `AXES`) and all generated outputs are regenerated. The direct `projects.yaml` edit was removed; the PR branch was rebased onto the current catalog `main`.
+- **Validation:** `python3 -m pytest tests/ -q` passed **54 tests** and `git diff --check` passed. The PR remains open and mergeable with maintainer review pending; no ranking, endorsement, security certification, or publication is claimed.
+- **Distribution channel:** Best of Agent Harnesses generated ranked catalog.
+- **Boundary:** The entry is factual and keeps the backend/deployment-dependent isolation boundary explicit. No social-account publication, traffic, or causal referral is claimed.
+- **Next hypothesis:** Wait for the catalog maintainer to review the generator-source change; do not create another submission for this repository.
+
 ## 2026-08-31 — Submit SandBase Harness to LocalAlternative
 
 - **Objective:** Add the project to a relevant local-first/self-hosted AI tool directory through its free review path.
