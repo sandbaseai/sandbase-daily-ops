@@ -3515,3 +3515,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** The update makes no Cline inclusion, endorsement, or security-certification claim. Docker reachability and effective isolation remain dependent on deployment/backend configuration.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Keep this as the single current Discussion update for the Cline path and wait for maintainer/user feedback before posting another update.
+
+### 2026-08-31 — Surface Cline update in project READMEs
+
+- **Objective:** Make the latest Cline MCP Marketplace submission discoverable from the canonical English and Chinese project homepages.
+- **Action:** Updated the pending-community-review sections in [`README.md`](https://github.com/sandbaseai/sandbase-harness/blob/main/README.md) and [`README.zh-CN.md`](https://github.com/sandbaseai/sandbase-harness/blob/main/README.zh-CN.md) to link issue #2364, the verification note, and the official bilingual Discussion update.
+- **Validation:** The source change was pushed to SandBase Harness `main` as [`4b7a3f6`](https://github.com/sandbaseai/sandbase-harness/commit/4b7a3f6); `git diff --check` passed and the repository remained clean.
+- **Distribution channel:** Canonical project README navigation; Cline review remains pending, and no inclusion, endorsement, security certification, or social-account publication is claimed.
+- **Boundary:** The README labels the item as under review and preserves the deployment/backend-dependent Docker reachability and isolation boundary.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Keep the homepage link current only when Cline's public review state changes; avoid repeating outreach while no material state change occurs.
