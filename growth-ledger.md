@@ -4000,6 +4000,15 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** This was duplicate cleanup, not a new listing or endorsement; no security certification, traffic, or causal referral is claimed.
 - **Next hypothesis:** Wait for #13240 maintainer/Glama review and avoid further duplicate submissions.
 
+### 2026-08-31 — Correct LuciferForge MCP Directory intake
+
+- **Objective:** Improve the accuracy of an open MCP-directory listing request before curator review.
+- **Action:** Added a source-correction comment to [LuciferForge MCP Directory Issue #52](https://github.com/LuciferForge/mcp-directory/issues/52#issuecomment-5475904310), replacing the missing `docs/mcp-server.md` path with the current installation, runtime, and MCP source links.
+- **Validation:** The issue was open with no prior comments; the current repository confirms the replacement paths, six documented bridge tools, and backend/deployment-dependent isolation boundary.
+- **Distribution channel:** LuciferForge MCP Directory, community-maintained MCP index.
+- **Boundary:** Project affiliation was disclosed. The issue remains curator-controlled; no inclusion, endorsement, security certification, traffic, or causal referral is claimed.
+- **Next hypothesis:** Wait for directory review or a request for a compliant listing format before further action.
+
 ### 2026-08-31 — Submit OpenModels MCP Registry entry
 
 - **Objective:** Add the SandBase Harness MCP bridge to a structured, source-backed MCP server registry.
