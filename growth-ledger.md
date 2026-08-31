@@ -3805,3 +3805,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** This was one substantive evidence refresh on an existing PR, with project affiliation disclosed and no duplicate submission.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for maintainer feedback or a status change before further follow-up.
+
+### 2026-08-31 — Submit SandBase Harness to DeepYard
+
+- **Objective:** Add a relevant OSS-first agent ecosystem directory to the promotion review funnel through its public submission path.
+- **Action:** Submitted SandBase Harness to [DeepYard's public tool-review form](https://deepyard.dev/submit) under `Frameworks & SDKs`, using the canonical repository URL and a source-backed description of the v0.3.8 runtime, MCP surface, sessions, governance, and backends.
+- **Validation:** The form returned an HTTP 302 redirect to `/thanks`; no public detail page or listing is claimed yet. The description disclosed project-maintainer affiliation and stated that isolation depends on the selected backend and deployment configuration. Project records were synchronized in [`84c689b`](https://github.com/sandbaseai/sandbase-harness/commit/84c689b).
+- **Distribution channel:** DeepYard AI Agent Ecosystem Directory; review is pending.
+- **Boundary:** No paid placement, ranking, endorsement, security certification, or causal referral is claimed. The separate Agents-OSS intake was not bypassed because it is protected by Cloudflare Turnstile.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Check for a public listing or curator response after the directory's stated review window before any follow-up.
