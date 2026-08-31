@@ -67,3 +67,5 @@ New sandbox directory review: Awesome AI Coding Sandboxes PR #15 https://github.
 Harness directory review: Awesome Agent Harnesses PR #2 https://github.com/bayshier/awesome-agent-harnesses/pull/2 adds SandBase Harness to Platforms & Frameworks. Review pending; source-linked reference only, not an endorsement or security certification.
 
 Agent systems review: Awesome Agent Harness PR #10 https://github.com/zients/awesome-agent-harness/pull/10 adds SandBase Harness to Agent Systems & Harnesses. Review pending; source-linked reference only, not an endorsement or security certification.
+
+AI agent directory review: Awesome AI Agents PR #184 https://github.com/NipunaRanasinghe/awesome-ai-agents/pull/184 adds SandBase Harness to Core Frameworks. Review pending; source-linked reference only, not an endorsement or security certification.

@@ -1,5 +1,11 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Awesome AI Agents review path
+
+- **Action:** Queued [NipunaRanasinghe Awesome AI Agents PR #184](https://github.com/NipunaRanasinghe/awesome-ai-agents/pull/184) in the X, LinkedIn, and Discord drafts.
+- **Evidence:** The directory is actively maintained, uses CI, asks for maintained AI-agent resources, and specifies a dynamic GitHub stars badge plus concise table description. The PR follows that format and includes current official project facts.
+- **Scope:** Discovery submission only. Review is pending; no directory endorsement or security certification is claimed, and isolation remains backend/deployment dependent. All social drafts remain `NEEDS REVIEW`.
+
 ## 2026-08-31 — Zients Awesome Agent Harness review path
 
 - **Action:** Queued [Zients Awesome Agent Harness PR #10](https://github.com/zients/awesome-agent-harness/pull/10) in the X, LinkedIn, and Discord drafts.
