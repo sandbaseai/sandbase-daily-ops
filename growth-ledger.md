@@ -3956,6 +3956,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** The entry records 640 GitHub stars at submission time; no causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
 
+### 2026-08-31 — Submit Nandanhegde MCP Directory request
+
+- **Objective:** Request free directory inclusion for SandBase Harness in an actively refreshed MCP server index.
+- **Action:** Opened [Nandanhegde MCP Directory issue #2](https://github.com/Nandanhegde1/mcp-directory/issues/2) through its documented GitHub submission workflow, using the `devtools` category and official release, installation, and MCP links.
+- **Validation:** The issue was created successfully and is open for review; the directory documents weekly review and automatic indexing of public MCP repositories. Project affiliation is disclosed. No inclusion, ranking, endorsement, security certification, traffic, or causal referral is claimed.
+- **Distribution channel:** Nandanhegde MCP Directory public submission workflow.
+- **Boundary:** The request is source-linked and qualifies isolation as backend/deployment-dependent; no hosted endpoint or universal security property is claimed.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for weekly review or maintainer questions before further follow-up.
+
 ### 2026-08-31 — Submit Protodex MCP Directory request
 
 - **Objective:** Request inclusion of SandBase Harness in a public MCP server index that accepts maintainer-facing server submissions.
