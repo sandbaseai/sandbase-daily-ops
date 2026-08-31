@@ -8,6 +8,8 @@ The weekly mcp-catalog ingest also lists SandBase Harness as a discovery candida
 
 Two additional source-backed review requests are now open: MCP-SecurityTools issue #5, which asks maintainers to evaluate the runtime under Agent Runtime Governance / MCP security controls, and Awesome Agent Harness issue #30, which proposes a factual runtime entry. Both remain pending target-maintainer review. The descriptions preserve the distinction between runtime governance and vulnerability scanning, and between deployment-dependent isolation and universal security guarantees.
 
+Awesome Agent Sandbox issue #3 adds another source-backed review path for a container-backed runtime reference. It remains a suggestion awaiting maintainer review; the project makes no microVM or universal-isolation claim.
+
 When an Agent moves from a chat window into an engineering workflow, the hard question is no longer only which model to call. Platform teams also need to know where sessions live, which tools may run, what needs approval, and how to reconstruct a failed run.
 
 SandBase Harness v0.3.8 is the open-source, local-first runtime for that layer. It provides persistent sessions, an MCP bridge, explicit approvals, credential scoping, audit/replay records, and replaceable Docker, Kubernetes, and worker execution backends.
