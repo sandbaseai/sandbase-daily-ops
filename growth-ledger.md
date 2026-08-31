@@ -4072,6 +4072,15 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** Current project evidence and owner authorization do not establish those requirements or authorize trademark/account transfer. No AAIF affiliation, application, endorsement, or acceptance is claimed.
 - **Next hypothesis:** Revisit only after the project owner supplies verified adoption, maintainer, contributor, governance, and legal-contact information.
 
+### 2026-08-31 — Prepare KillerSkills marketplace plugin artifact
+
+- **Objective:** Create a factual marketplace-compatible entry for the existing SandBase Agent Plugin bundle.
+- **Action:** Added [`agent-plugin/PLUGIN.md`](https://github.com/sandbaseai/sandbase-harness/blob/main/agent-plugin/PLUGIN.md) with purpose, six-tool capability mapping, install instructions, runtime compatibility, user-owned credentials, and backend-dependent isolation notes. Added the manifest link to the project README.
+- **Validation:** `npx vitest run tests/unit/mcp-distribution.test.ts` passed all 6 tests; `git diff --check` passed. KillerSkills accepts public `PLUGIN.md` URLs but requires GitHub sign-in for submission.
+- **Distribution channel:** KillerSkills marketplace submission flow.
+- **Boundary:** The artifact is prepared but not submitted; no marketplace listing, scan result, approval, endorsement, or security certification is claimed. No account authentication was bypassed.
+- **Next hypothesis:** An authorized project account can submit the public PLUGIN.md URL for the marketplace's own validation and safety scan.
+
 ### 2026-08-31 — Correct Picrew harness verification link
 
 - **Objective:** Repair a stale source link in the canonical Picrew agent-harness submission.
