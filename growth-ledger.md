@@ -3986,6 +3986,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for maintainer review on #39, #9, and #2; do not reopen the closed duplicates.
 
+### 2026-08-31 — Publish promotion status correction
+
+- **Objective:** Give users and contributors one current, source-backed view of the directory review queue after duplicate cleanup.
+- **Action:** Posted a bilingual status correction in [official Discussion #116](https://github.com/sandbaseai/sandbase-harness/discussions/116#discussioncomment-18214874), naming the four closed duplicates and their four retained review paths. The update also records the passing Hugging Face Cursor Bugbot check and the maintainer-pending Docker, OpenModels, and Picrew paths.
+- **Validation:** The comment was created successfully and links only to current public PRs and project documentation. It explicitly makes no inclusion, ranking, endorsement, or security-certification claim and preserves the user-owned API and backend/deployment-dependent isolation boundary.
+- **Distribution channel:** Official GitHub Discussion #116.
+- **Boundary:** This is a factual project-maintainer status update; no social-account publication or causal referral is claimed.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for external maintainers to review the retained PRs and update the checkpoint only when substantive state changes occur.
+
 ### 2026-08-31 — Submit AI Systems Atlas curation suggestion
 
 - **Objective:** Add a source-backed review path for SandBase Harness to a curated operational AI systems atlas.
