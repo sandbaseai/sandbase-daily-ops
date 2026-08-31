@@ -3356,6 +3356,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Use the merged guide as the canonical integration reference while dsh-index remains pending rebase.
 
+### 2026-08-31 — Official Discussion Chinese update
+
+- **Objective:** Make the verified v0.3.8 integration path accessible to Chinese-speaking users.
+- **Action:** Published a concise [Chinese update in official Discussion #116](https://github.com/sandbaseai/sandbase-harness/discussions/116#discussioncomment-18212016), linking the merged handbook guide, current installation documentation, and dsh-index review state.
+- **Validation:** The comment is public and includes concrete feedback prompts for MCP schemas, Session lifecycle, audit/replay, and backend differences.
+- **Distribution channel:** Official GitHub Discussion; X, LinkedIn, and Discord remain review-gated drafts with no account publication claimed.
+- **Boundary:** The update preserves the deployment/backend-dependent isolation qualification and makes no security-certification or upstream-endorsement claim.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Use bilingual feedback from the Discussion to prioritize documentation and integration fixes.
+
 ### 2026-08-31 — Channel drafts corrected after handbook merge
 
 - **Objective:** Prevent review-gated outreach from carrying stale “handbook blocked” language after the integration was merged.
