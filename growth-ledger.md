@@ -3785,3 +3785,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** Existing same-repository duplicate PRs were not created; project affiliation was disclosed and unsupported universal-isolation claims were excluded.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for maintainer feedback or public status changes before another follow-up.
+
+### 2026-08-31 — Add AgentIndex and MCP preset reviews
+
+- **Objective:** Extend factual promotion to an agent runtime index and a focused MCP integration catalog.
+- **Action:** Posted maintainer verification comments on [AgentIndex issue #3](https://github.com/agentidx/agentindex/issues/3#issuecomment-5473643330) and [Agent Harness MCP preset issue #47](https://github.com/madebywild/agent-harness/issues/47#issuecomment-5473643364). The comments link the official v0.3.8 release, installation/MCP sources, runtime governance details, and the published bridge image where relevant.
+- **Validation:** Both issues were open without prior comments at review time. The project README and promotion history were synchronized in [`cafce66`](https://github.com/sandbaseai/sandbase-harness/commit/cafce66). The MCP preset note records the running SandBase API requirement and backend/deployment-dependent isolation boundary. No inclusion, endorsement, ranking, benchmark result, or security certification is claimed.
+- **Distribution channel:** Community runtime index and MCP integration/preset catalog; both remain maintainer-controlled review paths.
+- **Boundary:** Project affiliation was disclosed, claims are source-backed, and no duplicate PR or universal isolation claim was created.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for maintainer responses or public status changes before posting another follow-up.
