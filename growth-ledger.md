@@ -3956,6 +3956,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** The entry records 640 GitHub stars at submission time; no causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
 
+### 2026-08-31 — Submit Chinese Awesome AI Agents directory entry
+
+- **Objective:** Add SandBase Harness to a Chinese-language AI-agent navigation project with a structured MCP catalog.
+- **Action:** Opened [中文 Awesome AI Agents PR #13](https://github.com/Uky0Yang/awesome-ai-agents-zh/pull/13), adding a separate Harness record to `data/tools.json` under `MCP 生态` and regenerating the README.
+- **Validation:** The directory's `validate_catalog.py` passed with `Validated 23 projects.` and `git diff --check` passed. Project affiliation is disclosed. No inclusion, ranking, endorsement, security certification, traffic, or causal referral is claimed.
+- **Distribution channel:** Chinese-language community AI-agent and MCP directory review path.
+- **Boundary:** The submission distinguishes Harness from the existing SandBase CLI entry and qualifies isolation as backend/deployment-dependent.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
+
 ### 2026-08-31 — Submit Awesome AI Agents directory entry
 
 - **Objective:** Add SandBase Harness to a maintained AI-agent resource list with an Agent Tools category.
