@@ -3946,6 +3946,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Monitor the submission for approval and a public listing/profile URL.
 
+### 2026-08-31 — Reconcile Awesome Agentic AI Chinese catalog merge
+
+- **Objective:** Record the authoritative merged outcome of the trilingual Agentic AI catalog submission and retire the superseded PR reference.
+- **Action:** Verified that [Awesome Agentic AI 中文 PR #228](https://github.com/WenyuChiou/awesome-agentic-ai-zh/pull/228) merged at `1cb0406619ad0d8ec756bccc900d3ae8c6d5196b` as the conflict-free integration for #213, resolving issue #210.
+- **Validation:** The merged PR reports 1,036 script tests, 31 targeted Stage 7 tests, mirror/locale/docs-tree/MkDocs checks, and independent code-reviewer approval. Project records were synchronized in [`56b0387`](https://github.com/sandbaseai/sandbase-harness/commit/56b0387). No ranking, endorsement, security certification, traffic, or causal referral is claimed.
+- **Distribution channel:** Awesome Agentic AI 中文 trilingual learning/resource catalog.
+- **Boundary:** PR #213 is treated as superseded; the merged #228 path is canonical, and no duplicate submission was created.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Monitor the merged trilingual entry for source/version drift.
+
 ### 2026-08-31 — Verify two MCP security directory paths
 
 - **Objective:** Strengthen two open security/MCP directory PRs with current source evidence while preserving their review and certification boundaries.
