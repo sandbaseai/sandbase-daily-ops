@@ -3465,3 +3465,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** This is a disclosed self-submission and factual discovery request, not directory inclusion, endorsement, or security certification; isolation remains backend/deployment dependent.
 - **Star count / referral:** Directory had approximately 2,000 stars at action; no causal Star increase or referral is claimed.
 - **Next hypothesis:** Let the maintainer review the existing single-line PR; do not duplicate the submission or repeat the note without a material change.
+
+### 2026-08-31 — Agent security ecosystem verification
+
+- **Objective:** Help a security-focused agent directory review the existing SandBase Harness runtime entry with an accurate scope.
+- **Action:** Posted a source-backed verification note on [ProjectRecon Awesome AI Agents Security PR #107](https://github.com/ProjectRecon/awesome-ai-agents-security/pull/107), linking the installation guide, sandbox-backend reference, and v0.3.8 release.
+- **Validation:** The PR is a focused README change and currently `CLEAN`; the public [follow-up](https://github.com/ProjectRecon/awesome-ai-agents-security/pull/107#issuecomment-5473074958) limits the description to runtime governance, tool admission/approvals, credential scoping, sandboxed sessions, audit, and replay.
+- **Distribution channel:** Security-ecosystem directory review; X, LinkedIn, and Discord remain review-gated drafts with no social-account publication claimed.
+- **Boundary:** The note explicitly rejects a vulnerability-scanner, universal-isolation, endorsement, or security-certification claim; isolation remains backend/deployment dependent.
+- **Star count / referral:** Directory had 68 stars at action; no causal Star increase or referral is claimed.
+- **Next hypothesis:** Let the maintainer review the existing entry and avoid repeating the security-scope clarification without a material change.
