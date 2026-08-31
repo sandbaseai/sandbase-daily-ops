@@ -1,5 +1,14 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Propose SandBase Harness to AAE
+
+- **Objective:** Submit a source-backed Agent Harness candidate to an opinionated Agent Engineering knowledge base.
+- **Action:** Posted maintainer verification on [AAE issue #1](https://github.com/Lxcardoza993/AAE/issues/1#issuecomment-5476780849), linking the Apache-2.0 source, v0.3.8 release, usage/architecture guide, MCP metadata, and DeepSeek integration example.
+- **Validation:** The comment leaves the category limit and curator placement to AAE, restricts the description to documented runtime behavior, discloses project affiliation, and qualifies isolation by backend/deployment configuration.
+- **Distribution channel:** AAE Agent Engineering knowledge base (EN/中文).
+- **Boundary:** No recommendation, ranking, endorsement, or security certification is claimed.
+- **Next hypothesis:** Wait for curator review; do not open a PR unless requested by the maintainer.
+
 ## 2026-08-31 — Submit conservative Agent Harness matrix evidence
 
 - **Objective:** Support a high-relevance Agent Harness survey proposal with verifiable, non-inflated capability labels.
