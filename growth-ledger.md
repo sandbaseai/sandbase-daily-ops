@@ -1,5 +1,11 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Awesome Agent Harnesses review path
+
+- **Action:** Queued the existing canonical [Bayshier Awesome Agent Harnesses PR #2](https://github.com/bayshier/awesome-agent-harnesses/pull/2) in the X, LinkedIn, and Discord drafts.
+- **Evidence:** The destination is an active MIT-licensed curated list with contribution rules requiring current star counts and factual one-line positioning. PR #2 is open and mergeable; duplicate PR #3 was closed to avoid duplicate maintainer work.
+- **Scope:** Discovery submission only. Review is pending; the entry is not an endorsement or security certification, and isolation remains deployment/backend dependent.
+
 This is the canonical, append-only record for useful maintenance and compliant
 developer promotion across the SandBase public repositories in scope:
 
