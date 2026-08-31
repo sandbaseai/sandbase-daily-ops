@@ -1,5 +1,14 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Scope-check Kubernetes Agent Sandbox integration
+
+- **Objective:** Explore a technically meaningful Kubernetes ecosystem integration without claiming an existing adapter or security equivalence.
+- **Action:** Posted a concrete integration-boundary follow-up on [Kubernetes SIG Agent Sandbox issue #1500](https://github.com/kubernetes-sigs/agent-sandbox/issues/1500#issuecomment-5476838095), linking the current Harness release, Kubernetes installation path, MCP configuration, and Registry identity.
+- **Validation:** The proposal separates Agent Sandbox's workload lifecycle/orchestration from Harness's agent-session governance and execution-plane integration, and suggests a documentation/example-only path. Project affiliation is disclosed.
+- **Distribution channel:** Kubernetes SIG Agent Sandbox integration discussion.
+- **Boundary:** No first-party adapter, compatibility certification, inclusion, endorsement, or security certification is claimed; isolation depends on the selected Kubernetes runtime and deployment configuration.
+- **Next hypothesis:** Wait for SIG maintainer scope guidance before preparing any example or PR.
+
 ## 2026-08-31 — Reconcile Awesome MCP Registry automation
 
 - **Objective:** Publish an accurate status update after the registry nomination workflow ran.
