@@ -1,5 +1,15 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Recheck agent-directory and MCP discovery queues
+
+- **Objective:** Continue promotion while avoiding duplicate submissions or repeated maintainer nudges.
+- **Action:** Rechecked [Awesome AI Agents PR #57](https://github.com/aloth/awesome-ai-agents/pull/57), which remains open for maintainer review and already contains source verification from the project maintainer. Rechecked [MCPFly](https://mcpserver.so/submit) and [MCP.Directory](https://mcp.directory/submit): both submissions remain pending and neither currently exposes a public SandBase listing through its search API. No duplicate submission or follow-up comment was created.
+- **Validation:** The destination PR and both directory queues were queried on 2026-08-31. The MCPFly API still reports the original submission as pending approval; MCP.Directory still reports the repository as already submitted. Project affiliation and current source links are present in the existing PR/ledger records.
+- **Distribution channel:** Community-maintained AI-agent directory review and MCP discovery queues.
+- **Boundary:** Pending review is not inclusion, ranking, endorsement, security certification, traffic, or causal referral. Sandboxing/isolation remains dependent on the selected backend and deployment configuration.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for maintainer decisions or a substantive status change before another follow-up.
+
 ## 2026-08-31 — E2B Awesome AI SDKs review path
 
 - **Action:** Queued the existing canonical [E2B Awesome AI SDKs PR #344](https://github.com/e2b-dev/awesome-ai-sdks/pull/344) in the X, LinkedIn, and Discord drafts.
