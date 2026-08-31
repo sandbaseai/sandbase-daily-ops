@@ -12,6 +12,8 @@ The important qualification is deployment-specific: Docker, Kubernetes, and work
 
 Read the installation guide and source-backed release details: https://github.com/sandbaseai/sandbase-harness/blob/main/docs/installation.md
 
+The portable Agent Plugin is publicly source-indexed at https://agent-plugins.directory/sandbaseai/sandbase-harness. The repository's plugin metadata is now v0.1.1; the directory is a discovery catalog only, and its displayed revision is awaiting refresh.
+
 For a practical DeepSeek Harness walkthrough, the newly refreshed [English article](https://blog.sandbase.ai/deepseek-harness-developer-preview-2026/) and [Chinese article](https://blog.sandbase.ai/zh-CN/deepseek-harness-developer-preview-2026/) now use the pinned v0.3.8 integration and current installation links. The pages are live after a successful production deployment.
 
 Recent ecosystem review submissions include [Awesome MCP Collection](https://github.com/JustInCache/awesome-mcp-collection/pull/39), [Awesome Agent OS](https://github.com/cueos/awesome-agent-os/pull/3), and [Awesome X-Ops](https://github.com/xlabs-club/awesome-x-ops/pull/250). These are pending maintainer review, not endorsements.

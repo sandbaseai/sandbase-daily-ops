@@ -8,6 +8,8 @@ SandBase Harness v0.3.8 is a local-first TypeScript runtime with an MCP bridge, 
 
 Try the MCP setup: https://github.com/sandbaseai/sandbase-harness/blob/main/docs/installation.md
 
+The portable Agent Plugin is also source-indexed at https://agent-plugins.directory/sandbaseai/sandbase-harness; the repository now ships plugin metadata v0.1.1. The directory page is a discovery surface, not a security endorsement, and its displayed source revision is awaiting refresh.
+
 DeepSeek Harness walkthrough: https://blog.sandbase.ai/deepseek-harness-developer-preview-2026/
 
 Now publicly listed in Awesome AI Engineering: https://github.com/Eric-LLMs/Awesome-AI-Engineering/pull/4
