@@ -4740,3 +4740,11 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** The submission is maintainer-controlled and source-backed; no duplicate SandBase entry was present before the PR.
 - **Star count / referral:** The entry records 640 GitHub stars at submission time; no causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
+### 2026-08-31 — Submit MCP Find community directory entry
+
+- **Objective:** Expand source-linked MCP discovery for SandBase Harness through a maintainer-reviewed, GitHub-native directory workflow.
+- **Action:** Confirmed the existing fork branch already carried [MCP Find PR #171](https://github.com/MCPFind/mcp-find/pull/171), adding SandBase Harness to `community-servers.yml` with the published `ghcr.io/sandbaseai/sandbase-harness-mcp:0.3.8` image and `devtools` category.
+- **Validation:** The PR is open and `MERGEABLE`; the YAML parses and `git diff --check` passes. Its description links the canonical repository and states that isolation depends on the selected backend and deployment configuration.
+- **Distribution channel:** [MCP Find](https://www.mcpfind.org/), a community MCP directory whose documented flow uses a GitHub pull request and maintainer review.
+- **Boundary:** This is a pending directory submission, not an inclusion, endorsement, ranking, security certification, or traffic guarantee.
+- **Next hypothesis:** Wait for maintainer checks and review on #171; do not create another duplicate submission.
