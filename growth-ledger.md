@@ -3616,6 +3616,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for maintainer review and respond only to concrete requested changes.
 
+### 2026-08-31 — Refresh AutoJunjie Agent Harness intake
+
+- **Objective:** Make an existing curator intake easier to verify without opening a duplicate pull request.
+- **Action:** Updated [AutoJunjie Awesome Agent Harness issue #59](https://github.com/AutoJunjie/awesome-agent-harness/issues/59) with current v0.3.8, Apache-2.0, installation, API, DeepSeek example, and GHCR MCP bridge evidence.
+- **Validation:** The follow-up records persistent sessions, MCP/tool governance, approvals, credentials, memory, artifacts, audit/replay, and the backend/deployment-dependent isolation boundary ([comment](https://github.com/AutoJunjie/awesome-agent-harness/issues/59#issuecomment-5473368720)). Project README and promotion history were synchronized in [`1f811fa`](https://github.com/sandbaseai/sandbase-harness/commit/1f811fa); curator review remains pending.
+- **Distribution channel:** Community-maintained Agent Harness list; no inclusion, endorsement, benchmark, security certification, traffic, or social-account publication is claimed.
+- **Boundary:** This is a maintainer-controlled issue intake; no duplicate PR or issue was opened.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for curator response and adjust only to concrete taxonomy or wording feedback.
+
 ### 2026-08-31 — Refresh Agent Harness timeline submission
 
 - **Objective:** Keep the existing SandBase Harness submission in a dedicated agent-harness reference list factually current.
