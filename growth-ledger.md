@@ -4027,6 +4027,15 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** This is a substantive correction to an existing submission, not a duplicate PR. Project affiliation and backend/deployment-dependent isolation remain disclosed; no inclusion, endorsement, security certification, traffic, or causal referral is claimed.
 - **Next hypothesis:** Wait for maintainer review or requested changes.
 
+### 2026-08-31 — Correct three MCP-directory intake links
+
+- **Objective:** Remove stale MCP documentation references from three open, unanswered directory requests.
+- **Action:** Added explicit source corrections to [Nandanhegde #2](https://github.com/Nandanhegde1/mcp-directory/issues/2#issuecomment-5475989933), [Collective AI Tools #332](https://github.com/hanishrao/collective-ai-tools/issues/332#issuecomment-5475990013), and [MyMCPTools #8](https://github.com/shibley/mymcptools/issues/8#issuecomment-5475989984), pointing to the current MCP and runtime installation guides.
+- **Validation:** All three issues were open with no prior maintainer comments; the old path is absent and the replacement paths are present in the canonical repository. Release v0.3.8 and backend/deployment-dependent isolation wording are retained.
+- **Distribution channel:** Community-maintained MCP directory intake paths.
+- **Boundary:** Project affiliation was disclosed. No duplicate PRs, inclusion, endorsement, security certification, traffic, or causal referral is claimed.
+- **Next hypothesis:** Wait for curator responses before opening any PR.
+
 ### 2026-08-31 — Correct Picrew harness verification link
 
 - **Objective:** Repair a stale source link in the canonical Picrew agent-harness submission.
