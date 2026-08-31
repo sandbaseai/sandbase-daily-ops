@@ -3455,3 +3455,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** The submission is a factual self-submission, not Pipedream inclusion, endorsement, or security certification; isolation remains backend/deployment dependent.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Let the directory maintainer review the single existing PR; do not open a duplicate or repeat the verification note without a material change.
+
+### 2026-08-31 — High-visibility coding-tools directory verification
+
+- **Objective:** Make the existing Awesome AI Coding Tools submission straightforward for its maintainers to validate.
+- **Action:** Posted a source-backed verification note on [PR #665](https://github.com/ai-for-developers/awesome-ai-coding-tools/pull/665), linking the current installation guide, official MCP Registry identity, pinned GHCR image, and self-hosted API requirement.
+- **Validation:** The repository has approximately 2,000 stars at this checkpoint; GitHub reports the focused one-line PR as `CLEAN` with no reported checks, and the [public follow-up](https://github.com/ai-for-developers/awesome-ai-coding-tools/pull/665#issuecomment-5473061822) records the evidence and disclosure.
+- **Distribution channel:** Maintainer-reviewed AI coding tools directory; X, LinkedIn, and Discord remain review-gated drafts with no social-account publication claimed.
+- **Boundary:** This is a disclosed self-submission and factual discovery request, not directory inclusion, endorsement, or security certification; isolation remains backend/deployment dependent.
+- **Star count / referral:** Directory had approximately 2,000 stars at action; no causal Star increase or referral is claimed.
+- **Next hypothesis:** Let the maintainer review the existing single-line PR; do not duplicate the submission or repeat the note without a material change.
