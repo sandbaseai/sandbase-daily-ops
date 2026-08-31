@@ -1,5 +1,14 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Verify Awesome MCP second-category proposal
+
+- **Objective:** Make a distinct category proposal actionable while avoiding a duplicate submission for an already merged repository entry.
+- **Action:** Posted a maintainer verification on [Awesome MCP issue #99](https://github.com/abordage/awesome-mcp/issues/99#issuecomment-5476628773), linking the current v0.3.8 source, installation guide, bridge image, six-tool MCP surface, and runtime operations.
+- **Validation:** The repository already contains the merged [PR #95](https://github.com/abordage/awesome-mcp/pull/95) under Sandboxing & Execution; issue #99 targets the separate Gateways & Proxies section. The comment asks the list maintainers to decide whether cross-category inclusion is allowed and discloses project affiliation.
+- **Distribution channel:** Community-maintained Awesome MCP list.
+- **Boundary:** This is a category review request, not inclusion, ranking, endorsement, security certification, traffic, or causal referral. Isolation remains dependent on the selected backend and deployment configuration.
+- **Next hypothesis:** Wait for the maintainer's category decision; do not open a duplicate PR.
+
 ## 2026-08-31 — Publish official promotion checkpoint
 
 - **Objective:** Make material promotion progress discoverable from the project's official discussion without repeating unchanged review nudges.
