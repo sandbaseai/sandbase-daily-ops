@@ -15,7 +15,7 @@ Feedback and deployment reports: https://github.com/sandbaseai/sandbase-harness/
 
 DeepSeek Harness walkthroughs are now live in [English](https://blog.sandbase.ai/deepseek-harness-developer-preview-2026/) and [中文](https://blog.sandbase.ai/zh-CN/deepseek-harness-developer-preview-2026/), both refreshed for the pinned SandBase Harness v0.3.8 integration.
 
-Discovery updates (all pending external review): [Awesome MCP Collection](https://github.com/JustInCache/awesome-mcp-collection/pull/38), [Awesome Agent OS](https://github.com/cueos/awesome-agent-os/pull/2), and [Awesome X-Ops](https://github.com/xlabs-club/awesome-x-ops/pull/250). Inclusion requests are not endorsements or security certifications.
+Discovery updates (all pending external review): [Awesome MCP Collection](https://github.com/JustInCache/awesome-mcp-collection/pull/39), [Awesome Agent OS](https://github.com/cueos/awesome-agent-os/pull/3), and [Awesome X-Ops](https://github.com/xlabs-club/awesome-x-ops/pull/250). Inclusion requests are not endorsements or security certifications.
 
 One more public listing is confirmed in [Awesome AI Engineering](https://github.com/Eric-LLMs/Awesome-AI-Engineering/pull/4); it is an independent catalog entry, not a certification.
 
@@ -41,7 +41,7 @@ Infrastructure review path: [Awesome Agent Infra PR #6](https://github.com/shenl
 
 Another pending directory request: [Awesome AI Developer Stack PR #2](https://github.com/masrisystems/awesome-ai-developer-stack/pull/2), adding SandBase Harness to its MCP Servers table. This is a review request only.
 
-More pending review paths: [Awesome CLI Coding Agents PR #314](https://github.com/bradAGI/awesome-cli-coding-agents/pull/314), [Awesome Agentic AI 中文 PR #213](https://github.com/WenyuChiou/awesome-agentic-ai-zh/pull/213), [Awesome Terminal Agents PR #5](https://github.com/EnigmaYYYY/awesome-terminal-agents/pull/5), [Awesome Agent Sandbox PR #2](https://github.com/yanmxa/awesome-agent-sandbox/pull/2), and [Awesome Agent Cortex PR #74](https://github.com/0xNyk/awesome-agent-cortex/pull/74). These are discovery submissions only, not endorsements or security certifications.
+More pending review paths: [Awesome CLI Coding Agents PR #314](https://github.com/bradAGI/awesome-cli-coding-agents/pull/314), [Awesome Terminal Agents PR #5](https://github.com/EnigmaYYYY/awesome-terminal-agents/pull/5), and [Awesome Agent Cortex PR #74](https://github.com/0xNyk/awesome-agent-cortex/pull/74). These are discovery submissions only; the earlier Wenyu #213 was superseded by merged [#228](https://github.com/WenyuChiou/awesome-agentic-ai-zh/pull/228).
 
 Isolation depends on the selected deployment backend; no universal microVM or kernel-isolation claim is made.
 
@@ -74,6 +74,10 @@ MCP directory maintenance: older duplicate [PR #13188](https://github.com/punkpe
 DeepSeek Harness integration update: handbook [PR #291](https://github.com/sandbaseai/deepseek-harness-handbook/pull/291) is merged with the v0.3.8 bridge guide after catalog cleanup [PR #292](https://github.com/sandbaseai/deepseek-harness-handbook/pull/292). DSH index update: [Sunrisepeak dsh-index PR #43](https://github.com/Sunrisepeak/dsh-index/pull/43) updates the SandBase Harness descriptor to v0.3.8. Build and boot checks passed at submission, but the PR is currently dirty and needs a rebase; publication is not claimed.
 
 Another pending self-hosted sandbox review: [Awesome Agent Sandbox PR #2](https://github.com/vivy-yi/awesome-agent-sandbox/pull/2), adding SandBase Harness to the Open Source table. Review only; no endorsement is claimed.
+
+Approved sandbox review: [Yanmxa Awesome Agent Sandbox PR #2](https://github.com/yanmxa/awesome-agent-sandbox/pull/2) is CLEAN/MERGEABLE with Sourcery and GitGuardian passing; target-maintainer merge is pending. This is not an endorsement or security certification.
+
+AgentFirst directory [PR #46](https://github.com/bradvin/agentfirst.directory/pull/46) has its submitter/media metadata verified and its enrich check passing; maintainer review remains pending.
 
 New guide review: [Awesome Sandbox PR #27](https://github.com/restyler/awesome-sandbox/pull/27), adding a dedicated SandBase Harness runtime/sandbox case study. Maintainer review is pending; this is not a security certification.
 

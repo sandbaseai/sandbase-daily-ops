@@ -14,7 +14,7 @@ Read the installation guide and source-backed release details: https://github.co
 
 For a practical DeepSeek Harness walkthrough, the newly refreshed [English article](https://blog.sandbase.ai/deepseek-harness-developer-preview-2026/) and [Chinese article](https://blog.sandbase.ai/zh-CN/deepseek-harness-developer-preview-2026/) now use the pinned v0.3.8 integration and current installation links. The pages are live after a successful production deployment.
 
-Recent ecosystem review submissions include [Awesome MCP Collection](https://github.com/JustInCache/awesome-mcp-collection/pull/38), [Awesome Agent OS](https://github.com/cueos/awesome-agent-os/pull/2), and [Awesome X-Ops](https://github.com/xlabs-club/awesome-x-ops/pull/250). These are pending maintainer review, not endorsements.
+Recent ecosystem review submissions include [Awesome MCP Collection](https://github.com/JustInCache/awesome-mcp-collection/pull/39), [Awesome Agent OS](https://github.com/cueos/awesome-agent-os/pull/3), and [Awesome X-Ops](https://github.com/xlabs-club/awesome-x-ops/pull/250). These are pending maintainer review, not endorsements.
 
 An additional public listing is now live in [Awesome AI Engineering](https://github.com/Eric-LLMs/Awesome-AI-Engineering/pull/4), alongside the previously merged ecosystem entries.
 
@@ -40,7 +40,7 @@ The infrastructure-focused [Awesome Agent Infra PR #6](https://github.com/shenli
 
 The [Awesome AI Developer Stack PR #2](https://github.com/masrisystems/awesome-ai-developer-stack/pull/2) adds SandBase Harness to a broader MCP Servers directory table. It remains pending maintainer review and uses the official repository as its source.
 
-The current review queue also includes [Awesome CLI Coding Agents PR #314](https://github.com/bradAGI/awesome-cli-coding-agents/pull/314), [Awesome Agentic AI 中文 PR #213](https://github.com/WenyuChiou/awesome-agentic-ai-zh/pull/213), [Awesome Terminal Agents PR #5](https://github.com/EnigmaYYYY/awesome-terminal-agents/pull/5), [Awesome Agent Sandbox PR #2](https://github.com/yanmxa/awesome-agent-sandbox/pull/2), and [Awesome Agent Cortex PR #74](https://github.com/0xNyk/awesome-agent-cortex/pull/74). Each is a focused discovery request awaiting the destination maintainer's review.
+The current review queue also includes [Awesome CLI Coding Agents PR #314](https://github.com/bradAGI/awesome-cli-coding-agents/pull/314), [Awesome Terminal Agents PR #5](https://github.com/EnigmaYYYY/awesome-terminal-agents/pull/5), and [Awesome Agent Cortex PR #74](https://github.com/0xNyk/awesome-agent-cortex/pull/74). Each is a focused discovery request awaiting the destination maintainer's review; the earlier Wenyu #213 was superseded by merged [#228](https://github.com/WenyuChiou/awesome-agentic-ai-zh/pull/228).
 
 These listings should be read as community review paths, not endorsements or security certifications. Isolation remains dependent on the selected deployment backend.
 
@@ -77,6 +77,8 @@ The [Awesome Agent Sandbox PR #2](https://github.com/vivy-yi/awesome-agent-sandb
 The broader [Awesome Sandbox PR #27](https://github.com/restyler/awesome-sandbox/pull/27) proposes a dedicated case study covering SandBase Harness's self-hosted runtime, tool governance, persistent sessions, audit/replay, and selectable sandbox providers. It remains pending maintainer review, with the backend-dependent isolation boundary stated explicitly.
 
 The structured [AI Agent Sandboxes PR #3](https://github.com/pjlsergeant/ai-sandboxes/pull/3) proposes an evidence-linked dataset entry for SandBase Harness. It records official source links, persistent sessions, MCP/tool governance, approvals, audit/replay, and selectable backends while preserving the distinction between local path isolation and backend-specific properties.
+
+The [AgentFirst directory PR #46](https://github.com/bradvin/agentfirst.directory/pull/46) now has its repository-managed submitter/media metadata verified locally and by the remote `enrich` check; maintainer review remains pending.
 
 For developer discovery, [Awesome AI Coding Tools PR #665](https://github.com/ai-for-developers/awesome-ai-coding-tools/pull/665) proposes adding SandBase Harness to its MCP Servers and Directories section. The entry links the canonical repository and describes the local stdio bridge and self-hosted runtime; directory review is pending.
 
