@@ -4011,6 +4011,19 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal star increase or referral is claimed.
 - **Next hypothesis:** Check for the public profile after the stated review window; do not resubmit while pending.
 
+### 2026-08-31 — Submit and verify AgentStack MCP listing
+
+- **Objective:** Reach builders searching a source-linked directory of MCP servers and agent tooling.
+- **Channel:** [AgentStack](https://www.agentstack.live/), whose submission form accepts free community submissions for review.
+- **Action:** Submitted SandBase Harness as an MCP server in the Dev Tools category with the canonical repository and pinned GHCR stdio command.
+- **Receipt:** The normal multipart form returned HTTP 303 to `/submit?submitted=1`; the destination page displayed `Submission received`.
+- **Public result:** A live [AgentStack detail page](https://www.agentstack.live/mcp/io.github.sandbaseai/sandbase-harness) now resolves for the repository and reports listing type `MCP server` and quality status `In review`.
+- **Content:** The listing describes the stdio bridge, persistent sessions, policy-gated tools, credentials, task receipts, and backend/deployment-dependent isolation.
+- **Boundary:** This is a source-linked community listing; it is not a verification badge, endorsement, ranking, security certification, or paid placement.
+- **Disclosure:** The canonical repository and project maintainer contact were supplied; no logo or sponsored placement was requested.
+- **Star count / referral:** No causal star increase or referral is claimed.
+- **Next hypothesis:** Wait for AgentStack review and any install-metadata refresh; do not resubmit the same listing.
+
 ### 2026-08-31 — Verify four MCP and agent directory paths
 
 - **Objective:** Strengthen four open directory PRs with current source evidence before maintainer review.
