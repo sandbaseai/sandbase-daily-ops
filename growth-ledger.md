@@ -3646,6 +3646,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for TensorBlock to regenerate or correct the bot-produced metadata, then revalidate the exact published install command.
 
+### 2026-08-31 — Verify curator-approved Agent-Native Services dossier
+
+- **Objective:** Reduce review friction for a curator-approved directory submission that documents SandBase as agent infrastructure.
+- **Action:** Updated [Awesome Agent-Native Services PR #116](https://github.com/haoruilee/awesome-agent-native-services/pull/116) with v0.3.8, Apache-2.0, installation, MCP, API, and runtime evidence, including the backend/deployment-dependent isolation boundary.
+- **Validation:** GitHub reports the PR mergeable but blocked by the destination repository gate and with no automated checks; the follow-up records the complete source links and maintainer disclosure ([comment](https://github.com/haoruilee/awesome-agent-native-services/pull/116#issuecomment-5473455471)). Project documentation was synchronized in [`3f32b6c`](https://github.com/sandbaseai/sandbase-harness/commit/3f32b6c); inclusion remains unclaimed until curator merge.
+- **Distribution channel:** Curator-approved Agent-Native Services catalog; no inclusion, endorsement, benchmark, security certification, traffic, or social-account publication is claimed before merge.
+- **Boundary:** This is an existing maintainer-controlled PR; no duplicate submission or unauthorized merge was attempted.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for the repository gate and curator merge; respond only to concrete review feedback.
+
 ### 2026-08-31 — Refresh Loop Engineering learning-resource submission
 
 - **Objective:** Place SandBase Harness in a relevant educational collection with source-backed runtime and loop evidence.
