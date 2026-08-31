@@ -4027,6 +4027,15 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** This is a substantive correction to an existing submission, not a duplicate PR. Project affiliation and backend/deployment-dependent isolation remain disclosed; no inclusion, endorsement, security certification, traffic, or causal referral is claimed.
 - **Next hypothesis:** Wait for maintainer review or requested changes.
 
+### 2026-08-31 — Correct Picrew harness verification link
+
+- **Objective:** Repair a stale source link in the canonical Picrew agent-harness submission.
+- **Action:** Posted a correction on [Picrew Awesome Agent Harness PR #86](https://github.com/Picrew/awesome-agent-harness/pull/86#issuecomment-5475963347), replacing the removed `docs/mcp-server.md` path with the current `llms-install.md` MCP guide.
+- **Validation:** The current repository confirms the old path is absent and the replacement path is valid. PR #86 remains open as the canonical entry after duplicate #85 was closed; no new submission was created.
+- **Distribution channel:** Picrew Awesome Agent Harness, community-maintained harness directory.
+- **Boundary:** Project affiliation and backend/deployment-dependent isolation remain disclosed; no inclusion, endorsement, security certification, traffic, or causal referral is claimed.
+- **Next hypothesis:** Wait for maintainer review or requested changes.
+
 ### 2026-08-31 — Submit OpenModels MCP Registry entry
 
 - **Objective:** Add the SandBase Harness MCP bridge to a structured, source-backed MCP server registry.
