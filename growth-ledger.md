@@ -4757,3 +4757,12 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Distribution channel:** [AgentMatter](https://www.agentmatter.net/submit), an open-source AI-agent resource catalog.
 - **Boundary:** No duplicate submission was created; this is a review-queue confirmation, not an inclusion, endorsement, ranking, security certification, or traffic guarantee.
 - **Next hypothesis:** Wait for AgentMatter review and publication; do not resubmit the existing entry.
+
+### 2026-08-31 — Refresh GitHub discovery topics
+
+- **Objective:** Improve first-party search discoverability for the newly published Agent Plugin surface.
+- **Action:** Updated the repository's GitHub Topics, replacing the less central `agent-memory` tag with `agent-plugin`; verified the resulting 20-topic set through the GitHub repository API.
+- **Validation:** The final topics cover `agent-plugin`, `agent-harness`, `agent-runtime`, `agent-sandbox`, `mcp-server`, `model-context-protocol`, `self-hosted`, `audit-logging`, and related deployment terms. This is metadata only and makes no endorsement, ranking, or security-certification claim.
+- **Distribution channel:** GitHub repository search and topic discovery.
+- **Boundary:** No stars, followers, votes, reviews, or traffic were manufactured or claimed.
+- **Next hypothesis:** Keep topics aligned with shipped capabilities and remove tags if the implementation no longer supports them.
