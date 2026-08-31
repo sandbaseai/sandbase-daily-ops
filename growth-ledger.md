@@ -1,5 +1,15 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Submit SandBase Harness to Awesome AI Agents
+
+- **Objective:** Add a source-backed SandBase Harness entry to an uncovered, actively maintained AI-agent directory.
+- **Action:** Opened [Git-Deoloper/Awesome-AI-Agents PR #4](https://github.com/Git-Deoloper/Awesome-AI-Agents/pull/4), placing SandBase Harness in `Self-Hosted & Local Agents` with a concise factual description and dynamic GitHub star badge. Added a maintainer verification comment with the v0.3.8 release, canonical source, backend-dependent isolation scope, and affiliation disclosure.
+- **Validation:** The destination contribution guide requires a direct link, active project, honest description under 150 characters, correct category, and no duplicate. The PR is open, non-draft, clean, and mergeable; `git diff --check` passed. A pre-existing unrelated fork was left untouched; a new correctly based fork was used for the PR.
+- **Distribution channel:** Community-maintained AI-agent directory.
+- **Boundary:** Inclusion and ranking remain maintainer-controlled; no endorsement, security certification, traffic, or causal referral is claimed.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for directory maintainer review or requested changes before follow-up.
+
 ## 2026-08-31 — Repair Chat2AnyLLM MCP directory submission
 
 - **Objective:** Resolve a concrete integration defect in an existing SandBase Harness promotion PR rather than leave a misleading generated catalog entry.
