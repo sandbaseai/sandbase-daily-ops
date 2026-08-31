@@ -8,6 +8,8 @@ The weekly [mcp-catalog PR #2](https://github.com/maximkq/mcp-catalog/pull/2) al
 
 Two more review requests: [MCP-SecurityTools #5](https://github.com/Ta0ing/MCP-SecurityTools/issues/5) and [Awesome Agent Harness #30](https://github.com/mahonzhan/awesome-agent-harness/issues/30). Both await maintainer review; runtime isolation remains backend/deployment dependent.
 
+[Awesome Agent Sandbox #3](https://github.com/fishman/awesome-agent-sandbox/issues/3) proposes a container-backed runtime reference and is awaiting review; no microVM or universal-isolation claim is made.
+
 For builders testing a self-owned Agent runtime, SandBase Harness v0.3.8 provides:
 
 - persistent sessions and resumable runtime state;
