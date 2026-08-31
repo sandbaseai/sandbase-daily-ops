@@ -3196,7 +3196,6 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** Isolation and security posture depend on the selected deployment/backend; the entry makes no security certification or maintainer endorsement claim.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Let the directory maintainer review the focused entry; do not add scanner or certification claims that are not supported by the project sources.
-
 ### 2026-08-31 — Awesome Agent Runtime Security review path
 
 - **Objective:** Reach a focused agent-sandbox/security directory with a source-backed multi-backend runtime entry.
