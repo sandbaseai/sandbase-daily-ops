@@ -1,5 +1,14 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Submit conservative Agent Harness matrix evidence
+
+- **Objective:** Support a high-relevance Agent Harness survey proposal with verifiable, non-inflated capability labels.
+- **Action:** Posted maintainer verification on [Awesome Agent Harness issue #14](https://github.com/Gloriaameng/Awesome-Agent-Harness/issues/14#issuecomment-5476769550), linking the current release, runtime/usage docs, installation/MCP guide, and official Registry identity.
+- **Validation:** The proposed Full-Stack row keeps context management and evaluation partial, rather than claiming complete survey coverage. Project affiliation is disclosed, and isolation is qualified by backend/deployment configuration.
+- **Distribution channel:** Awesome Agent Harness survey and completeness matrix.
+- **Boundary:** Matrix consideration is curator-controlled and does not imply ranking, endorsement, or security certification.
+- **Next hypothesis:** Wait for curator review or requested evidence; do not broaden the labels without source support.
+
 ## 2026-08-31 — Scope-check RUCAIBox Agent Harness proposal
 
 - **Objective:** Request curator review from a high-relevance Agent Harness collection while respecting its research-oriented scope.
