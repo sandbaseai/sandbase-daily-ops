@@ -79,3 +79,5 @@ SDK/runtime directory review: E2B Awesome AI SDKs PR #344 https://github.com/e2b
 New focused review path: Awesome Agent Harnesses issue #4 https://github.com/NeuraLiying/Awesome-Agent-Harnesses/issues/4 suggests SandBase Harness for Production Harnesses, SDKs & Frameworks. Maintainer review is pending; this is not a listing or endorsement.
 
 New MCP directory submission: https://github.com/chatmcp/mcpso/issues/1#issuecomment-5472364196 includes the canonical repository, v0.3.8 OCI image, MCP server ID, and setup guide. Directory processing is pending; no listing or endorsement is claimed.
+
+New survey review path: https://github.com/HKUST-KnowComp/Awesome-Agent-Harness/issues/8 proposes SandBase Harness as a source-linked runtime resource. Curator scope review is pending; it is not being presented as a research paper, listing, or security certification.

@@ -3126,3 +3126,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** No public listing, endorsement, or security certification is claimed.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Allow the directory's maintainers and indexing process to evaluate the submission; do not duplicate the comment.
+
+### 2026-08-31 — HKUST-KnowComp Awesome Agent Harness scope review
+
+- **Objective:** Reach a research-and-engineering-focused Agent Harness survey with a source-backed runtime resource.
+- **Action:** Opened [HKUST-KnowComp/Awesome-Agent-Harness issue #8](https://github.com/HKUST-KnowComp/Awesome-Agent-Harness/issues/8), suggesting Tool Use & Code Execution or Sandboxing & Execution Environments placement.
+- **Validation:** The proposal links the canonical repository, installation, harness-design, and sandbox-backend documentation and explicitly distinguishes the runtime from a paper or security certification. Curator scope review is pending.
+- **Distribution channel:** GitHub survey issue; X, LinkedIn, and Discord drafts remain `NEEDS REVIEW` and require operator/account authorization.
+- **Boundary:** No listing, endorsement, or security certification is claimed; isolation remains dependent on the selected backend and deployment.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Let the survey maintainers decide whether an open-source runtime resource fits their taxonomy; do not duplicate the scope request.
