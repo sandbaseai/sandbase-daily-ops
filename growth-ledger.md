@@ -3991,6 +3991,15 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
 
+### 2026-08-31 — Consolidate duplicate Awesome MCP Servers PRs
+
+- **Objective:** Leave one clear maintainer-review path in the 93K-star Punkpeye MCP directory.
+- **Action:** Closed older duplicate [PR #13201](https://github.com/punkpeye/awesome-mcp-servers/pull/13201) with a pointer to canonical [PR #13240](https://github.com/punkpeye/awesome-mcp-servers/pull/13240).
+- **Validation:** Both PRs were open, clean, and mergeable before cleanup; #13240 remains open and is the only active SandBase Harness submission for this destination. No directory inclusion or Glama score is claimed.
+- **Distribution channel:** Punkpeye Awesome MCP Servers, community-maintained MCP directory.
+- **Boundary:** This was duplicate cleanup, not a new listing or endorsement; no security certification, traffic, or causal referral is claimed.
+- **Next hypothesis:** Wait for #13240 maintainer/Glama review and avoid further duplicate submissions.
+
 ### 2026-08-31 — Submit OpenModels MCP Registry entry
 
 - **Objective:** Add the SandBase Harness MCP bridge to a structured, source-backed MCP server registry.
