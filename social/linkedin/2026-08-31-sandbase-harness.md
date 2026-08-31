@@ -60,6 +60,8 @@ The existing [Awesome AI Agents PR #467](https://github.com/jim-schwoebel/awesom
 
 The active [Jenqyang Awesome AI Agents PR #460](https://github.com/Jenqyang/Awesome-AI-Agents/pull/460) proposes SandBase Harness for Applications → Tools. It follows the directory's standard-OSS, maintainability, and neutral-description rules; the PR is clean and mergeable while maintainer review is pending. The entry describes independently self-hostable capabilities without pricing or hosted-upsell language and is not an endorsement or security certification.
 
+The high-traffic [E2B Awesome AI Agents Issue #1468](https://github.com/e2b-dev/awesome-ai-agents/issues/1468) received a source-backed scope follow-up clarifying that SandBase Harness is a separate self-hosted runtime/MCP bridge from the previously closed CLI submission. The maintainer still controls the scope decision; this remains a review request rather than a listing or endorsement.
+
 The [Awesome Agent Sandbox PR #2](https://github.com/vivy-yi/awesome-agent-sandbox/pull/2) is another focused community review request, adding SandBase Harness to a Self-hosted / Open Source sandbox table. It remains pending maintainer review and uses a concise, capability-oriented description.
 
 The broader [Awesome Sandbox PR #27](https://github.com/restyler/awesome-sandbox/pull/27) proposes a dedicated case study covering SandBase Harness's self-hosted runtime, tool governance, persistent sessions, audit/replay, and selectable sandbox providers. It remains pending maintainer review, with the backend-dependent isolation boundary stated explicitly.
