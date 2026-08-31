@@ -3305,3 +3305,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** The post explicitly states that isolation depends on deployment/backend configuration and does not claim security certification or upstream endorsement.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Use user replies to improve the installation/integration documentation and capture reproducible gaps as issues.
+
+### 2026-08-31 — Channel draft refresh
+
+- **Objective:** Keep review-gated outbound copy aligned with the latest public project update.
+- **Action:** Added the official Discussion #116 update link and its concrete feedback prompts to the X, LinkedIn, and Discord drafts for SandBase Harness v0.3.8.
+- **Validation:** Drafts now point to the current installation source and accurately describe the handbook/index review state.
+- **Distribution channel:** Draft assets only; operator review and account authorization are still required, and no social-account publication is claimed.
+- **Boundary:** Copy retains the backend/deployment-dependent isolation qualification and makes no directory endorsement or security-certification claim.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Publish only after operator approval; use replies from the official Discussion to prioritize documentation improvements.

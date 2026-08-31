@@ -115,3 +115,5 @@ An additional public directory result is now confirmed: [Awesome Agent Operating
 SandBase Harness is also proposed in [TensorChord Awesome LLMOps PR #785](https://github.com/tensorchord/Awesome-LLMOps/pull/785), a high-visibility LLMOps catalog. The one-line entry covers the self-hosted runtime, MCP bridge, governance controls, audit/replay, and selectable execution backends. The PR is OPEN/MERGEABLE; DCO completion remains contributor-owned and maintainer review is pending.
 
 Follow-up: the DCO check for PR #785 now passes after the signed-off contribution commit was pushed. Maintainer review remains pending, and the catalog is not presented as an endorsement or security certification.
+
+The latest public project update is available in [official Discussion #116](https://github.com/sandbaseai/sandbase-harness/discussions/116#discussioncomment-18211885), which links the v0.3.8 installation source and records the current DeepSeek Harness and dsh-index review status. Feedback is invited on backend selection, MCP schemas, session lifecycle, and audit/replay gaps.
