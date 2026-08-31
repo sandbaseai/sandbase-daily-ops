@@ -1,5 +1,11 @@
 # Open-source growth ledger
 
+## 2026-08-31 — E2B Awesome AI Agents scope review
+
+- **Action:** Queued [E2B Awesome AI Agents Issue #1468](https://github.com/e2b-dev/awesome-ai-agents/issues/1468) in the X, LinkedIn, and Discord drafts.
+- **Evidence:** The destination is a high-traffic AI-agent directory that explicitly accepts pull requests or form submissions. The issue distinguishes the current Harness runtime from the previously closed CLI submission and asks the maintainer to make the scope decision.
+- **Scope:** Review request only. No inclusion, directory endorsement, security certification, or social-account publication is claimed; drafts remain `NEEDS REVIEW`.
+
 ## 2026-08-31 — Awesome AI Agents review path
 
 - **Action:** Queued [NipunaRanasinghe Awesome AI Agents PR #184](https://github.com/NipunaRanasinghe/awesome-ai-agents/pull/184) in the X, LinkedIn, and Discord drafts.
