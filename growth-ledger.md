@@ -4793,3 +4793,12 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Distribution channel:** Agent Plugins Directory source indexing.
 - **Boundary:** This improves first-party metadata only; it does not claim a refreshed page, endorsement, security certification, or ranking.
 - **Next hypothesis:** Recheck the directory after its next crawl and verify the pinned source revision and image tag.
+
+### 2026-08-31 — Version Agent Plugin metadata patch
+
+- **Objective:** Make the source-indexed Agent Plugin update explicit and discoverable as a compatible patch release.
+- **Action:** Bumped `agent-plugin/plugin.json` from `0.1.0` to `0.1.1` after adding capability keywords and current bridge metadata; updated the matching distribution-test expectation.
+- **Validation:** Agent Plugins 1.0 schema validation passed, `npx vitest run tests/unit/mcp-distribution.test.ts` passed all 6 tests, and `git diff --check` passed. The MCP image remains pinned to the Harness release `0.3.8`.
+- **Distribution channel:** Agent Plugins Directory source indexing and direct GitHub plugin installation.
+- **Boundary:** This is a metadata patch release; the public directory still needs to reindex before the refreshed version can be claimed as visible there.
+- **Next hypothesis:** Recheck the directory page after its next crawl for plugin version `0.1.1`, current source commit, and the `0.3.8` bridge image.
