@@ -1,5 +1,14 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Reconcile Awesome MCP Registry automation
+
+- **Objective:** Publish an accurate status update after the registry nomination workflow ran.
+- **Action:** Verified [Awesome MCP Registry issue #49](https://github.com/sunnamed434/awesome-mcp-registry/issues/49) and [Validate nomination run 33380817777](https://github.com/sunnamed434/awesome-mcp-registry/actions/runs/33380817777); published the correction in [Discussion #116](https://github.com/sandbaseai/sandbase-harness/discussions/116#discussioncomment-18216631).
+- **Validation:** The workflow completed successfully, but its actual validate job was skipped and the public README still contains no SandBase Harness entry. The nomination remains pending evaluation/listing.
+- **Distribution channel:** Awesome MCP Registry automated nomination workflow and official project Discussion.
+- **Boundary:** No score, inclusion, ranking, endorsement, recommendation, or security certification is claimed.
+- **Next hypothesis:** Wait for a real evaluation or public listing change before updating the status again.
+
 ## 2026-08-31 — Publish consolidated promotion checkpoint
 
 - **Objective:** Make the latest substantive promotion work discoverable from the official project discussion without repeating unchanged review nudges.
