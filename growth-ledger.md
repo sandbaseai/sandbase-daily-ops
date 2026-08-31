@@ -3315,3 +3315,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** Copy retains the backend/deployment-dependent isolation qualification and makes no directory endorsement or security-certification claim.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Publish only after operator approval; use replies from the official Discussion to prioritize documentation improvements.
+
+### 2026-08-31 — AAE Agent Engineering curation path
+
+- **Objective:** Reach a focused Agent Engineering knowledge base with a bounded, curator-controlled harness category.
+- **Action:** Recorded [AAE issue #1](https://github.com/Lxcardoza993/AAE/issues/1), proposing SandBase Harness for the Agent Harness category and linking current release, installation, architecture, DeepSeek Harness, and MCP Registry evidence.
+- **Validation:** The destination documents 21 categories with a ten-project-per-category curation limit; the issue is open and placement remains a maintainer decision.
+- **Distribution channel:** GitHub curator review; X, LinkedIn, and Discord drafts remain `NEEDS REVIEW` and require operator/account authorization.
+- **Boundary:** This is a candidate submission only, not a listing, endorsement, or security certification; isolation remains dependent on deployment/backend configuration.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Let the curator decide placement and avoid duplicate submissions while the issue is open.
