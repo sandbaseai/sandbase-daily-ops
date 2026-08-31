@@ -3545,3 +3545,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** This is a disclosed self-submission. Effective container reachability and isolation remain dependent on deployment/backend configuration.
 - **Star count / referral:** Directory snapshot was 142 stars at review; no causal Star increase or referral is claimed.
 - **Next hypothesis:** Let the weekly directory maintainer process the existing issue; do not open a duplicate or repeat the correction without a material release or metadata change.
+
+### 2026-08-31 — HKUST agent-harness catalog verification
+
+- **Objective:** Help an agent-harness resource catalog evaluate SandBase Harness under its own taxonomy.
+- **Action:** Added a source-backed [verification follow-up](https://github.com/HKUST-KnowComp/Awesome-Agent-Harness/issues/8#issuecomment-5473217408) to the HKUST-KnowComp proposal, confirming v0.3.8, the installation/backend documentation, native stdio MCP metadata, and the runtime's session/governance/audit/replay scope.
+- **Validation:** The public issue remains open with the proposed Tool Use & Code Execution / Sandboxing placement; the follow-up links the canonical source files and states the backend-dependent isolation boundary.
+- **Distribution channel:** Curator-reviewed agent-harness catalog; no inclusion, endorsement, research-paper status, or security certification is claimed. Social channels remain review-gated drafts with no social-account publication claimed.
+- **Boundary:** This is a disclosed self-submission; the curator retains taxonomy and inclusion control, and isolation depends on selected backend/deployment configuration.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Let the curator decide scope and avoid duplicate issue/PR creation unless the catalog requests a concrete format.
