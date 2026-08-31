@@ -3825,3 +3825,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** Used only the published MCP metadata, disclosed the project contact as the canonical repository, and made no claim of A2A support or remote HTTP execution.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Recheck submission `4` or the public MCP directory after its review process updates; do not retry automatically while the backend SHA error remains.
+
+### 2026-08-31 — Publish DeepYard and BotMarket promotion checkpoint
+
+- **Objective:** Make the latest review-channel status discoverable from the project's official community channel without overstating directory inclusion.
+- **Action:** Published a bilingual update in [official Discussion #116](https://github.com/sandbaseai/sandbase-harness/discussions/116#discussioncomment-18213014), linking the DeepYard submission and BotMarket queue record `4`, the canonical `server.json`, and the current v0.3.8 installation source.
+- **Validation:** The update separates DeepYard's `/thanks` response from a public listing and BotMarket's queued manual review from its failed automatic PR step. Project README and promotion history were synchronized in [`70493a2`](https://github.com/sandbaseai/sandbase-harness/commit/70493a2). It makes no ranking, endorsement, security-certification, traffic, A2A, or universal-isolation claim.
+- **Distribution channel:** Official SandBase Harness GitHub Discussion; external directory reviews remain maintainer-controlled.
+- **Boundary:** This is a factual status announcement, not a repeated external submission or social-account publication; project affiliation and backend/deployment-dependent isolation are explicit.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for directory review responses or public status changes before another announcement.
