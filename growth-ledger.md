@@ -3525,3 +3525,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** The README labels the item as under review and preserves the deployment/backend-dependent Docker reachability and isolation boundary.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Keep the homepage link current only when Cline's public review state changes; avoid repeating outreach while no material state change occurs.
+
+### 2026-08-31 — Approved sandbox catalog maintainer handoff
+
+- **Objective:** Advance a high-relevance sandbox directory entry after its review and validation gates completed.
+- **Action:** Verified [Awesome Agent Sandbox PR #2](https://github.com/yanmxa/awesome-agent-sandbox/pull/2) as `MERGEABLE` with `APPROVED` review status, successful GitGuardian and Sourcery checks, then posted a [maintainer handoff](https://github.com/yanmxa/awesome-agent-sandbox/pull/2#issuecomment-5473182863) requesting the final merge.
+- **Validation:** The PR adds SandBase Harness to Related Projects with backend/deployment-qualified isolation wording; GitHub confirms the public PR state and checks. The current account cannot execute the merge because GitHub denied `MergePullRequest` permission.
+- **Distribution channel:** Maintainer-reviewed agent sandbox directory; inclusion, endorsement, and security certification are not claimed until the maintainer merges it. Social channels remain review-gated drafts with no social-account publication claimed.
+- **Boundary:** This is a disclosed self-submission. The handoff does not imply universal microVM/kernel isolation; effective properties depend on the selected backend and deployment configuration.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for the repository maintainer to merge the already-approved PR; do not retry the unauthorized merge or repeat the handoff without a material state change.
