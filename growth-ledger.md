@@ -1,5 +1,14 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Scope-check RUCAIBox Agent Harness proposal
+
+- **Objective:** Request curator review from a high-relevance Agent Harness collection while respecting its research-oriented scope.
+- **Action:** Posted a scope-qualified verification on [RUCAIBox issue #11](https://github.com/RUCAIBox/awesome-agent-harness/issues/11#issuecomment-5476757724), linking the current release, runtime source, installation/MCP guide, official Registry identity, and related handbook.
+- **Validation:** The comment distinguishes an open-source runtime resource from a formal research paper and explicitly asks the maintainer to close the proposal if paper-only scope applies. Project affiliation is disclosed and isolation is qualified by backend/deployment configuration.
+- **Distribution channel:** RUCAIBox research-oriented Agent Harness collection.
+- **Boundary:** No inclusion, ranking, endorsement, or security certification is claimed.
+- **Next hypothesis:** Follow the maintainer's scope decision; do not open a PR unless the collection accepts runtime resources.
+
 ## 2026-08-31 — Propose SandBase Harness to AI Systems Atlas
 
 - **Objective:** Add a source-linked operational AI system proposal to an active curation review queue.
