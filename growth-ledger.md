@@ -3435,3 +3435,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** The update preserves backend/deployment-dependent isolation and makes no universal kernel-isolation, upstream-endorsement, or security-certification claim.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Leave the showcase update for users and maintainers to evaluate; publish another update only when a material state changes.
+
+### 2026-08-31 — Surface Showcase update in project READMEs
+
+- **Objective:** Improve durable discovery from the canonical project homepage.
+- **Action:** Added the latest bilingual [DeepSeek Harness Showcase update](https://github.com/deepseek-ai/deepseek-harness/discussions/1918#discussioncomment-18212204) to the English and Chinese README community sections; the source change is [commit `17908e1`](https://github.com/sandbaseai/sandbase-harness/commit/17908e1).
+- **Validation:** The commit was pushed to SandBase Harness `main`; the link targets the public Showcase comment covering the gVisor integration path and Hugging Face attribution review.
+- **Distribution channel:** Canonical project README navigation; external social drafts remain `NEEDS REVIEW`, with no social-account publication claimed.
+- **Boundary:** The README labels the Showcase as an external community update and does not imply upstream endorsement, security certification, or completed pending reviews.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Keep homepage links focused on durable, source-backed updates and refresh them only when a material public state changes.
