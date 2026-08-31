@@ -1,5 +1,14 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Verify Hugging Face CI rerun permission boundary
+
+- **Objective:** Determine whether the current contributor account can rerun the unrelated failed Hugging Face jobs for PR #2432.
+- **Action:** Attempted `gh run rerun 33350872963 --failed` on the [Hugging Face workflow run](https://github.com/huggingface/huggingface.js/actions/runs/33350872963).
+- **Validation:** GitHub rejected the request with `Must have admin rights to Repository`; no rerun was triggered and no CI result was altered. The existing [PR clarification](https://github.com/huggingface/huggingface.js/pull/2432#issuecomment-5477129669) remains accurate.
+- **Distribution channel:** Hugging Face agent-harness registry CI review.
+- **Boundary:** Rerun capability belongs to Hugging Face repository administrators; no bypass or acceptance claim is made.
+- **Next hypothesis:** Wait for a Hugging Face maintainer/admin to rerun the flaky browser job and network-failed e2e setup.
+
 ## 2026-08-31 — Clarify unrelated Hugging Face CI failures
 
 - **Objective:** Prevent upstream baseline CI failures from being misattributed to the SandBase agent-harness registration.
