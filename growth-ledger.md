@@ -3865,3 +3865,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** Project affiliation was disclosed, no duplicate PR was created, and no inclusion, ranking, endorsement, or security certification is claimed.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for maintainer review or requested changes before another follow-up.
+
+### 2026-08-31 — Add MCP and developer-tools review verification
+
+- **Objective:** Strengthen two open directory PRs that had no prior maintainer verification comment.
+- **Action:** Posted verification comments on [Awesome-MCP PR #36](https://github.com/Albertchamberlain/Awesome-MCP/pull/36#issuecomment-5473810768) and [Awesome AI & Developer Tools PR #5](https://github.com/guojianrong/awesome-ai-developer-tools/pull/5#issuecomment-5473810596). The updates confirm current v0.3.8 sources, the published bridge metadata, and the backend/deployment-dependent isolation boundary.
+- **Validation:** Both destination PRs were open and mergeable at review time; the comments disclose maintainer affiliation and make no inclusion, ranking, endorsement, or security-certification claim. Project records were synchronized in [`aad3992`](https://github.com/sandbaseai/sandbase-harness/commit/aad3992).
+- **Distribution channel:** Community-maintained MCP and AI developer-tools directory review paths.
+- **Boundary:** No duplicate submissions were created; the Awesome-MCP entry remains distinct from SandBase CLI, and the running Harness API/backend requirement is explicit.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
