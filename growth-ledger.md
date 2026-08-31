@@ -3956,6 +3956,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** The entry records 640 GitHub stars at submission time; no causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
 
+### 2026-08-31 — Submit Chinese agent runtime guide entry
+
+- **Objective:** Add SandBase Harness to a Chinese-language guide that separates MCP, Skills, and runtime/framework layers.
+- **Action:** Opened [中文 Agent 清单 PR #2](https://github.com/gengyueworks/awesome-ai-agents/pull/2), adding SandBase Harness to the runtime/framework section as an independent entry from DeepSeek Harness.
+- **Validation:** The destination PR is open, clean, and mergeable; `git diff --check` passed. A verification comment links the current release and installation/MCP documentation and discloses project affiliation. No inclusion, ranking, endorsement, security certification, traffic, or causal referral is claimed.
+- **Distribution channel:** Chinese-language AI-agent runtime/framework guide review path.
+- **Boundary:** The entry does not imply that SandBase Harness is DeepSeek Harness or that either project endorses the other; isolation is qualified as backend/deployment-dependent.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
+
 ### 2026-08-31 — Submit BestAIAgent.in evidence-first catalog entry
 
 - **Objective:** Add SandBase Harness to an evidence-first AI-agent catalog while preserving the catalog's imported-versus-verified distinction.
