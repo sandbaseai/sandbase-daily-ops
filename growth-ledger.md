@@ -3959,6 +3959,19 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal star increase or referral is claimed.
 - **Next hypothesis:** Wait for destination-maintainer review or requested changes before another follow-up.
 
+### 2026-08-31 — Submit to Awesome AI Agents Frameworks
+
+- **Objective:** Reach builders browsing a curated index of agent frameworks, security tools, and autonomous workflows.
+- **Action:** Opened [Awesome AI Agents PR #55](https://github.com/frangelbarrera/awesome-ai-agents/pull/55) adding SandBase Harness to AI Agent Frameworks.
+- **Evidence:** Commit [`f55572b`](https://github.com/liyangbing/awesome-ai-agents-frangelbarrera/commit/f55572b) uses the required Engine and Deployment fields and links the canonical repository.
+- **Validation:** The destination PR was open, clean, and mergeable when submitted; no CI checks were configured at that time.
+- **Review handoff:** Posted [maintainer verification](https://github.com/frangelbarrera/awesome-ai-agents/pull/55#issuecomment-5474339805) disclosing project affiliation and deployment-dependent isolation.
+- **Distribution channel:** Community-maintained AI-agent framework and tools directory.
+- **Boundary:** The entry is source-backed; actual isolation depends on the selected runtime and deployment configuration.
+- **Disclosure:** Directory inclusion is not an endorsement, ranking, security certification, traffic guarantee, or backlink guarantee.
+- **Star count / referral:** No causal star increase or referral is claimed.
+- **Next hypothesis:** Wait for destination-maintainer review or requested changes before another follow-up.
+
 ### 2026-08-31 — Verify four MCP and agent directory paths
 
 - **Objective:** Strengthen four open directory PRs with current source evidence before maintainer review.
