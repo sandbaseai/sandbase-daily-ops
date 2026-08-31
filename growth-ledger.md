@@ -3166,3 +3166,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** Backend/deployment-dependent isolation is explicit; no listing, endorsement, or security certification is claimed.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Let the contributor account holder complete DCO and let the LLMOps maintainer review the focused entry; do not bypass the DCO gate.
+
+### 2026-08-31 — TensorChord Awesome LLMOps DCO follow-up
+
+- **Objective:** Keep the LLMOps promotion path accurate after its contribution gate changes.
+- **Action:** Added the required Signed-off-by line to the contributor-owned PR commit and pushed the amended commit; no entry content changed.
+- **Validation:** GitHub now reports the DCO check `SUCCESS`; PR #785 remains under maintainer review.
+- **Distribution channel:** Existing GitHub LLMOps review; X, LinkedIn, and Discord drafts remain `NEEDS REVIEW` and require operator/account authorization.
+- **Boundary:** No listing, endorsement, or security certification is claimed.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Let the maintainer review the now-unblocked PR; do not repeat the DCO update.

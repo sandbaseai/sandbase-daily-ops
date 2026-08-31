@@ -91,3 +91,5 @@ The existing [Picrew Awesome Agent Harness PR #86](https://github.com/Picrew/awe
 An additional public directory result is now confirmed: [Awesome Agent Operating Systems PR #13](https://github.com/frankxai/awesome-agent-operating-systems/pull/13) merged SandBase Harness into Agent Runtimes. The earlier PR #11 was superseded by #13; the entry is a community directory listing and not an endorsement or security certification.
 
 SandBase Harness is also proposed in [TensorChord Awesome LLMOps PR #785](https://github.com/tensorchord/Awesome-LLMOps/pull/785), a high-visibility LLMOps catalog. The one-line entry covers the self-hosted runtime, MCP bridge, governance controls, audit/replay, and selectable execution backends. The PR is OPEN/MERGEABLE; DCO completion remains contributor-owned and maintainer review is pending.
+
+Follow-up: the DCO check for PR #785 now passes after the signed-off contribution commit was pushed. Maintainer review remains pending, and the catalog is not presented as an endorsement or security certification.
