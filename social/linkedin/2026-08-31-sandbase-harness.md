@@ -2,6 +2,8 @@
 
 Status: NEEDS REVIEW — operator review and account authorization required
 
+A new community review path is open in Awesome Harness Engineering: PR #226 proposes a source-backed SandBase Harness reference under Security, Sandbox & Permissions. It is currently mergeable and awaiting the target maintainer's review. This is a discovery submission, not an endorsement or security certification; effective isolation remains dependent on the selected backend and deployment configuration.
+
 When an Agent moves from a chat window into an engineering workflow, the hard question is no longer only which model to call. Platform teams also need to know where sessions live, which tools may run, what needs approval, and how to reconstruct a failed run.
 
 SandBase Harness v0.3.8 is the open-source, local-first runtime for that layer. It provides persistent sessions, an MCP bridge, explicit approvals, credential scoping, audit/replay records, and replaceable Docker, Kubernetes, and worker execution backends.
