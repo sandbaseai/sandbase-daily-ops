@@ -3626,6 +3626,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for curator response and adjust only to concrete taxonomy or wording feedback.
 
+### 2026-08-31 — Refresh AgentSpot free directory submission
+
+- **Objective:** Reduce review friction for the existing AgentSpot submission while preserving its free, informational listing policy.
+- **Action:** Updated [AgentSpot submission #1](https://github.com/agentspot/agentspot-submissions/issues/1) with the current v0.3.8 release, Apache-2.0 license, installation guide, MCP guide, DeepSeek example, and the GitHub/release plus GHCR distribution model.
+- **Validation:** The follow-up records that no npm/PyPI package exists, and clarifies persistent sessions, MCP/tool governance, approvals, credentials, memory, artifacts, audit/replay, and backend/deployment-dependent isolation ([comment](https://github.com/agentspot/agentspot-submissions/issues/1#issuecomment-5473380420)). Project documentation was synchronized in [`ba2276d`](https://github.com/sandbaseai/sandbase-harness/commit/ba2276d); directory review remains pending.
+- **Distribution channel:** Free, informational AgentSpot directory submission; no listing, endorsement, benchmark, security certification, traffic, or social-account publication is claimed.
+- **Boundary:** This is an existing maintainer-controlled submission; no duplicate issue or PR was opened.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for weekly curator review and respond only to concrete metadata requests.
+
 ### 2026-08-31 — Refresh Agent Harness timeline submission
 
 - **Objective:** Keep the existing SandBase Harness submission in a dedicated agent-harness reference list factually current.
