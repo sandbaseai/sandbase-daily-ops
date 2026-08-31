@@ -3425,3 +3425,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** The update explicitly makes no claim of Hugging Face inclusion, endorsement, or security certification before merge.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Keep one transparent status post and wait for the upstream maintainer queue rather than repeating outreach.
+
+### 2026-08-31 — DeepSeek Harness official Showcase update
+
+- **Objective:** Keep the upstream showcase thread current with verified ecosystem integrations and review states.
+- **Action:** Published a bilingual update in [DeepSeek Harness Showcase Discussion #1918](https://github.com/deepseek-ai/deepseek-harness/discussions/1918#discussioncomment-18212204), covering the gVisor Docker → `runsc` → gVisor tutorial and the corrected Hugging Face attribution PR.
+- **Validation:** The public comment links both source PRs, the Hugging Face passing checks, and the relevant installation/source references; it labels both as ecosystem integrations/review states rather than endorsements.
+- **Distribution channel:** Official DeepSeek Harness Showcase Discussion; X, LinkedIn, and Discord remain review-gated drafts with no social-account publication claimed.
+- **Boundary:** The update preserves backend/deployment-dependent isolation and makes no universal kernel-isolation, upstream-endorsement, or security-certification claim.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Leave the showcase update for users and maintainers to evaluate; publish another update only when a material state changes.
