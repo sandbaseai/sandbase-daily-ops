@@ -3866,6 +3866,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Monitor the profile for metadata refreshes and keep the repository release/docs as the source of truth.
 
+### 2026-08-31 — Reconcile Awesome AI Engineering merge
+
+- **Objective:** Correct the project promotion record for a completed external directory merge that had not yet been logged.
+- **Action:** Verified that [Awesome AI Engineering PR #4](https://github.com/Eric-LLMs/awesome-ai-engineering/pull/4) merged at `0a308b0a9116886a701bc47ff6eaba9293738df3`, adding SandBase Harness to the open-source agent-engineering project table.
+- **Validation:** The merged PR records the current v0.3.8 release and official repository as sources. Project records were synchronized in [`7bcd33e`](https://github.com/sandbaseai/sandbase-harness/commit/7bcd33e). This is a factual directory listing, not an endorsement or security certification; no traffic or causal referral is claimed.
+- **Distribution channel:** Awesome AI Engineering open-source project directory.
+- **Boundary:** This is a status reconciliation of an already merged PR; no duplicate submission or follow-up comment was made.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Monitor the directory entry for future metadata changes and keep repository release/docs as the source of truth.
+
 ### 2026-08-31 — Verify four sandbox and AI-tool directory paths
 
 - **Objective:** Strengthen four open, clean directory PRs with current source evidence before maintainer review.
