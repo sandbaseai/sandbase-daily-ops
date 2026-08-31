@@ -4018,6 +4018,15 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** Project affiliation was disclosed. Curator review remains pending; no inclusion, endorsement, security certification, traffic, or causal referral is claimed.
 - **Next hypothesis:** Wait for maintainer review or a requested entry format before opening a PR.
 
+### 2026-08-31 — Correct DhanushNehru MCP verification link
+
+- **Objective:** Repair an invalid source link in an existing MCP-directory promotion review path.
+- **Action:** Posted a correction on [DhanushNehru Awesome MCP Servers PR #75](https://github.com/DhanushNehru/awesome-mcp-servers/pull/75#issuecomment-5475948809), replacing the removed `docs/mcp-server.md` path with the current `llms-install.md` and `docs/installation.md` links.
+- **Validation:** The repository filesystem confirms the old path is absent and the replacement documents exist. The PR remains open; its `UNSTABLE` state has no reported automated result and was not presented as a project validation failure.
+- **Distribution channel:** Community-maintained MCP directory review path.
+- **Boundary:** This is a substantive correction to an existing submission, not a duplicate PR. Project affiliation and backend/deployment-dependent isolation remain disclosed; no inclusion, endorsement, security certification, traffic, or causal referral is claimed.
+- **Next hypothesis:** Wait for maintainer review or requested changes.
+
 ### 2026-08-31 — Submit OpenModels MCP Registry entry
 
 - **Objective:** Add the SandBase Harness MCP bridge to a structured, source-backed MCP server registry.
