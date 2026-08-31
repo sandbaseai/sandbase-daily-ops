@@ -3715,3 +3715,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** No new submission or duplicate was created; the existing merged PR is the canonical record.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Keep the public project record aligned when the catalog changes, and wait for new maintainer-controlled actions.
+
+### 2026-08-31 — Publish Awesome AI Engineering inclusion update
+
+- **Objective:** Give users a single official location for a material promotion-status change.
+- **Action:** Posted a bilingual [Discussion #116 update](https://github.com/sandbaseai/sandbase-harness/discussions/116#discussioncomment-18212738) announcing the confirmed merge of [Awesome AI Engineering PR #4](https://github.com/Eric-LLMs/Awesome-AI-Engineering/pull/4).
+- **Validation:** The post links the current project record [`d77c212`](https://github.com/sandbaseai/sandbase-harness/commit/d77c212) and merged [Daily Ops PR #337](https://github.com/sandbaseai/sandbase-daily-ops/pull/337), and explicitly states that directory inclusion is not endorsement, ranking, benchmark evidence, or security certification.
+- **Distribution channel:** Official GitHub Discussion; no social-account publication or traffic claim is made.
+- **Boundary:** The update reports an observed public merge and preserves the backend/deployment-dependent isolation qualification.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Use the official discussion for material changes and avoid repetitive updates while external state is unchanged.
