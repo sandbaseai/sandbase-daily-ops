@@ -76,3 +76,5 @@ Agent systems review: [Awesome Agent Harness PR #10](https://github.com/zients/a
 AI agent directory review: [Awesome AI Agents PR #184](https://github.com/NipunaRanasinghe/awesome-ai-agents/pull/184) adds SandBase Harness to Core Frameworks. Maintainer review is pending; this is not an endorsement or security certification.
 
 Scope review: [E2B Awesome AI Agents Issue #1468](https://github.com/e2b-dev/awesome-ai-agents/issues/1468) asks whether SandBase Harness belongs as a distinct runtime entry from the closed CLI submission. Maintainer decision is pending; no inclusion or endorsement is claimed.
+
+Runtime directory review: [Awesome AI Agents 2026 PR #240](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/pull/240) adds SandBase Harness beside the separate CLI entry under Agent Tooling and Infrastructure. Maintainer review is pending; this is not an endorsement or security certification.
