@@ -3916,6 +3916,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Monitor the merged profile and keep repository release/docs as the installation source of truth.
 
+### 2026-08-31 — Qualify MCPVault submission gate
+
+- **Objective:** Evaluate a newly discovered public MCP directory submission path without claiming a listing before authorization and duplicate checks are possible.
+- **Action:** Reviewed the [MCPVault submission workflow](https://mcpvault.io/submit), which accepts a repository URL and reads metadata from GitHub. A normal POST for the canonical SandBase Harness repository returned HTTP 401 with `not_signed_in`.
+- **Validation:** No submission, listing, or claim was created. The normal flow requires GitHub sign-in; project records were synchronized in [`4ba9699`](https://github.com/sandbaseai/sandbase-harness/commit/4ba9699). The next attempt requires normal account authorization and a search/claim check first. No traffic, endorsement, ranking, or security-certification claim is made.
+- **Distribution channel:** MCPVault public submission workflow.
+- **Boundary:** No login bypass, duplicate submission, or unapproved account action was attempted.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Resume only after an authorized MCPVault session is available; otherwise keep this path pending.
+
 ### 2026-08-31 — Verify two MCP security directory paths
 
 - **Objective:** Strengthen two open security/MCP directory PRs with current source evidence while preserving their review and certification boundaries.
