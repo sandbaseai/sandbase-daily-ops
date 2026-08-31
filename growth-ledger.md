@@ -1,5 +1,14 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Implement Hugging Face agent identity integration
+
+- **Objective:** Resolve the Hugging Face registry maintainer's concrete question about how SandBase identifies child shell processes.
+- **Action:** Added `withAgentIdentity()` in [`src/sandbox/agent-identity.ts`](https://github.com/sandbaseai/sandbase-harness/blob/main/src/sandbox/agent-identity.ts) and applied the default `AI_AGENT=sandbase-harness` marker to local, Docker, Kubernetes, and self-hosted worker execution paths. Explicit `AI_AGENT`/`AGENT` values remain unchanged for nested agents. Pushed implementation [`d4ae4e0`](https://github.com/sandbaseai/sandbase-harness/commit/d4ae4e0), documentation sync [`0a35ae6`](https://github.com/sandbaseai/sandbase-harness/commit/0a35ae6), and replied on [Hugging Face PR #2432](https://github.com/huggingface/huggingface.js/pull/2432#issuecomment-5477083868).
+- **Validation:** Full Vitest suite passed: 80 files, 613 tests; 14 environment-gated tests skipped. Source and test TypeScript checks passed, and `git diff --check` passed. The Hugging Face PR remains open/mergeable; no upstream inclusion or merge is claimed.
+- **Distribution channel:** Hugging Face agent-harness registry integration review.
+- **Boundary:** The marker is attribution metadata, not a security boundary or endorsement; execution isolation remains dependent on the selected backend and deployment configuration.
+- **Next hypothesis:** Wait for Hugging Face maintainer review; respond to further technical questions with source-backed evidence.
+
 ## 2026-08-31 — Synchronize project record for Awesome LLM Agents review
 
 - **Objective:** Keep the canonical project promotion record linked to the latest external verification.
