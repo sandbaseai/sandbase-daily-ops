@@ -3676,6 +3676,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Keep the merged entry's source links aligned with future releases and avoid duplicate submissions.
 
+### 2026-08-31 — Publish official merged-listing update
+
+- **Objective:** Give users one authoritative project-owned update when a community directory submission becomes public.
+- **Action:** Posted [Discussion #116 latest update](https://github.com/sandbaseai/sandbase-harness/discussions/116#discussioncomment-18212677), announcing [Awesome Coding Agents PR #41](https://github.com/kailiu42/awesome-coding-agents/pull/41) as merged and linking the current v0.3.8 release and installation guide.
+- **Validation:** The post also discloses the separate TensorBlock generated-metadata correction still awaiting maintainer action. Project README and promotion history were synchronized in [`fabc226`](https://github.com/sandbaseai/sandbase-harness/commit/fabc226).
+- **Distribution channel:** Official GitHub Discussion announcement; no ranking, endorsement, benchmark, security certification, traffic, or social-account publication is claimed.
+- **Boundary:** Current installation guidance remains the project source of truth; third-party directory status is reported as observed and not overstated.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Use the official discussion for material promotion-status changes and avoid repetitive posts when external state is unchanged.
+
 ### 2026-08-31 — Refresh Agent Harness timeline submission
 
 - **Objective:** Keep the existing SandBase Harness submission in a dedicated agent-harness reference list factually current.
