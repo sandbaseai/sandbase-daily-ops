@@ -3346,6 +3346,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Let users test the guide and use reproducible feedback to improve the bridge; keep dsh-index separately pending its rebase.
 
+### 2026-08-31 — Picrew handbook resource review
+
+- **Objective:** Promote the now-verified DeepSeek Harness Handbook through a relevant documentation/resource directory.
+- **Action:** Added a source-backed follow-up to [Picrew Awesome Agent Harness issue #82](https://github.com/Picrew/awesome-agent-harness/issues/82), linking the merged v0.3.8 bridge guide and the canonical runtime installation guide.
+- **Validation:** The issue is open and proposes the handbook under Documentation / Learning; the [follow-up](https://github.com/Picrew/awesome-agent-harness/issues/82#issuecomment-5472872086) records the current evidence and relationship between handbook and runtime.
+- **Distribution channel:** GitHub directory curation; X, LinkedIn, and Discord remain review-gated drafts and no social-account publication is claimed.
+- **Boundary:** Inclusion is maintainer-controlled; the handbook is not an official DeepSeek project or security certification, and runtime isolation depends on backend/deployment configuration.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Let the directory maintainer decide placement and avoid opening a duplicate issue or PR.
+
 ### 2026-08-31 — Surface merged handbook guide in project discovery
 
 - **Objective:** Make the verified DeepSeek Harness integration discoverable from the project's primary README.
