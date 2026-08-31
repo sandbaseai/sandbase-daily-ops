@@ -3705,3 +3705,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** This is an existing maintainer-controlled PR; no duplicate PR or issue was opened.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for maintainer review and respond only to concrete requested changes.
+
+### 2026-08-31 — Reconcile Awesome AI Engineering inclusion
+
+- **Objective:** Keep the promotion ledger aligned with a newly confirmed public directory merge.
+- **Action:** Verified [Awesome AI Engineering PR #4](https://github.com/Eric-LLMs/Awesome-AI-Engineering/pull/4) merged and publicly lists SandBase Harness in the open-source agent engineering project table.
+- **Validation:** The merged entry is source-backed and records the current v0.3.8 project reference. The project promotion history corrected the stale pending status in [`d77c212`](https://github.com/sandbaseai/sandbase-harness/commit/d77c212).
+- **Distribution channel:** Community-maintained agent engineering catalog; this records inclusion only and makes no endorsement, benchmark, security-certification, traffic, or social-account publication claim.
+- **Boundary:** No new submission or duplicate was created; the existing merged PR is the canonical record.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Keep the public project record aligned when the catalog changes, and wait for new maintainer-controlled actions.
