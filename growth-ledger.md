@@ -3405,3 +3405,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** The comment says SandBase does not replace gVisor and does not claim universal kernel isolation, endorsement, or security certification; effective isolation remains backend/deployment dependent.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Let gVisor maintainers review the complementary reference; do not repeat the follow-up unless they request clarification.
+
+### 2026-08-31 — Hugging Face registry attribution fix
+
+- **Objective:** Keep the SandBase Harness Hub-attribution entry accurate without misclassifying other harnesses.
+- **Action:** Fixed [Hugging Face PR #2432](https://github.com/huggingface/huggingface.js/pull/2432) in commit [`4407827b`](https://github.com/liyangbing/huggingface.js/commit/4407827bc9c5564f1abdcc327fb23fdc0060a2e7) by removing `MANAGED_AGENTS_HOME` as a harness identity marker; posted the [maintainer follow-up](https://github.com/huggingface/huggingface.js/pull/2432#issuecomment-5472961075).
+- **Validation:** Tasks format, lint, and TypeScript checks passed; Cursor Bugbot passed after the fix. Direct merge and auto-merge are unavailable to the current account because of the base branch policy/permission boundary.
+- **Distribution channel:** Hugging Face agent-harness registry PR; X, LinkedIn, and Discord remain review-gated drafts with no social-account publication claimed.
+- **Boundary:** The change uses standard `AI_AGENT` / `AGENT` attribution rather than a data-directory setting; no Hugging Face inclusion, endorsement, or security certification is claimed until maintainer merge.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Let Hugging Face maintainers merge the checked fix; do not bypass branch policy or open a duplicate PR.
