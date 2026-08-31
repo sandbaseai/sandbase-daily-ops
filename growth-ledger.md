@@ -4766,3 +4766,12 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Distribution channel:** GitHub repository search and topic discovery.
 - **Boundary:** No stars, followers, votes, reviews, or traffic were manufactured or claimed.
 - **Next hypothesis:** Keep topics aligned with shipped capabilities and remove tags if the implementation no longer supports them.
+
+### 2026-08-31 — Deduplicate Awesome Harness review path
+
+- **Objective:** Keep one accurate review path in each community directory and reduce duplicate promotion noise.
+- **Action:** Compared [weiwei966/awesome-ai-harness PR #3](https://github.com/weiwei966/awesome-ai-harness/pull/3) and [PR #4](https://github.com/weiwei966/awesome-ai-harness/pull/4). PR #3 contains the fuller bilingual reference-Harness entry; PR #4 repeats the same project in the same README. Posted a pointer and closed #4.
+- **Validation:** #4 is now `CLOSED`; #3 remains the canonical open review path. The closure did not alter the destination repository's content.
+- **Distribution channel:** `weiwei966/awesome-ai-harness`, community-maintained Harness list.
+- **Boundary:** This is duplicate cleanup, not directory inclusion, endorsement, ranking, security certification, or traffic generation.
+- **Next hypothesis:** Continue checking same-destination submissions for overlap before adding more entries.
