@@ -3265,3 +3265,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** The entry is a discovery request only; no universal isolation, endorsement, or security certification is claimed.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Let the directory maintainer review the existing PR; avoid additional nudges unless requested.
+
+### 2026-08-31 — Awesome MCP Servers duplicate cleanup
+
+- **Objective:** Keep the high-traffic MCP directory promotion path canonical and reduce duplicate maintainer work.
+- **Action:** Closed the older duplicate [PR #13188](https://github.com/punkpeye/awesome-mcp-servers/pull/13188) with a pointer to canonical [PR #13240](https://github.com/punkpeye/awesome-mcp-servers/pull/13240).
+- **Validation:** #13240 remains open, clean, and has a successful `check-submission`; its required Glama/maintainer review is still pending. #13188 is now closed and no longer a promotion target.
+- **Distribution channel:** Existing GitHub MCP directory review; X, LinkedIn, and Discord drafts remain `NEEDS REVIEW` and require operator/account authorization.
+- **Boundary:** No listing, endorsement, Glama score, or security certification is claimed; future references use #13240 only.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Let the canonical PR's maintainer/Glama gate complete; do not reopen or duplicate #13188.

@@ -62,6 +62,8 @@ Existing high-visibility review: Slava Awesome AI Agents PR #403 https://github.
 
 Existing agent-platform directory review: Scottcjn Awesome Agents PR #59 https://github.com/Scottcjn/awesome-agents/pull/59 already contains a SandBase Harness entry and is clean/mergeable with maintainer review pending. A source and deployment-boundary verification follow-up was posted; no duplicate PR was created.
 
+MCP directory maintenance: the older duplicate Awesome MCP Servers PR #13188 https://github.com/punkpeye/awesome-mcp-servers/pull/13188 was closed in favor of canonical PR #13240 https://github.com/punkpeye/awesome-mcp-servers/pull/13240, whose `check-submission` passed. The canonical entry remains under maintainer/Glama review; no listing or endorsement is claimed.
+
 Another self-hosted sandbox review: Awesome Agent Sandbox PR #2 https://github.com/vivy-yi/awesome-agent-sandbox/pull/2 adds SandBase Harness to its Open Source table. Maintainer review is pending; no endorsement is claimed.
 
 New guide review: Awesome Sandbox PR #27 https://github.com/restyler/awesome-sandbox adds a dedicated SandBase Harness runtime/sandbox case study. GitGuardian is still running and maintainer review is pending; no security certification is claimed.
