@@ -3966,6 +3966,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** The entry records 640 GitHub stars at submission time; no causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
 
+### 2026-08-31 — Submit Awesome-AI-Repos entry
+
+- **Objective:** Add SandBase Harness to a broad open-source AI repository map with an AI-agent infrastructure audience.
+- **Action:** Opened [Awesome-AI-Repos PR #2](https://github.com/cyber-albsecop/Awesome-AI-Repos/pull/2), adding the canonical repository to the AI Agents & Agent Frameworks section.
+- **Validation:** Confirmed no existing SandBase Harness entry in the target README and passed `git diff --check`; the destination PR is open and mergeable. Project affiliation is disclosed. No inclusion, ranking, endorsement, security certification, traffic, or causal referral is claimed.
+- **Distribution channel:** Community-maintained Awesome AI Repos directory.
+- **Boundary:** The one-line description is source-backed and describes selectable sandbox backends; no hosted endpoint or universal isolation is claimed.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
+
 ### 2026-08-31 — Submit we-can-use MCP curation entry
 
 - **Objective:** Add SandBase Harness to a curated AI coding ecosystem guide that maintains both English and Korean MCP infrastructure lists.
