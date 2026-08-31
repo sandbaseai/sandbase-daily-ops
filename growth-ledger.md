@@ -3946,6 +3946,19 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
 
+### 2026-08-31 — Submit to Awesome X for Agents Runtime & Sandbox
+
+- **Objective:** Reach builders looking for infrastructure that serves AI agents.
+- **Action:** Opened [Awesome X for Agents PR #4](https://github.com/zacfire/awesome-x-for-agents/pull/4) adding SandBase Harness to Runtime & Sandbox.
+- **Evidence:** Commit [`87daf1f`](https://github.com/liyangbing/awesome-x-for-agents/commit/87daf1f) adds the canonical repository link and a concise factual description.
+- **Validation:** The destination PR was open, clean, and mergeable when submitted; no CI checks were configured at that time.
+- **Review handoff:** Posted [maintainer verification](https://github.com/zacfire/awesome-x-for-agents/pull/4#issuecomment-5474305239) disclosing project affiliation and deployment-dependent isolation.
+- **Distribution channel:** Community-maintained directory for infrastructure used by AI agents.
+- **Boundary:** The entry is source-backed; actual isolation depends on the selected runtime and deployment configuration.
+- **Disclosure:** Directory inclusion is not an endorsement, ranking, security certification, traffic guarantee, or backlink guarantee.
+- **Star count / referral:** No causal star increase or referral is claimed.
+- **Next hypothesis:** Wait for destination-maintainer review or requested changes before another follow-up.
+
 ### 2026-08-31 — Verify four MCP and agent directory paths
 
 - **Objective:** Strengthen four open directory PRs with current source evidence before maintainer review.
