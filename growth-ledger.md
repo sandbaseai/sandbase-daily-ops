@@ -1,5 +1,11 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Awesome AI Agents 2026 runtime review
+
+- **Action:** Queued [Awesome AI Agents 2026 PR #240](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/pull/240) in the X, LinkedIn, and Discord drafts.
+- **Evidence:** The destination requires a tier, primary language, and most-specific type tag, and explicitly supports agent tooling/infrastructure entries. The PR follows that format and distinguishes the current Harness runtime from the existing SandBase CLI entry.
+- **Scope:** Discovery submission only. Review is pending; no endorsement or security certification is claimed, and all channel drafts remain `NEEDS REVIEW`.
+
 ## 2026-08-31 — E2B Awesome AI Agents scope review
 
 - **Action:** Queued [E2B Awesome AI Agents Issue #1468](https://github.com/e2b-dev/awesome-ai-agents/issues/1468) in the X, LinkedIn, and Discord drafts.
