@@ -69,7 +69,7 @@ Existing agent-platform directory review: [Scottcjn Awesome Agents PR #59](https
 
 MCP directory maintenance: older duplicate [PR #13188](https://github.com/punkpeye/awesome-mcp-servers/pull/13188) was closed in favor of canonical [PR #13240](https://github.com/punkpeye/awesome-mcp-servers/pull/13240), where `check-submission` passed. Maintainer/Glama review remains pending; no listing or endorsement is claimed.
 
-DSH index update: [Sunrisepeak dsh-index PR #43](https://github.com/Sunrisepeak/dsh-index/pull/43) updates the SandBase Harness descriptor to v0.3.8. Build and boot checks passed at submission, but the PR is currently dirty and needs a rebase; publication is not claimed.
+DeepSeek Harness integration update: handbook [PR #291](https://github.com/sandbaseai/deepseek-harness-handbook/pull/291) is merged with the v0.3.8 bridge guide after catalog cleanup [PR #292](https://github.com/sandbaseai/deepseek-harness-handbook/pull/292). DSH index update: [Sunrisepeak dsh-index PR #43](https://github.com/Sunrisepeak/dsh-index/pull/43) updates the SandBase Harness descriptor to v0.3.8. Build and boot checks passed at submission, but the PR is currently dirty and needs a rebase; publication is not claimed.
 
 Another pending self-hosted sandbox review: [Awesome Agent Sandbox PR #2](https://github.com/vivy-yi/awesome-agent-sandbox/pull/2), adding SandBase Harness to the Open Source table. Review only; no endorsement is claimed.
 
@@ -117,6 +117,6 @@ New LLMOps review: [TensorChord Awesome LLMOps PR #785](https://github.com/tenso
 
 Update: the DCO check for PR #785 now passes. Maintainer review is still pending; no listing or endorsement is claimed.
 
-Latest public update: [official Discussion #116](https://github.com/sandbaseai/sandbase-harness/discussions/116#discussioncomment-18211885) links the v0.3.8 installation source and current DeepSeek Harness/dsh-index review status. Feedback is welcome on backend choice, MCP schemas, session lifecycle, and audit/replay gaps.
+Latest public update: [official Discussion #116](https://github.com/sandbaseai/sandbase-harness/discussions/116#discussioncomment-18211980) links the v0.3.8 installation source, merged handbook integration, and current dsh-index review status. Feedback is welcome on backend choice, MCP schemas, session lifecycle, and audit/replay gaps.
 
 Curator review: [AAE Agent Engineering issue #1](https://github.com/Lxcardoza993/AAE/issues/1) proposes SandBase Harness for the Agent Harness category. Placement is pending and is not an endorsement or security certification.
