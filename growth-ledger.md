@@ -3485,3 +3485,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** Local, Docker, Kubernetes, and worker backends do not provide identical isolation properties; the entry is not an endorsement or security certification.
 - **Star count / referral:** Directory had 1,020 stars at action; no causal Star increase or referral is claimed.
 - **Next hypothesis:** Let the maintainer review the existing PR and avoid duplicate submissions or repeated comments without a material change.
+
+### 2026-08-31 — Agent-native services catalog submission
+
+- **Objective:** Place SandBase Harness in a curator-reviewed catalog focused on services designed for AI agents.
+- **Action:** After maintainer approval on [Awesome Agent-Native Services issue #115](https://github.com/haoruilee/awesome-agent-native-services/issues/115), opened [PR #116](https://github.com/haoruilee/awesome-agent-native-services/pull/116) adding a source-backed SandBase Harness dossier under Agent Runtime & Infrastructure, including MCP metadata, installation paths, session/sandbox/audit/replay primitives, and backend-dependent isolation language.
+- **Validation:** The PR was created from commit [`38e74ed`](https://github.com/liyangbing/awesome-agent-native-services/commit/38e74ed978b122fa161f1ba3f46049e35cb2b200); the repository build regenerated the catalog pages and `git diff --check` passed. GitHub currently reports the PR open with no automated checks.
+- **Distribution channel:** Maintainer-reviewed agent-native services catalog; no inclusion or endorsement is claimed until merge. X, LinkedIn, and Discord remain review-gated drafts with no social-account publication claimed.
+- **Boundary:** This is a disclosed self-submission by the project maintainer. The entry makes no security-certification claim; effective isolation remains dependent on the selected backend and deployment configuration.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Let the catalog maintainer review the approved issue-linked PR; do not open a duplicate or repeat the submission without a material state change.
