@@ -4045,6 +4045,15 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** Project affiliation was disclosed. The request asks for scope guidance before any PR, and makes no inclusion, endorsement, security certification, traffic, or causal referral claim.
 - **Next hypothesis:** Wait for maintainer guidance; prepare documentation only if the destination confirms the integration is in scope.
 
+### 2026-08-31 — Queue Kubernetes integration scope review in social drafts
+
+- **Objective:** Make the new Kubernetes Agent Sandbox scope discussion available for editorial review across the project’s prepared outreach channels.
+- **Action:** Added Issue #1500 to the X, LinkedIn, and Discord drafts, each marked as a maintainer-pending scope question with no existing adapter or inclusion claim.
+- **Validation:** All three drafts remain `NEEDS REVIEW`; no social account publication was performed. The text links the canonical issue and preserves the distinction between Kubernetes orchestration and SandBase Harness runtime governance.
+- **Distribution channel:** Prepared X, LinkedIn, and Discord drafts.
+- **Boundary:** No public post, endorsement, security certification, traffic, or causal referral is claimed.
+- **Next hypothesis:** Await editorial approval and Kubernetes maintainer guidance before further outreach.
+
 ### 2026-08-31 — Correct Picrew harness verification link
 
 - **Objective:** Repair a stale source link in the canonical Picrew agent-harness submission.
