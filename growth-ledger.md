@@ -1,5 +1,15 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Submit SandBase Harness to LocalAlternative
+
+- **Objective:** Add the project to a relevant local-first/self-hosted AI tool directory through its free review path.
+- **Action:** Submitted [SandBase Harness](https://github.com/sandbaseai/sandbase-harness) through [LocalAlternative](https://www.localalternative.io/submit), including the canonical repository, a factual local-first runtime tagline, current capabilities, and the public maintainer GitHub noreply contact. Featured placement was not selected.
+- **Validation:** The directory's published criteria require local-first or self-hosted operation, active development within six months, documentation or a working demo, and a free option; the project satisfies those source-backed criteria. The public Convex submission endpoint returned HTTP `200` with receipt ID `jx7da5dabqhkskkjsk0vzeax2n8dhn4b`.
+- **Distribution channel:** LocalAlternative local AI tools directory, pending manual review.
+- **Boundary:** Receipt is not publication, ranking, endorsement, security certification, traffic, or causal referral. Sandboxing/isolation remains dependent on the selected backend and deployment configuration.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for the stated review process; do not resubmit while this receipt is pending.
+
 ## 2026-08-31 — Submit SandBase Harness to Infrabase.ai
 
 - **Objective:** Add the project to a relevant AI-infrastructure discovery channel with a normal, no-cost submission.
