@@ -3856,6 +3856,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
 
+### 2026-08-31 — Verify four sandbox and AI-tool directory paths
+
+- **Objective:** Strengthen four open, clean directory PRs with current source evidence before maintainer review.
+- **Action:** Posted verification comments on [Awesome AI Developer Tools PR #11](https://github.com/ayushrajdev9-cmyk/awesome-ai-developer-tools/pull/11#issuecomment-5473893099), [Awesome Agent Sandboxes PR #59](https://github.com/msyvr/awesome-agent-sandboxes/pull/59#issuecomment-5473893240), [Awesome Agent Sandbox PR #2](https://github.com/vivy-yi/awesome-agent-sandbox/pull/2#issuecomment-5473893375), and [Awesome Agent Sandbox PR #4](https://github.com/fishman/awesome-agent-sandbox/pull/4#issuecomment-5473893492). The comments link current v0.3.8 installation/MCP/sandbox sources and state the backend/deployment-dependent isolation boundary.
+- **Validation:** All four destination PRs were open and clean at review time; project affiliation was disclosed. The AI-tools entry also retains current Registry/GHCR references, and the generated sandbox entry reports refreshed outputs. Project records were synchronized in [`408a6e7`](https://github.com/sandbaseai/sandbase-harness/commit/408a6e7). No inclusion, ranking, endorsement, security certification, traffic, or causal referral is claimed.
+- **Distribution channel:** Community-maintained AI-tool and sandbox directory review paths.
+- **Boundary:** No duplicate submissions were created; entries remain maintainer-controlled and source-backed.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
+
 ### 2026-08-31 — Verify agent infrastructure directory path
 
 - **Objective:** Strengthen an open infrastructure-directory PR with current source evidence while preserving its unresolved CI status.
