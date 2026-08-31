@@ -1,5 +1,14 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Submit MCPRadar independent scan request
+
+- **Objective:** Add an independent MCP security-scanning review path for the published SandBase Harness bridge.
+- **Action:** Posted maintainer verification on [MCPRadar issue #8](https://github.com/yatuk/mcpradar/issues/8#issuecomment-5476708421), linking the v0.3.8 release, official MCP Registry identity, published bridge image, and current installation/configuration guide.
+- **Validation:** The request requires a user-owned, reachable Harness API and discloses that isolation depends on the selected backend and deployment configuration. No scan result, security certification, endorsement, or universal isolation claim is made before the directory review.
+- **Distribution channel:** MCPRadar independent MCP security scanner.
+- **Boundary:** I maintain/contribute to SandBase Harness; that affiliation is disclosed for curator review.
+- **Next hypothesis:** Wait for the scanner maintainers' result; do not represent the submission as a completed security review.
+
 ## 2026-08-31 — Publish merged-listing promotion checkpoint
 
 - **Objective:** Publish a current, source-linked summary of externally merged discovery entries after the previous checkpoint.
