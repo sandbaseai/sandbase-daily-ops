@@ -4066,6 +4066,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for the directory maintainer to approve its external workflow and review #3.
 
+### 2026-08-31 — Close accepted Awesome AI Agents intake
+
+- **Objective:** Remove a stale open intake after its proposed directory entry was already accepted.
+- **Action:** Closed [Awesome AI Agents issue #56](https://github.com/aloth/awesome-ai-agents/issues/56) with a pointer to the merged [PR #57](https://github.com/aloth/awesome-ai-agents/pull/57).
+- **Validation:** GitHub reports issue #56 closed and PR #57 merged at `890f558`; the merged PR is the canonical public listing.
+- **Distribution channel:** Public directory intake and merged-listing cleanup.
+- **Boundary:** No new submission was created; this is queue cleanup and does not claim endorsement, ranking, security certification, or causal referral.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Continue monitoring the merged listing without reopening the intake issue.
+
 ### 2026-08-31 — Publish Agent Plugin integration update
 
 - **Objective:** Give existing users a source-backed update about the new portable Agent Plugin integration and its review path.
