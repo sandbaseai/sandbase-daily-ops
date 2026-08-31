@@ -3725,3 +3725,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** The update reports an observed public merge and preserves the backend/deployment-dependent isolation qualification.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Use the official discussion for material changes and avoid repetitive updates while external state is unchanged.
+
+### 2026-08-31 — Qualify Claw360 promotion candidate
+
+- **Objective:** Expand discovery to a new agent-service directory without claiming an unconfirmed listing.
+- **Action:** Reviewed [Claw360](https://claw360.io/) and its public platform-submission flow as a possible directory for the local-first SandBase Harness runtime.
+- **Validation:** The form's Web3Forms endpoint returned HTTP 403 for the server-side request and explicitly requires a client-side submission or Pro-plan/server allowlisting; no successful submission, listing, or review record exists. The project promotion record was updated in [`cd52c9f`](https://github.com/sandbaseai/sandbase-harness/commit/cd52c9f).
+- **Distribution channel:** Claw360 agent-only platform directory; this remains a manual/browser-session candidate, not an inclusion or endorsement.
+- **Boundary:** No bypass of the form gate was attempted, and no paid submission was made. The official repository URL and factual runtime description are ready for a maintainer-authorized browser submission.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Submit only through the directory's normal client-side flow when a maintainer-controlled browser session is available.
