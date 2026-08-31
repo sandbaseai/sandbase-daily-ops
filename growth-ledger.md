@@ -1,5 +1,14 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Propose SandBase Harness to AgentStack
+
+- **Objective:** Add a source-linked SandBase Harness MCP runtime proposal to an active agent/MCP directory review queue.
+- **Action:** Posted maintainer verification on [AgentStack issue #1](https://github.com/magiautonomous/agentstack/issues/1#issuecomment-5476734625), linking v0.3.8, the official MCP Registry identity, bridge image, and installation/configuration guide.
+- **Validation:** The proposal describes the user-owned Harness API requirement and selectable execution backends, and discloses project affiliation. No inclusion, ranking, endorsement, or security certification is claimed while review is pending.
+- **Distribution channel:** AgentStack community AI-agent/MCP directory.
+- **Boundary:** Effective isolation depends on the selected backend and deployment configuration.
+- **Next hypothesis:** Wait for the directory maintainer's review; do not duplicate the issue with a separate PR.
+
 ## 2026-08-31 — Nominate SandBase Harness to Awesome MCP Registry
 
 - **Objective:** Submit the public MCP bridge to an active automated MCP registry using its documented nomination workflow.
