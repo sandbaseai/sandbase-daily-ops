@@ -3855,3 +3855,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** This was one evidence/link-correction pass on existing PRs, with no duplicate submissions or unsupported isolation claims.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
+
+### 2026-08-31 — Refresh MCP Finder and AIAnytime review evidence
+
+- **Objective:** Strengthen two open MCP directory proposals that had no prior maintainer verification comment.
+- **Action:** Posted a source verification comment on [MCP Finder Awesome MCP Servers PR #9](https://github.com/mcp-finder/awesome-mcp-servers/pull/9#issuecomment-5473796953), and a link-correction/verification comment on [AIAnytime Awesome MCP Server PR #78](https://github.com/AIAnytime/Awesome-MCP-Server/pull/78#issuecomment-5473797072).
+- **Validation:** MCP Finder's current v0.3.8, Registry, stdio, API, and backend boundaries were confirmed. AIAnytime's stale `docs/mcp.md` reference was identified as absent from the current repository and replaced with `llms-install.md` and `docs/mcp-server.md`. Project records were synchronized in [`df2b614`](https://github.com/sandbaseai/sandbase-harness/commit/df2b614); both destination PRs remain open and review-controlled.
+- **Distribution channel:** Community-maintained MCP directory review paths.
+- **Boundary:** Project affiliation was disclosed, no duplicate PR was created, and no inclusion, ranking, endorsement, or security certification is claimed.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for maintainer review or requested changes before another follow-up.
