@@ -3735,3 +3735,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** No bypass of the form gate was attempted, and no paid submission was made. The official repository URL and factual runtime description are ready for a maintainer-authorized browser submission.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Submit only through the directory's normal client-side flow when a maintainer-controlled browser session is available.
+
+### 2026-08-31 — Refresh AI-readable discovery links
+
+- **Objective:** Make verified promotion results discoverable to search-oriented agents through the repository's canonical machine-readable metadata.
+- **Action:** Updated [llms.txt](https://github.com/sandbaseai/sandbase-harness/blob/main/llms.txt) with the official promotion Discussion and direct links to the merged [Awesome Coding Agents listing](https://github.com/kailiu42/awesome-coding-agents/pull/41) and [Awesome AI Engineering listing](https://github.com/Eric-LLMs/Awesome-AI-Engineering/pull/4).
+- **Validation:** The links point to observed public merges and the current project source; the README/promotion history was synchronized in [53518ca](https://github.com/sandbaseai/sandbase-harness/commit/53518ca). No pending submission was presented as a merge.
+- **Distribution channel:** AI-readable repository metadata (llms.txt); this is discovery optimization, not directory endorsement, ranking, benchmark evidence, or security certification.
+- **Boundary:** Only verified public references were added; Claw360 remains a separate manual candidate and was not represented as a listing.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Keep machine-readable discovery links current when a third-party listing materially changes status.
