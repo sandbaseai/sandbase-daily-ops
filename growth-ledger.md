@@ -1,5 +1,15 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Submit SandBase Harness to Infrabase.ai
+
+- **Objective:** Add the project to a relevant AI-infrastructure discovery channel with a normal, no-cost submission.
+- **Action:** Submitted [SandBase Harness](https://github.com/sandbaseai/sandbase-harness) through the [Infrabase.ai submission form](https://infrabase.ai/submit), using the `Agents`-appropriate runtime description and the public maintainer GitHub noreply contact. The optional backlink was not selected and no featured placement was purchased.
+- **Validation:** The form returned HTTP `302` to `/success`; the success page states that the submission was received and will be reviewed shortly. A direct scan of the Agents and Frameworks pages found no existing SandBase match before submission.
+- **Distribution channel:** Infrabase.ai AI infrastructure directory, pending human review.
+- **Boundary:** Receipt is not inclusion, ranking, endorsement, security certification, traffic, or causal referral. Sandboxing/isolation remains dependent on the selected backend and deployment configuration.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for the directory review; do not resubmit while this submission is pending.
+
 ## 2026-08-31 — Qualify Agents-OSS submission path
 
 - **Objective:** Evaluate a newly discovered independent AI-agent directory for a legitimate SandBase Harness submission.
