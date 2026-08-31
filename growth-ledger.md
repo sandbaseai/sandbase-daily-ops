@@ -1,5 +1,14 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Clarify unrelated Hugging Face CI failures
+
+- **Objective:** Prevent upstream baseline CI failures from being misattributed to the SandBase agent-harness registration.
+- **Action:** Inspected the failed [Hugging Face PR #2432 run](https://github.com/huggingface/huggingface.js/pull/2432) and posted [CI context](https://github.com/huggingface/huggingface.js/pull/2432#issuecomment-5477129669): the browser failure is the existing XetBlob bandwidth-capped-link assertion, while e2e stops at a corepack npm network timeout before project tests.
+- **Validation:** The PR-specific format, lint, node, and Cursor Bugbot checks pass; SandBase's own full suite passes 613 tests. No claim is made that the upstream browser/e2e jobs are green.
+- **Distribution channel:** Hugging Face agent-harness registry PR review.
+- **Boundary:** This is a diagnostic clarification, not a request to bypass CI or an upstream merge claim; final acceptance remains with Hugging Face maintainers.
+- **Next hypothesis:** Wait for a maintainer rerun or policy decision; do not repeat the comment unless the CI state changes.
+
 ## 2026-08-31 — Publish agent identity integration checkpoint
 
 - **Objective:** Make the newly implemented child-process attribution behavior discoverable from the official project channel.
