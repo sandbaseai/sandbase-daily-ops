@@ -3972,6 +3972,19 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal star increase or referral is claimed.
 - **Next hypothesis:** Wait for destination-maintainer review or requested changes before another follow-up.
 
+### 2026-08-31 — Reconcile merged Agent-Native Services listing
+
+- **Objective:** Keep promotion evidence aligned with the destination's authoritative state.
+- **Observation:** [Awesome Agent-Native Services PR #116](https://github.com/haoruilee/awesome-agent-native-services/pull/116) is now merged as [`09ca7a4`](https://github.com/haoruilee/awesome-agent-native-services/commit/09ca7a409d1e8f4c474606946afc338fa0b0b0bc), closing the approved submission issue #115.
+- **Action:** Recorded the merge as a public directory listing and distinguished it from the earlier pending-review state.
+- **Validation:** The merged PR body confirms the source-backed dossier, generated catalog pages, live-link checks, and maintainer-affiliation disclosure.
+- **Scope:** The listing describes SandBase Harness capabilities without claiming universal isolation; isolation remains dependent on the selected backend and deployment configuration.
+- **Disclosure:** Directory inclusion is not an endorsement, ranking, security certification, traffic guarantee, or backlink guarantee.
+- **Boundary:** No new submission or duplicate PR was created; this is a state reconciliation only.
+- **Source:** The authoritative merge record is the destination PR and commit above.
+- **Star count / referral:** No causal star increase or referral is claimed.
+- **Next hypothesis:** Monitor the public listing for future maintainer edits or removal.
+
 ### 2026-08-31 — Verify four MCP and agent directory paths
 
 - **Objective:** Strengthen four open directory PRs with current source evidence before maintainer review.
