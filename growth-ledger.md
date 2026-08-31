@@ -3755,3 +3755,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** No unrelated website change, false reciprocal link, or unverified submission was made.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Revisit only if a canonical Harness-specific site page becomes available and the project owner approves the reciprocal badge.
+
+### 2026-08-31 — Add three new Harness promotion reviews
+
+- **Objective:** Expand factual discovery across relevant community-maintained Harness, MCP, and engineering resources.
+- **Action:** Posted maintainer verification comments on [NeuraLiying Awesome Agent Harnesses issue #4](https://github.com/NeuraLiying/Awesome-Agent-Harnesses/issues/4#issuecomment-5473588176), [Acuvity MCP Servers Registry issue #18](https://github.com/acuvity/mcp-servers-registry/issues/18#issuecomment-5473588201), and [Nexu Harness Engineering Guide issue #70](https://github.com/nexu-io/harness-engineering-guide/issues/70#issuecomment-5473588182). Each links the current v0.3.8 source, installation/MCP evidence, and backend-dependent isolation boundary.
+- **Validation:** All three issues were open with no prior comments at review time; project README and promotion history now record them in [`c34aeef`](https://github.com/sandbaseai/sandbase-harness/commit/c34aeef). No merge, inclusion, ranking, or security certification is claimed before destination-maintainer action.
+- **Distribution channel:** Community Harness/MCP directories and a Harness Engineering resource guide; each remains maintainer-controlled and pending review.
+- **Boundary:** The submissions disclose project affiliation, use only source-backed claims, and do not duplicate an existing PR or claim universal/microVM isolation.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Monitor these three review paths for concrete maintainer requests or confirmed inclusion; avoid repetitive follow-ups while state is unchanged.
