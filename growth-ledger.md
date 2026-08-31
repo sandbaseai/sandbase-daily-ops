@@ -1,5 +1,14 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Refresh channel-native social drafts with public listings
+
+- **Objective:** Keep the X, LinkedIn, and Discord promotion drafts aligned with verified public discovery outcomes.
+- **Action:** Added the confirmed [Awesome Agent Plugins catalog entry](https://github.com/ZeroPointRepo/awesome-agent-plugins#the-catalog-verified-agent-plugins), [Awesome DeepSeek Harness Top 500 merge](https://github.com/weekend-project-space/awesome-deepseek-harness-top-500/issues/3), and [Blue-Whale-Harness public sandbox Runtime/MCP listing](https://github.com/leenkcool/Blue-Whale-Harness/issues/153) to the channel-specific drafts.
+- **Validation:** Each draft links the public source and labels the outcomes as independent community listings. The copy preserves the self-hosted and backend/deployment-dependent isolation boundary; no ranking, endorsement, or security certification is claimed.
+- **Distribution channel:** Review-ready X, LinkedIn, and Discord drafts; no external social post was published.
+- **Boundary:** Account authorization and operator review are still required before publication.
+- **Next hypothesis:** Publish only after an authorized operator selects the channel copy and confirms the account and timing.
+
 ## 2026-08-31 — Clarify GitHub Awesome Copilot intake rejection
 
 - **Objective:** Correct a potentially inaccurate “purely paid service” rejection while respecting the target repository's access controls and re-intake workflow.
