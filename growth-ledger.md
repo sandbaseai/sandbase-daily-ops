@@ -4748,3 +4748,12 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Distribution channel:** [MCP Find](https://www.mcpfind.org/), a community MCP directory whose documented flow uses a GitHub pull request and maintainer review.
 - **Boundary:** This is a pending directory submission, not an inclusion, endorsement, ranking, security certification, or traffic guarantee.
 - **Next hypothesis:** Wait for maintainer checks and review on #171; do not create another duplicate submission.
+
+### 2026-08-31 — Reconfirm AgentMatter plugin review queue
+
+- **Objective:** Verify whether the prepared Agent Plugin artifact still needs a new submission.
+- **Action:** Replayed the public AgentMatter submission API for `https://github.com/sandbaseai/sandbase-harness` with component path `agent-plugin/PLUGIN.md`; the API returned HTTP 200 with `accepted: true`, `duplicate: true`, `previewOnly: false`, and submission ID `2`.
+- **Validation:** The existing queue entry records the Agent Plugin category and Codex/Claude Code/Cursor/OpenCode compatibility. No public resource page or catalog inclusion was found, so the state remains review-pending.
+- **Distribution channel:** [AgentMatter](https://www.agentmatter.net/submit), an open-source AI-agent resource catalog.
+- **Boundary:** No duplicate submission was created; this is a review-queue confirmation, not an inclusion, endorsement, ranking, security certification, or traffic guarantee.
+- **Next hypothesis:** Wait for AgentMatter review and publication; do not resubmit the existing entry.
