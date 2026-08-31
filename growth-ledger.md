@@ -3215,3 +3215,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** The entry does not claim vulnerability scanning, security certification, or endorsement; isolation and posture depend on the selected deployment/backend.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Let the maintainer review the narrowly scoped Tools entry; do not broaden it into unsupported scanner claims.
+
+### 2026-08-31 — Awesome AI Agents existing PR follow-up
+
+- **Objective:** Advance a high-visibility AI-agent directory path without creating duplicate maintainer work.
+- **Action:** Found the existing [Awesome AI Agents PR #467](https://github.com/jim-schwoebel/awesome_ai_agents/pull/467), which already adds a single-line SandBase Harness entry under Building / Frameworks; posted a source and deployment-boundary verification follow-up instead of opening another PR.
+- **Validation:** GitHub reports the existing PR `OPEN / MERGEABLE / CLEAN`; the follow-up is [recorded on the PR](https://github.com/jim-schwoebel/awesome_ai_agents/pull/467#issuecomment-5472570979). The destination accepts relevant AI-agent resources with a clear link and one-sentence description.
+- **Distribution channel:** Existing GitHub directory review; X, LinkedIn, and Discord drafts remain `NEEDS REVIEW` and require operator/account authorization.
+- **Boundary:** The entry is a discovery request only; local/Docker/Kubernetes/worker backends do not provide identical isolation properties, and no endorsement or security certification is claimed.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Let the directory maintainer review the existing PR; do not create a duplicate contribution.
