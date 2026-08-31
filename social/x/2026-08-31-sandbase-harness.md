@@ -18,7 +18,7 @@ Now publicly listed in Awesome AI Engineering: https://github.com/Eric-LLMs/Awes
 
 New directory submissions are under review: MeshKore (#14) https://meshkore.com/submit and Agent Switchboard PR #44 https://github.com/assafbar2/agentswitchboard.dev/pull/44
 
-Hugging Face agent-harness registry PR: https://github.com/huggingface/huggingface.js/pull/2432 now includes a fix removing `MANAGED_AGENTS_HOME` as an identity marker; format, lint, TypeScript, and Cursor Bugbot checks pass, and Hugging Face maintainer merge is pending.
+Hugging Face agent-harness registry PR: https://github.com/huggingface/huggingface.js/pull/2432 is now merged at https://github.com/huggingface/huggingface.js/commit/56e5168c42132c3b90aacbb1dfdc18f41debde6d. SandBase child shells now identify as `AI_AGENT=sandbase-harness`; explicit nested-agent markers remain supported. This is attribution integration, not endorsement or security certification.
 
 New runtime-boundary reference: gVisor PR #14517 https://github.com/google/gvisor/pull/14517 documents Docker → `runsc` → gVisor execution for selected DeepSeek Harness commands. This is complementary to SandBase's Harness-side controls, not a universal kernel-isolation or security-certification claim.
 

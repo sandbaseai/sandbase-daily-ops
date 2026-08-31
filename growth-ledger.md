@@ -1,5 +1,14 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Reconcile Hugging Face registry merge
+
+- **Objective:** Update promotion records and channel-native drafts after the Hugging Face agent-harness registry accepted SandBase Harness.
+- **Action:** Verified [Hugging Face PR #2432](https://github.com/huggingface/huggingface.js/pull/2432) merged at [`56e5168`](https://github.com/huggingface/huggingface.js/commit/56e5168c42132c3b90aacbb1dfdc18f41debde6d), with the public `main` source containing the SandBase Harness entry. Updated the SandBase README/promotion record at [`e1fbdfe`](https://github.com/sandbaseai/sandbase-harness/commit/e1fbdfe) and revised the X, LinkedIn, and Discord drafts.
+- **Validation:** The drafts distinguish a merged attribution integration from endorsement or security certification, and link the maintainer confirmation. They retain the backend/deployment-dependent isolation boundary; social accounts were not used and no post was published.
+- **Distribution channel:** Hugging Face agent-harness registry plus review-ready X, LinkedIn, and Discord drafts.
+- **Boundary:** The upstream registry controls its own content; the external CI browser/e2e failures remain separately documented and do not invalidate the merged registry entry.
+- **Next hypothesis:** Use the merged Hugging Face source as a stable discovery link and wait for future directory status changes before another update.
+
 ## 2026-08-31 — Verify DSH Plugin Market generated metadata PR
 
 - **Objective:** Advance a new DSH Plugin Market metadata intake with current, source-backed runtime evidence.
