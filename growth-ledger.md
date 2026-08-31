@@ -3345,3 +3345,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** This is a source-backed documentation integration, not an endorsement or security certification; isolation remains dependent on the selected backend and deployment configuration.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Let users test the guide and use reproducible feedback to improve the bridge; keep dsh-index separately pending its rebase.
+
+### 2026-08-31 — Channel drafts corrected after handbook merge
+
+- **Objective:** Prevent review-gated outreach from carrying stale “handbook blocked” language after the integration was merged.
+- **Action:** Updated the X, LinkedIn, and Discord drafts to identify handbook PR #291 as merged at `425dd255`, retain dsh-index PR #43 as rebase-pending, and point to the latest official Discussion update.
+- **Validation:** All three drafts now distinguish the merged guide from the still-pending index update and preserve the current installation source.
+- **Distribution channel:** Draft assets only; operator review and account authorization remain required, and no social-account publication is claimed.
+- **Boundary:** Copy retains backend/deployment-dependent isolation wording and does not claim directory endorsement or security certification.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Publish only after operator approval; recheck dsh-index before making any future catalog claim.
