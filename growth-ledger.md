@@ -9,6 +9,15 @@
 - **Boundary:** Maintainer review remains authoritative; the PR does not claim inclusion, ranking, endorsement, security certification, traffic, or causal referral. Sandboxing/isolation remains dependent on the selected backend and deployment configuration.
 - **Next hypothesis:** Wait for maintainer review or requested changes; do not create another submission for this catalog.
 
+## 2026-08-31 — Verify AgentSeal registry submission
+
+- **Objective:** Make the AgentSeal MCP Security Registry submission actionable without requesting preferential scoring or implying certification.
+- **Action:** Posted a source-backed maintainer verification on [AgentSeal issue #36](https://github.com/getagentseal/agentseal/issues/36#issuecomment-5476519347), linking the current v0.3.8 release, installation guide, published bridge image, six-tool MCP surface, and runtime controls.
+- **Validation:** AgentSeal is an active public repository with 345 stars and its registry issue had no prior project-maintainer verification comment. The note requests the registry's normal analysis and discloses the project affiliation; it explicitly qualifies isolation by backend and deployment configuration.
+- **Distribution channel:** AgentSeal MCP Security Registry review queue.
+- **Boundary:** This is a review request, not inclusion, a score, endorsement, security certification, traffic, or causal referral.
+- **Next hypothesis:** Wait for the registry maintainer's normal analysis; do not bypass Turnstile or repeat the submission.
+
 ## 2026-08-31 — Queue E2B catalog review in channel drafts
 
 - **Objective:** Keep the channel-native promotion drafts aligned with the new high-visibility E2B directory submission.
