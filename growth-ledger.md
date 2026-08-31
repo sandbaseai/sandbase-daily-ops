@@ -1,5 +1,11 @@
 # Open-source growth ledger
 
+## 2026-08-31 — E2B Awesome AI SDKs review path
+
+- **Action:** Queued the existing canonical [E2B Awesome AI SDKs PR #344](https://github.com/e2b-dev/awesome-ai-sdks/pull/344) in the X, LinkedIn, and Discord drafts.
+- **Evidence:** The directory explicitly covers SDKs, frameworks, libraries, and tools for creating, monitoring, debugging, and deploying AI agents; the PR adds the distinct Harness runtime and is mergeable.
+- **Scope:** Maintainer review and CLA verification remain pending. This is a source-linked review request, not an endorsement or security certification; drafts remain `NEEDS REVIEW`.
+
 ## 2026-08-31 — Awesome AI Agents 2026 runtime review
 
 - **Action:** Queued [Awesome AI Agents 2026 PR #240](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/pull/240) in the X, LinkedIn, and Discord drafts.
