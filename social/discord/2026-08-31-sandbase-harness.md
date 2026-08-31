@@ -86,3 +86,5 @@ New review path: [Awesome Agent Harnesses issue #4](https://github.com/NeuraLiyi
 New MCP directory submission: [mcp.so intake comment](https://github.com/chatmcp/mcpso/issues/1#issuecomment-5472364196) provides the canonical repository, MCP server ID, v0.3.8 OCI image, and setup guide. Processing is pending; no listing or endorsement is claimed.
 
 New survey scope review: [HKUST-KnowComp Awesome Agent Harness issue #8](https://github.com/HKUST-KnowComp/Awesome-Agent-Harness/issues/8) proposes SandBase Harness as a source-linked runtime resource. Curator review is pending; no research-paper, listing, endorsement, or security-certification claim is made.
+
+Maintenance update: [Picrew Awesome Agent Harness PR #86](https://github.com/Picrew/awesome-agent-harness/pull/86) is synchronized with upstream `main` and now CLEAN/MERGEABLE. Review remains pending; unrelated baseline verifier findings are documented.

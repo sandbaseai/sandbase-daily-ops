@@ -3136,3 +3136,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** No listing, endorsement, or security certification is claimed; isolation remains dependent on the selected backend and deployment.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Let the survey maintainers decide whether an open-source runtime resource fits their taxonomy; do not duplicate the scope request.
+
+### 2026-08-31 — Picrew Awesome Agent Harness conflict resolution
+
+- **Objective:** Keep the high-visibility Harness directory review path mergeable and easy for its maintainer to assess.
+- **Action:** Merged the destination's latest `main` into [Picrew PR #86](https://github.com/Picrew/awesome-agent-harness/pull/86), regenerated `README.md`, `README_zh.md`, and the verification report, then pushed the conflict resolution.
+- **Validation:** GitHub now reports the PR `OPEN`, `MERGEABLE`, and `CLEAN`; the verifier's 2 stale entries and 1 external OpenReview 403 are unrelated baseline findings.
+- **Distribution channel:** Existing GitHub PR maintenance; X, LinkedIn, and Discord drafts remain `NEEDS REVIEW` and require operator/account authorization.
+- **Boundary:** No directory endorsement or security certification is claimed.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Let the Picrew maintainer review the clean, regenerated diff; no further conflict push is needed unless the base changes again.
