@@ -3475,3 +3475,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** The note explicitly rejects a vulnerability-scanner, universal-isolation, endorsement, or security-certification claim; isolation remains backend/deployment dependent.
 - **Star count / referral:** Directory had 68 stars at action; no causal Star increase or referral is claimed.
 - **Next hypothesis:** Let the maintainer review the existing entry and avoid repeating the security-scope clarification without a material change.
+
+### 2026-08-31 — DevOps MCP directory verification
+
+- **Objective:** Provide maintainers of a DevOps-focused MCP directory with complete, source-backed evidence for the existing SandBase Harness entry.
+- **Action:** Posted a verification note on [Awesome DevOps MCP Servers PR #327](https://github.com/rohitg00/awesome-devops-mcp-servers/pull/327), linking the current installation guide, official Registry identity, pinned GHCR image, self-hosted API requirement, and documented runtime controls.
+- **Validation:** The directory had 1,020 stars at action; GitHub reports the focused PR as `CLEAN`, and the [public follow-up](https://github.com/rohitg00/awesome-devops-mcp-servers/pull/327#issuecomment-5473090598) records the evidence and disclosure.
+- **Distribution channel:** Maintainer-reviewed DevOps MCP directory; X, LinkedIn, and Discord remain review-gated drafts with no social-account publication claimed.
+- **Boundary:** Local, Docker, Kubernetes, and worker backends do not provide identical isolation properties; the entry is not an endorsement or security certification.
+- **Star count / referral:** Directory had 1,020 stars at action; no causal Star increase or referral is claimed.
+- **Next hypothesis:** Let the maintainer review the existing PR and avoid duplicate submissions or repeated comments without a material change.
