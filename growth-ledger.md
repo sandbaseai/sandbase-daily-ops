@@ -3956,6 +3956,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** The entry records 640 GitHub stars at submission time; no causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
 
+### 2026-08-31 — Submit BestAIAgent.in evidence-first catalog entry
+
+- **Objective:** Add SandBase Harness to an evidence-first AI-agent catalog while preserving the catalog's imported-versus-verified distinction.
+- **Action:** Opened [BestAIAgent.in PR #1](https://github.com/CodesbyFebin/BESTAIAGENT-MASTER/pull/1), adding the canonical repository to `lib/imported-agents.ts` as an imported/noindex entry with claims intentionally limited to the official source description.
+- **Validation:** `npm run verify:catalog` passed with 61 entity evidence hashes and 4 recomputed authority evidence hashes; `git diff --check` passed. TypeScript typecheck could not run because dependencies were not installed in the clean clone. Project affiliation is disclosed.
+- **Distribution channel:** Evidence-first AI-agent catalog review path.
+- **Boundary:** No fabricated evidence receipt, pricing, score, benchmark, endorsement, or security certification is claimed; isolation remains deployment-dependent.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
+
 ### 2026-08-31 — Submit Chinese Awesome AI Agents directory entry
 
 - **Objective:** Add SandBase Harness to a Chinese-language AI-agent navigation project with a structured MCP catalog.
