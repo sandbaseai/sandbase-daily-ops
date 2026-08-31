@@ -1,5 +1,14 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Verify Awesome LLM Agents directory proposal
+
+- **Objective:** Provide a concise, source-backed maintainer verification for a new Agent Infrastructure directory proposal.
+- **Action:** Posted [PR #319 verification](https://github.com/kaushikb11/awesome-llm-agents/pull/319#issuecomment-5477015075), linking the canonical repository and v0.3.8 release and confirming Apache-2.0/self-hosted scope, MCP bridge, sessions, approvals, credentials, audit/replay, and selectable backends.
+- **Validation:** The PR uses the destination's YAML format and remains open/mergeable; no inclusion has been claimed. The proposed entry is factual and preserves the backend/deployment-dependent isolation boundary.
+- **Distribution channel:** Awesome LLM Agents Agent Infrastructure directory review.
+- **Boundary:** Maintainer review controls inclusion; the comment discloses project affiliation and makes no ranking, endorsement, or security-certification claim.
+- **Next hypothesis:** Wait for maintainer review; do not post a duplicate follow-up unless the PR state changes substantively.
+
 ## 2026-08-31 — Refresh channel-native social drafts with public listings
 
 - **Objective:** Keep the X, LinkedIn, and Discord promotion drafts aligned with verified public discovery outcomes.
