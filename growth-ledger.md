@@ -3835,3 +3835,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** This is a factual status announcement, not a repeated external submission or social-account publication; project affiliation and backend/deployment-dependent isolation are explicit.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for directory review responses or public status changes before another announcement.
+
+### 2026-08-31 — Verify BotMarket Registry-sourced active record
+
+- **Objective:** Reconcile the public directory state after submitting the MCP metadata, distinguishing automatic Registry ingestion from the separate manual-review queue.
+- **Action:** Queried BotMarket's public MCP search and detail API. It returns SandBase Harness as record `102971`, `status: active`, with `source: mcp-registry` and the canonical `io.github.sandbaseai/sandbase-harness` identity.
+- **Validation:** The active record is independently sourced from the official MCP Registry and is not attributed to manual queue `4`; that queue's automatic PR path previously failed on a missing Git SHA. The official Discussion status correction is [comment 18213051](https://github.com/sandbaseai/sandbase-harness/discussions/116#discussioncomment-18213051), and project records are synchronized in [`e8cfd6b`](https://github.com/sandbaseai/sandbase-harness/commit/e8cfd6b). No ranking, endorsement, security certification, traffic, or causal referral is claimed.
+- **Distribution channel:** BotMarket public MCP directory via official Registry ingestion; active record is now publicly queryable.
+- **Boundary:** The record's directory presence is reported factually, while manual submission `4` remains separately unresolved; no duplicate retry was made.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Monitor whether BotMarket enriches the active record or resolves queue `4`; avoid another submission while the canonical record is active.
