@@ -3996,6 +3996,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for external maintainers to review the retained PRs and update the checkpoint only when substantive state changes occur.
 
+### 2026-08-31 — Clarify Beejmaxx and MobinX directory paths
+
+- **Objective:** Resolve another duplicate watchlist submission while preserving valid entries that target different catalog sections.
+- **Action:** Closed the older [Beejmaxx Awesome Agent Runtimes PR #3](https://github.com/beejmaxx/awesome-agent-runtimes/pull/3) in favor of [#4](https://github.com/beejmaxx/awesome-agent-runtimes/pull/4), which changes the same generated watchlist files. Compared [MobinX #408](https://github.com/MobinX/awesome-mcp-list/pull/408) and [#409](https://github.com/MobinX/awesome-mcp-list/pull/409) and retained both because they target different sections: Command Line MCP servers versus AI Agents & Frameworks. Published the clarification in [Discussion #116](https://github.com/sandbaseai/sandbase-harness/discussions/116#discussioncomment-18214923).
+- **Validation:** Beejmaxx #4 remains open and mergeable; MobinX #408 and #409 remain separate open review paths. Project records were synchronized in SandBase Harness commit `8c8cb3e`.
+- **Distribution channel:** Agent-runtime watchlist and MCP directory review paths, plus the official project Discussion.
+- **Boundary:** Duplicate cleanup and scope clarification only; no new submission, inclusion, ranking, endorsement, or security certification is claimed.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for maintainer review on Beejmaxx #4 and both valid MobinX entries; do not reopen #3.
+
 ### 2026-08-31 — Submit AI Systems Atlas curation suggestion
 
 - **Objective:** Add a source-backed review path for SandBase Harness to a curated operational AI systems atlas.
