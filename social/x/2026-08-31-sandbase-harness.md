@@ -18,6 +18,8 @@ Hugging Face agent-harness registry PR: https://github.com/huggingface/huggingfa
 
 More ecosystem submissions: Agentic Community Landscape PR #2 https://github.com/agentic-community/agentic-landscape/pull/2, Awesome AI Agent Engineering PR #1 https://github.com/sspoisk/awesome-ai-agent-engineering/pull/1, and MyMCPTools issue #8 https://github.com/shibley/mymcptools/issues/8. All are pending maintainer review.
 
+Security-oriented discovery: Awesome-LLMSecOps PR #66 https://github.com/wearetyomsmnv/Awesome-LLMSecOps/pull/66 adds SandBase Harness under Agentic security. The PR is clean and mergeable; maintainer review is pending. This is a source-linked discovery request, not an endorsement or security certification, and isolation remains deployment/backend dependent.
+
 Public discovery: MCPVault now has an auto-indexed, unclaimed listing https://mcpvault.io/servers/sandbase-harness (automated signal, not a maintainer certification).
 
 Boundary: isolation depends on the selected deployment backend; this is not a universal microVM or kernel-isolation claim.

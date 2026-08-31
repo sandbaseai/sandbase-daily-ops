@@ -25,6 +25,8 @@ Hugging Face agent-harness registry: [PR #2432](https://github.com/huggingface/h
 
 Additional pending review paths: [Agentic Community Landscape PR #2](https://github.com/agentic-community/agentic-landscape/pull/2), [Awesome AI Agent Engineering PR #1](https://github.com/sspoisk/awesome-ai-agent-engineering/pull/1), and [MyMCPTools issue #8](https://github.com/shibley/mymcptools/issues/8). These are independent directory submissions, not endorsements or security certifications.
 
+Security-oriented discovery: [Awesome-LLMSecOps PR #66](https://github.com/wearetyomsmnv/Awesome-LLMSecOps/pull/66) adds a source-linked SandBase Harness entry under Agentic security. Maintainer review is pending; this is not an endorsement or security certification, and isolation depends on the selected backend and deployment configuration.
+
 Public discovery update: [MCPVault lists SandBase Harness](https://mcpvault.io/servers/sandbase-harness) as an auto-indexed, unclaimed entry. Its automated quality signals are not a maintainer review or security certification.
 
 Two more community review paths: [Collective AI Tools #332](https://github.com/hanishrao/collective-ai-tools/issues/332) and [Awesome Agent Skills PR #79](https://github.com/philipbankier/awesome-agent-skills/pull/79). Both are pending maintainer review and are not endorsements or security certifications.

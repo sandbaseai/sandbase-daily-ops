@@ -3186,3 +3186,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** No directory endorsement or security certification is claimed.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Let the destination maintainer fix or waive the unrelated baseline link; do not modify unrelated repository content from this PR.
+
+### 2026-08-31 — Awesome-LLMSecOps Agentic security review path
+
+- **Objective:** Reach a security-operations audience with a narrowly scoped, source-backed runtime entry.
+- **Action:** Opened [Awesome-LLMSecOps PR #66](https://github.com/wearetyomsmnv/Awesome-LLMSecOps/pull/66) under the destination's Agentic security table.
+- **Validation:** The one-row change links the canonical SandBase repository and documents sandboxed tools, credential boundaries, policy controls, audit logs, event replay, and the MCP bridge. GitHub reports the PR `OPEN / MERGEABLE / CLEAN`; no automated checks are reported. A verification note is [recorded on the PR](https://github.com/wearetyomsmnv/Awesome-LLMSecOps/pull/66#issuecomment-5472508168).
+- **Distribution channel:** GitHub directory review; X, LinkedIn, and Discord drafts remain `NEEDS REVIEW` and require operator/account authorization.
+- **Boundary:** Isolation and security posture depend on the selected deployment/backend; the entry makes no security certification or maintainer endorsement claim.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Let the directory maintainer review the focused entry; do not add scanner or certification claims that are not supported by the project sources.
