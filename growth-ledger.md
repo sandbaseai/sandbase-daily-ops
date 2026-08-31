@@ -1,5 +1,14 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Publish agent identity integration checkpoint
+
+- **Objective:** Make the newly implemented child-process attribution behavior discoverable from the official project channel.
+- **Action:** Published [Discussion #116 integration update](https://github.com/sandbaseai/sandbase-harness/discussions/116#discussioncomment-18216953), linking the implementation [`d4ae4e0`](https://github.com/sandbaseai/sandbase-harness/commit/d4ae4e0), documentation [`0a35ae6`](https://github.com/sandbaseai/sandbase-harness/commit/0a35ae6), full test results, and the [Hugging Face review response](https://github.com/huggingface/huggingface.js/pull/2432#issuecomment-5477083868).
+- **Validation:** The update states default `AI_AGENT=sandbase-harness` behavior for local, Docker, Kubernetes, and self-hosted worker paths, and explicitly preserves nested-agent overrides. It makes no security-boundary, endorsement, ranking, or certification claim.
+- **Distribution channel:** Official SandBase Harness GitHub Discussion #116.
+- **Boundary:** The target Hugging Face PR remains maintainer-controlled and open; this is a source-backed integration checkpoint, not a registry acceptance claim.
+- **Next hypothesis:** Use the checkpoint as the canonical reference while waiting for maintainer review; do not repeat it without a new implementation or status change.
+
 ## 2026-08-31 — Respond to Hugging Face agent identity review
 
 - **Objective:** Turn the Hugging Face maintainer's detection question into a source-backed integration fix and review response.
