@@ -3856,6 +3856,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
 
+### 2026-08-31 — Reconcile TensorBlock MCP listing
+
+- **Objective:** Record the authoritative public outcome of the TensorBlock MCP directory submission.
+- **Action:** Verified that [TensorBlock Awesome MCP Servers PR #2060](https://github.com/TensorBlock/awesome-mcp-servers/pull/2060) merged at `c88cedfa0974d9d3fae9ec13b6a5af1253b48a92`, and that TensorBlock's merge follow-up exposes the public [SandBase Harness profile](https://tensorblock.co/mcp/servers/github-sandbaseai-sandbase-harness-7a5986ca).
+- **Validation:** The merged entry carries the current `ghcr.io/sandbaseai/sandbase-harness-mcp:0.3.8` reference. Project records were synchronized in [`87a519c`](https://github.com/sandbaseai/sandbase-harness/commit/87a519c). The profile is reported as a directory listing, not an endorsement or security certification; no traffic or causal referral is claimed.
+- **Distribution channel:** TensorBlock MCP directory and its deployed server profile.
+- **Boundary:** This is a status reconciliation of an already merged PR; no duplicate submission or automated re-open was made.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Monitor the profile for metadata refreshes and keep the repository release/docs as the source of truth.
+
 ### 2026-08-31 — Verify four sandbox and AI-tool directory paths
 
 - **Objective:** Strengthen four open, clean directory PRs with current source evidence before maintainer review.
