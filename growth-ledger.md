@@ -3956,6 +3956,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** The entry records 640 GitHub stars at submission time; no causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
 
+### 2026-08-31 — Submit AI Agent Marketplace entry
+
+- **Objective:** Add SandBase Harness to a public AI-agent marketplace index with a reusable project card and official source links.
+- **Action:** Opened [AI Agent Marketplace PR #36](https://github.com/aiagenta2z/ai-agent-marketplace/pull/36), adding a formatted `AGENT.md` entry with the canonical repository, installation guide, MCP guide, deployment guide, and issue tracker.
+- **Validation:** The destination PR is open, clean, and mergeable; `git diff --check` passed. Project affiliation is disclosed. No inclusion, ranking, endorsement, security certification, traffic, or causal referral is claimed.
+- **Distribution channel:** AI Agent Marketplace community index and review workflow.
+- **Boundary:** The submission uses official SandBase sources and does not claim a hosted service, universal isolation, or marketplace approval.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
+
 ### 2026-08-31 — Submit to Awesome X for Agents Runtime & Sandbox
 
 - **Objective:** Reach builders looking for infrastructure that serves AI agents.
