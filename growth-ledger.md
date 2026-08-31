@@ -1,5 +1,14 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Submit to Awesome LLM Agents infrastructure catalog
+
+- **Objective:** Add a source-backed SandBase Harness entry to an actively maintained LLM-agent framework catalog without duplicating existing submissions.
+- **Action:** Opened [Awesome LLM Agents PR #319](https://github.com/kaushikb11/awesome-llm-agents/pull/319), adding the project as a single data/frameworks/sandbase-harness.yml entry under Agent Infrastructure with a concise description that follows the destination's 60-character limit.
+- **Validation:** The destination requires an active, non-archived repository with at least 25 stars and a recent push; SandBase currently reports 641 stars, Apache-2.0, and a 2026-08-31 push. The destination test suite passes 16 tests, and GitHub reports the PR OPEN and MERGEABLE. No duplicate was found in the destination data.
+- **Distribution channel:** Community-maintained LLM agent frameworks, runtimes, and tooling catalog.
+- **Boundary:** Maintainer review remains authoritative; the PR does not claim inclusion, ranking, endorsement, security certification, traffic, or causal referral. Sandboxing/isolation remains dependent on the selected backend and deployment configuration.
+- **Next hypothesis:** Wait for maintainer review or requested changes; do not create another submission for this catalog.
+
 ## 2026-08-31 — Queue E2B catalog review in channel drafts
 
 - **Objective:** Keep the channel-native promotion drafts aligned with the new high-visibility E2B directory submission.
