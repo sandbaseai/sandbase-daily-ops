@@ -3585,3 +3585,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** The warning keeps the official repository and installation guide authoritative; no correction was attempted without a public maintainer channel.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Recheck the Hub after a material refresh and update the warning only when the page exposes current metadata or a correction path.
+
+### 2026-08-31 — Complete trilingual Agentic AI directory mirror
+
+- **Objective:** Remove a maintainer-identified documentation gap blocking a credible Stage 7 directory review.
+- **Action:** Updated [Awesome Agentic AI 中文 PR #213](https://github.com/WenyuChiou/awesome-agentic-ai-zh/pull/213) with the missing Simplified Chinese SandBase Harness row and corrected the `Harness／Sandbox／Deploy` group `rowspan` from 5 to 6. The PR now mirrors the English, Traditional Chinese, and Simplified Chinese entries and keeps the backend/deployment-dependent isolation qualification.
+- **Validation:** The PR branch commit [`3feb877`](https://github.com/liyangbing/awesome-agentic-ai-zh/commit/3feb877) passed `git diff --check`, `check-locale-links.py`, `check-image-locale.py`, and `test_locale_links.py` (14/14). The maintainer was notified in [the follow-up comment](https://github.com/WenyuChiou/awesome-agentic-ai-zh/pull/213#issuecomment-5473308460); PR gate and final review remain pending.
+- **Distribution channel:** Curator-reviewed trilingual Agentic AI learning directory; no inclusion, endorsement, research-paper status, or security certification is claimed. Social channels remain review-gated drafts with no social-account publication claimed.
+- **Boundary:** This is a disclosed self-submission; the curator retains taxonomy and merge control, and isolation depends on the selected backend/deployment configuration rather than a universal microVM guarantee.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for the maintainer's required PR gate; respond only to concrete review feedback and do not create a duplicate submission.
