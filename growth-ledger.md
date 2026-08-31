@@ -1,5 +1,14 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Publish Hugging Face registry merge announcement
+
+- **Objective:** Make the newly merged Hugging Face registry inclusion discoverable from the official project channel and current promotion docs.
+- **Action:** Published [Discussion #116 merge announcement](https://github.com/sandbaseai/sandbase-harness/discussions/116#discussioncomment-18217029), linking merged commit [`56e5168`](https://github.com/huggingface/huggingface.js/commit/56e5168c42132c3b90aacbb1dfdc18f41debde6d) and SandBase marker implementation [`d4ae4e0`](https://github.com/sandbaseai/sandbase-harness/commit/d4ae4e0). Updated canonical promotion documentation in [`b51a81e`](https://github.com/sandbaseai/sandbase-harness/commit/b51a81e) and kept X/LinkedIn/Discord drafts review-gated.
+- **Validation:** The public Hugging Face `main` source contains the SandBase Harness entry; the announcement labels this as attribution/discovery integration and retains the backend/deployment-dependent isolation boundary. No social account was used and no endorsement or security certification is claimed.
+- **Distribution channel:** Official GitHub Discussion #116, canonical promotion docs, and review-ready social drafts.
+- **Boundary:** Social publication still requires authorized operator/account access; upstream registry content remains maintainer-controlled.
+- **Next hypothesis:** Use the merged registry entry as a stable discovery link and wait for the next substantive external status change.
+
 ## 2026-08-31 — Reconcile Hugging Face registry merge
 
 - **Objective:** Update promotion records and channel-native drafts after the Hugging Face agent-harness registry accepted SandBase Harness.
