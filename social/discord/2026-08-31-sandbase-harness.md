@@ -116,3 +116,5 @@ Public listing update: [Awesome Agent Operating Systems PR #13](https://github.c
 New LLMOps review: [TensorChord Awesome LLMOps PR #785](https://github.com/tensorchord/Awesome-LLMOps/pull/785) adds SandBase Harness to the catalog. It is OPEN/MERGEABLE; DCO completion is contributor-owned and maintainer review is pending.
 
 Update: the DCO check for PR #785 now passes. Maintainer review is still pending; no listing or endorsement is claimed.
+
+Latest public update: [official Discussion #116](https://github.com/sandbaseai/sandbase-harness/discussions/116#discussioncomment-18211885) links the v0.3.8 installation source and current DeepSeek Harness/dsh-index review status. Feedback is welcome on backend choice, MCP schemas, session lifecycle, and audit/replay gaps.
