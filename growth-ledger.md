@@ -3535,3 +3535,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** This is a disclosed self-submission. The handoff does not imply universal microVM/kernel isolation; effective properties depend on the selected backend and deployment configuration.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for the repository maintainer to merge the already-approved PR; do not retry the unauthorized merge or repeat the handoff without a material state change.
+
+### 2026-08-31 — Best-of MCP Servers version correction
+
+- **Objective:** Keep the ranked MCP server directory proposal accurate and reviewable.
+- **Action:** Updated [Best-of MCP Servers issue #370](https://github.com/tolkonepiu/best-of-mcp-servers/issues/370#issuecomment-5473195559) to replace stale v0.3.7 references with the current v0.3.8 release, GHCR bridge image, six-tool installation guide, and official MCP Registry identity.
+- **Validation:** The directory's contribution guide explicitly accepts project updates through the issue workflow; the comment links the current release and source files and preserves the no-package-manager/OCI installation context.
+- **Distribution channel:** Maintainer-reviewed ranked MCP directory; inclusion, ranking, endorsement, and security certification remain unclaimed. Social channels remain review-gated drafts with no social-account publication claimed.
+- **Boundary:** This is a disclosed self-submission. Effective container reachability and isolation remain dependent on deployment/backend configuration.
+- **Star count / referral:** Directory snapshot was 142 stars at review; no causal Star increase or referral is claimed.
+- **Next hypothesis:** Let the weekly directory maintainer process the existing issue; do not open a duplicate or repeat the correction without a material release or metadata change.
