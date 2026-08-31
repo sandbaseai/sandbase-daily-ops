@@ -4006,6 +4006,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for maintainer review or requested changes; do not duplicate the entry elsewhere in this directory.
 
+### 2026-08-31 — Deduplicate Picrew Awesome Agent Harness submissions
+
+- **Objective:** Keep the strongest existing SandBase Harness submission as the single maintainer-review path in a major agent-harness catalog.
+- **Action:** Compared [PR #85](https://github.com/Picrew/awesome-agent-harness/pull/85) and [PR #86](https://github.com/Picrew/awesome-agent-harness/pull/86). Closed conflicting duplicate #85 and retained the newer, mergeable #86; posted a current-source verification follow-up on #86.
+- **Validation:** GitHub reports #85 closed and #86 open/mergeable. The retained PR includes generated English/Chinese catalog files and a current verification report; the follow-up confirms v0.3.8 and the backend/deployment-dependent isolation boundary.
+- **Distribution channel:** Curated agent-harness catalog review path.
+- **Boundary:** This is deduplication and review handoff, not a new duplicate submission; project affiliation is disclosed and no inclusion, endorsement, ranking, or security certification is claimed.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for the catalog maintainer to review or merge #86.
+
 ### 2026-08-31 — Publish Agent Plugin integration update
 
 - **Objective:** Give existing users a source-backed update about the new portable Agent Plugin integration and its review path.
