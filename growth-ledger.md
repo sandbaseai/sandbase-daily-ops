@@ -4006,6 +4006,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for maintainer review on Beejmaxx #4 and both valid MobinX entries; do not reopen #3.
 
+### 2026-08-31 — Deduplicate Vivy sandbox catalog submissions
+
+- **Objective:** Remove one overlapping sandbox-catalog submission while preserving separate-section directory proposals.
+- **Action:** Compared [Vivy Awesome Agent Sandbox #1](https://github.com/vivy-yi/awesome-agent-sandbox/pull/1) and [#2](https://github.com/vivy-yi/awesome-agent-sandbox/pull/2). Both changed the same three catalog tables, so closed the older #1 in favor of #2. Confirmed Bureado #29/#30 and Fhiltscher #14/#15 target different sections and remain open. Published the clarification in [Discussion #116](https://github.com/sandbaseai/sandbase-harness/discussions/116#discussioncomment-18214952).
+- **Validation:** Vivy #1 is closed and #2 remains open and mergeable; Bureado #29/#30 and Fhiltscher #14/#15 remain separate open review paths. No merge, inclusion, ranking, endorsement, or security certification is claimed.
+- **Distribution channel:** Community-maintained sandbox and runtime directories, plus the official project Discussion.
+- **Boundary:** Duplicate cleanup and scope verification only; no new submission was created. Project records were synchronized in SandBase Harness commit `fb05a4c`.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for external maintainers on the retained paths; do not reopen Vivy #1.
+
 ### 2026-08-31 — Submit AI Systems Atlas curation suggestion
 
 - **Objective:** Add a source-backed review path for SandBase Harness to a curated operational AI systems atlas.
