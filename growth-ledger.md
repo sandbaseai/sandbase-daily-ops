@@ -3565,3 +3565,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** The guide remains the source of truth for prerequisites and backend-dependent behavior; no conversion or traffic increase is claimed.
 - **Star count / referral:** Repository snapshot was 640 stars at action; no causal Star increase or referral is claimed.
 - **Next hypothesis:** Keep Homepage aligned with the current installation entry point and revisit only when the canonical onboarding URL changes.
+
+### 2026-08-31 — DeepSeek Harness Hub discovery audit
+
+- **Objective:** Capture a newly discovered public DSH community page without treating stale metadata as a current installation claim.
+- **Action:** Verified [DeepSeek Harness Hub's SandBase Harness page](https://deepseek-harness-hub.com/plugins/sandbase-harness/) and recorded it in the project promotion document as a public discovery page with a v0.3.4 metadata snapshot.
+- **Validation:** The page describes the six-tool DSH bridge and links the project repository, but its version and install examples are stale relative to v0.3.8; no public correction/submission channel was exposed by the page or site search.
+- **Distribution channel:** Third-party community discovery page; no current-version listing, endorsement, security certification, traffic, or social publication is claimed. The canonical repository and installation guide remain authoritative.
+- **Boundary:** Users should follow the current tagged source/install instructions rather than the stale page snapshot; no attempt was made to bypass a missing maintainer channel.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Recheck the page after a future site refresh or if a maintainer contact path appears; avoid repeated discovery claims while its metadata remains stale.
