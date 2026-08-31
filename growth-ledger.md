@@ -3886,6 +3886,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Monitor profile metadata and user feedback before another announcement.
 
+### 2026-08-31 — Verify two MCP security directory paths
+
+- **Objective:** Strengthen two open security/MCP directory PRs with current source evidence while preserving their review and certification boundaries.
+- **Action:** Posted verification comments on [Awesome Agentic MCP Security PR #28](https://github.com/mcp-security-project/awesome-agentic-mcp-security/pull/28#issuecomment-5473947545) and [RoyalPinto Awesome MCP Security PR #4](https://github.com/royalpinto007/awesome-mcp-security/pull/4#issuecomment-5473947773). The comments link current v0.3.8 installation/MCP/sandbox sources and state the backend/deployment-dependent isolation boundary.
+- **Validation:** PR #28 was open with GitHub status `UNSTABLE`; PR #4 was open and clean. Project affiliation was disclosed, and the comments explicitly reject universal-isolation and security-certification interpretations. Project records were synchronized in [`a6c49b1`](https://github.com/sandbaseai/sandbase-harness/commit/a6c49b1). No inclusion, ranking, endorsement, traffic, or causal referral is claimed.
+- **Distribution channel:** Community-maintained MCP security and agentic security directory review paths.
+- **Boundary:** No duplicate submissions were created; maintainer review and automated status remain authoritative.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for destination-maintainer review, CI resolution, or requested changes before further follow-up.
+
 ### 2026-08-31 — Verify four sandbox and AI-tool directory paths
 
 - **Objective:** Strengthen four open, clean directory PRs with current source evidence before maintainer review.
