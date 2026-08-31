@@ -66,3 +66,5 @@ Additional MCP directory review: [Awesome MCP issue #99](https://github.com/abor
 New gateway directory review: [Awesome MCP Gateways PR #77](https://github.com/e2b-dev/awesome-mcp-gateways/pull/77) adds SandBase Harness to Open-source MCP Gateways. Maintainer review and CLA verification are pending; this is not an endorsement or security certification.
 
 New harness directory review: [Awesome AI Harness PR #4](https://github.com/weiwei966/awesome-ai-harness/pull/4) adds SandBase Harness to SDKs & runtimes. Maintainer review is pending; this is not an endorsement or security certification.
+
+New sandbox directory review: [Awesome AI Coding Sandboxes PR #15](https://github.com/fhiltscher/awesome-ai-coding-sandboxes/pull/15) adds SandBase Harness to Adjacent runtimes. Maintainer review is pending; the entry preserves the provider-dependent isolation boundary.

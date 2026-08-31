@@ -3052,3 +3052,21 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Let the maintainer review the specific harness-design
   entry before any follow-up.
+
+### 2026-08-31 — Awesome AI Coding Sandboxes review path
+
+- **Objective:** Reach a security-posture-focused sandbox directory without
+  overstating SandBase's isolation guarantees.
+- **Action:** Opened [fhiltscher/awesome-ai-coding-sandboxes#15](https://github.com/fhiltscher/awesome-ai-coding-sandboxes/pull/15)
+  in the Adjacent section.
+- **Validation:** The README-only PR contains one entry and explicitly says
+  isolation depends on the provider; GitHub reports `OPEN` and `MERGEABLE`
+  with no reported checks.
+- **Distribution channel:** GitHub sandbox directory review; corresponding
+  social drafts are marked `NEEDS REVIEW` and require operator/account
+  authorization.
+- **Boundary:** No directory endorsement or security certification is claimed;
+  SandBase is not presented as a standalone isolation engine.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Let the maintainer review the adjacent-runtime fit and
+  matrix placement before any follow-up.
