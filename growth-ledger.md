@@ -3946,6 +3946,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
 
+### 2026-08-31 — Submit AgentVerse-5K directory entry
+
+- **Objective:** Add SandBase Harness to a curated, machine-indexed AI-agent project directory with relevant MCP and coding-agent categories.
+- **Action:** Opened [AgentVerse-5K PR #3](https://github.com/mrahm65/AgentVerse-5K/pull/3), adding the canonical repository to both Coding Agents and MCP Servers in descending star order. A maintainer verification comment confirms the public source description and current star count.
+- **Validation:** The destination PR is open, clean, and mergeable; `git diff --check` passed. Project affiliation is disclosed. No inclusion, ranking, endorsement, security certification, traffic, or causal referral is claimed.
+- **Distribution channel:** Curated open-source AI-agent directory review path.
+- **Boundary:** The submission is maintainer-controlled and source-backed; no duplicate SandBase entry was present before the PR.
+- **Star count / referral:** The entry records 640 GitHub stars at submission time; no causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
+
 ### 2026-08-31 — Submit to Awesome X for Agents Runtime & Sandbox
 
 - **Objective:** Reach builders looking for infrastructure that serves AI agents.
@@ -4225,4 +4235,14 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Distribution channel:** Community-maintained MCP and AI developer-tools directory review paths.
 - **Boundary:** No duplicate submissions were created; the Awesome-MCP entry remains distinct from SandBase CLI, and the running Harness API/backend requirement is explicit.
 - **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
+
+### 2026-08-31 — Submit AgentVerse-5K directory entry
+
+- **Objective:** Add SandBase Harness to a curated, machine-indexed AI-agent project directory with relevant MCP and coding-agent categories.
+- **Action:** Opened [AgentVerse-5K PR #3](https://github.com/mrahm65/AgentVerse-5K/pull/3), adding the canonical repository to both Coding Agents and MCP Servers in descending star order. A maintainer verification comment confirms the public source description and current star count.
+- **Validation:** The destination PR is open, clean, and mergeable; `git diff --check` passed. Project affiliation is disclosed. No inclusion, ranking, endorsement, security certification, traffic, or causal referral is claimed.
+- **Distribution channel:** Curated open-source AI-agent directory review path.
+- **Boundary:** The submission is maintainer-controlled and source-backed; no duplicate SandBase entry was present before the PR.
+- **Star count / referral:** The entry records 640 GitHub stars at submission time; no causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
