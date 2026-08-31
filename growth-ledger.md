@@ -3936,6 +3936,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for directory review/publication before further action.
 
+### 2026-08-31 — Submit MCPFly listing
+
+- **Objective:** Add SandBase Harness to a new public MCP directory through its normal submission API.
+- **Action:** Submitted `https://github.com/sandbaseai/sandbase-harness` to [MCPFly](https://mcpserver.so/submit) using the documented `type=server` API. The endpoint returned HTTP 200, `success: true`, `Submission received and pending approval`, and submission ID `sandbaseai/sandbase-harness`.
+- **Validation:** The submission is pending approval; no public listing URL is claimed until publication is independently verified. Project records were synchronized in [`4e528b6`](https://github.com/sandbaseai/sandbase-harness/commit/4e528b6). No duplicate submission, paid placement, traffic, endorsement, or security-certification claim was made.
+- **Distribution channel:** MCPFly public MCP server directory.
+- **Boundary:** Used the normal public API with the canonical repository URL; no authentication bypass or metadata inflation was attempted.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Monitor the submission for approval and a public listing/profile URL.
+
 ### 2026-08-31 — Verify two MCP security directory paths
 
 - **Objective:** Strengthen two open security/MCP directory PRs with current source evidence while preserving their review and certification boundaries.
