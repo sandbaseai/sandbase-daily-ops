@@ -4802,3 +4802,12 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Distribution channel:** Agent Plugins Directory source indexing and direct GitHub plugin installation.
 - **Boundary:** This is a metadata patch release; the public directory still needs to reindex before the refreshed version can be claimed as visible there.
 - **Next hypothesis:** Recheck the directory page after its next crawl for plugin version `0.1.1`, current source commit, and the `0.3.8` bridge image.
+
+### 2026-08-31 — Confirm public Awesome AI Agents inclusion
+
+- **Objective:** Convert a newly observed public community-list result into a verified promotion signal and review-gated channel copy.
+- **Action:** Confirmed the current `aloth/awesome-ai-agents` README lists `sandbaseai/sandbase-harness` under Agent Skills & Tools. Added the source-linked result to the project promotion record and the X, LinkedIn, and Discord drafts.
+- **Validation:** The live README entry links the canonical repository and describes MCP tools, sandboxed execution, sessions, approvals, audit trails, and replay. The drafts remain `NEEDS REVIEW` and do not claim that the list is an endorsement or security certification.
+- **Distribution channel:** [Awesome AI Agents](https://github.com/aloth/awesome-ai-agents), public community-maintained list.
+- **Boundary:** This is a verified public list inclusion; no causal traffic, ranking, or third-party security claim is made.
+- **Next hypothesis:** Preserve the entry as a public result and only correct it if the list maintainer or source changes.
