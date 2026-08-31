@@ -1,5 +1,14 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Propose SandBase Harness to AI Systems Atlas
+
+- **Objective:** Add a source-linked operational AI system proposal to an active curation review queue.
+- **Action:** Posted maintainer verification on [AI Systems Atlas issue #34](https://github.com/katagun/ai-systems-atlas/issues/34#issuecomment-5476745347), linking the v0.3.8 release, Apache-2.0 license, installation/MCP guide, and runtime boundary.
+- **Validation:** The proposal accurately describes durable sessions, governed tools, approvals, credentials, artifacts, audit/replay, and selectable backends. It discloses the user-owned API requirement and project affiliation.
+- **Distribution channel:** AI Systems Atlas operational-systems curation.
+- **Boundary:** Isolation and security properties depend on the selected backend and deployment configuration; no inclusion, ranking, endorsement, or security certification is claimed.
+- **Next hypothesis:** Wait for curator review and respond only to substantive requests.
+
 ## 2026-08-31 — Propose SandBase Harness to AgentStack
 
 - **Objective:** Add a source-linked SandBase Harness MCP runtime proposal to an active agent/MCP directory review queue.
