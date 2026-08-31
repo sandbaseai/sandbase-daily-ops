@@ -3023,3 +3023,14 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Let the destination maintainer resolve the CLA check and
   review the factual one-line entry before any follow-up.
+
+### 2026-08-31 — Duplicate gateway submission correction
+
+- **Objective:** Keep the gateway promotion queue limited to the canonical
+  maintainer review path.
+- **Action:** Closed duplicate [e2b-dev/awesome-mcp-gateways#81](https://github.com/e2b-dev/awesome-mcp-gateways/pull/81)
+  and corrected the social drafts to reference the earlier [PR #77](https://github.com/e2b-dev/awesome-mcp-gateways/pull/77).
+- **Validation:** GitHub reports #81 `CLOSED`; #77 remains `OPEN` and
+  `MERGEABLE` with its CLA check unresolved.
+- **Result:** No duplicate gateway submission remains in the active promotion
+  copy; no social publication was performed.
