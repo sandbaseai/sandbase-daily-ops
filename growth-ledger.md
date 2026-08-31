@@ -3845,3 +3845,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** The record's directory presence is reported factually, while manual submission `4` remains separately unresolved; no duplicate retry was made.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Monitor whether BotMarket enriches the active record or resolves queue `4`; avoid another submission while the canonical record is active.
+
+### 2026-08-31 — Refresh three MCP directory review paths
+
+- **Objective:** Improve the correctness of existing, still-open MCP directory proposals with current source links before maintainer review.
+- **Action:** Posted verification comments on [Awesome MCP DevTools PR #13](https://github.com/Epistates/awesome-mcp-devtools/pull/13#issuecomment-5473780943), [Collabnix Awesome MCP Lists PR #105](https://github.com/collabnix/awesome-mcp-lists/pull/105#issuecomment-5473781090), and [EverWorks Awesome MCP Servers PR #161](https://github.com/ever-works/awesome-mcp-servers/pull/161#issuecomment-5473781279). The updates link v0.3.8, the current installation/MCP guides, and the backend-dependent isolation boundary.
+- **Validation:** The latter two PR bodies referenced documentation paths that are not present in the current repository; the comments supply replacement links and disclose maintainer affiliation. Project README and promotion history were synchronized in [`2a53eba`](https://github.com/sandbaseai/sandbase-harness/commit/2a53eba). All three PRs remain open; no inclusion, endorsement, ranking, or security certification is claimed.
+- **Distribution channel:** Community-maintained MCP and DevOps directory review paths.
+- **Boundary:** This was one evidence/link-correction pass on existing PRs, with no duplicate submissions or unsupported isolation claims.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
