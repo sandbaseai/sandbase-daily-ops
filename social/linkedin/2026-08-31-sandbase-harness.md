@@ -58,6 +58,8 @@ The high-visibility [Awesome LLM Security PR #313](https://github.com/corca-ai/a
 
 The existing [Awesome AI Agents PR #467](https://github.com/jim-schwoebel/awesome_ai_agents/pull/467) already adds a single-line SandBase Harness entry to the AI-agent resources list. It is clean and mergeable while maintainer review is pending. We followed up on that existing contribution instead of opening a duplicate; the source-backed entry remains a discovery request, not an endorsement or security certification.
 
+The active [Jenqyang Awesome AI Agents PR #460](https://github.com/Jenqyang/Awesome-AI-Agents/pull/460) proposes SandBase Harness for Applications → Tools. It follows the directory's standard-OSS, maintainability, and neutral-description rules; the PR is clean and mergeable while maintainer review is pending. The entry describes independently self-hostable capabilities without pricing or hosted-upsell language and is not an endorsement or security certification.
+
 The [Awesome Agent Sandbox PR #2](https://github.com/vivy-yi/awesome-agent-sandbox/pull/2) is another focused community review request, adding SandBase Harness to a Self-hosted / Open Source sandbox table. It remains pending maintainer review and uses a concise, capability-oriented description.
 
 The broader [Awesome Sandbox PR #27](https://github.com/restyler/awesome-sandbox/pull/27) proposes a dedicated case study covering SandBase Harness's self-hosted runtime, tool governance, persistent sessions, audit/replay, and selectable sandbox providers. It remains pending maintainer review, with the backend-dependent isolation boundary stated explicitly.

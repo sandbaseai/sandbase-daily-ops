@@ -3225,3 +3225,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** The entry is a discovery request only; local/Docker/Kubernetes/worker backends do not provide identical isolation properties, and no endorsement or security certification is claimed.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Let the directory maintainer review the existing PR; do not create a duplicate contribution.
+
+### 2026-08-31 — Jenqyang Awesome AI Agents review path
+
+- **Objective:** Reach an active, high-visibility AI-agent tools directory that requires neutral, independently useful OSS entries.
+- **Action:** Opened [Jenqyang Awesome AI Agents PR #460](https://github.com/Jenqyang/Awesome-AI-Agents/pull/460) under Applications → Tools.
+- **Validation:** The one-line change follows the destination's required format and links the canonical SandBase repository and star badge. GitHub reports `OPEN / MERGEABLE / CLEAN`; no automated checks are reported. A verification note is [recorded on the PR](https://github.com/Jenqyang/Awesome-AI-Agents/pull/460#issuecomment-5472593571).
+- **Distribution channel:** GitHub directory review; X, LinkedIn, and Discord drafts remain `NEEDS REVIEW` and require operator/account authorization.
+- **Boundary:** The entry uses neutral wording, omits pricing/hosted-upsell language, and does not claim endorsement, security certification, or identical isolation across deployment backends.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Let the directory maintainer review the focused OSS entry; do not add unsupported marketing or security claims.

@@ -54,6 +54,8 @@ High-visibility security directory review: Awesome LLM Security PR #313 https://
 
 Existing AI-agent directory review: Awesome AI Agents PR #467 https://github.com/jim-schwoebel/awesome_ai_agents/pull/467 already contains a single-line SandBase Harness entry. The PR is clean and mergeable; maintainer review is pending. This update follows the existing PR rather than creating a duplicate; the entry is a source-linked discovery request, not an endorsement or security certification.
 
+New active AI-agent directory review: Jenqyang Awesome AI Agents PR #460 https://github.com/Jenqyang/Awesome-AI-Agents/pull/460 adds SandBase Harness to Applications → Tools. The PR is clean and mergeable; maintainer review is pending. It follows the destination's OSS and neutral-description rules; this is a source-linked discovery request, not an endorsement or security certification.
+
 Another self-hosted sandbox review: Awesome Agent Sandbox PR #2 https://github.com/vivy-yi/awesome-agent-sandbox/pull/2 adds SandBase Harness to its Open Source table. Maintainer review is pending; no endorsement is claimed.
 
 New guide review: Awesome Sandbox PR #27 https://github.com/restyler/awesome-sandbox adds a dedicated SandBase Harness runtime/sandbox case study. GitGuardian is still running and maintainer review is pending; no security certification is claimed.
