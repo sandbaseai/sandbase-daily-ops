@@ -20,7 +20,9 @@ An additional public listing is now live in [Awesome AI Engineering](https://git
 
 Two additional discovery submissions are now in review: [MeshKore](https://meshkore.com/submit), submission #14, and [Agent Switchboard PR #44](https://github.com/assafbar2/agentswitchboard.dev/pull/44). They are review-controlled and are not being presented as live listings or endorsements.
 
-The Hugging Face [agent-harness registry PR #2432](https://github.com/huggingface/huggingface.js/pull/2432) is also under review; it adds attribution metadata only and does not change runtime behavior.
+The Hugging Face [agent-harness registry PR #2432](https://github.com/huggingface/huggingface.js/pull/2432) now includes a corrective commit that removes `MANAGED_AGENTS_HOME` as an identity marker because it is a data-directory override. Tasks formatting, lint, TypeScript, and Cursor Bugbot checks pass; Hugging Face maintainer merge remains pending.
+
+The new [gVisor integration guide PR #14517](https://github.com/google/gvisor/pull/14517) documents a Docker → `runsc` → gVisor path for selected DeepSeek Harness commands. It keeps Harness policy, Docker/OCI configuration, and gVisor kernel isolation as separate layers. SandBase Harness is a complementary Harness-side reference, not a replacement for gVisor or a universal isolation/security claim.
 
 The latest review queue also includes [Agentic Community Landscape PR #2](https://github.com/agentic-community/agentic-landscape/pull/2), [Awesome AI Agent Engineering PR #1](https://github.com/sspoisk/awesome-ai-agent-engineering/pull/1), and [MyMCPTools issue #8](https://github.com/shibley/mymcptools/issues/8). Each submission uses official repository and release evidence and remains subject to the destination maintainer's review.
 

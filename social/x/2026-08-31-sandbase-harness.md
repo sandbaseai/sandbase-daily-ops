@@ -14,7 +14,9 @@ Now publicly listed in Awesome AI Engineering: https://github.com/Eric-LLMs/Awes
 
 New directory submissions are under review: MeshKore (#14) https://meshkore.com/submit and Agent Switchboard PR #44 https://github.com/assafbar2/agentswitchboard.dev/pull/44
 
-Hugging Face agent-harness registry PR: https://github.com/huggingface/huggingface.js/pull/2432 (review pending)
+Hugging Face agent-harness registry PR: https://github.com/huggingface/huggingface.js/pull/2432 now includes a fix removing `MANAGED_AGENTS_HOME` as an identity marker; format, lint, TypeScript, and Cursor Bugbot checks pass, and Hugging Face maintainer merge is pending.
+
+New runtime-boundary reference: gVisor PR #14517 https://github.com/google/gvisor/pull/14517 documents Docker → `runsc` → gVisor execution for selected DeepSeek Harness commands. This is complementary to SandBase's Harness-side controls, not a universal kernel-isolation or security-certification claim.
 
 More ecosystem submissions: Agentic Community Landscape PR #2 https://github.com/agentic-community/agentic-landscape/pull/2, Awesome AI Agent Engineering PR #1 https://github.com/sspoisk/awesome-ai-agent-engineering/pull/1, and MyMCPTools issue #8 https://github.com/shibley/mymcptools/issues/8. All are pending maintainer review.
 
