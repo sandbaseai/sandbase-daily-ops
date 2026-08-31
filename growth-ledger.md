@@ -1,5 +1,15 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Verify five additional Harness and runtime directory paths
+
+- **Objective:** Strengthen newly found, relevant promotion proposals with current maintainer-owned source evidence.
+- **Action:** Posted verification comments on [Chinese Harness Engineering PR #6](https://github.com/whobot-ai/awesome-harness-engineering-zh/pull/6#issuecomment-5474128928), [Awesome MCP Security PR #12](https://github.com/tamish560/awesome-mcp-security/pull/12#issuecomment-5474129111), [Awesome Agent Sandbox PR #2](https://github.com/fishman/awesome-agent-sandbox/pull/2#issuecomment-5474129255), [Awesome AgentOps PR #14](https://github.com/natnew/awesome-agentops/pull/14#issuecomment-5474129392), and [Awesome Agent Runtime Security PR #27](https://github.com/bureado/awesome-agent-runtime-security/pull/27#issuecomment-5474129557). Each comment links v0.3.8, the MCP guide, project affiliation, and backend/deployment-dependent isolation scope.
+- **Validation:** All five destination PRs were open, non-draft, mergeable, and had no prior project-maintainer verification comment. The separate [Chat2AnyLLM PR #14](https://github.com/Chat2AnyLLM/awesome-mcp-servers/pull/14) remains conflicting with an upstream test-discovery issue and was not touched.
+- **Distribution channel:** Community-maintained Chinese and English Harness, AgentOps, sandbox, MCP, and runtime-security directories.
+- **Boundary:** Maintainer review remains authoritative; security-focused directory inclusion is not certification. No inclusion, ranking, endorsement, traffic, or causal referral is claimed.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for maintainer review or requested changes; revisit the conflicting PR only after its own branch/test issues are resolved.
+
 ## 2026-08-31 — Verify five new MCP and agent directory paths
 
 - **Objective:** Strengthen newly discovered, relevant promotion proposals with current maintainer-owned source evidence.
