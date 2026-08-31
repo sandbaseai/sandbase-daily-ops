@@ -64,6 +64,8 @@ Existing agent-platform directory review: Scottcjn Awesome Agents PR #59 https:/
 
 MCP directory maintenance: the older duplicate Awesome MCP Servers PR #13188 https://github.com/punkpeye/awesome-mcp-servers/pull/13188 was closed in favor of canonical PR #13240 https://github.com/punkpeye/awesome-mcp-servers/pull/13240, whose `check-submission` passed. The canonical entry remains under maintainer/Glama review; no listing or endorsement is claimed.
 
+DSH index update: Sunrisepeak dsh-index PR #43 https://github.com/Sunrisepeak/dsh-index/pull/43 updates the SandBase Harness descriptor to v0.3.8. Its submitted-revision build and boot checks passed, but the PR is currently dirty and needs a rebase; no index publication is claimed yet.
+
 Another self-hosted sandbox review: Awesome Agent Sandbox PR #2 https://github.com/vivy-yi/awesome-agent-sandbox/pull/2 adds SandBase Harness to its Open Source table. Maintainer review is pending; no endorsement is claimed.
 
 New guide review: Awesome Sandbox PR #27 https://github.com/restyler/awesome-sandbox adds a dedicated SandBase Harness runtime/sandbox case study. GitGuardian is still running and maintainer review is pending; no security certification is claimed.

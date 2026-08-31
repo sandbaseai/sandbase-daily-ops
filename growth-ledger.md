@@ -3275,3 +3275,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** No listing, endorsement, Glama score, or security certification is claimed; future references use #13240 only.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Let the canonical PR's maintainer/Glama gate complete; do not reopen or duplicate #13188.
+
+### 2026-08-31 — Sunrisepeak dsh-index v0.3.8 update
+
+- **Objective:** Track a concrete DeepSeek Harness ecosystem distribution update with its actual validation state.
+- **Action:** Recorded [Sunrisepeak dsh-index PR #43](https://github.com/Sunrisepeak/dsh-index/pull/43), which updates the SandBase Harness descriptor from v0.3.7 to v0.3.8; posted a status follow-up requesting a rebase because GitHub reports the PR `DIRTY`.
+- **Validation:** The submitted revision reported successful affected-units, descriptor-contract, site-build, and SandBase boot checks; the current PR remains open and dirty. The follow-up is [recorded on the PR](https://github.com/Sunrisepeak/dsh-index/pull/43#issuecomment-5472667191).
+- **Distribution channel:** DSH plugin/index ecosystem review; X, LinkedIn, and Discord drafts remain `NEEDS REVIEW` and require operator/account authorization.
+- **Boundary:** This is an index update under review, not a published listing or security endorsement; no publication is claimed until the PR is rebased and merged.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Let the PR author rebase and rerun the index gates before considering the update complete.
