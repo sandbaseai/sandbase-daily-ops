@@ -3146,3 +3146,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** No directory endorsement or security certification is claimed.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Let the Picrew maintainer review the clean, regenerated diff; no further conflict push is needed unless the base changes again.
+
+### 2026-08-31 — Awesome Agent Operating Systems listing confirmed
+
+- **Objective:** Keep public promotion records aligned with actual directory outcomes.
+- **Action:** Verified that [frankxai/awesome-agent-operating-systems PR #13](https://github.com/frankxai/awesome-agent-operating-systems/pull/13) merged SandBase Harness into Agent Runtimes; PR #11 was superseded and closed.
+- **Validation:** GitHub reports #13 `MERGED` at commit `865643a`; the public directory entry and dated verification link are now the authoritative path.
+- **Distribution channel:** Existing community listing; X, LinkedIn, and Discord drafts remain `NEEDS REVIEW` and require operator/account authorization.
+- **Boundary:** A directory listing is not an endorsement or security certification.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Keep future references on merged PR #13 and stop mentioning superseded PR #11.
