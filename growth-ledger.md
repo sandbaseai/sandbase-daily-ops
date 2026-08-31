@@ -3966,6 +3966,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** The entry records 640 GitHub stars at submission time; no causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
 
+### 2026-08-31 — Submit Awesome Agent Plugins proposal
+
+- **Objective:** Make SandBase Harness discoverable in a vendor-neutral Agent Plugin catalog that verifies portable `plugin.json` and MCP manifests.
+- **Action:** Opened [Awesome Agent Plugins issue #5](https://github.com/ZeroPointRepo/awesome-agent-plugins/issues/5), proposing the existing `agent-plugin/` bundle.
+- **Validation:** `agent-plugin/plugin.json` and `agent-plugin/mcp.json` both passed the canonical 1.0.0 schema validation with `ajv-cli@5`; the target tree had no existing SandBase entry. Project affiliation is disclosed. No inclusion, ranking, endorsement, security certification, traffic, or causal referral is claimed.
+- **Distribution channel:** Awesome Agent Plugins issue-based curation workflow.
+- **Boundary:** The MCP manifest pins the v0.3.8 bridge and requires a user-owned runtime URL; execution isolation depends on backend and deployment configuration. No hosted endpoint or universal isolation is claimed.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
+
 ### 2026-08-31 — Submit AgentStack directory proposal
 
 - **Objective:** Add SandBase Harness to a hand-curated directory of open-source AI agents, MCP servers, and agentic tools.
