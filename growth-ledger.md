@@ -1,5 +1,14 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Publish consolidated promotion checkpoint
+
+- **Objective:** Make the latest substantive promotion work discoverable from the official project discussion without repeating unchanged review nudges.
+- **Action:** Published [Discussion #116 checkpoint](https://github.com/sandbaseai/sandbase-harness/discussions/116#discussioncomment-18216609), summarizing MCPRadar, Awesome MCP Registry, AgentStack, AI Systems Atlas, RUCAIBox, AAE, Awesome Agent Harness Survey, and the bilingual Agent Harness list review paths.
+- **Validation:** The update separates scan requests and curator proposals from actual directory inclusion, preserves source links and maintainer-affiliation disclosure, and makes no ranking, recommendation, endorsement, or security-certification claim.
+- **Distribution channel:** Official SandBase Harness GitHub Discussion.
+- **Boundary:** The Harness API is user-owned; effective isolation depends on the selected execution backend and deployment configuration.
+- **Next hypothesis:** Keep this as the current public checkpoint and update only after a new merge, curator decision, scan result, or substantive request.
+
 ## 2026-08-31 — Verify bilingual Agent Harness directory proposal
 
 - **Objective:** Support a bilingual Agent Harness discovery path with current, source-backed English and Chinese descriptions.
