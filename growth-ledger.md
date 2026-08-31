@@ -1,5 +1,14 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Record dsh-index rebase handoff
+
+- **Objective:** Keep the dsh-index promotion path actionable and accurately documented after its upstream branch became dirty.
+- **Action:** Reproduced a successful local rebase of [Sunrisepeak/dsh-index PR #43](https://github.com/Sunrisepeak/dsh-index/pull/43) against the current `main`, then posted the exact handoff details in [the PR comment](https://github.com/Sunrisepeak/dsh-index/pull/43#issuecomment-5475602409). The PR head is in the upstream repository, and the current contributor account cannot push the rebased branch (`403 Permission denied`), so no duplicate replacement PR was created.
+- **Validation:** The submitted revision's affected-units, descriptor-contract, site-build, and SandBase boot checks passed. GitHub still reports the PR `OPEN`, `CONFLICTING`, and `DIRTY`; catalog publication is not claimed.
+- **Distribution channel:** Sunrisepeak dsh-index catalog, pending maintainer branch update and review.
+- **Boundary:** This is a maintainer handoff, not an index publication, endorsement, security certification, traffic result, or causal referral. Sandboxing/isolation remains dependent on the selected backend and deployment configuration.
+- **Next hypothesis:** Wait for a maintainer with write access to update `chore/bump`; do not create a duplicate submission while the canonical PR remains open.
+
 ## 2026-08-31 — Submit SandBase Harness to LocalAlternative
 
 - **Objective:** Add the project to a relevant local-first/self-hosted AI tool directory through its free review path.
