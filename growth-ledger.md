@@ -3856,6 +3856,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
 
+### 2026-08-31 — Verify agent infrastructure directory path
+
+- **Objective:** Strengthen an open infrastructure-directory PR with current source evidence while preserving its unresolved CI status.
+- **Action:** Posted a verification comment on [Awesome Agent Infra PR #6](https://github.com/shenli/awesome-agent-infra/pull/6#issuecomment-5473868412), linking the current v0.3.8 installation, MCP, and sandbox documentation and stating the backend/deployment-dependent isolation boundary.
+- **Validation:** The destination PR was open when reviewed and GitHub reported `UNSTABLE`; no green-check claim was made. Project affiliation was disclosed and project records were synchronized in [`7c73c1b`](https://github.com/sandbaseai/sandbase-harness/commit/7c73c1b). No inclusion, ranking, endorsement, security certification, traffic, or causal referral is claimed.
+- **Distribution channel:** Community-maintained agent infrastructure directory review path.
+- **Boundary:** No duplicate submission was created; maintainer review and automated status remain unresolved.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for maintainer review, CI resolution, or requested changes before further follow-up.
+
 ### 2026-08-31 — Verify two additional runtime directory paths
 
 - **Objective:** Strengthen two open, clean directory PRs that had no prior maintainer verification comment.
