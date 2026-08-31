@@ -3998,6 +3998,19 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal star increase or referral is claimed.
 - **Next hypothesis:** Monitor replies or maintainer feedback without reposting the same announcement.
 
+### 2026-08-31 — Submit MeshKore directory listing
+
+- **Objective:** Reach agent builders through a source-linked technical directory.
+- **Channel:** [MeshKore directory](https://meshkore.com/directory), whose public listing form states that submissions are free and reviewed within 24 hours.
+- **Action:** Submitted SandBase Harness through the normal public form at `hub.meshkore.com/platform/directory/submit`.
+- **Receipt:** The endpoint returned HTTP 200 with `status: received`, submission ID `15`, and a message that review/addition is expected within 24 hours.
+- **Content:** Sent the canonical repository, factual runtime description, AI Infrastructure category, TypeScript language, and capabilities covering runtime, MCP, tool governance, and audit receipts.
+- **Boundary:** `connect_to_mesh` was explicitly set to `false`; no A2A endpoint or live service was claimed.
+- **Disclosure:** Public maintainer contact was supplied for review; no paid placement, badge, ranking, or endorsement was requested.
+- **Risk note:** The directory entry remains review-pending, and actual isolation depends on the selected backend and deployment configuration.
+- **Star count / referral:** No causal star increase or referral is claimed.
+- **Next hypothesis:** Check for the public profile after the stated review window; do not resubmit while pending.
+
 ### 2026-08-31 — Verify four MCP and agent directory paths
 
 - **Objective:** Strengthen four open directory PRs with current source evidence before maintainer review.
