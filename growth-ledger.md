@@ -1,5 +1,14 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Reconcile merged Awesome MCP listing
+
+- **Objective:** Keep public promotion records aligned with a newly merged community listing.
+- **Action:** Verified [AlexMili/Awesome-MCP PR #182](https://github.com/AlexMili/Awesome-MCP/pull/182), which adds SandBase Harness as an MCP client/runtime integration.
+- **Validation:** GitHub reports the PR merged at commit [36289ef](https://github.com/AlexMili/Awesome-MCP/commit/36289ef0741290196284007d96503d578427c4c9). The public entry links the project source and records stdio/URL connectivity, persistent sessions, governed tools, credentials, audit/replay, and the backend-dependent isolation boundary.
+- **Distribution channel:** Community-maintained MCP client and server catalog.
+- **Boundary:** This is a verified directory inclusion, not an endorsement, security certification, ranking, traffic result, or causal referral.
+- **Next hypothesis:** Keep the merged listing as a stable discovery link; do not open a duplicate submission.
+
 ## 2026-08-31 — Verify Awesome Claude Code SandBase CLI suggestion
 
 - **Objective:** Make an existing SandBase CLI suggestion actionable with current source evidence, without creating a duplicate issue or PR.
