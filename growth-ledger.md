@@ -4016,6 +4016,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for external maintainers on the retained paths; do not reopen Vivy #1.
 
+### 2026-08-31 — Handoff approved Yanmxa sandbox entry
+
+- **Objective:** Advance an approved directory submission to the target maintainer without overstating merge status.
+- **Action:** Verified [Yanmxa Awesome Agent Sandbox PR #2](https://github.com/yanmxa/awesome-agent-sandbox/pull/2) as `CLEAN/MERGEABLE` with Sourcery approval and successful GitGuardian checks. Attempted the authorized merge; GitHub rejected it because the current account lacks upstream merge permission. Confirmed PR #1 is a distinct Standalone Sandboxes section and remains open. Published the status in [Discussion #116](https://github.com/sandbaseai/sandbase-harness/discussions/116#discussioncomment-18215004).
+- **Validation:** #2 remains approved and open; no merge was claimed. Project records were synchronized in SandBase Harness commit `ff2fa55`.
+- **Distribution channel:** Community sandbox directory and official project Discussion.
+- **Boundary:** This is an accurate maintainer handoff; target-repository merge remains authoritative. No inclusion, ranking, endorsement, or security certification is claimed.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for the target maintainer to merge #2; retain #1 as the separate Standalone Sandboxes review path.
+
 ### 2026-08-31 — Submit AI Systems Atlas curation suggestion
 
 - **Objective:** Add a source-backed review path for SandBase Harness to a curated operational AI systems atlas.
