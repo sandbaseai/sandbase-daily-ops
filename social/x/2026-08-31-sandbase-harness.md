@@ -60,6 +60,8 @@ Scope follow-up: E2B Awesome AI Agents Issue #1468 https://github.com/e2b-dev/aw
 
 Existing high-visibility review: Slava Awesome AI Agents PR #403 https://github.com/slavakurilyak/awesome-ai-agents/pull/403 already contains a SandBase Harness entry and is clean/mergeable with maintainer review pending. A source and deployment-boundary follow-up was posted; this advances the existing PR rather than creating a duplicate.
 
+Existing agent-platform directory review: Scottcjn Awesome Agents PR #59 https://github.com/Scottcjn/awesome-agents/pull/59 already contains a SandBase Harness entry and is clean/mergeable with maintainer review pending. A source and deployment-boundary verification follow-up was posted; no duplicate PR was created.
+
 Another self-hosted sandbox review: Awesome Agent Sandbox PR #2 https://github.com/vivy-yi/awesome-agent-sandbox/pull/2 adds SandBase Harness to its Open Source table. Maintainer review is pending; no endorsement is claimed.
 
 New guide review: Awesome Sandbox PR #27 https://github.com/restyler/awesome-sandbox adds a dedicated SandBase Harness runtime/sandbox case study. GitGuardian is still running and maintainer review is pending; no security certification is claimed.
