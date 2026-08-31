@@ -65,3 +65,5 @@ New harness directory review: Awesome AI Harness PR #4 https://github.com/weiwei
 New sandbox directory review: Awesome AI Coding Sandboxes PR #15 https://github.com/fhiltscher/awesome-ai-coding-sandboxes/pull/15 adds SandBase Harness to Adjacent runtimes. Review pending; the entry explicitly preserves the provider-dependent isolation boundary.
 
 Harness directory review: Awesome Agent Harnesses PR #2 https://github.com/bayshier/awesome-agent-harnesses/pull/2 adds SandBase Harness to Platforms & Frameworks. Review pending; source-linked reference only, not an endorsement or security certification.
+
+Agent systems review: Awesome Agent Harness PR #10 https://github.com/zients/awesome-agent-harness/pull/10 adds SandBase Harness to Agent Systems & Harnesses. Review pending; source-linked reference only, not an endorsement or security certification.

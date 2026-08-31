@@ -1,5 +1,11 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Zients Awesome Agent Harness review path
+
+- **Action:** Queued [Zients Awesome Agent Harness PR #10](https://github.com/zients/awesome-agent-harness/pull/10) in the X, LinkedIn, and Discord drafts.
+- **Evidence:** The destination explicitly accepts complete agent systems and harnesses, asks for installation/usage and external-dependency details, and the entry supplies those facts. The PR is source-linked and pending maintainer review.
+- **Scope:** Discovery submission only; no directory endorsement or security certification is claimed, and isolation remains backend/deployment dependent. All social drafts remain `NEEDS REVIEW`.
+
 ## 2026-08-31 — Awesome Agent Harnesses review path
 
 - **Action:** Queued the existing canonical [Bayshier Awesome Agent Harnesses PR #2](https://github.com/bayshier/awesome-agent-harnesses/pull/2) in the X, LinkedIn, and Discord drafts.
