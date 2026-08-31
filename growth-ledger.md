@@ -1,5 +1,14 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Reconcile latest public directory merges
+
+- **Objective:** Keep the promotion ledger aligned with the latest externally merged, source-linked discovery entries.
+- **Action:** Confirmed public merges for [aloth/awesome-ai-agents PR #57](https://github.com/aloth/awesome-ai-agents/pull/57), [Awesome Agent-Native Services PR #116](https://github.com/haoruilee/awesome-agent-native-services/pull/116), [Awesome DevOps AI PR #54](https://github.com/hammadhaqqani/awesome-devops-ai/pull/54), and [mcpHQ Awesome MCP Servers PR #45](https://github.com/mcpHQ/awesome-mcp-servers/pull/45).
+- **Validation:** Each target visibly contains a SandBase Harness entry and the project records link the corresponding merged review path. The entries are community-directory listings, not endorsements, rankings, security certifications, traffic claims, or causal referral claims.
+- **Distribution channel:** Community-maintained AI-agent, MCP, and DevOps catalogs.
+- **Boundary:** SandBase Harness remains self-hosted through a user-owned API; effective isolation depends on the selected execution backend and deployment configuration.
+- **Next hypothesis:** Continue monitoring for maintainer decisions on open review paths; avoid duplicate PRs and unchanged follow-up comments.
+
 ## 2026-08-31 — Verify Awesome MCP second-category proposal
 
 - **Objective:** Make a distinct category proposal actionable while avoiding a duplicate submission for an already merged repository entry.
