@@ -3495,3 +3495,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** This is a disclosed self-submission by the project maintainer. The entry makes no security-certification claim; effective isolation remains dependent on the selected backend and deployment configuration.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Let the catalog maintainer review the approved issue-linked PR; do not open a duplicate or repeat the submission without a material state change.
+
+### 2026-08-31 — Cline MCP Marketplace verification
+
+- **Objective:** Make the open Cline MCP Marketplace submission straightforward to validate from current, machine-actionable sources.
+- **Action:** Added a factual verification note to [Cline MCP Marketplace issue #2364](https://github.com/cline/mcp-marketplace/issues/2364#issuecomment-5473147267), confirming the v0.3.8 six-tool stdio bridge, published GHCR image, required runtime URL, and conditional API-key configuration.
+- **Validation:** The claims match the SandBase Harness [`llms-install.md`](https://github.com/sandbaseai/sandbase-harness/blob/main/llms-install.md) and [`server.json`](https://github.com/sandbaseai/sandbase-harness/blob/main/server.json); GitHub returned the public comment URL.
+- **Distribution channel:** Cline MCP Marketplace maintainer review; no marketplace inclusion, endorsement, or security certification is claimed. X, LinkedIn, and Discord remain review-gated drafts with no social-account publication claimed.
+- **Boundary:** Docker reachability and effective isolation remain deployment dependent. This is a disclosed self-submission by the project maintainer.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Let Cline maintainers process the existing submission; do not duplicate it or repeat the verification note without a material change.
