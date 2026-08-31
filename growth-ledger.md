@@ -1,5 +1,15 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Qualify Agents-OSS submission path
+
+- **Objective:** Evaluate a newly discovered independent AI-agent directory for a legitimate SandBase Harness submission.
+- **Action:** Reviewed [Agents-OSS submission](https://agents-oss.com/submit/) and its published [curation methodology](https://agents-oss.com/methodology/). The form accepts a GitHub repository, an optional `runtimes` category, and a short maintainer note; the public API currently has no SandBase match. No submission was duplicated.
+- **Validation:** The form submits only through `/api/submit` after a Cloudflare Turnstile token is provided. The current environment cannot obtain that human-verification token, so no request was sent and no listing is claimed. The directory states that entries are reviewed by hand and sources facts from GitHub.
+- **Distribution channel:** Independent open-source AI-agent directory.
+- **Boundary:** This is a qualified submission gate, not a completed listing or endorsement. Sandboxing/isolation remains dependent on the selected backend and deployment configuration.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Submit through the normal browser form when a maintainer can complete the anti-spam challenge; do not bypass the challenge or retry automatically.
+
 ## 2026-08-31 — Submit SandBase Harness to Awesome AI Agents
 
 - **Objective:** Add a source-backed SandBase Harness entry to an uncovered, actively maintained AI-agent directory.
