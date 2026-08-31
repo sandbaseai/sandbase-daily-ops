@@ -1,5 +1,14 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Verify MCPDir runtime submission
+
+- **Objective:** Make the existing MCPDir runtime submission actionable with current source evidence without creating a duplicate issue or PR.
+- **Action:** Posted a maintainer verification on [MCPDir issue #20](https://github.com/eL1fe/mcpdir/issues/20#issuecomment-5476577241), linking the v0.3.8 release, MCP installation guide, published bridge image, six-tool surface, and runtime operations.
+- **Validation:** MCPDir is an active public repository and the Harness submission had no prior comments. The follow-up distinguishes the runtime from the separate SandBase CLI listing, discloses project affiliation, and qualifies isolation by backend and deployment configuration.
+- **Distribution channel:** MCPDir community MCP directory review queue.
+- **Boundary:** This is a review request, not inclusion, ranking, endorsement, security certification, traffic, or causal referral.
+- **Next hypothesis:** Wait for directory review or requested changes; do not duplicate the existing issue.
+
 ## 2026-08-31 — Reconcile merged Awesome MCP listing
 
 - **Objective:** Keep public promotion records aligned with a newly merged community listing.
