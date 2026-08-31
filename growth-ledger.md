@@ -4024,6 +4024,19 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal star increase or referral is claimed.
 - **Next hypothesis:** Wait for AgentStack review and any install-metadata refresh; do not resubmit the same listing.
 
+### 2026-08-31 — Submit AI Agent Tools Directory listing
+
+- **Objective:** Reach developers browsing a general AI-agent tooling directory with an infrastructure category.
+- **Channel:** [AI Agent Tools Directory](https://aiagenttools.dev/submit), whose public form offers free review and states a 48-hour review window.
+- **Action:** Submitted SandBase Harness through the documented `/api/submit` endpoint as `infrastructure`, with an open-source pricing model.
+- **Receipt:** The endpoint returned HTTP 200 and `status: ok` with submission ID `mtgu4e78fw1ja`.
+- **Content:** Sent the canonical GitHub URL and a source-backed description of sessions, policy-gated tools, MCP, credentials, audit receipts, and backend-dependent isolation.
+- **Validation:** A follow-up site search did not yet expose a public listing, so this remains a review-pending submission rather than a published placement.
+- **Disclosure:** The public maintainer noreply address was supplied for review; no featured or paid placement was requested.
+- **Boundary:** No unsupported security, ranking, traffic, or endorsement claim was made.
+- **Star count / referral:** No causal star increase or referral is claimed.
+- **Next hypothesis:** Check the directory after the stated review window; do not resubmit while ID `mtgu4e78fw1ja` is pending.
+
 ### 2026-08-31 — Verify four MCP and agent directory paths
 
 - **Objective:** Strengthen four open directory PRs with current source evidence before maintainer review.
