@@ -3116,3 +3116,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** No directory listing, endorsement, or security certification is claimed; isolation remains dependent on the selected backend and deployment.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Let the maintainer decide whether the shipped runtime meets the directory's production-harness criteria; do not retry the unavailable push path.
+
+### 2026-08-31 — mcp.so MCP-server intake
+
+- **Objective:** Submit the current MCP bridge to a high-visibility public MCP directory using its documented community intake.
+- **Action:** Commented on [chatmcp/mcpso issue #1](https://github.com/chatmcp/mcpso/issues/1#issuecomment-5472364196) with the canonical repository, installation guide, MCP server ID, v0.3.8 OCI image, and runtime description.
+- **Validation:** The submission uses the thread's requested link-based format and preserves the backend/deployment-dependent isolation qualification; directory processing remains pending.
+- **Distribution channel:** GitHub MCP directory intake; X, LinkedIn, and Discord drafts remain `NEEDS REVIEW` and require operator/account authorization.
+- **Boundary:** No public listing, endorsement, or security certification is claimed.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Allow the directory's maintainers and indexing process to evaluate the submission; do not duplicate the comment.
