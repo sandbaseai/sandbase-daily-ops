@@ -24,7 +24,7 @@ An additional public listing is now live in [Awesome AI Engineering](https://git
 
 Two additional discovery submissions are now in review: [MeshKore](https://meshkore.com/submit), submission #14, and [Agent Switchboard PR #44](https://github.com/assafbar2/agentswitchboard.dev/pull/44). They are review-controlled and are not being presented as live listings or endorsements.
 
-The Hugging Face [agent-harness registry PR #2432](https://github.com/huggingface/huggingface.js/pull/2432) now includes a corrective commit that removes `MANAGED_AGENTS_HOME` as an identity marker because it is a data-directory override. Tasks formatting, lint, TypeScript, and Cursor Bugbot checks pass; Hugging Face maintainer merge remains pending.
+The Hugging Face [agent-harness registry PR #2432](https://github.com/huggingface/huggingface.js/pull/2432) is now merged at [`56e5168`](https://github.com/huggingface/huggingface.js/commit/56e5168c42132c3b90aacbb1dfdc18f41debde6d). The final integration removes `MANAGED_AGENTS_HOME` as an identity signal and pairs the registry entry with SandBase's default `AI_AGENT=sandbase-harness` child-process marker. Explicit nested-agent markers remain supported.
 
 The new [gVisor integration guide PR #14517](https://github.com/google/gvisor/pull/14517) documents a Docker → `runsc` → gVisor path for selected DeepSeek Harness commands. It keeps Harness policy, Docker/OCI configuration, and gVisor kernel isolation as separate layers. SandBase Harness is a complementary Harness-side reference, not a replacement for gVisor or a universal isolation/security claim.
 
