@@ -1,5 +1,14 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Open E2B Awesome AI Agents submission
+
+- **Objective:** Move the existing E2B directory scope-review issue into the directory's normal PR workflow.
+- **Action:** Opened [E2B Awesome AI Agents PR #1473](https://github.com/e2b-dev/awesome-ai-agents/pull/1473), linked to [Issue #1468](https://github.com/e2b-dev/awesome-ai-agents/issues/1468). The entry is placed alphabetically in the open-source section and uses the directory's requested factual format, with repository, installation, release, and affiliation disclosure links.
+- **Validation:** GitHub reports the PR `OPEN`, `MERGEABLE`, and the content is limited to one README entry. The `verification/cla-signed` check remains failed because the contributor agreement has not been signed; this is a contributor action, not a project-code failure. No listing or endorsement is claimed.
+- **Distribution channel:** E2B Awesome AI Agents, pending CLA completion and maintainer review.
+- **Boundary:** Isolation properties remain dependent on the selected backend and deployment configuration. No ranking, security certification, social-account publication, traffic, or causal referral is claimed.
+- **Next hypothesis:** The contributor must complete the destination's CLA flow and request the bot check; do not create a duplicate PR.
+
 ## 2026-08-31 — Record dsh-index rebase handoff
 
 - **Objective:** Keep the dsh-index promotion path actionable and accurately documented after its upstream branch became dirty.
