@@ -4016,6 +4016,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for the catalog maintainer to review or merge #86.
 
+### 2026-08-31 — Submit Awesome Agentic AI sandbox entry
+
+- **Objective:** Add SandBase Harness to a curated Agentic AI resource list with an explicit sandbox and computer-use section.
+- **Action:** Opened [Awesome Agentic AI PR #2](https://github.com/Titan-Codes-Official/awesome-agentic-ai/pull/2), adding one source-linked entry under Sandboxes and Computer Use and posting a verification note.
+- **Validation:** Confirmed no existing SandBase entry, followed the repository's contribution format, and passed `git diff --check`. The description is limited to durable sessions, governed MCP tools, approvals, credentials, audit/replay, and selectable execution backends.
+- **Distribution channel:** Curated Agentic AI engineering resource review path.
+- **Boundary:** Maintainer affiliation is disclosed; the managed-agents API is user-owned and isolation depends on backend/deployment configuration. No inclusion, endorsement, ranking, or security certification is claimed.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for maintainer review or requested changes.
+
 ### 2026-08-31 — Publish Agent Plugin integration update
 
 - **Objective:** Give existing users a source-backed update about the new portable Agent Plugin integration and its review path.
