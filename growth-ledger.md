@@ -3866,6 +3866,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for maintainer review, CI resolution, or requested changes before further follow-up.
 
+### 2026-08-31 — Verify CLI agent directory path
+
+- **Objective:** Strengthen an open, clean CLI-agent directory PR with current source evidence.
+- **Action:** Posted a verification comment on [Awesome CLI Coding Agents PR #314](https://github.com/bradAGI/awesome-cli-coding-agents/pull/314#issuecomment-5473880447), linking the current v0.3.8 installation, MCP, and sandbox documentation and stating the backend/deployment-dependent isolation boundary.
+- **Validation:** The destination PR was open and clean when reviewed; project affiliation was disclosed. Project records were synchronized in [`fb5bd32`](https://github.com/sandbaseai/sandbase-harness/commit/fb5bd32). No inclusion, ranking, endorsement, security certification, traffic, or causal referral is claimed.
+- **Distribution channel:** Community-maintained CLI coding-agent directory review path.
+- **Boundary:** No duplicate submission was created; the entry remains maintainer-controlled and source-backed.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
+
 ### 2026-08-31 — Verify two additional runtime directory paths
 
 - **Objective:** Strengthen two open, clean directory PRs that had no prior maintainer verification comment.
