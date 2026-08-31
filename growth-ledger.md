@@ -4056,6 +4056,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for Hugging Face maintainer review; no further comment until a requested change or status transition.
 
+### 2026-08-31 — Deduplicate Awesome Agent OS submissions
+
+- **Objective:** Keep one accurate, current review path in the Cue OS Agent OS directory.
+- **Action:** Compared [PR #2](https://github.com/cueos/awesome-agent-os/pull/2) and [PR #3](https://github.com/cueos/awesome-agent-os/pull/3); closed the older duplicate #2 and retained the newer canonical #3.
+- **Validation:** GitHub reports #2 closed and #3 open/mergeable. The retained PR has the current concise runtime entry and project-affiliation disclosure.
+- **Distribution channel:** Curated Agent OS/runtime directory review path.
+- **Boundary:** This is deduplication, not a new submission; no inclusion, endorsement, ranking, or security certification is claimed.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for the directory maintainer to approve its external workflow and review #3.
+
 ### 2026-08-31 — Publish Agent Plugin integration update
 
 - **Objective:** Give existing users a source-backed update about the new portable Agent Plugin integration and its review path.
