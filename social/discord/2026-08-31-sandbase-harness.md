@@ -68,3 +68,5 @@ New gateway directory review: [Awesome MCP Gateways PR #77](https://github.com/e
 New harness directory review: [Awesome AI Harness PR #4](https://github.com/weiwei966/awesome-ai-harness/pull/4) adds SandBase Harness to SDKs & runtimes. Maintainer review is pending; this is not an endorsement or security certification.
 
 New sandbox directory review: [Awesome AI Coding Sandboxes PR #15](https://github.com/fhiltscher/awesome-ai-coding-sandboxes/pull/15) adds SandBase Harness to Adjacent runtimes. Maintainer review is pending; the entry preserves the provider-dependent isolation boundary.
+
+Harness directory review: [Awesome Agent Harnesses PR #2](https://github.com/bayshier/awesome-agent-harnesses/pull/2) adds SandBase Harness to Platforms & Frameworks. Maintainer review is pending; this is not an endorsement or security certification.
