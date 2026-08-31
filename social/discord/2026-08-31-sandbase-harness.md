@@ -12,6 +12,8 @@ Two more review requests: [MCP-SecurityTools #5](https://github.com/Ta0ing/MCP-S
 
 [awesome-agent-runtimes PR #2](https://github.com/dz3ai/awesome-agent-runtimes/pull/2) proposes a source-backed entry in a dedicated runtime comparison. Review is pending; it is not a ranking, endorsement, or security certification.
 
+[awesome-ai-agents-2026 PR #542](https://github.com/caramaschiHG/awesome-ai-agents-2026/pull/542) proposes a factual entry under Self-Hosted Agents and UIs. Review is pending; no endorsement or security certification is implied.
+
 For builders testing a self-owned Agent runtime, SandBase Harness v0.3.8 provides:
 
 - persistent sessions and resumable runtime state;
