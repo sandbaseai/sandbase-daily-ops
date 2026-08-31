@@ -3775,3 +3775,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** Submissions disclose project affiliation and use source-backed claims; no duplicate PR or universal isolation claim was created.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for curator responses or concrete requested changes before posting another follow-up.
+
+### 2026-08-31 — Add architecture and harness-list reviews
+
+- **Objective:** Continue factual promotion in focused Agent Harness and architecture resources without duplicating existing PRs.
+- **Action:** Posted verification comments on [Open-Kairox Awesome Agent Harnesses issue #1](https://github.com/open-kairox/awesome-agent-harnesses/issues/1#issuecomment-5473624141) and [Awesome Agent Architecture issue #90](https://github.com/hardness1020/awesome-agent-architecture/issues/90#issuecomment-5473624085).
+- **Validation:** Both issues were open without prior comments; the comments link v0.3.8, installation/MCP and architecture sources, runtime controls, and the backend/deployment-dependent isolation boundary. Project records were synchronized in [`5e0f2f1`](https://github.com/sandbaseai/sandbase-harness/commit/5e0f2f1). No inclusion, endorsement, ranking, benchmark, or security certification is claimed.
+- **Distribution channel:** Community-maintained Agent Harness list and architecture education resource; curator review remains pending.
+- **Boundary:** Existing same-repository duplicate PRs were not created; project affiliation was disclosed and unsupported universal-isolation claims were excluded.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for maintainer feedback or public status changes before another follow-up.
