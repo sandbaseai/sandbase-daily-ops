@@ -1,5 +1,14 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Verify DSH Plugin Market generated metadata PR
+
+- **Objective:** Advance a new DSH Plugin Market metadata intake with current, source-backed runtime evidence.
+- **Action:** Verified metadata issue [#1839](https://github.com/dsh-pluginmarket/metadata/issues/1839) and generated [PR #1847](https://github.com/dsh-pluginmarket/metadata/pull/1847); posted maintainer verification on both the issue ([comment](https://github.com/dsh-pluginmarket/metadata/issues/1839#issuecomment-5477162350)) and PR ([comment](https://github.com/dsh-pluginmarket/metadata/pull/1847#issuecomment-5477167199)). Synchronized the canonical project record in SandBase Harness commit [`3286315`](https://github.com/sandbaseai/sandbase-harness/commit/3286315).
+- **Validation:** `validate-submission` passes. The evidence identifies v0.3.8, Apache-2.0/self-hosted distribution, the GHCR MCP bridge, no npm runtime package, and backend/deployment-dependent isolation. The PR remains open/mergeable; publication is not claimed.
+- **Distribution channel:** DSH Plugin Market metadata intake.
+- **Boundary:** This is a disclosed maintainer submission and factual directory metadata, not an endorsement or security certification; final publication is maintainer-controlled.
+- **Next hypothesis:** Wait for metadata maintainer merge/publication; do not create a duplicate entry.
+
 ## 2026-08-31 — Verify Hugging Face CI rerun permission boundary
 
 - **Objective:** Determine whether the current contributor account can rerun the unrelated failed Hugging Face jobs for PR #2432.
