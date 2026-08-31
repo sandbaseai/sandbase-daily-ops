@@ -3295,3 +3295,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** This is a documentation freshness PR under review, not an endorsement or security certification; runtime isolation remains dependent on the selected backend and deployment configuration.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Let the handbook maintainer remove or repair the stale catalog links, then rerun `verify` before considering the bridge refresh complete.
+
+### 2026-08-31 — Official Discussion v0.3.8 integration update
+
+- **Objective:** Give users a durable, source-backed place to discover the current release and report integration experience.
+- **Action:** Published the [v0.3.8 update in official Discussion #116](https://github.com/sandbaseai/sandbase-harness/discussions/116#discussioncomment-18211885), linking the current installation guide and the two active DeepSeek Harness ecosystem review paths.
+- **Validation:** The comment is public and asks for concrete feedback on backend selection, MCP tool schemas, session lifecycle, and audit/replay gaps.
+- **Distribution channel:** Official GitHub Discussion; no X, LinkedIn, or Discord account publication is claimed.
+- **Boundary:** The post explicitly states that isolation depends on deployment/backend configuration and does not claim security certification or upstream endorsement.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Use user replies to improve the installation/integration documentation and capture reproducible gaps as issues.
