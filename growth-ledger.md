@@ -3595,3 +3595,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** This is a disclosed self-submission; the curator retains taxonomy and merge control, and isolation depends on the selected backend/deployment configuration rather than a universal microVM guarantee.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for the maintainer's required PR gate; respond only to concrete review feedback and do not create a duplicate submission.
+
+### 2026-08-31 — Maintain one canonical Best-of Agent Harnesses intake
+
+- **Objective:** Keep SandBase Harness discoverable in a high-relevance ranked harness directory without duplicating maintainer work.
+- **Action:** Revalidated the existing [Best of Agent Harnesses PR #99](https://github.com/RyanAlberts/best-of-Agent-Harnesses/pull/99), which is still open and mergeable. A duplicate intake created during the search was immediately redirected to the canonical PR and closed in [Issue #100](https://github.com/RyanAlberts/best-of-Agent-Harnesses/issues/100#issuecomment-5473329215).
+- **Validation:** The existing PR contains v0.3.8, Apache-2.0, installation/MCP evidence, a harness-focused description, and the backend/deployment-dependent isolation boundary; the destination reports no checks and leaves final review to its maintainer. Project README and promotion history were synchronized in [`a4f3b73`](https://github.com/sandbaseai/sandbase-harness/commit/a4f3b73).
+- **Distribution channel:** Curated, generated ranked agent-harness directory; no ranking, inclusion, endorsement, security certification, traffic, or social-account publication is claimed.
+- **Boundary:** The destination requires changes through its generator workflow; no generated files were edited and no duplicate PR was opened.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for the maintainer's review of PR #99; respond only to concrete requested changes.
