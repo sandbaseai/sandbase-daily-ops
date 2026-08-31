@@ -3575,3 +3575,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** Users should follow the current tagged source/install instructions rather than the stale page snapshot; no attempt was made to bypass a missing maintainer channel.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Recheck the page after a future site refresh or if a maintainer contact path appears; avoid repeated discovery claims while its metadata remains stale.
+
+### 2026-08-31 — Surface Harness Hub with stale-version guard
+
+- **Objective:** Make the newly discovered community page findable while preventing users from following its outdated install metadata.
+- **Action:** Added the [DeepSeek Harness Hub page](https://deepseek-harness-hub.com/plugins/sandbase-harness/) to the English and Chinese SandBase Harness README discovery lists, with an explicit v0.3.4 stale-version warning and a link to the current official installation guide.
+- **Validation:** The README change was pushed to `main` as [`cd48881`](https://github.com/sandbaseai/sandbase-harness/commit/cd48881); the Hub page responds publicly and its current page still shows v0.3.4.
+- **Distribution channel:** Canonical project README navigation to a third-party community page; no current-version listing, endorsement, security certification, traffic, or social-account publication is claimed.
+- **Boundary:** The warning keeps the official repository and installation guide authoritative; no correction was attempted without a public maintainer channel.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Recheck the Hub after a material refresh and update the warning only when the page exposes current metadata or a correction path.
