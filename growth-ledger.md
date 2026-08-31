@@ -3996,6 +3996,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** The current count was 640 at submission; no causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for GitGuardian and maintainer review or requested changes.
 
+### 2026-08-31 — Submit Awesome MCP Toolkit entry
+
+- **Objective:** Add a source-linked SandBase Harness MCP/runtime entry to a Chinese developer-oriented MCP toolkit list.
+- **Action:** Opened [Awesome MCP Toolkit PR #3](https://github.com/ihpwhath/awesome-mcp-toolkit/pull/3) in the Developer & Code section, following the repository's documented one-line contribution format.
+- **Validation:** Confirmed no existing SandBase entry before editing and passed `git diff --check`. A verification comment links the official repository and current installation/MCP documentation.
+- **Distribution channel:** Community-maintained Chinese MCP toolkit directory review path.
+- **Boundary:** The description covers the local-first MCP bridge, persistent sessions, sandboxed tools, approvals, credentials, audit, and replay; user-owned API and backend/deployment-dependent isolation are explicit. No inclusion, endorsement, ranking, or security certification is claimed.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for maintainer review or requested changes; do not duplicate the entry elsewhere in this directory.
+
 ### 2026-08-31 — Publish Agent Plugin integration update
 
 - **Objective:** Give existing users a source-backed update about the new portable Agent Plugin integration and its review path.
