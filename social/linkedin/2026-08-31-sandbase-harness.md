@@ -68,6 +68,8 @@ The existing [Scottcjn Awesome Agents PR #59](https://github.com/Scottcjn/awesom
 
 For MCP directory hygiene, the older duplicate [Awesome MCP Servers PR #13188](https://github.com/punkpeye/awesome-mcp-servers/pull/13188) was closed in favor of canonical [PR #13240](https://github.com/punkpeye/awesome-mcp-servers/pull/13240). The canonical `check-submission` passed, while the maintainer/Glama gate remains pending; future references should use #13240 only.
 
+The [Sunrisepeak dsh-index PR #43](https://github.com/Sunrisepeak/dsh-index/pull/43) updates the indexed SandBase Harness descriptor from v0.3.7 to v0.3.8. The submitted revision passed its build and SandBase boot checks, but the PR currently needs a rebase before merge; no index publication is claimed.
+
 The [Awesome Agent Sandbox PR #2](https://github.com/vivy-yi/awesome-agent-sandbox/pull/2) is another focused community review request, adding SandBase Harness to a Self-hosted / Open Source sandbox table. It remains pending maintainer review and uses a concise, capability-oriented description.
 
 The broader [Awesome Sandbox PR #27](https://github.com/restyler/awesome-sandbox/pull/27) proposes a dedicated case study covering SandBase Harness's self-hosted runtime, tool governance, persistent sessions, audit/replay, and selectable sandbox providers. It remains pending maintainer review, with the backend-dependent isolation boundary stated explicitly.
