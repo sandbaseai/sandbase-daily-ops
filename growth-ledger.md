@@ -3555,3 +3555,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** This is a disclosed self-submission; the curator retains taxonomy and inclusion control, and isolation depends on selected backend/deployment configuration.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Let the curator decide scope and avoid duplicate issue/PR creation unless the catalog requests a concrete format.
+
+### 2026-08-31 — GitHub About installation entry point
+
+- **Objective:** Reduce the path from GitHub discovery to a runnable SandBase Harness installation.
+- **Action:** Updated the repository's public GitHub About Homepage field from the latest-release page to the current [`docs/installation.md`](https://github.com/sandbaseai/sandbase-harness/blob/main/docs/installation.md) entry point; release links remain in the README.
+- **Validation:** GitHub's repository API returned the new Homepage value after the update; the project documentation change was pushed as [`464aa26`](https://github.com/sandbaseai/sandbase-harness/commit/464aa26).
+- **Distribution channel:** GitHub repository discovery metadata and canonical README; this is a navigation improvement, not a usage, endorsement, or security-certification claim. Social channels remain review-gated drafts with no social-account publication claimed.
+- **Boundary:** The guide remains the source of truth for prerequisites and backend-dependent behavior; no conversion or traffic increase is claimed.
+- **Star count / referral:** Repository snapshot was 640 stars at action; no causal Star increase or referral is claimed.
+- **Next hypothesis:** Keep Homepage aligned with the current installation entry point and revisit only when the canonical onboarding URL changes.
