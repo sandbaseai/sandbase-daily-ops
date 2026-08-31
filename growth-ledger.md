@@ -3356,6 +3356,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Let the directory maintainer decide placement and avoid opening a duplicate issue or PR.
 
+### 2026-08-31 — Picrew catalog entry prepared
+
+- **Objective:** Move the Picrew handbook resource proposal from narrative review to a concrete, reproducible catalog change.
+- **Action:** Prepared commit [`ddbf183`](https://github.com/liyangbing/awesome-agent-harness/commit/ddbf1838ffdd6c9b096ed07aa7a4a8d03eeca040) adding the handbook entry and regenerating both README mirrors/report; posted the [maintainer handoff](https://github.com/Picrew/awesome-agent-harness/issues/82#issuecomment-5472906743).
+- **Validation:** Local rendering passed; catalog verification identified only two pre-existing stale entries unrelated to the handbook addition. A PR could not be created because the available fork has no common history with the upstream repository.
+- **Distribution channel:** Picrew maintainer issue handoff; X, LinkedIn, and Discord remain review-gated drafts with no social-account publication claimed.
+- **Boundary:** The maintainer must apply or recreate the patch; directory inclusion is not an endorsement or security certification, and runtime isolation remains backend/deployment dependent.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for the Picrew maintainer to cherry-pick/recreate the entry rather than rewriting the fork history or opening a duplicate submission.
+
 ### 2026-08-31 — Surface merged handbook guide in project discovery
 
 - **Objective:** Make the verified DeepSeek Harness integration discoverable from the project's primary README.
