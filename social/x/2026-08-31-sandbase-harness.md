@@ -123,3 +123,5 @@ The DCO gate for [TensorChord Awesome LLMOps PR #785](https://github.com/tensorc
 Latest public project update: https://github.com/sandbaseai/sandbase-harness/discussions/116#discussioncomment-18211980 — v0.3.8 installation source, merged DeepSeek Harness handbook guide, and dsh-index status are recorded there. User feedback on backend choice, MCP schemas, session lifecycle, and audit/replay is welcome.
 
 Curated Agent Engineering review: https://github.com/Lxcardoza993/AAE/issues/1 proposes SandBase Harness for the Agent Harness category. Curator placement is pending; this is not an endorsement or security certification.
+
+Kubernetes integration scope review: https://github.com/kubernetes-sigs/agent-sandbox/issues/1500 asks whether a source-linked SandBase Harness compatibility/deployment example belongs in Agent Sandbox documentation. No existing adapter or inclusion is claimed; maintainer guidance is pending.
