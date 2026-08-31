@@ -3966,6 +3966,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** The entry records 640 GitHub stars at submission time; no causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
 
+### 2026-08-31 — Publish Agent Plugin integration update
+
+- **Objective:** Give existing users a source-backed update about the new portable Agent Plugin integration and its review path.
+- **Action:** Published a bilingual update in [official Discussion #116](https://github.com/sandbaseai/sandbase-harness/discussions/116#discussioncomment-18214336), linking the schema-validated plugin bundle and [Awesome Agent Plugins issue #5](https://github.com/ZeroPointRepo/awesome-agent-plugins/issues/5).
+- **Validation:** Both manifests had already passed the canonical Agent Plugins 1.0.0 schema checks; the post links the official repository and current bridge image. No traffic, endorsement, security certification, or causal referral is claimed.
+- **Distribution channel:** SandBase Harness official GitHub Discussion.
+- **Boundary:** The update states that a user-owned Harness API is required and that isolation depends on backend and deployment configuration; no hosted endpoint or universal isolation is claimed.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for user feedback and destination-maintainer review before further follow-up.
+
 ### 2026-08-31 — Submit Awesome Agent Plugins proposal
 
 - **Objective:** Make SandBase Harness discoverable in a vendor-neutral Agent Plugin catalog that verifies portable `plugin.json` and MCP manifests.
