@@ -3976,6 +3976,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for MCP Find maintainer review on #171; do not reopen or resubmit #168.
 
+### 2026-08-31 — Deduplicate three directory review paths
+
+- **Objective:** Keep one accurate, low-noise review path in each directory where duplicate SandBase Harness PRs were open.
+- **Action:** Compared and closed older duplicates [Awesome MCP Collection #38](https://github.com/JustInCache/awesome-mcp-collection/pull/38) in favor of [#39](https://github.com/JustInCache/awesome-mcp-collection/pull/39), [Awesome Agent Sandboxes #8](https://github.com/dloss/awesome-agent-sandboxes/pull/8) in favor of [#9](https://github.com/dloss/awesome-agent-sandboxes/pull/9), and [Awesome Agent Sandboxing #1](https://github.com/IronSecCo/awesome-agent-sandboxing/pull/1) in favor of [#2](https://github.com/IronSecCo/awesome-agent-sandboxing/pull/2).
+- **Validation:** Each pair targeted the same README catalog entry. The newer PR in each repository remains the active review path; no merge, inclusion, ranking, endorsement, or security certification is claimed.
+- **Distribution channel:** Community-maintained MCP, sandbox, and agent-runtime directories.
+- **Boundary:** Duplicate cleanup only; no new submissions were created. Project records were synchronized in SandBase Harness commit `fac3207`.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for maintainer review on #39, #9, and #2; do not reopen the closed duplicates.
+
 ### 2026-08-31 — Submit AI Systems Atlas curation suggestion
 
 - **Objective:** Add a source-backed review path for SandBase Harness to a curated operational AI systems atlas.
