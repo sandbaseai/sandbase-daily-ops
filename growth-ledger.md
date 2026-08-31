@@ -3395,3 +3395,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** Copy retains backend/deployment-dependent isolation wording and does not claim directory endorsement or security certification.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Publish only after operator approval; recheck dsh-index before making any future catalog claim.
+
+### 2026-08-31 — gVisor integration guide maintainer follow-up
+
+- **Objective:** Connect the newly opened gVisor DeepSeek Harness tutorial with a complementary Harness-side runtime reference.
+- **Action:** Posted a factual follow-up on [gVisor PR #14517](https://github.com/google/gvisor/pull/14517), linking the official SandBase installation/MCP guide and describing governed sessions, MCP admission/approvals, credential scoping, audit/replay, and selectable backends.
+- **Validation:** GitHub returned the public [comment URL](https://github.com/google/gvisor/pull/14517#issuecomment-5472929623); the PR remains open and its guide explicitly separates Harness policy, Docker/OCI configuration, and gVisor kernel isolation.
+- **Distribution channel:** Maintainer-reviewed gVisor documentation PR; X, LinkedIn, and Discord remain review-gated drafts with no social-account publication claimed.
+- **Boundary:** The comment says SandBase does not replace gVisor and does not claim universal kernel isolation, endorsement, or security certification; effective isolation remains backend/deployment dependent.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Let gVisor maintainers review the complementary reference; do not repeat the follow-up unless they request clarification.
