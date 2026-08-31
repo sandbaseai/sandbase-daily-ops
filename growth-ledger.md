@@ -3335,3 +3335,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** Copy preserves the deployment/backend-dependent isolation qualification and the source-of-truth role of the official repository.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Publish only after operator approval and update the drafts if the curator accepts or declines the candidate.
+
+### 2026-08-31 — DeepSeek Harness Handbook bridge merged
+
+- **Objective:** Turn the current DeepSeek Harness integration promotion path into a verified, usable public guide.
+- **Action:** Removed three dead ecosystem links in [handbook PR #292](https://github.com/sandbaseai/deepseek-harness-handbook/pull/292), synchronized the 79-resource counts, then rebased and merged [bridge refresh PR #291](https://github.com/sandbaseai/deepseek-harness-handbook/pull/291) at `425dd255`.
+- **Validation:** The cleanup PR's `verify` passed; the refreshed bridge PR's rerun `verify` also passed. The guide now documents SandBase Harness v0.3.8 in English and Chinese.
+- **Distribution channel:** Public DeepSeek Harness Handbook and official SandBase Discussion; the corresponding [merge update](https://github.com/sandbaseai/sandbase-harness/discussions/116#discussioncomment-18211980) is public. X, LinkedIn, and Discord remain review-gated drafts.
+- **Boundary:** This is a source-backed documentation integration, not an endorsement or security certification; isolation remains dependent on the selected backend and deployment configuration.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Let users test the guide and use reproducible feedback to improve the bridge; keep dsh-index separately pending its rebase.
