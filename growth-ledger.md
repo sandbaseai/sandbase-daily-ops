@@ -3615,3 +3615,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** This is an existing maintainer-controlled PR; no duplicate PR or issue was opened.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for maintainer review and respond only to concrete requested changes.
+
+### 2026-08-31 — Refresh Agent Harness timeline submission
+
+- **Objective:** Keep the existing SandBase Harness submission in a dedicated agent-harness reference list factually current.
+- **Action:** Revalidated [Mahonzhan Awesome Agent Harness PR #29](https://github.com/mahonzhan/awesome-agent-harness/pull/29), which adds SandBase Harness to the Agent Harness timeline, and posted a maintainer-facing v0.3.8 verification note.
+- **Validation:** GitHub reports the PR `CLEAN` and `MERGEABLE`; the follow-up records Apache-2.0, persistent sessions, governed MCP/tool wiring, approvals, credentials, memory, artifacts, audit/replay, and backend/deployment-dependent isolation ([comment](https://github.com/mahonzhan/awesome-agent-harness/pull/29#issuecomment-5473355320)). Project documentation was synchronized in [`d91b792`](https://github.com/sandbaseai/sandbase-harness/commit/d91b792).
+- **Distribution channel:** Community-maintained Agent Harness reference list; no inclusion, endorsement, benchmark, security certification, traffic, or social-account publication is claimed.
+- **Boundary:** This is an existing maintainer-controlled PR; no duplicate PR or issue was opened.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for maintainer review and respond only to concrete requested changes.
