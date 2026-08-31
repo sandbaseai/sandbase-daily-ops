@@ -3636,6 +3636,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for weekly curator review and respond only to concrete metadata requests.
 
+### 2026-08-31 — Escalate TensorBlock generated-install correction
+
+- **Objective:** Prevent a broken copy-and-paste install command from blocking the official MCP directory review.
+- **Action:** Rechecked [TensorBlock issue #2067](https://github.com/TensorBlock/awesome-mcp-servers/issues/2067) and automated [PR #2068](https://github.com/TensorBlock/awesome-mcp-servers/pull/2068). The generated metadata truncates `install.commands` before the GHCR image and environment flags; posted the complete command and requested maintainer-side regeneration in [the source issue](https://github.com/TensorBlock/awesome-mcp-servers/issues/2067#issuecomment-5473393345).
+- **Validation:** The bot PR head does not allow maintainer modification and remains blocked; the canonical current install guide is [`docs/installation.md`](https://github.com/sandbaseai/sandbase-harness/blob/main/docs/installation.md). Project README and promotion history were synchronized in [`b264726`](https://github.com/sandbaseai/sandbase-harness/commit/b264726).
+- **Distribution channel:** TensorBlock's automated MCP directory intake; no catalog publication, endorsement, security certification, traffic, or social-account publication is claimed.
+- **Boundary:** This is a maintainer-side correction request; no unauthorized branch push or duplicate PR was attempted.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for TensorBlock to regenerate or correct the bot-produced metadata, then revalidate the exact published install command.
+
 ### 2026-08-31 — Refresh Agent Harness timeline submission
 
 - **Objective:** Keep the existing SandBase Harness submission in a dedicated agent-harness reference list factually current.
