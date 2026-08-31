@@ -75,3 +75,5 @@ Scope review: E2B Awesome AI Agents Issue #1468 https://github.com/e2b-dev/aweso
 Runtime directory review: Awesome AI Agents 2026 PR #240 https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/pull/240 adds SandBase Harness beside the separate CLI entry under Agent Tooling and Infrastructure. Review pending; no endorsement or security certification is claimed.
 
 SDK/runtime directory review: E2B Awesome AI SDKs PR #344 https://github.com/e2b-dev/awesome-ai-sdks/pull/344 proposes SandBase Harness for its SDKs, frameworks, libraries, and tools list. Review pending; CLA verification remains contributor-owned.
+
+New focused review path: Awesome Agent Harnesses issue #4 https://github.com/NeuraLiying/Awesome-Agent-Harnesses/issues/4 suggests SandBase Harness for Production Harnesses, SDKs & Frameworks. Maintainer review is pending; this is not a listing or endorsement.

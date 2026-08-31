@@ -3106,3 +3106,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Let the maintainer review the adjacent-runtime fit and
   matrix placement before any follow-up.
+
+### 2026-08-31 — Awesome Agent Harnesses suggestion
+
+- **Objective:** Reach a directory dedicated to production agent harnesses with a source-backed runtime entry.
+- **Action:** Opened [NeuraLiying/Awesome-Agent-Harnesses issue #4](https://github.com/NeuraLiying/Awesome-Agent-Harnesses/issues/4) because the repository does not grant external push access.
+- **Validation:** The suggestion follows the destination's table format and links the canonical repository, installation guide, harness design, and sandbox backend documentation. The request is pending maintainer review.
+- **Distribution channel:** GitHub directory issue; X, LinkedIn, and Discord drafts remain `NEEDS REVIEW` and require operator/account authorization.
+- **Boundary:** No directory listing, endorsement, or security certification is claimed; isolation remains dependent on the selected backend and deployment.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Let the maintainer decide whether the shipped runtime meets the directory's production-harness criteria; do not retry the unavailable push path.
