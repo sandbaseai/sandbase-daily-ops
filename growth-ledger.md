@@ -3856,6 +3856,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
 
+### 2026-08-31 — Verify five additional directory review paths
+
+- **Objective:** Improve the evidence quality of five open, relevant directory PRs that had no prior maintainer verification comment.
+- **Action:** Posted verification comments on [AI Agent Infrastructure List PR #4](https://github.com/chgaowei/ai-agent-infra-list/pull/4#issuecomment-5473838425), [Skyming Awesome AI Agent PR #19](https://github.com/skyming/awesome-ai-agent/pull/19#issuecomment-5473838542), [Awesome Agent Harness PR #58](https://github.com/AutoJunjie/awesome-agent-harness/pull/58#issuecomment-5473838680), [Awesome Agent Security PR #10](https://github.com/authora-dev/awesome-agent-security/pull/10#issuecomment-5473838794), and [DevInsight Awesome MCP PR #6](https://github.com/devinsightdotio/awesome_mcp/pull/6#issuecomment-5473838917). The comments link current v0.3.8 installation/MCP/sandbox sources and state the backend/deployment-dependent isolation boundary.
+- **Validation:** All five destination PRs were open and clean at review time; project affiliation was disclosed. The security-directory note explicitly says directory inclusion is not security certification. Project records were synchronized in [`2eadaa4`](https://github.com/sandbaseai/sandbase-harness/commit/2eadaa4).
+- **Distribution channel:** Community-maintained runtime, agent, security, and MCP directory review paths.
+- **Boundary:** No duplicate submissions were created, and no inclusion, ranking, endorsement, security certification, traffic, or causal referral is claimed.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
+
 ### 2026-08-31 — Refresh MCP Finder and AIAnytime review evidence
 
 - **Objective:** Strengthen two open MCP directory proposals that had no prior maintainer verification comment.
