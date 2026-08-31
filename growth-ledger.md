@@ -1,5 +1,15 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Verify five new MCP and agent directory paths
+
+- **Objective:** Strengthen newly discovered, relevant promotion proposals with current maintainer-owned source evidence.
+- **Action:** Posted verification comments on [Awesome Agent Observability PR #11](https://github.com/anhermon/awesome-agent-observability/pull/11#issuecomment-5474119668), [Awesome MCP PR #54](https://github.com/wundercorp/awesome-mcp/pull/54#issuecomment-5474119799), [Awesome LLM Agents PR #318](https://github.com/kaushikb11/awesome-llm-agents/pull/318#issuecomment-5474119916), [MCP Marketplace PR #5](https://github.com/aiagenta2z/mcp-marketplace/pull/5#issuecomment-5474120059), and [Awesome MCP Security PR #48](https://github.com/AIM-Intelligence/awesome-mcp-security/pull/48#issuecomment-5474120213). The comments link v0.3.8, the MCP guide, project affiliation, and backend/deployment-dependent isolation scope.
+- **Validation:** All five destination PRs were open, non-draft, mergeable, and had no prior project-maintainer verification comment. The separate [Chat2AnyLLM PR #14](https://github.com/Chat2AnyLLM/awesome-mcp-servers/pull/14) was not touched because it is conflicting and reports an upstream test-discovery issue.
+- **Distribution channel:** Community-maintained MCP, agent, observability, marketplace, and security directories.
+- **Boundary:** Maintainer review remains authoritative; no inclusion, ranking, endorsement, security certification, traffic, or causal referral is claimed.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for maintainer review or requested changes; revisit the conflicting PR only after its own branch/test issues are resolved.
+
 ## 2026-08-31 — Verify six additional agent-harness directory paths
 
 - **Objective:** Strengthen relevant, open directory proposals with current maintainer-owned source evidence.
