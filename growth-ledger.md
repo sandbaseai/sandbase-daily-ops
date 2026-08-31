@@ -3966,6 +3966,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** The entry records 640 GitHub stars at submission time; no causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
 
+### 2026-08-31 — Deduplicate MCP Find directory review path
+
+- **Objective:** Keep one accurate, low-noise maintainer review path for the MCP Find directory.
+- **Action:** Compared MCPFind/mcp-find PRs [#168](https://github.com/MCPFind/mcp-find/pull/168) and [#171](https://github.com/MCPFind/mcp-find/pull/171). Both changed the same `community-servers.yml` entry and used the same published `ghcr.io/sandbaseai/sandbase-harness-mcp:0.3.8` image. Closed the older #168 with a pointer to the newer #171.
+- **Validation:** #171 remains open and mergeable with the more complete current description, source links, maintainer disclosure, and backend/deployment-dependent isolation qualification. No merge, inclusion, endorsement, ranking, or security certification is claimed.
+- **Distribution channel:** MCP server directory review path.
+- **Boundary:** This was a duplicate cleanup only; no new submission was created and #171 remains maintainer-controlled.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for MCP Find maintainer review on #171; do not reopen or resubmit #168.
+
 ### 2026-08-31 — Submit AI Systems Atlas curation suggestion
 
 - **Objective:** Add a source-backed review path for SandBase Harness to a curated operational AI systems atlas.
