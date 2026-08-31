@@ -14,6 +14,8 @@ Two more review requests: [MCP-SecurityTools #5](https://github.com/Ta0ing/MCP-S
 
 [awesome-ai-agents-2026 PR #542](https://github.com/caramaschiHG/awesome-ai-agents-2026/pull/542) proposes a factual entry under Self-Hosted Agents and UIs. Review is pending; no endorsement or security certification is implied.
 
+[Awesome DeepSeek Agent PR #412](https://github.com/deepseek-ai/awesome-deepseek-agent/pull/412) proposes bilingual install/configuration/first-run guides for DeepSeek Harness + SandBase over MCP. Review is pending; it is not a security certification.
+
 For builders testing a self-owned Agent runtime, SandBase Harness v0.3.8 provides:
 
 - persistent sessions and resumable runtime state;
