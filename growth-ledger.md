@@ -3034,3 +3034,21 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
   `MERGEABLE` with its CLA check unresolved.
 - **Result:** No duplicate gateway submission remains in the active promotion
   copy; no social publication was performed.
+
+### 2026-08-31 — Awesome AI Harness review path
+
+- **Objective:** Reach a bilingual harness-engineering audience with a
+  runtime-focused, source-backed entry.
+- **Action:** Opened [weiwei966/awesome-ai-harness#4](https://github.com/weiwei966/awesome-ai-harness/pull/4)
+  in the SDKs & runtimes section.
+- **Validation:** The one-line entry describes session state, governed MCP
+  tools, approvals, credential scoping, audit/replay, and selectable backends;
+  GitHub reports `OPEN` and `MERGEABLE` with no reported checks.
+- **Distribution channel:** GitHub bilingual harness directory; corresponding
+  social drafts are marked `NEEDS REVIEW` and require operator/account
+  authorization.
+- **Boundary:** No directory endorsement or security certification is claimed;
+  isolation remains deployment-dependent.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Let the maintainer review the specific harness-design
+  entry before any follow-up.
