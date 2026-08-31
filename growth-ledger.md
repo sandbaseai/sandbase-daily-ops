@@ -3255,3 +3255,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** The entry is a discovery request only; local/Docker/Kubernetes/worker backends do not provide identical isolation properties, and no endorsement or security certification is claimed.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Let the directory maintainer review the existing PR; avoid repeated nudges unless the maintainer asks for changes.
+
+### 2026-08-31 — Scottcjn Awesome Agents existing PR follow-up
+
+- **Objective:** Advance an existing Agent platforms/frameworks directory contribution without duplicating it.
+- **Action:** Found [Scottcjn Awesome Agents PR #59](https://github.com/Scottcjn/awesome-agents/pull/59), which already adds a SandBase Harness entry; posted a source-backed follow-up linking the installation guide and documenting backend-dependent isolation.
+- **Validation:** GitHub reports the PR `OPEN / MERGEABLE / CLEAN`; the follow-up is [recorded on the PR](https://github.com/Scottcjn/awesome-agents/pull/59#issuecomment-5472636338). No duplicate PR was opened.
+- **Distribution channel:** Existing GitHub directory review; X, LinkedIn, and Discord drafts remain `NEEDS REVIEW` and require operator/account authorization.
+- **Boundary:** The entry is a discovery request only; no universal isolation, endorsement, or security certification is claimed.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Let the directory maintainer review the existing PR; avoid additional nudges unless requested.
