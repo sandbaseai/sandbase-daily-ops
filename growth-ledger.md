@@ -3646,6 +3646,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for TensorBlock to regenerate or correct the bot-produced metadata, then revalidate the exact published install command.
 
+### 2026-08-31 — Refresh Loop Engineering learning-resource submission
+
+- **Objective:** Place SandBase Harness in a relevant educational collection with source-backed runtime and loop evidence.
+- **Action:** Updated [Awesome Loop Engineering resource suggestion #23](https://github.com/ChaoYue0307/awesome-loop-engineering/issues/23) with v0.3.8, installation/backends, harness-design, and DeepSeek example links, emphasizing sessions, tool governance, approvals, and audit/replay.
+- **Validation:** The follow-up preserves the backend/deployment-dependent isolation boundary and makes no benchmark, endorsement, or security-certification claim ([comment](https://github.com/ChaoYue0307/awesome-loop-engineering/issues/23#issuecomment-5473407275)). Project README and promotion history were synchronized in [`4763265`](https://github.com/sandbaseai/sandbase-harness/commit/4763265); curator review remains pending.
+- **Distribution channel:** Community-maintained Loop Engineering learning collection; no inclusion, traffic, or social-account publication is claimed.
+- **Boundary:** This is an existing maintainer-controlled issue suggestion; no duplicate PR or issue was opened.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for curator feedback and adjust only to concrete taxonomy or wording requests.
+
 ### 2026-08-31 — Refresh Agent Harness timeline submission
 
 - **Objective:** Keep the existing SandBase Harness submission in a dedicated agent-harness reference list factually current.
