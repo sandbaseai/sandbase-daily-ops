@@ -4009,6 +4009,15 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** Project affiliation was disclosed. The issue remains curator-controlled; no inclusion, endorsement, security certification, traffic, or causal referral is claimed.
 - **Next hypothesis:** Wait for directory review or a request for a compliant listing format before further action.
 
+### 2026-08-31 — Refresh MiniMax integration directory request
+
+- **Objective:** Keep a vendor-specific AI integration proposal current and source-backed.
+- **Action:** Added a maintainer-facing update to [MiniMax Awesome Integrations Issue #12](https://github.com/MiniMax-AI/awesome-minimax-integrations/issues/12#issuecomment-5475925962), replacing the stale v0.3.7 reference with v0.3.8 and linking the current MiniMax, installation, and MCP documentation.
+- **Validation:** The issue was open with no prior comments; the repository documents the global/mainland endpoints, `MiniMax-M3`, `MiniMax-M2.7`, and `MINIMAX_API_KEY`. The runtime's backend/deployment-dependent isolation boundary is preserved.
+- **Distribution channel:** MiniMax-maintained integration directory.
+- **Boundary:** Project affiliation was disclosed. Curator review remains pending; no inclusion, endorsement, security certification, traffic, or causal referral is claimed.
+- **Next hypothesis:** Wait for maintainer review or a requested entry format before opening a PR.
+
 ### 2026-08-31 — Submit OpenModels MCP Registry entry
 
 - **Objective:** Add the SandBase Harness MCP bridge to a structured, source-backed MCP server registry.
