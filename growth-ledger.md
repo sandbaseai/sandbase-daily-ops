@@ -1,5 +1,14 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Reconcile two DSH public listings
+
+- **Objective:** Update the promotion ledger after two DSH ecosystem submissions moved from pending review to public listing.
+- **Action:** Verified maintainer confirmation for [Awesome DeepSeek Harness Top 500 #3](https://github.com/weekend-project-space/awesome-deepseek-harness-top-500/issues/3) and [Blue-Whale-Harness #153](https://github.com/leenkcool/Blue-Whale-Harness/issues/153), then announced both outcomes in [Discussion #116](https://github.com/sandbaseai/sandbase-harness/discussions/116#discussioncomment-18216740).
+- **Validation:** Top 500 #3 was confirmed merged; Blue-Whale-Harness confirmed catalog/site generation and publication as a `sandbox` Runtime/MCP integration, explicitly distinct from a `cordis.patch.yml` plugin.
+- **Distribution channel:** DeepSeek Harness ecosystem catalogs.
+- **Boundary:** These are community directory listings, not ranking endorsements or security certifications; effective isolation depends on the selected backend and deployment configuration.
+- **Next hypothesis:** Keep the public records linked to the maintainer confirmations and avoid treating catalog metadata as a security or compatibility guarantee.
+
 ## 2026-08-31 — Reconcile Awesome Agent Plugins public inclusion
 
 - **Objective:** Update promotion records after an independent community plugin catalog accepted the SandBase Harness bundle.
