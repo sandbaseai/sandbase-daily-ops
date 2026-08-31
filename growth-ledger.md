@@ -4063,6 +4063,15 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** This is a qualified skip, not a failed promotion. No endpoint, listing, endorsement, security certification, traffic, or causal referral was claimed.
 - **Next hypothesis:** Revisit mcpub only if the project intentionally publishes a public MCP endpoint; continue using the official Registry record for MCP Central discovery.
 
+### 2026-08-31 — Qualify Agentic AI Foundation application path
+
+- **Objective:** Evaluate AAIF as a high-visibility ecosystem route without making unsupported adoption or legal-governance claims.
+- **Action:** Read the official AAIF project-proposal page and its GitHub issue template; no application was submitted.
+- **Validation:** The template requires production-use evidence from at least two organizations, two core maintainers from different organizations, at least ten contributors, public governance and decision-process details, and a mandatory trademark/account donation acknowledgement if accepted.
+- **Distribution channel:** Agentic AI Foundation project proposal process.
+- **Boundary:** Current project evidence and owner authorization do not establish those requirements or authorize trademark/account transfer. No AAIF affiliation, application, endorsement, or acceptance is claimed.
+- **Next hypothesis:** Revisit only after the project owner supplies verified adoption, maintainer, contributor, governance, and legal-contact information.
+
 ### 2026-08-31 — Correct Picrew harness verification link
 
 - **Objective:** Repair a stale source link in the canonical Picrew agent-harness submission.
