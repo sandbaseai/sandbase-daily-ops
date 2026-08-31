@@ -3966,6 +3966,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** The entry records 640 GitHub stars at submission time; no causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
 
+### 2026-08-31 — Submit AgentStack directory proposal
+
+- **Objective:** Add SandBase Harness to a hand-curated directory of open-source AI agents, MCP servers, and agentic tools.
+- **Action:** Opened [AgentStack issue #1](https://github.com/magiautonomous/agentstack/issues/1), proposing a factual MCP-server entry with the official repository and pinned v0.3.8 Docker bridge command.
+- **Validation:** Confirmed the target hand-curated list had no existing SandBase Harness entry; the public Issue was created successfully. Project affiliation is disclosed. No inclusion, ranking, endorsement, security certification, traffic, or causal referral is claimed.
+- **Distribution channel:** AgentStack public directory issue workflow.
+- **Boundary:** The proposal requires a user-owned running Harness API through `MANAGED_AGENTS_URL` and states that execution isolation depends on backend and deployment configuration; no hosted endpoint or universal isolation is claimed.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
+
 ### 2026-08-31 — Submit Awesome-AI-Repos entry
 
 - **Objective:** Add SandBase Harness to a broad open-source AI repository map with an AI-agent infrastructure audience.
