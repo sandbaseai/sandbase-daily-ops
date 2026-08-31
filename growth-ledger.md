@@ -4036,6 +4036,15 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** Project affiliation was disclosed. No duplicate PRs, inclusion, endorsement, security certification, traffic, or causal referral is claimed.
 - **Next hypothesis:** Wait for curator responses before opening any PR.
 
+### 2026-08-31 — Open Kubernetes Agent Sandbox integration scope review
+
+- **Objective:** Explore a high-relevance, maintainer-controlled integration path with the Kubernetes Agent Sandbox project.
+- **Action:** Opened [Kubernetes Agent Sandbox Issue #1500](https://github.com/kubernetes-sigs/agent-sandbox/issues/1500), asking whether a source-linked compatibility/deployment example for SandBase Harness belongs in the project's documentation or examples.
+- **Validation:** The destination is maintained under Kubernetes SIG Apps and documents Agent Sandbox as a Kubernetes sandbox orchestrator that delegates low-level isolation to selected runtimes. SandBase Harness publicly supports Kubernetes as a selectable backend; no existing adapter is claimed.
+- **Distribution channel:** Kubernetes Agent Sandbox issue tracker and documentation community.
+- **Boundary:** Project affiliation was disclosed. The request asks for scope guidance before any PR, and makes no inclusion, endorsement, security certification, traffic, or causal referral claim.
+- **Next hypothesis:** Wait for maintainer guidance; prepare documentation only if the destination confirms the integration is in scope.
+
 ### 2026-08-31 — Correct Picrew harness verification link
 
 - **Objective:** Repair a stale source link in the canonical Picrew agent-harness submission.
