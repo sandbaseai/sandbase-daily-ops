@@ -3986,6 +3986,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** The entry records 640 GitHub stars at submission time; no causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for destination CI and maintainer review or requested changes.
 
+### 2026-08-31 — Submit Awesome Engineering AI runtime entry
+
+- **Objective:** Add SandBase Harness to a focused, actively curated directory of installable coding-agent tools.
+- **Action:** Opened [Awesome Engineering AI PR #3](https://github.com/Lancetnik/awesome-engineering-ai/pull/3), placing one concise source-linked entry in Harnesses, GUIs and workspaces.
+- **Validation:** The destination's contribution rules require at least 500 stars, active maintenance, a concrete keyboard-level use case, and no hand-written star count in the README. SandBase met the repository/activity threshold; `git diff --check` passed and a verification follow-up linked the official sources.
+- **Distribution channel:** Curated coding-agent tooling directory review path.
+- **Boundary:** The description covers durable sessions, sandboxed tools, MCP, approvals, credentials, audit, and replay; the user-owned API and backend/deployment-dependent isolation boundary are explicit. No directory endorsement or security certification is claimed.
+- **Star count / referral:** The current count was 640 at submission; no causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for GitGuardian and maintainer review or requested changes.
+
 ### 2026-08-31 — Publish Agent Plugin integration update
 
 - **Objective:** Give existing users a source-backed update about the new portable Agent Plugin integration and its review path.
