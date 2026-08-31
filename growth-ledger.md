@@ -4026,6 +4026,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for maintainer review or requested changes.
 
+### 2026-08-31 — Publish promotion checkpoint in Discussion #116
+
+- **Objective:** Give users and maintainers one accurate, bilingual status update for the latest directory review paths.
+- **Action:** Published [Discussion #116 promotion checkpoint](https://github.com/sandbaseai/sandbase-harness/discussions/116#discussioncomment-18214545), linking Awesome Agentic AI #2, Awesome MCP Toolkit #3, Awesome Engineering AI #3, and Awesome Agent OS #3.
+- **Validation:** Rechecked all four destination PRs as open and mergeable; Engineering AI's GitGuardian check is successful, while Agent OS's external workflow requires maintainer approval. The post explicitly keeps all four in pending-review state.
+- **Distribution channel:** Official project Discussion, bilingual community update.
+- **Boundary:** Project affiliation, user-owned API requirements, and backend/deployment-dependent isolation are disclosed; no inclusion, ranking, endorsement, security certification, social publication, or causal referral is claimed.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for destination maintainers and avoid another Discussion update until a substantive status change occurs.
+
 ### 2026-08-31 — Publish Agent Plugin integration update
 
 - **Objective:** Give existing users a source-backed update about the new portable Agent Plugin integration and its review path.
