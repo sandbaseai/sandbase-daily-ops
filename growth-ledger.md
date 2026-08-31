@@ -1,5 +1,14 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Publish merged-listing promotion checkpoint
+
+- **Objective:** Publish a current, source-linked summary of externally merged discovery entries after the previous checkpoint.
+- **Action:** Updated [SandBase Harness Discussion #116](https://github.com/sandbaseai/sandbase-harness/discussions/116#discussioncomment-18216462) with the public merges [Awesome AI Agents #57](https://github.com/aloth/awesome-ai-agents/pull/57), [Awesome Agent-Native Services #116](https://github.com/haoruilee/awesome-agent-native-services/pull/116), [Awesome DevOps AI #54](https://github.com/hammadhaqqani/awesome-devops-ai/pull/54), and [Awesome MCP Servers #45](https://github.com/mcpHQ/awesome-mcp-servers/pull/45).
+- **Validation:** The checkpoint distinguishes public directory inclusion from endorsement, ranking, recommendation, security certification, traffic, or causal referral. It links the reconciled operational record in [Daily Ops PR #458](https://github.com/sandbaseai/sandbase-daily-ops/pull/458).
+- **Distribution channel:** Official SandBase Harness GitHub Discussion.
+- **Boundary:** The Harness API is user-owned; effective isolation depends on the selected execution backend and deployment configuration.
+- **Next hypothesis:** Continue monitoring existing review queues and publish only substantive state changes.
+
 ## 2026-08-31 — Reconcile latest public directory merges
 
 - **Objective:** Keep the promotion ledger aligned with the latest externally merged, source-linked discovery entries.
