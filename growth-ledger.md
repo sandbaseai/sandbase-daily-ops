@@ -3176,3 +3176,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** No listing, endorsement, or security certification is claimed.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Let the maintainer review the now-unblocked PR; do not repeat the DCO update.
+
+### 2026-08-31 — Awesome AI Agents 2026 link-check follow-up
+
+- **Objective:** Keep a promotion PR's failed check accurately scoped and actionable.
+- **Action:** Inspected the failed Lychee run for [PR #240](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/pull/240) and posted the finding to the PR.
+- **Validation:** The only error is a pre-existing 404 for `ofekron/better-agent` outside the SandBase diff; awesome-lint, GitGuardian, and the changed entry's canonical link pass.
+- **Distribution channel:** Existing GitHub directory review; X, LinkedIn, and Discord drafts remain `NEEDS REVIEW` and require operator/account authorization.
+- **Boundary:** No directory endorsement or security certification is claimed.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Let the destination maintainer fix or waive the unrelated baseline link; do not modify unrelated repository content from this PR.
