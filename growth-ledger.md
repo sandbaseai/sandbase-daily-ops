@@ -3815,3 +3815,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** No paid placement, ranking, endorsement, security certification, or causal referral is claimed. The separate Agents-OSS intake was not bypassed because it is protected by Cloudflare Turnstile.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Check for a public listing or curator response after the directory's stated review window before any follow-up.
+
+### 2026-08-31 — Queue BotMarket MCP review
+
+- **Objective:** Submit the published MCP bridge to a current, free MCP/agent directory using machine-readable source metadata.
+- **Action:** Ran BotMarket's public MCP dry-run against the canonical [`server.json`](https://raw.githubusercontent.com/sandbaseai/sandbase-harness/main/server.json), then confirmed the submission. BotMarket returned queue record `4` for manual review and parsed the official server identity `io.github.sandbaseai/sandbase-harness`.
+- **Validation:** The directory's automatic registry PR step failed with a backend HTTP 422 because a Git `[SHA]` was missing; the service still returned `status: queued` and retained the manual-review record. Project records were synchronized in [`d36fec9`](https://github.com/sandbaseai/sandbase-harness/commit/d36fec9). No public listing, ranking, endorsement, or security certification is claimed.
+- **Distribution channel:** BotMarket MCP directory; manual review is pending.
+- **Boundary:** Used only the published MCP metadata, disclosed the project contact as the canonical repository, and made no claim of A2A support or remote HTTP execution.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Recheck submission `4` or the public MCP directory after its review process updates; do not retry automatically while the backend SHA error remains.
