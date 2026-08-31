@@ -1,5 +1,14 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Respond to Hugging Face agent identity review
+
+- **Objective:** Turn the Hugging Face maintainer's detection question into a source-backed integration fix and review response.
+- **Action:** Implemented default `AI_AGENT=sandbase-harness` propagation for local, Docker, Kubernetes, and self-hosted worker shell execution in SandBase Harness commit [`d4ae4e0`](https://github.com/sandbaseai/sandbase-harness/commit/d4ae4e0); preserved explicit `AI_AGENT`/`AGENT` values for nested agents. Updated the project promotion record in [`0a35ae6`](https://github.com/sandbaseai/sandbase-harness/commit/0a35ae6) and answered [Hugging Face PR #2432](https://github.com/huggingface/huggingface.js/pull/2432#issuecomment-5477083868).
+- **Validation:** Full suite passed with 80 files and 613 tests; 14 environment-gated tests were skipped. Source/test TypeScript checks and `git diff --check` passed. Hugging Face PR #2432 remains open and mergeable; no upstream merge or registry inclusion is claimed.
+- **Distribution channel:** Hugging Face agent-harness registry review and canonical project documentation.
+- **Boundary:** The marker supports attribution only; it is not an endorsement or security boundary. Effective execution isolation remains backend/deployment dependent.
+- **Next hypothesis:** Wait for maintainer feedback or merge; do not repeat the response while the PR state is unchanged.
+
 ## 2026-08-31 — Implement Hugging Face agent identity integration
 
 - **Objective:** Resolve the Hugging Face registry maintainer's concrete question about how SandBase identifies child shell processes.
