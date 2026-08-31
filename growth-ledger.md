@@ -3156,3 +3156,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** A directory listing is not an endorsement or security certification.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Keep future references on merged PR #13 and stop mentioning superseded PR #11.
+
+### 2026-08-31 — TensorChord Awesome LLMOps review path
+
+- **Objective:** Reach a high-visibility LLMOps catalog with a source-backed self-hosted agent runtime entry.
+- **Action:** Opened [TensorChord Awesome LLMOps PR #785](https://github.com/tensorchord/Awesome-LLMOps/pull/785) using the directory's single-project contribution format and alphabetical table placement.
+- **Validation:** The entry links the canonical repository and describes MCP, persistent sessions, governed execution, credentials, approvals, audit/replay, and selectable backends. GitHub reports `OPEN / MERGEABLE`; the DCO check is `ACTION_REQUIRED` and contributor-owned.
+- **Distribution channel:** GitHub LLMOps directory review; X, LinkedIn, and Discord drafts remain `NEEDS REVIEW` and require operator/account authorization.
+- **Boundary:** Backend/deployment-dependent isolation is explicit; no listing, endorsement, or security certification is claimed.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Let the contributor account holder complete DCO and let the LLMOps maintainer review the focused entry; do not bypass the DCO gate.
