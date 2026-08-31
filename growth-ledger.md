@@ -3856,6 +3856,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
 
+### 2026-08-31 — Verify four MCP and agent directory paths
+
+- **Objective:** Strengthen four open directory PRs with current source evidence before maintainer review.
+- **Action:** Posted verification comments on [bgizdov Awesome MCP Servers PR #17](https://github.com/bgizdov/awesome-mcp-servers/pull/17#issuecomment-5473991983), [Enterprise AI Atlas Awesome MCP Servers PR #10](https://github.com/Enterprise-AI-Atlas/awesome-mcp-servers/pull/10#issuecomment-5473992117), [Awesome MCP List PR #409](https://github.com/MobinX/awesome-mcp-list/pull/409#issuecomment-5473992261), and [Awesome Agent Skills PR #79](https://github.com/philipbankier/awesome-agent-skills/pull/79#issuecomment-5473992431). The comments link current v0.3.8 installation/MCP/sandbox sources and state the backend/deployment-dependent isolation boundary.
+- **Validation:** The first three destination PRs were open and clean at review time; Agent Skills #79 was open with `UNSTABLE`. Project affiliation was disclosed. Project records were synchronized in [`bb0fe5d`](https://github.com/sandbaseai/sandbase-harness/commit/bb0fe5d). No inclusion, ranking, endorsement, security certification, traffic, or causal referral is claimed.
+- **Distribution channel:** Community-maintained MCP, agent, and AI tooling directory review paths.
+- **Boundary:** No duplicate submissions were created; entries remain maintainer-controlled and source-backed.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for destination-maintainer review, CI resolution, or requested changes before further follow-up.
+
 ### 2026-08-31 — Verify coding and sandbox directory paths
 
 - **Objective:** Strengthen three open, clean directory PRs with current source evidence before maintainer review.
