@@ -3205,3 +3205,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** The directory's scope includes sandboxing/isolation, but SandBase does not claim universal microVM or kernel isolation; posture depends on the selected deployment/backend. No endorsement or security certification is claimed.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Let the maintainer review the focused entry and respond to the explicit deployment boundary.
+
+### 2026-08-31 — Awesome LLM Security review path
+
+- **Objective:** Reach a high-visibility LLM security directory with a source-backed runtime-governance entry.
+- **Action:** Opened [Awesome LLM Security PR #313](https://github.com/corca-ai/awesome-llm-security/pull/313) under Tools.
+- **Validation:** The one-line change links the canonical SandBase repository and describes sandboxed tools, credential scoping, approvals, audit/replay, and MCP. GitHub reports `OPEN / MERGEABLE / CLEAN`; no automated checks are reported. A verification note is [recorded on the PR](https://github.com/corca-ai/awesome-llm-security/pull/313#issuecomment-5472550887).
+- **Distribution channel:** GitHub directory review; X, LinkedIn, and Discord drafts remain `NEEDS REVIEW` and require operator/account authorization.
+- **Boundary:** The entry does not claim vulnerability scanning, security certification, or endorsement; isolation and posture depend on the selected deployment/backend.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Let the maintainer review the narrowly scoped Tools entry; do not broaden it into unsupported scanner claims.
