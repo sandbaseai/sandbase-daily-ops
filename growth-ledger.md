@@ -4011,6 +4011,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** The entry records 640 GitHub stars at submission time; no causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
 
+### 2026-08-31 — Queue Awesome Open Source AI scope review
+
+- **Objective:** Evaluate a curated open-source AI directory as a new discovery path for the separate SandBase CLI project.
+- **Action:** Confirmed [Awesome Open Source AI Issue #723](https://github.com/alvinreal/awesome-opensource-ai/issues/723) is open and contains a factual scope request for SandBase CLI. No duplicate issue or PR was created.
+- **Validation:** The destination has 4,648 GitHub stars, an explicit request-first rule for uncertain category placement, and no maintainer response on #723 yet. The proposal links the CLI source, Apache-2.0 license, npm artifact, and official MCP Registry record; it keeps SandBase CLI distinct from SandBase Harness.
+- **Distribution channel:** Curated open-source AI directory, pending maintainer category decision.
+- **Boundary:** No inclusion, ranking, endorsement, security certification, traffic, or causal referral is claimed. No PR will be opened until the maintainer confirms the appropriate section.
+- **Star count / referral:** Directory star count recorded at inspection time; no causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for maintainer scope guidance before preparing a compliant one-line entry.
+
 ### 2026-08-31 — Deduplicate MCP Find directory review path
 
 - **Objective:** Keep one accurate, low-noise maintainer review path for the MCP Find directory.
