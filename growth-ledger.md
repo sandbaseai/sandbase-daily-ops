@@ -3876,6 +3876,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Monitor the directory entry for future metadata changes and keep repository release/docs as the source of truth.
 
+### 2026-08-31 — Publish TensorBlock listing update
+
+- **Objective:** Make the newly verified TensorBlock merge and public profile discoverable from the project's official community channel.
+- **Action:** Published [Discussion #116 comment 18213205](https://github.com/sandbaseai/sandbase-harness/discussions/116#discussioncomment-18213205), linking the merged PR, current v0.3.8 GHCR bridge reference, and public TensorBlock profile.
+- **Validation:** The update distinguishes directory discovery from endorsement or security certification and preserves the backend/deployment-dependent isolation qualification. Project records were synchronized in [`e89ca2a`](https://github.com/sandbaseai/sandbase-harness/commit/e89ca2a). No traffic or causal referral is claimed.
+- **Distribution channel:** Official SandBase Harness GitHub Discussion, pointing to TensorBlock's public MCP profile.
+- **Boundary:** This is a status announcement after a verified merge, not a duplicate submission or repeated review nudge.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Monitor profile metadata and user feedback before another announcement.
+
 ### 2026-08-31 — Verify four sandbox and AI-tool directory paths
 
 - **Objective:** Strengthen four open, clean directory PRs with current source evidence before maintainer review.
