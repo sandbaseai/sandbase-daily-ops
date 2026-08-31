@@ -3235,3 +3235,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** The entry uses neutral wording, omits pricing/hosted-upsell language, and does not claim endorsement, security certification, or identical isolation across deployment backends.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Let the directory maintainer review the focused OSS entry; do not add unsupported marketing or security claims.
+
+### 2026-08-31 — E2B Awesome AI Agents scope follow-up
+
+- **Objective:** Advance the highest-traffic runtime discovery path by answering the directory's unresolved scope question.
+- **Action:** Added a source-backed follow-up to [E2B Awesome AI Agents Issue #1468](https://github.com/e2b-dev/awesome-ai-agents/issues/1468), distinguishing the self-hosted Harness runtime/MCP bridge from the separate CLI submission and linking current installation/release evidence.
+- **Validation:** The issue remains `OPEN` with one maintainer-facing comment; the [follow-up](https://github.com/e2b-dev/awesome-ai-agents/issues/1468#issuecomment-5472605198) records the runtime capabilities and deployment-dependent isolation boundary. No duplicate PR was opened.
+- **Distribution channel:** Existing GitHub directory scope review; X, LinkedIn, and Discord drafts remain `NEEDS REVIEW` and require operator/account authorization.
+- **Boundary:** Scope and inclusion remain the directory maintainer's decision; no listing, endorsement, or security certification is claimed.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for the directory maintainer's scope response; avoid additional duplicate submissions to this destination.

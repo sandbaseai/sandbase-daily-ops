@@ -61,6 +61,8 @@ Existing AI-agent directory review: [Awesome AI Agents PR #467](https://github.c
 
 New active AI-agent directory review: [Jenqyang Awesome AI Agents PR #460](https://github.com/Jenqyang/Awesome-AI-Agents/pull/460), adding SandBase Harness to Applications → Tools. Maintainer review is pending; it follows the destination's OSS and neutral-description rules and is not an endorsement or security certification.
 
+Scope follow-up: [E2B Awesome AI Agents Issue #1468](https://github.com/e2b-dev/awesome-ai-agents/issues/1468) now includes evidence distinguishing the self-hosted Harness runtime from the separate CLI submission. Scope review remains pending; no listing, endorsement, or security certification is claimed.
+
 Another pending self-hosted sandbox review: [Awesome Agent Sandbox PR #2](https://github.com/vivy-yi/awesome-agent-sandbox/pull/2), adding SandBase Harness to the Open Source table. Review only; no endorsement is claimed.
 
 New guide review: [Awesome Sandbox PR #27](https://github.com/restyler/awesome-sandbox/pull/27), adding a dedicated SandBase Harness runtime/sandbox case study. Maintainer review is pending; this is not a security certification.
