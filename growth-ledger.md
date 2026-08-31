@@ -1,5 +1,14 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Clarify DeepSeek Harness distribution identity
+
+- **Objective:** Resolve a public directory's distribution-name ambiguity without requesting an unjustified trust upgrade.
+- **Action:** Posted maintainer verification on [Awesome DSH Plugins issue #17](https://github.com/coolbat/awesome-dsh-plugins/issues/17#issuecomment-5476854410), distinguishing the repository/runtime, official MCP Registry identity, canonical metadata, and pinned OCI bridge from the unrelated `managed-agents` npm package.
+- **Validation:** The comment confirms the user-owned API requirement and accepts keeping the entry in the conservative Hold Queue if a unique npm package name is required. Project affiliation is disclosed.
+- **Distribution channel:** Awesome DSH Plugins evidence-led bilingual directory.
+- **Boundary:** No trust-score upgrade, inclusion, endorsement, or security certification is claimed.
+- **Next hypothesis:** Wait for the directory maintainer's identity-policy decision; do not imply that OCI/Git identity satisfies an npm-only gate.
+
 ## 2026-08-31 — Scope-check Kubernetes Agent Sandbox integration
 
 - **Objective:** Explore a technically meaningful Kubernetes ecosystem integration without claiming an existing adapter or security equivalence.
