@@ -18,6 +18,15 @@
 - **Boundary:** The entry is factual and keeps the backend/deployment-dependent isolation boundary explicit. No social-account publication, traffic, or causal referral is claimed.
 - **Next hypothesis:** Wait for the catalog maintainer to review the generator-source change; do not create another submission for this repository.
 
+## 2026-08-31 — Record generated catalog CI approval gate
+
+- **Objective:** Make the Best of Agent Harnesses review state actionable without mislabeling an approval gate as a failing build.
+- **Action:** Rechecked [PR #99](https://github.com/RyanAlberts/best-of-Agent-Harnesses/pull/99) after the generator-source repair. GitHub triggered the `tests` workflow, which concluded `action_required`; posted the [CI status handoff](https://github.com/RyanAlberts/best-of-Agent-Harnesses/pull/99#issuecomment-5475714510) asking the target maintainer to approve the fork workflow.
+- **Validation:** The latest run is [33372298860](https://github.com/RyanAlberts/best-of-Agent-Harnesses/actions/runs/33372298860); no check failure is reported. Local verification remains 54 passing tests plus `git diff --check`.
+- **Distribution channel:** Best of Agent Harnesses generated ranked catalog, pending maintainer workflow approval and review.
+- **Boundary:** No ranking, endorsement, security certification, publication, social-account posting, traffic, or causal referral is claimed. The runtime's isolation remains backend/deployment dependent.
+- **Next hypothesis:** Wait for the maintainer to approve the fork workflow; do not push further changes or create a duplicate PR unless new review feedback requires them.
+
 ## 2026-08-31 — Submit SandBase Harness to LocalAlternative
 
 - **Objective:** Add the project to a relevant local-first/self-hosted AI tool directory through its free review path.
