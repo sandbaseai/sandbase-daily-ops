@@ -4,6 +4,8 @@ Status: NEEDS REVIEW — operator review and account authorization required
 
 New review path: [Awesome Harness Engineering PR #226](https://github.com/ai-boost/awesome-harness-engineering/pull/226) proposes a source-backed Security, Sandbox & Permissions reference. It is open and mergeable with maintainer review pending; this is not a security certification or endorsement, and isolation depends on backend/deployment configuration.
 
+The weekly [mcp-catalog PR #2](https://github.com/maximkq/mcp-catalog/pull/2) also lists SandBase Harness as a discovery candidate. Final categorization is maintainer-controlled; this is not a ranking, endorsement, or security certification.
+
 For builders testing a self-owned Agent runtime, SandBase Harness v0.3.8 provides:
 
 - persistent sessions and resumable runtime state;
