@@ -73,3 +73,5 @@ The existing [Awesome Agent Harnesses PR #2](https://github.com/bayshier/awesome
 The new [Awesome Agent Harness PR #10](https://github.com/zients/awesome-agent-harness/pull/10) proposes SandBase Harness for Agent Systems & Harnesses. The entry keeps model-provider requirements and backend/deployment-dependent isolation explicit; review is pending and no endorsement or security certification is implied.
 
 The new [Awesome AI Agents PR #184](https://github.com/NipunaRanasinghe/awesome-ai-agents/pull/184) proposes SandBase Harness for the directory's Core Frameworks section. It follows the dynamic stars-badge table format and remains a factual maintainer review request; no endorsement or security certification is implied.
+
+The [E2B Awesome AI Agents Issue #1468](https://github.com/e2b-dev/awesome-ai-agents/issues/1468) asks the directory maintainer to decide whether SandBase Harness should be reviewed as a distinct runtime entry from the closed SandBase CLI submission. This is a scope question, not a claim of inclusion or endorsement.
