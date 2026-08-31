@@ -1,5 +1,15 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Verify six additional agent-harness directory paths
+
+- **Objective:** Strengthen relevant, open directory proposals with current maintainer-owned source evidence.
+- **Action:** Posted verification comments on [Awesome AI Agents 2026 PR #539](https://github.com/caramaschiHG/awesome-ai-agents-2026/pull/539#issuecomment-5474109101), [Awesome AI Harness PR #3](https://github.com/weiwei966/awesome-ai-harness/pull/3#issuecomment-5474109298), [Awesome Harness Engineering PR #6](https://github.com/yenanjing/awesome-harness-engineering/pull/6#issuecomment-5474109422), [Awesome Agent Tools PR #17](https://github.com/Awakehsh/awesome-agent-tools/pull/17#issuecomment-5474109553), [Awesome Agent Harness PR #6](https://github.com/to-real/awesome-agent-harness/pull/6#issuecomment-5474109688), and [Awesome Agent Harnesses PR #3](https://github.com/NeuraLiying/Awesome-Agent-Harnesses/pull/3#issuecomment-5474109820). Each comment links the current v0.3.8 release and MCP documentation, discloses project affiliation, and qualifies backend/deployment-dependent isolation.
+- **Validation:** All six destination PRs were open, non-draft, mergeable, and had no existing project-maintainer verification comment at review time. No duplicate PR was created. `sandbase-harness` main remains clean.
+- **Distribution channel:** Community-maintained AI-agent, harness, and tooling directories.
+- **Boundary:** Maintainer review remains authoritative; these comments do not claim inclusion, ranking, endorsement, security certification, traffic, or causal referral.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for maintainer review or requested changes before further follow-up.
+
 ## 2026-08-31 — Recheck agent-directory and MCP discovery queues
 
 - **Objective:** Continue promotion while avoiding duplicate submissions or repeated maintainer nudges.
