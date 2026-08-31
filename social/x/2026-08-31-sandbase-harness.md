@@ -12,6 +12,8 @@ Awesome Agent Sandbox issue #3 proposes a container-backed runtime reference: ht
 
 New dedicated runtime directory review: https://github.com/dz3ai/awesome-agent-runtimes/pull/2 — source-backed entry proposed; maintainer review pending, not a ranking or security certification.
 
+New self-hosted directory review: https://github.com/caramaschiHG/awesome-ai-agents-2026/pull/542 — factual SandBase Harness entry proposed; review pending, no endorsement or security certification.
+
 An agent runtime needs more than a model call: it needs a place for sessions to persist, tools to pass through explicit controls, and runs to leave evidence.
 
 SandBase Harness v0.3.8 is a local-first TypeScript runtime with an MCP bridge, persistent sessions, approvals, audit/replay, and Docker/Kubernetes/worker execution backends.

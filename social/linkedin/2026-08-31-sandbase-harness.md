@@ -12,6 +12,8 @@ Awesome Agent Sandbox issue #3 adds another source-backed review path for a cont
 
 A dedicated AI Agent Runtime directory is also reviewing SandBase Harness in [PR #2](https://github.com/dz3ai/awesome-agent-runtimes/pull/2). The proposal documents durable sessions, governed MCP tools, audit/replay, and selectable execution backends while preserving the backend/deployment-dependent isolation qualification. It remains pending maintainer review and is not a ranking, endorsement, benchmark, or security certification.
 
+The high-visibility [awesome-ai-agents-2026 PR #542](https://github.com/caramaschiHG/awesome-ai-agents-2026/pull/542) proposes the same source-backed runtime under Self-Hosted Agents and UIs, using that directory's requested pricing and dynamic-stars fields. It remains pending maintainer review; the entry makes no endorsement, benchmark, or security-certification claim.
+
 When an Agent moves from a chat window into an engineering workflow, the hard question is no longer only which model to call. Platform teams also need to know where sessions live, which tools may run, what needs approval, and how to reconstruct a failed run.
 
 SandBase Harness v0.3.8 is the open-source, local-first runtime for that layer. It provides persistent sessions, an MCP bridge, explicit approvals, credential scoping, audit/replay records, and replaceable Docker, Kubernetes, and worker execution backends.
