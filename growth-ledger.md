@@ -3795,3 +3795,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** Project affiliation was disclosed, claims are source-backed, and no duplicate PR or universal isolation claim was created.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for maintainer responses or public status changes before posting another follow-up.
+
+### 2026-08-31 — Refresh maturity-gated runtime watchlist evidence
+
+- **Objective:** Strengthen a relevant independent runtime-directory review without bypassing its published maturity gates or opening a duplicate proposal.
+- **Action:** Posted a maintainer verification update on [Beejmaxx Awesome Agent Runtimes PR #4](https://github.com/beejmaxx/awesome-agent-runtimes/pull/4#issuecomment-5473692077), linking the current v0.3.8 release, installation/backend guide, MCP guide, API evidence, and Apache-2.0 license.
+- **Validation:** The PR remains correctly scoped to the repository's `watchlist`, not its active core catalog, because the project has not yet met the stated adoption and age gates. SandBase Harness records were synchronized in [`81db5fc`](https://github.com/sandbaseai/sandbase-harness/commit/81db5fc). Isolation remains backend/deployment dependent; no active-catalog inclusion, endorsement, ranking, benchmark result, or security certification is claimed.
+- **Distribution channel:** Independent agent-runtime watchlist; maintainer review remains pending.
+- **Boundary:** This was one substantive evidence refresh on an existing PR, with project affiliation disclosed and no duplicate submission.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for maintainer feedback or a status change before further follow-up.
