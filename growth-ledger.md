@@ -1,5 +1,15 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Repair Chat2AnyLLM MCP directory submission
+
+- **Objective:** Resolve a concrete integration defect in an existing SandBase Harness promotion PR rather than leave a misleading generated catalog entry.
+- **Action:** Updated the author-owned [Chat2AnyLLM Awesome MCP Servers PR #14](https://github.com/Chat2AnyLLM/awesome-mcp-servers/pull/14) with upstream `main`, resolved generated-file conflicts, added the official `ghcr.io/sandbaseai/sandbase-harness-mcp:0.3.8` installation metadata, regenerated `dist/` and README statistics, and posted the exact validation results in [the PR comment](https://github.com/Chat2AnyLLM/awesome-mcp-servers/pull/14#issuecomment-5474156082).
+- **Validation:** `python3 scripts/validate.py`, `python3 scripts/build.py`, `python3 scripts/update_readme.py`, and `git diff --check` pass. The PR is now `mergeable: true` with GitHub state `unstable`; its repository-level unittest discovery remains unavailable because the checkout has no importable `tests/` package. No test pass was claimed for that unavailable suite.
+- **Distribution channel:** Machine-readable MCP server directory with generated catalog artifacts.
+- **Boundary:** The PR remains maintainer-controlled and is not yet merged. The Docker bridge still requires a running Harness API and configured environment; directory inclusion is not an endorsement or security certification.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for destination maintainer review and CI resolution; do not merge around the unresolved upstream test-discovery limitation.
+
 ## 2026-08-31 — Verify five additional Harness and runtime directory paths
 
 - **Objective:** Strengthen newly found, relevant promotion proposals with current maintainer-owned source evidence.
