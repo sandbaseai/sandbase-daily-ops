@@ -3765,3 +3765,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** The submissions disclose project affiliation, use only source-backed claims, and do not duplicate an existing PR or claim universal/microVM isolation.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Monitor these three review paths for concrete maintainer requests or confirmed inclusion; avoid repetitive follow-ups while state is unchanged.
+
+### 2026-08-31 — Add DSH and Agent Evolution promotion reviews
+
+- **Objective:** Extend factual discovery into DSH-specific and agent-evolution curation channels.
+- **Action:** Posted maintainer verification comments on [EvoMap Awesome Agent Evolution issue #53](https://github.com/EvoMap/awesome-agent-evolution/issues/53#issuecomment-5473603962), [Awesome DeepSeek Harness Top 500 issue #3](https://github.com/weekend-project-space/awesome-deepseek-harness-top-500/issues/3#issuecomment-5473603971), and [Libukai Awesome DeepSeek Harness issue #94](https://github.com/libukai/awesome-deepseek-harness/issues/94#issuecomment-5473606895).
+- **Validation:** Each issue was open without a prior maintainer comment at review time. The project README and promotion history now record the current v0.3.8 release, installation/MCP sources, runtime-vs-CLI distinction, and backend/deployment-dependent isolation in [`3f6000d`](https://github.com/sandbaseai/sandbase-harness/commit/3f6000d). No ranking, inclusion, endorsement, or security certification is claimed.
+- **Distribution channel:** Community agent-evolution and DSH runtime lists; all remain maintainer-controlled review paths.
+- **Boundary:** Submissions disclose project affiliation and use source-backed claims; no duplicate PR or universal isolation claim was created.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for curator responses or concrete requested changes before posting another follow-up.
