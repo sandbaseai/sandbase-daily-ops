@@ -3956,6 +3956,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** The entry records 640 GitHub stars at submission time; no causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
 
+### 2026-08-31 — Submit Public MCP Servers catalog entry
+
+- **Objective:** Add the SandBase Harness MCP bridge to a curated, machine-readable public MCP server directory.
+- **Action:** Opened [Public MCP Servers PR #12](https://github.com/dev48v/public-mcp-servers/pull/12), adding one `data.js` entry with the v0.3.8 Docker stdio image, API URL/API-key fields, and a scoped security note.
+- **Validation:** The destination validator passed for 126 servers with no errors or warnings; `data.js` parsed and `git diff --check` passed. Project affiliation is disclosed. No inclusion, ranking, endorsement, security certification, traffic, or causal referral is claimed.
+- **Distribution channel:** Public MCP Servers curated-directory review path.
+- **Boundary:** The entry states that a running self-hosted Harness API is required and does not claim a hosted endpoint or universal isolation.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
+
 ### 2026-08-31 — Submit Nandanhegde MCP Directory request
 
 - **Objective:** Request free directory inclusion for SandBase Harness in an actively refreshed MCP server index.
