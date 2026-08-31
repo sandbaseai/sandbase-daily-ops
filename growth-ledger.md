@@ -3966,6 +3966,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** The entry records 640 GitHub stars at submission time; no causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
 
+### 2026-08-31 — Submit we-can-use MCP curation entry
+
+- **Objective:** Add SandBase Harness to a curated AI coding ecosystem guide that maintains both English and Korean MCP infrastructure lists.
+- **Action:** Opened [we-can-use PR #2](https://github.com/littleduck1219/we-can-use/pull/2), adding source-linked SandBase Harness entries to `docs/mcp.md` and `docs/mcp.ko.md`.
+- **Validation:** The official repository and installation links were verified; `git diff --check` passed and the destination PR is open and mergeable. Project affiliation is disclosed. No inclusion, ranking, endorsement, security certification, traffic, or causal referral is claimed.
+- **Distribution channel:** Curated `we-can-use` AI coding ecosystem guide.
+- **Boundary:** The entry describes a self-hosted MCP bridge and states that isolation depends on the selected backend and deployment configuration; no hosted endpoint or universal isolation is claimed.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
+
 ### 2026-08-31 — Record Awesome DevOps AI merge
 
 - **Objective:** Keep the promotion ledger aligned with the latest maintainer decisions for submitted directory entries.
