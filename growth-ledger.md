@@ -1,5 +1,14 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Reconcile Awesome Agent Plugins public inclusion
+
+- **Objective:** Update promotion records after an independent community plugin catalog accepted the SandBase Harness bundle.
+- **Action:** Verified [Awesome Agent Plugins issue #5](https://github.com/ZeroPointRepo/awesome-agent-plugins/issues/5) is closed and the public catalog lists [`sandbase-harness`](https://github.com/ZeroPointRepo/awesome-agent-plugins#the-catalog-verified-agent-plugins) under **Dev & Coding**. The destination maintainer's [acceptance comment](https://github.com/ZeroPointRepo/awesome-agent-plugins/issues/5#issuecomment-5476307669) confirms schema, `mcp.json`, `PLUGIN.md`, self-hosted API, and backend-boundary review. Published the update in [Discussion #116](https://github.com/sandbaseai/sandbase-harness/discussions/116#discussioncomment-18216687).
+- **Validation:** The public entry is a community catalog listing, not a ranking, recommendation, endorsement, or security certification. The separate Agent Plugins Directory page remains pinned to an older source revision and is not treated as refreshed.
+- **Distribution channel:** Awesome Agent Plugins community catalog.
+- **Boundary:** Effective isolation depends on the selected backend and deployment configuration.
+- **Next hypothesis:** Use the accepted catalog entry as the current plugin-discovery reference and wait for future source-index reindexing separately.
+
 ## 2026-08-31 — Clarify DeepSeek Harness distribution identity
 
 - **Objective:** Resolve a public directory's distribution-name ambiguity without requesting an unjustified trust upgrade.
