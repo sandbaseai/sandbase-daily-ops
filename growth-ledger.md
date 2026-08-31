@@ -4811,3 +4811,12 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Distribution channel:** [Awesome AI Agents](https://github.com/aloth/awesome-ai-agents), public community-maintained list.
 - **Boundary:** This is a verified public list inclusion; no causal traffic, ranking, or third-party security claim is made.
 - **Next hypothesis:** Preserve the entry as a public result and only correct it if the list maintainer or source changes.
+
+### 2026-08-31 — Correct Awesome Agent Frameworks source link
+
+- **Objective:** Keep an active high-relevance directory PR factually actionable for maintainers.
+- **Action:** Posted a single documentation correction on [alexbevi/awesome-agent-frameworks PR #7](https://github.com/alexbevi/awesome-agent-frameworks/pull/7), replacing the removed `docs/mcp-server.md` reference with the current `docs/installation.md` and `llms-install.md` links.
+- **Validation:** The PR remains `OPEN`, `MERGEABLE`, and `UNSTABLE` with no automated check result; the corrected comment preserves the v0.3.8 and backend/deployment-dependent isolation qualifications.
+- **Distribution channel:** Awesome Agent Frameworks, community-maintained agent framework/runtime list.
+- **Boundary:** This is a source-link correction, not a merge, directory endorsement, security certification, or ranking claim.
+- **Next hypothesis:** Wait for maintainer review; do not post another follow-up unless the source state changes materially.
