@@ -4784,3 +4784,12 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Distribution channel:** Agent Plugins Directory, independent source-indexed discovery catalog.
 - **Boundary:** The listing is public but stale pending reindex; no refreshed version, endorsement, security certification, or execution by the directory is claimed.
 - **Next hypothesis:** Wait for the directory's next source scan; verify the page's pinned commit and image before claiming the refresh.
+
+### 2026-08-31 — Improve Agent Plugin discovery metadata
+
+- **Objective:** Give the Agent Plugins Directory's next source scan accurate, capability-based search terms.
+- **Action:** Added the implemented keywords `agent-plugin`, `persistent-sessions`, `audit-replay`, and `credentials` to `agent-plugin/plugin.json`; kept the published MCP image at `ghcr.io/sandbaseai/sandbase-harness-mcp:0.3.8` and did not change the package version.
+- **Validation:** The manifest passed the Agent Plugins 1.0 schema validation and the MCP distribution suite passed all 6 tests. The public directory page remains pinned to the older revision until its next scan.
+- **Distribution channel:** Agent Plugins Directory source indexing.
+- **Boundary:** This improves first-party metadata only; it does not claim a refreshed page, endorsement, security certification, or ranking.
+- **Next hypothesis:** Recheck the directory after its next crawl and verify the pinned source revision and image tag.
