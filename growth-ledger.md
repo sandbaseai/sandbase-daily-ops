@@ -3505,3 +3505,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** Docker reachability and effective isolation remain deployment dependent. This is a disclosed self-submission by the project maintainer.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Let Cline maintainers process the existing submission; do not duplicate it or repeat the verification note without a material change.
+
+### 2026-08-31 — Official Discussion Cline discovery update
+
+- **Objective:** Give users a durable, bilingual discovery path for the new Cline MCP Marketplace submission.
+- **Action:** Published a bilingual update in [official SandBase Discussion #116](https://github.com/sandbaseai/sandbase-harness/discussions/116#discussioncomment-18212395), linking Cline issue #2364, the v0.3.8 GHCR bridge, `llms-install.md`, and `server.json`.
+- **Validation:** GitHub returned the public comment URL; the linked installation and metadata sources match the claims in the update.
+- **Distribution channel:** Official project Discussion; Cline marketplace review remains pending, and X, LinkedIn, and Discord remain review-gated drafts with no social-account publication claimed.
+- **Boundary:** The update makes no Cline inclusion, endorsement, or security-certification claim. Docker reachability and effective isolation remain dependent on deployment/backend configuration.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Keep this as the single current Discussion update for the Cline path and wait for maintainer/user feedback before posting another update.
