@@ -10,6 +10,8 @@ Two more review requests: [MCP-SecurityTools #5](https://github.com/Ta0ing/MCP-S
 
 [Awesome Agent Sandbox #3](https://github.com/fishman/awesome-agent-sandbox/issues/3) proposes a container-backed runtime reference and is awaiting review; no microVM or universal-isolation claim is made.
 
+[awesome-agent-runtimes PR #2](https://github.com/dz3ai/awesome-agent-runtimes/pull/2) proposes a source-backed entry in a dedicated runtime comparison. Review is pending; it is not a ranking, endorsement, or security certification.
+
 For builders testing a self-owned Agent runtime, SandBase Harness v0.3.8 provides:
 
 - persistent sessions and resumable runtime state;

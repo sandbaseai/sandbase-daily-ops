@@ -10,6 +10,8 @@ Two new review paths: MCP-SecurityTools issue #5 https://github.com/Ta0ing/MCP-S
 
 Awesome Agent Sandbox issue #3 proposes a container-backed runtime reference: https://github.com/fishman/awesome-agent-sandbox/issues/3 — review pending; isolation depends on backend/deployment configuration.
 
+New dedicated runtime directory review: https://github.com/dz3ai/awesome-agent-runtimes/pull/2 — source-backed entry proposed; maintainer review pending, not a ranking or security certification.
+
 An agent runtime needs more than a model call: it needs a place for sessions to persist, tools to pass through explicit controls, and runs to leave evidence.
 
 SandBase Harness v0.3.8 is a local-first TypeScript runtime with an MCP bridge, persistent sessions, approvals, audit/replay, and Docker/Kubernetes/worker execution backends.
