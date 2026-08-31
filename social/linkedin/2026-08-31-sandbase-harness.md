@@ -69,3 +69,5 @@ The new [Awesome AI Harness PR #4](https://github.com/weiwei966/awesome-ai-harne
 The new [Awesome AI Coding Sandboxes PR #15](https://github.com/fhiltscher/awesome-ai-coding-sandboxes/pull/15) proposes SandBase Harness for the directory's Adjacent runtimes section. It explicitly distinguishes a provider-backed runtime from a standalone isolation engine; review is pending and the entry is not a security certification.
 
 The existing [Awesome Agent Harnesses PR #2](https://github.com/bayshier/awesome-agent-harnesses/pull/2) proposes SandBase Harness for Platforms & Frameworks. It is a source-linked maintainer review request; no endorsement or security certification is implied.
+
+The new [Awesome Agent Harness PR #10](https://github.com/zients/awesome-agent-harness/pull/10) proposes SandBase Harness for Agent Systems & Harnesses. The entry keeps model-provider requirements and backend/deployment-dependent isolation explicit; review is pending and no endorsement or security certification is implied.
