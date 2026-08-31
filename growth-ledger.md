@@ -3245,3 +3245,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** Scope and inclusion remain the directory maintainer's decision; no listing, endorsement, or security certification is claimed.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for the directory maintainer's scope response; avoid additional duplicate submissions to this destination.
+
+### 2026-08-31 — Slava Awesome AI Agents existing PR follow-up
+
+- **Objective:** Advance an existing high-visibility AI-agent directory contribution without duplicating it.
+- **Action:** Found [Slava Awesome AI Agents PR #403](https://github.com/slavakurilyak/awesome-ai-agents/pull/403), which already adds a SandBase Harness entry; posted a source-backed follow-up with current installation, release, MCP Registry, and deployment-boundary evidence.
+- **Validation:** GitHub reports the PR `OPEN / MERGEABLE / CLEAN`; the follow-up is [recorded on the PR](https://github.com/slavakurilyak/awesome-ai-agents/pull/403#issuecomment-5472617887). No duplicate PR was opened.
+- **Distribution channel:** Existing GitHub directory review; X, LinkedIn, and Discord drafts remain `NEEDS REVIEW` and require operator/account authorization.
+- **Boundary:** The entry is a discovery request only; local/Docker/Kubernetes/worker backends do not provide identical isolation properties, and no endorsement or security certification is claimed.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Let the directory maintainer review the existing PR; avoid repeated nudges unless the maintainer asks for changes.
