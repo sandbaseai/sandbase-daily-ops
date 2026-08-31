@@ -1,5 +1,14 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Publish official promotion checkpoint
+
+- **Objective:** Make material promotion progress discoverable from the project's official discussion without repeating unchanged review nudges.
+- **Action:** Published a bilingual update in [Discussion #116](https://github.com/sandbaseai/sandbase-harness/discussions/116#discussioncomment-18216385), recording the merged [Awesome MCP PR #182](https://github.com/AlexMili/Awesome-MCP/pull/182), open review paths [Awesome Harness Engineering #226](https://github.com/ai-boost/awesome-harness-engineering/pull/226) and [Awesome LLM Agents #319](https://github.com/kaushikb11/awesome-llm-agents/pull/319), and verification comments on [AgentSeal #36](https://github.com/getagentseal/agentseal/issues/36) and [MCPDir #20](https://github.com/eL1fe/mcpdir/issues/20).
+- **Validation:** The checkpoint links authoritative external states and explicitly distinguishes merged inclusion from pending review. It makes no ranking, endorsement, security-certification, social-publication, traffic, or causal-referral claim.
+- **Distribution channel:** Official SandBase Harness GitHub Discussion.
+- **Boundary:** The Harness API is user-owned; effective isolation depends on the selected backend and deployment configuration.
+- **Next hypothesis:** Keep the checkpoint as the current public status reference and update only on substantive external changes.
+
 ## 2026-08-31 — Verify MCPDir runtime submission
 
 - **Objective:** Make the existing MCPDir runtime submission actionable with current source evidence without creating a duplicate issue or PR.
