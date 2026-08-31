@@ -3896,6 +3896,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for destination-maintainer review, CI resolution, or requested changes before further follow-up.
 
+### 2026-08-31 — Verify terminal and agent directory paths
+
+- **Objective:** Strengthen two open, clean directory PRs with current source evidence before maintainer review.
+- **Action:** Posted verification comments on [Awesome Terminal Agents PR #5](https://github.com/EnigmaYYYY/awesome-terminal-agents/pull/5#issuecomment-5473962019) and [Awesome AI Agents 2026 PR #16](https://github.com/Supersynergy/awesome-ai-agents-2026/pull/16#issuecomment-5473962153). The comments link current v0.3.8 installation/MCP/sandbox sources and state the backend/deployment-dependent isolation boundary.
+- **Validation:** Both destination PRs were open and clean at review time; project affiliation was disclosed. Project records were synchronized in [`68f1290`](https://github.com/sandbaseai/sandbase-harness/commit/68f1290). No inclusion, ranking, endorsement, security certification, traffic, or causal referral is claimed.
+- **Distribution channel:** Community-maintained terminal-agent and AI-agent directory review paths.
+- **Boundary:** No duplicate submissions were created; entries remain maintainer-controlled and source-backed.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
+
 ### 2026-08-31 — Verify four sandbox and AI-tool directory paths
 
 - **Objective:** Strengthen four open, clean directory PRs with current source evidence before maintainer review.
