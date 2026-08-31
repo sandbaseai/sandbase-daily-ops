@@ -1,5 +1,14 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Verify bilingual Agent Harness directory proposal
+
+- **Objective:** Support a bilingual Agent Harness discovery path with current, source-backed English and Chinese descriptions.
+- **Action:** Posted maintainer verification on [to-real issue #7](https://github.com/to-real/awesome-agent-harness/issues/7#issuecomment-5476792053), linking v0.3.8, API, installation/MCP, DeepSeek integration, and the published bridge image.
+- **Validation:** The comment confirms the documented runtime scope and leaves category or paired-README changes to the destination maintainer. Project affiliation is disclosed and isolation is qualified by backend/deployment configuration.
+- **Distribution channel:** Bilingual community-maintained Agent Harness list.
+- **Boundary:** No inclusion, ranking, endorsement, or security certification is claimed.
+- **Next hypothesis:** Wait for maintainer direction; do not open a paired PR unless requested.
+
 ## 2026-08-31 — Propose SandBase Harness to AAE
 
 - **Objective:** Submit a source-backed Agent Harness candidate to an opinionated Agent Engineering knowledge base.
