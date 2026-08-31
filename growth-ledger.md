@@ -3856,6 +3856,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
 
+### 2026-08-31 — Verify two additional runtime directory paths
+
+- **Objective:** Strengthen two open, clean directory PRs that had no prior maintainer verification comment.
+- **Action:** Posted verification comments on [Curated MCP Servers PR #9](https://github.com/oxbshw/curated_mcp_servers/pull/9#issuecomment-5473855705) and [Awesome Agent Runtimes PR #1](https://github.com/dz3ai/awesome-agent-runtimes/pull/1#issuecomment-5473855953). The comments link current v0.3.8 installation/MCP/sandbox sources and state that isolation depends on the selected backend and deployment configuration.
+- **Validation:** Both destination PRs were open and clean at review time; project affiliation was disclosed. Project records were synchronized in [`54840e7`](https://github.com/sandbaseai/sandbase-harness/commit/54840e7). No inclusion, ranking, endorsement, security certification, traffic, or causal referral is claimed.
+- **Distribution channel:** Community-maintained MCP and agent-runtime directory review paths.
+- **Boundary:** No duplicate submissions were created; entries remain maintainer-controlled and source-backed.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
+
 ### 2026-08-31 — Verify five additional directory review paths
 
 - **Objective:** Improve the evidence quality of five open, relevant directory PRs that had no prior maintainer verification comment.
