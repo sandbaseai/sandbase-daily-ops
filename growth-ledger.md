@@ -3946,6 +3946,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
 
+### 2026-08-31 — Submit OpenModels MCP Registry entry
+
+- **Objective:** Add the SandBase Harness MCP bridge to a structured, source-backed MCP server registry.
+- **Action:** Opened [OpenModels MCP Registry PR #22](https://github.com/openmodelsrun/mcp/pull/22), adding `servers/sandbase-harness.yaml` with the six documented stdio tools, pinned v0.3.8 Docker image, runtime URL, and optional API-key metadata.
+- **Validation:** `python3 validate.py` passed with 209 files validated successfully, and `git diff --check` passed. Project affiliation is disclosed. No inclusion, ranking, endorsement, security certification, traffic, or causal referral is claimed.
+- **Distribution channel:** OpenModels MCP Registry structured-entry review path.
+- **Boundary:** The entry requires a running user-controlled Harness API and states that execution isolation depends on the selected backend and deployment configuration; no hosted endpoint or universal isolation is claimed.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
+
 ### 2026-08-31 — Submit AgentVerse-5K directory entry
 
 - **Objective:** Add SandBase Harness to a curated, machine-indexed AI-agent project directory with relevant MCP and coding-agent categories.
