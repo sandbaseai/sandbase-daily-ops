@@ -3415,3 +3415,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** The change uses standard `AI_AGENT` / `AGENT` attribution rather than a data-directory setting; no Hugging Face inclusion, endorsement, or security certification is claimed until maintainer merge.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Let Hugging Face maintainers merge the checked fix; do not bypass branch policy or open a duplicate PR.
+
+### 2026-08-31 — Public registry-fix status update
+
+- **Objective:** Make the corrected Hugging Face attribution path discoverable while its maintainer merge is pending.
+- **Action:** Published a bilingual status update in [official Discussion #116](https://github.com/sandbaseai/sandbase-harness/discussions/116#discussioncomment-18212188), linking the corrective commit and the passing validation results.
+- **Validation:** GitHub returned the public comment URL; the Hugging Face PR remains open with Cursor Bugbot passed and the base-branch merge policy still requiring Hugging Face maintainer action.
+- **Distribution channel:** Official GitHub Discussion; X, LinkedIn, and Discord remain review-gated drafts with no social-account publication claimed.
+- **Boundary:** The update explicitly makes no claim of Hugging Face inclusion, endorsement, or security certification before merge.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Keep one transparent status post and wait for the upstream maintainer queue rather than repeating outreach.
