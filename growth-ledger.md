@@ -3856,6 +3856,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
 
+### 2026-08-31 — Verify coding and sandbox directory paths
+
+- **Objective:** Strengthen three open, clean directory PRs with current source evidence before maintainer review.
+- **Action:** Posted verification comments on [LaunchApp Awesome AI Coding Tools PR #34](https://github.com/launchapp-dev/awesome-ai-coding-tools/pull/34#issuecomment-5473974225), [LAS-WG Awesome Agent Infrastructure PR #10](https://github.com/las-wg/awesome-agent-infrastructure/pull/10#issuecomment-5473974378), and [Awesome Agent Sandboxes PR #9](https://github.com/dloss/awesome-agent-sandboxes/pull/9#issuecomment-5473974508). The comments link current v0.3.8 installation/MCP/sandbox sources and state the backend/deployment-dependent isolation boundary.
+- **Validation:** All three destination PRs were open and clean at review time; project affiliation was disclosed. Project records were synchronized in [`56b0476`](https://github.com/sandbaseai/sandbase-harness/commit/56b0476). No inclusion, ranking, endorsement, security certification, traffic, or causal referral is claimed.
+- **Distribution channel:** Community-maintained AI coding, agent infrastructure, and sandbox directory review paths.
+- **Boundary:** No duplicate submissions were created; entries remain maintainer-controlled and source-backed.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
+
 ### 2026-08-31 — Reconcile TensorBlock MCP listing
 
 - **Objective:** Record the authoritative public outcome of the TensorBlock MCP directory submission.
