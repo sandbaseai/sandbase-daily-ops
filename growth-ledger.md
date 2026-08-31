@@ -4036,6 +4036,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for destination maintainers and avoid another Discussion update until a substantive status change occurs.
 
+### 2026-08-31 — Reconcile merged directory status and duplicate record
+
+- **Objective:** Keep promotion records aligned with the public GitHub state and remove duplicate documentation.
+- **Action:** Verified [Awesome AI Agents PR #57](https://github.com/aloth/awesome-ai-agents/pull/57) merged at `890f558`, updated its project record from pending to merged, and removed duplicate Picrew #86 records from the README and promotion ledger.
+- **Validation:** Global GitHub PR search reports #57 as `MERGED`; Picrew #86 remains the sole open/mergeable submission after #85 was closed. `git diff --check` passes.
+- **Distribution channel:** Public directory status reconciliation and maintainer handoff.
+- **Boundary:** This is a factual record correction, not a new submission; no ranking, endorsement, security certification, or causal referral is claimed.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Continue monitoring for substantive destination changes before posting further follow-ups.
+
 ### 2026-08-31 — Publish Agent Plugin integration update
 
 - **Objective:** Give existing users a source-backed update about the new portable Agent Plugin integration and its review path.
