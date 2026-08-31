@@ -36,7 +36,7 @@ Infrastructure review: Awesome Agent Infra PR #6 https://github.com/shenli/aweso
 
 Another community review path: Awesome AI Developer Stack PR #2 https://github.com/masrisystems/awesome-ai-developer-stack/pull/2 adds SandBase Harness to its MCP Servers table. Review is pending.
 
-Further review paths: Awesome CLI Coding Agents PR #314 https://github.com/bradAGI/awesome-cli-coding-agents/pull/314, Awesome Agentic AI 中文 PR #213 https://github.com/WenyuChiou/awesome-agentic-ai-zh/pull/213, Awesome Terminal Agents PR #5 https://github.com/EnigmaYYYY/awesome-terminal-agents/pull/5, Awesome Agent Sandbox PR #2 https://github.com/yanmxa/awesome-agent-sandbox/pull/2, and Awesome Agent Cortex PR #74 https://github.com/0xNyk/awesome-agent-cortex/pull/74. All remain pending maintainer review.
+Further review paths: Awesome CLI Coding Agents PR #314 https://github.com/bradAGI/awesome-cli-coding-agents/pull/314, Awesome Terminal Agents PR #5 https://github.com/EnigmaYYYY/awesome-terminal-agents/pull/5, and Awesome Agent Cortex PR #74 https://github.com/0xNyk/awesome-agent-cortex/pull/74. These remain pending maintainer review. The earlier Wenyu #213 was superseded by merged #228 https://github.com/WenyuChiou/awesome-agentic-ai-zh/pull/228.
 
 These are discovery submissions only; inclusion is not endorsement or security certification. Isolation depends on the selected deployment backend.
 
@@ -68,7 +68,11 @@ MCP directory maintenance: the older duplicate Awesome MCP Servers PR #13188 htt
 
 DeepSeek Harness integration update: handbook PR #291 https://github.com/sandbaseai/deepseek-harness-handbook/pull/291 is merged with the v0.3.8 bridge guide after catalog cleanup PR #292. DSH index update: Sunrisepeak dsh-index PR #43 https://github.com/Sunrisepeak/dsh-index/pull/43 updates the SandBase Harness descriptor to v0.3.8. Its submitted-revision build and boot checks passed, but the PR is currently dirty and needs a rebase; no index publication is claimed yet.
 
+Approved sandbox review: Yanmxa Awesome Agent Sandbox PR #2 https://github.com/yanmxa/awesome-agent-sandbox/pull/2 is CLEAN/MERGEABLE with Sourcery and GitGuardian passing; target-maintainer merge is pending. This is not an endorsement or security certification.
+
 Another self-hosted sandbox review: Awesome Agent Sandbox PR #2 https://github.com/vivy-yi/awesome-agent-sandbox/pull/2 adds SandBase Harness to its Open Source table. Maintainer review is pending; no endorsement is claimed.
+
+AgentFirst directory PR #46 https://github.com/bradvin/agentfirst.directory/pull/46 has the required submitter/media metadata in commit cf412e0; the repository's generators and remote enrich check pass, and maintainer review is pending.
 
 New guide review: Awesome Sandbox PR #27 https://github.com/restyler/awesome-sandbox adds a dedicated SandBase Harness runtime/sandbox case study. GitGuardian is still running and maintainer review is pending; no security certification is claimed.
 

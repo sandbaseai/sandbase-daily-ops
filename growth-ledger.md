@@ -4036,6 +4036,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for AgentFirst maintainer review; do not create another metadata-only commit unless the repository requests a concrete change.
 
+### 2026-08-31 — Correct social promotion draft references
+
+- **Objective:** Keep review-gated X, LinkedIn, and Discord drafts aligned with the current public promotion queue.
+- **Action:** Updated the three `social/*/2026-08-31-sandbase-harness.md` drafts: replaced closed Awesome MCP Collection #38 with #39, Cue OS #2 with #3, removed the superseded Wenyu #213 pending reference in favor of merged #228, and added the approved-but-unmerged Yanmxa #2 and verified AgentFirst #46 metadata milestones.
+- **Validation:** `git diff --check` passed; all three drafts remain `NEEDS REVIEW` and require operator/account authorization. No social account was published to, and no inclusion, ranking, endorsement, security certification, traffic, or causal referral is claimed.
+- **Distribution channel:** Review-gated X, LinkedIn, and Discord draft queue.
+- **Boundary:** This was a factual link/status correction only; existing no-endorsement and backend/deployment-dependent isolation disclosures remain in place.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for operator review and target-maintainer decisions before any publication or further draft update.
+
 ### 2026-08-31 — Submit AI Systems Atlas curation suggestion
 
 - **Objective:** Add a source-backed review path for SandBase Harness to a curated operational AI systems atlas.
