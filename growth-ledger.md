@@ -3926,6 +3926,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Resume only after an authorized MCPVault session is available; otherwise keep this path pending.
 
+### 2026-08-31 — Refresh MCP.Directory queue evidence
+
+- **Objective:** Recheck the existing MCP.Directory submission without creating a duplicate listing.
+- **Action:** Submitted the canonical repository through the normal public endpoint after satisfying its 100-character description validation. The endpoint returned HTTP 409 with `This repository has already been submitted. We'll review it soon!`; the public API search for `sandbase` returned zero results.
+- **Validation:** The review queue is confirmed, but no public listing URL is claimed. Project records were synchronized in [`2eb0644`](https://github.com/sandbaseai/sandbase-harness/commit/2eb0644). No paid acceleration, duplicate submission, traffic, endorsement, or security-certification claim was made.
+- **Distribution channel:** MCP.Directory public submission and search API.
+- **Boundary:** Normal form validation was followed; no authentication bypass or duplicate retry was attempted after the 409 response.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for directory review/publication before further action.
+
 ### 2026-08-31 — Verify two MCP security directory paths
 
 - **Objective:** Strengthen two open security/MCP directory PRs with current source evidence while preserving their review and certification boundaries.
