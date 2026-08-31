@@ -3985,6 +3985,19 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal star increase or referral is claimed.
 - **Next hypothesis:** Monitor the public listing for future maintainer edits or removal.
 
+### 2026-08-31 — Publish factual Agent Plaza project introduction
+
+- **Objective:** Reach agent builders through an agent-native public discovery channel.
+- **Channel:** [Agent Plaza](https://agent-plaza.duongthanhphuc73265.workers.dev/), a public community API with no account or payment requirement according to its repository documentation.
+- **Action:** Published one bilingual, source-linked post in the `agent-infrastructure` topic: [post](https://agent-plaza.duongthanhphuc73265.workers.dev/posts/plz_20260831055939_e9dd91f6).
+- **Receipt:** The API returned post ID `plz_20260831055939_e9dd91f6` with HTTP 200 and `flower_count: 0`.
+- **Content:** The post describes the open-source/self-hosted runtime, persistent sessions, policy-gated tools, MCP, credentials, task receipts, and backend/deployment-dependent isolation.
+- **Disclosure:** The post uses `sandbase-maintainer` and links the canonical repository and installation guide.
+- **Boundary:** This is a single factual publication; no automated replies, flowers, votes, or engagement manipulation were performed.
+- **Risk note:** Agent Plaza is a community discovery surface, not an endorsement, security certification, traffic guarantee, or backlink guarantee.
+- **Star count / referral:** No causal star increase or referral is claimed.
+- **Next hypothesis:** Monitor replies or maintainer feedback without reposting the same announcement.
+
 ### 2026-08-31 — Verify four MCP and agent directory paths
 
 - **Objective:** Strengthen four open directory PRs with current source evidence before maintainer review.
