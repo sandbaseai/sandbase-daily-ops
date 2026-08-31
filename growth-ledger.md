@@ -3956,6 +3956,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** The entry records 640 GitHub stars at submission time; no causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
 
+### 2026-08-31 — Submit Protodex MCP Directory request
+
+- **Objective:** Request inclusion of SandBase Harness in a public MCP server index that accepts maintainer-facing server submissions.
+- **Action:** Opened [Protodex MCP Directory issue #52](https://github.com/LuciferForge/mcp-directory/issues/52) using the directory's documented server-request workflow, with the canonical repository, DevOps category, current release, installation, and MCP links.
+- **Validation:** The issue was created successfully and is open for index/maintainer review. Project affiliation is disclosed. No inclusion, ranking, endorsement, security certification, traffic, or causal referral is claimed.
+- **Distribution channel:** Protodex MCP Directory public submission workflow.
+- **Boundary:** The request is separate from the existing SandBase CLI issue and qualifies runtime isolation as backend/deployment-dependent.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for directory processing or maintainer questions before further follow-up.
+
 ### 2026-08-31 — Submit Chinese agent runtime guide entry
 
 - **Objective:** Add SandBase Harness to a Chinese-language guide that separates MCP, Skills, and runtime/framework layers.
