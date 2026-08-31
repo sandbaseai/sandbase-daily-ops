@@ -3656,6 +3656,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for curator feedback and adjust only to concrete taxonomy or wording requests.
 
+### 2026-08-31 — Confirm Awesome Coding Agents public inclusion
+
+- **Objective:** Keep project-owned discovery records aligned with a newly merged community catalog entry.
+- **Action:** Verified [Awesome Coding Agents PR #41](https://github.com/kailiu42/awesome-coding-agents/pull/41) merged at [`98ee356`](https://github.com/kailiu42/awesome-coding-agents/commit/98ee35633121db7553d2ca15a9653c8d67a64203), adding SandBase Harness to `CLI Agent Helpers` alongside the existing SandBase CLI entry.
+- **Validation:** The submitted catalog checks passed for 38 tools and 12 tests; the merged entry keeps the two products distinct and retains the backend/deployment-dependent isolation boundary. README and promotion history were updated in [`b1fcc70`](https://github.com/sandbaseai/sandbase-harness/commit/b1fcc70).
+- **Distribution channel:** Public community coding-agent catalog; inclusion is recorded as a listing, not an endorsement, benchmark result, security certification, traffic claim, or social-account publication.
+- **Boundary:** This is a maintainer-approved directory merge; no additional submission or duplicate entry was created.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Keep the listing's source links aligned with future release changes and avoid duplicate submissions.
+
 ### 2026-08-31 — Refresh Agent Harness timeline submission
 
 - **Objective:** Keep the existing SandBase Harness submission in a dedicated agent-harness reference list factually current.
