@@ -4775,3 +4775,12 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Distribution channel:** `weiwei966/awesome-ai-harness`, community-maintained Harness list.
 - **Boundary:** This is duplicate cleanup, not directory inclusion, endorsement, ranking, security certification, or traffic generation.
 - **Next hypothesis:** Continue checking same-destination submissions for overlap before adding more entries.
+
+### 2026-08-31 — Refresh Agent Plugins Directory source signal
+
+- **Objective:** Turn the existing Agent Plugins Directory discovery result into an accurate, current source-linked promotion path.
+- **Action:** Confirmed the public [Agent Plugins Directory page](https://agent-plugins.directory/sandbaseai/sandbase-harness) is live and exposes the plugin manifest, MCP configuration, and install paths. The page is pinned to an older source revision and still shows the `0.3.4` bridge image, so the project README and `agent-plugin/PLUGIN.md` now link the page and state the current `0.3.8` source configuration.
+- **Validation:** `npx vitest run tests/unit/mcp-distribution.test.ts` passed all 6 tests and `git diff --check` passed. The directory's own documentation says it reads public GitHub manifests and does not execute plugin code.
+- **Distribution channel:** Agent Plugins Directory, independent source-indexed discovery catalog.
+- **Boundary:** The listing is public but stale pending reindex; no refreshed version, endorsement, security certification, or execution by the directory is claimed.
+- **Next hypothesis:** Wait for the directory's next source scan; verify the page's pinned commit and image before claiming the refresh.
