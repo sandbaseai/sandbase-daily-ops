@@ -1,5 +1,14 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Clarify GitHub Awesome Copilot intake rejection
+
+- **Objective:** Correct a potentially inaccurate “purely paid service” rejection while respecting the target repository's access controls and re-intake workflow.
+- **Action:** Posted a factual handoff on [Awesome Copilot issue #2725](https://github.com/github/awesome-copilot/issues/2725#issuecomment-5476953847), explaining the Apache-2.0/self-hosted/Docker stdio boundary and user-owned `MANAGED_AGENTS_URL`. The current account cannot reopen the issue or trigger `/rerun-intake`; the clarification was also published in [Discussion #116](https://github.com/sandbaseai/sandbase-harness/discussions/116#discussioncomment-18216767).
+- **Validation:** The issue remains a closed rejection; no re-review, inclusion, or marketplace acceptance is claimed. Project affiliation is disclosed.
+- **Distribution channel:** GitHub Awesome Copilot external plugin intake.
+- **Boundary:** The target maintainer controls reopening and re-intake; no endorsement or security certification is implied.
+- **Next hypothesis:** Wait for a target maintainer to reopen/re-run intake or provide a policy response; do not bypass the repository gate.
+
 ## 2026-08-31 — Reconcile two DSH public listings
 
 - **Objective:** Update the promotion ledger after two DSH ecosystem submissions moved from pending review to public listing.
