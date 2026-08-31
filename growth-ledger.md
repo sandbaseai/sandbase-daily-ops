@@ -3966,6 +3966,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** The entry records 640 GitHub stars at submission time; no causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
 
+### 2026-08-31 — Submit AI Systems Atlas curation suggestion
+
+- **Objective:** Add a source-backed review path for SandBase Harness to a curated operational AI systems atlas.
+- **Action:** Opened [AI Systems Atlas suggestion #34](https://github.com/katagun/ai-systems-atlas/issues/34) through its required system-suggestion workflow, linking the canonical repository, Apache-2.0 license, runtime documentation, and the project’s backend/deployment-dependent isolation boundary.
+- **Validation:** The destination requires editorial review before catalog publication; its issue form and curation policy were checked before submission. Project affiliation is disclosed, and no inclusion, ranking, endorsement, or security certification is claimed.
+- **Distribution channel:** Curated operational AI systems directory review path.
+- **Boundary:** The suggestion describes SandBase as a tool-using runtime with durable sessions, sandboxed tools, MCP, credentials, approvals, audit, replay, and a local Console; it does not claim a hosted endpoint or universal isolation.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for Atlas editorial review or requested evidence before a follow-up.
+
 ### 2026-08-31 — Publish Agent Plugin integration update
 
 - **Objective:** Give existing users a source-backed update about the new portable Agent Plugin integration and its review path.
