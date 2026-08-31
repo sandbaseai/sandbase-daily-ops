@@ -14,6 +14,8 @@ New dedicated runtime directory review: https://github.com/dz3ai/awesome-agent-r
 
 New self-hosted directory review: https://github.com/caramaschiHG/awesome-ai-agents-2026/pull/542 — factual SandBase Harness entry proposed; review pending, no endorsement or security certification.
 
+New bilingual integration-guide review: https://github.com/deepseek-ai/awesome-deepseek-agent/pull/412 — install/configure DeepSeek Harness with SandBase over MCP; maintainer review pending.
+
 An agent runtime needs more than a model call: it needs a place for sessions to persist, tools to pass through explicit controls, and runs to leave evidence.
 
 SandBase Harness v0.3.8 is a local-first TypeScript runtime with an MCP bridge, persistent sessions, approvals, audit/replay, and Docker/Kubernetes/worker execution backends.
