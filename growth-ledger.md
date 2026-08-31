@@ -1,5 +1,14 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Synchronize project record for Awesome LLM Agents review
+
+- **Objective:** Keep the canonical project promotion record linked to the latest external verification.
+- **Action:** Updated [`docs/promotion.md`](https://github.com/sandbaseai/sandbase-harness/blob/main/docs/promotion.md) in SandBase Harness commit [`2516ac5`](https://github.com/sandbaseai/sandbase-harness/commit/2516ac5) to link the [Awesome LLM Agents PR #319 maintainer verification](https://github.com/kaushikb11/awesome-llm-agents/pull/319#issuecomment-5477015075).
+- **Validation:** The destination PR remains open and mergeable; the record states v0.3.8, Apache-2.0/self-hosted scope, and backend/deployment-dependent isolation. No inclusion, endorsement, ranking, or security certification is claimed.
+- **Distribution channel:** Canonical SandBase Harness promotion documentation.
+- **Boundary:** This is documentation synchronization only; the target maintainer controls directory inclusion.
+- **Next hypothesis:** Wait for a substantive maintainer state change before another follow-up.
+
 ## 2026-08-31 — Verify Awesome LLM Agents directory proposal
 
 - **Objective:** Provide a concise, source-backed maintainer verification for a new Agent Infrastructure directory proposal.
