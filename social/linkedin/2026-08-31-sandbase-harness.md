@@ -6,6 +6,8 @@ A new community review path is open in Awesome Harness Engineering: PR #226 prop
 
 The weekly mcp-catalog ingest also lists SandBase Harness as a discovery candidate in PR #2. Its final categorization remains with the target maintainers; the entry should not be read as a ranking, endorsement, or security certification.
 
+Two additional source-backed review requests are now open: MCP-SecurityTools issue #5, which asks maintainers to evaluate the runtime under Agent Runtime Governance / MCP security controls, and Awesome Agent Harness issue #30, which proposes a factual runtime entry. Both remain pending target-maintainer review. The descriptions preserve the distinction between runtime governance and vulnerability scanning, and between deployment-dependent isolation and universal security guarantees.
+
 When an Agent moves from a chat window into an engineering workflow, the hard question is no longer only which model to call. Platform teams also need to know where sessions live, which tools may run, what needs approval, and how to reconstruct a failed run.
 
 SandBase Harness v0.3.8 is the open-source, local-first runtime for that layer. It provides persistent sessions, an MCP bridge, explicit approvals, credential scoping, audit/replay records, and replaceable Docker, Kubernetes, and worker execution backends.

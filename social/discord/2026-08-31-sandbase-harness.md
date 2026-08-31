@@ -6,6 +6,8 @@ New review path: [Awesome Harness Engineering PR #226](https://github.com/ai-boo
 
 The weekly [mcp-catalog PR #2](https://github.com/maximkq/mcp-catalog/pull/2) also lists SandBase Harness as a discovery candidate. Final categorization is maintainer-controlled; this is not a ranking, endorsement, or security certification.
 
+Two more review requests: [MCP-SecurityTools #5](https://github.com/Ta0ing/MCP-SecurityTools/issues/5) and [Awesome Agent Harness #30](https://github.com/mahonzhan/awesome-agent-harness/issues/30). Both await maintainer review; runtime isolation remains backend/deployment dependent.
+
 For builders testing a self-owned Agent runtime, SandBase Harness v0.3.8 provides:
 
 - persistent sessions and resumable runtime state;
