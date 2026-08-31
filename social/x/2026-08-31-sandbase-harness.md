@@ -98,6 +98,8 @@ AI agent directory review: Awesome AI Agents PR #184 https://github.com/NipunaRa
 
 Scope review: E2B Awesome AI Agents Issue #1468 https://github.com/e2b-dev/awesome-ai-agents/issues/1468 asks whether SandBase Harness belongs as a distinct runtime entry from the closed CLI submission. Maintainer scope decision pending; no inclusion or endorsement is claimed.
 
+Direct follow-up: E2B Awesome AI Agents PR #1473 https://github.com/e2b-dev/awesome-ai-agents/pull/1473 now carries the factual open-source runtime entry. The PR is mergeable, but its required CLA check awaits contributor signature; no listing or endorsement is claimed.
+
 Runtime directory review: Awesome AI Agents 2026 PR #240 https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/pull/240 adds SandBase Harness beside the separate CLI entry under Agent Tooling and Infrastructure. Review pending; no endorsement or security certification is claimed.
 
 Link-check follow-up: the failed job reports only the pre-existing `ofekron/better-agent` 404 outside the SandBase diff. A maintainer follow-up records the baseline finding; review remains pending.

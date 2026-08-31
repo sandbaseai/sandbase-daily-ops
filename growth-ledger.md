@@ -1,5 +1,14 @@
 # Open-source growth ledger
 
+## 2026-08-31 — Queue E2B catalog review in channel drafts
+
+- **Objective:** Keep the channel-native promotion drafts aligned with the new high-visibility E2B directory submission.
+- **Action:** Added [E2B Awesome AI Agents PR #1473](https://github.com/e2b-dev/awesome-ai-agents/pull/1473) to the X, LinkedIn, and Discord drafts as a pending review path, linked to the originating [Issue #1468](https://github.com/e2b-dev/awesome-ai-agents/issues/1468).
+- **Validation:** The copy states that the PR is mergeable but the required CLA check awaits contributor signature; it does not claim a listing, endorsement, security certification, or publication. All drafts remain `NEEDS REVIEW` and require operator/account authorization.
+- **Distribution channel:** Review-gated X, LinkedIn, and Discord draft queue.
+- **Boundary:** Isolation properties remain dependent on the selected backend and deployment configuration. No traffic or causal referral is claimed.
+- **Next hypothesis:** Keep the drafts pending until the destination maintainer and operator review are complete; do not publish automatically.
+
 ## 2026-08-31 — Open E2B Awesome AI Agents submission
 
 - **Objective:** Move the existing E2B directory scope-review issue into the directory's normal PR workflow.
