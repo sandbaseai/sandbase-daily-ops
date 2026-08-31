@@ -3445,3 +3445,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** The README labels the Showcase as an external community update and does not imply upstream endorsement, security certification, or completed pending reviews.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Keep homepage links focused on durable, source-backed updates and refresh them only when a material public state changes.
+
+### 2026-08-31 — Pipedream MCP directory verification follow-up
+
+- **Objective:** Make the high-visibility Pipedream MCP directory submission easy for maintainers to verify.
+- **Action:** Posted a source-backed verification note on [Pipedream Awesome MCP Servers PR #111](https://github.com/PipedreamHQ/awesome-mcp-servers/pull/111), linking the current installation guide, official Registry identity, pinned GHCR image, and self-hosted API requirement.
+- **Validation:** GitHub reports the focused one-line PR as `CLEAN` with no reported checks; the public [follow-up comment](https://github.com/PipedreamHQ/awesome-mcp-servers/pull/111#issuecomment-5473048884) records the evidence and disclosure.
+- **Distribution channel:** Maintainer-reviewed MCP directory; X, LinkedIn, and Discord remain review-gated drafts with no social-account publication claimed.
+- **Boundary:** The submission is a factual self-submission, not Pipedream inclusion, endorsement, or security certification; isolation remains backend/deployment dependent.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Let the directory maintainer review the single existing PR; do not open a duplicate or repeat the verification note without a material change.
