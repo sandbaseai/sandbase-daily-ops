@@ -3956,6 +3956,16 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Star count / referral:** The entry records 640 GitHub stars at submission time; no causal Star increase or referral is claimed.
 - **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
 
+### 2026-08-31 — Submit Awesome AI Agents directory entry
+
+- **Objective:** Add SandBase Harness to a maintained AI-agent resource list with an Agent Tools category.
+- **Action:** Opened [Awesome AI Agents PR #4](https://github.com/asdfgh12345123/awesome-ai-agents/pull/4), adding the canonical repository to the Agent Tools table with a concise factual runtime description.
+- **Validation:** The destination PR is open, clean, and mergeable; `git diff --check` passed. Project affiliation is disclosed. No inclusion, ranking, endorsement, security certification, traffic, or causal referral is claimed.
+- **Distribution channel:** Community-maintained Awesome AI Agents directory review path.
+- **Boundary:** The entry links to the official repository and does not claim hosted availability, universal isolation, or directory approval.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Wait for destination-maintainer review or requested changes before further follow-up.
+
 ### 2026-08-31 — Submit AI Agent Marketplace entry
 
 - **Objective:** Add SandBase Harness to a public AI-agent marketplace index with a reusable project card and official source links.
