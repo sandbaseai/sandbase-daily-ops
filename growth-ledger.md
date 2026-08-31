@@ -3285,3 +3285,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** This is an index update under review, not a published listing or security endorsement; no publication is claimed until the PR is rebased and merged.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Let the PR author rebase and rerun the index gates before considering the update complete.
+
+### 2026-08-31 — DeepSeek Harness Handbook bridge refresh
+
+- **Objective:** Keep the DeepSeek Harness integration path current while treating handbook verification as a real release gate.
+- **Action:** Reviewed [DeepSeek Harness Handbook PR #291](https://github.com/sandbaseai/deepseek-harness-handbook/pull/291), which refreshes the English/Chinese SandBase bridge guide from v0.3.7 to v0.3.8 and repins the source revision; posted a maintainer-facing [failure diagnosis](https://github.com/sandbaseai/deepseek-harness-handbook/pull/291#issuecomment-5472694779).
+- **Validation:** The only failed `verify` step is `check:links`; it reports three pre-existing 404 ecosystem links: `dsh-code-map`, `dsh-web-workflow-visualizer`, and `dsh-vision-toolkit`. The integration refresh is not marked mergeable until those stale links are cleaned up or the check is corrected.
+- **Distribution channel:** DeepSeek Harness Handbook maintainer review; X, LinkedIn, and Discord drafts remain `NEEDS REVIEW` and require operator/account authorization.
+- **Boundary:** This is a documentation freshness PR under review, not an endorsement or security certification; runtime isolation remains dependent on the selected backend and deployment configuration.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Let the handbook maintainer remove or repair the stale catalog links, then rerun `verify` before considering the bridge refresh complete.
