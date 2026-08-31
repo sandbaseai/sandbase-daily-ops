@@ -118,3 +118,5 @@ New LLMOps review: [TensorChord Awesome LLMOps PR #785](https://github.com/tenso
 Update: the DCO check for PR #785 now passes. Maintainer review is still pending; no listing or endorsement is claimed.
 
 Latest public update: [official Discussion #116](https://github.com/sandbaseai/sandbase-harness/discussions/116#discussioncomment-18211885) links the v0.3.8 installation source and current DeepSeek Harness/dsh-index review status. Feedback is welcome on backend choice, MCP schemas, session lifecycle, and audit/replay gaps.
+
+Curator review: [AAE Agent Engineering issue #1](https://github.com/Lxcardoza993/AAE/issues/1) proposes SandBase Harness for the Agent Harness category. Placement is pending and is not an endorsement or security certification.

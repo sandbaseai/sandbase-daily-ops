@@ -3325,3 +3325,13 @@ or manufacture stars, followers, comments, issues, forks, or contributors.
 - **Boundary:** This is a candidate submission only, not a listing, endorsement, or security certification; isolation remains dependent on deployment/backend configuration.
 - **Star count / referral:** No causal Star increase or referral is claimed.
 - **Next hypothesis:** Let the curator decide placement and avoid duplicate submissions while the issue is open.
+
+### 2026-08-31 — AAE path added to channel drafts
+
+- **Objective:** Keep review-gated outreach aligned with the newly tracked curated-directory path.
+- **Action:** Added [AAE issue #1](https://github.com/Lxcardoza993/AAE/issues/1) to the X, LinkedIn, and Discord SandBase Harness v0.3.8 drafts.
+- **Validation:** Each draft identifies AAE as curator review only and links the public issue; no inclusion or endorsement is claimed.
+- **Distribution channel:** Draft assets only; operator review and account authorization remain required, with no social-account publication claimed.
+- **Boundary:** Copy preserves the deployment/backend-dependent isolation qualification and the source-of-truth role of the official repository.
+- **Star count / referral:** No causal Star increase or referral is claimed.
+- **Next hypothesis:** Publish only after operator approval and update the drafts if the curator accepts or declines the candidate.
