@@ -54,6 +54,15 @@
 - **Boundary:** No ranking, endorsement, security certification, publication, social-account posting, traffic, or causal referral is claimed. The runtime's isolation remains backend/deployment dependent.
 - **Next hypothesis:** Wait for the maintainer to approve the fork workflow; do not push further changes or create a duplicate PR unless new review feedback requires them.
 
+## 2026-08-31 — Submit to Awesome Harness Engineering
+
+- **Objective:** Add a source-backed SandBase Harness reference to a focused harness-engineering knowledge base.
+- **Action:** Opened [Awesome Harness Engineering PR #226](https://github.com/ai-boost/awesome-harness-engineering/pull/226), adding SandBase Harness to the security and sandbox references with a technical two-sentence description covering persistent sessions, MCP governance, approvals, credentials, artifacts, audit/replay, and selectable execution backends.
+- **Validation:** The destination contribution rules require a specific harness problem, a 1–2 sentence technical note, and vendor-agnostic relevance. GitHub reports the PR OPEN, MERGEABLE, and CLEAN; the entry explicitly states that isolation properties depend on backend and deployment configuration.
+- **Distribution channel:** Focused community-maintained Harness Engineering reference.
+- **Boundary:** Maintainer review remains authoritative; no inclusion, ranking, endorsement, security certification, traffic, or causal referral is claimed.
+- **Next hypothesis:** Wait for maintainer review or requested changes; do not create another submission for this list.
+
 ## 2026-08-31 — Submit SandBase Harness to LocalAlternative
 
 - **Objective:** Add the project to a relevant local-first/self-hosted AI tool directory through its free review path.
